@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rhombus</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="side-panel-dropdown">
+            <button class="panel-button dropdown-toggle" type="button">
+              <i class="icon icon-lajou-cafe"></i> Lajou cafe
+            </button>
+            <ul class="panel-dropdown-menu">
+              <li><a class="panel-dropdown-item" href="#">Action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Another action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="./pm-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Overview</a></li>
+            <li class="nav-item panel-dropdown position-relative">
+              <a href="./pm-project-management.html" class="mb-auto panel_link "><i class="icon icon-business"></i>
+                Projects</a>
+              <div>
+                <a class="dropdown-btn nav-link dropdown-toggle position-absolute" href="" id="Setting-Dropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false" style="top: 11px; right: 17px;">
+                </a>
+                <ul class="Setting-Dropdown m-0" aria-labelledby="Setting-Dropdown">
+                  <li><a class="dropdown-item panel_link " href="./pm-project-overview.html">project Overview</a></li>
+                  <li><a class="dropdown-item panel_link " href="./pm-project-performance.html">project Performance</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-sales"></i> Financial Performance
+              </a>
+              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./pm-project-cocs.html">COCs Overview</a></li>
+                <li><a class="dropdown-item panel_link active_panel" href="./pm-project-pos.html">Project POs</a></li>
+              </ul>
+            </li>
+            <li><a href="./pm-transferred-projects.html" class="panel_link "><i
+                  class="icon icon-transferred-projects bg-cover"></i>
+                Transferred Projects</a></li>
+            <li><a href="./pm-report.html" class="panel_link "><i class="icon icon-expenses"></i> Reports</a></li>
+            <li><a href="./pm-compnies-list.html" class="panel_link "><i class="icon icon-reports"></i> Customer
+                Profile</a></li>
+
+            <li><a href="./pm-contact.html" class="panel_link "><i class="icon icon-project"></i> Contacts</a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-bar-document"></i> Setting
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link" href="./pm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
+                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
+              </ul>
+            </li>
+            <li><a href="./crm-overview-index.html">Move to CRM</a></li>
+            <li><a href="./pm-home-page.html" class="panel_link">Home Page</a></li>
+            <li><a href="./admin-dashboard.html">Move to Admin</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div>
+          <div class="about-profile">
+            <div class="d-none d-md-block">
+              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+                  class="icon icon-plus"></i> Add</button>
+              <a href=""><i class="icon icon-question"></i></a>
+              <a href=""><i class="icon icon-notification"></i></a>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                <h6 class="text-small mt-2">Allen Moreno</h6>
+                <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                  <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="page-main-title">
+            <div class="heading">
+              <h1>Project POs</h1>
+            </div>
+            <div class="d-flex gap-3 flex-colume-sm wsm-100">
+              <div class="dropdown select-dropdown">
+                <button class="btn btn-secondary dropdown-toggle wsm-100" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  All
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <button class="btn btn-empty wsm-100">Export</button>
+              <button class="btn btn-empty wsm-100">Import</button>
+              <button class="btn btn-fill wsm-100" data-bs-toggle="modal" data-bs-target="#posModal">New PO</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="bg-white p-3 rounded d-flex justify-content-between align-items-center flex-colume-sm">
+                <div class="col-12 col-md-4">
+                  <div class="dropdown select-dropdown ms-4">
+                    <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button"
+                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Customer Name
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mt-3 mt-md-0">
+                  <div class="dropdown select-dropdown ms-4">
+                    <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button"
+                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Project Status
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mt-3 mt-md-0">
+                  <div class="dropdown select-dropdown ms-4">
+                    <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button"
+                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Project Manager Name
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <ul class="nav nav-tabs bg-light me-2 me-md-0 employees-nav w-fit flex-row-sm ms-auto" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-uppercase text-md-small" id="list-tab" data-bs-toggle="tab" data-bs-target="#list" type="button" role="tab" aria-controls="list" aria-selected="false"><i class="icon icon-list-task"></i>LIST</button>
+                </li>
+                <li class="nav-item m-0" role="presentation">
+                  <button class="nav-link text-uppercase text-md-small active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="true"><i class="icon icon-grid"></i>
+                    grid</button>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+                <div class="row">
+                  <div class="col-md-4 mt-3">
+                    <div class="sm-box bg-genestealer-purple">
+                      <h6 class="fw-500">RFP Stage</h6>
+                      <p class="text-light-gray">$209,200 | 88 Projects</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mt-3">
+                    <div class="sm-box bg-hawkbit">
+                      <h6 class="fw-500">RFQ Stage</h6>
+                      <p class="text-light-gray">$209,200 | 120 Projects</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mt-3">
+                    <div class="sm-box bg-cong-pink">
+                      <h6 class="fw-500">Issued PO</h6>
+                      <p class="text-light-gray">$209,200 | 90 Projects</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="list" role="tabpanel" aria-labelledby="list-tab">
+                <a class="text-dark text-decoration-none d-block mb-3 interest cursor-pointer w-fit"><i class="icon icon-right-arrow me-2"></i> RFP Stage</a>
+                <div class="invoice-table tablepanel">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Contact name</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Created Date</th>
+                        <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                      </tr>
+                    </thead>
+                    <tbody class="right-content interest-body">
+                    </tbody>
+                  </table>
+                </div>
+                <a class="text-dark text-decoration-none d-block mb-3 consideration cursor-pointer w-fit"><i class="icon icon-right-arrow me-2"></i> RFQ Stage</a>
+                <div class="invoice-table tablepanel">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Contact name</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Created Date</th>
+                        <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                      </tr>
+                    </thead>
+                    <tbody class="right-content consideration-body">
+                    </tbody>
+                  </table>
+                </div>
+                <a class="text-dark text-decoration-none d-block mb-3 negotiation cursor-pointer w-fit"><i class="icon icon-right-arrow me-2"></i> Issued PO</a>
+                <div class="invoice-table tablepanel">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Contact name</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Created Date</th>
+                        <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                      </tr>
+                    </thead>
+                    <tbody class="right-content negotiation-body">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="invoice-table tablepanel">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Number</th>
+                      <th>Ref</th>
+                      <th>To</th>
+                      <th>Date</th>
+                      <th>Due Date</th>
+                      <th>Paid</th>
+                      <th>Due</th>
+                      <th>Status</th>
+                      <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-sm fw-500" data-label="Number">INV-0012</td>
+                      <td data-label="Ref">P/O CRMO8-12</td>
+                      <td class="text-sm fw-500" data-label="To"><i class="fas fa-file-alt"></i> Marin bike club</td>
+                      <td data-label="Date">25 Oct 2021</td>
+                      <td data-label="Due Date">03 Nov 2021</td>
+                      <td data-label="Paid">0.00</td>
+                      <td data-label="Due">234.00</td>
+                      <td data-label="Status">Awaiting Payment</td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm fw-500" data-label="Number">INV-0012</td>
+                      <td data-label="Ref">P/O 9711</td>
+                      <td class="text-sm fw-500" data-label="To"><i class="fas fa-file-alt"></i> Marinway University
+                      </td>
+                      <td data-label="Date">16 Mar 2021</td>
+                      <td data-label="Due Date">23 Sep 2021</td>
+                      <td data-label="Paid">0.00</td>
+                      <td data-label="Due">234.00</td>
+                      <td data-label="Status">Draft</td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm fw-500" data-label="Number">INV-0012</td>
+                      <td data-label="Ref">P/O 9711</td>
+                      <td class="text-sm fw-500" data-label="To"><i class="fas fa-file-alt"></i> Marinway University
+                      </td>
+                      <td data-label="Date">04 Aug 2021</td>
+                      <td data-label="Due Date">06 Jul 2021</td>
+                      <td data-label="Paid">0.00</td>
+                      <td data-label="Due">234.00</td>
+                      <td data-label="Status">Awaiting Payment</td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm fw-500" data-label="Number">INV-0012</td>
+                      <td data-label="Ref">Book</td>
+                      <td class="text-sm fw-500" data-label="To"><i class="fas fa-file-alt"></i> Marin bike club</td>
+                      <td data-label="Date">07 May 2021</td>
+                      <td data-label="Due Date">17 Jul 2021</td>
+                      <td data-label="Paid">0.00</td>
+                      <td data-label="Due">234.00</td>
+                      <td data-label="Status">Awaiting Payment</td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm fw-500" data-label="Number">INV-0012</td>
+                      <td data-label="Ref">P/O 9711</td>
+                      <td class="text-sm fw-500" data-label="To"><i class="fas fa-file-alt"></i> Marinway University
+                      </td>
+                      <td data-label="Date">11 Sep 2021</td>
+                      <td data-label="Due Date">24 Oct 2021</td>
+                      <td data-label="Paid">0.00</td>
+                      <td data-label="Due">234.00</td>
+                      <td data-label="Status">Awaiting Payment</td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm fw-500" data-label="Number">INV-0012</td>
+                      <td data-label="Ref">P/O 9711</td>
+                      <td class="text-sm fw-500" data-label="To"><i class="fas fa-file-alt"></i> Marinway University
+                      </td>
+                      <td data-label="Date">13 Mar 2021</td>
+                      <td data-label="Due Date">26 Jun 2021</td>
+                      <td data-label="Paid">0.00</td>
+                      <td data-label="Due">234.00</td>
+                      <td data-label="Status">Paid</td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm fw-500" data-label="Number">INV-0012</td>
+                      <td data-label="Ref"></td>
+                      <td class="text-sm fw-500" data-label="To"><i class="fas fa-file-alt"></i> Rex Orange</td>
+                      <td data-label="Date">17 Sep 2021</td>
+                      <td data-label="Due Date">18 Apr 2021</td>
+                      <td data-label="Paid">0.00</td>
+                      <td data-label="Due">234.00</td>
+                      <td data-label="Status">Paid</td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm fw-500" data-label="Number">INV-0012</td>
+                      <td data-label="Ref">Training</td>
+                      <td class="text-sm fw-500" data-label="To"><i class="fas fa-file-alt"></i> New Era of Design</td>
+                      <td data-label="Date">09 Jul 2021</td>
+                      <td data-label="Due Date">27 Sep 2021</td>
+                      <td data-label="Paid">0.00</td>
+                      <td data-label="Due">234.00</td>
+                      <td data-label="Status">Awaiting Payment</td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm fw-500" data-label="Number">INV-0012</td>
+                      <td data-label="Ref">Workshop</td>
+                      <td class="text-sm fw-500" data-label="To"><i class="fas fa-file-alt"></i> New Era of Design</td>
+                      <td data-label="Date">16 May 2021</td>
+                      <td data-label="Due Date">10 Nov 2021</td>
+                      <td data-label="Paid">0.00</td>
+                      <td data-label="Due">234.00</td>
+                      <td data-label="Status">Awaiting Payment</td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm fw-500" data-label="Number">INV-0012</td>
+                      <td data-label="Ref">Monthly Support</td>
+                      <td class="text-sm fw-500" data-label="To"><i class="fas fa-file-alt"></i> Rex Orange</td>
+                      <td data-label="Date">17 Jan 2021</td>
+                      <td data-label="Due Date">27 Aug 2021</td>
+                      <td data-label="Paid">0.00</td>
+                      <td data-label="Due">234.00</td>
+                      <td data-label="Status">Awaiting Payment</td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm fw-500" data-label="Number">INV-0012</td>
+                      <td data-label="Ref">Ref MK815</td>
+                      <td class="text-sm fw-500" data-label="To"><i class="fas fa-file-alt"></i> TV Thunder</td>
+                      <td data-label="Date">23 Oct 2021</td>
+                      <td data-label="Due Date">20 Jul 2021</td>
+                      <td data-label="Paid">0.00</td>
+                      <td data-label="Due">234.00</td>
+                      <td data-label="Status">Awaiting Payment</td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm fw-500" data-label="Number">INV-0012</td>
+                      <td data-label="Ref"></td>
+                      <td class="text-sm fw-500" data-label="To"><i class="fas fa-file-alt"></i> Rex Orange</td>
+                      <td data-label="Date">17 Sep 2021</td>
+                      <td data-label="Due Date">18 Apr 2021</td>
+                      <td data-label="Paid">0.00</td>
+                      <td data-label="Due">234.00</td>
+                      <td data-label="Status">Paid</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="invoice-pagination d-flex justify-content-between align-items-center flex-colume-sm">
+                <div class="d-flex align-items-center">
+                  <p class="text-sm">Showing</p>
+                  <select id="cars" class="border-1 me-3 ms-2 border-radius p-2">
+                    <option value="volvo">15</option>
+                    <option value="saab">25</option>
+                    <option value="opel">35</option>
+                    <option value="audi">50</option>
+                  </select>
+                  <span class="text-light-gray text-sm">items per page</span>
+                </div>
+                <div class="pagination-right d-flex align-items-center gap-4 mt-3 mt-md-0">
+                  <button class="btn pagination-btn active">1</button>
+                  <button class="btn pagination-btn">2</button>
+                  <a class="text-light-gray text-decoration-none">Next</a>
+                  <a class="text-light-gray text-decoration-none">End</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add new User</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form>
+              <label for="Customer-name" class="d-block mb-2">User Name</label>
+              <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">User ID</label>
+              <input type="text" placeholder="Please Insert USer ID" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+              <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Email</label>
+              <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Position</label>
+              <input type="text" placeholder="Enter a User Position" class="form-input w-100">
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="posModal" tabindex="-1" aria-labelledby="posModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="posModalLabel">Add New PO</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="full-name" class="fw-bold mb-2 mt-4">PO reference </label>
+                  <input type="text" placeholder="PO-0-00001" class="d-block border border-2 rounded w-100 py-2 px-3">
+                </div>
+              </div>
+              <label for="full-name" class="fw-bold mb-2 mt-4">Select Customer</label>
+              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+                <option value="Member">Risks</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <label for="full-name" class="fw-bold mb-2 mt-4">Select Project</label>
+              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+                <option value="Member">Please insert Project name</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <label for="full-name" class="fw-bold mb-2 mt-4">Project Manager</label>
+              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+                <option value="Member">Please insert Project ID</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="full-name" class="fw-bold mb-2 mt-4">PO Amount</label>
+                  <input type="text" placeholder="Amount" class="d-block border border-2 rounded w-100 py-2 px-3">
+                  <label for="full-name" class="fw-bold mb-2 mt-4">Item name</label>
+                  <input type="text" placeholder="Item Name" class="d-block border border-2 rounded w-100 py-2 px-3">
+                </div>
+                <div class="col-md-6">
+                  <label for="full-name" class="fw-bold mb-2 mt-4">Select Currency</label>
+                  <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+                    <option value="Member">Currency</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                  <label for="full-name" class="fw-bold mb-2 mt-4">Quantity</label>
+                  <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+                    <option value="Member">Quantity</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <a href="" class="d-block text-decoration-none text-light-gray mt-3">+ Add More Item</a>
+                  <label for="full-name" class="fw-bold mb-2 mt-4">Vendor Name</label>
+                  <input type="text" placeholder="Vendor Name" class="d-block border border-2 rounded w-100 py-2 px-3">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="full-name" class="fw-bold mb-2 mt-4">Date</label>
+                  <input type="date" placeholder="select date" class="d-block border border-2 rounded w-100 py-2 px-3">
+                </div>
+                <div class="col-md-6">
+                  <a href="" class="text-light-gray d-block text-decoration-none fs-4 mt-5"><i class="icon icon-link"></i> Attachments</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill text-uppercase">Submit</button>
+            <button type="button" class="btn btn-secondary text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="./assets/js/main.js"></script>
+  <script>
+        $(".interest").click(function(){
+    $(".interest-body").toggle("d-block");
+  });
+  $(".consideration").click(function(){
+    $(".consideration-body").toggle("d-block");
+  });
+  $(".negotiation").click(function(){
+    $(".negotiation-body").toggle("d-block");
+  });
+  </script>
+</body>
+
+</html>

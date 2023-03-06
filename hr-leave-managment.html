@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="side-panel-dropdown">
+            <button class="panel-button dropdown-toggle" type="button">
+              <i class="icon icon-lajou-cafe"></i> Lajou cafe
+            </button>
+            <ul class="panel-dropdown-menu">
+              <li><a class="panel-dropdown-item" href="#">Action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Another action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="./hr-dashboard.html" class="panel_link "><i class="icon icon-overviwe"></i>
+                Overview</a></li>
+            <li><a href="./hr-employee.html" class="panel_link "><i class="icon icon-contact"></i> Employees</a></li>
+            <li><a href="./hr-team-managment.html" class="panel_link "><i class="icon icon-contact"></i> Team
+                Management</a></li>
+            <li><a href="./hr-calender.html" class="panel_link"><i class="icon icon-calander"></i> My Calender</a>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-business"></i>
+                Attendance
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Filing-Dropdown">
+                <li><a class="panel_link " href="./hr-timesheet.html">Timesheets</a></li>
+                <li><a class="panel_link active_panel" href="./hr-leave-managment.html">Leave Management</a></li>
+              </ul>
+            </li>
+            <li><a href="./hr-payroll.html" class="panel_link "><i class="icon icon-overviwe"></i> Payroll</a></li>
+            <li><a href="./hr-user-management.html" class="panel_link "><i class="icon icon-contact"></i> User
+                Management</a></li>
+            <li><a href="#" data-bs-toggle="modal" class="panel_link " data-bs-target="#SettingForm"><i
+                  class="icon icon-contact"></i>
+                Settings</a></li>
+            <li><a href="./job-dashboard.html" class="">Move to Job</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div>
+          <div class="about-profile">
+            <div class="d-none d-md-block">
+              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+                  class="icon icon-plus"></i> Add</button>
+              <a href=""><i class="icon icon-question"></i></a>
+              <a href=""><i class="icon icon-notification"></i></a>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                <h6 class="text-small mt-2">Allen Moreno</h6>
+                <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                  <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <section class="employee-directory">
+            <div class="container">
+              <div class="page-main-title">
+                <div class="heading">
+                    <h1>Leave Management</h1>
+                    <p>Showing 102 results</p>
+                </div>
+                    <button class="btn btn-fill wsm-100 mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#requestModal">New Request</button>
+                </div>
+              <div class="row">
+                <ul class="nav nav-tabs my-3" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase active" id="showing-tab" data-bs-toggle="tab"
+                      data-bs-target="#showing" type="button" role="tab" aria-controls="showing"
+                      aria-selected="false">Showing All</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase" id="all-pending-tab" data-bs-toggle="tab"
+                      data-bs-target="#pending" type="button" role="tab" aria-controls="pending"
+                      aria-selected="true">Pending</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase" id="all-approved-tab" data-bs-toggle="tab"
+                      data-bs-target="#approved" type="button" role="tab" aria-controls="approved"
+                      aria-selected="false">Approved</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase" id="all-rejected-tab" data-bs-toggle="tab"
+                      data-bs-target="#rejected" type="button" role="tab" aria-controls="rejected"
+                      aria-selected="false">Rejected</button>
+                  </li>
+                </ul>
+                <div class="tab-pane active" id="showing" role="tabpanel" aria-labelledby="candidates-tab">
+                  <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="form-control py-2" placeholder="Search for Employee">
+                    <button class="btn px-4 ms-2 ms-md-4 py-2 btn-fill">Search</button>
+                  </div>
+                  <div class="employee-diractory-table invoice-table tablepanel">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>FULL NAME
+                            <span class="ms-2"><i class="fa fa-arrow-down"></i></span>
+                          </th>
+                          <th scope="col" class="ps-3">Status</th>
+                          <th scope="col" class="ps-3">Type</th>
+                          <th scope="col" class="ps-3">From Date</th>
+                          <th scope="col" class="ps-3">To Date</th>
+                          <th scope="col" class="ps-3">Employees</th>
+                          <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-4.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Ronald Haworth</h6>
+                                <p class="text-light-gray text-small">ID76106</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Status">
+                            <button class="btn-pending">Pending</button>
+                          </td>
+                          <td data-label="Type">Unpaid Leave</td>
+                          <td data-label="Form Date">Oct 26, 2020</td>
+                          <td data-label="To Date">Oct 26, 2020</td>
+                          <td data-label="Employees">
+                            <ul class="d-flex justify-content-end justify-content-md-start">
+                              <li> <img src="./assets/images/profile-3.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-4.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-5.png" alt=""> </li>
+                            </ul>
+                          </td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-5.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Geraldine</h6>
+                                <p class="text-light-gray text-small">ID70171</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Status">
+                            <button class="btn-progress">In Progress</button>
+                          </td>
+                          <td data-label="Type">Medical Leave</td>
+                          <td data-label="Form Date">Oct 26, 2020</td>
+                          <td data-label="To Date">Oct 26, 2020</td>
+                          <td data-label="Employees">
+                            <ul class="d-flex justify-content-end justify-content-md-start">
+                              <li> <img src="./assets/images/profile-2.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-6.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-7.png" alt=""> </li>
+                            </ul>
+                          </td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-7.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Dorothy Stevenson</h6>
+                                <p class="text-light-gray text-small">ID49045</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Status">
+                            <button class="btn-pending">Pending</button>
+                          </td>
+                          <td data-label="Type">Medical Leave</td>
+                          <td data-label="Form Date">Oct 26, 2020</td>
+                          <td data-label="To Date">Oct 26, 2020</td>
+                          <td data-label="Employees">
+                            <ul class="d-flex justify-content-end justify-content-md-start">
+                              <li> <img src="./assets/images/profile-1.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-8.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-4.png" alt=""> </li>
+                            </ul>
+                          </td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-6.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Nancy Herrick</h6>
+                                <p class="text-light-gray text-small">ID01001</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Status">
+                            <button class="btn-approved">Approved</button>
+                          </td>
+                          <td data-label="Type">Unpaid Leave</td>
+                          <td data-label="Form Date">Oct 26, 2020</td>
+                          <td data-label="To Date">Oct 26, 2020</td>
+                          <td data-label="Employees">
+                            <ul class="d-flex justify-content-end justify-content-md-start">
+                              <li> <img src="./assets/images/profile-1.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-2.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-3.png" alt=""> </li>
+                            </ul>
+                          </td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-2.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Kristen Davenport</h6>
+                                <p class="text-light-gray text-small">ID38049</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Status">
+                            <button class="btn-approved">Approved</button>
+                          </td>
+                          <td data-label="Type">Medical Leave</td>
+                          <td data-label="Form Date">Oct 26, 2020</td>
+                          <td data-label="To Date">Oct 26, 2020</td>
+                          <td data-label="Employees">
+                            <ul class="d-flex justify-content-end justify-content-md-start">
+                              <li> <img src="./assets/images/profile-4.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-3.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-5.png" alt=""> </li>
+                            </ul>
+                          </td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-9.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Keith Flanign</h6>
+                                <p class="text-light-gray text-small">ID70171</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Status">
+                            <button class="btn-approved">Approved</button>
+                          </td>
+                          <td data-label="Type">Unpaid Leave</td>
+                          <td data-label="Form Date">Oct 26, 2020</td>
+                          <td data-label="To Date">Oct 26, 2020</td>
+                          <td data-label="Employees">
+                            <ul class="d-flex justify-content-end justify-content-md-start">
+                              <li> <img src="./assets/images/profile-5.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-2.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-3.png" alt=""> </li>
+                            </ul>
+                          </td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-4.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Bertha Rangel</h6>
+                                <p class="text-light-gray text-small">ID58341</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Status">
+                            <button class="btn-approved">Approved</button>
+                          </td>
+                          <td data-label="Type">Unpaid Leave</td>
+                          <td data-label="Form Date">Oct 26, 2020</td>
+                          <td data-label="To Date">Oct 26, 2020</td>
+                          <td data-label="Employees">
+                            <ul class="d-flex justify-content-end justify-content-md-start">
+                              <li> <img src="./assets/images/profile-6.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-5.png" alt=""> </li>
+                            </ul>
+                          </td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-5.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Billy Morgan</h6>
+                                <p class="text-light-gray text-small">ID32207</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Status">
+                            <button class="btn-pending">Rejected</button>
+                          </td>
+                          <td data-label="Type">Unpaid Leave</td>
+                          <td data-label="Form Date">Oct 24, 2020</td>
+                          <td data-label="To Date">Oct 24, 2020</td>
+                          <td data-label="Employees">
+                            <ul class="d-flex justify-content-end justify-content-md-start">
+                              <li> <img src="./assets/images/profile-3.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-7.png" alt=""> </li>
+                              <li> <img src="./assets/images/profile-5.png" alt=""> </li>
+                            </ul>
+                          </td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-md-6 d-flex align-items-center">
+                        <p>Items per page:</p>
+                        <select class="form-select w-auto mx-3" aria-label="Default select example">
+                          <option selected>10</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="1">4</option>
+                          <option value="2">5</option>
+                          <option value="3">6</option>
+                          <option value="3">7</option>
+                          <option value="3">8</option>
+                        </select>
+                        <p class="text-light-gray">1-10 of 103 entries</p>
+                      </div>
+                      <div class="col-12 col-md-6 mt-3 mt-md-0">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination justify-content-end">
+                            <li class="page-item disabled">
+                              <a class="page-link bg-transparent border-0" href="#" tabindex="-1"
+                                aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link bg-transparent border-0" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link bg-transparent border-0" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link bg-transparent border-0" href="#">Next</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade management-popup" id="staticBackdrop" data-bs-backdrop="static"
+                  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">New Leave Request</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body py-3">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <label for="">Select Employee<span class="text-danger">*</span></label>
+                            <div class="search text-secondary py-0 px-3">
+                              <i class="fa fa-search"></i>
+                              <input type="text" class="form-control w-100" placeholder="Search for employee">
+                            </div>
+                          </div>
+                          <label for="">Leave Type<span class="text-danger">*</span></label>
+                          <div class="row mb-4">
+                            <a href="#" class="col-6 pe-1 text-decoration-none text-dark medical-box">
+                              <div class="d-flex border rounded p-3 align-items-center me">
+                                <div class="col-4 search-icon">
+                                  <i class="icon icon-job-search"></i>
+                                </div>
+                                <div class="col-8 ms-2">
+                                  <h6>Medical Leave</h6>
+                                  <p class="text-secondary text-small">Workers can stay home to adress their health
+                                    needs without
+                                    losing pay.</p>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="#" class="col-6 pe-1 text-decoration-none text-dark medical-box">
+                              <div class="d-flex border rounded p-3 align-items-center me">
+                                <div class="search-icon col-4">
+                                  <i class="icon icon-job-search"></i>
+                                </div>
+                                <div class="ms-2 col-8">
+                                  <h6>Unpaid Leave</h6>
+                                  <p class="text-secondary text-small">Workers can stay home to adress their health
+                                    needs without
+                                    losing pay.</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="">Leave Date<span class="text-danger">*</span></label>
+                            <div class="cal-date">
+                              <input type="text" class="form-control" placeholder="dd/mm/yyyy" aria-label="Username">
+                              <a href="" class="text-decoration-none text-dark"><i class="fa fa-calendar-days"></i></a>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="">Return Date<span class="text-danger">*</span></label>
+                            <div class="cal-date">
+                              <input type="text" class="form-control" placeholder="dd/mm/yyyy" aria-label="Username">
+                              <a href="" class="text-decoration-none text-dark"><i class="fa fa-calendar-days"></i></a>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="d-flex justify-content-between">
+                              <label for="">Reason<span class="text-danger">*</span></label>
+                              <p class="text-light-gray">0/100</p>
+                            </div>
+                            <textarea class="form-control textarea" placeholder="Write reason here..."
+                              id="floatingTextarea"></textarea>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer d-flex justify-content-between align-items-center">
+                        <button type="button" class="btn border p-2 bg-white fw-600"><i
+                            class="fas fa-question me-2"></i> Need
+                          Help?</button>
+                        <div class="modal-footer-btn">
+                          <button type="button" class="btn btn-secondary bg-transparent border-0"
+                            data-bs-dismiss="modal" style="color: black;">Cancel</button>
+                          <button type="button" class="btn btn-primary confirm-btn">Confirm</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add new User</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form>
+              <label for="Customer-name" class="d-block mb-2">User Name</label>
+              <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">User ID</label>
+              <input type="text" placeholder="Please Insert USer ID" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+              <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Email</label>
+              <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Position</label>
+              <input type="text" placeholder="Enter a User Position" class="form-input w-100">
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="modal fade" id="requestModal" tabindex="-1" aria-labelledby="requestModalLabel" aria-hidden="true">
+  <div class="modal-dialog width-50 wsm-100">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="requestModalLabel">Create Vacation Request</h5>
+        <button type="button" class="btn border border-2 px-5" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="role" class="fw-bold mt-3 mb-2">Vacation Type</label>
+          <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="Annual">Annual Vacation</option>
+            <option value="Child">Child Birth</option>
+            <option value="Death">Death of Relative</option>
+            <option value="Education">Education Leave</option>
+            <option value="Escort">Escort Leave</option>
+            <option value="Exceptional">Exceptional Leave</option>
+            <option value="HAJ">HAJ Leave</option>
+            <option value="Half">Half Day Leave</option>
+            <option value="Marriage">Marriage Leave</option>
+            <option value="Relocation">Relocation Leave</option>
+            <option value="Sinkness">Sinkness</option>
+            <option value="Unpaid">Unpaid Leave</option>
+          </select>
+          <label for="role" class="fw-bold mt-3 mb-2">Vacation Date</label>
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <input type="Date" name="phone" id="phone" placeholder="Start Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+            </div>
+            <div class="col-md-6">
+              <input type="Date" name="phone" id="phone" placeholder="End Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+            </div>
+          </div>
+          <div class="py-4 px-3 bg-light-gray rounded">
+            <h6 class="border-bottom border-2 pb-3 mb-3">Additional Details</h6>
+            <div class="d-flex">
+              <label for="role" class="fw-bold my-2 me-3">Replacement</label>
+              <select name="Role" id="Role" class="d-block width-70 wsm-100 border border-2 rounded px-4 py-2">
+                <option value="Annual">Select a Replacement</option>
+                <option value="Child">Child Birth</option>
+                <option value="Death">Death of Relative</option>
+              </select>
+            </div>
+            <div class="d-flex my-3 ms-3">
+              <label for="role" class="fw-bold my-2 me-4">Comment</label>
+              <textarea name="Comment" id="Comment" cols="75" rows="5" class="d-block width-70 wsm-100 border border-2 rounded px-4 py-2"></textarea>
+            </div>
+            <a href="#" class="text-decoration-none text-fill d-block fw-bold ms-md-5">Add Attachment</a>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-end">
+        <button type="button" class="btn btn-fill px-5">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+
+
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="./assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/graphs.js"></script>
+
+
+</body>
+
+</html>

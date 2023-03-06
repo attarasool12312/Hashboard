@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rhombus</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <link href="https://example.com/" rel="canonical" />
+    <!-- preferred URL - change for you site -->
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="bg-white">
+        <div class="header-main">
+            <div class="sitepanel-toggler m-0">
+                <div class="close">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="search-form header-form d-none d-md-block">
+                <form action="">
+                    <div class="form-group">
+                        <input class="form-control max-width" type="text" placeholder="Search in Rhombus…"
+                            aria-label="Search">
+                        <i class="icon icon-search-form"></i>
+                    </div>
+                </form>
+            </div>
+            <div class="about-profile">
+                <div class="d-none d-md-block">
+                    <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a>
+                    <a href="./sm-account-activities.html"><i class="icon icon-notification"></i></a>
+                </div>
+                <div class="dropdown select-dropdown admin-profile">
+                    <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="profile-img me-2 border-0">
+                        <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                      </div>
+                      <div class="admin-info d-none d-md-block">
+                        <h5 class="">Katie Pena</h5>
+                        <h6 class="text-small text-light-gray">Admin</h6>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <div class="profile-images text-center">
+                        <img src="./assets/images/profile-2.png" alt="">
+                      <h6 class="text-small mt-2">Allen Moreno</h6>
+                      <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                      </div>
+                        <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+    </header>
+    <section class="section-panel">
+        <div class="admin-wrapper">
+            <aside class="aside left-sidbar">
+                <ul>
+                    <li><a href="./sm-overview.html" class="panel_link"><i class="icon icon-overviwe"></i>
+                            Overview</a>
+                    </li>
+                    <li><a href="./sm-trending.html" class="panel_link "><i class="icon icon-trending"></i>
+                            Trending</a></li>
+                    <li><a href="./sm-new-post.html" class="panel_link active_panel"><i class="icon icon-friends"></i>
+                            New Post</a></li>
+                    <li><a href="./sm-collaboration.html" class="panel_link "><i class="icon icon-event"></i> Collaboration</a>
+                    </li>
+                    <li><a href="./sm-link-new-account.html" class="panel_link "><i class="icon icon-memory"></i>Link new account</a></li>
+                    <li><a href="./sm-campaign-analysis.html" class="panel_link "><i class="icon icon-saved-post"></i> Campaign analysis</a>
+                    </li>
+                    <li><a href="./sm-influencers.html" class="panel_link "><i class="icon icon-contact"></i>
+                            Influencers</a></li>
+                            <li><a href="./sm-benchmarking.html" class="panel_link "><i class="icon icon-benchmarking"></i>
+                                Benchmarking</a></li>
+                        <li><a href="./sm-create-template.html" class="panel_link "><i class="icon icon-overviwe"></i>
+                                Create Template</a></li>
+                    <li><a href="#" data-bs-toggle="modal" class="panel_link " data-bs-target="#SettingForm"><i
+                                class="icon icon-contact"></i>
+                            Setting</a></li>
+                </ul>
+            </aside>
+            <main class="main pt-4 pb-4">
+                <div class="container">
+                    <div class="page-main-title">
+                        <h1>New Post</h1>
+                        <div class="d-flex align-iteme-center flex-colume-sm wsm-100 mt-3 mt-md-0">
+                            <button type="button" class="btn ouline-white btn-fill me-md-3" data-bs-toggle="modal"
+                                data-bs-target="#ScheduleModal">Schedule</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="bg-white p-3 profile-images rounded h-100 d-flex flex-column justify-content-between">
+                                <div>
+                                    <img src="./assets/images/profile-2.png" alt="">
+                                    <textarea name="post" id="post" cols="30" rows="7" class="d-block mt-3 fw-600 w-100 border border-2 rounded p-2 bg-light-gray" placeholder="Life is what happens when you're busy making other plans"></textarea>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-2">
+                                    <span class="d-flex align-items-center text-decoration-none text-dark"><i class="icon icon-photo-video-icon me-2"></i>
+                                        <h6 class="text-sm text-sm-9">Photo/video</h6>
+                                    </span>
+                                    <a href="#"><i class="icon icon-share"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <div class="ms-md-4">
+                                <h5>Select post channel:</h5>
+                                <div class="post-channel-profile mt-3">
+                                    <span class="check-tasks">
+                                        <div class="checkbox relative">
+                                          <label class="absolute">
+                                            <input type="checkbox" data-ng-model="example.check">
+                                            <span class="box"></span>
+                                          </label>
+                                        </div>
+                                      </span>
+                                      <div class="d-flex align-items-center">
+                                        <img src="./assets/images/profile-2.png" alt="">
+                                        <div class="ms-2">
+                                            <h6 class="text-small fw-600">Facebook</h6>
+                                            <p class="text-light-gray text-small">@mohammed</p>
+                                        </div>
+                                        <span class="btn-fill px-3 rounded text-small ms-5">5K +</span>
+                                      </div>
+                                </div>
+                                <div class="post-channel-profile mt-3">
+                                    <span class="check-tasks">
+                                        <div class="checkbox relative">
+                                          <label class="absolute">
+                                            <input type="checkbox" data-ng-model="example.check">
+                                            <span class="box"></span>
+                                          </label>
+                                        </div>
+                                      </span>
+                                      <div class="d-flex align-items-center">
+                                        <img src="./assets/images/profile-2.png" alt="">
+                                        <div class="ms-2">
+                                            <h6 class="text-small fw-600">Twitter</h6>
+                                            <p class="text-light-gray text-small">@mohammed</p>
+                                        </div>
+                                        <span class="btn-fill px-3 rounded text-small ms-5">5K +</span>
+                                      </div>
+                                </div>
+                                <div class="post-channel-profile mt-3">
+                                    <span class="check-tasks">
+                                        <div class="checkbox relative">
+                                          <label class="absolute">
+                                            <input type="checkbox" data-ng-model="example.check">
+                                            <span class="box"></span>
+                                          </label>
+                                        </div>
+                                      </span>
+                                      <div class="d-flex align-items-center">
+                                        <img src="./assets/images/profile-2.png" alt="">
+                                        <div class="ms-2">
+                                            <h6 class="text-small fw-600">LinkedIn</h6>
+                                            <p class="text-light-gray text-small">@mohammed</p>
+                                        </div>
+                                        <span class="btn-fill px-3 rounded text-small ms-5">5K +</span>
+                                      </div>
+                                </div>
+                                <div class="post-channel-profile mt-3">
+                                    <span class="check-tasks">
+                                        <div class="checkbox relative">
+                                          <label class="absolute">
+                                            <input type="checkbox" data-ng-model="example.check">
+                                            <span class="box"></span>
+                                          </label>
+                                        </div>
+                                      </span>
+                                      <div class="d-flex align-items-center">
+                                        <img src="./assets/images/profile-2.png" alt="">
+                                        <div class="ms-2">
+                                            <h6 class="text-small fw-600">Instagram</h6>
+                                            <p class="text-light-gray text-small">@mohammed</p>
+                                        </div>
+                                        <span class="btn-fill px-3 rounded text-small ms-5">5K +</span>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="Twitter-tab" data-bs-toggle="tab"
+                                        data-bs-target="#Twitter" type="button" role="tab"
+                                        aria-controls="Twitter" aria-selected="true">Twitter</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="LinkedIn-tab" data-bs-toggle="tab"
+                                        data-bs-target="#LinkedIn" type="button" role="tab"
+                                        aria-controls="LinkedIn" aria-selected="false">LinkedIn</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Youtube-tab" data-bs-toggle="tab"
+                                        data-bs-target="#Youtube" type="button" role="tab"
+                                        aria-controls="Youtube" aria-selected="false">Youtube</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Facebook-tab" data-bs-toggle="tab"
+                                        data-bs-target="#Facebook" type="button" role="tab"
+                                        aria-controls="Facebook" aria-selected="false">Facebook</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-3">
+                                <div class="tab-pane active" id="Twitter" role="tabpanel"
+                                    aria-labelledby="Twitter-tab">
+                                    <div class="invoice-table tablepanel sm-images">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="ps-5">
+                                                        <span class="check-tasks">
+                                                            <div class="checkbox relative">
+                                                                <label class="absolute">
+                                                                    <input type="checkbox"
+                                                                        data-ng-model="example.check">
+                                                                    <span class="box"></span>
+                                                                </label>
+                                                            </div>
+                                                        </span>
+                                                        Posts
+                                                    </th>
+                                                    <th scope="col">country</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">View</th>
+                                                    <th scope="col">Comments</th>
+                                                    <th scope="col">Likes</th>
+                                                    <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="add-component cursor-pointer">
+                                                    <td class="ps-5" scope="row" data-label="Posts">
+                                                        <span class="check-tasks">
+                                                            <div class="checkbox relative">
+                                                                <label class="absolute">
+                                                                    <input type="checkbox"
+                                                                        data-ng-model="example.check">
+                                                                    <span class="box"></span>
+                                                                </label>
+                                                            </div>
+                                                        </span>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                            <img src="./assets/images/sm-table-image-1.png"
+                                                                alt="">
+                                                                <div class="ms-3">
+                                                                    <h6 class="fw-500 text-sm">Daily vlog | My “work from home setup” 2022</h6>
+                                                                    <p class="text-light-gray text-small">Short or long description sed do eiusmod tempor incididunt ut labore et…</p>
+                                                                </div>
+                                                        </div>
+                                                    </td>
+                                                    <td data-label="country">USA</td>
+                                                    <td data-label="Date">27 Feb 2022</td>
+                                                    <td data-label="View">4.760</td>
+                                                    <td data-label="Comments">120</td>
+                                                    <td data-label="Likes">1,2K</td>
+                                                </tr>
+                                                <tr class="add-component cursor-pointer">
+                                                    <td class="ps-5" scope="row" data-label="Posts">
+                                                        <span class="check-tasks">
+                                                            <div class="checkbox relative">
+                                                                <label class="absolute">
+                                                                    <input type="checkbox"
+                                                                        data-ng-model="example.check">
+                                                                    <span class="box"></span>
+                                                                </label>
+                                                            </div>
+                                                        </span>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                            <img src="./assets/images/sm-table-image-2.png"
+                                                                alt="">
+                                                                <div class="ms-3">
+                                                                    <h6 class="fw-500 text-sm">Happy Sunday! Vlog: My daily activity</h6>
+                                                                    <p class="text-light-gray text-small">Short or long description sed do eiusmod tempor incididunt ut labore et…</p>
+                                                                </div>
+                                                        </div>
+                                                    </td>
+                                                    <td data-label="country">SA</td>
+                                                    <td data-label="Date">19 Jun 2022</td>
+                                                    <td data-label="View">4.760</td>
+                                                    <td data-label="Comments">120</td>
+                                                    <td data-label="Likes">1,2K</td>
+                                                </tr>
+                                                <tr class="add-component cursor-pointer">
+                                                    <td class="ps-5" scope="row" data-label="Posts">
+                                                        <span class="check-tasks">
+                                                            <div class="checkbox relative">
+                                                                <label class="absolute">
+                                                                    <input type="checkbox"
+                                                                        data-ng-model="example.check">
+                                                                    <span class="box"></span>
+                                                                </label>
+                                                            </div>
+                                                        </span>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                            <img src="./assets/images/sm-table-image-3.png"
+                                                                alt="">
+                                                                <div class="ms-3">
+                                                                    <h6 class="fw-500 text-sm">Daily vlog | My “work from home setup” 2022</h6>
+                                                                    <p class="text-light-gray text-small">Short or long description sed do eiusmod tempor incididunt ut labore et…</p>
+                                                                </div>
+                                                        </div>
+                                                    </td>
+                                                    <td data-label="country">UK</td>
+                                                    <td data-label="Date">28 Jul 2022</td>
+                                                    <td data-label="View">4.760</td>
+                                                    <td data-label="Comments">120</td>
+                                                    <td data-label="Likes">1,2K</td>
+                                                </tr>
+                                                <tr class="add-component cursor-pointer">
+                                                    <td class="ps-5" scope="row" data-label="Posts">
+                                                        <span class="check-tasks">
+                                                            <div class="checkbox relative">
+                                                                <label class="absolute">
+                                                                    <input type="checkbox"
+                                                                        data-ng-model="example.check">
+                                                                    <span class="box"></span>
+                                                                </label>
+                                                            </div>
+                                                        </span>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                            <img src="./assets/images/sm-table-image-4.png"
+                                                                alt="">
+                                                                <div class="ms-3">
+                                                                    <h6 class="fw-500 text-sm">How To Find Work/Life Balance - Whiteboard…</h6>
+                                                                    <p class="text-light-gray text-small">Short or long description sed do eiusmod tempor incididunt ut labore et…</p>
+                                                                </div>
+                                                        </div>
+                                                    </td>
+                                                    <td data-label="country">QTR</td>
+                                                    <td data-label="Date">25 Jun 2022</td>
+                                                    <td data-label="View">4.760</td>
+                                                    <td data-label="Comments">120</td>
+                                                    <td data-label="Likes">1,2K</td>
+                                                </tr>
+                                                <tr class="add-component cursor-pointer">
+                                                    <td class="ps-5" scope="row" data-label="Posts">
+                                                        <span class="check-tasks">
+                                                            <div class="checkbox relative">
+                                                                <label class="absolute">
+                                                                    <input type="checkbox"
+                                                                        data-ng-model="example.check">
+                                                                    <span class="box"></span>
+                                                                </label>
+                                                            </div>
+                                                        </span>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                            <img src="./assets/images/sm-table-image-5.png"
+                                                                alt="">
+                                                                <div class="ms-3">
+                                                                    <h6 class="fw-500 text-sm">Come up with Better Ideas – Unlock The Power Of Your Subconscious</h6>
+                                                                    <p class="text-light-gray text-small">Short or long description sed do eiusmod tempor incididunt ut labore et…</p>
+                                                                </div>
+                                                        </div>
+                                                    </td>
+                                                    <td data-label="country">IND</td>
+                                                    <td data-label="Date">13 Dec 2022</td>
+                                                    <td data-label="View">4.760</td>
+                                                    <td data-label="Comments">120</td>
+                                                    <td data-label="Likes">1,2K</td>
+                                                </tr>
+                                                <tr class="add-component cursor-pointer">
+                                                    <td class="ps-5" scope="row" data-label="Posts">
+                                                        <span class="check-tasks">
+                                                            <div class="checkbox relative">
+                                                                <label class="absolute">
+                                                                    <input type="checkbox"
+                                                                        data-ng-model="example.check">
+                                                                    <span class="box"></span>
+                                                                </label>
+                                                            </div>
+                                                        </span>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                            <img src="./assets/images/sm-table-image-6.png"
+                                                                alt="">
+                                                                <div class="ms-3">
+                                                                    <h6 class="fw-500 text-sm">How Design Thinking Transforms Organizations and Inspires in…</h6>
+                                                                    <p class="text-light-gray text-small">Short or long description sed do eiusmod tempor incididunt ut labore et…</p>
+                                                                </div>
+                                                        </div>
+                                                    </td>
+                                                    <td data-label="country">PK</td>
+                                                    <td data-label="Date">12 Feb 2022</td>
+                                                    <td data-label="View">4.760</td>
+                                                    <td data-label="Comments">120</td>
+                                                    <td data-label="Likes">1,2K</td>
+                                                </tr>
+                                                <tr class="add-component cursor-pointer">
+                                                    <td class="ps-5" scope="row" data-label="Posts">
+                                                        <span class="check-tasks">
+                                                            <div class="checkbox relative">
+                                                                <label class="absolute">
+                                                                    <input type="checkbox"
+                                                                        data-ng-model="example.check">
+                                                                    <span class="box"></span>
+                                                                </label>
+                                                            </div>
+                                                        </span>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                            <img src="./assets/images/sm-table-image-7.png"
+                                                                alt="">
+                                                                <div class="ms-3">
+                                                                    <h6 class="fw-500 text-sm">Weekend maraton! one day one  painting project</h6>
+                                                                    <p class="text-light-gray text-small">Short or long description sed do eiusmod tempor incididunt ut labore et…</p>
+                                                                </div>
+                                                        </div>
+                                                    </td>
+                                                    <td data-label="country">CH</td>
+                                                    <td data-label="Date">11 Feb 2022</td>
+                                                    <td data-label="View">4.760</td>
+                                                    <td data-label="Comments">120</td>
+                                                    <td data-label="Likes">1,2K</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="right-content">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center flex-column">
+                                                    <button type="button" class="btn ouline-white width-100px btn-fill">Likes</button>
+                                                    <button type="button" class="btn ouline-white width-100px mt-1">20K</button>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-column">
+                                                    <button type="button" class="btn ouline-white width-100px btn-fill">Comments</button>
+                                                    <button type="button" class="btn ouline-white width-100px mt-1">20K</button>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-column">
+                                                    <button type="button" class="btn ouline-white width-100px btn-fill">Shares</button>
+                                                    <button type="button" class="btn ouline-white width-100px mt-1">10</button>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-column">
+                                                    <button type="button" class="btn ouline-white width-100px btn-fill">Engagement</button>
+                                                    <button type="button" class="btn ouline-white width-100px mt-1">20</button>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-column">
+                                                    <button type="button" class="btn ouline-white width-100px btn-fill">Reactions</button>
+                                                    <button type="button" class="btn ouline-white width-100px mt-1">255</button>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-column">
+                                                    <button type="button" class="btn ouline-white width-100px btn-fill">Impression</button>
+                                                    <button type="button" class="btn ouline-white width-100px mt-1">100,000</button>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-column">
+                                                    <button type="button" class="btn ouline-white width-100px btn-fill">Reach</button>
+                                                    <button type="button" class="btn ouline-white width-100px mt-1">120,000</button>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-column">
+                                                    <button type="button" class="btn ouline-white width-100px btn-fill">Interaction</button>
+                                                    <button type="button" class="btn ouline-white width-100px mt-1">310</button>
+                                                </div>
+                                                <a href="./sm-trend-analysis.html" class="text-light-gray fw-600">See More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="modal fade" id="ScheduleModal" tabindex="-1" aria-labelledby="ScheduleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ScheduleModalLabel">Schedule Post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="phone" class="fw-bold mt-3 mb-2">Schedule Post</label>
+                                <input type="date" name="phone" id="phone" placeholder="Please select date"
+                                    class="d-block w-100 border border-2 rounded px-4 py-2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-fill px-5 text-uppercase">add</button>
+                        <button type="button" class="btn border border-2 px-5 text-uppercase"
+                            data-bs-dismiss="modal">cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- JavaScript
+================================================== -->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        $(".add-component").click(function () {
+  $(".right-content").addClass("d-block");
+});
+</script>
+</body>
+
+</html>

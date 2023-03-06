@@ -1,0 +1,91 @@
+body {
+  background-color: #ededed !important;
+}
+
+.employee-directory {
+  padding-top: 15px;
+  .employee-directory-title {
+    p {
+      color: gray;
+    }
+  }
+
+  .nav-tabs {
+    border-bottom: 1px solid #d5d5d5;
+    li {
+      a {
+        border: none;
+        color: gray;
+      }
+      .active {
+        border: none !important;
+        color: black;
+        border-bottom: 2px solid blue !important;
+        background: transparent;
+      }
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: white;
+    .fa-search {
+      display: flex;
+      align-items: center;
+      margin-right: -28px;
+      z-index: 0;
+    }
+    .form-control {
+      padding-left: 45px;
+    }
+  }
+
+  .invoice-table {
+    P {
+      margin-bottom: 0px;
+    }
+    h6 {
+      margin-bottom: 0px;
+    }
+    .table {
+      thead {
+        border-top: 1px solid #ededed;
+        th {
+          padding-top: 16px;
+          padding-bottom: 16px;
+        }
+      }
+      tr {
+        border-bottom: 1px solid #ededed;
+      }
+      td {
+        vertical-align: middle;
+      }
+      .icon-dots {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .pagination {
+    .pagination-left {
+      align-items: center;
+      gap: 20px;
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.cal-date {
+  position: relative;
+  .fa-calendar-days {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

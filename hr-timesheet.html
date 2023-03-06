@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rhombus</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="side-panel-dropdown">
+            <button class="panel-button dropdown-toggle" type="button">
+              <i class="icon icon-lajou-cafe"></i> Lajou cafe
+            </button>
+            <ul class="panel-dropdown-menu">
+              <li><a class="panel-dropdown-item" href="#">Action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Another action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="./hr-dashboard.html" class="panel_link "><i class="icon icon-overviwe"></i>
+                Overview</a></li>
+            <li><a href="./hr-employee.html" class="panel_link "><i class="icon icon-contact"></i> Employees</a></li>
+            <li><a href="./hr-team-managment.html" class="panel_link "><i class="icon icon-contact"></i> Team
+                Management</a></li>
+            <li><a href="./hr-calender.html" class="panel_link "><i class="icon icon-calander"></i> My Calender</a>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-business"></i>
+                Attendance
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Filing-Dropdown">
+                <li><a class="panel_link active_panel" href="./hr-timesheet.html">Timesheets</a></li>
+                <li><a class="panel_link" href="./hr-leave-managment.html">Leave Management</a></li>
+              </ul>
+            </li>
+            <li><a href="./hr-payroll.html" class="panel_link "><i class="icon icon-overviwe"></i> Payroll</a></li>
+            <li><a href="./hr-user-management.html" class="panel_link "><i class="icon icon-contact"></i> User
+                Management</a></li>
+            <li><a href="#" data-bs-toggle="modal" class="panel_link " data-bs-target="#SettingForm"><i
+                  class="icon icon-contact"></i>
+                Settings</a></li>
+            <li><a href="./job-dashboard.html" class="">Move to Job</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div>
+          <div class="about-profile">
+            <div class="d-none d-md-block">
+              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+                  class="icon icon-plus"></i> Add</button>
+              <a href=""><i class="icon icon-question"></i></a>
+              <a href=""><i class="icon icon-notification"></i></a>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                <h6 class="text-small mt-2">Allen Moreno</h6>
+                <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                  <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <section class="employee-directory">
+            <div class="row">
+              <div class="d-flex justify-content-between align-items-center flex-colume-sm">
+                <div class="employee-directory-title">
+                  <h2>Attendance: November 2020</h2>
+                  <p>Statement period: November 1, 2020 to November 30, 2020</p>
+                </div>
+                <div class="d-flex align-items-center flex-colume-sm wsm-100">
+                  <button type="button" class="btn ouline-white btn-fill me-md-3 wsm-100">Upload CSV</button>
+                  <button type="button" class="btn ouline-white btn-fill wsm-100 my-3 my-md-0" data-bs-toggle="modal"
+                    data-bs-target="#addNew">Add New</button>
+                </div>
+              </div>
+              <div class="row w-100 section-panel m-0">
+                <div class="col-12 col-md-2 pe-md-0">
+                  <div class="chart admin-wrapper">
+                    <div class="aside-1">
+                      <ul>
+                        <li class="nav-item panel-dropdown">
+                          <a class="dropdown-btn nav-link dropdown-toggle" href="#" id="Business-Dropdown-1"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon icon-folder"></i>
+                            2021
+                          </a>
+                          <ul class="Business-Dropdown-1" aria-labelledby="Filing-Dropdown">
+                            <li><a class="" href=""><i class="icon icon-file-icon"></i> Docember</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>November</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>October</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>September</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>August</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>July</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>June</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>May</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>April</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>March</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>February</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>January</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item panel-dropdown">
+                          <a class="dropdown-btn nav-link dropdown-toggle" href="#" id="Transactions-Dropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon icon-folder"></i>
+                            2020
+                          </a>
+                          <ul class="transactions-dropdown Transactions-Dropdown show"
+                            aria-labelledby="Filing-Dropdown">
+                            <li><a class="" href=""><i class="icon icon-file-icon"></i> Docember</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>November</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>October</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>September</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>August</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>July</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>June</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>May</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>April</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>March</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>February</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>January</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item panel-dropdown">
+                          <a class="dropdown-btn nav-link dropdown-toggle" href="#" id="Setting-Dropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon icon-folder"></i>
+                            2019
+                          </a>
+                          <ul class="Setting-Dropdown" aria-labelledby="Filing-Dropdown">
+                            <li><a class="" href=""><i class="icon icon-file-icon"></i> Docember</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>November</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>October</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>September</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>August</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>July</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>June</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>May</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>April</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>March</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>February</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>January</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item panel-dropdown">
+                          <a class="dropdown-btn nav-link dropdown-toggle" href="#" id="Sales-Dropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon icon-folder"></i>
+                            2018
+                          </a>
+                          <ul class="Sales-Dropdown" aria-labelledby="Filing-Dropdown">
+                            <li><a class="" href=""><i class="icon icon-file-icon"></i> Docember</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>November</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>October</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>September</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>August</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>July</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>June</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>May</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>April</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>March</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>February</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>January</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item panel-dropdown">
+                          <a class="dropdown-btn nav-link dropdown-toggle" href="#" id="Setting-Dropdown-1"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon icon-folder"></i>
+                            2017
+                          </a>
+                          <ul class="Setting-Dropdown-1" aria-labelledby="Filing-Dropdown">
+                            <li><a class="" href=""><i class="icon icon-file-icon"></i> Docember</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>November</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>October</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>September</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>August</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>July</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>June</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>May</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>April</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>March</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>February</a></li>
+                            <li><a class="" href="#"><i class="icon icon-file-icon"></i>January</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-10 mt-3 mt-md-0">
+                  <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="form-control py-2" placeholder="Search for Employee">
+                    <button class="btn px-4 ms-2 ms-md-4 py-2 btn-fill">Search</button>
+                  </div>
+                  <div class="invoice-table invoice-table-timesheet tablepanel">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span><span class="fw-600">Full Name</span>
+                          </th>
+                          <th scope="col"><span class="fw-600">Team</span></th>
+                          <th scope="col"><span class="fw-600">Finance</span></th>
+                          <th scope="col"><span class="fw-600">Due Date</span></th>
+                          <th scope="col"><span class="fw-600">Last Date</span></th>
+                          <th scope="col"><span class="fw-600">Percentage</span></th>
+                          <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-2.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Alia Davidson</h6>
+                                <p class="text-light-gray">ID76106</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Team">Control Room A</td>
+                          <td data-label="Finance">Finance</td>
+                          <td data-label="Due Date">29days</td>
+                          <td data-label="Last Date">1day</td>
+                          <td data-label="Percentage">96%</td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-3.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Caroline Maher</h6>
+                                <p class="text-light-gray">ID70171</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Team">West Wing A</td>
+                          <td data-label="Finance">Finance</td>
+                          <td data-label="Due Date">29days</td>
+                          <td data-label="Last Date">1day</td>
+                          <td data-label="Percentage">95%</td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-4.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Edward Houston</h6>
+                                <p class="text-light-gray">ID49045</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Team">West Wing B</td>
+                          <td data-label="Finance">Finance</td>
+                          <td data-label="Due Date">29days</td>
+                          <td data-label="Last Date">1day</td>
+                          <td data-label="Percentage">96.5%</td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-5.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Eileen Reed</h6>
+                                <p class="text-light-gray">ID01001</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Team">South Courtyard</td>
+                          <td data-label="Finance">Finance</td>
+                          <td data-label="Due Date">29days</td>
+                          <td data-label="Last Date">1day</td>
+                          <td data-label="Percentage">99%</td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-6.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Elicia Robson</h6>
+                                <p class="text-light-gray">ID38049</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Team">Control Room A</td>
+                          <td data-label="Finance">Recruitment</td>
+                          <td data-label="Due Date">29days</td>
+                          <td data-label="Last Date">1day</td>
+                          <td data-label="Percentage">96%</td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-7.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Gregorio Sears</h6>
+                                <p class="text-light-gray">ID70171</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Team">Control Room A</td>
+                          <td data-label="Finance">Public Relations</td>
+                          <td data-label="Due Date">30days</td>
+                          <td data-label="Last Date">0day</td>
+                          <td data-label="Percentage">100%</td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-9.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Kody Avalos</h6>
+                                <p class="text-light-gray">ID58341</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Team">Control Room B</td>
+                          <td data-label="Finance">Public Relations/td>
+                          <td data-label="Due Date">30days</td>
+                          <td data-label="Last Date">0day</td>
+                          <td data-label="Percentage">90%</td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-10.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Kay Usher</h6>
+                                <p class="text-light-gray">ID32207</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Team">West Wing A</td>
+                          <td data-label="Finance">Finance</td>
+                          <td data-label="Due Date">21days</td>
+                          <td data-label="Last Date">9days</td>
+                          <td data-label="Percentage">94%</td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="ps-5" data-label="Full Name">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                              <img src="./assets/images/profile-4.png" alt="">
+                              <div class="ms-3 ">
+                                <h6 class="text-sm">Leandro James</h6>
+                                <p class="text-light-gray">ID08012</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Team">North Wing B</td>
+                          <td data-label="Finance">Public Relations</td>
+                          <td data-label="Due Date">23days</td>
+                          <td data-label="Last Date">7days</td>
+                          <td data-label="Percentage">82%</td>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2"><i
+                                class="icon icon-dots"></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="invoice-pagination d-flex justify-content-between align-items-center flex-colume-sm">
+                    <div class="d-flex align-items-center">
+                      <p class="text-sm m-0">Showing</p>
+                      <select id="cars" class="border-1 me-3 ms-2 border-radius p-2">
+                        <option value="volvo">15</option>
+                        <option value="saab">25</option>
+                        <option value="opel">35</option>
+                        <option value="audi">50</option>
+                      </select>
+                      <span class="text-light-gray text-sm">items per page</span>
+                    </div>
+                    <div class="pagination-right d-flex align-items-center gap-4 mt-3 mt-md-0">
+                      <button class="btn pagination-btn active">1</button>
+                      <button class="btn pagination-btn">2</button>
+                      <a class="text-light-gray text-decoration-none">Next</a>
+                      <a class="text-light-gray text-decoration-none">End</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="modal fade project-popup-1" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="invoice-table invoice-table-timesheet border-bottom">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td scope="row" class="ps-2">
+                      <div class="d-flex align-items-center">
+                        <img src="./assets/images/profile-2.png" alt="">
+                        <div class="ms-3 ">
+                          <h6 class="text-sm">Alia Davidson</h6>
+                          <p class="text-light-gray">ID76106</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="text-light-gray">PRESENT</p>
+                      <h6 class="text-sm">27days</h6>
+                    </td>
+                    <td>
+                      <p class="text-light-gray">ABSENT</p>
+                      <h6 class="text-sm">3days</h6>
+                    </td>
+                    <td>
+                      <p class="text-light-gray">HOURS WORKED</p>
+                      <h6 class="text-sm">295 hours</h6>
+                    </td>
+                    <td>
+                      <button type="button" class="btn ouline-white border">View Profile</button>
+                    </td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2"><i
+                          class="icon icon-dots"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="text-light-gray fw-600">Date</th>
+                  <th class="text-light-gray fw-600">Status</th>
+                  <th class="text-light-gray fw-600">Type</th>
+                  <th class="text-light-gray fw-600">Clock In</th>
+                  <th class="text-light-gray fw-600">Clock Out</th>
+                  <th class="text-light-gray fw-600">OverTime</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <h6 class="fw-600 m-0">30 NOV, 2020</h6>
+                    <p class="text-light-gray m-0">Monday</p>
+                  </td>
+                  <td>
+                    <button class="btn-approved rounded">Present</button>
+                  </td>
+                  <td>
+                    <h6 class="fw-600"><i class="icon icon-project"></i>Normal Day</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">8:56:46 AM</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">6:06:07 PM</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">0 hours</h6>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6 class="fw-600 m-0">29 NOV, 2020</h6>
+                    <p class="text-light-gray m-0">Sunday</p>
+                  </td>
+                  <td>
+                    <button class="btn-approved rounded">Absent</button>
+                  </td>
+                  <td>
+                    <h6 class="fw-600"><i class="icon icon-project"></i>Unpiad Leave</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">-:-:-</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">-:-:-</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">0 hours</h6>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6 class="fw-600 m-0">28 NOV, 2020</h6>
+                    <p class="text-light-gray m-0">Saturday</p>
+                  </td>
+                  <td>
+                    <button class="btn-approved rounded">Present</button>
+                  </td>
+                  <td>
+                    <h6 class="fw-600"><i class="icon icon-project"></i>Normal Day</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">8:56:46 AM</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">6:06:07 PM</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">0 hours</h6>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6 class="fw-600 m-0">27 NOV, 2020</h6>
+                    <p class="text-light-gray m-0">Friday</p>
+                  </td>
+                  <td>
+                    <button class="btn-approved rounded">Present</button>
+                  </td>
+                  <td>
+                    <h6 class="fw-600"><i class="icon icon-project"></i>Normal Day</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">8:56:46 AM</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">6:06:07 PM</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">0 hours</h6>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6 class="fw-600 m-0">26 NOV, 2020</h6>
+                    <p class="text-light-gray m-0">Thursday</p>
+                  </td>
+                  <td>
+                    <button class="btn-approved rounded">Absent</button>
+                  </td>
+                  <td>
+                    <h6 class="fw-600"><i class="icon icon-project"></i>Public Holiday</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">-:-:-</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">-:-:-</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">0 hours</h6>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6 class="fw-600 m-0">25 NOV, 2020</h6>
+                    <p class="text-light-gray m-0">Wednesday</p>
+                  </td>
+                  <td>
+                    <button class="btn-approved rounded">Present</button>
+                  </td>
+                  <td>
+                    <h6 class="fw-600"><i class="icon icon-project"></i>Off Day</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">8:56:46 AM</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">6:06:07 PM</h6>
+                  </td>
+                  <td>
+                    <h6 class="fw-600">3 hours</h6>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="addNew" tabindex="-1" aria-labelledby="addNewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add New</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="upload-file">
+              <div class="file-upload">
+                <figure>
+                  <img id="chosen-image">
+                  <figcaption id="file-name">
+                  </figcaption>
+                </figure>
+                <input type="file" id="upload-button" accept="image/*" />
+                <label for="upload-button">
+                  Add Image
+                </label>
+              </div>
+            </div>
+            <label for="full-name" class="fw-bold mb-2 mt-4">Full Name</label>
+            <input type="text" placeholder="Full Name" class="d-block border border-2 rounded w-100 py-2 px-3">
+            <label for="full-name" class="fw-bold mb-2 mt-4">Team</label>
+            <input type="text" placeholder="Add a Team" class="d-block border border-2 rounded w-100 py-2 px-3">
+            <label for="full-name" class="fw-bold mb-2 mt-4">Finance</label>
+            <input type="text" placeholder="Add a Finance" class="d-block border border-2 rounded w-100 py-2 px-3">
+            <label for="full-name" class="fw-bold mb-2 mt-4">Due Date</label>
+            <input type="date" placeholder="Add a Due Date" class="d-block border border-2 rounded w-100 py-2 px-3">
+            <label for="full-name" class="fw-bold mb-2 mt-4">Last Date</label>
+            <input type="date" placeholder="Add a Last Date" class="d-block border border-2 rounded w-100 py-2 px-3">
+            <label for="full-name" class="fw-bold mb-2 mt-4">Percentage</label>
+            <input type="number" placeholder="Add a Percentage" class="d-block border border-2 rounded w-100 py-2 px-3">
+            <label for="full-name" class="fw-bold mb-2 mt-4">Category</label>
+            <select name="category" id="category" class="d-block border border-2 rounded w-100 py-2 px-3">
+              <option value="category">2023</option>
+              <option value="category">2022</option>
+              <option value="category">2021</option>
+              <option value="category">2020</option>
+            </select>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn border border-2" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-fill">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add new User</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form>
+              <label for="Customer-name" class="d-block mb-2">User Name</label>
+              <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">User ID</label>
+              <input type="text" placeholder="Please Insert USer ID" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+              <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Email</label>
+              <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Position</label>
+              <input type="text" placeholder="Enter a User Position" class="form-input w-100">
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="./assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/graphs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

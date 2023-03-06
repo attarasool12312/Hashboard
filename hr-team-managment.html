@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="side-panel-dropdown">
+            <button class="panel-button dropdown-toggle" type="button">
+              <i class="icon icon-lajou-cafe"></i> Lajou cafe
+            </button>
+            <ul class="panel-dropdown-menu">
+              <li><a class="panel-dropdown-item" href="#">Action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Another action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="./hr-dashboard.html" class="panel_link "><i class="icon icon-overviwe"></i>
+                Overview</a></li>
+            <li><a href="./hr-employee.html" class="panel_link "><i class="icon icon-contact"></i> Employees</a></li>
+            <li><a href="./hr-team-managment.html" class="panel_link active_panel"><i class="icon icon-contact"></i>
+                Team
+                Management</a></li>
+            <li><a href="./hr-calender.html" class="panel_link "><i class="icon icon-calander"></i> My Calender</a>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-business"></i>
+                Attendance
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Filing-Dropdown">
+                <li><a class="panel_link " href="./hr-timesheet.html">Timesheets</a></li>
+                <li><a class="panel_link " href="./hr-leave-managment.html">Leave Management</a></li>
+              </ul>
+            </li>
+            <li><a href="./hr-payroll.html" class="panel_link "><i class="icon icon-overviwe"></i> Payroll</a></li>
+            <li><a href="./hr-user-management.html" class="panel_link "><i class="icon icon-contact"></i> User
+                Management</a></li>
+            <li><a href="#" data-bs-toggle="modal" class="panel_link " data-bs-target="#SettingForm"><i
+                  class="icon icon-contact"></i>
+                Settings</a></li>
+            <li><a href="./job-dashboard.html" class="">Move to Job</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div>
+          <div class="about-profile">
+            <div class="d-none d-md-block">
+              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+                  class="icon icon-plus"></i> Add</button>
+              <a href=""><i class="icon icon-question"></i></a>
+              <a href=""><i class="icon icon-notification"></i></a>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                <h6 class="text-small mt-2">Allen Moreno</h6>
+                <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                  <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+
+          <section class="team-managment">
+            <div class="team-management-title">
+              <div class="container">
+                <h2>Team Managment</h2>
+                <div class="search">
+                  <i class="fa fa-search"></i>
+                  <input type="text" class="form-control" placeholder="Search for employee">
+                </div>
+              </div>
+            </div>
+            <div class="team-management-table">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <a href="#" class="card-body text-center create-card text-decoration-none text-dark"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div class="search-icon">
+                          <i class="icon icon-plus"></i>
+                        </div>
+                        <h5 class="card-title">Create Team</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Create a new team where you can add and track ypur
+                          employee</h6>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Dev Ops</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Team R Colby</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Dev Ops</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Team R Colby</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Dev Ops</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Team R Colby</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Management</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Sara Golden</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Finance Team</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Ron Meady</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Dev Ops</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Team R Colby</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Dev Ops</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Team R Colby</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Product Development</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Ursula Mitchell</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Quality Assurance</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Joseph Perez</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">A/B Testing</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Terry Cobb</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Localisation Team</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Barbara Huff</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Web & Mobile Team</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Team R Colby</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Internal Testing</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Team R Colby</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Marketing Analysis</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Team R Colby</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h6 class="fw-600">Visual Design</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="icon icon-dots"></i></a>
+                        </div>
+                        <p class="text-light-gray text-small mb-2"><i class="fa fa-clock"></i> 04:00:00 - 17:00:00</p>
+                        <div class="social-noticications">
+                          <ul class="images">
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social1.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social3.svg" alt=""></li>
+                            <li><img src="./assets/images/icons/social2.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/profile-10.png" alt="">
+                          <div>
+                            <select class="form-select border-0 ps-3 pe-5 py-0 fw-500 text-primary"
+                              aria-label="Default select example">
+                              <option selected>Team R Colby</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <p class="ms-3">Team Leader</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add new User</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form>
+              <label for="Customer-name" class="d-block mb-2">User Name</label>
+              <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">User ID</label>
+              <input type="text" placeholder="Please Insert USer ID" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+              <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Email</label>
+              <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Position</label>
+              <input type="text" placeholder="Enter a User Position" class="form-input w-100">
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade team-management-popup" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog width-70">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Manage Team</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="manage-team">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 left-popup">
+                    <form class="row">
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label">Team Name*</label>
+                        <input type="text" class="form-control mb-3" id="inputAddress" placeholder="Add Team Name">
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="inputState" class="form-label">Shift Type*</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Fixed Shift</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="inputState" class="form-label">Shift Timing*</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>09:00 AM - 07:00 PM</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div>
+                        <div class="input-group border border-2 p-3 border-bottom-0">
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                            placeholder="Search for Employee">
+                          <button class="btn btn-outline-secondary dropdown-toggle p-2 filter-button" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Filter By</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <table class="table border border-2">
+                          <thead>
+                            <tr>
+                              <th scope="col" class="ps-5 border-bottom py-3 fw-500">
+                                <span class="check-tasks">
+                                  <div class="checkbox relative">
+                                    <label class="absolute">
+                                      <input type="checkbox" data-ng-model="example.check">
+                                      <span class="box"></span>
+                                    </label>
+                                  </div>
+                                </span>FULL NAME
+                              </th>
+                              <th scope="col" class="ps-3 border-bottom py-3 fw-500">DEPARTMENT</th>
+                              <th scope="col" class="ps-3 border-bottom py-3 fw-500">ROLE</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row" class="ps-5">
+                                <span class="check-tasks">
+                                  <div class="checkbox relative">
+                                    <label class="absolute">
+                                      <input type="checkbox" data-ng-model="example.check">
+                                      <span class="box"></span>
+                                    </label>
+                                  </div>
+                                </span>
+                                <div class="d-flex align-items-center">
+                                  <img src="./assets/images/profile-4.png" alt="">
+                                  <div class="ms-3 ">
+                                    <h6 class="text-sm">Ronald Haworth</h6>
+                                    <p class="text-light-gray text-small">ID76106</p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>Finance</td>
+                              <td>Member</td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="ps-5">
+                                <span class="check-tasks">
+                                  <div class="checkbox relative">
+                                    <label class="absolute">
+                                      <input type="checkbox" data-ng-model="example.check">
+                                      <span class="box"></span>
+                                    </label>
+                                  </div>
+                                </span>
+                                <div class="d-flex align-items-center">
+                                  <img src="./assets/images/profile-5.png" alt="">
+                                  <div class="ms-3 ">
+                                    <h6 class="text-sm">Geraldine</h6>
+                                    <p class="text-light-gray text-small">ID70171</p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>Finance</td>
+                              <td>Member</td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="ps-5">
+                                <span class="check-tasks">
+                                  <div class="checkbox relative">
+                                    <label class="absolute">
+                                      <input type="checkbox" data-ng-model="example.check">
+                                      <span class="box"></span>
+                                    </label>
+                                  </div>
+                                </span>
+                                <div class="d-flex align-items-center">
+                                  <img src="./assets/images/profile-7.png" alt="">
+                                  <div class="ms-3 ">
+                                    <h6 class="text-sm">Dorothy Stevenson</h6>
+                                    <p class="text-light-gray text-small">ID49045</p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>Finance</td>
+                              <td>Member</td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="ps-5">
+                                <span class="check-tasks">
+                                  <div class="checkbox relative">
+                                    <label class="absolute">
+                                      <input type="checkbox" data-ng-model="example.check">
+                                      <span class="box"></span>
+                                    </label>
+                                  </div>
+                                </span>
+                                <div class="d-flex align-items-center">
+                                  <img src="./assets/images/profile-6.png" alt="">
+                                  <div class="ms-3 ">
+                                    <h6 class="text-sm">Nancy Herrick</h6>
+                                    <p class="text-light-gray text-small">ID01001</p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>Finance</td>
+                              <td>Member</td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="ps-5">
+                                <span class="check-tasks">
+                                  <div class="checkbox relative">
+                                    <label class="absolute">
+                                      <input type="checkbox" data-ng-model="example.check">
+                                      <span class="box"></span>
+                                    </label>
+                                  </div>
+                                </span>
+                                <div class="d-flex align-items-center">
+                                  <img src="./assets/images/profile-2.png" alt="">
+                                  <div class="ms-3 ">
+                                    <h6 class="text-sm">Kristen Davenport</h6>
+                                    <p class="text-light-gray text-small">ID38049</p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>Finance</td>
+                              <td>Member</td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="ps-5">
+                                <span class="check-tasks">
+                                  <div class="checkbox relative">
+                                    <label class="absolute">
+                                      <input type="checkbox" data-ng-model="example.check">
+                                      <span class="box"></span>
+                                    </label>
+                                  </div>
+                                </span>
+                                <div class="d-flex align-items-center">
+                                  <img src="./assets/images/profile-9.png" alt="">
+                                  <div class="ms-3 ">
+                                    <h6 class="text-sm">Keith Flanign</h6>
+                                    <p class="text-light-gray text-small">ID70171</p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>Finance</td>
+                              <td>Member</td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="ps-5">
+                                <span class="check-tasks">
+                                  <div class="checkbox relative">
+                                    <label class="absolute">
+                                      <input type="checkbox" data-ng-model="example.check">
+                                      <span class="box"></span>
+                                    </label>
+                                  </div>
+                                </span>
+                                <div class="d-flex align-items-center">
+                                  <img src="./assets/images/profile-4.png" alt="">
+                                  <div class="ms-3 ">
+                                    <h6 class="text-sm">Bertha Rangel</h6>
+                                    <p class="text-light-gray text-small">ID58341</p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>Finance</td>
+                              <td>Member</td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="ps-5">
+                                <span class="check-tasks">
+                                  <div class="checkbox relative">
+                                    <label class="absolute">
+                                      <input type="checkbox" data-ng-model="example.check">
+                                      <span class="box"></span>
+                                    </label>
+                                  </div>
+                                </span>
+                                <div class="d-flex align-items-center">
+                                  <img src="./assets/images/profile-5.png" alt="">
+                                  <div class="ms-3 ">
+                                    <h6 class="text-sm">Billy Morgan</h6>
+                                    <p class="text-light-gray text-small">ID32207</p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>Finance</td>
+                              <td>Member</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-4">
+                    <table class="table table-right">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="pt-3">Unclassified Employee</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="card-profile d-flex align-items-center">
+                              <img src="./assets/images/prof-img-1.png" alt="#">
+                              <div class="card-pro-title ms-2">
+                                <h6>Edward Houstan</h6>
+                                <p>ID 49045</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="card-profile d-flex align-items-center">
+                              <img src="./assets/images/profile-2.png" alt="#">
+                              <div class="card-pro-title ms-2">
+                                <h6>Waren Reid</h6>
+                                <p>ID 01940</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="card-profile d-flex align-items-center">
+                              <img src="./assets/images/profile-3.png" alt="#">
+                              <div class="card-pro-title ms-2">
+                                <h6>Tracy D Langston</h6>
+                                <p>ID 80302</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="card-profile d-flex align-items-center">
+                              <img src="./assets/images/profile-3.png" alt="#">
+                              <div class="card-pro-title ms-2">
+                                <h6>Pablo D Dominguez</h6>
+                                <p>ID 032455</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="card-profile d-flex align-items-center">
+                              <img src="./assets/images/profile-4.png" alt="#">
+                              <div class="card-pro-title ms-2">
+                                <h6>Kely J Heurtas</h6>
+                                <p>ID 60610</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="card-profile d-flex align-items-center">
+                              <img src="./assets/images/profile-5.png" alt="#">
+                              <div class="card-pro-title ms-2">
+                                <h6>Heather J Gomez</h6>
+                                <p>ID 29601</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="card-profile d-flex align-items-center">
+                              <img src="./assets/images/profile-6.png" alt="#">
+                              <div class="card-pro-title ms-2">
+                                <h6>Janqueline N Williams</h6>
+                                <p>ID 10013</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-end align-items-center">
+            <div class="modal-footer-btn">
+              <button type="button" class="btn btn-secondary bg-transparent border-0" data-bs-dismiss="modal"
+                style="color: black;">Cancel</button>
+              <button type="button" class="btn btn-primary confirm-btn">Confirm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="./assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/graphs.js"></script>
+</body>
+
+</html>

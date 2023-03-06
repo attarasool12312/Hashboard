@@ -1,0 +1,206 @@
+/*--------------*\
+    Tabs Section
+\*--------------*/
+.nav-tabs {
+    border-bottom: 2px solid #DCDCDC;
+    @include grid-sm-down{
+        flex-flow: column;
+    }
+
+    li {
+
+        &:active,
+        &:focus,
+        &:hover {
+            border: none;
+            font-size: 14px;
+        }
+
+        button {
+            font-size: 14px;
+            font-weight: 500;
+            color: #898989;
+            border: 1px solid transparent;
+            @include grid-sm-down{
+                width: 100%;
+                text-align: left;
+            }
+
+            &.career-tab {
+                padding: 5px 10px !important;
+
+                &.active {
+                    border: 1px solid #DCDCDC !important;
+                    border-radius: 8px;
+
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        border: none;
+                    }
+                }
+            }
+
+            &:active,
+            &:focus,
+            &:hover {
+                border: 1px solid transparent;
+                margin-bottom: 0 !important;
+                border-color: transparent !important;
+                color: #202020 !important;
+            }
+
+            &.active {
+                border: none;
+                background-color: transparent !important;
+                color: #202020 !important;
+                border-bottom: 3px solid #775DA6 !important;
+
+                &:active,
+                &:focus,
+                &:hover {
+                    border: none;
+                }
+            }
+        }
+
+        +li {
+            margin-left: 32px;
+            @include grid-sm-down{
+                margin: 0;
+            }
+        }
+
+        &.active {
+            border: none;
+        }
+    }
+
+    &.horizantaly-tabs {
+        li {
+            +li {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &.careers-tabs {
+        li {
+            button {
+                width: 268px;
+                text-align: left !important;
+                border-top-left-radius: 12px;
+                border-bottom-left-radius: 12px;
+                padding: 16px;
+
+                &.active {
+                    border-bottom: none !important;
+                    background-color: rgba(119, 93, 166, .1) !important;
+                }
+            }
+        }
+    }
+}
+
+.question-area {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        position: relative;
+        border-bottom: 1px solid #DCDCDC;
+        padding: 24px 24px 24px 100px;
+
+        h3 {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+        }
+
+        p {
+            margin-bottom: 12px
+        }
+    }
+}
+
+.tab-content {
+    &.w-60 {
+        width: 60%;
+    }
+}
+
+.nav-tabs-bar {
+    .nav-link {
+        background-color: #F9F9F9 !important;
+        padding: 30px 0;
+        color: #000 !important;
+
+        &.active {
+            border: none;
+            background-color: transparent !important;
+            color: #202020 !important;
+            border-top: 3px solid #775DA6 !important;
+            border-radius: 0;
+            border-bottom: none !important;
+        }
+
+        h6 {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.employees-nav {
+    border-radius: 8px;
+    padding: 5px;
+
+    li {
+        button {
+            &.active{
+                border: none !important;
+                background-color: #fff !important;  
+            } 
+        }
+    }
+}
+.about-tab{
+    .nav{
+        flex-flow: column;
+        .nav-item{
+            margin: 0;
+        }
+    }
+    .nav-tabs{
+        border-width: 0;
+        margin: 15px 0;
+        li{
+            button{
+                width: 100%;
+                text-align: left;
+                &.active{
+                    border-width: 0 !important;
+                    background-color: #e7f3ff !important;
+                }
+            }
+        }
+    }
+}
+
+.general-tabs{
+    .nav-tabs{
+        margin-top: 20px;
+        li{
+            button{
+                width: 100%;
+                text-align: left;
+                font-size: 12px;
+                &.active{
+                    background-color: #c8dde0 !important;
+                    border: none !important;
+                    border-radius: 8px;
+
+                }
+            }
+        }
+    }  
+}

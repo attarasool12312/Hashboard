@@ -1,0 +1,46 @@
+.deals-content {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    li {
+      list-style: none;
+      margin-bottom: 18px;
+    }
+  }
+  p {
+    color: #898989;
+  }
+}
+.extended-box {
+  padding-bottom: 0px;
+  ul {
+    padding: 18px 10px;
+    padding-left: 18px;
+    list-style: none;
+    li {
+      h6 {
+        position: relative;
+        &::before {
+          content: "\2022";
+          color: #70b6c1;
+          font-weight: bold; /* If you want it to be bold */
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+      + li{
+        margin-top: 12px;
+      }
+    }
+  }
+}
+.line{
+  width: 123%;
+  height: 2px !important;
+  background-color: #dcdcdc;
+  margin-left: -24px;
+  margin-right: -24px;
+}

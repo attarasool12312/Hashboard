@@ -1,0 +1,24 @@
+.company-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 24px;
+    border-radius: 8px;
+    .company-type{
+        border-right: 2px solid #DCDCDC;
+        padding-right: 16px;
+        width: 250px;
+        padding-top: 14px;
+        .check-tasks{
+            margin-top: 0;
+        }
+    }
+    .invoice-table{
+        flex: 1 0 auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        th{
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+    }
+}

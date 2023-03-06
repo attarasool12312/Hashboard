@@ -1,0 +1,66 @@
+.document-main-content {
+  .doc-profability {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 32px;
+    flex-wrap: wrap;
+    .sm-box {
+      background-color: #ffffff;
+      .social-noticications {
+        display: flex;
+        gap: 15px;
+        padding-top: 15px;
+        ul {
+          display: flex;
+          list-style: none;
+          padding-left: 0;
+          margin-bottom: 0;
+          li {
+            color: #898989;
+            img {
+              margin-right: -5px;
+            }
+          }
+        }
+      }
+      @include grid-md-down  {
+        width: 100%;
+      }
+    }
+  }
+  .doc-folders {
+    padding-bottom: 12px;
+    @include grid-md-down  {
+        padding-bottom: 0px;
+    }
+    &:last-of-type {
+        padding-bottom: 32px;
+    }
+    .folder-box {
+      padding: 15px;
+      border: 1px solid #dcdcdc;
+      background-color: #ffffff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      max-width: 272px;
+      @include grid-md-down  {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .doc-files {
+    display: flex;
+    @include grid-md-down  {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    img {
+      width: 25%;
+        @include grid-md-down  {
+            margin-bottom: 12px;
+        }
+    }
+  }
+}

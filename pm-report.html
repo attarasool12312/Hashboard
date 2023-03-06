@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rhombus</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="side-panel-dropdown">
+            <button class="panel-button dropdown-toggle" type="button">
+              <i class="icon icon-lajou-cafe"></i> Lajou cafe
+            </button>
+            <ul class="panel-dropdown-menu">
+              <li><a class="panel-dropdown-item" href="#">Action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Another action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="./pm-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Overview</a></li>
+            <li class="nav-item panel-dropdown position-relative">
+              <a href="./pm-project-management.html" class="mb-auto panel_link "><i class="icon icon-business"></i> Projects</a>
+              <div>
+                <a class="dropdown-btn nav-link dropdown-toggle position-absolute" href="" id="Setting-Dropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false" style="top: 11px; right: 17px;">
+                </a>
+                <ul class="Setting-Dropdown m-0" aria-labelledby="Setting-Dropdown">
+                  <li><a class="dropdown-item panel_link " href="./pm-project-overview.html">project Overview</a></li>
+                  <li><a class="dropdown-item panel_link " href="./pm-project-performance.html">project Performance</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-sales"></i> Financial Performance
+              </a>
+              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./pm-project-cocs.html">COCs Overview</a></li>
+                <li><a class="dropdown-item panel_link " href="./pm-project-pos.html">Project POs</a></li>
+              </ul>
+            </li>
+            <li><a href="./pm-transferred-projects.html" class="panel_link "><i class="icon icon-transferred-projects bg-cover"></i>
+                Transferred Projects</a></li>
+            <li><a href="./pm-report.html" class="panel_link active_panel"><i class="icon icon-expenses"></i> Reports</a></li>
+            <li><a href="./pm-compnies-list.html" class="panel_link "><i class="icon icon-reports"></i> Customer Profile</a></li>
+
+            <li><a href="./pm-contact.html" class="panel_link "><i class="icon icon-project"></i> Contacts</a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-bar-document"></i> Setting
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link" href="./pm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
+                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
+              </ul>
+            </li>
+            <li><a href="./crm-overview-index.html">Move to CRM</a></li>
+            <li><a href="./pm-home-page.html" class="panel_link">Home Page</a></li>
+            <li><a href="./admin-dashboard.html">Move to Admin</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+          <div class="top-nav bg-white">
+            <div class="sitepanel-toggler for-mobile">
+              <div class="close">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="logo">
+                <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+              </div>
+            </div>
+            <div class="search-form d-none d-md-block">
+              <form action="">
+               <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+               </div>
+              </form>
+            </div>
+            <div class="about-profile">
+              <div class="d-none d-md-block">
+                <button type="button" class="btn ouline-white" data-bs-toggle="modal"
+                data-bs-target="#userForm"><i class="icon icon-plus"></i> Add</button>
+                <a href=""><i class="icon icon-question"></i></a>
+                <a href=""><i class="icon icon-notification"></i></a>
+              </div>
+              <div class="dropdown select-dropdown admin-profile">
+                <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="profile-img me-2">
+                    <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                  </div>
+                  <div class="admin-info d-none d-md-block">
+                    <h5 class="">Katie Pena</h5>
+                    <h6 class="">Admin</h6>
+                  </div>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <div class="profile-images text-center">
+                    <img src="./assets/images/profile-2.png" alt="">
+                  <h6 class="text-small mt-2">Allen Moreno</h6>
+                  <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                  </div>
+                    <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+          <div class="page-main-title">
+            <div class="heading">
+              <h1>Reports</h1>
+            </div>
+            <div class="search-form d-none d-md-block">
+              <form action="">
+               <div class="form-group">
+                <input class="form-control bg-white" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+               </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <!-- Nav tabs -->
+              <div class="d-flex align-items-center justify-content-between border-bottom flex-colume-sm">
+                <ul class="nav nav-tabs border-0 wsm-100" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary" type="button" role="tab" aria-controls="summary" aria-selected="true">Summary</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab" data-bs-toggle="tab" data-bs-target="#custom" type="button" role="tab" aria-controls="custom" aria-selected="false">Custom</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="draft-tab" data-bs-toggle="tab" data-bs-target="#draft" type="button" role="tab" aria-controls="draft" aria-selected="false">Draft</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="published-tab" data-bs-toggle="tab" data-bs-target="#published" type="button" role="tab" aria-controls="published" aria-selected="false">Published</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="archived-tab" data-bs-toggle="tab" data-bs-target="#archived" type="button" role="tab" aria-controls="archived" aria-selected="false">Archived</button>
+                  </li>
+                </ul>
+                <button class="btn btn-fill wsm-100">New report</button>
+              </div>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div class="tab-pane active" id="summary" role="tabpanel" aria-labelledby="summary-tab">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Financial</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500"><a href="./pm-report-balance-sheet.html" class="text-decoration-none text-dark"><span><i class="icon icon-fill-star"></i>Balance Sheet</span></a>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Profit and Loss</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Statement of Cash Flows</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Cash Summary</span> 
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                       
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Tax</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Accounting</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Account Transactions</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Bank Report</span> 
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Cast Transactions</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Duplicate Statement Lines</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>General Ledger</span> 
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                       
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Sales</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Aged Reeivables Details</span> 
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Aged Reeivables Summary</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Customer Invoice Report</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                       
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Purchases</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Aged Reeivables Summary</span> 
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Aged Reeivables Details</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Supplier Invoice Report</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Inventory</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Inventory Item Summary</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Sales By Item</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="custom" role="tabpanel" aria-labelledby="custom-tab">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Financial</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                       
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Tax</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Accounting</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Sales</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                       
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Purchases</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Inventory</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="draft" role="tabpanel" aria-labelledby="draft-tab">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Financial</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                       
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Tax</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Accounting</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Sales</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                       
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Purchases</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Inventory</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="published" role="tabpanel" aria-labelledby="published-tab">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Financial</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                       
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Tax</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Accounting</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Sales</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                       
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Purchases</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Inventory</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="archived" role="tabpanel" aria-labelledby="archived-tab">
+                                    <div class="row">
+                    <div class="col-md-6">
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Financial</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                       
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Tax</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Accounting</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Sales</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                       
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Purchases</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="rating-box">
+                        <h3 class="mb-3 fw-600">Inventory</h3>
+                      <ul class="rating-row">
+                        <li class="fw-500">
+                          <span><i class="icon icon-outline-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-fill-star"></i>Budget Manager</span> 
+                          <span class="tag">New</span>
+                        </li>
+                        <li class="fw-500">
+                          <span><i class="icon icon-down-arrow"></i>More Reports</span> 
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </main>
+    </div>
+  <div class="modal right fade" id="userForm" tabindex="-1"
+  aria-labelledby="interviewLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Add new User</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-light customer-add-form">
+        <form>
+          <label for="Customer-name" class="d-block mb-2">User Name</label>
+          <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+          <label for="Project-id" class="d-block my-2">User ID</label>
+          <input type="text" placeholder="Please Insert USer ID" class="form-input w-100">
+          <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+          <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+          <label for="ProjectSummary" class="d-block my-2">User Email</label>
+          <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+          <label for="ProjectSummary" class="d-block my-2">User Position</label>
+          <input type="text" placeholder="Enter a User Position" class="form-input w-100">              
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
+        <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+
+
+
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

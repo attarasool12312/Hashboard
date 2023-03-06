@@ -1,0 +1,228 @@
+/*--------------*\
+    Modals Section
+\*--------------*/
+.modal-dialog {
+  &.viwe-post {
+    max-width: 100% !important;
+  }
+
+  .modal-content {
+    border-radius: 8px;
+  }
+
+  .modal-header {
+    background-color: transparent !important;
+  }
+
+  .view-comments-area {
+    overflow: auto;
+    height: 58vh;
+    padding-bottom: 50px;
+  }
+
+  .modal-wrapper {
+    display: flex;
+
+    .main-post-area {
+      position: relative;
+      height: 100%;
+    }
+  }
+
+  .modal-body {
+    .form-box {
+      padding: 0 !important;
+    }
+  }
+
+  .search-form {
+    &.write-comment {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .write-post {
+      padding-top: 77px !important;
+      padding-bottom: 60px !important;
+    }
+
+    .emojes {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+
+      i {
+        position: unset;
+        transform: translate(0);
+      }
+    }
+  }
+
+  .people-story {
+    &.write-comment-prof {
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 8px;
+      margin-top: 16px !important;
+
+      a {
+        border: none;
+
+        img {
+          border-radius: 50%;
+          left: 0 !important;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.modal-fade-right-to-left {
+  &.modal {
+    &.right {
+      &.fade {
+        &.show {
+          .modal-dialog {
+            right: 0;
+          }
+        }
+
+        .modal-dialog {
+          right: -880px;
+          -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+          -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+          -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+          transition: opacity 0.3s linear, right 0.3s ease-out;
+        }
+      }
+
+      .modal-dialog {
+        position: fixed;
+        margin: auto;
+        max-width: 880px;
+        height: 100%;
+      }
+
+      .modal-content {
+        width: 880px;
+        height: 100%;
+
+        .modal-header {
+          .image-rating {
+            position: relative;
+
+            img {
+              width: 60px;
+              height: 60px;
+            }
+
+            .dropdown {
+              position: absolute;
+              bottom: -8px;
+              left: 2px;
+
+              button {
+                padding: 0;
+                min-width: 56px;
+                font-size: 11px;
+              }
+            }
+          }
+
+          .header-button {
+            display: flex;
+            align-items: center;
+
+            button {
+              height: fit-content;
+
+              +button {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+
+        .modal-body {
+          overflow-y: auto;
+
+          &::-webkit-scrollbar {
+            width: 10px;
+          }
+
+          &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgba(119, 93, 166, 0.1);
+            border-radius: 10px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: rgba(119, 93, 166, 0.1);
+            border-radius: 10px;
+          }
+
+          .salary-details{
+            button{
+              height: fit-content;
+              margin-top: auto;
+            }
+          }
+          .stage-button {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 17px;
+
+            li {
+              width: 18%;
+              text-align: center;
+              padding: 15px 10px;
+              background-color: rgb(235, 235, 235);
+              font-weight: 700;
+              position: relative;
+
+              &.dark-orange {
+                &::before{
+                  background: #F74300 !important;
+                }
+                &.active {
+                  opacity: 1;
+                  &::before{
+                    opacity: 1;
+                  }
+                }
+              }
+
+              &::after {
+                content: "";
+                width: 35px;
+                position: absolute;
+                top: 8px;
+                left: -17px;
+                background-color: #fff;
+                height: 35px;
+                transform: rotate(45deg);
+              }
+              &::before {
+                content: "";
+                width: 35px;
+                position: absolute;
+                top: 8px;
+                right: -17px;
+                background-color: rgb(235, 235, 235);;
+                height: 35px;
+                transform: rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

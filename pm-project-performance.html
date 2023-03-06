@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rhombus</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="side-panel-dropdown">
+            <button class="panel-button dropdown-toggle" type="button">
+              <i class="icon icon-lajou-cafe"></i> Lajou cafe
+            </button>
+            <ul class="panel-dropdown-menu">
+              <li><a class="panel-dropdown-item" href="#">Action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Another action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="./pm-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Overview</a></li>
+            <li class="nav-item panel-dropdown position-relative">
+              <a href="./pm-project-management.html" class="mb-auto panel_link active_panel"><i
+                  class="icon icon-business"></i> Projects</a>
+              <div>
+                <a class="dropdown-btn nav-link dropdown-toggle position-absolute" href="" id="Setting-Dropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false" style="top: 11px; right: 17px;">
+                </a>
+                <ul class="Setting-Dropdown m-0" aria-labelledby="Setting-Dropdown">
+                  <li><a class="dropdown-item panel_link " href="./pm-project-overview.html">project Overview</a></li>
+                  <li><a class="dropdown-item panel_link active_panel" href="./pm-project-performance.html">project
+                      Performance</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-sales"></i> Financial Performance
+              </a>
+              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./pm-project-cocs.html">COCs Overview</a></li>
+                <li><a class="dropdown-item panel_link " href="./pm-project-pos.html">Project POs</a></li>
+              </ul>
+            </li>
+            <li><a href="./pm-transferred-projects.html" class="panel_link "><i
+                  class="icon icon-transferred-projects bg-cover"></i>
+                Transferred Projects</a></li>
+            <li><a href="./pm-report.html" class="panel_link "><i class="icon icon-expenses"></i> Reports</a></li>
+            <li><a href="./pm-compnies-list.html" class="panel_link "><i class="icon icon-reports"></i> Customer
+                Profile</a></li>
+
+            <li><a href="./pm-contact.html" class="panel_link "><i class="icon icon-project"></i> Contacts</a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-bar-document"></i> Setting
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link" href="./pm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
+                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
+              </ul>
+            </li>
+            <li><a href="./crm-overview-index.html">Move to CRM</a></li>
+            <li><a href="./pm-home-page.html" class="panel_link">Home Page</a></li>
+            <li><a href="./admin-dashboard.html">Move to Admin</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div>
+          <div class="about-profile">
+            <div class="d-none d-md-block">
+              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+                  class="icon icon-plus"></i> Add</button>
+              <a href=""><i class="icon icon-question"></i></a>
+              <a href=""><i class="icon icon-notification"></i></a>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                <h6 class="text-small mt-2">Allen Moreno</h6>
+                <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                  <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="page-main-title">
+            <h1>Project Performance</h1>
+            <div class="d-flex align-items-center">
+              <button type="button" class="btn ouline-white me-md-3"><i class="icon icon-download me-2"></i>Download</button>
+              <button type="button" class="btn ouline-white btn-fill" data-bs-toggle="modal"
+              data-bs-target="#businessForm">Add new project</button>
+            </div>
+          </div>
+          <div class="row project-performance mt-2 flex-colume-sm">
+            <div class="col-12 col-md-6 d-flex align-iteme-center">
+              <div class="dropdown select-dropdown ms-4">
+                <button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button"
+                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="icon icon-filter"></i> sort: <b class="text-dark">a-z</b>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-end align-items-center">
+              <ul class="nav nav-tabs bg-light employees-nav flex-row-sm me-2 me-md-0" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-uppercase text-md-small" id="list-tab" data-bs-toggle="tab"
+                    data-bs-target="#list" type="button" role="tab" aria-controls="list" aria-selected="true"><i
+                      class="icon icon-list-task"></i>LIST</button>
+                </li>
+                <li class="nav-item m-0" role="presentation">
+                  <button class="nav-link text-uppercase text-md-small active" id="grid-tab" data-bs-toggle="tab"
+                    data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="false"><i
+                      class="icon icon-grid"></i>
+                    grid</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane" id="list" role="tabpanel" aria-labelledby="list-tab">
+              <div class="invoice-table mt-4 tablepanel">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>Profile name
+                      </th>
+                      <th scope="col">Location</th>
+                      <th scope="col">Employees</th>
+                      <th scope="col">Revenue (USD)</th>
+                      <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr onclick="location.href='./pm-project-name.html';" class="cursor-pointer">
+                      <td scope="row" class="ps-5" data-label="Profile name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/amazon.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Amazon Inc</h6>
+                            <p class="text-light-gray">amazon.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Seattle, Washington</td>
+                      <td data-label="Employees">566k</td>
+                      <td data-label="Revenue (USD)">12.16 bn</td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex m-0">
+                              <span></span>
+                              <span class="m-0 ms-1"></span>
+                              <span class="m-0 ms-1"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr onclick="location.href='./pm-project-name.html';" class="cursor-pointer">
+                      <td scope="row" class="ps-5" data-label="Profile name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/dropbox.png" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Dropbox</h6>
+                            <p class="text-light-gray">dropbox.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Seattle, Washington</td>
+                      <td data-label="Employees">566k</td>
+                      <td data-label="Revenue (USD)">17,786 cr</td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex m-0">
+                              <span></span>
+                              <span class="m-0 ms-1"></span>
+                              <span class="m-0 ms-1"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr onclick="location.href='./pm-project-name.html';" class="cursor-pointer">
+                      <td scope="row" class="ps-5" data-label="Profile name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/apple.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Apple Inc.</h6>
+                            <p class="text-light-gray">apple.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Cupertino, California</td>
+                      <td data-label="Employees">47k</td>
+                      <td data-label="Revenue (USD)">27,923.4 cr</td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex m-0">
+                              <span></span>
+                              <span class="m-0 ms-1"></span>
+                              <span class="m-0 ms-1"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr onclick="location.href='./pm-project-name.html';" class="cursor-pointer">
+                      <td scope="row" class="ps-5" data-label="Profile name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/mailchimp.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Mailchimp. Inc</h6>
+                            <p class="text-light-gray">mailchimp.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Georgia, USA</td>
+                      <td data-label="Employees">566k</td>
+                      <td data-label="Revenue (USD)">17,786 cr</td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex m-0">
+                              <span></span>
+                              <span class="m-0 ms-1"></span>
+                              <span class="m-0 ms-1"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr onclick="location.href='./pm-project-name.html';" class="cursor-pointer">
+                      <td scope="row" class="ps-5" data-label="Profile name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/google.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Google.Inc</h6>
+                            <p class="text-light-gray">google.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Menlo Park, California</td>
+                      <td data-label="Employees">566k</td>
+                      <td data-label="Revenue (USD)">110 bn</td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex m-0">
+                              <span></span>
+                              <span class="m-0 ms-1"></span>
+                              <span class="m-0 ms-1"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr onclick="location.href='./pm-project-name.html';" class="cursor-pointer">
+                      <td scope="row" class="ps-5" data-label="Profile name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/airbnb.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Airbnb</h6>
+                            <p class="text-light-gray">airbnb.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">San Francisco, California</td>
+                      <td data-label="Employees">4.1k</td>
+                      <td data-label="Revenue (USD)">260 cr</td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex m-0">
+                              <span></span>
+                              <span class="m-0 ms-1"></span>
+                              <span class="m-0 ms-1"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr onclick="location.href='./pm-project-name.html';" class="cursor-pointer">
+                      <td scope="row" class="ps-5" data-label="Profile name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/shopee.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Shopee. Inc</h6>
+                            <p class="text-light-gray">shopee.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Singapura</td>
+                      <td data-label="Employees">25.1k</td>
+                      <td data-label="Revenue (USD)">9.16 bn</td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex m-0">
+                              <span></span>
+                              <span class="m-0 ms-1"></span>
+                              <span class="m-0 ms-1"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr onclick="location.href='./pm-project-name.html';" class="cursor-pointer">
+                      <td scope="row" class="ps-5" data-label="Profile name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/sebo.png" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Sebo Studio</h6>
+                            <p class="text-light-gray">sebostudio.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Yogyakarta, Indonesia</td>
+                      <td data-label="Employees">566k</td>
+                      <td data-label="Revenue (USD)">4,800.5 cr</td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex m-0">
+                              <span></span>
+                              <span class="m-0 ms-1"></span>
+                              <span class="m-0 ms-1"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr onclick="location.href='./pm-project-name.html';" class="cursor-pointer">
+                      <td scope="row" class="ps-5" data-label="Profile name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/evernote.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Evernote</h6>
+                            <p class="text-light-gray">evernote.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Redwood City, California</td>
+                      <td data-label="Employees">566k</td>
+                      <td data-label="Revenue (USD)">17,786 cr</td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex m-0">
+                              <span></span>
+                              <span class="m-0 ms-1"></span>
+                              <span class="m-0 ms-1"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+              <div class="row mt-3">
+                <div class="col-md-3 mb-4">
+                  <div class="bg-white border-radius p-3 h-100 d-flex flex-column justify-content-between cursor-pointer" onclick="location.href='./pm-project-name.html';">
+                    <div>
+                      <div class="mb-3">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute" style="left: 0;">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex justify-content-end">
+                          <span class="finalized-status">Delivery Stage</span>
+                          <div class="btn-group">
+                            <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="dots d-flex m-0">
+                                <span></span>
+                                <span class="m-0 ms-1"></span>
+                                <span class="m-0 ms-1"></span>
+                              </div>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                  Edit</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                  Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <img src="./assets/images/profile-2.png" class="d-block mx-auto mb-2 rounded-circle" alt="#">
+                      <h6 class="fw-600 text-center">Ronald Richards</h6>
+                      <p class="text-center text-light-gray mb-3">Project Manager</p>
+                    </div>
+                    <div class="row py-3 w-100 mx-auto rounded bg-light">
+                      <div class="col-6 border-bottom pb-3">
+                        <p class="text-light-gray text-small">Deportement</p>
+                        <p class="text-small fw-500">Design Team</p>
+                      </div>
+                      <div class="col-6 border-bottom">
+                        <p class="text-light-gray text-small">Date Hired
+                        </p>
+                        <p class="text-small fw-500">Mar 17,2021</p>
+                      </div>
+                      <div class="col-12 pt-2">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex flex-column align-content-between">
+                            <i class="icon icon-inbox"></i>
+                            <i class="icon icon-telephone mt-1"></i>
+                          </div>
+                          <div class="ms-2">
+                            <p class="text-light-gray text-small">Ronald_Richards@gmai.com</p>
+                            <p class="text-light-gray text-small">+1-202-555-0129</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="bg-white border-radius p-3 h-100 d-flex flex-column justify-content-between cursor-pointer" onclick="location.href='./pm-project-name.html';">
+                    <div>
+                      <div class="mb-3">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute" style="left: 0;">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex justify-content-end">
+                          <span class="finalized-status">Operation Stage</span>
+                          <div class="btn-group">
+                            <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="dots d-flex m-0">
+                                <span></span>
+                                <span class="m-0 ms-1"></span>
+                                <span class="m-0 ms-1"></span>
+                              </div>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                  Edit</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                  Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <img src="./assets/images/profile-3.png" class="d-block mx-auto mb-2 rounded-circle" alt="#">
+                      <h6 class="fw-600 text-center">Cameron Williamson</h6>
+                      <p class="text-center text-light-gray mb-3">UI Designer</p>
+                    </div>
+                    <div class="row py-3 w-100 mx-auto rounded bg-light">
+                      <div class="col-6 border-bottom pb-3">
+                        <p class="text-light-gray text-small">Deportement</p>
+                        <p class="text-small fw-500">Design Team</p>
+                      </div>
+                      <div class="col-6 border-bottom">
+                        <p class="text-light-gray text-small">Date Hired
+                        </p>
+                        <p class="text-small fw-500">Mar 17,2021</p>
+                      </div>
+                      <div class="col-12 pt-2">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex flex-column align-content-between">
+                            <i class="icon icon-inbox"></i>
+                            <i class="icon icon-telephone mt-1"></i>
+                          </div>
+                          <div class="ms-2">
+                            <p class="text-light-gray text-small">CameronWilliams@gmail.com</p>
+                            <p class="text-light-gray text-small">+1-202-555-0130</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="bg-white border-radius p-3 h-100 d-flex flex-column justify-content-between cursor-pointer" onclick="location.href='./pm-project-name.html';">
+                    <div>
+                      <div class="mb-3">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute" style="left: 0;">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex justify-content-end">
+                          <span class="finalized-status">Initiation Stage</span>
+                          <div class="btn-group">
+                            <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="dots d-flex m-0">
+                                <span></span>
+                                <span class="m-0 ms-1"></span>
+                                <span class="m-0 ms-1"></span>
+                              </div>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                  Edit</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                  Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <img src="./assets/images/profile-4.png" class="d-block mx-auto mb-2 rounded-circle" alt="#">
+                      <h6 class="fw-600 text-center">Kathryn Murphy</h6>
+                      <p class="text-center text-light-gray mb-3">UI Designer</p>
+                    </div>
+                    <div class="row py-3 w-100 mx-auto rounded bg-light">
+                      <div class="col-6 border-bottom pb-3">
+                        <p class="text-light-gray text-small">Deportement</p>
+                        <p class="text-small fw-500">Design Team</p>
+                      </div>
+                      <div class="col-6 border-bottom">
+                        <p class="text-light-gray text-small">Date Hired
+                        </p>
+                        <p class="text-small fw-500">Mar 17,2021</p>
+                      </div>
+                      <div class="col-12 pt-2">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex flex-column align-content-between">
+                            <i class="icon icon-inbox"></i>
+                            <i class="icon icon-telephone mt-1"></i>
+                          </div>
+                          <div class="ms-2">
+                            <p class="text-light-gray text-small">KathrynMurphy@gmai.com</p>
+                            <p class="text-light-gray text-small">+1-202-555-0129</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="bg-white border-radius p-3 h-100 d-flex flex-column justify-content-between cursor-pointer" onclick="location.href='./pm-project-name.html';">
+                    <div>
+                      <div class="mb-3">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute" style="left: 0;">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex justify-content-end">
+                          <span class="finalized-status">Delivery Stage</span>
+                          <div class="btn-group">
+                            <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="dots d-flex m-0">
+                                <span></span>
+                                <span class="m-0 ms-1"></span>
+                                <span class="m-0 ms-1"></span>
+                              </div>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                  Edit</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                  Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <img src="./assets/images/profile-5.png" class="d-block mx-auto mb-2 rounded-circle" alt="#">
+                      <h6 class="fw-600 text-center">Floyd Miles</h6>
+                      <p class="text-center text-light-gray mb-3">Digital Marketing</p>
+                    </div>
+                    <div class="row py-3 w-100 mx-auto rounded bg-light">
+                      <div class="col-6 border-bottom pb-3">
+                        <p class="text-light-gray text-small">Deportement</p>
+                        <p class="text-small fw-500">Design Team</p>
+                      </div>
+                      <div class="col-6 border-bottom">
+                        <p class="text-light-gray text-small">Date Hired
+                        </p>
+                        <p class="text-small fw-500">Mar 17,2021</p>
+                      </div>
+                      <div class="col-12 pt-2">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex flex-column align-content-between">
+                            <i class="icon icon-inbox"></i>
+                            <i class="icon icon-telephone mt-1"></i>
+                          </div>
+                          <div class="ms-2">
+                            <p class="text-light-gray text-small">FloydMiles@gmai.com</p>
+                            <p class="text-light-gray text-small">+1-202-555-0129</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="bg-white border-radius p-3 h-100 d-flex flex-column justify-content-between cursor-pointer" onclick="location.href='./pm-project-name.html';">
+                    <div>
+                      <div class="mb-3">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute" style="left: 0;">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex justify-content-end">
+                          <span class="finalized-status">Delivery Stage</span>
+                          <div class="btn-group">
+                            <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="dots d-flex m-0">
+                                <span></span>
+                                <span class="m-0 ms-1"></span>
+                                <span class="m-0 ms-1"></span>
+                              </div>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                  Edit</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                  Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <img src="./assets/images/profile-6.png" class="d-block mx-auto mb-2 rounded-circle" alt="#">
+                      <h6 class="fw-600 text-center">Leslie Alexander</h6>
+                      <p class="text-center text-light-gray mb-3">Digital Marketing</p>
+                    </div>
+                    <div class="row py-3 w-100 mx-auto rounded bg-light">
+                      <div class="col-6 border-bottom pb-3">
+                        <p class="text-light-gray text-small">Deportement</p>
+                        <p class="text-small fw-500">Design Team</p>
+                      </div>
+                      <div class="col-6 border-bottom">
+                        <p class="text-light-gray text-small">Date Hired
+                        </p>
+                        <p class="text-small fw-500">Mar 17,2021</p>
+                      </div>
+                      <div class="col-12 pt-2">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex flex-column align-content-between">
+                            <i class="icon icon-inbox"></i>
+                            <i class="icon icon-telephone mt-1"></i>
+                          </div>
+                          <div class="ms-2">
+                            <p class="text-light-gray text-small">LeslieAlexander@gmai.com</p>
+                            <p class="text-light-gray text-small">+1-202-555-0129</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="bg-white border-radius p-3 h-100 d-flex flex-column justify-content-between cursor-pointer" onclick="location.href='./pm-project-name.html';">
+                    <div>
+                      <div class="mb-3">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute" style="left: 0;">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex justify-content-end">
+                          <span class="finalized-status">Delivery Stage</span>
+                          <div class="btn-group">
+                            <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="dots d-flex m-0">
+                                <span></span>
+                                <span class="m-0 ms-1"></span>
+                                <span class="m-0 ms-1"></span>
+                              </div>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                  Edit</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                  Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <img src="./assets/images/profile-7.png" class="d-block mx-auto mb-2 rounded-circle" alt="#">
+                      <h6 class="fw-600 text-center">Dianne Russell</h6>
+                      <p class="text-center text-light-gray mb-3">Back End Developer</p>
+                    </div>
+                    <div class="row py-3 w-100 mx-auto rounded bg-light">
+                      <div class="col-6 border-bottom pb-3">
+                        <p class="text-light-gray text-small">Deportement</p>
+                        <p class="text-small fw-500">Design Team</p>
+                      </div>
+                      <div class="col-6 border-bottom">
+                        <p class="text-light-gray text-small">Date Hired
+                        </p>
+                        <p class="text-small fw-500">Mar 17,2021</p>
+                      </div>
+                      <div class="col-12 pt-2">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex flex-column align-content-between">
+                            <i class="icon icon-inbox"></i>
+                            <i class="icon icon-telephone mt-1"></i>
+                          </div>
+                          <div class="ms-2">
+                            <p class="text-light-gray text-small">DianneRussell@gmai.com</p>
+                            <p class="text-light-gray text-small">+1-202-555-0129</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="bg-white border-radius p-3 h-100 d-flex flex-column justify-content-between cursor-pointer" onclick="location.href='./pm-project-name.html';">
+                    <div>
+                      <div class="mb-3">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute" style="left: 0;">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex justify-content-end">
+                          <span class="finalized-status">Delivery Stage</span>
+                          <div class="btn-group">
+                            <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="dots d-flex m-0">
+                                <span></span>
+                                <span class="m-0 ms-1"></span>
+                                <span class="m-0 ms-1"></span>
+                              </div>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                  Edit</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                  Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <img src="./assets/images/profile-8.png" class="d-block mx-auto mb-2 rounded-circle" alt="#">
+                      <h6 class="fw-600 text-center">Savannah Nguyen</h6>
+                      <p class="text-center text-light-gray mb-3">Bank End Developer</p>
+                    </div>
+                    <div class="row py-3 w-100 mx-auto rounded bg-light">
+                      <div class="col-6 border-bottom pb-3">
+                        <p class="text-light-gray text-small">Deportement</p>
+                        <p class="text-small fw-500">Design Team</p>
+                      </div>
+                      <div class="col-6 border-bottom">
+                        <p class="text-light-gray text-small">Date Hired
+                        </p>
+                        <p class="text-small fw-500">Mar 17,2021</p>
+                      </div>
+                      <div class="col-12 pt-2">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex flex-column align-content-between">
+                            <i class="icon icon-inbox"></i>
+                            <i class="icon icon-telephone mt-1"></i>
+                          </div>
+                          <div class="ms-2">
+                            <p class="text-light-gray text-small">SavannahNguyen@gmai.com</p>
+                            <p class="text-light-gray text-small">+1-202-555-0129</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="bg-white border-radius p-3 h-100 d-flex flex-column justify-content-between cursor-pointer" onclick="location.href='./pm-project-name.html';">
+                    <div>
+                      <div class="mb-3">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute" style="left: 0;">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex justify-content-end">
+                          <span class="finalized-status">Delivery Stage</span>
+                          <div class="btn-group">
+                            <button type="button" class="btn d-flex align-items-center border-0 ms-1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="dots d-flex m-0">
+                                <span></span>
+                                <span class="m-0 ms-1"></span>
+                                <span class="m-0 ms-1"></span>
+                              </div>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                  Edit</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                  Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <img src="./assets/images/profile-9.png" class="d-block mx-auto mb-2 rounded-circle" alt="#">
+                      <h6 class="fw-600 text-center">Annette Black</h6>
+                      <p class="text-center text-light-gray mb-3">Front End Developer</p>
+                    </div>
+                    <div class="row py-3 w-100 mx-auto rounded bg-light">
+                      <div class="col-6 border-bottom pb-3">
+                        <p class="text-light-gray text-small">Deportement</p>
+                        <p class="text-small fw-500">Design Team</p>
+                      </div>
+                      <div class="col-6 border-bottom">
+                        <p class="text-light-gray text-small">Date Hired
+                        </p>
+                        <p class="text-small fw-500">Mar 17,2021</p>
+                      </div>
+                      <div class="col-12 pt-2">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex flex-column align-content-between">
+                            <i class="icon icon-inbox"></i>
+                            <i class="icon icon-telephone mt-1"></i>
+                          </div>
+                          <div class="ms-2">
+                            <p class="text-light-gray text-small">AnnetteBlack@gmai.com</p>
+                            <p class="text-light-gray text-small">+1-202-555-0129</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Project Board</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="upload-file upload-file1">
+                <div class="file-upload file-upload1">
+                  <figure>
+                    <img id="chosen-image chosen-image1">
+                    <figcaption id="file-name file-name1">
+                    </figcaption>
+                  </figure>
+                  <input type="file" id="upload-button" accept="image/*" />
+                  <label for="upload-button">
+                    Add Image
+                  </label>
+                </div>
+              </div>
+              <label for="name" class="fw-bold mt-3 mb-2">Full Name</label>
+              <input type="text" name="name" id="name" placeholder="Enter Your FullName"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="team" class="fw-bold mt-3 mb-2">Deportement</label>
+              <input type="text" name="team" id="team" placeholder="Enter Your Team"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="hired" class="fw-bold mt-3 mb-2">Date Hired</label>
+              <input type="date" name="hired" id="hired" placeholder="Enter Hired Date"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="contact" class="fw-bold mt-3 mb-2">Contact</label>
+              <input type="email" name="email" id="email" placeholder="Enter a Email"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+              <input type="tel" name="Phone" id="phone" placeholder="Enter a Phone number"
+                class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">
+              <label for="status" class="fw-bold mt-3 mb-2">Status</label>
+              <select name="status" id="status" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="DeliveryStage">Delivery Stage</option>
+                <option value="Operation">Operation Stage</option>
+                <option value="Initiation">Initiation Stage</option>
+              </select>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn border border-2" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-fill">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add new User</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form>
+              <label for="Customer-name" class="d-block mb-2">User Name</label>
+              <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">User ID</label>
+              <input type="text" placeholder="Please Insert USer ID" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+              <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Email</label>
+              <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Position</label>
+              <input type="text" placeholder="Enter a User Position" class="form-input w-100">
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal right fade" id="businessForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog width-50 wsm-95">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add new project</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form id="regForm" class="regForm regForm-1">
+              <div class="all-button">
+                <div class="step">
+                  <p>general</p>
+                </div>
+                <div class="step">
+                  <p>Project scope</p>
+                </div>
+                <div class="step">
+                  <p>Project date</p>
+                </div>
+                <div class="step">
+                  <p>Finance</p>
+                </div>
+                <div class="step">
+                  <p>Stakeholders</p>
+                </div>
+              </div>
+              <!-- One "tab" for each step in the form: -->
+              <div class="tab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <label for="Customer-name" class="d-block mb-2">Project Name</label>
+                    <input type="text" placeholder="Barry Armstrong" class="form-input w-100">
+                    <label for="Customer-name" class="d-block mb-2">Project ID</label>
+                    <input type="email" placeholder="Enter your email" class="form-input w-100">
+                    <label for="Customer-name" class="d-block mb-2">Category</label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">SME</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="Customer-name" class="d-block mb-2">Customer name </label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">XXXX</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <label for="Customer-name" class="d-block mb-2">Project Manager </label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">Enter phone number</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <label for="Customer-name" class="d-block mb-2">Project scope 1</label>
+                    <input type="text" placeholder="User 1" class="form-input w-100">
+                    <label for="Customer-name" class="d-block mb-2">Project scope 2</label>
+                    <input type="text" placeholder="User 2" class="form-input w-100">
+                    <label for="Customer-name" class="d-block mb-2">Project scope 3</label>
+                    <input type="text" placeholder="You" class="form-input w-100">
+                    <label for="Customer-name" class="d-block mb-2">Project scope 4</label>
+                    <input type="text" placeholder="User 4" class="form-input w-100">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="Customer-name" class="d-block mb-2">scope type</label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">License</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <label for="Customer-name" class="d-block mb-2">scope type</label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">License</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <label for="Customer-name" class="d-block mb-2">scope type</label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">License</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <label for="Customer-name" class="d-block mb-2">scope type</label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">License</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </div>
+                  <a href="#" class="text-decoration-none text-uppercase fw-bold mt-3">+ Add More</a>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <h4>Project Dates</h4>
+                    <label for="Customer-name" class="d-block mb-2 mt-5">Start Date</label>
+                    <input type="date" placeholder="Please select date" class="form-input w-100">
+                    <label for="Customer-name" class="d-block mb-2 mt-3">Due Date</label>
+                    <input type="date" placeholder="Please select date" class="form-input w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <h4>Project Value</h4>
+                    <input type="text" placeholder="Value" class="form-input w-100 mt-3">
+                    <label for="Customer-name" class="d-block mb-2">Margin</label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">Margin Formula </option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <input type="text" placeholder="Margin" class="form-input w-100">
+                    <label for="Customer-name" class="d-block mb-2">Project Cost</label>
+                    <input type="text" placeholder="Project Cost" class="form-input w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="tab" id="submit-page">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <label for="Customer-name" class="d-block mb-2">stakeholder 1</label>
+                    <input type="text" placeholder="Barry Armstrong" class="form-input w-100">
+                    <label for="Customer-name" class="d-block mb-2">stakeholder 1</label>
+                    <input type="text" placeholder="Barry Armstrong" class="form-input w-100">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="Customer-name" class="d-block mb-2">Role</label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">XXXX</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <label for="Customer-name" class="d-block mb-2">Role</label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">XXXX</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn ouline-white bg-transparent border-0" id="prevBtn"
+              onclick="nextPrev(-1)">Save & Close</button>
+            <button type="button" class="btn ouline-white px-5 ms-3 bg-secondary text-white" id="nextBtn"
+              onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="./assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/graphs.js"></script>
+  <script src="./assets/js/popup-form.js"></script>
+  <script>
+    const progressContainer = document.querySelector('.progress-container');
+
+    // initial call
+    setPercentage();
+
+    function setPercentage() {
+      const percentage = progressContainer.getAttribute('data-percentage') + '%';
+
+      const progressEl = progressContainer.querySelector('.progress');
+      const percentageEl = progressContainer.querySelector('.percentage');
+
+      progressEl.style.width = percentage;
+      percentageEl.innerText = percentage;
+      percentageEl.style.left = percentage;
+    }
+
+    let uploadBotton1 = document.getElementById("upload-button");
+    let chosenImage1 = document.getElementById("chosen-image1");
+    let fileName1 = document.getElementById("file-name1");
+
+    uploadBotton1.onchange = () => {
+      let reader = new FileReader();
+      reader.readAsDataURL(uploadBotton1.files[0]);
+      reader.onload = () => {
+        chosenImage1.setAttribute("src", reader.result);
+
+
+
+      }
+      fileName1.textContent = uploadBotton1.files[0].name;
+    }
+  </script>
+</body>
+
+</html>

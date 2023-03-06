@@ -1,0 +1,140 @@
+/*-----------------*\
+    Button Section
+\*-----------------*/
+
+.btn {
+  border-radius: 8px !important;
+
+  &.border-radius-none {
+    border-radius: 0 !important;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+.ouline-white {
+  padding: 8px 11px;
+  background: #FFFFFF;
+  border: 1px solid #DCDCDC;
+  border-radius: 8px;
+}
+
+ul.head-btn {
+  list-style: none;
+
+  .slider-btn {
+    .btn {
+      &:focus {
+        box-shadow: none;
+      }
+
+      &.active {
+        background: white !important;
+        color: #212529 !important;
+      }
+
+      &.ouline-white {
+        background: transparent;
+        border: none;
+        color: #dee2e6;
+      }
+    }
+  }
+}
+
+.btn-empty {
+  border-color: #775da6;
+  color: #775da6;
+}
+
+.pagination-btn {
+  padding: 4px 12px;
+
+  &.active {
+    border: 2px solid #775da6;
+    background-color: #ffffff;
+  }
+}
+
+.btn-group {
+  button {
+    border-color: #DCDCDC !important;
+    color: #202020;
+
+    &:nth-child(1) {
+      border-top-left-radius: 8px !important;
+      border-bottom-left-radius: 8px !important;
+    }
+
+    &:nth-child(2) {
+      border-top-right-radius: 8px !important;
+      border-bottom-right-radius: 8px !important;
+    }
+
+    &:hover {
+      background-color: transparent !important;
+      color: #775DA6 !important;
+    }
+  }
+}
+
+
+
+
+//maaz
+.confirm-btn {
+  background-color: #4285AF !important;
+  color: white;
+  border-radius: 5px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-pending {
+  border: none;
+  color: #ba8962;
+  background: #fcf3d2;
+}
+
+.btn-approved {
+  border: none;
+  color: #6f8f89;
+  background: #f0f6f6;
+}
+
+.btn-rejected {
+  border: none;
+  color: #cf9392;
+  background: #fbefef;
+}
+
+.btn-progress {
+  border: none;
+  color: #9da2d1;
+  background-color: #eaeefa;
+}
+
+.back-btn {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 5px;
+}
+
+.accordion {
+  .accordion-button {
+    &:not(.collapsed) {
+      background-color: #fff;
+      color: #202020;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}

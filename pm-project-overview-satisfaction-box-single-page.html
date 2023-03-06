@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rhombus</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="side-panel-dropdown">
+            <button class="panel-button dropdown-toggle" type="button">
+              <i class="icon icon-lajou-cafe"></i> Lajou cafe
+            </button>
+            <ul class="panel-dropdown-menu">
+              <li><a class="panel-dropdown-item" href="#">Action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Another action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="./pm-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Overview</a></li>
+            <li class="nav-item panel-dropdown position-relative">
+              <a href="./pm-project-management.html" class="mb-auto panel_link active_panel"><i
+                  class="icon icon-business"></i> Projects</a>
+              <div>
+                <a class="dropdown-btn nav-link dropdown-toggle position-absolute" href="" id="Setting-Dropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false" style="top: 11px; right: 17px;">
+                </a>
+                <ul class="Setting-Dropdown m-0" aria-labelledby="Setting-Dropdown">
+                  <li><a class="dropdown-item panel_link active_panel" href="./pm-project-overview.html">project
+                      Overview</a></li>
+                  <li><a class="dropdown-item panel_link " href="./pm-project-performance.html">project Performance</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-sales"></i> Financial Performance
+              </a>
+              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./pm-project-cocs.html">COCs Overview</a></li>
+                <li><a class="dropdown-item panel_link " href="./pm-project-pos.html">Project POs</a></li>
+              </ul>
+            </li>
+            <li><a href="./pm-transferred-projects.html" class="panel_link "><i
+                  class="icon icon-transferred-projects bg-cover"></i>
+                Transferred Projects</a></li>
+            <li><a href="./pm-report.html" class="panel_link "><i class="icon icon-expenses"></i> Reports</a></li>
+            <li><a href="./pm-compnies-list.html" class="panel_link "><i class="icon icon-reports"></i> Customer
+                Profile</a></li>
+
+            <li><a href="./pm-contact.html" class="panel_link "><i class="icon icon-project"></i> Contacts</a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-bar-document"></i> Setting
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link" href="./pm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
+                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
+              </ul>
+            </li>
+            <li><a href="./crm-overview-index.html">Move to CRM</a></li>
+            <li><a href="./pm-home-page.html" class="panel_link">Home Page</a></li>
+            <li><a href="./admin-dashboard.html">Move to Admin</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div>
+          <div class="about-profile">
+            <div class="d-none d-md-block">
+              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+                  class="icon icon-plus"></i> Add</button>
+              <a href=""><i class="icon icon-question"></i></a>
+              <a href=""><i class="icon icon-notification"></i></a>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                <h6 class="text-small mt-2">Allen Moreno</h6>
+                <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                  <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="page-main-title">
+            <h1>Customer Name</h1>
+            <div class="d-flex align-items-md-center flex-colume-sm mt-md-3 wsm-100 d-block ms-md-auto">
+              <button type="button" class="btn ouline-white me-md-3 mt-3 wsm-100 mt-md-0"><i
+                  class="icon icon-download me-2"></i>Download</button>
+              <button type="button" class="btn ouline-white btn-fill me-md-3 mt-3 mt-md-0" data-bs-toggle="modal"
+              data-bs-target="#leftBoxModal">Add new score</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="bg-white p-3 rounded d-flex justify-content-between align-items-center flex-colume-sm">
+                <div class="col-12 col-md-4">
+                  <div class="dropdown select-dropdown ms-4">
+                    <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Project Manager
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mt-3 mt-md-0">
+                  <div class="dropdown select-dropdown ms-4">
+                    <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Customer Name
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mt-3 mt-md-0">
+                  <div class="dropdown select-dropdown ms-4">
+                    <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Project Manager
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-4">
+              <a class="text-dark text-decoration-none d-block mb-3 interest cursor-pointer w-fit"><i class="icon icon-right-arrow me-2"></i> Project </a>
+              <div class="invoice-table tablepanel">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Project Name</th>
+                      <th scope="col">Project Manager</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Percentage</th>
+                      <th scope="col">Comment</th>
+                      <th scope="col"><a href="#" class="text-decoration-none text-uppercase fw-600">Edit</a></th>
+                    </tr>
+                  </thead>
+                  <tbody class="right-content interest-body" style="display: table-row-group;">
+                    <tr>
+                      <td scope="row" data-label="Project Name">
+                        <h6 class="ms-3 fw-500 text-sm">Project 1</h6>
+                      </td>
+                      <td data-label="Project Manager">Awesome Company</td>
+                      <td data-label="Date">16 Mar 2022</td>
+                      <td data-label="Percentage">70%</td>
+                      <td data-label="Comment">Awesome Company</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                                <li class="add-component"><a class="dropdown-item">Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" data-label="Project Name">
+                        <h6 class="ms-3 fw-500 text-sm">Project 2</h6>
+                      </td>
+                      <td data-label="Project Manager">Awesome Company</td>
+                      <td data-label="Date">16 Mar 2022</td>
+                      <td data-label="Percentage">70%</td>
+                      <td data-label="Comment">Awesome Company</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                                <li class="add-component"><a class="dropdown-item">Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" data-label="Project Name">
+                        <h6 class="ms-3 fw-500 text-sm">Project 3</h6>
+                      </td>
+                      <td data-label="Project Manager">Awesome Company</td>
+                      <td data-label="Date">16 Mar 2022</td>
+                      <td data-label="Percentage">70%</td>
+                      <td data-label="Comment">Awesome Company</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                                <li class="add-component"><a class="dropdown-item">Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" data-label="Project Name">
+                        <h6 class="ms-3 fw-500 text-sm">Project 4</h6>
+                      </td>
+                      <td data-label="Project Manager">Awesome Company</td>
+                      <td data-label="Date">16 Mar 2022</td>
+                      <td data-label="Percentage">70%</td>
+                      <td data-label="Comment">Awesome Company</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                                <li class="add-component"><a class="dropdown-item">Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal fade" id="leftBoxModal" tabindex="-1" aria-labelledby="leftBoxModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="leftBoxModalLabel">Percentage of Completion</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body percentage-slider">
+            <form oninput="output.value = Math.round(range.valueAsNumber / 1000)">
+              <label for="full-name" class="fw-bold mb-2 mt-4">Project Name</label>
+              <input type="text" placeholder="Project Name" class="d-block border border-2 rounded w-100 py-2 px-3">
+              <label for="full-name" class="fw-bold mb-2 mt-4">Project Manager</label>
+              <input type="text" placeholder="Project Manager" class="d-block border border-2 rounded w-100 py-2 px-3">
+              <label for="full-name" class="fw-bold mb-2 mt-4">Project Date</label>
+              <input type="date" placeholder="Project Date" class="d-block border border-2 rounded w-100 py-2 px-3">
+              <label for="full-name" class="fw-bold mb-2 mt-4">Percentage of Completion</label>
+              <div class="line-1">
+                <div class="range-container column" id="fifty1">
+                  <input type="range" id="ats" min="0" max="100" value="70" style="--ptage:70%">
+                  <label for="ats" class="50">70</label>
+                </div>
+              </div>
+              <div class="col-12 d-flex align-items-center justify-content-between mt-2">
+                <p class="text-light-gray">Project 1</p>
+                <p class="text-light-gray">Designer</p>
+                <p class="fw-600">100%</p>
+              </div>
+              <div class="col-12 d-flex align-items-center justify-content-between mt-2">
+                <p class="text-light-gray">Project 2</p>
+                <p class="text-light-gray">Designer</p>
+                <p class="fw-600">90%</p>
+              </div>
+              <div class="col-12 d-flex align-items-center justify-content-between mt-2">
+                <p class="text-light-gray">Project 3</p>
+                <p class="text-light-gray">Designer</p>
+                <p class="fw-600">80%</p>
+              </div>
+              <div class="col-12 d-flex align-items-center justify-content-between mt-2">
+                <p class="text-light-gray">Project 4</p>
+                <p class="text-light-gray">Designer</p>
+                <p class="fw-600">70%</p>
+              </div>
+              <label for="role" class="fw-bold mt-3 mb-2">Comments</label>
+              <textarea class="border border-2 d-block w-100 rounded p-2" placeholder="Your message" id="Comments" spellcheck="false" cols="10" rows="5"></textarea>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-4 text-uppercase">Update</button>
+            <button type="button" class="btn border border-2 px-4 text-uppercase"
+              data-bs-dismiss="modal">cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="./assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/graphs.js"></script>
+  <script src="./assets/js/project-overview.js"></script>
+  <script src="./assets/js/popup-form.js"></script>
+  <script src="./assets/js/graphs-popup.js"></script>
+  <script>
+        $(".interest").click(function(){
+    $(".interest-body").toggle("d-block");
+  });
+
+
+  const scale = (num, in_min, in_max, out_min, out_max) => {
+    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+};
+const moveLabel = (e) => {
+    const value = +e.target.value
+    const label = e.target.nextElementSibling
+
+    const range_width = getComputedStyle(e.target).getPropertyValue('width')
+    const label_width = getComputedStyle(label).getPropertyValue('width')
+
+    const num_width = +range_width.substring(0, range_width.length - 3)
+    const num_label_width = +label_width.substring(0, label_width.length - 3)
+
+    const max = +e.target.max
+    const min = +e.target.min
+
+    const left = value * (num_width / max) - num_label_width / 2 + scale(value, min, max, 10, -10)
+    label.style.left = `${left}px`
+
+    e.target.style = "--ptage:" + value + "%";
+    
+    label.innerHTML = value
+};
+const fiftyRange_1 = document.getElementById('fifty1');
+fiftyRange_1.addEventListener('input', e => {
+  moveLabel(e);
+  const nbOutboundHires = +nbOutboundHiresInput.value;
+  displayCostAts(nbOutboundHires, +e.target.value, +noAtsElem.value);
+});
+  </script>
+</body>
+
+</html>

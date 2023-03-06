@@ -1,0 +1,75 @@
+.regForm-1 {
+    .all-button {
+        border-bottom: 0;
+
+        .step {
+            width: fit-content;
+            height: fit-content;
+            padding: 11px 15px;
+            background-color: transparent;
+            opacity: 1;
+            border-radius: 0;
+
+            &.active {
+                border: 0;
+                border-bottom: 2px solid #775da6;
+
+                p {
+                    color: #778CA2;
+                }
+            }
+
+            &.finish {
+                background-color: transparent;
+
+                p {
+                    color: #778CA2;
+                }
+            }
+
+            p {
+                text-transform: uppercase;
+                color: #778CA2;
+            }
+        }
+    }
+
+    .form-input {
+        color: #898989;
+        font-weight: 400 !important;
+    }
+
+    select {
+        padding: 12px 10px !important;
+    }
+    input{
+        color: #898989 !important;
+        font-weight: 400 !important;
+        &::placeholder{
+            color: #898989 !important;
+        }
+    }
+}
+
+.popup-contact{
+    .facebook{
+        width: 70px;
+        height: 70px;
+    }
+    .instagram{
+        width: 70px;
+        height: 70px;
+    }
+    .linkedin{
+        width: 70px;
+        height: 70px;
+    }
+    .twitter{
+        width: 70px;
+        height: 55px;
+    }
+    .youtube{
+        width: 88px;
+        height: 56px;
+    }
+}

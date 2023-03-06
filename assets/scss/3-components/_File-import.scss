@@ -1,0 +1,30 @@
+/* Bootstrap 5 CSS and icons included */
+.upload_dropZone {
+  color: #0f3c4b;
+  background-color: #F9F9F9;
+  min-width: 800px;
+  margin-bottom: 0 !important;
+  p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .btn-upload {
+    color: #775DA6;
+    font-size: 14px;
+  }
+}
+// .upload_dropZone.highlight {
+//   outline-offset: -4px;
+//   outline-color: var(--colorPrimaryNormal, #0576bd);
+//   background-color: var(--colorPrimaryEighth, #c8dadf);
+// }
+// .upload_svg {
+//   fill: var(--colorPrimaryNormal, #0576bd);
+// }
+
+.upload_img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rhombus</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <link href="https://example.com/" rel="canonical" />
+    <!-- preferred URL - change for you site -->
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <section class="section-panel">
+        <div class="admin-wrapper">
+            <aside class="aside">
+                <div class="left-top">
+                  <div class="sitepanel-toggler">
+                    <div class="close">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="logo">
+                      <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+                    </div>
+                  </div>
+                  <ul>
+                    <li><a href="./crm-overview-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Overview</a></li>
+                    <li><a href="./crm-compnies-list.html" class="panel_link"><i class="icon icon-bar-companies"></i> Customer Profiles</a></li>
+                    <li><a href="./crm-deals.html" class="panel_link"><i class="icon icon-deal-bag"></i> Deals</a></li>
+                    <li><a href="./crm-contact.html" class="panel_link"><i class="icon icon-contact"></i> Contact</a></li>
+                    <li class="nav-item panel-dropdown position-relative">
+                      <a href="./crm-reports-overview.html" class="mb-auto panel_link"><i class="icon icon-project"></i> Report</a>
+                      <div>
+                        <a class="dropdown-btn nav-link dropdown-toggle position-absolute" href="" id="Setting-Dropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" style="top: 11px; right: 17px;">
+                      </a>
+                      <ul class="Setting-Dropdown m-0" aria-labelledby="Setting-Dropdown">
+                        <li><a class="dropdown-item panel_link" href="./crm-overview-reports.html">Customer Reports</a></li>
+                        <li><a class="dropdown-item panel_link" href="./crm-leads-report.html">Leads Reports</a></li>
+                        <li><a class="dropdown-item panel_link" href="./crm-sales-report.html">Sales Reports</a></li>
+                      </ul>
+                      </div>
+                    </li>
+                    <li><a href="./crm-revenue-analysis.html" class="panel_link"><i
+                        class="icon icon-report-board"></i> Revenue Analysis</a></li>
+                    <li><a href="./crm-transferred-projects.html" class="panel_link"><i class="icon icon-transferred-projects"></i> Transfer as project</a></li>
+                    <li><a href="./crm-product.html" class="panel_link active_panel"><i class="icon icon-expenses"></i> Products</a></li>
+                    <li><a href="./crm-documents.html" class="panel_link"><i class="icon icon-bar-document"></i> Documents</a></li>
+                    <li><a href="./hr-dashboard.html" class="panel_link">Move To HR Management </a></li>
+                  </ul>
+                </div>
+              </aside>
+            <main class="main">
+                <div class="top-nav bg-white">
+                    <div class="sitepanel-toggler for-mobile">
+                        <div class="close">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo">
+                            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="search-form d-none d-md-block">
+                        <form action="">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                                <i class="icon icon-search-form"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="about-profile">
+                        <div class="d-none d-md-block">
+                            <a href=""><i class="icon icon-question"></i></a>
+                            <a href=""><i class="icon icon-notification"></i></a>
+                        </div>
+                        <div class="dropdown select-dropdown admin-profile">
+                            <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="profile-img me-2">
+                                <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                              </div>
+                              <div class="admin-info d-none d-md-block">
+                                <h5 class="">Katie Pena</h5>
+                                <h6 class="">Admin</h6>
+                              </div>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <div class="profile-images text-center">
+                                <img src="./assets/images/profile-2.png" alt="">
+                              <h6 class="text-small mt-2">Allen Moreno</h6>
+                              <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                              </div>
+                                <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="page-main-title">
+                        <div class="heading">
+                            <h1>Products</h1>
+                        </div>
+                        <div class="page-invoice-btn d-flex align-items-center flex-colume-sm wsm-100">
+                            <div class="search-form wsm-100">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                                        <i class="icon icon-search-form"></i>
+                                    </div>
+                                </form>
+                            </div>
+                            <button type="button" class="btn ouline-white mx-md-3 wsm-100 mt-3 mt-md-0"><i class="icon icon-dark-print me-2"></i>Filter</button>
+                            <button class="btn btn-fill wsm-100 mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#businessForm-3">+ Add Product</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="invoice-table tablepanel">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Phone</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Company</th>
+                                            <th scope="col">Created Date</th>
+                                            <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row" data-label="Name">
+                                                <div class="d-flex align-items-centerv justify-content-end justify-content-md-start">
+                                                    <img src="./assets/images/prof-img-1.png" alt="">
+                                                    <h6 class="ms-3 fw-500 text-sm">Mathilda Bell</h6>
+                                                </div>
+                                            </td>
+                                            <td data-label="Phone">(435) 474-3348</td>
+                                            <td data-label="Email">napozje@paw.com</td>
+                                            <td data-label="Company">Awesome Company</td>
+                                            <td data-label="Created Date">16 Mar 2022</td>
+                                            <td>
+                                                <div class="btn-group border-end">
+                                                    <button type="button" class="btn p-2 border-none ms-4"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="dots d-flex align-items-center  m-0 p-0">
+                                                            <span class="me-1"></span>
+                                                            <span class="me-1 mt-0"></span>
+                                                            <span class="mt-0"></span>
+                                                        </div>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                                            Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                                            Invitation Email</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                                            Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Name">
+                                                <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                    <img src="./assets/images/ryan-stevens.jpg" alt="">
+                                                    <h6 class="ms-3 fw-500 text-sm">Ryan Stevens</h6>
+                                                </div>
+                                            </td>
+                                            <td data-label="Phone">(804) 362-8940</td>
+                                            <td data-label="Email">lefiden@podi.gov</td>
+                                            <td data-label="Company">Coyboy JR</td>
+                                            <td data-label="Created Date">25 May 2022</td>
+                                            <td>
+                                                <div class="btn-group border-end">
+                                                    <button type="button" class="btn p-2 border-none ms-4"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="dots d-flex align-items-center  m-0 p-0">
+                                                            <span class="me-1"></span>
+                                                            <span class="me-1 mt-0"></span>
+                                                            <span class="mt-0"></span>
+                                                        </div>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                                            Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                                            Invitation Email</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                                            Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Name">
+                                                <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                    <img src="./assets/images/loretta-myers.jpg" alt="">
+                                                    <h6 class="ms-3 fw-500 text-sm">Loretta Myers</h6>
+                                                </div>
+                                            </td>
+                                            <td data-label="Phone">(513) 711-3369</td>
+                                            <td data-label="Email">kuw@rolluzdi.gov</td>
+                                            <td data-label="Company">Awesome Company</td>
+                                            <td data-label="Created Date">18 Aug 2022</td>
+                                            <td>
+                                                <div class="btn-group border-end">
+                                                    <button type="button" class="btn p-2 border-none ms-4"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="dots d-flex align-items-center  m-0 p-0">
+                                                            <span class="me-1"></span>
+                                                            <span class="me-1 mt-0"></span>
+                                                            <span class="mt-0"></span>
+                                                        </div>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                                            Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                                            Invitation Email</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                                            Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Name">
+                                                <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                    <img src="./assets/images/carrie-aguilar.jpg" alt="">
+                                                    <h6 class="ms-3 fw-500 text-sm">Carrie Aguilar</h6>
+                                                </div>
+                                            </td>
+                                            <td data-label="Phone">(556) 616-5266</td>
+                                            <td data-label="Email">enval@maf.com</td>
+                                            <td data-label="Company">Awesome Company</td>
+                                            <td data-label="Created Date">12 Mar 2022</td>
+                                            <td>
+                                                <div class="btn-group border-end">
+                                                    <button type="button" class="btn p-2 border-none ms-4"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="dots d-flex align-items-center  m-0 p-0">
+                                                            <span class="me-1"></span>
+                                                            <span class="me-1 mt-0"></span>
+                                                            <span class="mt-0"></span>
+                                                        </div>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                                            Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                                            Invitation Email</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                                            Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Name">
+                                                <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                    <img src="./assets/images/marion-rose.jpg" alt="">
+                                                    <h6 class="ms-3 fw-500 text-sm">Marion Rose</h6>
+                                                </div>
+                                            </td>
+                                            <td data-label="Phone">(370) 928-5407</td>
+                                            <td data-label="Email">duv@wosapvu.io</td>
+                                            <td data-label="Company">Smile Digital Agency</td>
+                                            <td data-label="Created Date">29 Sep 2022</td>
+                                            <td>
+                                                <div class="btn-group border-end">
+                                                    <button type="button" class="btn p-2 border-none ms-4"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="dots d-flex align-items-center  m-0 p-0">
+                                                            <span class="me-1"></span>
+                                                            <span class="me-1 mt-0"></span>
+                                                            <span class="mt-0"></span>
+                                                        </div>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                                            Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                                            Invitation Email</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                                            Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Name">
+                                                <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                    <img src="./assets/images/ryan-stevens.jpg" alt="">
+                                                    <h6 class="ms-3 fw-500 text-sm">Duane Harrison</h6>
+                                                </div>
+                                            </td>
+                                            <td data-label="Phone">(724) 447-9642</td>
+                                            <td data-label="Email">lum@rirle.org</td>
+                                            <td data-label="Company">Oseram</td>
+                                            <td data-label="Created Date">18 Dec 2022</td>
+                                            <td>
+                                                <div class="btn-group border-end">
+                                                    <button type="button" class="btn p-2 border-none ms-4"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="dots d-flex align-items-center  m-0 p-0">
+                                                            <span class="me-1"></span>
+                                                            <span class="me-1 mt-0"></span>
+                                                            <span class="mt-0"></span>
+                                                        </div>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                                            Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                                            Invitation Email</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                                            Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Name">
+                                                <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                    <img src="./assets/images/william-curtis.jpg" alt="">
+                                                    <h6 class="ms-3 fw-500 text-sm">William Curtis</h6>
+                                                </div>
+                                            </td>
+                                            <td data-label="Phone">(373) 733-9486</td>
+                                            <td data-label="Email">be@haon.edu</td>
+                                            <td data-label="Company">Oseram</td>
+                                            <td data-label="Created Date">12 Sep 2022</td>
+                                            <td>
+                                                <div class="btn-group border-end">
+                                                    <button type="button" class="btn p-2 border-none ms-4"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="dots d-flex align-items-center  m-0 p-0">
+                                                            <span class="me-1"></span>
+                                                            <span class="me-1 mt-0"></span>
+                                                            <span class="mt-0"></span>
+                                                        </div>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                                            Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                                            Invitation Email</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                                            Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Name">
+                                                <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                    <img src="./assets/images/edwin-hampton.jpg" alt="">
+                                                    <h6 class="ms-3 fw-500 text-sm">Edwin Hampton</h6>
+                                                </div>
+                                            </td>
+                                            <td data-label="Phone">(702) 352-9481</td>
+                                            <td data-label="Email">be@haon.edu</td>
+                                            <td data-label="Company">Mother Hearth</td>
+                                            <td data-label="Created Date">12 May 2022</td>
+                                            <td>
+                                                <div class="btn-group border-end">
+                                                    <button type="button" class="btn p-2 border-none ms-4"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="dots d-flex align-items-center  m-0 p-0">
+                                                            <span class="me-1"></span>
+                                                            <span class="me-1 mt-0"></span>
+                                                            <span class="mt-0"></span>
+                                                        </div>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                                            Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                                            Invitation Email</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                                            Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Name">
+                                                <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                    <img src="./assets/images/edwin-park.jpg" alt="">
+                                                    <h6 class="ms-3 fw-500 text-sm">Edwin Park</h6>
+                                                </div>
+                                            </td>
+                                            <td data-label="Phone">(373) 733-9486</td>
+                                            <td data-label="Email">jipuk@uzko.com</td>
+                                            <td data-label="Company">Awesome Company</td>
+                                            <td data-label="Created Date">20 Oct 2022</td>
+                                            <td>
+                                                <div class="btn-group border-end">
+                                                    <button type="button" class="btn p-2 border-none ms-4"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="dots d-flex align-items-center  m-0 p-0">
+                                                            <span class="me-1"></span>
+                                                            <span class="me-1 mt-0"></span>
+                                                            <span class="mt-0"></span>
+                                                        </div>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                                            Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                                            Invitation Email</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                                            Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Name">
+                                                <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                    <img src="./assets/images/carrie-aguilar.jpg" alt="">
+                                                    <h6 class="ms-3 fw-500 text-sm">Carrie Aguilar</h6>
+                                                </div>
+                                            </td>
+                                            <td data-label="Phone">(556) 616-5266</td>
+                                            <td data-label="Email">enval@maf.com</td>
+                                            <td data-label="Company">Mother Candle</td>
+                                            <td data-label="Created Date">12 Mar 2022</td>
+                                            <td>
+                                                <div class="btn-group border-end">
+                                                    <button type="button" class="btn p-2 border-none ms-4"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="dots d-flex align-items-center  m-0 p-0">
+                                                            <span class="me-1"></span>
+                                                            <span class="me-1 mt-0"></span>
+                                                            <span class="mt-0"></span>
+                                                        </div>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                                            Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                                            Invitation Email</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                                            Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="invoice-pagination d-flex mt-3 justify-content-between align-items-center flex-colume-sm">
+                                <div class="d-flex align-items-center">
+                                    <p class="text-sm">Showing</p>
+                                    <select id="cars" class="border-1 me-3 ms-2 border-radius p-2">
+                                        <option value="volvo">15</option>
+                                        <option value="saab">25</option>
+                                        <option value="opel">35</option>
+                                        <option value="audi">50</option>
+                                    </select>
+                                    <span class="text-light-gray text-sm">items per page</span>
+                                </div>
+                                <div class="pagination-right d-flex align-items-center gap-4 mt-3 mt-md-0">
+                                    <button class="btn pagination-btn active">1</button>
+                                    <button class="btn pagination-btn">2</button>
+                                    <a class="text-light-gray text-decoration-none">Next</a>
+                                    <a class="text-light-gray text-decoration-none">End</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="modal right fade" id="businessForm-3" tabindex="-1"
+          aria-labelledby="interviewLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4>Add New Product</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body bg-light customer-add-form">
+                <ul class="nav nav-tabs justify-content-between" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase active" id="general-tab" data-bs-toggle="tab"
+                      data-bs-target="#general" type="button" role="tab" aria-controls="general"
+                      aria-selected="true">general</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase" id="all-image-tab" data-bs-toggle="tab"
+                      data-bs-target="#image" type="button" role="tab" aria-controls="image"
+                      aria-selected="false">Image</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase" id="all-price-tab" data-bs-toggle="tab"
+                      data-bs-target="#price" type="button" role="tab" aria-controls="price"
+                      aria-selected="false">Price</button>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="general" role="tabpanel" aria-labelledby="candidates-tab">
+                    <label for="Project-name" class="d-block my-2">Product name</label>
+                    <input type="text" placeholder="Please insert product name" class="form-input w-100">
+                    <label for="Project-name" class="d-block my-2">discerption</label>
+                    <input type="text" placeholder="summary" class="form-input w-100">
+                    <label for="Customer-name" class="d-block mb-2">Owner</label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">Select account manager</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <label for="Project-name" class="d-block my-2">Tags</label>
+                    <input type="text" placeholder="Tags" class="form-input w-100">
+                    <label for="Customer-name" class="d-block mb-2">Category</label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">Please select categroy</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </div>
+                  <div class="tab-pane px-2 py-4 bg-white" id="image" role="tabpanel">
+                    <label for="upload">upload</label>
+                    <div class="file-upload mx-auto">
+                      <figure>
+                        <img id="chosen-image">
+                        <figcaption id="file-name">
+                        </figcaption>
+                      </figure>
+                      <input type="file" id="upload-button" accept="image/*">
+                      <label for="upload-button">
+                        <i class="fa-solid fa-circle-info mr-3"></i> Add Header
+                        Image
+                      </label>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="price" role="tabpanel" aria-labelledby="candidates-tab">
+                    <label for="Project-name" class="d-block my-2">Product price</label>
+                    <input type="text" placeholder="Please insert product price" class="form-input w-100">
+                    <label for="Project-name" class="d-block my-2">including tax </label>
+                    <input type="text" placeholder="Please insert product price including tax" class="form-input w-100">
+                    <label for="Customer-name" class="d-block mb-2">Tax rule</label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">Select tax rule</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <label for="Project-name" class="d-block my-2">Promo Code</label>
+                    <input type="text" placeholder="Promo" class="form-input w-100">
+                    <label for="Customer-name" class="d-block mb-2">Code Promo code discount</label>
+                    <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                      <option value="volvo">Please select discount</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">ADD</button>
+                <button type="button" class="btn bg-light px-4 py-2 text-uppercase"
+                  data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- JavaScript
+================================================== -->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

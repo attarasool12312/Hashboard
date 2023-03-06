@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rhombus</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="./admin-dashboard.html" class="panel_link"><i class="icon icon-overviwe"></i> Overview</a>
+            </li>
+            <li><a href="./admin-finace.html" class="panel_link"><i class="icon icon-bar-companies"></i>
+                Finance</a></li>
+            <li><a href="./pm-index.html" class="panel_link">Move To PM Management </a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <h1 class="text-light-gray d-none d-md-block">Good Morning, <span class="text-dark">John Doe</span></h1>
+          <div class="about-profile">
+            <div class="dropdown select-dropdown d-none d-md-block">
+              <button class="btn dropdown-toggle pe-3 w-100 bg-light-gray border-0" type="button"
+                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Select Category
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">PM</a></li>
+                <li><a class="dropdown-item" href="#">CRM</a></li>
+                <li><a class="dropdown-item" href="#">HR</a></li>
+                <li><a class="dropdown-item" href="#">JOB</a></li>
+                <li><a class="dropdown-item" href="#">SM</a></li>
+              </ul>
+            </div>
+            <div class="d-none d-md-block ms-md-3">
+              <a href=""><i class="icon icon-question"></i></a>
+              <a href=""><i class="icon icon-notification"></i></a>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button"
+                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                  <h6 class="text-small mt-2">Allen Moreno</h6>
+                  <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="page-main-title justify-content-end">
+            <button class="btn btn-fill" data-bs-toggle="modal" data-bs-target="#chartMenu">Add Chart</button>
+          </div>
+          <div class="row">
+            <div class="col-6 col-md-2 mb-4 ps-0">
+              <div class="sm-box h-100 bg-white p-3">
+                <p class="fw-500 text-light-gray">Today sale</p>
+                <h3 class="fw-bold mt-2">$24.403</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 mb-4 ps-0">
+              <div class="sm-box h-100 bg-white p-3">
+                <p class="fw-500 text-light-gray">Weekly Sale</p>
+                <h3 class="fw-bold mt-2">$2431</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 mb-4 ps-0">
+              <div class="sm-box h-100 bg-white p-3">
+                <p class="fw-500 text-light-gray">Average Contract</p>
+                <h3 class="fw-bold mt-2">64732</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 mb-4 ps-0">
+              <div class="sm-box h-100 bg-white p-3">
+                <p class="fw-500 text-light-gray">Total Visitors Per Day</p>
+                <h3 class="fw-bold mt-2">7,682</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 mb-4 ps-0">
+              <div class="sm-box h-100 bg-white p-3">
+                <p class="fw-500 text-light-gray">Total Revenue</p>
+                <h3 class="fw-bold mt-2">68.8</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 mb-4 ps-0">
+              <div class="sm-box h-100 bg-white p-3">
+                <p class="fw-500 text-light-gray">Revenue Per Customer</p>
+                <h3 class="fw-bold mt-2">32</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 mb-4 ps-0">
+              <div class="sm-box h-100 bg-white p-3">
+                <p class="fw-500 text-light-gray">Top Customers</p>
+                <h3 class="fw-bold mt-2">39</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 mb-4 ps-0">
+              <div class="sm-box h-100 bg-white p-3">
+                <p class="fw-500 text-light-gray">Page Review</p>
+                <h3 class="fw-bold mt-2">10,294</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 mb-4 ps-0">
+              <div class="sm-box h-100 bg-white p-3">
+                <p class="fw-500 text-light-gray">New Sessions</p>
+                <h3 class="fw-bold mt-2">32.53%</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 mb-4 ps-0">
+              <div class="sm-box h-100 bg-white p-3">
+                <p class="fw-500 text-light-gray">Avg Time on Site</p>
+                <h3 class="fw-bold mt-2">2m:35s</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 mb-4 ps-0">
+              <div class="sm-box h-100 bg-white p-3">
+                <p class="fw-500 text-light-gray">Create and Extract Report</p>
+                <h3 class="fw-bold mt-2">32.53%</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 mb-4 ps-0">
+              <div class="sm-box h-100 bg-white p-3">
+                <p class="fw-500 text-light-gray">Create and Extract</p>
+                <h3 class="fw-bold mt-2">32.53%</h3>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="chart">
+                <div class="chart-head d-md-flex justify-content-between align-items-center">
+                  <div class="chart-title">
+                    <h4 class="fw-600">Revenue Analytics</h4>
+                  </div>
+                  <div class="dropdown select-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle pe-4 mt-3 mt-md-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Month Wise
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <canvas id="invoiceBars" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="chart">
+                <div class="chart-box h-100 d-flex justify-content-between flex-column">
+                  <div class="chart-head d-md-flex justify-content-between">
+                    <div class="chart-title">
+                      <h4 class="fw-600">Sales Analytics</h4>
+                    </div>
+                    <div class="dropdown select-dropdown">
+                      <button class="btn btn-secondary dropdown-toggle pe-4 mt-3 mt-md-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        This Month
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row p-0">
+                    <div class="col-md-8">
+                      <div class="workforce-donut p-3">
+                        <div>
+                          <canvas id="dashboardCart" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="d-flex align-items-center flex-column justify-content-center h-100">
+                        <p class="fw-500"><span class="dot-shape bg-purple"></span> Project 1</p>
+                        <p class="fw-500 mt-2"><span class="dot-shape bg-sky-blue"></span> Project 2</p>
+                        <p class="fw-500 mt-2"><span class="dot-shape bg-blue"></span> Project 3</p>
+                        <p class="fw-500 mt-2"><span class="dot-shape bg-orange"></span> Project 4</p>
+                        <p class="fw-500 mt-2"><span class="dot-shape bg-green"></span> Project 5</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 mt-3">
+              <div class="bg-white p-3 rounded">
+                <div class="chart-box d-flex justify-content-between flex-column">
+                  <div class="chart-head d-md-flex justify-content-between align-items-center">
+                    <div class="chart-title">
+                      <h5 class="fw-600">Performance Line Chart</h5>
+                    </div>
+                  </div>
+                  <div class="chart-content d-flex justify-content-between">
+                    <div class="chart-grap d-flex align-items-end">
+                      <!-- <img class="img-fluid" src="./assets/images/cast.png" alt=""> -->
+                      <div class="w-100 mt-4">
+                        <canvas id="Performance" class="wsm-100"
+                          style="display: block; box-sizing: border-box; height: 250px; width: 100%;" height="250"
+                          width="630"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-3 rounded mt-3">
+                <div class="chart-box d-flex justify-content-between flex-column">
+                  <div class="chart-head d-flex justify-content-between align-items-center">
+                    <div class="chart-title">
+                      <h3 class="fw-600">Product Overview</h3>
+                    </div>
+                    <p class="text-light-gray">13/03/2018 to 20/03/2018</p>
+                  </div>
+                  <div class="chart-content d-flex justify-content-between flex-column">
+                    <div class="chart-content d-flex justify-content-between align-items-end">
+                      <div class="prof-table table tablepanel">
+                        <table class="mt-3">
+                          <thead>
+                            <tr class="border-bottom">
+                              <th class="text-dark fw-600">PRODUCT NAME</th>
+                              <th class="text-dark fw-600">SALES</th>
+                              <th class="text-dark fw-600">RECORD POINT</th>
+                              <th class="text-dark fw-600">STOCK</th>
+                              <th class="text-dark fw-600">AMOUNT</th>
+                              <th class="text-dark fw-600">STOCK STATUS</th>
+                              <th><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="border-bottom border-1">
+                              <td data-label="PRODUCT NAME">Adidas Shoes</td>
+                              <td data-label="SALES">453</td>
+                              <td data-label="RECORD POINT">04</td>
+                              <td data-label="STOCK">447</td>
+                              <td data-label="AMOUNT">$293.01</td>
+                              <td data-label="STOCK STATUS"><span class="finalized-status bg-success text-white">In Stock</span></td>
+                            </tr>
+                            <tr class="border-bottom border-1">
+                              <td data-label="PRODUCT NAME">Puma Sports Wear</td>
+                              <td data-label="SALES">453</td>
+                              <td data-label="RECORD POINT">04</td>
+                              <td data-label="STOCK">447</td>
+                              <td data-label="AMOUNT">$293.01</td>
+                              <td data-label="STOCK STATUS"><span class="finalized-status bg-danger text-white">Out Of Stock</span></td>
+                            </tr>
+                            <tr class="border-bottom border-1">
+                              <td data-label="PRODUCT NAME">Nike Casual Shoes</td>
+                              <td data-label="SALES">453</td>
+                              <td data-label="RECORD POINT">04</td>
+                              <td data-label="STOCK">447</td>
+                              <td data-label="AMOUNT">$293.01</td>
+                              <td data-label="STOCK STATUS"><span class="finalized-status bg-success text-white">In Stock</span></td>
+                            </tr>
+                            <tr class="border-bottom border-1">
+                              <td data-label="PRODUCT NAME">Adidas Football</td>
+                              <td data-label="SALES">453</td>
+                              <td data-label="RECORD POINT">04</td>
+                              <td data-label="STOCK">447</td>
+                              <td data-label="AMOUNT">$293.01</td>
+                              <td data-label="STOCK STATUS"><span class="finalized-status bg-success text-white">In Stock</span></td>
+                            </tr>
+                            <tr class="border-bottom border-1">
+                              <td data-label="PRODUCT NAME">Puma T-shirts</td>
+                              <td data-label="SALES">453</td>
+                              <td data-label="RECORD POINT">04</td>
+                              <td data-label="STOCK">447</td>
+                              <td data-label="AMOUNT">$293.01</td>
+                              <td data-label="STOCK STATUS"><span class="finalized-status bg-danger text-white">Out Of Stock</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bg-white p-3 mt-3 rounded">
+                <div class="chart-box d-flex justify-content-between flex-column h-100">
+                  <div class="chart-head">
+                    <h4 class="fw-600">Top Users</h4>
+                  </div>
+                  <div class="check-tasks">
+                    <ul class="p-0">
+                      <li class="d-flex align-items-center border-bottom border-2 pb-3">
+                          <img src="./assets/images/profile-2.png" alt="">
+                          <div class="ms-3">
+                            <h6>Isabella Becker</h6>
+                            <p class="text-small text-light-gray">isabellabacker@gmail.com</p>
+                          </div>
+                      </li>
+                      <li class="d-flex align-items-center border-bottom border-2 pb-3">
+                        <img src="./assets/images/profile-3.png" alt="">
+                        <div class="ms-3">
+                          <h6>Alex Joshi</h6>
+                          <p class="text-small text-light-gray">alex00123@gmail.com</p>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center border-bottom border-2 pb-3">
+                      <img src="./assets/images/profile-4.png" alt="">
+                      <div class="ms-3">
+                        <h6>Catherin Rott</h6>
+                        <p class="text-small text-light-gray">catherinrott@gmail.com</p>
+                      </div>
+                  </li>
+                  <li class="d-flex align-items-center border-bottom border-2 pb-3">
+                    <img src="./assets/images/profile-5.png" alt="">
+                    <div class="ms-3">
+                      <h6>Selva Dobi</h6>
+                      <p class="text-small text-light-gray">selvadobi801@gmail.com</p>
+                    </div>
+                </li>
+                <li class="d-flex align-items-center border-bottom border-2 pb-3">
+                  <img src="./assets/images/profile-6.png" alt="">
+                  <div class="ms-3">
+                    <h6>Aman Walt</h6>
+                    <p class="text-small text-light-gray">amanwalt@gmail.com</p>
+                  </div>
+              </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-3 mt-3 rounded">
+                <div class="chart-box h-100 d-flex justify-content-between flex-column">
+                  <div class="chart-head d-md-flex justify-content-between">
+                    <div class="chart-title">
+                      <h4 class="fw-600">Customers</h4>
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-6">
+                      <div>
+                        <h3 class="fw-600 text-primary">40%</h3>
+                        <p class="text-light-gray">Current Customers</p>
+                      </div>
+                      <div class="mt-3">
+                        <h3 class="fw-600 text-info">30%</h3>
+                        <p class="text-light-gray">Retargeted Customers</p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div>
+                        <h3 class="fw-600 text-success">30%</h3>
+                        <p class="text-light-gray">New Customers</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="workforce-donut p-3">
+                    <div>
+                      <canvas id="dashboardCart-1" class="w-100" style="display: block; box-sizing: border-box; height: 263px; width: 263px;" width="263" height="263"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal right fade" id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel" aria-hidden="true">
+      <div class="modal-dialog width-70 wsm-95">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Chart Menu</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="line-tab" data-bs-toggle="tab" data-bs-target="#line" type="button"
+                  role="tab" aria-controls="line" aria-selected="true">
+                  <i class="icon icon-chart-line-solid"></i>
+                  <p class="text-light-gray">Line Chart</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bar-tab" data-bs-toggle="tab" data-bs-target="#bar" type="button"
+                  role="tab" aria-controls="bar" aria-selected="false">
+                  <i class="icon icon-chart-column-solid"></i>
+                  <p class="text-light-gray">Bar Chart</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pie-tab" data-bs-toggle="tab" data-bs-target="#pie" type="button"
+                  role="tab" aria-controls="pie" aria-selected="false">
+                  <i class="icon icon-chart-pie-solid"></i>
+                  <p class="text-light-gray">Pie Chart</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="cambo-tab" data-bs-toggle="tab" data-bs-target="#cambo" type="button"
+                  role="tab" aria-controls="cambo" aria-selected="false">
+                  <i class="icon icon-cambo-chart"></i>
+                  <p class="text-light-gray">Cambo Chart</p>
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content mt-4">
+              <div class="tab-pane active" id="line" role="tabpanel" aria-labelledby="line-tab">
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <canvas id="lineChart" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <canvas id="lineChart1" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <canvas id="lineChart2" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 mt-4">
+                    <div>
+                      <canvas id="lineChart3" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 mt-4">
+                    <div>
+                      <canvas id="lineChart4" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="bar" role="tabpanel" aria-labelledby="bar-tab">
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <canvas id="BarsChart1" class="wsm-100 w-100"
+                        style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <canvas id="BarsChart2" class="wsm-100 w-100"
+                        style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <canvas id="BarsChart3" class="wsm-100 w-100"
+                        style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 mt-5">
+                    <div>
+                      <canvas id="BarsChart4" class="wsm-100 w-100"
+                        style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 mt-5">
+                    <div>
+                      <canvas id="BarsChart5" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 160px; width: 470px;"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="pie" role="tabpanel" aria-labelledby="pie-tab">
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <canvas id="pieChart" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <canvas id="pieChart-1" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <canvas id="pieChart-2" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="cambo" role="tabpanel" aria-labelledby="cambo-tab">
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <canvas id="camboChart" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 270px; width: 470px;"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <canvas id="camboChart1" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 260px; width: 470px;"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill px-5 py-2 text-uppercase wsm-100">Update</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase wsm-100"
+              data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="./assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/graphs-popup.js"></script>
+  <!-- <script src="./assets/js/graphs.js"></script> -->
+  <script>
+const invoice = document.getElementById("invoiceBars");
+
+const bar4 = new Chart(invoice, {
+  type: "bar",
+  data: {
+    labels: [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat",
+      "Sun",
+    ],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [3, 13, 9, 12, 13, 8, 10],
+        borderWidth: 0,
+        backgroundColor: "#775da6",
+        barThickness: 30,
+        backgroundColor:"#775da6"
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+
+    scales: {
+      x: {
+        // display: false,
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: true,
+        },
+      },
+      y: {
+        display: false,
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: false,
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  },
+});
+  
+const workDon = document.getElementById('dashboardCart');
+
+    const bar22 = new Chart(workDon, {
+        type: 'doughnut',
+        data: {
+            labels: ['Strategy ', 'Governance', 'Large Business'],
+            datasets: [{
+                label: '# of Votes',
+                backgroundColor: ['#775DA6', '#70B6C1', '#0000ff', '#31f331', '#fcab15'],
+                borderRadius: 2,
+                data: [40, 20, 10, 25, 5,],
+                barThickness: 5,
+                borderWidth: 0,
+                cutout: '70%'
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                  display: false,
+                    labels: {
+                        usePointStyle: false,
+                    }
+                }
+            },
+            elements: {
+                customCutout: true,
+            },
+            cutoutPercentage: 32
+        },
+    });
+  
+    const Performance = document.getElementById("Performance");
+
+    const Performance_1 = new Chart(Performance, {
+      type: 'line',
+      data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        datasets: [{
+          label: 'PM',
+          data: [18, 12, 6, 9, 12, 3, 9],
+          backgroundColor: '#97cfe042',
+          borderColor: '#59B4D1',
+          fill: true,
+          tension: 0.4
+        },
+        {
+          label: 'CRM',
+          data: [10, 22, 36, 49, 52, 63, 79],
+          backgroundColor: '#775da656',
+          borderColor: '#775da6',
+          fill: true,
+          tension: 0.4
+        },
+        {
+          label: 'HR',
+          data: [60, 42, 16, 79, 32, 50, 0],
+          backgroundColor: '#ff557d49',
+          borderColor: '#FF557E',
+          fill: true,
+          tension: 0.4
+        },
+        {
+          label: 'JOB',
+          data: [50, 32, 11, 59, 20, 40, 10],
+          backgroundColor: '#b922ff48',
+          borderColor: '#B822FF',
+          fill: true,
+          tension: 0.4
+        },
+        {
+          label: 'SM',
+          data: [10, 22, 36, 70, 52, 60, 20],
+          backgroundColor: '#0077ff59',
+          borderColor: '#0075FF',
+          fill: true,
+          tension: 0.4
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      },
+    });
+
+    const workDon_1 = document.getElementById('dashboardCart-1');
+
+    const bar_22 = new Chart(workDon_1, {
+        type: 'doughnut',
+        data: {
+            labels: ['Strategy ', 'Governance', 'Large Business'],
+            datasets: [{
+                label: '# of Votes',
+                backgroundColor: ['#0d6efd', '#198754', '#0dcaf0'],
+                borderRadius: 2,
+                data: [40, 30, 30,],
+                barThickness: 5,
+                borderWidth: 0,
+                cutout: '70%'
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                  display: false,
+                    labels: {
+                        usePointStyle: false,
+                    }
+                }
+            },
+            elements: {
+                customCutout: true,
+            },
+            cutoutPercentage: 32
+        },
+    });
+
+
+  </script>
+</body>
+
+</html>

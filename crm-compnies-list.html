@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rhombus</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="./crm-overview-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Overview</a>
+            </li>
+            <li><a href="./crm-compnies-list.html" class="panel_link active_panel"><i
+                  class="icon icon-bar-companies"></i> Customer Profiles</a></li>
+            <li><a href="./crm-deals.html" class="panel_link"><i class="icon icon-deal-bag"></i> Deals</a></li>
+            <li><a href="./crm-contact.html" class="panel_link"><i class="icon icon-contact"></i> Contact</a></li>
+            <li class="nav-item panel-dropdown position-relative">
+              <a href="./crm-reports-overview.html" class="mb-auto panel_link"><i class="icon icon-project"></i>
+                Report</a>
+              <div>
+                <a class="dropdown-btn nav-link dropdown-toggle position-absolute" href="" id="Setting-Dropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false" style="top: 11px; right: 17px;">
+                </a>
+                <ul class="Setting-Dropdown m-0" aria-labelledby="Setting-Dropdown">
+                  <li><a class="dropdown-item panel_link" href="./crm-overview-reports.html">Customer Reports</a></li>
+                  <li><a class="dropdown-item panel_link" href="./crm-leads-report.html">Leads Reports</a></li>
+                  <li><a class="dropdown-item panel_link" href="./crm-sales-report.html">Sales Reports</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="./crm-revenue-analysis.html" class="panel_link"><i
+                  class="icon icon-report-board"></i> Revenue Analysis</a></li>
+                  <li><a href="./crm-transferred-projects.html" class="panel_link"><i
+                    class="icon icon-transferred-projects"></i> Transfer as project</a></li>
+            <li><a href="./crm-product.html" class="panel_link"><i class="icon icon-expenses"></i> Products</a></li>
+            <li><a href="./crm-documents.html" class="panel_link"><i class="icon icon-bar-document"></i> Documents</a>
+            </li>
+            <li><a href="./hr-dashboard.html" class="panel_link">Move To HR Management </a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div>
+          <div class="about-profile">
+            <div class="d-none d-md-block">
+              <button type="button" class="btn ouline-white"><i class="icon icon-plus"></i> Add</button>
+              <a href=""><i class="icon icon-question"></i></a>
+              <a href=""><i class="icon icon-notification"></i></a>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                <h6 class="text-small mt-2">Allen Moreno</h6>
+                <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                  <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="page-main-title">
+            <h1>Customer Profiles</h1>
+            <div class="d-flex align-iteme-center flex-colume-sm wsm-100">
+              <button type="button" class="btn ouline-white btn-fill me-md-3">Upload CSV</button>
+              <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0" data-bs-toggle="modal"
+                data-bs-target="#businessForm">+ Add new customer</button>
+            </div>
+          </div>
+          <div class="row project-performance mt-2 flex-colume-sm">
+            <div class="col-12 col-md-6 d-flex align-iteme-center">
+              <div class="dropdown select-dropdown ms-4">
+                <button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button"
+                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="icon icon-filter"></i> sort: <b class="text-dark">a-z</b>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-end align-items-center mt-3 mt-md-0">
+              <ul class="nav nav-tabs bg-light me-2 me-md-0 ms-md-2 employees-nav flex-row-sm" id="myTab"
+                role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-uppercase text-md-small" id="list-tab" data-bs-toggle="tab"
+                    data-bs-target="#list" type="button" role="tab" aria-controls="list" aria-selected="false"><i
+                      class="icon icon-list-task"></i>LIST</button>
+                </li>
+                <li class="nav-item m-0" role="presentation">
+                  <button class="nav-link text-uppercase text-md-small active" id="grid-tab" data-bs-toggle="tab"
+                    data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="true"><i
+                      class="icon icon-grid"></i>
+                    grid</button>
+                </li>
+              </ul>
+            </div>
+            <a href=""data-bs-toggle="modal"
+            data-bs-target="#businessForm" class="text-uppercase text-light-gray mt-2 text-decoration-none">... Edit Customer board</a>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane" id="list" role="tabpanel" aria-labelledby="list-tab">
+              <div class="invoice-table mt-4 tablepanel">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>Company name
+                      </th>
+                      <th scope="col">Location</th>
+                      <th scope="col">Employees</th>
+                      <th scope="col">Revenue (USD)</th>
+                      <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row" class="ps-5" data-label="Company name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/amazon.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Amazon Inc</h6>
+                            <p class="text-light-gray">amazon.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Seattle, Washington</td>
+                      <td data-label="Employees">566k</td>
+                      <td data-label="Revenue (USD)">12.16 bn</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                            <li><a class="dropdown-item" href="./crm-customer-profile.html">See Project Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="ps-5" data-label="Company name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/dropbox.png" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Dropbox</h6>
+                            <p class="text-light-gray">dropbox.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Seattle, Washington</td>
+                      <td data-label="Employees">566k</td>
+                      <td data-label="Revenue (USD)">17,786 cr</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                            <li><a class="dropdown-item" href="./crm-customer-profile.html">See Project Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="ps-5" data-label="Company name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/apple.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Apple Inc.</h6>
+                            <p class="text-light-gray">apple.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Cupertino, California</td>
+                      <td data-label="Employees">47k</td>
+                      <td data-label="Revenue (USD)">27,923.4 cr</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                            <li><a class="dropdown-item" href="./crm-customer-profile.html">See Project Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="ps-5" data-label="Company name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/mailchimp.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Mailchimp. Inc</h6>
+                            <p class="text-light-gray">mailchimp.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Georgia, USA</td>
+                      <td data-label="Employees">566k</td>
+                      <td data-label="Revenue (USD)">17,786 cr</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                            <li><a class="dropdown-item" href="./crm-customer-profile.html">See Project Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="ps-5" data-label="Company name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/google.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Google.Inc</h6>
+                            <p class="text-light-gray">google.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Menlo Park, California</td>
+                      <td data-label="Employees">566k</td>
+                      <td data-label="Revenue (USD)">110 bn</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                            <li><a class="dropdown-item" href="./crm-customer-profile.html">See Project Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="ps-5" data-label="Company name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/airbnb.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Airbnb</h6>
+                            <p class="text-light-gray">airbnb.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">San Francisco, California</td>
+                      <td data-label="Employees">4.1k</td>
+                      <td data-label="Revenue (USD)">260 cr</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                            <li><a class="dropdown-item" href="./crm-customer-profile.html">See Project Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="ps-5" data-label="Company name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/shopee.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Shopee. Inc</h6>
+                            <p class="text-light-gray">shopee.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Singapura</td>
+                      <td data-label="Employees">25.1k</td>
+                      <td data-label="Revenue (USD)">9.16 bn</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                            <li><a class="dropdown-item" href="./crm-customer-profile.html">See Project Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="ps-5" data-label="Company name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/sebo.png" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Sebo Studio</h6>
+                            <p class="text-light-gray">sebostudio.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Yogyakarta, Indonesia</td>
+                      <td data-label="Employees">566k</td>
+                      <td data-label="Revenue (USD)">4,800.5 cr</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                            <li><a class="dropdown-item" href="./crm-customer-profile.html">See Project Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="ps-5" data-label="Company name">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/images/evernote.jpg" alt="">
+                          <div class="ms-3 ">
+                            <h6 class="text-sm">Evernote</h6>
+                            <p class="text-light-gray">evernote.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Location">Redwood City, California</td>
+                      <td data-label="Employees">566k</td>
+                      <td data-label="Revenue (USD)">17,786 cr</td>
+                      <td>
+                        <div class="btn-group border-end">
+                          <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="dots d-flex align-items-center  m-0 p-0">
+                              <span class="me-1"></span>
+                              <span class="me-1 mt-0"></span>
+                              <span class="mt-0"></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                                Invitation Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                            <li><a class="dropdown-item" href="./crm-customer-profile.html">See Project Details</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+              <div class="row">
+                <div class="col-12 col-md-4 team-managment">
+                  <div class="card min-h-385 m-0">
+                    <a href="#" class="card-body text-center create-card text-decoration-none text-dark"
+                    data-bs-toggle="modal"
+                    data-bs-target="#businessForm">
+                      <div class="search-icon">
+                        <i class="icon icon-plus"></i>
+                      </div>
+                      <h5 class="card-title">Create Customer</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Create a new Customer where you can add and track your
+                        Company</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-card">
+                    <h6>Seattle, Washington</h6>
+                    <a href="#"><i class="icon icon-dots"></i></a>
+                    <img src="./assets/images/amazon.jpg" alt="/">
+                    <h5>Amazon Inc</h5>
+                    <button class="btn-customer">amazon.com</button>
+                    <div class="d-flex align-iteme-center">
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Deals</p>
+                        <p class="fw-600">566k</p>
+                      </div>
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Revenue (USD)</p>
+                        <p class="fw-600">12.16 bn</p>
+                      </div>
+                    </div>
+                    <a href="./crm-customer-profile.html"
+                      class="btn project-card-button btn-fill text-white mt-3 text-center">Customer Profile</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-card">
+                    <h6>Seattle, Washington</h6>
+                    <a href="#"><i class="icon icon-dots"></i></a>
+                    <img src="./assets/images/dropbox.png" alt="/">
+                    <h5>Dropbox</h5>
+                    <button class="btn-customer">dropbox.com</button>
+                    <div class="d-flex align-iteme-center">
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Deals</p>
+                        <p class="fw-600">566k</p>
+                      </div>
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Revenue (USD)</p>
+                        <p class="fw-600">17,786 cr</p>
+                      </div>
+                    </div>
+                    <a href="./crm-customer-profile.html"
+                      class="btn project-card-button btn-fill text-white mt-3 text-center">Customer Profile</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-card">
+                    <h6>Cupertino, California</h6>
+                    <a href="#"><i class="icon icon-dots"></i></a>
+                    <img src="./assets/images/apple.jpg" alt="/">
+                    <h5>Apple Inc.</h5>
+                    <button class="btn-customer">apple.com</button>
+                    <div class="d-flex align-iteme-center">
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray">47k</p>
+                      </div>
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray">27,923.4 cr</p>
+                      </div>
+                    </div>
+                    <a href="./crm-customer-profile.html"
+                      class="btn project-card-button btn-fill text-white mt-3 text-center">Customer Profile</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-card">
+                    <h6>Georgia, USA</h6>
+                    <a href="#"><i class="icon icon-dots"></i></a>
+                    <img src="./assets/images/mailchimp.jpg" alt="/">
+                    <h5>Mailchimp. Inc</h5>
+                    <button class="btn-customer">mailchimp.com</button>
+                    <div class="d-flex align-iteme-center">
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Deals</p>
+                        <p class="fw-600">566k</p>
+                      </div>
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Revenue (USD)</p>
+                        <p class="fw-600">17,786 cr</p>
+                      </div>
+                    </div>
+                    <a href="./crm-customer-profile.html"
+                      class="btn project-card-button btn-fill text-white mt-3 text-center">Customer Profile</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-card">
+                    <h6>Menlo Park, California</h6>
+                    <a href="#"><i class="icon icon-dots"></i></a>
+                    <img src="./assets/images/google.jpg" alt="/">
+                    <h5>Google.Inc</h5>
+                    <button class="btn-customer">google.com</button>
+                    <div class="d-flex align-iteme-center">
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Deals</p>
+                        <p class="fw-600">566k</p>
+                      </div>
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Revenue (USD)</p>
+                        <p class="fw-600">110 bn</p>
+                      </div>
+                    </div>
+                    <a href="./crm-customer-profile.html"
+                      class="btn project-card-button btn-fill text-white mt-3 text-center">Customer Profile</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-card">
+                    <h6>San Francisco, California</h6>
+                    <a href="#"><i class="icon icon-dots"></i></a>
+                    <img src="./assets/images/airbnb.jpg" alt="/">
+                    <h5>Airbnb</h5>
+                    <button class="btn-customer">airbnb.com</button>
+                    <div class="d-flex align-iteme-center">
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Deals</p>
+                        <p class="fw-600">4.1k</p>
+                      </div>
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Revenue (USD)</p>
+                        <p class="fw-600">260 cr</p>
+                      </div>
+                    </div>
+                    <a href="./crm-customer-profile.html"
+                      class="btn project-card-button btn-fill text-white mt-3 text-center">Customer Profile</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-card">
+                    <h6>Singapura</h6>
+                    <a href="#"><i class="icon icon-dots"></i></a>
+                    <img src="./assets/images/shopee.jpg" alt="/">
+                    <h5>Shopee. Inc</h5>
+                    <button class="btn-customer">shopee.com</button>
+                    <div class="d-flex align-iteme-center">
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Deals</p>
+                        <p class="fw-600">25.1k</p>
+                      </div>
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Revenue (USD)</p>
+                        <p class="fw-600">9.16 bn</p>
+                      </div>
+                    </div>
+                    <a href="./crm-customer-profile.html"
+                      class="btn project-card-button btn-fill text-white mt-3 text-center">Customer Profile</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-card">
+                    <h6>Yogyakarta, Indonesia</h6>
+                    <a href="#"><i class="icon icon-dots"></i></a>
+                    <img src="./assets/images/sebo-logo.png" alt="/">
+                    <h5>Sebo Studio</h5>
+                    <button class="btn-customer">sebostudio.com</button>
+                    <div class="d-flex align-iteme-center">
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Deals</p>
+                        <p class="fw-600">566k</p>
+                      </div>
+                      <div class="w-50 border project-value">
+                        <p class="text-light-gray pb-2">Revenue (USD)</p>
+                        <p class="fw-600">4,800.5 cr</p>
+                      </div>
+                    </div>
+                    <a href="./crm-customer-profile.html"
+                      class="btn project-card-button btn-fill text-white mt-3 text-center">Customer Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal right fade" id="businessForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add New Customer</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form>
+              <label for="Customer-name" class="d-block mb-2">Customer Name</label>
+              <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                <option value="volvo">Please insert customer name</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <label for="Project-name" class="d-block my-2">Customer ID</label>
+              <input type="text" placeholder="Please insert CustomerID" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">Customer Contact</label>
+              <div class="d-flex">
+                <div class="col-6 me-2">
+                  <input type="text" placeholder="Name" class="form-input w-100 mb-2">
+                  <input type="number" placeholder="Phone" class="form-input w-100">
+                </div>
+                <div class="col-6">
+                  <input type="email" placeholder="Email" class="form-input w-100 mb-2">
+                  <input type="text" placeholder="Position" class="form-input w-100">
+                </div>
+              </div>
+              <label for="ProjectManager" class="d-block my-2">Account Manager</label>
+              <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                <option value="volvo">Select account manager</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <label for="ProjectSummary" class="d-block my-2">Summary</label>
+              <input type="text" placeholder="Summary" class="form-input w-100">
+              <label for="ProjectStage" class="d-block my-2">Category</label>
+              <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                <option value="volvo">Please select categroy</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <label for="Invite-members" class="d-block my-2">Invite Members</label>
+              <input type="text" placeholder="john.doe@gmail.com" class="form-input w-100">
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">ADD</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Project Board</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="upload-file upload-file1">
+                <div class="file-upload file-upload1">
+                  <figure>
+                    <img id="chosen-image chosen-image1">
+                    <figcaption id="file-name file-name1">
+                    </figcaption>
+                  </figure>
+                  <input type="file" id="upload-button" accept="image/*" />
+                  <label for="upload-button">
+                    Add Image
+                  </label>
+                </div>
+              </div>
+              <label for="name" class="fw-bold mt-3 mb-2">Full Name</label>
+              <input type="text" name="name" id="name" placeholder="Enter Your FullName"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="team" class="fw-bold mt-3 mb-2">Deportement</label>
+              <input type="text" name="team" id="team" placeholder="Enter Your Team"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="hired" class="fw-bold mt-3 mb-2">Date Hired</label>
+              <input type="date" name="hired" id="hired" placeholder="Enter Hired Date"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="contact" class="fw-bold mt-3 mb-2">Contact</label>
+              <input type="email" name="email" id="email" placeholder="Enter a Email"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+              <input type="tel" name="Phone" id="phone" placeholder="Enter a Phone number"
+                class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">
+              <label for="status" class="fw-bold mt-3 mb-2">Status</label>
+              <select name="status" id="status" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="DeliveryStage">Delivery Stage</option>
+                <option value="Operation">Operation Stage</option>
+                <option value="Initiation">Initiation Stage</option>
+              </select>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn border border-2" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-fill">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+    $('.tab-click').click(function (e) {
+      e.preventDefault();
+      $(this).addClass('ouline-white');
+      $('.slider-btn > a').removeClass('active');
+      $(this).addClass('active');
+    });
+  </script>
+</body>
+
+</html>

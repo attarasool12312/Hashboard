@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rhombus</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <link href="https://example.com/" rel="canonical" />
+    <!-- preferred URL - change for you site -->
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="bg-white">
+        <div class="header-main">
+            <div class="sitepanel-toggler m-0">
+                <div class="close">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="search-form header-form d-none d-md-block">
+                <form action="">
+                    <div class="form-group">
+                        <input class="form-control max-width" type="text" placeholder="Search in Rhombus…"
+                            aria-label="Search">
+                        <i class="icon icon-search-form"></i>
+                    </div>
+                </form>
+            </div>
+            <div class="about-profile">
+                <div class="d-none d-md-block">
+                    <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a>
+                    <a href="./sm-account-activities.html"><i class="icon icon-notification"></i></a>
+                </div>
+                <div class="dropdown select-dropdown admin-profile">
+                    <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="profile-img me-2 border-0">
+                        <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                      </div>
+                      <div class="admin-info d-none d-md-block">
+                        <h5 class="">Katie Pena</h5>
+                        <h6 class="text-small text-light-gray">Admin</h6>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <div class="profile-images text-center">
+                        <img src="./assets/images/profile-2.png" alt="">
+                      <h6 class="text-small mt-2">Allen Moreno</h6>
+                      <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                      </div>
+                        <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+    </header>
+    <section class="section-panel">
+        <div class="admin-wrapper">
+            <aside class="aside left-sidbar">
+                <ul>
+                    <li><a href="./sm-overview.html" class="panel_link"><i class="icon icon-overviwe"></i>
+                            Overview</a>
+                    </li>
+                    <li><a href="./sm-trending.html" class="panel_link "><i class="icon icon-trending"></i>
+                            Trending</a></li>
+                    <li><a href="./sm-new-post.html" class="panel_link"><i class="icon icon-friends"></i>
+                            New Post</a></li>
+                    <li><a href="./sm-collaboration.html" class="panel_link "><i class="icon icon-event"></i>
+                            Collaboration</a>
+                    </li>
+                    <li><a href="./sm-link-new-account.html" class="panel_link "><i class="icon icon-memory"></i>Link
+                            new account</a></li>
+                    <li><a href="./sm-campaign-analysis.html" class="panel_link "><i class="icon icon-saved-post"></i>
+                            Campaign analysis</a>
+                    </li>
+                    <li><a href="./sm-influencers.html" class="panel_link active_panel"><i
+                                class="icon icon-contact"></i>
+                            Influencers</a></li>
+                            <li><a href="./sm-benchmarking.html" class="panel_link "><i class="icon icon-benchmarking"></i>
+                                Benchmarking</a></li>
+                        <li><a href="./sm-create-template.html" class="panel_link "><i class="icon icon-overviwe"></i>
+                                Create Template</a></li>
+                    <li><a href="#" data-bs-toggle="modal" class="panel_link " data-bs-target="#SettingForm"><i
+                                class="icon icon-contact"></i>
+                            Setting</a></li>
+                </ul>
+            </aside>
+            <main class="main pt-4 pb-4">
+                <div class="container">
+                    <div class="page-main-title">
+                        <h1>Influencers</h1>
+                        <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 wsm-100" data-bs-toggle="modal"
+                            data-bs-target="#influencerModal">Add new influencer</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="nav nav-tabs bg-light me-2 me-md-0 employees-nav w-fit flex-row-sm" id="myTab"
+                                role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link text-uppercase text-md-small active" id="Facebook-tab"
+                                        data-bs-toggle="tab" data-bs-target="#Facebook" type="button" role="tab"
+                                        aria-controls="Facebook" aria-selected="false">Facebook</button>
+                                </li>
+                                <li class="nav-item m-0" role="presentation">
+                                    <button class="nav-link text-uppercase text-md-small" id="Tiwtter-tab"
+                                        data-bs-toggle="tab" data-bs-target="#Tiwtter" type="button" role="tab"
+                                        aria-controls="Tiwtter" aria-selected="true">Tiwtter</button>
+                                </li>
+                                <li class="nav-item m-0" role="presentation">
+                                    <button class="nav-link text-uppercase text-md-small" id="Instagram-tab"
+                                        data-bs-toggle="tab" data-bs-target="#Instagram" type="button" role="tab"
+                                        aria-controls="Instagram" aria-selected="true">Instagram</button>
+                                </li>
+                                <li class="nav-item m-0" role="presentation">
+                                    <button class="nav-link text-uppercase text-md-small" id="YouTube-tab"
+                                        data-bs-toggle="tab" data-bs-target="#YouTube" type="button" role="tab"
+                                        aria-controls="YouTube" aria-selected="true">YouTube</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-end mt-3 mt-md-0">
+                            <div class="dropdown select-dropdown">
+                                <button class="btn dropdown-toggle pe-5 bg-white border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Local
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 full-content">
+                            <div class="tab-content mt-4">
+                                <div class="tab-pane active" id="Facebook" role="tabpanel"
+                                    aria-labelledby="Facebook-tab">
+                                    <div class="row">
+                                        <div class="col-md-3 contact-card">
+                                            <h6 class="mt-md-5">Catgory</h6>
+                                            <div class="ps-5 mt-4">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Agriculture
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  B2B
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Cosmetics
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Sport
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Real Estate
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Food & Beverages
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Entertainment
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Music
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Games
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Transportation
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Building
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Industrial manufacturing
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Comunication service
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Healthcare
+                                            </div>
+                                            <div class="ps-5 mt-2">
+                                                <span class="check-tasks">
+                                                    <div class="checkbox relative">
+                                                      <label class="absolute">
+                                                        <input type="checkbox" data-ng-model="example.check">
+                                                        <span class="box"></span>
+                                                      </label>
+                                                    </div>
+                                                  </span>
+                                                  Financials
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 contact-card mt-3 mt-md-0">
+                                            <h5 class="text-light-gray">Sports</h5>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-3 cursor-pointer details">
+                                                <img src="./assets/images/prof-img-1.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Agnes Moody</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-2.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Glenn Zimmerman</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-3.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Jayden Byrd</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-4.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Gregory Snyder</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-5.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Lawrence Silva</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-6.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Sadie Palmer</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-7.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Seth McCarthy</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-8.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Lewis Walton</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 contact-card mt-3 mt-md-0">
+                                            <h5 class="text-light-gray">Music</h5>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-3 cursor-pointer details">
+                                                <img src="./assets/images/prof-img-1.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Agnes Moody</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-2.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Glenn Zimmerman</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-3.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Jayden Byrd</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-4.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Gregory Snyder</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-5.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Lawrence Silva</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-6.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Sadie Palmer</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-7.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Seth McCarthy</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-8.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Lewis Walton</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 contact-card mt-3 mt-md-0">
+                                            <h5 class="text-light-gray">Sports</h5>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-3 cursor-pointer details">
+                                                <img src="./assets/images/prof-img-1.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Agnes Moody</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-2.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Glenn Zimmerman</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-3.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Jayden Byrd</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-4.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Gregory Snyder</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-5.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Lawrence Silva</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-6.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Sadie Palmer</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-7.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Seth McCarthy</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white rounded profile-images d-flex p-3 mt-2 cursor-pointer details">
+                                                <img src="./assets/images/profile-8.png" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-small fw-600">Lewis Walton</h6>
+                                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="Tiwtter" role="tabpanel" aria-labelledby="Tiwtter-tab"></div>
+                                <div class="tab-pane" id="Instagram" role="tabpanel" aria-labelledby="Instagram-tab">
+                                </div>
+                                <div class="tab-pane" id="Facebook" role="tabpanel" aria-labelledby="Facebook-tab">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 right-content-1 mt-3">
+                            <div class="contact-profile">
+                              <img src="./assets/images/profile-2.png" alt="">
+                              <h5>Charles Robbie</h5>
+                              <p class="text-small"><i class="icon icon-location-16 me-2"></i>New York, USA</p>
+                              <div class="d-flex align-iteme-center justify-content-between mt-4">
+                                <div>
+                                  <p class="text-small">Tweets</p>
+                                  <h5>28</h5>
+                                </div>
+                                <div>
+                                  <p class="text-small">Followers</p>
+                                  <h5>643</h5>
+                                </div>
+                                <div>
+                                  <p class="text-small">Following</p>
+                                  <h5>76</h5>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mt-3 px-2">
+                                <div class="col-md-4 d-flex align-items-center">
+                                    <span class="d-block w-25"><i class="icon icon-youtube bg-cover"></i></span>
+                                    <div class="ms-2">
+                                        <p class="text-small fw-600">YouTube</p>
+                                        <p class="text-light-gray text-small">@xxxxx</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex align-items-center">
+                                    <span class="d-block w-25"><i class="icon icon-tiktok bg-cover"></i></span>
+                                    <div class="ms-2">
+                                        <p class="text-small fw-600">TikTok</p>
+                                        <p class="text-light-gray text-small">@xxxxx</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex align-items-center">
+                                    <span class="d-block w-25"><i class="icon icon-facebook bg-cover"></i></span>
+                                    <div class="ms-2">
+                                        <p class="text-small fw-600">Facebook</p>
+                                        <p class="text-light-gray text-small">@xxxxx</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 text-center mt-4">
+                                <button class="btn btn-fill wsm-100">Add channles</button>
+                            </div>
+                            <p class="text-light-gray mt-4">Last Tweets:</p>
+                            <div class="mt-3 bg-light rounded p-2 ps-2 d-flex align-items-center justify-content-between profile-images">
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/images/profile-2.png" alt="">
+                                    <div class="ms-2">
+                                        <p class="fw-600 text-small">@XXX</p>
+                                        <p class="fw-600 text-small text-light-gray">Tweet content</p>
+                                    </div>
+                                </div>
+                                <p class="text-small text-light-gray">11/11/2023 11;00PM</p>
+                            </div>
+                            <div class="mt-3 bg-light rounded p-2 ps-2 d-flex align-items-center justify-content-between profile-images">
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/images/profile-3.png" alt="">
+                                    <div class="ms-2">
+                                        <p class="fw-600 text-small">@XXX</p>
+                                        <p class="fw-600 text-small text-light-gray">Tweet content</p>
+                                    </div>
+                                </div>
+                                <p class="text-small text-light-gray">11/11/2023 11;00PM</p>
+                            </div>
+                            <div class="mt-3 bg-light rounded p-2 ps-2 d-flex align-items-center justify-content-between profile-images">
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/images/profile-4.png" alt="">
+                                    <div class="ms-2">
+                                        <p class="fw-600 text-small">@XXX</p>
+                                        <p class="fw-600 text-small text-light-gray">Tweet content</p>
+                                    </div>
+                                </div>
+                                <p class="text-small text-light-gray">11/11/2023 11;00PM</p>
+                            </div>
+                            <div class="mt-3 bg-light rounded p-2 ps-2 d-flex align-items-center justify-content-between profile-images">
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/images/profile-5.png" alt="">
+                                    <div class="ms-2">
+                                        <p class="fw-600 text-small">@XXX</p>
+                                        <p class="fw-600 text-small text-light-gray">Tweet content</p>
+                                    </div>
+                                </div>
+                                <p class="text-small text-light-gray">11/11/2023 11;00PM</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <a href="./sm-influencers-profile.html" class="text-small text-light-gray text-decoration-none d-block">See All</a>
+                                <a href="" class="text-small text-light-gray text-uppercase text-decoration-none d-block cancle">cancle</a>
+                            </div>
+                              </div>
+                          </div>
+                    </div>
+            </main>
+        </div>
+        <div class="modal fade" id="influencerModal" tabindex="-1" aria-labelledby="influencerModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="influencerModalLabel">Add new influencer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <label for="name" class="fw-bold mt-3 mb-2">Select Channel</label>
+                            <select name="language" id="language"
+                                class="d-block w-100 border border-2 rounded px-4 py-2">
+                                <option value="Twitter">Twitter</option>
+                                <option value="Urdu">Urdu</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Punjabi">Punjabi</option>
+                            </select>
+                            <label for="name" class="fw-bold mt-3 mb-2">Account name</label>
+                            <div class="d-flex align-items-center">
+                                <input type="tel" name="phone" id="phone" placeholder="Enter a Phone Number"
+                                    class="d-block me-2 w-100 border border-2 rounded px-4 py-2">
+                                <i class="icon icon-check"></i>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 profile-images">
+                                <img src="./assets/images/profile-2.png" alt="">
+                                <div class="ms-2">
+                                    <p class="text-small fw-600">XXXXXXXXXXXX</p>
+                                    <p class="text-light-gray">XXX</p>
+                                </div>
+                            </div>
+                            <p class="text-light-gray mt-3">Followers: 20K</p>
+                            <p class="text-light-gray">Tweets: 20K</p>
+                            <button type="button"
+                                class="btn btn-primary px-5 text-uppercase mt-3 d-block">Follow</button>
+                            <label for="name" class="fw-bold mt-3 mb-2">Select Category</label>
+                            <select name="language" id="language"
+                                class="d-block w-100 border border-2 rounded px-4 py-2">
+                                <option value="Sport">Sport</option>
+                                <option value="Urdu">Urdu</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Punjabi">Punjabi</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-primary px-4">Add</button>
+                        <button type="button" class="btn border border-2 px-4" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript
+================================================== -->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+            $(".details").click(function(){
+  $(".full-content").addClass("content-div-1");
+});
+$(".details").click(function(){
+  $(".right-content-1").addClass("d-block");
+});
+$(".cancle").click(function(){
+  $(".full-content").removeClass("content-div-1");
+});
+$(".cancle").click(function(){
+  $(".right-content-1").removeClass("d-block");
+});
+$(".details").click(function(){
+  $(".contact-card").addClass("card-div");
+});
+$(".cancle").click(function(){
+  $(".contact-card").removeClass("card-div");
+});
+    </script>
+</body>
+
+</html>

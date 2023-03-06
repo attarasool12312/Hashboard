@@ -1,0 +1,35 @@
+.btn-pending {
+  border: none;
+  color: #ba8962;
+  background: #fcf3d2;
+}
+.btn-approved {
+  border: none;
+  color: #6f8f89;
+  background: #f0f6f6;
+}
+.btn-rejected {
+  border: none;
+  color: #cf9392;
+  background: #fbefef;
+}
+.btn-progress {
+  border: none;
+  color: #9da2d1;
+  background-color: #eaeefa;
+}
+
+.employee-directory {
+  .invoice-table {
+    border-radius: 0 0 8px 8px;
+  }
+  .employee-diractory-table {
+    ul {
+      padding-left: 0px;
+      list-style: none;
+      li {
+        margin-left: -5px;
+      }
+    }
+  }
+}

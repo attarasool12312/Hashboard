@@ -1,0 +1,192 @@
+.fc-unthemed {
+    position: relative;
+
+    .fc-header-toolbar {
+        display: block;
+        width: 150px;
+        position: absolute;
+        top: -68px;
+        left: 271px;
+        z-index: 1;
+        @include grid-sm-down{
+            top: -50px;
+            left: 30%;
+        }
+
+        .fc-right {
+            .fc-today-button {
+                display: none;
+            }
+
+            .fc-button-group {
+                .fc-prev-button {
+                    color: black;
+                    background-color: transparent;
+                    padding: 0;
+                    border: none;
+                    position: absolute;
+                    top: -50px;
+                    left: -46px;
+                    font-size: 24px;
+                }
+
+                .fc-next-button {
+                    color: black;
+                    background-color: transparent;
+                    padding: 0;
+                    border: none;
+                    position: absolute;
+                    top: -50px;
+                    right: -144px;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .fc-left {
+            h2 {
+                font-size: 20px !important;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .fc-view-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+
+        table {
+            .fc-head {
+                th {
+                    text-align: left;
+                }
+            }
+
+            .fc-body {
+                td {
+                    font-weight: 700;
+                    text-align: center;
+                    padding-top: 20px;
+                }
+
+                .fc-widget-content {
+                    padding: 0;
+                }
+
+                .fc-today {
+                    background-color: transparent;
+
+                    span {
+                        background-color: #775da6;
+                        color: #fff;
+                        padding: 4px 6px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .fc-event {
+                    background-color: #b0d8ff;
+                    border: none;
+                    padding: 8px 0;
+                    border-radius: 0;
+                    border-left: 4px solid #775da6;
+                    color: #000;
+
+                    span {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.project-calendar {
+    .fc-toolbar {
+        display: none;
+    }
+
+    .fc-view-container {
+        margin-top: 20px;
+    }
+}
+
+.job-todo-calendar {
+    position: relative;
+
+    .fc-header-toolbar {
+        @include grid-sm-down{
+            top: -79px;
+            left: 0;
+        }
+        .fc-right {
+            width: 300px;
+            position: absolute;
+            top: 15px;
+            right: -467px;
+            @include grid-sm-down{
+                top: 50px;
+                left: 0;
+            }
+
+            .fc-button {
+                background: #fff;
+                width: 75px;
+                height: 37px;
+                border: none;
+                box-shadow: none;
+
+                &.fc-state-active {
+                    border-bottom: 2px solid rgb(185, 185, 39);
+                }
+            }
+        }
+
+        .fc-center {
+            margin-top: 18px;
+
+            .fc-today-button {
+                display: none;
+            }
+
+            .fc-prev-button {
+                width: 30px;
+                height: 30px;
+                background: #fff;
+                box-shadow: none;
+
+                span {
+                    margin: 0;
+                    width: 10px;
+
+                    &::after {
+                        font-size: 156%;
+                    }
+                }
+            }
+
+            .fc-next-button {
+                width: 30px;
+                height: 30px;
+                background: #fff;
+                box-shadow: none;
+
+                span {
+                    margin: 0;
+                    width: 10px;
+
+                    &::after {
+                        font-size: 156%;
+                    }
+                }
+            }
+        }
+
+        .fc-left {
+            position: absolute;
+            top: 20px;
+            right: -95px;
+        }
+    }
+}

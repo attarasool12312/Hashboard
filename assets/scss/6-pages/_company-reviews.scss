@@ -1,0 +1,27 @@
+.protactive-workplace {
+    .protactive-content {
+        position: relative;
+        padding-left: 100px;
+        margin-top: 30px;
+        .absolute {
+            position: absolute;
+            left: 0px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            li {
+                color: #5A5A5A;
+                margin-bottom: 10px;
+                &.relative{
+                    position: relative;
+                    padding-left: 30px;
+                    i{
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

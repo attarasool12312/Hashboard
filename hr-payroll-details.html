@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="side-panel-dropdown">
+            <button class="panel-button dropdown-toggle" type="button">
+              <i class="icon icon-lajou-cafe"></i> Lajou cafe
+            </button>
+            <ul class="panel-dropdown-menu">
+              <li><a class="panel-dropdown-item" href="#">Action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Another action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="./hr-dashboard.html" class="panel_link "><i class="icon icon-overviwe"></i>
+                Overview</a></li>
+            <li><a href="./hr-employee.html" class="panel_link "><i class="icon icon-contact"></i> Employees</a></li>
+            <li><a href="./hr-team-managment.html" class="panel_link "><i class="icon icon-contact"></i> Team
+                Management</a></li>
+            <li><a href="./hr-calender.html" class="panel_link "><i class="icon icon-calander"></i> My Calender</a>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-business"></i>
+                Attendance
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Filing-Dropdown">
+                <li><a class="panel_link " href="./hr-timesheet.html">Timesheets</a></li>
+                <li><a class="panel_link " href="./hr-leave-managment.html">Leave Management</a></li>
+              </ul>
+            </li>
+            <li><a href="./hr-payroll.html" class="panel_link active_panel"><i class="icon icon-overviwe"></i>
+                Payroll</a></li>
+            <li><a href="./hr-user-management.html" class="panel_link "><i class="icon icon-contact"></i> User
+                Management</a></li>
+            <li><a href="#" data-bs-toggle="modal" class="panel_link " data-bs-target="#SettingForm"><i
+                  class="icon icon-contact"></i>
+                Settings</a></li>
+            <li><a href="./job-dashboard.html" class="">Move to Job</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div>
+          <div class="about-profile">
+            <div class="d-none d-md-block">
+              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+                  class="icon icon-plus"></i> Add</button>
+              <a href=""><i class="icon icon-question"></i></a>
+              <a href=""><i class="icon icon-notification"></i></a>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                <h6 class="text-small mt-2">Allen Moreno</h6>
+                <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                  <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="page-main-title">
+            <p class="mb-2"> Back to November 2020 </p>
+            <h3 class="mb-3">Edward Houston</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-2 p-0">
+              <aside class="aside w-100 rounded">
+                <ul class="">
+                    <h4 class="text-sm text-dark mb-2 fw-600">Employees</h4>
+                    <form>
+                      <div class="form-group mt-3">
+                        <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                      </div>
+                    </form>
+                    <li>
+                        <a href="" class="px-0">
+                        <span>
+                            <img src="./assets/images/mark-marson.png" class="img-fluid" alt="">
+                            <span class="online-dot"></span>
+                        </span>
+                            <h6 class="text-sm">Mark Marson</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="px-0">
+                        <span class="round-border">
+                            <img src="./assets/images/salsabilla.png" class="img-fluid" alt="">
+                            <span class="online-dot"></span>
+                        </span>
+                            <h6 class="text-sm">Salsabilla </h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="px-0">
+                        <span>
+                            <img src="./assets/images/profile.png" class="img-fluid" alt="">
+                            <span class="online-dot"></span>
+                        </span>
+                            <h6 class="text-sm">Mark Marson</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="px-0">
+                        <span>
+                            <img src="./assets/images/danny-quin.png" class="img-fluid" alt="">
+                            <span class="online-dot"></span>
+                        </span>
+                            <h6 class="text-sm">Danny Quinn</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="px-0">
+                        <span class="round-border">
+                            <img src="./assets/images/jason-gutierrez.png" class="img-fluid" alt="">
+                        </span>
+                            <h6 class="text-sm">Morgan</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="px-0">
+                        <span>
+                            <img src="./assets/images/anna-ananda.png" class="img-fluid" alt="">
+                        </span>
+                            <h6 class="text-sm">Anna Ananda</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="px-0">
+                        <span>
+                            <img src="./assets/images/anan-ananda2.png" class="img-fluid" alt="">
+                            <span class="online-dot"></span>
+                        </span>
+                            <h6 class="text-sm">Allen Anderson</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="px-0">
+                        <span>
+                            <img src="./assets/images/lucus.png" class="img-fluid" alt="">
+                        </span>
+                            <h6 class="text-sm">Lucas West</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="px-0">
+                        <span>
+                            <img src="./assets/images/danny-moore.png" class="img-fluid" alt="">
+                            <span class="online-dot"></span>
+                        </span>
+                            <h6 class="text-sm">Danny Moore</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="px-0">
+                        <span>
+                            <img src="./assets/images/jason-gutierrez.png" class="img-fluid" alt="">
+                            <span class="online-dot"></span>
+                        </span>
+                            <h6 class="text-sm">Jason Gutierrez</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="px-0">
+                        <span class="round-border">
+                            <img src="./assets/images/profile-4.png" class="img-fluid" alt="">
+                            <span class="online-dot"></span>
+                        </span>
+                            <h6 class="text-sm">Jesus Cooper</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="px-0">
+                        <span class="round-border">
+                            <img src="./assets/images/joshua.png" class="img-fluid" alt="">
+                        </span>
+                            <h6 class="text-sm">Joshua Hunt</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="px-0">
+                        <span>
+                            <img src="./assets/images/jimmy.png" class="img-fluid" alt="">
+                            <span class="online-dot"></span>
+                        </span>
+                            <h6 class="text-sm">Jimmy Maxwell</h6>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            </div>
+            <div class="col-md-10">
+              <div class="text-end">
+                <div class="dropdown select-dropdown">
+                  <button class="btn dropdown-toggle pe-5 border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Month
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">January</a></li>
+                    <li><a class="dropdown-item" href="#">February</a></li>
+                    <li><a class="dropdown-item" href="#">March</a></li>
+                    <li><a class="dropdown-item" href="#">April</a></li>
+                    <li><a class="dropdown-item" href="#">May</a></li>
+                    <li><a class="dropdown-item" href="#">June</a></li>
+                    <li><a class="dropdown-item" href="#">July</a></li>
+                    <li><a class="dropdown-item" href="#">August</a></li>
+                    <li><a class="dropdown-item" href="#">September</a></li>
+                    <li><a class="dropdown-item" href="#">October</a></li>
+                    <li><a class="dropdown-item" href="#">November</a></li>
+                    <li><a class="dropdown-item" href="#">December</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12 col-md-8">
+                  <div class="edward-profile rounded d-flex justify-content-between align-items-md-center flex-colume-sm bg-white p-3 mb-3">
+                    <div class="d-flex align-items-md-center">
+                      <img src="./assets/images/profile-3.png" alt="">
+                      <div class="ms-2">
+                        <h6 class="text-sm">Edward Houston</h6>
+                        <p class="text-small">ID76106</p>
+                      </div>
+                    </div>
+                    <div class="mt-3 mt-md-0">
+                      <p class="text-small">EARNING</p>
+                      <h6 class="text-sm">$60,000.00</h6>
+                    </div>
+                    <div class="mt-3 mt-md-0">
+                      <p class="text-small">DEDUCTION</p>
+                      <h6 class="text-sm">$660.00</h6>
+                    </div>
+                    <div class="mt-3 mt-md-0">
+                      <p class="text-small">NET INCOME</p>
+                      <h6 class="text-sm">$5,340.00</h6>
+                    </div>
+                      <button class="download-btn border mt-3 mt-md-0">Download</button>
+                    <a href="#" class="mt-3 mt-md-0 text-end"><i class="icon icon-dots"></i></a>
+                  </div>
+    
+                  <div class="bg-white p-3 rounded">
+                    <div class="earning-table payroll-table">
+                      <table class="table payroll-table-top">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="text-light-gray">EARNINGS</th>
+                            <th scope="col" class="text-light-gray">YEAR TO DATE</th>
+                            <th scope="col" class="text-light-gray">CURRENT PERIOD</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Salary</td>
+                            <td>$10,000.00</td>
+                            <td>$5,000.00</td>
+                          </tr>
+                          <tr>
+    
+                            <td>Bonus</td>
+                            <td>$1000.00</td>
+                            <td>$1,000.00</td>
+                          </tr>
+    
+                          <tr>
+                            <td>Total Earnings</td>
+                            <td>$11,000.00</td>
+                            <td class="text-danger">$6,000.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+    
+    
+                    <div class="deduction-table payroll-table earning-table">
+                      <table class="table payroll-table-top">
+                        <thead>
+                          <tr>
+    
+                            <th scope="col">DEDUCTIONS</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Travel Allowance</td>
+                            <td>$1,210.00</td>
+                            <td>$660.00</td>
+                          </tr>
+                          <tr>
+    
+                            <td>Income Tax</td>
+                            <td>$19.75</td>
+                            <td>$0.00</td>
+                          </tr>
+    
+                          <tr>
+                            <td>Total Deductions</td>
+                            <td>$1229.75</td>
+                            <td class="text-danger">$660.00</td>
+                          </tr>
+    
+                          <tr class="active-tab">
+                            <td>Net Income</td>
+                            <td></td>
+                            <td>$5,340.00</td>
+                          </tr>
+    
+                          <tr>
+                            <td>Taxable Income</td>
+                            <td></td>
+                            <td>$6,000.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="text-light-gray p-3 text-small">Note that a complete list of the year-to-date total for all payroll items can be found by
+                        logging into workforce.trybe.tech
+                        Tax calculations are based on Employee Attributes: Single, 2 Children: 2 Under 18 or In
+                        Education(100%)
+                        Contributions on Income Tax are calculated based on the rates
+                        11.00% (employee) and 12.00% (employer)
+    
+                      </p>
+                    </div>
+                  </div>
+    
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="bg-white payroll-right rounded p-2 mt-3 mt-md-0">
+                    <div class="payslip-details pt-3 earning-table">
+                      <table class="table payroll-table-top">
+                        <thead>
+                          <tr>
+                            <th scope="col">PAYSLIP DETAILS</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Period</td>
+                            <td>November 2020</td>
+                          </tr>
+                          <tr>
+                            <td>Issue Date</td>
+                            <td>29 November, 2020</td>
+                          </tr>
+                          <tr>
+                            <td>ID Number</td>
+                            <td>4308</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="employee-details py-3 earning-table">
+                      <table class="table payroll-table-top">
+                        <thead>
+                          <tr>
+                            <th scope="col">EMPLOYEE DETAILS</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Full Name</td>
+                            <td>Edward Houston</td>
+                          </tr>
+                          <tr>
+                            <td>Position</td>
+                            <td>VP of Finance</td>
+                          </tr>
+                          <tr>
+                            <td>ID/Passport Number</td>
+                            <td>B2947276</td>
+                          </tr>
+                          <tr>
+                            <td>Income Tax Number</td>
+                            <td>12345678</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="company-details py-4">
+                      <h6 class="mb-2 fw-bold">COMPANY DETAILS</h6>
+                      <div class="mb-2 company-detail-title">
+                        <h6 class="fw-bold">Alphabet Company Inc.</h6>
+                      </div>
+      
+                      <div class="company-desc">
+                        <p class="text-light-gray text-small fw-bold">Level 11, Menara KEN TTDI, N0, 37 <br>
+                          Jalan Burhanuddin Helmi, Taman Tun Dr Ismail <br>
+                          60000 Kuala Lumpur, Malaysia
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add new User</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form>
+              <label for="Customer-name" class="d-block mb-2">User Name</label>
+              <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">User ID</label>
+              <input type="text" placeholder="Please Insert USer ID" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+              <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Email</label>
+              <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Position</label>
+              <input type="text" placeholder="Enter a User Position" class="form-input w-100">
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="./assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/graphs.js"></script>
+</body>
+
+</html>

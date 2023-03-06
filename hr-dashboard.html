@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rhombus</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <link href="https://example.com/" rel="canonical" />
+    <!-- preferred URL - change for you site -->
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="section-panel">
+        <div class="admin-wrapper">
+            <aside class="aside">
+                <div class="left-top">
+                    <div class="sitepanel-toggler">
+                        <div class="close">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo">
+                            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="side-panel-dropdown">
+                        <button class="panel-button dropdown-toggle" type="button">
+                            <i class="icon icon-lajou-cafe"></i> Lajou cafe
+                        </button>
+                        <ul class="panel-dropdown-menu">
+                            <li><a class="panel-dropdown-item" href="#">Action</a></li>
+                            <li><a class="panel-dropdown-item" href="#">Another action</a></li>
+                            <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li><a href="./hr-dashboard.html" class="panel_link active_panel"><i
+                                    class="icon icon-overviwe"></i>
+                                Overview</a></li>
+                        <li><a href="./hr-employee.html" class="panel_link "><i class="icon icon-contact"></i>
+                                Employees</a></li>
+                        <li><a href="./hr-team-managment.html" class="panel_link "><i class="icon icon-contact"></i>
+                                Team
+                                Management</a></li>
+                        <li><a href="./hr-calender.html" class="panel_link "><i class="icon icon-calander"></i> My
+                                Calender</a>
+                        </li>
+                        <li class="nav-item panel-dropdown">
+                            <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="icon icon-business"></i>
+                                Attendance
+                            </a>
+                            <ul class="Business-Dropdown" aria-labelledby="Filing-Dropdown">
+                                <li><a class="panel_link " href="./hr-timesheet.html">Timesheets</a></li>
+                                <li><a class="panel_link " href="./hr-leave-managment.html">Leave Management</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./hr-payroll.html" class="panel_link "><i class="icon icon-overviwe"></i>
+                                Payroll</a></li>
+                        <li><a href="./hr-user-management.html" class="panel_link "><i class="icon icon-contact"></i>
+                                User Management</a></li>
+                        <li><a href="#" data-bs-toggle="modal" class="panel_link " data-bs-target="#SettingForm"><i
+                                    class="icon icon-contact"></i>
+                                Settings</a></li>
+                        <li><a href="./job-dashboard.html" class="">Move to Job</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="main">
+                <div class="top-nav bg-white">
+                    <div class="sitepanel-toggler for-mobile">
+                        <div class="close">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo">
+                            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="search-form d-none d-md-block">
+                        <form action="">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                                <i class="icon icon-search-form"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="about-profile">
+                        <div class="d-none d-md-block">
+                            <button type="button" class="btn ouline-white" data-bs-toggle="modal"
+                                data-bs-target="#userForm"><i class="icon icon-plus"></i> Add</button>
+                            <a href=""><i class="icon icon-question"></i></a>
+                            <a href=""><i class="icon icon-notification"></i></a>
+                        </div>
+                        <div class="dropdown select-dropdown admin-profile">
+                            <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="profile-img me-2">
+                                <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                              </div>
+                              <div class="admin-info d-none d-md-block">
+                                <h5 class="">Katie Pena</h5>
+                                <h6 class="">Admin</h6>
+                              </div>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <div class="profile-images text-center">
+                                <img src="./assets/images/profile-2.png" alt="">
+                              <h6 class="text-small mt-2">Allen Moreno</h6>
+                              <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                              </div>
+                                <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="container p-4">
+                    <div class="page-main-title">
+                        <div class="heading">
+                          <h1>Overview</h1>
+                        </div>
+                            <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0" data-bs-toggle="modal"
+                              data-bs-target="#chartMenu">+ Add Chart</button>
+                          </div>
+                    <section class="employee-graph">
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-3">
+                                <div class="sm-box h-100 bg-white px-2 bashborad-box d-flex align-items-center cursor-pointer" onclick="location.href='./hr-employee.html';">
+                                    <div class="ref-prof align-items-center">
+                                        <div class="prof-img me-2"><i class="icon icon-friends"></i></div>
+                                        <div class="prof-details">
+                                            <h5 class="fw-bold">1,068</h5>
+                                            <p class="text-light-gray">Total Employees</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mt-3 mt-md-0 cursor-pointer" onclick="location.href='./hr-payroll.html';">
+                                <div class="sm-box h-100 bg-white px-2 bashborad-box d-flex align-items-center">
+                                    <div class="ref-prof align-items-center">
+                                        <div class="prof-img me-2"><i class="icon icon-friends"></i></div>
+                                        <div class="prof-details">
+                                            <h5 class="fw-bold">1.28M</h5>
+                                            <p class="text-light-gray">Total Salary (This month)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mt-3 mt-md-0 cursor-pointer" onclick="location.href='./hr-payroll.html';">
+                                <div class="sm-box h-100 bg-white px-2 bashborad-box d-flex align-items-center">
+                                    <div class="ref-prof align-items-center">
+                                        <div class="prof-img me-2"><i class="icon icon-friends"></i></div>
+                                        <div class="prof-details">
+                                            <h5 class="fw-bold">$4,190</h5>
+                                            <p class="text-light-gray">Avg Salary (This month)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mt-3 mt-md-0 cursor-pointer" onclick="location.href='./hr-timesheet.html';">
+                                <div class="sm-box h-100 bg-white px-2 bashborad-box d-flex align-items-center">
+                                    <div class="ref-prof align-items-center">
+                                        <div class="prof-img me-2"><i class="icon icon-friends"></i></div>
+                                        <div class="prof-details">
+                                            <h5 class="fw-bold">1.13%</h5>
+                                            <p class="text-light-gray">Absenteeism (This month)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-8">
+                                <div class="chart p-0">
+                                    <div
+                                        class="workforce-title d-flex justify-content-between py-3 flex-wrap align-items-center border-bottom">
+                                        <h5 class="ps-3 fw-600">Total Workforce</h5>
+                                        <div class="dropdown pe-3">
+                                            <button class="btn bg-light-gray dropdown-toggle border-0 text-dark fw-500"
+                                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                This Year
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="workforce-stacked p-3">
+                                        <div>
+                                            <canvas id="employeeGraph" class="wsm-100"
+                                                style="display: block; box-sizing: border-box; height: 160px; width: 470px;"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 p-md-0 mt-3 mt-md-0">
+                                <div class="chart p-0">
+                                    <div
+                                        class="workforce-title d-flex justify-content-between py-3 flex-wrap align-items-center border-bottom">
+                                        <h5 class="ps-3 fw-600">Overall Attendance</h5>
+                                        <div class="dropdown pe-3">
+                                            <button class="btn bg-light-gray dropdown-toggle border-0 text-dark fw-500"
+                                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                This Month
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="workforce-donut p-3">
+                                        <div>
+                                            <canvas id="workDountChart" class="wsm-100"
+                                                style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-6">
+                                <div class="chart p-md-0">
+                                    <div
+                                        class="workforce-title d-flex justify-content-between border-bottom py-3 flex-wrap align-items-center">
+                                        <h5 class="ps-3 fw-600">High Risk Employees</h5>
+                                        <div class="dropdown pe-md-3 mt-3 mt-md-0">
+                                            <button class="btn bg-light-gray dropdown-toggle border-0 text-dark fw-500"
+                                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                This Month
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="workforce-absent-list tablepanel">
+                                        <table class="table table-left">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="py-3 text-light-gray border-bottom">FULL NAME
+                                                    </th>
+                                                    <th scope="col"
+                                                        class="py-3 text-light-gray border-bottom text-center">
+                                                        DEPARTMENT</th>
+                                                    <th scope="col"
+                                                        class="py-3 text-light-gray border-bottom text-center">ABSENCES
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Full Name">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                            <img src="./assets/images/profile-2.png" alt="">
+                                                            <div class="ms-3">
+                                                                <p class="fw-600">Aila Davidson</p>
+                                                                <p class="text-small">ID 76106</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center" data-label="Department">Finance</td>
+                                                    <td class="text-center" data-label="Absences">16</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-label="Full Name">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                            <img src="./assets/images/profile-3.png" alt="">
+                                                            <div class="ms-3">
+                                                                <p class="fw-600">Caroline Maher</p>
+                                                                <p class="text-small">ID 70171</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center" data-label="Department">Finance</td>
+                                                    <td class="text-center">15</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-label="Full Name">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                            <img src="./assets/images/profile-6.png" alt="">
+                                                            <div class="ms-3">
+                                                                <p class="fw-600">Edward Houstan</p>
+                                                                <p class="text-small">ID 49045</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center" data-label="Department">Finance</td>
+                                                    <td class="text-center" data-label="Absences">11</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-label="Full Name">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                            <img src="./assets/images/profile-4.png" alt="">
+                                                            <div class="ms-3">
+                                                                <p class="fw-600">Ronald Richards</p>
+                                                                <p class="text-small">Project Manager</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center" data-label="Department">Finance</td>
+                                                    <td class="text-center" data-label="Absences">9</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-label="Full Name">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                                            <img src="./assets/images/profile-5.png" alt="">
+                                                            <div class="ms-3">
+                                                                <p class="fw-600">Ronald Richards</p>
+                                                                <p class="text-small">Project Manager</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center" data-label="Department">Recruitment</td>
+                                                    <td class="text-center" data-label="Absences">7</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mt-3 mt-md-0">
+                                <div class="chart p-0">
+                                    <div
+                                        class="workforce-title d-flex justify-content-between py-3 flex-wrap align-items-center border-bottom">
+                                        <h5 class="ps-3 fw-600">Overtime Costs</h5>
+                                        <div class="dropdown pe-3">
+                                            <button class="btn bg-light-gray dropdown-toggle border-0 text-dark fw-500"
+                                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Last 6 Months
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="overtimeGraph mt-3">
+                                        <div>
+                                            <canvas id="overtimeGraph" class="wsm-100"
+                                                style="display: block; box-sizing: border-box; height: 260px; width: 470px;"></canvas>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </main>
+        </div>
+        <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Add new User</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-light customer-add-form">
+                        <form>
+                            <label for="Customer-name" class="d-block mb-2">User Name</label>
+                            <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+                            <label for="Project-id" class="d-block my-2">User ID</label>
+                            <input type="text" placeholder="Please Insert USer ID" class="form-input w-100">
+                            <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+                            <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+                            <label for="ProjectSummary" class="d-block my-2">User Email</label>
+                            <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+                            <label for="ProjectSummary" class="d-block my-2">User Position</label>
+                            <input type="text" placeholder="Enter a User Position" class="form-input w-100">
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
+                        <button type="button" class="btn bg-light px-4 py-2 text-uppercase"
+                            data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal right fade" id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel" aria-hidden="true">
+            <div class="modal-dialog width-70 wsm-95">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>Chart Menu</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="line-tab" data-bs-toggle="tab" data-bs-target="#line" type="button"
+                        role="tab" aria-controls="line" aria-selected="true">
+                        <i class="icon icon-chart-line-solid"></i>
+                        <p class="text-light-gray">Line Chart</p>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="bar-tab" data-bs-toggle="tab" data-bs-target="#bar" type="button"
+                        role="tab" aria-controls="bar" aria-selected="false">
+                        <i class="icon icon-chart-column-solid"></i>
+                        <p class="text-light-gray">Bar Chart</p>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pie-tab" data-bs-toggle="tab" data-bs-target="#pie" type="button"
+                        role="tab" aria-controls="pie" aria-selected="false">
+                        <i class="icon icon-chart-pie-solid"></i>
+                        <p class="text-light-gray">Pie Chart</p>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="cambo-tab" data-bs-toggle="tab" data-bs-target="#cambo" type="button"
+                        role="tab" aria-controls="cambo" aria-selected="false">
+                        <i class="icon icon-cambo-chart"></i>
+                        <p class="text-light-gray">Cambo Chart</p>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content mt-4">
+                    <div class="tab-pane active" id="line" role="tabpanel" aria-labelledby="line-tab">
+                      <div class="row">
+                        <div class="col-12 col-md-4">
+                          <div>
+                            <canvas id="lineChart" class="wsm-100"
+                              style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <div>
+                            <canvas id="lineChart1" class="wsm-100"
+                              style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <div>
+                            <canvas id="lineChart2" class="wsm-100"
+                              style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-4">
+                          <div>
+                            <canvas id="lineChart3" class="wsm-100"
+                              style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-4">
+                          <div>
+                            <canvas id="lineChart4" class="wsm-100"
+                              style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="bar" role="tabpanel" aria-labelledby="bar-tab">
+                      <div class="row">
+                        <div class="col-12 col-md-4">
+                          <div>
+                            <canvas id="BarsChart1" class="wsm-100 w-100"
+                              style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <div>
+                            <canvas id="BarsChart2" class="wsm-100 w-100"
+                              style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <div>
+                            <canvas id="BarsChart3" class="wsm-100 w-100"
+                              style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-5">
+                          <div>
+                            <canvas id="BarsChart4" class="wsm-100 w-100"
+                              style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-5">
+                          <div>
+                            <canvas id="BarsChart5" class="wsm-100"
+                              style="display: block; box-sizing: border-box; height: 160px; width: 470px;"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="pie" role="tabpanel" aria-labelledby="pie-tab">
+                      <div class="row">
+                        <div class="col-12 col-md-4">
+                          <div>
+                            <canvas id="pieChart" class="wsm-100"
+                              style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <div>
+                            <canvas id="pieChart-1" class="wsm-100"
+                              style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <div>
+                            <canvas id="pieChart-2" class="wsm-100"
+                              style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="cambo" role="tabpanel" aria-labelledby="cambo-tab">
+                      <div class="row">
+                        <div class="col-12 col-md-4">
+                          <div>
+                            <canvas id="camboChart" class="wsm-100"
+                              style="display: block; box-sizing: border-box; height: 270px; width: 470px;"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <div>
+                            <canvas id="camboChart1" class="wsm-100"
+                              style="display: block; box-sizing: border-box; height: 260px; width: 470px;"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                  <button type="button" class="btn btn-fill px-5 py-2 text-uppercase wsm-100">Update</button>
+                  <button type="button" class="btn bg-light px-4 py-2 text-uppercase wsm-100"
+                    data-bs-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- JavaScript
+================================================== -->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/graphs-popup.js"></script>
+    <script src="./assets/js/graphs.js"></script>
+
+    <script>
+
+        window.onload = function () {
+            const workplace = document.getElementById("employeeGraph");
+
+            const bar21 = new Chart(workplace, {
+
+                type: "bar",
+                data: {
+                    labels: [
+                        "Jan",
+                        "Fab",
+                        "Mar",
+                        "Apr",
+                        "May",
+                        "Jun",
+                        "Jul",
+                        "Aug",
+                        "Sep",
+                        "Oct",
+                        "Nov",
+                        "Dec",
+                    ],
+                    datasets: [
+                        {
+                            label: 'Permanent',
+                            data: [200, 700, 500, 100, 800, 1200, 300, 1100, 400, 600, 200, 900],
+                            borderWidth: 0,
+                            barThickness: 20,
+                            backgroundColor: [
+                                "#64BF92"
+                            ],
+                        },
+                        {
+                            label: 'Contract',
+                            data: [200, 700, 500, 100, 800, 1200, 300, 1100, 400, 600, 200, 900],
+                            borderWidth: 0,
+                            barThickness: 20,
+                            backgroundColor: [
+                                "#5473DE",
+                            ],
+                        }
+                    ],
+                },
+                options: {
+                    responsive: true,
+
+                    scales: {
+                        x: {
+                            stacked: true,
+                            display: true,
+                            grid: {
+                                drawOnChartArea: false,
+                            },
+                            ticks: {
+                                display: true,
+                            },
+                        },
+                        y: {
+                            stacked: true,
+                            display: true,
+                            grid: {
+                                drawOnChartArea: true,
+                            },
+                            ticks: {
+                                display: true,
+                            },
+                        },
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            labels: {
+                                usePointStyle: true,
+                                boxWidth: 6
+                            }
+                        }
+                    },
+                },
+
+            });
+
+
+
+            const workDon = document.getElementById('workDountChart');
+
+            const bar22 = new Chart(workDon, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Present', 'Medical Leave', 'Unpaid Leave', 'Absent'],
+                    datasets: [{
+                        label: '# of Votes',
+                        backgroundColor: ['#62BF92', '#7159EF', '#E4C261', '#E67270'],
+                        borderRadius: 2,
+                        data: [70, 20, 5, 5,],
+                        borderWidth: 0,
+                        barThickness: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                usePointStyle: true,
+                                boxWidth: 8
+                            }
+                        }
+                    },
+                    elements: {
+                        customCutout: true,
+                    },
+                    cutoutPercentage: 32
+                },
+            });
+
+
+            const overtime = document.getElementById("overtimeGraph");
+
+            const bar23 = new Chart(overtime, {
+
+                type: "bar",
+                data: {
+                    labels: [
+                        "Jan",
+                        "Fab",
+                        "Mar",
+                        "Apr",
+                        "May",
+                        "Jun"
+                    ],
+                    datasets: [
+                        {
+                            label: 'Basic Salary',
+                            data: [700, 500, 800, 1200, 300, 100],
+                            borderWidth: 0,
+                            barThickness: 25,
+                            backgroundColor: [
+                                "#5374DF"
+                            ],
+                            order: 2
+                        },
+                        {
+                            label: 'Overtime',
+                            data: [700, 500, 700, 1200, 300, 100],
+                            borderColor: "#E1BD67",
+                            backgroundColor: "#ffffff",
+                            type: 'line',
+                            order: 1,
+                        }
+                    ],
+                },
+                options: {
+                    responsive: true,
+
+                    scales: {
+                        x: {
+                            display: true,
+                            grid: {
+                                drawOnChartArea: false,
+                            },
+                            ticks: {
+                                display: true,
+                            },
+                        },
+                        y: {
+                            display: true,
+                            gridLines: {
+                                drawOnChartArea: true,
+                                borderDash: [8, 4],
+                            },
+                            ticks: {
+                                display: true,
+                            },
+                        },
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            labels: {
+                                usePointStyle: true,
+                                boxWidth: 3
+                            }
+                        }
+                    },
+                },
+
+            });
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.ref-prof{
+    display: flex;
+    .prof-img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        img{
+            object-fit: cover;
+        }
+    }
+}
+.check-tasks{
+    margin-top: 32px;
+    ul{
+        margin-bottom: 0;
+        list-style: none;
+        padding-left: 20px;
+        li{
+            position: relative;
+            padding-left: 7px;
+           > span{
+                position: absolute;
+                top: 60%;
+                left: -30px;
+                transform: translateY(-50%);
+            }
+            + li{
+                margin-top: 20px;
+            }
+        }
+    }
+    .btn-group{
+        ul{
+            padding: 0;
+            li{
+                margin: 0;
+            }
+        }
+    }
+    .relative{
+        position: relative;
+        > .absolute{
+            position: absolute;
+            top: 60%;
+            left: -37px;
+            transform: translateY(-50%);
+            .box{
+                &:after{
+                    top: 10px;
+                }
+                &:before{
+                    top: 7px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,179 @@
+.payroll {
+  padding-top: 15px;
+  .edward-profile {
+    .download-btn {
+      border-radius: 6px;
+      background-color: transparent;
+      padding: 8px 12px;
+    }
+    .icon-dots {
+      transform: rotate(90deg);
+    }
+  }
+  .payroll-table {
+    thead {
+      tr {
+        th {
+          border-bottom: 2px solid #a3c4c1 !important;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          &:first-of-type {
+            color: #a3c4c1;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+  .deduction-table {
+    thead {
+      tr {
+        th {
+          border-bottom: 2px solid #c9999d !important;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          &:first-of-type {
+            color: #c9999d;
+          }
+        }
+      }
+    }
+    .active-tab {
+      color: #689991;
+      border: 2px solid #689991;
+      background-color: #ecf8f6;
+    }
+  }
+
+  .payroll-right {
+    .payslip-details {
+        border-bottom: 1px solid #000;
+    }
+    .employee-details {
+        border-bottom: 1px solid #000;
+    }
+        table {
+            thead {
+                th {
+                    border: none;
+                }
+            }
+            tbody {
+                td {
+                    border: none;
+                    &:first-of-type {
+                        color: gray;
+                    }
+                }
+            }
+        }
+        .company-desc {
+            p {
+                line-height: 28px;
+            }
+        }
+  }
+}
+
+.status-box{
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  position: absolute;
+  bottom: -150px;
+  left: -26px;
+  display: none;
+  z-index: 2;
+  &::after{
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 53px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+}
+.status-box-1{
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  position: absolute;
+  bottom: -150px;
+  left: -26px;
+  display: none;
+  z-index: 2;
+  &::after{
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 53px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+}
+.status-box-2{
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  position: absolute;
+  bottom: -150px;
+  left: -26px;
+  display: none;
+  z-index: 2;
+  &::after{
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 53px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+}
+.status-box-3{
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  position: absolute;
+  bottom: -150px;
+  left: -26px;
+  display: none;
+  z-index: 2;
+  &::after{
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 53px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+}
+.edit-timeline{
+  img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,75 @@
+/*--------------*\
+    Lists Section
+\*--------------*/
+.comments-share-area{
+  border-bottom: 2px solid #DCDCDC;
+  padding-bottom: 12px;
+display: flex;
+  justify-content: space-between;
+  .like-comments{
+    display: flex;
+    .likes,.comments{
+     margin-right: 20px;
+    a{
+      display: flex;
+      text-decoration: none;
+      color: #202020;
+      i{
+        margin-right: 8px;
+      }
+      h6{
+        font-size: 14px !important;
+      }
+        }
+    }
+  }
+  .shares-area{
+    .shares{
+      a{
+        display: flex;
+        text-decoration: none;
+        color: #202020;
+        i{
+          margin-right: 8px;
+        }
+        h6{
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}
+
+//comments-=box
+.comments-box{
+  margin-top: 16px;
+  ul{
+    list-style: none;
+    padding-left: 0;
+    li{
+      display: flex;
+      margin-top: 16px;
+      a{
+        margin-right: 15px;
+        display: inline-block;
+      }
+    }
+    > ul{
+      padding-left: 20px;
+      margin-top: 16px;
+    }
+  }
+  .comment-reply{
+    display: flex;
+    justify-content: space-between;
+  }
+  .reply{
+    a{
+      text-decoration: none;
+      font-size: 12px;
+      margin-right: 16px;
+      color: #898989;
+      font-weight: 500;
+    }
+  }
+}

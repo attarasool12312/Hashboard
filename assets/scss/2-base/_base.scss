@@ -548,3 +548,18 @@ h6 {
 .list-style-none{
   list-style: none;
 }
+.popup-form{
+  display: none;
+}
+.upload-files{
+  .fileupload{
+    opacity:0;
+    cursor: pointer;
+  }
+  .text{
+    text-align:start;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+}

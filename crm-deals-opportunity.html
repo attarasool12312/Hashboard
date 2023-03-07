@@ -24,6 +24,11 @@
   <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
   <link href="./assets/css/main.css" rel="stylesheet" />
   <link href="./assets/css/responsive.css" rel="stylesheet" />
+  <style>
+    .invoice-table tbody td{
+      padding: .5rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -41,265 +46,264 @@
               <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
             </div>
           </div>
-          <div class="side-panel-dropdown">
-            <button class="panel-button dropdown-toggle" type="button">
-              <i class="icon icon-lajou-cafe"></i> Lajou cafe
-            </button>
-            <ul class="panel-dropdown-menu">
-              <li><a class="panel-dropdown-item" href="#">Action</a></li>
-              <li><a class="panel-dropdown-item" href="#">Another action</a></li>
-              <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
           <ul>
-            <li><a href="./pm-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Overview</a></li>
+            <li><a href="./crm-overview-index.html" class="panel_link"><i class="icon icon-overviwe"></i> Overview</a>
+            </li>
+            <li><a href="./crm-compnies-list.html" class="panel_link"><i class="icon icon-bar-companies"></i> Customer
+                Profiles</a></li>
+            <li><a href="./crm-deals.html" class="panel_link active_panel"><i class="icon icon-deal-bag"></i> Deals</a>
+            </li>
+            <li><a href="./crm-contact.html" class="panel_link"><i class="icon icon-contact"></i> Contact</a></li>
             <li class="nav-item panel-dropdown position-relative">
-              <a href="./pm-project-management.html" class="mb-auto panel_link "><i class="icon icon-business"></i> Projects</a>
+              <a href="./crm-reports-overview.html" class="mb-auto panel_link"><i class="icon icon-project"></i>
+                Report</a>
               <div>
                 <a class="dropdown-btn nav-link dropdown-toggle position-absolute" href="" id="Setting-Dropdown"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false" style="top: 11px; right: 17px;">
                 </a>
                 <ul class="Setting-Dropdown m-0" aria-labelledby="Setting-Dropdown">
-                  <li><a class="dropdown-item panel_link " href="./pm-project-overview.html">project Overview</a></li>
-                  <li><a class="dropdown-item panel_link " href="./pm-project-performance.html">project Performance</a></li>
+                  <li><a class="dropdown-item panel_link" href="./crm-overview-reports.html">Customer Reports</a></li>
+                  <li><a class="dropdown-item panel_link" href="./crm-leads-report.html">Leads Reports</a></li>
+                  <li><a class="dropdown-item panel_link" href="./crm-sales-report.html">Sales Reports</a></li>
                 </ul>
               </div>
             </li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-sales"></i> Financial Performance
-              </a>
-              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./pm-project-cocs.html">COCs Overview</a></li>
-                <li><a class="dropdown-item panel_link " href="./pm-project-pos.html">Project POs</a></li>
-              </ul>
+            <li><a href="./crm-revenue-analysis.html" class="panel_link"><i
+              class="icon icon-report-board"></i> Revenue Analysis</a></li>
+            <li><a href="./crm-transferred-projects.html" class="panel_link"><i
+                  class="icon icon-transferred-projects"></i> Transfer as project</a></li>
+            <li><a href="./crm-product.html" class="panel_link"><i class="icon icon-expenses"></i> Products</a></li>
+            <li><a href="./crm-documents.html" class="panel_link"><i class="icon icon-bar-document"></i> Documents</a>
             </li>
-            <li><a href="./pm-transferred-projects.html" class="panel_link "><i class="icon icon-transferred-projects bg-cover"></i>
-                Transferred Projects</a></li>
-            <li><a href="./pm-report.html" class="panel_link active_panel"><i class="icon icon-expenses"></i> Reports</a></li>
-            <li><a href="./pm-compnies-list.html" class="panel_link"><i class="icon icon-reports"></i> Customer Profile</a></li>
-
-            <li><a href="./pm-contact.html" class="panel_link "><i class="icon icon-project"></i> Contacts</a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Transactions-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-bar-document"></i> Setting
               </a>
-              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link" href="./pm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
+              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i class="icon icon-bar-document"></i> Account</a></li>
+                <li><a class="dropdown-item panel_link" href="./crm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
                 <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
               </ul>
             </li>
-            <li><a href="./crm-overview-index.html">Move to CRM</a></li>
-            <li><a href="./pm-home-page.html" class="panel_link">Home Page</a></li>
-            <li><a href="./admin-dashboard.html">Move to Admin</a></li>
+            <li><a href="./hr-dashboard.html" class="panel_link">Move To HR Management </a></li>
           </ul>
         </div>
       </aside>
-      <main class="main">     
-          <div class="top-nav bg-white">
-            <div class="sitepanel-toggler for-mobile">
-              <div class="close">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="logo">
-                <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
-              </div>
+      <main class="main">
+        <div class="top-nav bg-white">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div class="search-form d-none d-md-block">
-              <form action="">
-               <div class="form-group">
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
                 <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
                 <i class="icon icon-search-form"></i>
-               </div>
-              </form>
-            </div>
-            <div class="about-profile">
-              <div class="d-none d-md-block">
-                <button type="button" class="btn ouline-white" data-bs-toggle="modal"
-                data-bs-target="#userForm"><i class="icon icon-plus"></i> Add</button>
-                <a href=""><i class="icon icon-question"></i></a>
-                <a href=""><i class="icon icon-notification"></i></a>
               </div>
-              <div class="dropdown select-dropdown admin-profile">
-                <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  <div class="profile-img me-2">
-                    <img class="img-fluid" src="./assets/images/profile.png" alt="">
-                  </div>
-                  <div class="admin-info d-none d-md-block">
-                    <h5 class="">Katie Pena</h5>
-                    <h6 class="">Admin</h6>
-                  </div>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <div class="profile-images text-center">
-                    <img src="./assets/images/profile-2.png" alt="">
-                  <h6 class="text-small mt-2">Allen Moreno</h6>
-                  <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
-                  </div>
-                    <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
-                </ul>
-              </div>
-            </div>
+            </form>
           </div>
-          <div class="container">
-          <div class="page-main-title align-items-end">
-            <div class="heading">
-                <a href="" class="text-decoration-none text-blue mb-2 d-block fw-500"><i class="icon icon-back-arrow"></i> Reports</a>
-                <h1>Balance Sheet</h1>
+          <div class="about-profile">
+            <div class="d-none d-md-block">
+              <a href=""><i class="icon icon-question"></i></a>
+              <a href=""><i class="icon icon-notification"></i></a>
             </div>
-              <div class="d-flex align-items-center mt-3 mt-md-0 mb-md-0 mb-3">
-                  <div class="dropdown select-dropdown me-3">
-                      <button class="btn btn-secondary dropdown-toggle pe-5" type="button" id="dropdownMenuButton1"
-                              data-bs-toggle="dropdown" aria-expanded="false">
-                         Date: <b class="text-dark">1 Feb 2021</b>
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                  </div>
-                  <div class="dropdown select-dropdown me-3">
-                      <button class="btn btn-secondary dropdown-toggle pe-5" type="button" id="dropdownMenuButton1"
-                              data-bs-toggle="dropdown" aria-expanded="false">
-                              Comparison : <b class="text-dark">1 Period</b>
-                                                  </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                  </div>
-                  <div class="add-button">
-                      <button type="button" class="btn ouline-white me-3"><i class="icon icon-dark-print me-2"></i>Filter</button>
-                      <button type="button" class="btn ouline-white btn-fill">Update</button>
-                  </div>
-              </div>
-          </div>
-              <div class="row ps-3 pe-3">
-            <div class="bg-white border-radius-12 content-main-row">
-              <div class="p-0">
-                <div class="chart-box d-flex justify-content-between flex-column">
-                  <div class="chart-head d-md-flex justify-content-between align-items-center mb-32 border-bottom">
-                   <div class="chart-title p-4 w-100">
-                    <h3 class="me-3 fw-600">Balance Sheet</h3>
-                    <div class="add-button mt-4 ">
-                      <button type="button" class="btn ouline-white w-100 text-start fw-500"><i class="icon icon-balance-cafe me-2"></i>Lajou cafe <p class="d-inline-block text-light-gray text-small">As at 1 February 2021</p></button>
-                     </div>
-                   </div>
-                  </div>
-                  
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
                 </div>
-              </div>     
-             <div class="row">
-                  <div class="balance-sheet">
-                    <ul class="balance">
-                      <li class="bg-light-gray fw-500">Assets</li>
-                      <li class="fw-500">Bank</li>
-                      <li class="d-flex justify-content-between bg-light-gray">
-                        <span class="text-light-gray">Business Bank Account</span>
-                        <span class="fw-600">1,602.00</span>
-                      </li>
-                      <li class="d-flex justify-content-between">
-                        <span class="text-light-gray">Total Bank</span>
-                        <span class="fw-600">1,602.00</span>
-                      </li>
-                      <li class="d-flex justify-content-between bg-light-gray">
-                        <span class="fw-500">Total Assets</span>
-                        <span class="fw-600">1,602.00</span>
-                      </li>
-                    </ul>
-                    <ul class="balance">
-                      <li class="bg-light-gray">Liabilities</li>
-                      <li >Current Liabilities</li>
-                      <li class="d-flex justify-content-between bg-light-gray">
-                        <span class="text-light-gray">Historical Adjusment</span>
-                        <span class="fw-600">1,602.00</span>
-                      </li>
-                      <li class="d-flex justify-content-between">
-                        <span class="text-light-gray">Total Current Liabilities</span>
-                        <span class="fw-600">1,602.00</span>
-                      </li>
-                      <li class="d-flex justify-content-between bg-light-gray">
-                        <span class="fw-500">Total Liabilities</span>
-                        <span class="fw-600">1,602.00</span>
-                      </li>
-                    </ul>
-                    <div class="new-assets d-flex justify-content-between pt-3 pb-3 ps-3 pe-3 border-bottom">
-                      <h6 class="fw-500">New Assets</h6>
-                      <p>-</p>
-                    </div>
-                    <div class="d-flex justify-content-between flex-column pt-4 pb-4 pe-4">
-                      <div class="d-flex align-items-start justify-content-md-end align-items-center mt-3 mt-md-0 mb-md-0 mb-3">
-                        <div class="dropdown select-dropdown ms-4">
-                          <button class="btn btn-secondary dropdown-toggle pe-5 is-purple-dropdown" type="button" id="dropdownMenuButton1"
-                              data-bs-toggle="dropdown" aria-expanded="false">
-                              Save us
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                      </div>
-                       <div class="dropdown select-dropdown ms-4">
-                        <button class="btn btn-secondary dropdown-toggle pe-5 is-purple-dropdown" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                         Export
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                      </div>
-                     </div>
-                  </div>
-            </div>
-            </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                <h6 class="text-small mt-2">Allen Moreno</h6>
+                <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                  <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
             </div>
           </div>
+        </div>
+        <div class="container">
+          <div class="page-main-title">
+            <div class="heading">
+              <h1>Opportunity Details</h1>
+            </div>
+            <div class="d-flex align-items-start flex-colume-sm wsm-100">
+              <div class="search-form wsm-100">
+                <form action="">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                        <i class="icon icon-search-form"></i>
+                    </div>
+                </form>
+            </div>
+            <button type="button" class="btn ouline-white me-md-3"><i class="icon icon-download me-2"></i></button>
+            <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0">Edit</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <div class="bg-white p-3 rounded">
+                <div class="d-flex align-items-center justify-content-between border-bottom pb-3">
+                  <div class="d-flex align-items-center">
+                    <h4>Opportunity ID</h4>
+                    <span class="finalized-status ms-4">Stage</span>
+                  </div>
+                  <div class="btn-group">
+                    <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="dots d-flex align-items-center  m-0 p-0">
+                        <span class="me-1"></span>
+                        <span class="me-1 mt-0"></span>
+                        <span class="mt-0"></span>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu" style="">
+                      <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                          Edit</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
+                          Invitation Email</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                          Delete</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row border-bottom w-100 mx-auto">
+                  <div class="col-md-6 border-end">
+                    <div class="py-3">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-light-gray">Customer Name:</p>
+                        <p>Head Office</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-2">
+                        <p class="text-light-gray">Deal ID:</p>
+                        <p>Head Office</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-2">
+                        <p class="text-light-gray">Contact person name:</p>
+                        <p>Primary Location</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-2">
+                        <p class="text-light-gray">Phone number:</p>
+                        <p>Feb 8th 2021</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="py-3">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-light-gray">Account manager:</p>
+                        <p>Feb 10th 2021</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-2">
+                        <p class="text-light-gray">Email</p>
+                        <p>hello@designspace.io</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-2">
+                        <p class="text-light-gray">Category</p>
+                        <p>US Dollar (USD)</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-2">
+                        <p class="text-light-gray">Expected value:</p>
+                        <p>Tax Exclusive</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="invoice-table tablepanel border-bottom pb-3">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Scope Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Available</th>
+                        <th scope="col">Price ($)</th>
+                        <th scope="col">Discount</th>
+                        <th scope="col">Tax</th>
+                        <th scope="col">Total ($)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="details">
+                        <td scope="row" data-label="Scope Name">
+                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                            <img src="./assets/images/prof-img-1.png" alt="">
+                            <h6 class="ms-3 fw-500 text-sm">Cotton T-Shirt</h6>
+                          </div>
+                        </td>
+                        <td data-label="Quantity">2</td>
+                        <td data-label="Available">67</td>
+                        <td data-label="Price ($)">$23.00</td>
+                        <td data-label="Discount">-</td>
+                        <td data-label="Tax">0%</td>
+                        <td data-label="Total ($)">$46.00</td>
+                      </tr>
+                      <tr class="details">
+                        <td scope="row" data-label="Scope Name">
+                          <input type="text" name="name" id="name" placeholder="Item Name" class="d-block w-100 border border-2 rounded px-2 py-1">
+                        </td>
+                        <td data-label="Quantity">
+                          <input type="text" name="name" id="name" placeholder="SKL" class="d-block w-100 border border-2 rounded px-2 py-1">
+                        </td>
+                        <td data-label="Available">
+                          <input type="text" name="name" id="name" placeholder="0.0" class="d-block w-100 border border-2 rounded px-2 py-1">
+                        </td>
+                        <td data-label="Price ($)">
+                          <input type="text" name="name" id="name" placeholder="0.0" class="d-block w-100 border border-2 rounded px-2 py-1">
+                        </td>
+                        <td data-label="Discount">
+                          <input type="text" name="name" id="name" placeholder="0.0" class="d-block w-100 border border-2 rounded px-2 py-1">
+                        </td>
+                        <td data-label="Tax">
+                          <input type="text" name="name" id="name" placeholder="20.00" class="d-block w-100 border border-2 rounded px-2 py-1">
+                        </td>
+                        <td data-label="Total ($)">
+                          <input type="text" name="name" id="name" placeholder="0.0" class="d-block w-100 border border-2 rounded px-2 py-1">
+                        </td>
+                        <td class="cursor-pointer">X</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="d-flex align-items-center justify-content-between border-bottom py-2">
+                  <p class="text-light-gray">Total Units</p>
+                  <p>4</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between border-bottom py-2">
+                  <p class="text-light-gray">Subtotal</p>
+                  <p>$310.00</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between border-bottom py-2">
+                  <p class="text-light-gray">Discount</p>
+                  <p>$-10</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between border-bottom py-2">
+                  <p class="fw-600">Subtotal</p>
+                  <p class="fw-600">$300.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
-  <div class="modal right fade" id="userForm" tabindex="-1"
-  aria-labelledby="interviewLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4>Add new User</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body bg-light customer-add-form">
-        <form>
-          <label for="Customer-name" class="d-block mb-2">User Name</label>
-          <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
-          <label for="Project-id" class="d-block my-2">User ID</label>
-          <input type="text" placeholder="Please Insert USer ID" class="form-input w-100">
-          <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
-          <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
-          <label for="ProjectSummary" class="d-block my-2">User Email</label>
-          <input type="text" placeholder="Enter a User Email" class="form-input w-100">
-          <label for="ProjectSummary" class="d-block my-2">User Position</label>
-          <input type="text" placeholder="Enter a User Position" class="form-input w-100">              
-        </form>
-      </div>
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
-        <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal right fade" id="SettingForm" tabindex="-1"
+    <div class="modal right fade" id="SettingForm" tabindex="-1"
 aria-labelledby="interviewLabel" aria-hidden="true">
 <div class="modal-dialog width-50 wsm-95">
   <div class="modal-content">
@@ -553,6 +557,23 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
   <script src="./assets/js/main.js"></script>
+  <script>
+    $(".interest").click(function(){
+    $(".interest-body").toggle("d-block");
+  });
+  $(".consideration").click(function(){
+    $(".consideration-body").toggle("d-block");
+  });
+  $(".negotiation").click(function(){
+    $(".negotiation-body").toggle("d-block");
+  });
+  $(".closing").click(function(){
+    $(".closing-body").toggle("d-block");
+  });
+  $(".lost").click(function(){
+    $(".lost-body").toggle("d-block");
+  });
+</script>
 </body>
 
 </html>

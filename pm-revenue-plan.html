@@ -27,6 +27,7 @@
 </head>
 
 <body>
+
   <section class="section-panel">
     <div class="admin-wrapper">
       <aside class="aside">
@@ -68,13 +69,12 @@
               </div>
             </li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#"
-                id="Transactions-Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-sales"></i> Financial Performance
               </a>
               <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./pm-project-cocs.html">COCs Overview</a>
-                </li>
+                <li><a class="dropdown-item panel_link " href="./pm-project-cocs.html">COCs Overview</a></li>
                 <li><a class="dropdown-item panel_link " href="./pm-project-pos.html">Project POs</a></li>
               </ul>
             </li>
@@ -85,17 +85,18 @@
             <li><a href="./pm-compnies-list.html" class="panel_link "><i class="icon icon-reports"></i> Customer
                 Profile</a></li>
 
-            <li><a href="./pm-contact.html" class="panel_link "><i class="icon icon-project"></i> Contacts</a></li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-bar-document"></i> Setting
-              </a>
-              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link" href="./pm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
-                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
-              </ul>
-            </li>
+            <li><a href="./pm-contact.html" class="panel_link active_panel"><i class="icon icon-project"></i>
+                Contacts</a></li>
+                <li class="nav-item panel-dropdown">
+                  <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="icon icon-bar-document"></i> Setting
+                  </a>
+                  <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                    <li><a class="dropdown-item panel_link" href="./pm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
+                    <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
+                  </ul>
+                </li>
             <li><a href="./crm-overview-index.html">Move to CRM</a></li>
             <li><a href="./pm-home-page.html" class="panel_link">Home Page</a></li>
             <li><a href="./admin-dashboard.html">Move to Admin</a></li>
@@ -157,14 +158,11 @@
         <div class="container">
           <div class="page-main-title">
             <div class="heading">
-              <h1>Project COCs</h1>
+              <h1>Revenue Plan</h1>
             </div>
-            <div class="page-sales-btn">
-              <button class="btn btn-empty bg-white" data-bs-toggle="modal" data-bs-target="#posModal">Add New COC</button>
-              <button type="button" class="btn ouline-white btn-fill ms-3" data-bs-toggle="modal"
-                data-bs-target="#businessForm">Transfer</button>
-              <button class="btn btn-fill">Export</button>
-              <button class="btn btn-fill">Import</button>
+            <div class="page-invoice-btn d-flex align-items-center flex-colume-sm wsm-100">
+              <button type="button" class="btn ouline-white me-md-3 mt-3 wsm-100 mt-md-0"><i class="icon icon-download me-2"></i>Download</button>
+              <button class="btn btn-fill wsm-100 mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#addPlanModal">Add new Plan</button>
             </div>
           </div>
           <div class="row">
@@ -172,9 +170,8 @@
               <div class="bg-white p-3 rounded d-flex justify-content-between align-items-center flex-colume-sm">
                 <div class="col-12 col-md-4">
                   <div class="dropdown select-dropdown ms-4">
-                    <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button"
-                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Employee name
+                    <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Project Manager
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -185,9 +182,8 @@
                 </div>
                 <div class="col-12 col-md-4 mt-3 mt-md-0">
                   <div class="dropdown select-dropdown ms-4">
-                    <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button"
-                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Employee ID
+                    <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Customer Name
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -198,9 +194,8 @@
                 </div>
                 <div class="col-12 col-md-4 mt-3 mt-md-0">
                   <div class="dropdown select-dropdown ms-4">
-                    <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button"
-                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Month
+                    <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Project Manager
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -211,234 +206,166 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-12 mb-4 mt-3">
-              <div class="sales-overview-invoices">
-                <div class="d-flex justify-content-between">
-                  <h3 class="fw-600">Overview</h3>
-                  <a href="" class="fw-500 text-blue text-decoration-none">See all</a>
-                </div>
-                <div class="invoice-body">
-                  <div class="invoice-desc">
-                    <p class="text-light-gray mb-2">Uploaded (34)</p>
-                    <h2 class="fw-bold">1,103.00 USD</h2>
-                  </div>
-                  <div class="invoice-desc">
-                    <p>Awaiting Payment (9)</p>
-                    <h2 class="fw-bold">9,133.53 USD</h2>
-                  </div>
-                  <div class="invoice-desc">
-                    <p>Awaiting Approval</p>
-                    <h2 class="fw-bold">-</h2>
-                  </div>
-                  <div class="invoice-desc">
-                    <p>Total (43)</p>
-                    <h2 class="fw-bold">11,955.21 USD</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 mb-4">
-              <div class="chart">
-                <div class="chart-box">
-                  <div class="chart-head d-md-flex justify-content-between align-items-center mb-32">
-                    <div class="chart-title">
-                      <h3 class="fw-600">Monthly Performance</h3>
-                    </div>
-                    <div class="d-flex justify-content-md-end align-items-center flex-colume-sm my-3 my-md-0">
-                      <div class="dropdown select-dropdown ms-4">
-                        <button class="btn btn-secondary dropdown-toggle pe-5" type="button" id="dropdownMenuButton1"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          All Customers
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </div>
-                      <div class="dropdown select-dropdown ms-4">
-                        <button class="btn btn-secondary dropdown-toggle pe-5 mt-3 mt-md-0" type="button"
-                          id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          Last 30 days
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="chart-content d-flex justify-content-between">
-                    <div class="chart-info white-box-content">
-                      <h6 class="mb-4 text-sm fw-500">30 days summary</h6>
-                      <div class="chart-desc">
-                        <p>Today’s balance</p>
-                        <p class="fw-600">1,030,00</p>
-                      </div>
-                      <div class="chart-desc">
-                        <p>Pending COCs</p>
-                        <p class="fw-600">1,500,00</p>
-                      </div>
-                      <div class="chart-desc">
-                        <p>Total</p>
-                        <p class="fw-600">2,890.99</p>
-                      </div>
-                      <div class="project-balance">
-                        <div class="">
-                          <h6 class="text-sm fw-500">Upcoming COCs</h6>
-                          <p class="text-light-gray">in Mar</p>
+            <div class="col-12">
+              <div class="invoice-table tablepanel mt-3">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Loged by</th>
+                      <th scope="col">PM Name</th>
+                      <th scope="col">Project Value</th>
+                      <th scope="col">Actual Revenue</th>
+                      <th scope="col">Cost</th>
+                      <th scope="col">Revenue Balance</th>
+                    </tr>
+                  </thead>
+                  <tbody class="right-content interest-body" style="display: table-row-group;">
+                    <tr class="open-popup cursor-pointer">
+                      <td scope="row" data-label="Loged by">
+                        <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                          <img src="./assets/images/prof-img-1.png" alt="">
+                          <h6 class="ms-3 fw-500 text-sm">Project 1</h6>
                         </div>
-                        <div>
-                          <h3 class="fw-bold">434,000.0</h3>
+                      </td>
+                      <td data-label="PM Name">xxxxx</td>
+                      <td data-label="Project Value">2.5m</td>
+                      <td data-label="Actual Revenue">800.000</td>
+                      <td data-label="Cost">800.000</td>
+                      <td data-label="Revenue Balance">800.00</td>
+                    </tr>
+                    <tr class="open-popup cursor-pointer">
+                      <td scope="row" data-label="Loged by">
+                        <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                          <img src="./assets/images/ryan-stevens.jpg" alt="">
+                          <h6 class="ms-3 fw-500 text-sm">Project 2</h6>
                         </div>
-                      </div>
-                    </div>
-                    <div class="chart-grap d-flex align-items-end">
-                      <div>
-                        <canvas id="CashFlowGraph-1" class="wsm-100"
-                          style="display: block; box-sizing: border-box; height: 220px; width: 600px;"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                      </td>
+                      <td data-label="PM Name">xxxxx</td>
+                      <td data-label="Project Value">23.3m</td>
+                      <td data-label="Actual Revenue">800.000</td>
+                      <td data-label="Cost">800.000</td>
+                      <td data-label="Revenue Balance">800.00</td>
+                    </tr>
+                    <tr class="open-popup cursor-pointer">
+                      <td scope="row" data-label="Loged by">
+                        <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                          <img src="./assets/images/loretta-myers.jpg" alt="">
+                          <h6 class="ms-3 fw-500 text-sm">Project 3</h6>
+                        </div>
+                      </td>
+                      <td data-label="PM Name">xxxxx</td>
+                      <td data-label="Project Value">200k</td>
+                      <td data-label="Actual Revenue">800.000</td>
+                      <td data-label="Cost">800.000</td>
+                      <td data-label="Revenue Balance">800.00</td>
+                    </tr>
+                    <tr class="open-popup cursor-pointer">
+                      <td scope="row" data-label="Loged by">
+                        <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                          <img src="./assets/images/carrie-aguilar.jpg" alt="">
+                          <h6 class="ms-3 fw-500 text-sm">Project 4</h6>
+                        </div>
+                      </td>
+                      <td data-label="PM Name">xxxxx</td>
+                      <td data-label="Project Value">200k</td>
+                      <td data-label="Actual Revenue">800.000</td>
+                      <td data-label="Cost">800.000</td>
+                      <td data-label="Revenue Balance">800.00</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-
-            <div class="col-12 mb-4">
-              <div class="bg-white rounded py-4">
-                <h6 class="ps-4 border-bottom pb-4">waiting approval (3)</h6>
-                <div class="row align-items-center py-3 border-bottom w-100 m-0">
-                  <div class="col-12 col-md-5 ps-0 ps-md-5 text-center text-md-start">
-                    <h6>Project Name</h6>
-                    <p class="text-light-gray text-small">Created by : Account Name</p>
-                  </div>
-                  <div class="col-12 col-md-2 mt-3 mt-md-0 text-center text-md-start">
-                    <button class="btn bg-danger text-white px-5">Reject</button>
-                  </div>
-                  <div class="col-12 col-md-2 mt-3 mt-md-0 text-center text-md-start">
-                    <button class="btn bg-primary text-white px-5 ms-0 ms-md-3">Accept</button>
-                  </div>
-                  <div class="col-12 col-md-2 text-center text-md-end mt-3 mt-md-0">
-                    <p class="ms-3 fw-600">12.90</p>
-                  </div>
-                  <div class="col-12 col-md-1 text-end mt-3 mt-md-0">
-                    <div class="dots d-flex justify-content-center justify-content-md-start">
-                      <span></span>
-                      <span class="m-0 ms-1"></span>
-                      <span class="m-0 ms-1"></span>
+          </div>
+          <div class="invoice-table tablepanel mt-3 popup-form">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Classification</th>
+                  <th scope="col">Total Actual Revenue</th>
+                  <th scope="col">Total Billed</th>
+                  <th scope="col">YTD Planned Revenue</th>
+                  <th scope="col">Margin %</th>
+                  <th scope="col">Profit margin</th>
+                  <th scope="col" class="close-popup cursor-pointer">X</th>
+                </tr>
+              </thead>
+              <tbody class="right-content interest-body" style="display: table-row-group;">
+                <tr>
+                  <td scope="row" data-label="Loged by">
+                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                      <img src="./assets/images/prof-img-1.png" alt="">
+                      <h6 class="ms-3 fw-500 text-sm">Project scope 1</h6>
                     </div>
-                  </div>
-                </div>
-                <div class="row align-items-center py-3 border-bottom w-100 m-0">
-                  <div class="col-12 col-md-5 ps-0 ps-md-5 text-center text-md-start">
-                    <h6>Project Name</h6>
-                    <p class="text-light-gray text-small">Created by : Account Name</p>
-                  </div>
-                  <div class="col-12 col-md-2 mt-3 mt-md-0 text-center text-md-start">
-                    <button class="btn bg-danger text-white px-5">Reject</button>
-                  </div>
-                  <div class="col-12 col-md-2 mt-3 mt-md-0 text-center text-md-start">
-                    <button class="btn bg-primary text-white px-5 ms-3">Accept</button>
-                  </div>
-                  <div class="col-12 col-md-2 text-center text-md-end mt-3 mt-md-0">
-                    <p class="ms-3 fw-600">230.00</p>
-                  </div>
-                  <div class="col-12 col-md-1 text-end mt-3 mt-md-0">
-                    <div class="dots d-flex justify-content-center justify-content-md-start">
-                      <span></span>
-                      <span class="m-0 ms-1"></span>
-                      <span class="m-0 ms-1"></span>
+                  </td>
+                  <td data-label="PM Name">120,000</td>
+                  <td data-label="Project Value">2.5m</td>
+                  <td data-label="Actual Revenue">800.000</td>
+                  <td data-label="Cost">800.000</td>
+                  <td data-label="Revenue Balance">800.00</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Loged by">
+                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                      <img src="./assets/images/ryan-stevens.jpg" alt="">
+                      <h6 class="ms-3 fw-500 text-sm">Project scope 2</h6>
                     </div>
-                  </div>
-                </div>
-                <div class="row align-items-center py-3 border-bottom w-100 m-0">
-                  <div class="col-12 col-md-5 ps-0 ps-md-5 text-center text-md-start">
-                    <h6>Project Name</h6>
-                    <p class="text-light-gray text-small">Created by : Account Name</p>
-                  </div>
-                  <div class="col-12 col-md-2 mt-3 mt-md-0 text-center text-md-start">
-                    <button class="btn bg-danger text-white px-5">Reject</button>
-                  </div>
-                  <div class="col-12 col-md-2 mt-3 mt-md-0 text-center text-md-start">
-                    <button class="btn bg-primary text-white px-5 ms-3">Accept</button>
-                  </div>
-                  <div class="col-12 col-md-2 text-center text-md-end mt-3 mt-md-0">
-                    <p class="ms-3 fw-600">989.00</p>
-                  </div>
-                  <div class="col-12 col-md-1 text-end mt-3 mt-md-0">
-                    <div class="dots d-flex justify-content-center justify-content-md-start">
-                      <span></span>
-                      <span class="m-0 ms-1"></span>
-                      <span class="m-0 ms-1"></span>
+                  </td>
+                  <td data-label="PM Name">120,000</td>
+                  <td data-label="Project Value">23.3m</td>
+                  <td data-label="Actual Revenue">800.000</td>
+                  <td data-label="Cost">800.000</td>
+                  <td data-label="Revenue Balance">800.00</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Loged by">
+                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                      <img src="./assets/images/loretta-myers.jpg" alt="">
+                      <h6 class="ms-3 fw-500 text-sm">Project scope 3</h6>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 mb-4">
-              <div class="sales-overview-invoices min-height">
-                <div class="invoice-head">
-                  <h3 class="fw-600">Upcoming COCs</h3>
-                </div>
-                <div class="money-graph">
-                  <div>
-                    <canvas id="saleStacked"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 mb-4">
-              <div class="sales-overview-invoices min-height">
-                <div class="d-flex justify-content-between">
-                  <h3 class="fw-600">Top 3 COC creators</h3>
-                  <p href="" class="fw-500">See all</p>
-                </div>
-                <div class="d-flex align-items-center justify-content-between border p-3 mt-4">
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/images/prof-img-1.png" class="rounded-circle me-2" alt="/">
-                    <div>
-                      <h6 class="fw-600">Nicholas Gordon</h6>
-                      <p class="text-small text-light-gray">Developer</p>
+                  </td>
+                  <td data-label="PM Name">120,000</td>
+                  <td data-label="Project Value">200k</td>
+                  <td data-label="Actual Revenue">800.000</td>
+                  <td data-label="Cost">800.000</td>
+                  <td data-label="Revenue Balance">800.00</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Loged by">
+                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                      <img src="./assets/images/carrie-aguilar.jpg" alt="">
+                      <h6 class="ms-3 fw-500 text-sm">Project scope 4</h6>
                     </div>
-                  </div>
-                  <div class="text-end">
-                    <h6 class="fw-600">90</h6>
-                    <p class="text-light-gray text-small">CODs</p>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center justify-content-between border p-3 mt-2">
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/images/prof-img-1.png" class="rounded-circle me-2" alt="/">
-                    <div>
-                      <h6 class="fw-600">Bradley Malone</h6>
-                      <p class="text-small text-light-gray">Developer</p>
-                    </div>
-                  </div>
-                  <div class="text-end">
-                    <h6 class="fw-600">60</h6>
-                    <p class="text-light-gray text-small">CODs</p>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center justify-content-between border p-3 mt-2">
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/images/prof-img-1.png" class="rounded-circle me-2" alt="/">
-                    <div>
-                      <h6 class="fw-600">Janie Todd</h6>
-                      <p class="text-small text-light-gray">Developer</p>
-                    </div>
-                  </div>
-                  <div class="text-end">
-                    <h6 class="fw-600">58</h6>
-                    <p class="text-light-gray text-small">CODs</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
+                  </td>
+                  <td data-label="PM Name">120,000</td>
+                  <td data-label="Project Value">200k</td>
+                  <td data-label="Actual Revenue">800.000</td>
+                  <td data-label="Cost">800.000</td>
+                  <td data-label="Revenue Balance">800.00</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Scope Name">
+                    <input type="text" name="name" id="name" placeholder="Item Name" class="d-block w-100 border border-2 rounded px-2 py-1">
+                  </td>
+                  <td data-label="Quantity">
+                    <input type="text" name="name" id="name" placeholder="SKL" class="d-block w-100 border border-2 rounded px-2 py-1">
+                  </td>
+                  <td data-label="Available">
+                    <input type="text" name="name" id="name" placeholder="20.0" class="d-block w-100 border border-2 rounded px-2 py-1">
+                  </td>
+                  <td data-label="Price ($)">
+                    <input type="text" name="name" id="name" placeholder="20.0" class="d-block w-100 border border-2 rounded px-2 py-1">
+                  </td>
+                  <td data-label="Discount">
+                    <input type="text" name="name" id="name" placeholder="20.0" class="d-block w-100 border border-2 rounded px-2 py-1">
+                  </td>
+                  <td data-label="Tax">
+                    <input type="text" name="name" id="name" placeholder="20.00" class="d-block w-100 border border-2 rounded px-2 py-1">
+                  </td>
+                  <td class="cursor-pointer">X</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </main>
@@ -466,149 +393,6 @@
           </div>
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
-            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="posModal" tabindex="-1" aria-labelledby="posModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="posModalLabel">Add New COC</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">COC reference</label>
-                  <input type="text" placeholder="COC-0-00001" class="d-block border border-2 rounded w-100 py-2 px-3">
-                </div>
-              </div>
-              <label for="full-name" class="fw-bold mb-2 mt-4">Select Customer</label>
-              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                <option value="Member">Risks</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <label for="full-name" class="fw-bold mb-2 mt-4">Select Project</label>
-              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                <option value="Member">Please insert Project name</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <label for="full-name" class="fw-bold mb-2 mt-4">Project Manager</label>
-              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                <option value="Member">Please insert Project ID</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">COC Amount</label>
-                  <input type="text" placeholder="Amount" class="d-block border border-2 rounded w-100 py-2 px-3">
-                </div>
-                <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">Select Currency</label>
-                  <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                    <option value="Member">Currency</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-              </div>
-              <label for="full-name" class="fw-bold mb-2 mt-4">Scope scope</label>
-              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                <option value="Member">Select scope</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <a href="" class="d-block text-decoration-none text-light-gray mt-3">+ Add More Item</a>
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">Date</label>
-                  <input type="date" placeholder="select date" class="d-block border border-2 rounded w-100 py-2 px-3">
-                </div>
-                <div class="col-md-6">
-                  <a href="" class="text-light-gray d-block text-decoration-none mt-5 fs-6"><i class="icon icon-link"></i> Attachments</a>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-fill text-uppercase">Submit</button>
-            <button type="button" class="btn btn-secondary text-uppercase" data-bs-dismiss="modal">Cancel</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal right fade" id="businessForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4>Transfer as Project</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body bg-light customer-add-form">
-            <form>
-              <label for="Customer-name" class="d-block mb-2">Customer Name</label>
-              <select id="cars" name="carlist" form="carform" class="form-input w-100">
-                <option value="volvo">Please insert customer name</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <label for="Customer-name" class="d-block mb-2">Deal ID</label>
-              <select id="cars" name="carlist" form="carform" class="form-input w-100">
-                <option value="volvo">Please insert Project name</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <label for="Customer-name" class="d-block mb-2">Account Manager</label>
-              <select id="cars" name="carlist" form="carform" class="form-input w-100">
-                <option value="volvo">Please insert Project ID</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="Project-name" class="d-block my-2">Deal Value</label>
-                  <input type="text" placeholder="Value" class="form-input w-100">
-                  <label for="Project-name" class="d-block my-2">Margin</label>
-                  <input type="text" placeholder="Margin" class="form-input w-100">
-                </div>
-                <div class="col-md-6">
-                  <label for="Customer-name" class="d-block mb-2">Currency</label>
-                  <select id="cars" name="carlist" form="carform" class="form-input w-100">
-                    <option value="volvo">Currency</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                  <label for="Customer-name" class="d-block mb-2">Formula</label>
-                  <select id="cars" name="carlist" form="carform" class="form-input w-100">
-                    <option value="volvo">Formula</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-              </div>
-              <label for="Project-name" class="d-block my-2">Comment</label>
-              <input type="text" placeholder="Comment" class="form-input w-100">
-              <a href="" class="text-fill d-block text-decoration-none text-small mt-4">+ upload attachments</a>
-            </form>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-primary px-4 py-2 text-uppercase">Transfer</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
@@ -856,6 +640,65 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   </div>
 </div>
 </div>
+<div class="modal fade" id="addPlanModal" tabindex="-1" aria-labelledby="addPlanModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addPlanModalLabel">Add New Plan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Customer name</label>
+          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="English">Please insert customer name</option>
+            <option value="Urdu">Urdu</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Punjabi">Punjabi</option>
+          </select>
+          <label for="name" class="fw-bold mt-3 mb-2">Project name</label>
+          <input type="text" name="name" id="name" placeholder="Please insert Project name" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Project Value</label>
+          <input type="text" name="name" id="name" placeholder="Please insert Project ID" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Project Manager</label>
+          <input type="text" name="name" id="name" placeholder="Select Project manager" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="name" class="fw-bold mt-3 mb-2">Project Scope1</label>
+              <input type="text" name="name" id="name" placeholder="Please set Value" class="d-block w-100 border border-2 rounded px-4 py-2">
+            </div>
+            <div class="col-md-6">
+              <label for="name" class="fw-bold mt-3 mb-2">Scope Type</label>
+              <input type="text" name="name" id="name" placeholder="Select Project Stage" class="d-block w-100 border border-2 rounded px-4 py-2">
+            </div>
+          </div>
+          <label for="name" class="fw-bold mt-3 mb-2">Targeted Revenue</label>
+          <input type="text" name="name" id="name" placeholder="Please select categroy" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Actual</label>
+          <input type="text" name="name" id="name" placeholder="Please select categroy" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="name" class="fw-bold mt-3 mb-2">Project Scope2</label>
+              <input type="text" name="name" id="name" placeholder="Please set Value" class="d-block w-100 border border-2 rounded px-4 py-2">
+            </div>
+            <div class="col-md-6">
+              <label for="name" class="fw-bold mt-3 mb-2">Scope Type</label>
+              <input type="text" name="name" id="name" placeholder="Select Project Stage" class="d-block w-100 border border-2 rounded px-4 py-2">
+            </div>
+          </div>
+          <label for="name" class="fw-bold mt-3 mb-2">Targeted Revenue </label>
+          <input type="text" name="name" id="name" placeholder="Please select categroy" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Actual</label>
+          <input type="text" name="name" id="name" placeholder="Please select categroy" class="d-block w-100 border border-2 rounded px-4 py-2">
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-primary text-uppercase">add</button>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
   </section>
 
 
@@ -868,118 +711,14 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
   <script src="./assets/js/main.js"></script>
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
   <script>
-    window.onload = function () {
-      const stacked = document.getElementById('saleStacked');
-
-      const bar26 = new Chart(stacked, {
-        type: 'bar',
-        data: {
-          labels: ['Older', 'Jan', 'Fab', 'Mar', 'Apr', 'Future'],
-          datasets: [
-            {
-              label: '# of Votes',
-              data: [0, 1000, 2000, 1500, 3500, 1000],
-              borderRadius: 0,
-              borderWidth: 0,
-              backgroundColor: '#775da6'
-            },
-            {
-              label: '# of Votes',
-              data: [0, 1000, 2000, 1500, 3500, 1000],
-              borderRadius: 0,
-              borderWidth: 0,
-              backgroundColor: '#efecf4'
-            }
-          ]
-        },
-        options: {
-          responsive: true,
-
-          scales: {
-            y: {
-              stacked: true,
-              min: 0,
-              max: 8000,
-              gridLines: {
-                drawOnChartArea: false
-              },
-              ticks: {
-                // stepSize: (MaximumValue-MinimumValue)/4,
-                drawTicks: false,
-              }
-            },
-            x: {
-              stacked: true,
-              grid: {
-                drawBorder: false,
-                drawOnChartArea: false,
-                display: true,
-                lineWidth: 0
-              }
-            }
-          },
-          plugins: {
-            legend: {
-              display: false
-            }
-          }
-        },
-      });
-
-      const BankLine = document.getElementById("CashFlowGraph-1");
-
-      const bar18 = new Chart(BankLine, {
-        type: "line",
-        data: {
-          labels: ["Today", "23 March", "28 March", "2 March", "7 March", "12 March"],
-          datasets: [
-            {
-              label: ["Top Products"],
-              data: [0, 500, 1000, 1500, 2000],
-              borderColor: "#775da6",
-              backgroundColor: "rgb(239, 236, 244)",
-              fill: true,
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          elements: {
-            point: {
-              radius: 0,
-            },
-          },
-          scales: {
-            x: {
-              display: true,
-              beginAtZero: true,
-              grid: {
-                drawOnChartArea: false,
-              },
-              ticks: {
-                display: true,
-              },
-            },
-            y: {
-              display: true,
-              beginAtZero: false,
-            },
-          },
-          plugins: {
-            legend: {
-              display: false,
-            },
-          },
-        },
-      });
-
-    }
+    $(".open-popup").click(function(){
+      $(".popup-form").addClass("d-block")
+    });
+    $(".close-popup").click(function(){
+      $(".popup-form").removeClass("d-block")
+    });
   </script>
-
 </body>
 
 </html>

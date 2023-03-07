@@ -3217,6 +3217,20 @@ h6.text-sm {
   list-style: none;
 }
 
+.popup-form {
+  display: none;
+}
+
+.upload-files .fileupload {
+  opacity: 0;
+  cursor: pointer;
+}
+.upload-files .text {
+  text-align: start;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
 /*--------------*\
     Boxes Section
 \*--------------*/
@@ -6393,6 +6407,67 @@ header nav {
   padding: 0 23px;
 }
 
+.dot-activity {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.dot-activity::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #e9e0e0;
+  top: 6px;
+  left: 0;
+}
+.dot-activity .dot-list {
+  width: 15px;
+  height: 15px;
+  background-color: #775da6;
+  border-radius: 50%;
+  border: 3px solid #b195e4;
+  z-index: 1;
+  position: relative;
+}
+.dot-activity .dot-list::before {
+  content: "22 Sep";
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background-color: #775da6;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  top: 19px;
+  left: -41px;
+  z-index: 1;
+}
+.dot-activity .dot-list::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -2px;
+  width: 15px;
+  height: 15px;
+  background-color: #775da6;
+  transform: rotate(45deg);
+}
+
+.section-panel .admin-wrapper-nav {
+  min-height: 70vh;
+  display: flex;
+  width: 100%;
+}
+.section-panel .admin-wrapper-navbar {
+  min-height: 50vh;
+  display: flex;
+  width: 100%;
+}
+
 .ref-prof {
   display: flex;
 }
@@ -8150,6 +8225,23 @@ body {
   width: 35px;
   height: 35px;
   border-radius: 50%;
+}
+
+.aside-2 .nav-tabs li {
+  width: 100% !important;
+}
+.aside-2 .nav-tabs li img {
+  width: 30px;
+  height: 30px;
+}
+.aside-2 .nav-tabs li + li {
+  margin: 0;
+}
+.aside-2 .nav-tabs li button.active {
+  border: none !important;
+  background-color: #775DA6 !important;
+  color: #fff !important;
+  width: 100%;
 }
 
 .fc-unthemed {

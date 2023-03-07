@@ -46,64 +46,46 @@
               <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
             </div>
           </div>
-          <div class="side-panel-dropdown">
-            <button class="panel-button dropdown-toggle" type="button">
-              <i class="icon icon-lajou-cafe"></i> Lajou cafe
-            </button>
-            <ul class="panel-dropdown-menu">
-              <li><a class="panel-dropdown-item" href="#">Action</a></li>
-              <li><a class="panel-dropdown-item" href="#">Another action</a></li>
-              <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
           <ul>
-            <li><a href="./pm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
-                Overview</a></li>
+            <li><a href="./crm-overview-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Overview</a>
+            </li>
+            <li><a href="./crm-compnies-list.html" class="panel_link"><i
+                  class="icon icon-bar-companies"></i> Customer Profiles</a></li>
+            <li><a href="./crm-deals.html" class="panel_link"><i class="icon icon-deal-bag"></i> Deals</a></li>
+            <li><a href="./crm-contact.html" class="panel_link"><i class="icon icon-contact"></i> Contact</a></li>
             <li class="nav-item panel-dropdown position-relative">
-              <a href="./pm-project-management.html" class="mb-auto panel_link "><i class="icon icon-business"></i>
-                Projects</a>
+              <a href="./crm-reports-overview.html" class="mb-auto panel_link"><i class="icon icon-project"></i>
+                Report</a>
               <div>
                 <a class="dropdown-btn nav-link dropdown-toggle position-absolute" href="" id="Setting-Dropdown"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false" style="top: 11px; right: 17px;">
                 </a>
                 <ul class="Setting-Dropdown m-0" aria-labelledby="Setting-Dropdown">
-                  <li><a class="dropdown-item panel_link " href="./pm-project-overview.html">project Overview</a></li>
-                  <li><a class="dropdown-item panel_link " href="./pm-project-performance.html">project Performance</a>
-                  </li>
+                  <li><a class="dropdown-item panel_link" href="./crm-overview-reports.html">Customer Reports</a></li>
+                  <li><a class="dropdown-item panel_link" href="./crm-leads-report.html">Leads Reports</a></li>
+                  <li><a class="dropdown-item panel_link" href="./crm-sales-report.html">Sales Reports</a></li>
                 </ul>
               </div>
             </li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-sales"></i> Financial Performance
-              </a>
-              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./pm-project-cocs.html">COCs Overview</a></li>
-                <li><a class="dropdown-item panel_link " href="./pm-project-pos.html">Project POs</a></li>
-              </ul>
+            <li><a href="./crm-revenue-analysis.html" class="panel_link"><i
+                  class="icon icon-report-board"></i> Revenue Analysis</a></li>
+                  <li><a href="./crm-transferred-projects.html" class="panel_link"><i
+                    class="icon icon-transferred-projects"></i> Transfer as project</a></li>
+            <li><a href="./crm-product.html" class="panel_link"><i class="icon icon-expenses"></i> Products</a></li>
+            <li><a href="./crm-documents.html" class="panel_link"><i class="icon icon-bar-document"></i> Documents</a>
             </li>
-            <li><a href="./pm-transferred-projects.html" class="panel_link "><i
-                  class="icon icon-transferred-projects bg-cover"></i>
-                Transferred Projects</a></li>
-            <li><a href="./pm-report.html" class="panel_link "><i class="icon icon-expenses"></i> Reports</a></li>
-            <li><a href="./pm-compnies-list.html" class="panel_link "><i class="icon icon-reports"></i> Customer
-                Profile</a></li>
-
-            <li><a href="./pm-contact.html" class="panel_link "><i class="icon icon-project"></i> Contacts</a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Transactions-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-bar-document"></i> Setting
               </a>
-              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./pm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
+              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i class="icon icon-bar-document"></i> Account</a></li>
+                <li><a class="dropdown-item panel_link active_panel" href="./crm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
                 <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
               </ul>
             </li>
-            <li><a href="./crm-overview-index.html">Move to CRM</a></li>
-            <li><a href="./pm-home-page.html" class="panel_link">Home Page</a></li>
-            <li><a href="./admin-dashboard.html">Move to Admin</a></li>
+            <li><a href="./hr-dashboard.html" class="panel_link">Move To HR Management </a></li>
           </ul>
         </div>
       </aside>
@@ -129,8 +111,7 @@
           </div>
           <div class="about-profile">
             <div class="d-none d-md-block">
-              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
-                  class="icon icon-plus"></i> Add</button>
+              <button type="button" class="btn ouline-white"><i class="icon icon-plus"></i> Add</button>
               <a href=""><i class="icon icon-question"></i></a>
               <a href=""><i class="icon icon-notification"></i></a>
             </div>
@@ -173,6 +154,9 @@
                     </li>
                     <li class="nav-item m-0" role="presentation">
                       <button class="nav-link text-uppercase" id="Approval-tab" data-bs-toggle="tab" data-bs-target="#Approval" type="button" role="tab" aria-controls="Approval" aria-selected="false">Approval</button>
+                    </li>
+                    <li class="nav-item m-0" role="presentation">
+                      <button class="nav-link text-uppercase" id="Category-tab" data-bs-toggle="tab" data-bs-target="#Category" type="button" role="tab" aria-controls="Category" aria-selected="false">Category</button>
                     </li>
                   <h4 class="fw-600 mt-4">Permissions</h4>
                   <li class="nav-item" role="presentation">
@@ -2219,6 +2203,59 @@
                     </div>
                   </form>
                 </div>
+                <div class="tab-pane" id="Category" role="tabpanel" aria-labelledby="Category-tab">
+                  <div class="page-main-title">
+                    <div class="heading">
+                      <h1>Category</h1>
+                    </div>
+                  </div>
+                  <label for="name" class="fw-bold mt-3 mb-2">Add New Category</label>
+                  <input type="text" name="name" id="name" placeholder="Enter a Category Name" class="d-block w-100 border border-2 rounded px-4 py-2">
+                  <div class="text-end w-100">
+                    <button class="btn btn-fill wsm-100 mt-3">Add</button>
+                  </div>
+                  <div class="invoice-table tablepanel mt-3">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">Category Name</th>
+                          <th scope="col">Category ID</th>
+                          <th scope="col">Edit</th>
+                        </tr>
+                      </thead>
+                      <tbody class="right-content interest-body" style="display: table-row-group;">
+                        <tr>
+                          <td scope="row" data-label="Category Name">
+                              <h6 class="ms-3 fw-500 text-sm">Mathilda Bell</h6>
+                          </td>
+                          <td data-label="Category ID">PO-1</td>
+                          <td data-label="Edit"><a href="" class="text-decoration-none fw-600 text-light-gray" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Category Name">
+                              <h6 class="ms-3 fw-500 text-sm">Ryan Stevens</h6>
+                          </td>
+                          <td data-label="Category ID">PO-2</td>
+                          <td data-label="Edit"><a href="" class="text-decoration-none fw-600 text-light-gray" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Category Name">
+                              <h6 class="ms-3 fw-500 text-sm">Loretta Myers</h6>
+                          </td>
+                          <td data-label="Category ID">PO-3</td>
+                          <td data-label="Edit"><a href="" class="text-decoration-none fw-600 text-light-gray" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Category Name">
+                              <h6 class="ms-3 fw-500 text-sm">Carrie Aguilar</h6>
+                          </td>
+                          <td data-label="Category ID">PO-4</td>
+                          <td data-label="Edit"><a href="" class="text-decoration-none fw-600 text-light-gray" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -2497,6 +2534,27 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   </div>
 </div>
 </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Category</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Edit Category Name</label>
+          <input type="text" name="name" id="name" placeholder="Edit Category Name" class="d-block w-100 border border-2 rounded px-4 py-2">
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-primary text-uppercase">Save</button>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cencel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   </section>
   <!-- JavaScript
 ================================================== -->
@@ -2508,15 +2566,14 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src='https://cdn.ckeditor.com/ckeditor5/28.0.0/classic/ckeditor.js'></script>
   <script src="./assets/js/editor.js"></script>
-<script>
-      $(".popup-button").click(function () {
-      $(".popup-form").addClass("d-block");
-    });
-    $(".remove-popup").click(function () {
-      $(".popup-form").removeClass("d-block");
-    });
+  <script>
+    $(".popup-button").click(function () {
+    $(".popup-form").addClass("d-block");
+  });
+  $(".remove-popup").click(function () {
+    $(".popup-form").removeClass("d-block");
+  });
 </script>
-
 </body>
 
 </html>

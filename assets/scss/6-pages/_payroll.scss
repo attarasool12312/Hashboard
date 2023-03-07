@@ -177,3 +177,22 @@
     border-radius: 50%;
   }
 }
+
+.aside-2{
+  .nav-tabs li{
+    width: 100% !important;
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .nav-tabs li + li{
+    margin: 0;
+  }
+  .nav-tabs li button.active{
+    border: none !important;
+    background-color: #775DA6 !important;
+    color: #fff !important;
+    width: 100%;
+  }
+}

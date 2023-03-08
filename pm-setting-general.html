@@ -135,7 +135,7 @@
               <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
                   class="icon icon-plus"></i> Add</button>
               <a href=""><i class="icon icon-question"></i></a>
-              <a href=""><i class="icon icon-notification"></i></a>
+              <a href="./pm-account-activities.html"><i class="icon icon-notification"></i></a>
             </div>
             <div class="dropdown select-dropdown admin-profile">
               <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -153,7 +153,7 @@
                 <h6 class="text-small mt-2">Allen Moreno</h6>
                 <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
                 </div>
-                  <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                  <li><a class="dropdown-item mt-3" href="./pm-edit-profile.html"><i class="icon icon-user-profile"></i> My Profile</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
@@ -247,73 +247,529 @@
                   <div class="page-main-title justify-content-end">
                     <button class="btn btn-fill popup-button">Add New</button>
                   </div>
-                  <div class="invoice-table tablepanel">
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th scope="col">Department Name</th>
-                          <th scope="col">Manager</th>
-                          <th scope="col">Email</th>
-                          <th scope="col">Total Members</th>
-                          <th scope="col">Create Date</th>
-                          <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
-                        </tr>
-                      </thead>
-                      <tbody class="right-content interest-body" style="display: table-row-group;">
-                        <tr>
-                          <td scope="row" data-label="Department Name">
-                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                              <img src="./assets/images/prof-img-1.png" alt="">
-                              <h6 class="ms-3 fw-500 text-sm">Mathilda Bell</h6>
+                  <div class="row">
+                    <div class="col-12">
+                      <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="Cycle-tab" data-bs-toggle="tab" data-bs-target="#Cycle" type="button" role="tab" aria-controls="Cycle" aria-selected="true">Approval Cycle</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="Required-tab" data-bs-toggle="tab" data-bs-target="#Required" type="button" role="tab" aria-controls="Required" aria-selected="false">Required Approval</button>
+                        </li>
+                      </ul>
+                    </div>
+                      <div class="tab-content mt-3">
+                        <div class="tab-pane active" id="Cycle" role="tabpanel" aria-labelledby="Cycle-tab">
+                          <div class="invoice-table tablepanel">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Department Name</th>
+                                  <th scope="col">Manager</th>
+                                  <th scope="col">Email</th>
+                                  <th scope="col">Total Members</th>
+                                  <th scope="col">Create Date</th>
+                                  <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                                </tr>
+                              </thead>
+                              <tbody class="right-content interest-body" style="display: table-row-group;">
+                                <tr>
+                                  <td scope="row" data-label="Department Name">
+                                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                      <img src="./assets/images/prof-img-1.png" alt="">
+                                      <h6 class="ms-3 fw-500 text-sm">Mathilda Bell</h6>
+                                    </div>
+                                  </td>
+                                  <td data-label="Manager">(435) 474-3348</td>
+                                  <td data-label="Email">napozje@paw.com</td>
+                                  <td data-label="Total Members">12</td>
+                                  <td data-label="Created Date">16 Mar 2022</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td scope="row" data-label="Department Name">
+                                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                      <img src="./assets/images/ryan-stevens.jpg" alt="">
+                                      <h6 class="ms-3 fw-500 text-sm">Ryan Stevens</h6>
+                                    </div>
+                                  </td>
+                                  <td data-label="Manager">(804) 362-8940</td>
+                                  <td data-label="Email">lefiden@podi.gov</td>
+                                  <td data-label="Total Members">12</td>
+                                  <td data-label="Created Date">25 May 2022</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td scope="row" data-label="Department Name">
+                                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                      <img src="./assets/images/loretta-myers.jpg" alt="">
+                                      <h6 class="ms-3 fw-500 text-sm">Loretta Myers</h6>
+                                    </div>
+                                  </td>
+                                  <td data-label="Manager">(513) 711-3369</td>
+                                  <td data-label="Email">kuw@rolluzdi.gov</td>
+                                  <td data-label="Total Members">12</td>
+                                  <td data-label="Created Date">18 Aug 2022</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td scope="row" data-label="Department Name">
+                                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                      <img src="./assets/images/carrie-aguilar.jpg" alt="">
+                                      <h6 class="ms-3 fw-500 text-sm">Carrie Aguilar</h6>
+                                    </div>
+                                  </td>
+                                  <td data-label="Manager">(556) 616-5266</td>
+                                  <td data-label="Email">enval@maf.com</td>
+                                  <td data-label="Total Members">12</td>
+                                  <td data-label="Created Date">12 Mar 2022</td>
+                                  <td></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>  
+                        </div>
+                        <div class="tab-pane" id="Required" role="tabpanel" aria-labelledby="Required-tab">
+                          <div class="prof-table table tablepanel">
+                            <table class="mt-3">
+                              <thead>
+                                <tr>
+                                  <th>Feature</th>
+                                  <th>Default User</th>
+                                  <th>Content Manager</th>
+                                  <th>Hiring Manager</th>
+                                  <th>Recruitment Lead</th>
+                                  <th>Recruitment Admin</th>
+                                  <th>Company Admin</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="border-bottom">
+                                  <td scope="col">Create a new project</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Edit Project profile</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Change Project stage</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Create COC</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Accept/reject COC</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Accept/reject transferred Deals</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Create Project PO</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Change PO stage</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Change project value</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Change project satisfaction</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Complete Project</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Close Project</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Edit App Dashboard</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Add new customer</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Change project manager</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Add new scope</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Add new satisfaction score</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Add/remove project stages</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Create reports</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td scope="col">Extract reports</td>
+                                  <td scope="col">
+                                      <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                  <td scope="col">
+                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                             </div>
-                          </td>
-                          <td data-label="Manager">(435) 474-3348</td>
-                          <td data-label="Email">napozje@paw.com</td>
-                          <td data-label="Total Members">12</td>
-                          <td data-label="Created Date">16 Mar 2022</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Department Name">
-                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                              <img src="./assets/images/ryan-stevens.jpg" alt="">
-                              <h6 class="ms-3 fw-500 text-sm">Ryan Stevens</h6>
-                            </div>
-                          </td>
-                          <td data-label="Manager">(804) 362-8940</td>
-                          <td data-label="Email">lefiden@podi.gov</td>
-                          <td data-label="Total Members">12</td>
-                          <td data-label="Created Date">25 May 2022</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Department Name">
-                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                              <img src="./assets/images/loretta-myers.jpg" alt="">
-                              <h6 class="ms-3 fw-500 text-sm">Loretta Myers</h6>
-                            </div>
-                          </td>
-                          <td data-label="Manager">(513) 711-3369</td>
-                          <td data-label="Email">kuw@rolluzdi.gov</td>
-                          <td data-label="Total Members">12</td>
-                          <td data-label="Created Date">18 Aug 2022</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Department Name">
-                            <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                              <img src="./assets/images/carrie-aguilar.jpg" alt="">
-                              <h6 class="ms-3 fw-500 text-sm">Carrie Aguilar</h6>
-                            </div>
-                          </td>
-                          <td data-label="Manager">(556) 616-5266</td>
-                          <td data-label="Email">enval@maf.com</td>
-                          <td data-label="Total Members">12</td>
-                          <td data-label="Created Date">12 Mar 2022</td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
+
+                      </div>
+                    </div>
                   </div>
                   <div class="mx-auto bg-white p-3 rounded mt-4 width-50 popup-form">
                     <div class="d-flex align-items-center justify-content-between">
@@ -2555,6 +3011,26 @@ aria-labelledby="interviewLabel" aria-hidden="true">
     </div>
   </div>
 </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Category</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Edit Category Name</label>
+          <input type="text" name="name" id="name" placeholder="Edit Category Name" class="d-block w-100 border border-2 rounded px-4 py-2">
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-primary text-uppercase">Save</button>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cencel</button>
+      </div>
+    </div>
+  </div>
 </div>
   </section>
   <!-- JavaScript

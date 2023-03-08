@@ -85,3 +85,4 @@ const Radialbar_2 = new Chart(Radialbar2, {
     }
   },
 });
+

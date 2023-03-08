@@ -27,59 +27,59 @@
 </head>
 
 <body>
-    <header class="bg-white">
-        <div class="header-main">
-            <div class="sitepanel-toggler m-0">
-                <div class="close">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="logo">
-                    <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
-                </div>
+  <header class="bg-white">
+    <div class="header-main">
+        <div class="sitepanel-toggler m-0">
+            <div class="close">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="search-form header-form d-none d-md-block">
-                <form action="">
-                    <div class="form-group">
-                        <input class="form-control max-width" type="text" placeholder="Search in Rhombus…"
-                            aria-label="Search">
-                        <i class="icon icon-search-form"></i>
-                    </div>
-                </form>
-            </div>
-            <div class="about-profile">
-                <div class="d-none d-md-block">
-                    <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a>
-                    <a href="./sm-account-activities.html"><i class="icon icon-notification"></i></a>
-                </div>
-                <div class="dropdown select-dropdown admin-profile">
-                    <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <div class="profile-img me-2 border-0">
-                        <img class="img-fluid" src="./assets/images/profile.png" alt="">
-                      </div>
-                      <div class="admin-info d-none d-md-block">
-                        <h5 class="">Katie Pena</h5>
-                        <h6 class="text-small text-light-gray">Admin</h6>
-                      </div>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <div class="profile-images text-center">
-                        <img src="./assets/images/profile-2.png" alt="">
-                      <h6 class="text-small mt-2">Allen Moreno</h6>
-                      <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
-                      </div>
-                        <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
-                    </ul>
-                  </div>
+            <div class="logo">
+                <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
             </div>
         </div>
+        <div class="search-form header-form d-none d-md-block">
+            <form action="">
+                <div class="form-group">
+                    <input class="form-control max-width" type="text" placeholder="Search in Rhombus…"
+                        aria-label="Search">
+                    <i class="icon icon-search-form"></i>
+                </div>
+            </form>
+        </div>
+        <div class="about-profile">
+            <div class="d-none d-md-block">
+                <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a>
+                <a href="./sm-account-activities.html"><i class="icon icon-notification"></i></a>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+                <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="profile-img me-2 border-0">
+                    <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                  </div>
+                  <div class="admin-info d-none d-md-block">
+                    <h5 class="">Katie Pena</h5>
+                    <h6 class="text-small text-light-gray">Admin</h6>
+                  </div>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <div class="profile-images text-center">
+                    <img src="./assets/images/profile-2.png" alt="">
+                  <h6 class="text-small mt-2">Allen Moreno</h6>
+                  <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                  </div>
+                    <li><a class="dropdown-item mt-3" href="./sm-edit-profile.html"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
 
-    </header>
+</header>
     <section class="section-panel">
         <div class="admin-wrapper">
             <aside class="aside left-sidbar">
@@ -336,6 +336,7 @@
                                                   </span>
                                                   Financials
                                             </div>
+                                            <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Category</button>
                                         </div>
                                         <div class="col-md-3 contact-card mt-3 mt-md-0">
                                             <h5 class="text-light-gray">Sports</h5>
@@ -913,6 +914,25 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   </div>
 </div>
 </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Category</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label for="name" class="fw-bold mt-3 mb-2">Add Category</label>
+        <input type="text" name="name" id="name" placeholder="Add a New Category" class="d-block w-100 border border-2 rounded px-4 py-2">
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-fill">Add</button>
+        <button type="button" class="btn border border-2" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     </section>
 
     <!-- JavaScript

@@ -129,7 +129,7 @@
               <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
                   class="icon icon-plus"></i> Add</button>
               <a href=""><i class="icon icon-question"></i></a>
-              <a href=""><i class="icon icon-notification"></i></a>
+              <a href="./pm-account-activities.html"><i class="icon icon-notification"></i></a>
             </div>
             <div class="dropdown select-dropdown admin-profile">
               <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -147,7 +147,7 @@
                 <h6 class="text-small mt-2">Allen Moreno</h6>
                 <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
                 </div>
-                  <li><a class="dropdown-item mt-3" href="#"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                  <li><a class="dropdown-item mt-3" href="./pm-edit-profile.html"><i class="icon icon-user-profile"></i> My Profile</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
@@ -162,7 +162,8 @@
             <div class="d-flex align-items-md-center flex-colume-sm mt-md-3 wsm-100 d-block ms-md-auto">
               <button type="button" class="btn ouline-white me-md-3 mt-3 wsm-100 mt-md-0"><i
                   class="icon icon-download me-2"></i>Download</button>
-              <button type="button" class="btn ouline-white btn-fill me-md-3 mt-3 mt-md-0">Add new score</button>
+              <button type="button" class="btn ouline-white btn-fill me-md-3 mt-3 mt-md-0" data-bs-toggle="modal"
+              data-bs-target="#leftBoxModal">Add new score</button>
             </div>
           </div>
           <div class="row">
@@ -547,6 +548,60 @@ aria-labelledby="interviewLabel" aria-hidden="true">
     </div>
   </div>
 </div>
+</div>
+<div class="modal fade" id="leftBoxModal" tabindex="-1" aria-labelledby="leftBoxModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="leftBoxModalLabel">Percentage of Completion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body percentage-slider">
+        <form oninput="output.value = Math.round(range.valueAsNumber / 1000)">
+          <label for="full-name" class="fw-bold mb-2 mt-4">Project Name</label>
+          <input type="text" placeholder="Project Name" class="d-block border border-2 rounded w-100 py-2 px-3">
+          <label for="full-name" class="fw-bold mb-2 mt-4">Project Manager</label>
+          <input type="text" placeholder="Project Manager" class="d-block border border-2 rounded w-100 py-2 px-3">
+          <label for="full-name" class="fw-bold mb-2 mt-4">Project Date</label>
+          <input type="date" placeholder="Project Date" class="d-block border border-2 rounded w-100 py-2 px-3">
+          <label for="full-name" class="fw-bold mb-2 mt-4">Percentage of Completion</label>
+          <div class="line-1">
+            <div class="range-container column" id="fifty1">
+              <input type="range" id="ats" min="0" max="100" value="70" style="--ptage:70%">
+              <label for="ats" class="50">70</label>
+            </div>
+          </div>
+          <div class="col-12 d-flex align-items-center justify-content-between mt-2">
+            <p class="text-light-gray">Project 1</p>
+            <p class="text-light-gray">Designer</p>
+            <p class="fw-600">100%</p>
+          </div>
+          <div class="col-12 d-flex align-items-center justify-content-between mt-2">
+            <p class="text-light-gray">Project 2</p>
+            <p class="text-light-gray">Designer</p>
+            <p class="fw-600">90%</p>
+          </div>
+          <div class="col-12 d-flex align-items-center justify-content-between mt-2">
+            <p class="text-light-gray">Project 3</p>
+            <p class="text-light-gray">Designer</p>
+            <p class="fw-600">80%</p>
+          </div>
+          <div class="col-12 d-flex align-items-center justify-content-between mt-2">
+            <p class="text-light-gray">Project 4</p>
+            <p class="text-light-gray">Designer</p>
+            <p class="fw-600">70%</p>
+          </div>
+          <label for="role" class="fw-bold mt-3 mb-2">Comments</label>
+          <textarea class="border border-2 d-block w-100 rounded p-2" placeholder="Your message" id="Comments" spellcheck="false" cols="10" rows="5"></textarea>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-primary px-4 text-uppercase">Update</button>
+        <button type="button" class="btn border border-2 px-4 text-uppercase"
+          data-bs-dismiss="modal">cancel</button>
+      </div>
+    </div>
+  </div>
 </div>
   </section>
 

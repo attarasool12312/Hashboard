@@ -4331,6 +4331,22 @@ ul.head-btn .slider-btn .btn.ouline-white {
   transform: rotate(45deg);
 }
 
+.chart-popup.modal-body {
+  overflow-y: auto;
+  height: 50vh;
+}
+.chart-popup.modal-body::-webkit-scrollbar {
+  width: 10px;
+}
+.chart-popup.modal-body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(119, 93, 166, 0.1);
+  border-radius: 10px;
+}
+.chart-popup.modal-body::-webkit-scrollbar-thumb {
+  background: rgba(119, 93, 166, 0.1);
+  border-radius: 10px;
+}
+
 /*--------------*\
     Tabs Section
 \*--------------*/
@@ -4488,6 +4504,19 @@ ul.head-btn .slider-btn .btn.ouline-white {
   background-color: #c8dde0 !important;
   border: none !important;
   border-radius: 8px;
+}
+
+.chart-popup .nav-tabs li + li {
+  margin: 0;
+}
+.chart-popup .nav-tabs li button {
+  width: 100%;
+  text-align: left;
+}
+.chart-popup .nav-tabs li button.active {
+  border: 0 !important;
+  background-color: #f1f1f1 !important;
+  border-radius: 5px;
 }
 
 .section-panel .admin-wrapper {
@@ -6458,7 +6487,7 @@ header nav {
 }
 
 .section-panel .admin-wrapper-nav {
-  min-height: 70vh;
+  min-height: 50vh;
   display: flex;
   width: 100%;
 }
@@ -8230,9 +8259,16 @@ body {
 .aside-2 .nav-tabs li {
   width: 100% !important;
 }
-.aside-2 .nav-tabs li img {
+.aside-2 .nav-tabs li button {
+  padding: 5px;
+}
+.aside-2 .nav-tabs li button img {
   width: 30px;
   height: 30px;
+}
+.aside-2 .nav-tabs li button h6 {
+  font-size: 12px;
+  margin-left: 5px;
 }
 .aside-2 .nav-tabs li + li {
   margin: 0;

@@ -204,3 +204,22 @@
         }
     }  
 }
+
+.chart-popup{
+    .nav-tabs{
+        li{
+            + li{
+                margin: 0;
+            }
+            button{
+                width: 100%;
+                text-align: left;
+                &.active{
+                    border: 0 !important;
+                    background-color: #f1f1f1 !important;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

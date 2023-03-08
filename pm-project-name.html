@@ -75,6 +75,7 @@
                 <i class="icon icon-sales"></i> Financial Performance
               </a>
               <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./pm-revenue-plan.html">Revenue Plan</a></li>
                 <li><a class="dropdown-item panel_link " href="./pm-project-cocs.html">COCs Overview</a></li>
                 <li><a class="dropdown-item panel_link " href="./pm-project-pos.html">Project POs</a></li>
               </ul>
@@ -93,6 +94,7 @@
                 <i class="icon icon-bar-document"></i> Setting
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i class="icon icon-bar-document"></i> Account</a></li>
                 <li><a class="dropdown-item panel_link" href="./pm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
                 <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
               </ul>
@@ -486,7 +488,7 @@
                   <a href="./pm-timeline-edit.html" class="btn ouline-white btn-fill mt-3">Edit TimeLine</a>
                 </div>
                 <div class="col-12 col-md-3 pe-md-0 section-panel mt-3 pt-3 bg-white">
-                  <div class="w-100 bg-light p-1">
+                  <div class="w-100 bg-light p-1 bg-white">
                     <div class="dropdown select-dropdown ms-4">
                       <button class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="icon icon-filter"></i> sort: <b class="text-dark">A-Z</b>
@@ -498,7 +500,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="admin-wrapper-nav p-0">
+                  <div class="admin-wrapper-nav p-0 bg-white">
                     <div class="aside-1 w-100 mt-57 h-100 border-0">
                       <ul>
                         <li class="nav-item panel-dropdown">
@@ -1061,16 +1063,6 @@
                               </tr>
                             </tbody>
                           </table>
-                          <div class="w-100 text-end mt-3">
-                            <button type="button" class="btn ouline-white btn-fill me-2">COC Status</button>
-                          </div>
-                          <h3 class="my-3">Recent Activity Feed</h3>
-                          <div class="dot-activity">
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                          </div>
                         </div>
                         <div class="tab-pane" id="Budget" role="tabpanel" aria-labelledby="Budget-tab">
                           <table class="table timeline-table">
@@ -1547,16 +1539,6 @@
                               </tr>
                             </tbody>
                           </table>
-                          <div class="w-100 text-end mt-3">
-                            <button type="button" class="btn ouline-white btn-fill me-2">COC Status</button>
-                          </div>
-                          <h3 class="my-3">Recent Activity Feed</h3>
-                          <div class="dot-activity">
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                          </div>
                         </div>
                         <div class="tab-pane" id="Search" role="tabpanel" aria-labelledby="Search-tab">
                           <table class="table timeline-table">
@@ -2033,16 +2015,6 @@
                               </tr>
                             </tbody>
                           </table>
-                          <div class="w-100 text-end mt-3">
-                            <button type="button" class="btn ouline-white btn-fill me-2">COC Status</button>
-                          </div>
-                          <h3 class="my-3">Recent Activity Feed</h3>
-                          <div class="dot-activity">
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                          </div>
                         </div>
                         <div class="tab-pane" id="newDashboard" role="tabpanel" aria-labelledby="newDashboard-tab">
                           <table class="table timeline-table">
@@ -2518,16 +2490,6 @@
                               </tr>
                             </tbody>
                           </table>
-                          <div class="w-100 text-end mt-3">
-                            <button type="button" class="btn ouline-white btn-fill me-2">COC Status</button>
-                          </div>
-                          <h3 class="my-3">Recent Activity Feed</h3>
-                          <div class="dot-activity">
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                          </div>
                         </div>
                         <div class="tab-pane" id="Design" role="tabpanel" aria-labelledby="Design-tab">
                           <table class="table timeline-table">
@@ -3004,19 +2966,23 @@
                               </tr>
                             </tbody>
                           </table>
-                          <div class="w-100 text-end mt-3">
-                            <button type="button" class="btn ouline-white btn-fill me-2">COC Status</button>
-                          </div>
-                          <h3 class="my-3">Recent Activity Feed</h3>
-                          <div class="dot-activity">
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                            <div class="dot-list"></div>
-                          </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="col-12 ps-0">
+                  <div class="bg-white p-3 pb-5">
+                      <div class="w-100 text-end">
+                        <button type="button" class="btn ouline-white btn-fill me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">COC Status</button>
+                      </div>
+                      <h3 class="my-3">Recent Activity Feed</h3>
+                      <div class="dot-activity">
+                        <div class="dot-list"></div>
+                        <div class="dot-list"></div>
+                        <div class="dot-list"></div>
+                        <div class="dot-list"></div>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -4018,6 +3984,104 @@ aria-labelledby="interviewLabel" aria-hidden="true">
     </div>
   </div>
 </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Import Employees</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="w-100 text-center border-bottom border-2 py-3">
+          <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#posModal">Add New COC</button>
+        </div>
+        <div class="w-100 text-center border-bottom border-2 py-3">
+          <a href="./pm-update-coc.html" class="btn ouline-white btn-fill text-decoration-none">Update Current COC</a>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-fill">Import Employees</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="posModal" tabindex="-1" aria-labelledby="posModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="posModalLabel">Add New COC</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="full-name" class="fw-bold mb-2 mt-4">COC reference</label>
+              <input type="text" placeholder="COC-0-00001" class="d-block border border-2 rounded w-100 py-2 px-3">
+            </div>
+          </div>
+          <label for="full-name" class="fw-bold mb-2 mt-4">Select Customer</label>
+          <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+            <option value="Member">Risks</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <label for="full-name" class="fw-bold mb-2 mt-4">Select Project</label>
+          <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+            <option value="Member">Please insert Project name</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <label for="full-name" class="fw-bold mb-2 mt-4">Project Manager</label>
+          <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+            <option value="Member">Please insert Project ID</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="full-name" class="fw-bold mb-2 mt-4">COC Amount</label>
+              <input type="text" placeholder="Amount" class="d-block border border-2 rounded w-100 py-2 px-3">
+            </div>
+            <div class="col-md-6">
+              <label for="full-name" class="fw-bold mb-2 mt-4">Select Currency</label>
+              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+                <option value="Member">Currency</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+          </div>
+          <label for="full-name" class="fw-bold mb-2 mt-4">Scope scope</label>
+          <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+            <option value="Member">Select scope</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <a href="" class="d-block text-decoration-none text-light-gray mt-3">+ Add More Item</a>
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <label for="full-name" class="fw-bold mb-2 mt-4">Date</label>
+              <input type="date" placeholder="select date" class="d-block border border-2 rounded w-100 py-2 px-3">
+            </div>
+            <div class="col-md-6">
+              <a href="" class="text-light-gray d-block text-decoration-none mt-5 fs-6"><i class="icon icon-link"></i> Attachments</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-fill text-uppercase">Submit</button>
+        <button type="button" class="btn btn-secondary text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
 </div>
   </section>
   <!-- JavaScript

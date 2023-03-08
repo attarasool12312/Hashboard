@@ -31,6 +31,8 @@ const Radialbar_1 = new Chart(Radialbar, {
     cutoutPercentage: 32
   },
 });
+
+
 const Radialbar2 = document.getElementById('Radialbar-2');
 
 const Radialbar_2 = new Chart(Radialbar2, {
@@ -42,7 +44,7 @@ const Radialbar_2 = new Chart(Radialbar2, {
       backgroundColor: ['#775DA6'],
       data: [12],
       borderWidth: 0,
-      weight: 4,
+      weight: 10,
       cutout: "85%",
       borderRadius:10,
       circumference: 270
@@ -51,7 +53,7 @@ const Radialbar_2 = new Chart(Radialbar2, {
       backgroundColor: ['#FFC107'],
       data: [12],
       borderWidth: 0,
-      weight: 3,
+      weight: 8,
       cutout: "80%",
       borderRadius:10,
       circumference: 200
@@ -60,7 +62,7 @@ const Radialbar_2 = new Chart(Radialbar2, {
       backgroundColor: ['#2196F3'],
       data: [12],
       borderWidth: 0,
-      weight: 2,
+      weight: 8,
       cutout: "75%",
       borderRadius:10,
       circumference: 150

@@ -73,9 +73,9 @@
                 <li><a class="panel_link " href="./hr-leave-managment.html">Leave Management</a></li>
               </ul>
             </li>
-            <li><a href="./hr-payroll.html" class="panel_link active_panel"><i class="icon icon-overviwe"></i>
+            <li><a href="./hr-payroll.html" class="panel_link"><i class="icon icon-overviwe"></i>
                 Payroll</a></li>
-                <li><a href="./hr-employee-performance.html" class="panel_link"><i class="icon icon-contact"></i> Employee Performance</a></li>
+                <li><a href="./hr-employee-performance.html" class="panel_link active_panel"><i class="icon icon-contact"></i> Employee Performance</a></li>
                 <li class="nav-item panel-dropdown">
                   <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Transactions-Dropdown"
                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -146,82 +146,176 @@
         <div class="container">
           <div class="page-main-title">
             <div class="heading">
-              <h1>Create New Fixed Rate Payroll</h1>
+              <h1>Employee Evaluation</h1>
             </div>
+            <button type="button" class="btn ouline-white me-md-3 mt-3 wsm-100 mt-md-0"><i class="icon icon-download me-2"></i>Download</button>
           </div>
-          <div class="bg-white rounded p-3">
-            <h3 class="fw-600 mb-3">Step 1: Payroll basic info</h3>
-            <div class="row">
-              <div class="col-md-6">
-                <label for="role" class="fw-bold mt-3 mb-2">Payroll Name</label>
-                <input type="text" name="solutions" id="solutions" placeholder="EX: Monthly Salary" class="d-block w-100 border border-2 rounded px-4 py-2">
-              </div>
-              <div class="col-md-6">
-                <label for="role" class="fw-bold mt-3 mb-2">Payment due date</label>
-                <input type="date" name="solutions" id="solutions" placeholder="EX: 1st of the Month" class="d-block w-100 border border-2 rounded px-4 py-2">
-              </div>
-            </div>
+          <div class="text-end w-100">
+            <button type="button" class="btn ouline-white me-md-3 mt-3 wsm-100 mt-md-0">Filter</button>            
           </div>
-          <div class="bg-white rounded p-3 mt-3">
-            <div class="d-flex align-items-md-center justify-content-between flex-colume-sm">
-              <h3 class="fw-600">Step 2: Payroll Employees</h3>
-              <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 wsm-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Import Employees</button>
-            </div>
-            <div class="d-flex align-items-md-center justify-content-between mt-3 flex-colume-sm">
-              <p class="fw-600">Add Payroll Employees</p>
-              <div class="search-form mt-3 mt-md-0">
-                <form action="">
-                  <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
-                    <i class="icon icon-search-form"></i>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="invoice-table mt-4 tablepanel">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Team</th>
-                    <th scope="col">Payment type</th>
-                    <th scope="col">Account Number</th>
-                    <th scope="col">Salary</th>
-                    <th scope="col">Actons</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row" data-label="#" class="pt-3">1</td>
-                    <td data-label="Name"><input type="text" name="solutions" id="solutions" placeholder="Name" class="d-block w-100 border border-2 rounded p-2"></td>
-                    <td data-label="Team">
-                      <select name="Role" id="Role" class="d-block w-100 border border-2 rounded p-2">
-                      <option value="Manager">Team</option>
-                      <option value="Urdu">Urdu</option>
-                      <option value="Hindi">Hindi</option>
-                      <option value="Punjabi">Punjabi</option>
-                    </select>
+          <div class="invoice-table tablepanel mt-3">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Emp Name</th>
+                  <th scope="col">Job discerption</th>
+                  <th scope="col">ID</th>
+                  <th scope="col">Last year Performance</th>
+                  <th scope="col">Current Year</th>
+                  <th scope="col">Average</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody class="right-content interest-body" style="display: table-row-group;">
+                <tr>
+                  <td scope="row" data-label="Emp Name">
+                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                      <img src="./assets/images/prof-img-1.png" alt="">
+                      <h6 class="ms-3 fw-500 text-sm">Project 1</h6>
+                    </div>
                   </td>
-                    <td data-label="Payment type">
-                      <select name="Role" id="Role" class="d-block w-100 border border-2 rounded p-2">
-                        <option value="Manager">Payment</option>
-                        <option value="Urdu">Urdu</option>
-                        <option value="Hindi">Hindi</option>
-                        <option value="Punjabi">Punjabi</option>
-                      </select>
-                    </td>
-                    <td data-label="Account Number"><input type="number" name="solutions" id="solutions" placeholder="Account Number" class="d-block w-100 border border-2 rounded p-2"></td>
-                    <td data-label="Salary"><input type="text" name="solutions" id="solutions" placeholder="Salary" class="d-block w-100 border border-2 rounded p-2"></td>
-                    <td data-label="Actons" class="d-flex align-items-center justify-content-between pt-4 pb-3">
-                      <a href="#" class="fw-600 text-decoration-none text-danger">Cencel</a>
-                      <a href="#" class="fw-600 text-decoration-none text-primary ms-3">Save</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <a href="#" class="text-decoration-none text-success fw-bold mt-4 d-block">+ Add New Employees</a>
-            </div>
+                  <td data-label="Job discerption">xxxxx</td>
+                  <td data-label="ID">2.5m</td>
+                  <td data-label="Last year Performance">800.000</td>
+                  <td data-label="Current Year"><input type="date" name="date" id="date" class="w-100 border border-2 rounded py-1 px-2 text-light-gray"></td>
+                  <td data-label="Average">800.00</td>
+                  <td><button type="button" class="btn ouline-white btn-fill py-1 open-popup">Submit</button></td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Emp Name">
+                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                      <img src="./assets/images/ryan-stevens.jpg" alt="">
+                      <h6 class="ms-3 fw-500 text-sm">Project 2</h6>
+                    </div>
+                  </td>
+                  <td data-label="Job discerption">xxxxx</td>
+                  <td data-label="ID">23.3m</td>
+                  <td data-label="Last year Performance">800.000</td>
+                  <td data-label="Current Year"><input type="date" name="date" id="date" class="w-100 border border-2 rounded py-1 px-2 text-light-gray"></td>
+                  <td data-label="Average">800.00</td>
+                  <td><button type="button" class="btn ouline-white btn-fill py-1 open-popup">Submit</button></td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Emp Name">
+                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                      <img src="./assets/images/loretta-myers.jpg" alt="">
+                      <h6 class="ms-3 fw-500 text-sm">Project 3</h6>
+                    </div>
+                  </td>
+                  <td data-label="Job discerption">xxxxx</td>
+                  <td data-label="ID">200k</td>
+                  <td data-label="Last year Performance">800.000</td>
+                  <td data-label="Current Year"><input type="date" name="date" id="date" class="w-100 border border-2 rounded py-1 px-2 text-light-gray"></td>
+                  <td data-label="Average">800.00</td>
+                  <td><button type="button" class="btn ouline-white btn-fill py-1 open-popup">Submit</button></td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Emp Name">
+                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                      <img src="./assets/images/carrie-aguilar.jpg" alt="">
+                      <h6 class="ms-3 fw-500 text-sm">Project 4</h6>
+                    </div>
+                  </td>
+                  <td data-label="Job discerption">xxxxx</td>
+                  <td data-label="ID">200k</td>
+                  <td data-label="Last year Performance">800.000</td>
+                  <td data-label="Current Year"><input type="date" name="date" id="date" class="w-100 border border-2 rounded py-1 px-2 text-light-gray"></td>
+                  <td data-label="Average">800.00</td>
+                  <td><button type="button" class="btn ouline-white btn-fill py-1 open-popup">Submit</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="invoice-table tablepanel mt-3 popup-form">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Classification</th>
+                  <th scope="col">Total Actual Revenue</th>
+                  <th scope="col">Total Billed</th>
+                  <th scope="col">YTD Planned Revenue</th>
+                  <th scope="col">Margin %</th>
+                  <th scope="col">Profit margin</th>
+                  <th scope="col" class="close-popup cursor-pointer">X</th>
+                </tr>
+              </thead>
+              <tbody class="right-content interest-body" style="display: table-row-group;">
+                <tr>
+                  <td scope="row" data-label="Loged by">
+                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                      <img src="./assets/images/prof-img-1.png" alt="">
+                      <h6 class="ms-3 fw-500 text-sm">Project scope 1</h6>
+                    </div>
+                  </td>
+                  <td data-label="PM Name">120,000</td>
+                  <td data-label="Project Value">2.5m</td>
+                  <td data-label="Actual Revenue">800.000</td>
+                  <td data-label="Cost">800.000</td>
+                  <td data-label="Revenue Balance">800.00</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Loged by">
+                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                      <img src="./assets/images/ryan-stevens.jpg" alt="">
+                      <h6 class="ms-3 fw-500 text-sm">Project scope 2</h6>
+                    </div>
+                  </td>
+                  <td data-label="PM Name">120,000</td>
+                  <td data-label="Project Value">23.3m</td>
+                  <td data-label="Actual Revenue">800.000</td>
+                  <td data-label="Cost">800.000</td>
+                  <td data-label="Revenue Balance">800.00</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Loged by">
+                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                      <img src="./assets/images/loretta-myers.jpg" alt="">
+                      <h6 class="ms-3 fw-500 text-sm">Project scope 3</h6>
+                    </div>
+                  </td>
+                  <td data-label="PM Name">120,000</td>
+                  <td data-label="Project Value">200k</td>
+                  <td data-label="Actual Revenue">800.000</td>
+                  <td data-label="Cost">800.000</td>
+                  <td data-label="Revenue Balance">800.00</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Loged by">
+                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                      <img src="./assets/images/carrie-aguilar.jpg" alt="">
+                      <h6 class="ms-3 fw-500 text-sm">Project scope 4</h6>
+                    </div>
+                  </td>
+                  <td data-label="PM Name">120,000</td>
+                  <td data-label="Project Value">200k</td>
+                  <td data-label="Actual Revenue">800.000</td>
+                  <td data-label="Cost">800.000</td>
+                  <td data-label="Revenue Balance">800.00</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Scope Name">
+                    <input type="text" name="name" id="name" placeholder="Item Name" class="d-block w-100 border border-2 rounded px-2 py-1">
+                  </td>
+                  <td data-label="Quantity">
+                    <input type="text" name="name" id="name" placeholder="SKL" class="d-block w-100 border border-2 rounded px-2 py-1">
+                  </td>
+                  <td data-label="Available">
+                    <input type="text" name="name" id="name" placeholder="20.0" class="d-block w-100 border border-2 rounded px-2 py-1">
+                  </td>
+                  <td data-label="Price ($)">
+                    <input type="text" name="name" id="name" placeholder="20.0" class="d-block w-100 border border-2 rounded px-2 py-1">
+                  </td>
+                  <td data-label="Discount">
+                    <input type="text" name="name" id="name" placeholder="20.0" class="d-block w-100 border border-2 rounded px-2 py-1">
+                  </td>
+                  <td data-label="Tax">
+                    <input type="text" name="name" id="name" placeholder="20.00" class="d-block w-100 border border-2 rounded px-2 py-1">
+                  </td>
+                  <td class="cursor-pointer">X</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </main>
@@ -254,27 +348,6 @@
         </div>
       </div>
     </div>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Import Employees</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="w-100 text-center border-bottom border-2 py-3">
-          <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#posModal">Add New COC</button>
-        </div>
-        <div class="w-100 text-center border-bottom border-2 py-3">
-          <a href="./pm-update-coc.html" class="btn ouline-white btn-fill text-decoration-none">Update Current COC</a>
-        </div>
-      </div>
-      <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-fill">Import Employees</button>
-      </div>
-    </div>
-  </div>
-</div>
 <div class="modal right fade" id="SettingForm" tabindex="-1"
 aria-labelledby="interviewLabel" aria-hidden="true">
 <div class="modal-dialog width-50 wsm-95">
@@ -517,83 +590,6 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   </div>
 </div>
 </div>
-<div class="modal fade" id="posModal" tabindex="-1" aria-labelledby="posModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="posModalLabel">Add New COC</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="full-name" class="fw-bold mb-2 mt-4">COC reference</label>
-              <input type="text" placeholder="COC-0-00001" class="d-block border border-2 rounded w-100 py-2 px-3">
-            </div>
-          </div>
-          <label for="full-name" class="fw-bold mb-2 mt-4">Select Customer</label>
-          <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-            <option value="Member">Risks</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-          </select>
-          <label for="full-name" class="fw-bold mb-2 mt-4">Select Project</label>
-          <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-            <option value="Member">Please insert Project name</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-          </select>
-          <label for="full-name" class="fw-bold mb-2 mt-4">Project Manager</label>
-          <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-            <option value="Member">Please insert Project ID</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-          </select>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="full-name" class="fw-bold mb-2 mt-4">COC Amount</label>
-              <input type="text" placeholder="Amount" class="d-block border border-2 rounded w-100 py-2 px-3">
-            </div>
-            <div class="col-md-6">
-              <label for="full-name" class="fw-bold mb-2 mt-4">Select Currency</label>
-              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                <option value="Member">Currency</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-            </div>
-          </div>
-          <label for="full-name" class="fw-bold mb-2 mt-4">Scope scope</label>
-          <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-            <option value="Member">Select scope</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-          </select>
-          <a href="" class="d-block text-decoration-none text-light-gray mt-3">+ Add More Item</a>
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <label for="full-name" class="fw-bold mb-2 mt-4">Date</label>
-              <input type="date" placeholder="select date" class="d-block border border-2 rounded w-100 py-2 px-3">
-            </div>
-            <div class="col-md-6">
-              <a href="" class="text-light-gray d-block text-decoration-none mt-5 fs-6"><i class="icon icon-link"></i> Attachments</a>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-fill text-uppercase">Submit</button>
-        <button type="button" class="btn btn-secondary text-uppercase" data-bs-dismiss="modal">Cancel</button>
-      </div>
-    </div>
-  </div>
-</div>
   </section>
 
 
@@ -608,7 +604,15 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
   <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./assets/js/graphs.js"></script>
+  <!-- <script src="./assets/js/graphs.js"></script> -->
+  <script>
+        $(".open-popup").click(function(){
+      $(".popup-form").addClass("d-block")
+    });
+    $(".close-popup").click(function(){
+      $(".popup-form").removeClass("d-block")
+    });
+  </script>
 </body>
 
 </html>

@@ -181,9 +181,16 @@
 .aside-2{
   .nav-tabs li{
     width: 100% !important;
-    img{
-      width: 30px;
-      height: 30px;
+    button{
+      padding: 5px;
+      img{
+        width: 30px;
+        height: 30px;
+      }
+      h6{
+        font-size: 12px;
+        margin-left: 5px;
+      }
     }
   }
   .nav-tabs li + li{

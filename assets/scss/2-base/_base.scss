@@ -563,3 +563,6 @@ h6 {
   }
   
 }
+.accordion-button:not(.collapsed){
+  box-shadow: none;
+}

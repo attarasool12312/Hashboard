@@ -52,9 +52,9 @@
             </ul>
           </div>
           <ul>
-            <li><a href="./job-dashboard.html" class="panel_link active_panel"><i class="icon icon-overviwe"></i>
+            <li><a href="./job-dashboard.html" class="panel_link "><i class="icon icon-overviwe"></i>
                     Dashboard</a></li>
-            <li><a href="./job-7-Active-job.html" class="panel_link "><i class="icon icon-project"></i> Jobs</a></li>
+            <li><a href="./job-7-Active-job.html" class="panel_link active_panel"><i class="icon icon-project"></i> Jobs</a></li>
             <li><a href="./job-candidates.html" class="panel_link "><i class="icon icon-people-fill"></i> Candidates</a></li>
             <li><a href="./job-employees.html" class="panel_link "><i class="icon icon-people-fill"></i> Employee</a></li>
             <li><a href="./job-reports.html" class="panel_link "><i class="icon icon-expenses"></i> Report</a></li>
@@ -117,8 +117,7 @@
                 <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
                 </div>
                   <li><a class="dropdown-item mt-3" href="./job-edit-profile.html"><i class="icon icon-user-profile"></i> My Profile</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="./job-profile-activities.html"><i class="icon icon-calender-2"></i> Activity</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
               </ul>
@@ -129,191 +128,41 @@
           <div class="page-main-title">
             <h1>Account Activities</h1>
           </div>
-          <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="Pending-tab" data-bs-toggle="tab" data-bs-target="#Pending" type="button" role="tab" aria-controls="Pending" aria-selected="true">Pending Approvals</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="Activities-tab" data-bs-toggle="tab" data-bs-target="#Activities" type="button" role="tab" aria-controls="Activities" aria-selected="false">Activities</button>
-            </li>
-          </ul>
-          <div class="tab-content mt-3">
-            <div class="tab-pane active" id="Pending" role="tabpanel" aria-labelledby="Pending-tab">
-              <div class="w-100 text-end">
-                <button type="button" class="btn ouline-white me-md-3">Filter</button>
-                <div class="invoice-table mt-4 tablepanel">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th><i class="icon icon-arrow-signal-down"></i></th>
-                        <th scope="col">Request type</th>
-                        <th scope="col"><i class="icon icon-arrow-down-signal me-2"></i>Project</th>
-                        <th scope="col"><i class="icon icon-arrow-down-signal me-2"></i>Requester</th>
-                        <th scope="col"><i class="icon icon-arrow-down-signal me-2"></i>Received date</th>
-                        <th scope="col"><i class="icon icon-arrow-down-signal me-2"></i>status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row"><img src="./assets/images/amazon.jpg" alt=""></td>
-                        <td data-label="Request type"><h6 class="text-sm">New COC</h6></td>
-                        <td data-label="Project">Project Name</td>
-                        <td data-label="Requester">Requester</td>
-                        <td data-label="Received date">
-                          <div>
-                            <h6 class="fw-600">23 Jul 2018</h6>
-                            <p class="text-small text-light-gray">date</p>
-                          </div>
-                        </td>
-                        <td data-label="status"><span class="text-white bg-warning py-2 px-3 rounded">Pending</span></td>
-                      </tr>
-                      <tr>
-                        <td scope="row"><img src="./assets/images/Airbnb.png" alt=""></td>
-                        <td data-label="Request type"><h6 class="text-sm">Close Project</h6></td>
-                        <td data-label="Project">Project Name</td>
-                        <td data-label="Requester">Requester</td>
-                        <td data-label="Received date">
-                          <div>
-                            <h6 class="fw-600">23 Jul 2018</h6>
-                            <p class="text-small text-light-gray">date</p>
-                          </div>
-                        </td>
-                        <td data-label="status"><span class="text-white bg-warning py-2 px-3 rounded">Pending</span></td>
-                      </tr>
-                      <tr>
-                        <td scope="row"><img src="./assets/images/anan-ananda2.png" alt=""></td>
-                        <td data-label="Request type"><h6 class="text-sm">Edit Project value</h6></td>
-                        <td data-label="Project">Project Name</td>
-                        <td data-label="Requester">Requester</td>
-                        <td data-label="Received date">
-                          <div>
-                            <h6 class="fw-600">23 Jul 2018</h6>
-                            <p class="text-small text-light-gray">date</p>
-                          </div>
-                        </td>
-                        <td data-label="status"><span class="text-white bg-warning py-2 px-3 rounded">Pending</span></td>
-                      </tr>
-                      <tr>
-                        <td scope="row"><img src="./assets/images/creativemarket-YK.png" alt=""></td>
-                        <td data-label="Request type"><h6 class="text-sm">Edit Project scope</h6></td>
-                        <td data-label="Project">Project Name</td>
-                        <td data-label="Requester">Requester</td>
-                        <td data-label="Received date">
-                          <div>
-                            <h6 class="fw-600">23 Jul 2018</h6>
-                            <p class="text-small text-light-gray">date</p>
-                          </div>
-                        </td>
-                        <td data-label="status"><span class="text-white bg-warning py-2 px-3 rounded">Pending</span></td>
-                      </tr>
-                      <tr>
-                        <td scope="row"><img src="./assets/images/dropbox.png" alt=""></td>
-                        <td data-label="Request type"><h6 class="text-sm">Airbnb Design</h6></td>
-                        <td data-label="Project">Project Name</td>
-                        <td data-label="Requester">Requester</td>
-                        <td data-label="Received date">
-                          <div>
-                            <h6 class="fw-600">23 Jul 2018</h6>
-                            <p class="text-small text-light-gray">date</p>
-                          </div>
-                        </td>
-                        <td data-label="status"><span class="text-white bg-info py-2 px-3 rounded">Approved</span></td>
-                      </tr>
-                      <tr>
-                        <td scope="row"><img src="./assets/images/danny-quin.png" alt=""></td>
-                        <td data-label="Request type"><h6 class="text-sm">Dribble Presentation</h6></td>
-                        <td data-label="Project">Project Name</td>
-                        <td data-label="Requester">Requester</td>
-                        <td data-label="Received date">
-                          <div>
-                            <h6 class="fw-600">23 Jul 2018</h6>
-                            <p class="text-small text-light-gray">date</p>
-                          </div>
-                        </td>
-                        <td data-label="status"><span class="text-white bg-info py-2 px-3 rounded">Approved</span></td>
-                      </tr>
-                      <tr>
-                        <td scope="row"><img src="./assets/images/evernote.jpg" alt=""></td>
-                        <td data-label="Request type"><h6 class="text-sm">Dropbox Design</h6></td>
-                        <td data-label="Project">Project Name</td>
-                        <td data-label="Requester">Requester</td>
-                        <td data-label="Received date">
-                          <div>
-                            <h6 class="fw-600">23 Jul 2018</h6>
-                            <p class="text-small text-light-gray">date</p>
-                          </div>
-                        </td>
-                        <td data-label="status"><span class="text-white bg-info py-2 px-3 rounded">Approved</span></td>
-                      </tr>
-                      <tr>
-                        <td scope="row"><img src="./assets/images/topcoder.png" alt=""></td>
-                        <td data-label="Request type"><h6 class="text-sm">Dropbox Design</h6></td>
-                        <td data-label="Project">Project Name</td>
-                        <td data-label="Requester">Requester</td>
-                        <td data-label="Received date">
-                          <div>
-                            <h6 class="fw-600">23 Jul 2018</h6>
-                            <p class="text-small text-light-gray">date</p>
-                          </div>
-                        </td>
-                        <td data-label="status"><span class="text-white bg-danger py-2 px-3 rounded">Rejected</span></td>
-                      </tr>
-                      <tr>
-                        <td scope="row"><img src="./assets/images/web-designer.png" alt=""></td>
-                        <td data-label="Request type"><h6 class="text-sm">Close deal</h6></td>
-                        <td data-label="Project">Project Name</td>
-                        <td data-label="Requester">Requester</td>
-                        <td data-label="Received date">
-                          <div>
-                            <h6 class="fw-600">23 Jul 2018</h6>
-                            <p class="text-small text-light-gray">date</p>
-                          </div>
-                        </td>
-                        <td data-label="status"><span class="text-white bg-danger py-2 px-3 rounded">Rejected</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="Activities" role="tabpanel" aria-labelledby="Activities-tab">
-              <div class="bg-white p-3 rounded">
-                <h5 class="fw-600 mb-3">Recent Activity</h5>
-                <ul class="list-style-none m-0 p-0">
-                  <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 28 February <span
-                      class="text-dark fw-600">Meeting with client</span> about Spotify redesign</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-project"></i> 1 March <span
-                      class="text-dark fw-600">New incoming request</span> send price for the new mobile app</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 2 March <span
-                      class="text-dark fw-600">Meeting with client</span> about Dropbox branding conpect</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-checkicon"></i> 8 March <span
-                      class="text-dark fw-600">Marked 12 Tasks Done</span> in Dribble Shot project</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-project"></i> 13 March <span
-                      class="text-dark fw-600">New incoming request</span> provide estimates for website design</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-duplication"></i> 16 March <span
-                      class="text-dark fw-600">Payout processed</span> new invoice paid for February</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-checkicon"></i> 20 March <span
-                      class="text-dark fw-600">Marked 12 Tasks Done</span> in New Apple online service</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 28 February <span
-                      class="text-dark fw-600">Meeting with client</span> about Spotify redesign</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-project"></i> 1 March <span
-                      class="text-dark fw-600">New incoming request</span> send price for the new mobile app</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-checkicon"></i> 2 March <span
-                      class="text-dark fw-600">Meeting with client</span> about Dropbox branding conpect</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-project"></i> 8 March <span
-                      class="text-dark fw-600">Marked 12 Tasks Done</span> in Dribble Shot project</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-duplication"></i> 13 March <span
-                      class="text-dark fw-600">New incoming request</span> provide estimates for website design</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-checkicon"></i> new invoice paid for February
-                    <span class="text-dark fw-600">Payout processed</span> new invoice paid for February</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 16 March <span
-                      class="text-dark fw-600">Payout processed</span> new invoice paid for February</li>
-                  <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 20 March <span
-                      class="text-dark fw-600">Marked 12 Tasks Done</span> in New Apple online service</li>
-                </ul>
-                <a href="#" class="text-decoration-none text-uppercase my-5 d-block">all activities</a>
-              </div>
-            </div>
+          <div class="bg-white p-3 rounded">
+            <h5 class="fw-600 mb-3">Recent Activity</h5>
+            <ul class="list-style-none m-0 p-0">
+              <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 28 February <span
+                  class="text-dark fw-600">Meeting with client</span> about Spotify redesign</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-project"></i> 1 March <span
+                  class="text-dark fw-600">New incoming request</span> send price for the new mobile app</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 2 March <span
+                  class="text-dark fw-600">Meeting with client</span> about Dropbox branding conpect</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-checkicon"></i> 8 March <span
+                  class="text-dark fw-600">Marked 12 Tasks Done</span> in Dribble Shot project</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-project"></i> 13 March <span
+                  class="text-dark fw-600">New incoming request</span> provide estimates for website design</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-duplication"></i> 16 March <span
+                  class="text-dark fw-600">Payout processed</span> new invoice paid for February</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-checkicon"></i> 20 March <span
+                  class="text-dark fw-600">Marked 12 Tasks Done</span> in New Apple online service</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 28 February <span
+                  class="text-dark fw-600">Meeting with client</span> about Spotify redesign</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-project"></i> 1 March <span
+                  class="text-dark fw-600">New incoming request</span> send price for the new mobile app</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-checkicon"></i> 2 March <span
+                  class="text-dark fw-600">Meeting with client</span> about Dropbox branding conpect</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-project"></i> 8 March <span
+                  class="text-dark fw-600">Marked 12 Tasks Done</span> in Dribble Shot project</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-duplication"></i> 13 March <span
+                  class="text-dark fw-600">New incoming request</span> provide estimates for website design</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-checkicon"></i> new invoice paid for February
+                <span class="text-dark fw-600">Payout processed</span> new invoice paid for February</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 16 March <span
+                  class="text-dark fw-600">Payout processed</span> new invoice paid for February</li>
+              <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 20 March <span
+                  class="text-dark fw-600">Marked 12 Tasks Done</span> in New Apple online service</li>
+            </ul>
+            <a href="#" class="text-decoration-none text-uppercase my-5 d-block">all activities</a>
           </div>
         </div>
       </main>

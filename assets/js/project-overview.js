@@ -155,9 +155,9 @@ window.onload = function () {
         },
     });
 
-    const invoice = document.getElementById("invoiceBars");
+    const imageBarChart = document.getElementById("imageBarChart");
 
-    const bar6 = new Chart(invoice, {
+    const imageBarChart_1 = new Chart(imageBarChart, {
         type: "bar",
         data: {
             labels: [

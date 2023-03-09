@@ -24,6 +24,8 @@
   <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
   <link href="./assets/css/main.css" rel="stylesheet" />
   <link href="./assets/css/responsive.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -42,7 +44,7 @@
             </div>
           </div>
           <ul>
-            <li><a href="./admin-dashboard.html" class="panel_link"><i class="icon icon-overviwe"></i> Overview</a>
+            <li><a href="./admin-dashboard.html" class="panel_link"><i class="icon icon-overviwe"></i> Dashboard</a>
             </li>
             <li><a href="./admin-finace.html" class="panel_link"><i class="icon icon-bar-companies"></i>
                 Finance</a></li>
@@ -814,7 +816,7 @@
         </div>
       </main>
     </div>
-    <div class="modal right fade show d-block" id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel" aria-hidden="true">
+    <div class="modal right fade" id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel" aria-hidden="true">
       <div class="modal-dialog width-70 wsm-95">
         <div class="modal-content">
           <div class="modal-header">
@@ -838,7 +840,7 @@
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pie-tab" data-bs-toggle="tab" data-bs-target="#Line" type="button"
+                    <button class="nav-link" id="Line-tab" data-bs-toggle="tab" data-bs-target="#Line" type="button"
                       role="tab" aria-controls="Line" aria-selected="false">
                       <p class="text-light-gray">Line</p>
                     </button>
@@ -925,7 +927,7 @@
               </div>
               <div class="col-md-9">
                 <div class="tab-content mt-4">
-                  <div class="tab-pane " id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
+                  <div class="tab-pane active" id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
                     <div class="row">
                       <div class="col-md-4">
                         <div>
@@ -939,12 +941,54 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane active" id="Scatter" role="tabpanel" aria-labelledby="Scatter-tab">
+                  <div class="tab-pane " id="Scatter" role="tabpanel" aria-labelledby="Scatter-tab">
                     <div class="row">
                       <div class="col-md-6">
                         <div>
-                          <canvas id="Scatter" class="wsm-100" style="display: block; box-sizing: border-box; height: 185px; width: 278px;" width="278" height="185"></canvas>
+                          <canvas id="invoiceBars" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
                         </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div>
+                          <canvas id="invoiceBars1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane " id="Line" role="tabpanel" aria-labelledby="Line-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <canvas id="lineChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308" height="197"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div>
+                          <canvas id="lineChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308" height="197"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="Area" role="tabpanel" aria-labelledby="Area-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <canvas id="areaChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250" width="630"></canvas>
+                      </div>
+                      <div class="col-md-6">
+                        <canvas id="areaChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250" width="630"></canvas>
+                      </div>
+                    </div>
+                </div>
+                <div class="tab-pane " id="Radar" role="tabpanel" aria-labelledby="Radar-tab">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div>
+                        <canvas id="radarChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div>
+                        <canvas id="radarChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
                       </div>
                     </div>
                   </div>
@@ -959,6 +1003,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -975,6 +1020,8 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/graphs-popup.js"></script>
   <script src="./assets/js/graphs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-matrix@2.0.1/dist/chartjs-chart-matrix.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
   <script>
     const Performance = document.getElementById("Performance");
 

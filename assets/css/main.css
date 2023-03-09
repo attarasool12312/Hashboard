@@ -3231,6 +3231,10 @@ h6.text-sm {
   cursor: pointer;
 }
 
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
 /*--------------*\
     Boxes Section
 \*--------------*/

@@ -52,7 +52,7 @@
             </ul>
           </div>
           <ul>
-            <li><a href="./pm-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Overview</a></li>
+            <li><a href="./pm-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Dashboard</a></li>
             <li class="nav-item panel-dropdown position-relative">
               <a href="./pm-project-management.html" class="mb-auto panel_link "><i class="icon icon-business"></i> Projects</a>
               <div>
@@ -144,8 +144,7 @@
                 <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
                 </div>
                   <li><a class="dropdown-item mt-3" href="./pm-edit-profile.html"><i class="icon icon-user-profile"></i> My Profile</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="./pm-profile-activities.html"><i class="icon icon-calender-2"></i> Activity</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
               </ul>
@@ -187,7 +186,7 @@
                     <button class="nav-link" id="archived-tab" data-bs-toggle="tab" data-bs-target="#archived" type="button" role="tab" aria-controls="archived" aria-selected="false">Archived</button>
                   </li>
                 </ul>
-                <button class="btn btn-fill wsm-100">New report</button>
+                <button class="btn btn-fill wsm-100" data-bs-toggle="modal" data-bs-target="#newReportModal">New report</button>
               </div>
 
               <!-- Tab panes -->
@@ -1106,6 +1105,67 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   </div>
 </div>
 </div>
+<div class="modal fade" id="newReportModal" tabindex="-1" aria-labelledby="newReportModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newReportModalLabel">Add new report</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Report Name</label>
+          <input type="text" name="name" id="name" placeholder="Initiation stage stage" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Report Category</label>
+          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="English">Sales</option>
+            <option value="Urdu">Financial</option>
+            <option value="Hindi">Project overview</option>
+            <option value="Punjabi">Invoices</option>
+          </select>
+          <label for="name" class="fw-bold mt-3 mb-2">Report data 1</label>
+          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="English">Report data 1</option>
+            <option value="English">Sales</option>
+            <option value="Urdu">Financial</option>
+            <option value="Hindi">Project POs</option>
+            <option value="Punjabi">Project COCs</option>
+            <option value="Punjabi">Project name</option>
+            <option value="Punjabi">Project value</option>
+            <option value="Punjabi">Project satisfaction</option>
+            <option value="Punjabi">Project contact</option>
+            <option value="Punjabi">Transferred Projects</option>
+            <option value="Punjabi">Customer name</option>
+            <option value="Punjabi">Project cost</option>
+            <option value="Punjabi">Revenue Plans</option>
+          </select>
+          <label for="name" class="fw-bold mt-3 mb-2">Report data 2</label>
+          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="English">Report data 2</option>
+            <option value="English">Sales</option>
+            <option value="Urdu">Financial</option>
+            <option value="Hindi">Project POs</option>
+            <option value="Punjabi">Project COCs</option>
+            <option value="Punjabi">Project name</option>
+            <option value="Punjabi">Project value</option>
+            <option value="Punjabi">Project satisfaction</option>
+            <option value="Punjabi">Project contact</option>
+            <option value="Punjabi">Transferred Projects</option>
+            <option value="Punjabi">Customer name</option>
+            <option value="Punjabi">Project cost</option>
+            <option value="Punjabi">Revenue Plans</option>
+          </select>
+          <a href="" class="text-decoration-none text-uppercase fw-600 text-fill mt-3 d-block">+ Add More</a>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-fill text-uppercase">Add</button>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   </section>
 
 

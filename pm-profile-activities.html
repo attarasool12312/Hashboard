@@ -41,46 +41,66 @@
               <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
             </div>
           </div>
+          <div class="side-panel-dropdown">
+            <button class="panel-button dropdown-toggle" type="button">
+              <i class="icon icon-lajou-cafe"></i> Lajou cafe
+            </button>
+            <ul class="panel-dropdown-menu">
+              <li><a class="panel-dropdown-item" href="#">Action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Another action</a></li>
+              <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
           <ul>
-            <li><a href="./crm-overview-index.html" class="panel_link active_panel"><i class="icon icon-overviwe"></i>
+            <li><a href="./pm-index.html" class="panel_link active_panel"><i class="icon icon-overviwe"></i>
               Dashboard</a></li>
-            <li><a href="./crm-compnies-list.html" class="panel_link"><i class="icon icon-bar-companies"></i> Customer
-                Profiles</a></li>
-            <li><a href="./crm-deals.html" class="panel_link"><i class="icon icon-deal-bag"></i> Deals</a></li>
-            <li><a href="./crm-contact.html" class="panel_link"><i class="icon icon-contact"></i> Contact</a></li>
             <li class="nav-item panel-dropdown position-relative">
-              <a href="./crm-reports-overview.html" class="mb-auto panel_link"><i class="icon icon-project"></i>
-                Report</a>
+              <a href="./pm-project-management.html" class="mb-auto panel_link "><i class="icon icon-business"></i>
+                Projects</a>
               <div>
                 <a class="dropdown-btn nav-link dropdown-toggle position-absolute" href="" id="Setting-Dropdown"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false" style="top: 11px; right: 17px;">
                 </a>
                 <ul class="Setting-Dropdown m-0" aria-labelledby="Setting-Dropdown">
-                  <li><a class="dropdown-item panel_link" href="./crm-overview-reports.html">Customer Reports</a></li>
-                  <li><a class="dropdown-item panel_link" href="./crm-leads-report.html">Leads Reports</a></li>
-                  <li><a class="dropdown-item panel_link" href="./crm-sales-report.html">Sales Reports</a></li>
+                  <li><a class="dropdown-item panel_link " href="./pm-project-overview.html">project Overview</a></li>
+                  <li><a class="dropdown-item panel_link " href="./pm-project-performance.html">project Performance</a>
+                  </li>
                 </ul>
               </div>
             </li>
-            <li><a href="./crm-revenue-analysis.html" class="panel_link"><i
-              class="icon icon-report-board"></i> Revenue Analysis</a></li>
-            <li><a href="./crm-transferred-projects.html" class="panel_link"><i
-                  class="icon icon-transferred-projects"></i> Transfer as project</a></li>
-            <li><a href="./crm-product.html" class="panel_link"><i class="icon icon-expenses"></i> Products</a></li>
-            <li><a href="./crm-documents.html" class="panel_link"><i class="icon icon-bar-document"></i> Documents</a>
-            </li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Transactions-Dropdown"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-sales"></i> Financial Performance
+              </a>
+              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./pm-revenue-plan.html">Revenue Plan</a></li>
+                <li><a class="dropdown-item panel_link " href="./pm-project-cocs.html">COCs Overview</a></li>
+                <li><a class="dropdown-item panel_link " href="./pm-project-pos.html">Project POs</a></li>
+              </ul>
+            </li>
+            <li><a href="./pm-transferred-projects.html" class="panel_link "><i
+                  class="icon icon-transferred-projects bg-cover"></i>
+                Transferred Projects</a></li>
+            <li><a href="./pm-report.html" class="panel_link "><i class="icon icon-expenses"></i> Reports</a></li>
+            <li><a href="./pm-compnies-list.html" class="panel_link "><i class="icon icon-reports"></i> Customer
+                Profile</a></li>
+
+            <li><a href="./pm-contact.html" class="panel_link "><i class="icon icon-project"></i> Contacts</a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-bar-document"></i> Setting
               </a>
-              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
                 <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i class="icon icon-bar-document"></i> Account</a></li>
-                <li><a class="dropdown-item panel_link" href="./crm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
+                <li><a class="dropdown-item panel_link " href="./pm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
                 <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
               </ul>
             </li>
-            <li><a href="./hr-dashboard.html" class="panel_link">Move To HR Management </a></li>
+            <li><a href="./crm-overview-index.html">Move to CRM</a></li>
+            <li><a href="./pm-home-page.html" class="panel_link">Home Page</a></li>
+            <li><a href="./admin-dashboard.html">Move to Admin</a></li>
           </ul>
         </div>
       </aside>
@@ -106,8 +126,10 @@
           </div>
           <div class="about-profile">
             <div class="d-none d-md-block">
+              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+                  class="icon icon-plus"></i> Add</button>
               <a href=""><i class="icon icon-question"></i></a>
-              <a href="./crm-account-activities.html"><i class="icon icon-notification"></i></a>
+              <a href="./pm-account-activities.html"><i class="icon icon-notification"></i></a>
             </div>
             <div class="dropdown select-dropdown admin-profile">
               <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -125,8 +147,8 @@
                 <h6 class="text-small mt-2">Allen Moreno</h6>
                 <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
                 </div>
-                  <li><a class="dropdown-item mt-3" href="./crm-edit-profile.html"><i class="icon icon-user-profile"></i> My Profile</a></li>
-                  <li><a class="dropdown-item" href="./crm-profile-activities.html"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item mt-3" href="./pm-edit-profile.html"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                  <li><a class="dropdown-item" href="./pm-profile-activities.html"><i class="icon icon-calender-2"></i> Activity</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
               </ul>
@@ -137,41 +159,174 @@
           <div class="page-main-title">
             <h1>Account Activities</h1>
           </div>
-          <div class="bg-white p-3 rounded">
-            <h5 class="fw-600 mb-3">Recent Activity</h5>
-            <ul class="list-style-none m-0 p-0">
-              <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 28 February <span
-                  class="text-dark fw-600">Meeting with client</span> about Spotify redesign</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-project"></i> 1 March <span
-                  class="text-dark fw-600">New incoming request</span> send price for the new mobile app</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 2 March <span
-                  class="text-dark fw-600">Meeting with client</span> about Dropbox branding conpect</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-checkicon"></i> 8 March <span
-                  class="text-dark fw-600">Marked 12 Tasks Done</span> in Dribble Shot project</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-project"></i> 13 March <span
-                  class="text-dark fw-600">New incoming request</span> provide estimates for website design</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-duplication"></i> 16 March <span
-                  class="text-dark fw-600">Payout processed</span> new invoice paid for February</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-checkicon"></i> 20 March <span
-                  class="text-dark fw-600">Marked 12 Tasks Done</span> in New Apple online service</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 28 February <span
-                  class="text-dark fw-600">Meeting with client</span> about Spotify redesign</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-project"></i> 1 March <span
-                  class="text-dark fw-600">New incoming request</span> send price for the new mobile app</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-checkicon"></i> 2 March <span
-                  class="text-dark fw-600">Meeting with client</span> about Dropbox branding conpect</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-project"></i> 8 March <span
-                  class="text-dark fw-600">Marked 12 Tasks Done</span> in Dribble Shot project</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-duplication"></i> 13 March <span
-                  class="text-dark fw-600">New incoming request</span> provide estimates for website design</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-checkicon"></i> new invoice paid for February
-                <span class="text-dark fw-600">Payout processed</span> new invoice paid for February</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 16 March <span
-                  class="text-dark fw-600">Payout processed</span> new invoice paid for February</li>
-              <li class="text-light-gray mb-3"><i class="icon icon-calender-2"></i> 20 March <span
-                  class="text-dark fw-600">Marked 12 Tasks Done</span> in New Apple online service</li>
-            </ul>
-            <a href="#" class="text-decoration-none text-uppercase my-5 d-block">all activities</a>
+          <button type="button" class="btn ouline-white me-md-3">Filter</button>
+          <div class="invoice-table mt-4 tablepanel">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col"><i class="icon icon-arrow-signal-down"></i> Request type</th>
+                  <th scope="col"><i class="icon icon-arrow-down-signal me-2"></i>Project</th>
+                  <th scope="col"><i class="icon icon-arrow-down-signal me-2"></i>Requester</th>
+                  <th scope="col"><i class="icon icon-arrow-down-signal me-2"></i>Received date</th>
+                  <th scope="col"><i class="icon icon-arrow-down-signal me-2"></i>status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Request type">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/images/amazon.jpg" alt="">
+                      <h6 class="text-sm ms-2">New COC</h6>
+                    </div>
+                  </td>
+                  <td data-label="Project">Project Name</td>
+                  <td data-label="Requester">Requester</td>
+                  <td data-label="Received date">
+                    <div>
+                      <h6 class="fw-600">23 Jul 2018</h6>
+                      <p class="text-small text-light-gray">date</p>
+                    </div>
+                  </td>
+                  <td data-label="status"><span class="text-white bg-warning py-2 px-3 rounded">Pending</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Request type">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/images/Airbnb.png" alt="">
+                      <h6 class="text-sm ms-2">Close Project</h6>
+                    </div>
+                  </td>
+                  <td data-label="Project">Project Name</td>
+                  <td data-label="Requester">Requester</td>
+                  <td data-label="Received date">
+                    <div>
+                      <h6 class="fw-600">23 Jul 2018</h6>
+                      <p class="text-small text-light-gray">date</p>
+                    </div>
+                  </td>
+                  <td data-label="status"><span class="text-white bg-warning py-2 px-3 rounded">Pending</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Request type">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/images/anan-ananda2.png" alt="">
+                      <h6 class="text-sm ms-2">Edit Project value</h6>
+                    </div>
+                  </td>
+                  <td data-label="Project">Project Name</td>
+                  <td data-label="Requester">Requester</td>
+                  <td data-label="Received date">
+                    <div>
+                      <h6 class="fw-600">23 Jul 2018</h6>
+                      <p class="text-small text-light-gray">date</p>
+                    </div>
+                  </td>
+                  <td data-label="status"><span class="text-white bg-warning py-2 px-3 rounded">Pending</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Request type">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/images/creativemarket-YK.png" alt="">
+                      <h6 class="text-sm ms-2">Edit Project scope</h6>
+                    </div>
+                  </td>
+                  <td data-label="Project">Project Name</td>
+                  <td data-label="Requester">Requester</td>
+                  <td data-label="Received date">
+                    <div>
+                      <h6 class="fw-600">23 Jul 2018</h6>
+                      <p class="text-small text-light-gray">date</p>
+                    </div>
+                  </td>
+                  <td data-label="status"><span class="text-white bg-warning py-2 px-3 rounded">Pending</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Request type">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/images/dropbox.png" alt="">
+                      <h6 class="text-sm ms-2">Airbnb Design</h6>
+                    </div>
+                  </td>
+                  <td data-label="Project">Project Name</td>
+                  <td data-label="Requester">Requester</td>
+                  <td data-label="Received date">
+                    <div>
+                      <h6 class="fw-600">23 Jul 2018</h6>
+                      <p class="text-small text-light-gray">date</p>
+                    </div>
+                  </td>
+                  <td data-label="status"><span class="text-white bg-info py-2 px-3 rounded">Approved</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Request type">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/images/danny-quin.png" alt="">
+                      <h6 class="text-sm ms-2">Dribble Presentation</h6>
+                    </div>
+                  </td>
+                  <td data-label="Project">Project Name</td>
+                  <td data-label="Requester">Requester</td>
+                  <td data-label="Received date">
+                    <div>
+                      <h6 class="fw-600">23 Jul 2018</h6>
+                      <p class="text-small text-light-gray">date</p>
+                    </div>
+                  </td>
+                  <td data-label="status"><span class="text-white bg-info py-2 px-3 rounded">Approved</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Request type">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/images/evernote.jpg" alt="">
+                      <h6 class="text-sm ms-2">Dropbox Design</h6>
+                    </div>
+                  </td>
+                  <td data-label="Project">Project Name</td>
+                  <td data-label="Requester">Requester</td>
+                  <td data-label="Received date">
+                    <div>
+                      <h6 class="fw-600">23 Jul 2018</h6>
+                      <p class="text-small text-light-gray">date</p>
+                    </div>
+                  </td>
+                  <td data-label="status"><span class="text-white bg-info py-2 px-3 rounded">Approved</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Request type">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/images/topcoder.png" alt="">
+                      <h6 class="text-sm ms-2">Dropbox Design</h6>
+                    </div>
+                  </td>
+                  <td data-label="Project">Project Name</td>
+                  <td data-label="Requester">Requester</td>
+                  <td data-label="Received date">
+                    <div>
+                      <h6 class="fw-600">23 Jul 2018</h6>
+                      <p class="text-small text-light-gray">date</p>
+                    </div>
+                  </td>
+                  <td data-label="status"><span class="text-white bg-danger py-2 px-3 rounded">Rejected</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Request type">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/images/web-designer.png" alt="">
+                      <h6 class="text-sm ms-2">Close deal</h6>
+                    </div>  
+                  </td>
+                  <td data-label="Project">Project Name</td>
+                  <td data-label="Requester">Requester</td>
+                  <td data-label="Received date">
+                    <div>
+                      <h6 class="fw-600">23 Jul 2018</h6>
+                      <p class="text-small text-light-gray">date</p>
+                    </div>
+                  </td>
+                  <td data-label="status"><span class="text-white bg-danger py-2 px-3 rounded">Rejected</span></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </main>

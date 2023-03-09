@@ -52,7 +52,7 @@
             </ul>
           </div>
           <ul>
-            <li><a href="./pm-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Overview</a></li>
+            <li><a href="./pm-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Dashboard</a></li>
             <li class="nav-item panel-dropdown position-relative">
               <a href="./pm-project-management.html" class="mb-auto panel_link active_panel"><i
                   class="icon icon-business"></i> Projects</a>
@@ -148,8 +148,7 @@
                 <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
                 </div>
                   <li><a class="dropdown-item mt-3" href="./pm-edit-profile.html"><i class="icon icon-user-profile"></i> My Profile</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="icon icon-message-black me-1"></i> Message</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="./pm-profile-activities.html"><i class="icon icon-calender-2"></i> Activity</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
               </ul>
@@ -664,23 +663,23 @@
                           <p class="text-light-gray">$209,200 | 4 Deals</p>
                         </div>
                         <div class="accordion-item mt-2">
-                            <h2 class="accordion-header" id="headingOne">
-                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h2 class="accordion-header text-end" id="headingOne">
+                              <div class="btn-group me-3">
+                                <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                  aria-expanded="false">
+                                  <div class="dots d-flex align-items-center  m-0 p-0">
+                                    <span class="me-1"></span>
+                                    <span class="me-1 mt-0"></span>
+                                    <span class="mt-0"></span>
+                                  </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                  <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                                </ul>
+                              </div>
+                              <button class="accordion-button pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <div class="ref-prof">
-                                  <!-- <div class="btn-group ms-auto flex-column">
-                                    <a href="" class="btn p-2 border-none d-block" data-bs-toggle="dropdown" aria-expanded="false">
-                                      <div class="dots d-flex align-items-center  m-0 p-0">
-                                        <span class="me-1"></span>
-                                        <span class="me-1 mt-0"></span>
-                                        <span class="mt-0"></span>
-                                      </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
-                                      <li><a class="dropdown-item" href="#">Edit Project</a></li>
-                                    </ul>
-                                  </div> -->
-                                  <!-- <div class="d-flex"> -->
                                     <div class="prof-img me-2">
                                       <img src="./assets/images/profile-2.png" alt="" class="img-fluid">
                                     </div>
@@ -688,7 +687,6 @@
                                       <h6 class="text-sm fw-500">Managing developer tea…</h6>
                                       <p class="text-light-gray text-small">$23k - Feb 8, 2022</p>
                                     </div>
-                                  <!-- </div> -->
                                 </div>
                               </button>
                             </h2>
@@ -719,9 +717,23 @@
                             </div>
                         </div>
                         <div class="accordion-item mt-2">
-                            <h2 class="accordion-header" id="headingTwo">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <div class="ref-prof mb-3">
+                            <h2 class="accordion-header text-end" id="headingTwo">
+                              <div class="btn-group me-3">
+                                <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                  aria-expanded="false">
+                                  <div class="dots d-flex align-items-center  m-0 p-0">
+                                    <span class="me-1"></span>
+                                    <span class="me-1 mt-0"></span>
+                                    <span class="mt-0"></span>
+                                  </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                  <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                                </ul>
+                              </div>
+                              <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="ref-prof">
                                   <div class="prof-img me-2"><img src="./assets/images/crm-dashboard.jpg" alt="" class="img-fluid">
                                   </div>
                                   <div class="prof-details">
@@ -758,8 +770,22 @@
                             </div>
                         </div>
                         <div class="accordion-item mt-2">
-                            <h2 class="accordion-header" id="headingThree">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                            <h2 class="accordion-header text-end" id="headingThree">
+                              <div class="btn-group me-3">
+                                <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                  aria-expanded="false">
+                                  <div class="dots d-flex align-items-center  m-0 p-0">
+                                    <span class="me-1"></span>
+                                    <span class="me-1 mt-0"></span>
+                                    <span class="mt-0"></span>
+                                  </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                  <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                                </ul>
+                              </div>
+                              <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                 aria-expanded="false" aria-controls="collapseThree">
                                 <div class="ref-prof">
                                   <div class="prof-img me-2"><img src="./assets/images/profile-4.png" alt="" class="img-fluid"></div>
@@ -804,13 +830,27 @@
                           <p class="text-light-gray">$209,200 | 4 Deals</p>
                         </div>
                         <div class="accordion-item mt-2">
-                          <h2 class="accordion-header" id="headingfour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                          <h2 class="accordion-header text-end" id="headingfour">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/profile-2.png" alt="" class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">Managing Sales 2020-20…</h6>
-                                  <p class="text-light-gray">$10k - Jan 30, 2022</p>
+                                  <p class="text-light-gray text-small">$10k - Jan 30, 2022</p>
                                 </div>
                               </div>
                             </button>
@@ -842,13 +882,27 @@
                           </div>
                         </div>
                         <div class="accordion-item mt-2">
-                          <h2 class="accordion-header" id="headingfive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                          <h2 class="accordion-header text-end" id="headingfive">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/profile-5.png" alt="" class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">Digital Marketing </h6>
-                                  <p class="text-light-gray">$4k - Jan 30, 2022</p>
+                                  <p class="text-light-gray text-small">$4k - Jan 30, 2022</p>
                                 </div>
                               </div>
                             </button>
@@ -880,14 +934,28 @@
                           </div>
                         </div>
                         <div class="accordion-item mt-2">
-                          <h2 class="accordion-header" id="headingSix">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          <h2 class="accordion-header text-end" id="headingSix">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/managing-developer-tea.jpg" alt=""
                                     class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">Managing developer tea…</h6>
-                                  <p class="text-light-gray">$19k - Jan 23, 2021</p>
+                                  <p class="text-light-gray text-small">$19k - Jan 23, 2021</p>
                                 </div>
                               </div>
                             </button>
@@ -919,14 +987,28 @@
                           </div>
                         </div>
                         <div class="accordion-item mt-2">
-                          <h2 class="accordion-header" id="heading7">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7"
+                          <h2 class="accordion-header text-end" id="heading7">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7"
                               aria-expanded="false" aria-controls="collapse7">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/profile-7.png" alt="" class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">Social Media plan</h6>
-                                  <p class="text-light-gray">$10k - Jan 23, 2022</p>
+                                  <p class="text-light-gray text-small">$10k - Jan 23, 2022</p>
                                 </div>
                               </div>
                             </button>
@@ -964,13 +1046,27 @@
                           <p class="text-light-gray">$209,200 | 4 Deals</p>
                         </div>
                         <div class="accordion-item mt-2">
-                          <h2 class="accordion-header" id="heading8">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                          <h2 class="accordion-header text-end" id="heading8">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/profile-8.png" alt="" class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">New website </h6>
-                                  <p class="text-light-gray">$60k - Jan 2, 2022</p>
+                                  <p class="text-light-gray text-small">$60k - Jan 2, 2022</p>
                                 </div>
                               </div>
                             </button>
@@ -1002,13 +1098,27 @@
                           </div>
                         </div>
                         <div class="accordion-item mt-2">
-                          <h2 class="accordion-header" id="heading9">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                          <h2 class="accordion-header text-end" id="heading9">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/travel-agent.jpg" alt="" class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">Travel Agent logo</h6>
-                                  <p class="text-light-gray">$23k - Jan 5, 2022</p>
+                                  <p class="text-light-gray text-small">$23k - Jan 5, 2022</p>
                                 </div>
                               </div>
                             </button>
@@ -1040,13 +1150,27 @@
                           </div>
                         </div>
                         <div class="accordion-item mt-2">
-                          <h2 class="accordion-header" id="heading10">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                          <h2 class="accordion-header text-end" id="heading10">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/profile-5.png" alt="" class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">Hotel Stationary design</h6>
-                                  <p class="text-light-gray">$23k - Jan 16, 2022</p>
+                                  <p class="text-light-gray text-small">$23k - Jan 16, 2022</p>
                                 </div>
                               </div>
                             </button>
@@ -1084,13 +1208,27 @@
                           <p class="text-light-gray">$209,200 | 4 Deals</p>
                         </div>
                         <div class="accordion-item mt-2">
-                          <h2 class="accordion-header" id="heading11">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                          <h2 class="accordion-header text-end" id="heading11">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/profile-2.png" alt="" class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">Social Media post</h6>
-                                  <p class="text-light-gray">$2k - Jan 2, 2022</p>
+                                  <p class="text-light-gray text-small">$2k - Jan 2, 2022</p>
                                 </div>
                               </div>
                             </button>
@@ -1122,13 +1260,27 @@
                           </div>
                         </div>
                         <div class="accordion-item mt-2">
-                          <h2 class="accordion-header" id="heading12">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                          <h2 class="accordion-header text-end" id="heading12">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/sebo.png" alt="" class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">Sebo Studio Website</h6>
-                                  <p class="text-light-gray">$7k - Dec 26, 2022</p>
+                                  <p class="text-light-gray text-small">$7k - Dec 26, 2022</p>
                                 </div>
                               </div>
                             </button>
@@ -1161,12 +1313,26 @@
                         </div>
                         <div class="accordion-item mt-2">
                           <h2 class="accordion-header" id="heading13">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/dropbox.png" alt="" class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">Dropbox Rebranding</h6>
-                                  <p class="text-light-gray">$23k - Dec 25, 2021</p>
+                                  <p class="text-light-gray text-small">$23k - Dec 25, 2021</p>
                                 </div>
                               </div>
                             </button>
@@ -1198,13 +1364,27 @@
                           </div>
                         </div>
                         <div class="accordion-item mt-2">
-                          <h2 class="accordion-header" id="heading14">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                          <h2 class="accordion-header text-end" id="heading14">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/profile-10.png" alt="" class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">SAAS app dashboard</h6>
-                                  <p class="text-light-gray">$19k - Dec 12, 2021</p>
+                                  <p class="text-light-gray text-small">$19k - Dec 12, 2021</p>
                                 </div>
                               </div>
                             </button>
@@ -1236,13 +1416,27 @@
                           </div>
                         </div>
                         <div class="accordion-item mt-2">
-                          <h2 class="accordion-header" id="heading15">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                          <h2 class="accordion-header text-end" id="heading15">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/airbnb.jpg" alt="" class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">Airbnb React Development</h6>
-                                  <p class="text-light-gray">$60k - Dec 2, 2021</p>
+                                  <p class="text-light-gray text-small">$60k - Dec 2, 2021</p>
                                 </div>
                               </div>
                             </button>
@@ -1274,13 +1468,27 @@
                           </div>
                         </div>
                         <div class="accordion-item mt-2">
-                          <h2 class="accordion-header" id="heading16">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                          <h2 class="accordion-header text-end" id="heading16">
+                            <div class="btn-group me-3">
+                              <a href="" class="btn p-2 border-none d-block js-menu-dd" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="dots d-flex align-items-center  m-0 p-0">
+                                  <span class="me-1"></span>
+                                  <span class="me-1 mt-0"></span>
+                                  <span class="mt-0"></span>
+                                </div>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pm-project-name.html">Project Profile</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#businessForm">Edit Project</a></li>
+                              </ul>
+                            </div>
+                            <button class="accordion-button collapsed pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
                               <div class="ref-prof">
                                 <div class="prof-img me-2"><img src="./assets/images/profile-10.png" alt="" class="img-fluid"></div>
                                 <div class="prof-details">
                                   <h6 class="text-sm fw-500">NFT Illustration</h6>
-                                  <p class="text-light-gray">$70k - Nov 23, 2021</p>
+                                  <p class="text-light-gray text-small">$70k - Nov 23, 2021</p>
                                 </div>
                               </div>
                             </button>
@@ -1328,140 +1536,173 @@
             <h4>Chart Menu</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="line-tab" data-bs-toggle="tab" data-bs-target="#line" type="button"
-                  role="tab" aria-controls="line" aria-selected="true">
-                  <i class="icon icon-chart-line-solid"></i>
-                  <p class="text-light-gray">Line Chart</p>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="bar-tab" data-bs-toggle="tab" data-bs-target="#bar" type="button"
-                  role="tab" aria-controls="bar" aria-selected="false">
-                  <i class="icon icon-chart-column-solid"></i>
-                  <p class="text-light-gray">Bar Chart</p>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pie-tab" data-bs-toggle="tab" data-bs-target="#pie" type="button"
-                  role="tab" aria-controls="pie" aria-selected="false">
-                  <i class="icon icon-chart-pie-solid"></i>
-                  <p class="text-light-gray">Pie Chart</p>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="cambo-tab" data-bs-toggle="tab" data-bs-target="#cambo" type="button"
-                  role="tab" aria-controls="cambo" aria-selected="false">
-                  <i class="icon icon-cambo-chart"></i>
-                  <p class="text-light-gray">Cambo Chart</p>
-                </button>
-              </li>
-            </ul>
-            <div class="tab-content mt-4">
-              <div class="tab-pane active" id="line" role="tabpanel" aria-labelledby="line-tab">
-                <div class="row">
-                  <div class="col-12 col-md-4">
-                    <div>
-                      <canvas id="lineChart" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <div>
-                      <canvas id="lineChart1" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <div>
-                      <canvas id="lineChart2" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-4 mt-4">
-                    <div>
-                      <canvas id="lineChart3" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-4 mt-4">
-                    <div>
-                      <canvas id="lineChart4" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                </div>
+          <div class="modal-body chart-popup">
+            <div class="row">
+              <div class="col-md-3">
+                <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="Radialbar-tab" data-bs-toggle="tab" data-bs-target="#Radialbar" type="button"
+                      role="tab" aria-controls="Radialbar" aria-selected="true">
+                      <p class="text-light-gray">Radialbar</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Scatter-tab" data-bs-toggle="tab" data-bs-target="#Scatter" type="button"
+                      role="tab" aria-controls="Scatter" aria-selected="false">
+                      <p class="text-light-gray">Scatter</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Line-tab" data-bs-toggle="tab" data-bs-target="#Line" type="button"
+                      role="tab" aria-controls="Line" aria-selected="false">
+                      <p class="text-light-gray">Line</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Area-tab" data-bs-toggle="tab" data-bs-target="#Area" type="button"
+                      role="tab" aria-controls="Area" aria-selected="false">
+                      <p class="text-light-gray">Area</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Radar-tab" data-bs-toggle="tab" data-bs-target="#Radar" type="button"
+                      role="tab" aria-controls="Radar" aria-selected="false">
+                      <p class="text-light-gray">Radar</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Map-tab" data-bs-toggle="tab" data-bs-target="#Map" type="button"
+                      role="tab" aria-controls="Map" aria-selected="false">
+                      <p class="text-light-gray">Heat Map</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Donut-tab" data-bs-toggle="tab" data-bs-target="#Donut" type="button"
+                      role="tab" aria-controls="Donut" aria-selected="false">
+                      <p class="text-light-gray">Donut</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Pies-tab" data-bs-toggle="tab" data-bs-target="#Pies" type="button"
+                      role="tab" aria-controls="Pies" aria-selected="false">
+                      <p class="text-light-gray">Pies</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Perfomance-tab" data-bs-toggle="tab" data-bs-target="#Perfomance" type="button"
+                      role="tab" aria-controls="Perfomance" aria-selected="false">
+                      <p class="text-light-gray">Perfomance</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Basic-tab" data-bs-toggle="tab" data-bs-target="#Basic" type="button"
+                      role="tab" aria-controls="Basic" aria-selected="false">
+                      <p class="text-light-gray">Columns Basic</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Items-tab" data-bs-toggle="tab" data-bs-target="#Items" type="button"
+                      role="tab" aria-controls="Items" aria-selected="false">
+                      <p class="text-light-gray">Columns Items</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Mixed-tab" data-bs-toggle="tab" data-bs-target="#Mixed" type="button"
+                      role="tab" aria-controls="Mixed" aria-selected="false">
+                      <p class="text-light-gray">Columns Mixed</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Candlestick-tab" data-bs-toggle="tab" data-bs-target="#Candlestick" type="button"
+                      role="tab" aria-controls="Candlestick" aria-selected="false">
+                      <p class="text-light-gray">Columns Candlestick</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Nagetine-tab" data-bs-toggle="tab" data-bs-target="#Nagetine" type="button"
+                      role="tab" aria-controls="Nagetine" aria-selected="false">
+                      <p class="text-light-gray">Columns With Nagetine Values</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Multiple-tab" data-bs-toggle="tab" data-bs-target="#Multiple" type="button"
+                      role="tab" aria-controls="Multiple" aria-selected="false">
+                      <p class="text-light-gray">Columns Multiple</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Stacked-tab" data-bs-toggle="tab" data-bs-target="#Stacked" type="button"
+                      role="tab" aria-controls="Stacked" aria-selected="false">
+                      <p class="text-light-gray">Columns Stacked</p>
+                    </button>
+                  </li>
+                </ul>
               </div>
-              <div class="tab-pane" id="bar" role="tabpanel" aria-labelledby="bar-tab">
-                <div class="row">
-                  <div class="col-12 col-md-4">
-                    <div>
-                      <canvas id="BarsChart1" class="wsm-100 w-100"
-                        style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+              <div class="col-md-9">
+                <div class="tab-content mt-4">
+                  <div class="tab-pane active" id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div>
+                          <canvas id="Radialbar-1" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <canvas id="Radialbar-2" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-4">
-                    <div>
-                      <canvas id="BarsChart2" class="wsm-100 w-100"
-                        style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                  <div class="tab-pane " id="Scatter" role="tabpanel" aria-labelledby="Scatter-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <canvas id="invoiceBars" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div>
+                          <canvas id="invoiceBars1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-4">
-                    <div>
-                      <canvas id="BarsChart3" class="wsm-100 w-100"
-                        style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                  <div class="tab-pane " id="Line" role="tabpanel" aria-labelledby="Line-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <canvas id="lineChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308" height="197"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div>
+                          <canvas id="lineChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308" height="197"></canvas>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-4 mt-5">
-                    <div>
-                      <canvas id="BarsChart4" class="wsm-100 w-100"
-                        style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                  <div class="tab-pane" id="Area" role="tabpanel" aria-labelledby="Area-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <canvas id="areaChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250" width="630"></canvas>
+                      </div>
+                      <div class="col-md-6">
+                        <canvas id="areaChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250" width="630"></canvas>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-12 col-md-4 mt-5">
-                    <div>
-                      <canvas id="BarsChart5" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 160px; width: 470px;"></canvas>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div class="tab-pane" id="pie" role="tabpanel" aria-labelledby="pie-tab">
-                <div class="row">
-                  <div class="col-12 col-md-4">
-                    <div>
-                      <canvas id="pieChart" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
+                <div class="tab-pane " id="Radar" role="tabpanel" aria-labelledby="Radar-tab">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div>
+                        <canvas id="radarChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <div>
-                      <canvas id="pieChart-1" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <div>
-                      <canvas id="pieChart-2" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="cambo" role="tabpanel" aria-labelledby="cambo-tab">
-                <div class="row">
-                  <div class="col-12 col-md-4">
-                    <div>
-                      <canvas id="camboChart" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 270px; width: 470px;"></canvas>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <div>
-                      <canvas id="camboChart1" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 260px; width: 470px;"></canvas>
+                    <div class="col-md-6">
+                      <div>
+                        <canvas id="radarChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1475,6 +1716,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
     <div class="modal right fade" id="SettingForm" tabindex="-1"
 aria-labelledby="interviewLabel" aria-hidden="true">
@@ -1768,6 +2010,78 @@ aria-labelledby="interviewLabel" aria-hidden="true">
       </div>
       <div class="modal-footer justify-content-between">
         <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">ADD</button>
+        <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal right fade" id="businessForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Edit project</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-light customer-add-form">
+        <form>
+          <label for="Customer-name" class="d-block mb-2">Customer Name</label>
+          <select id="cars" name="carlist" form="carform" class="form-input w-100">
+            <option value="volvo">Please insert customer name</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <label for="Project-name" class="d-block my-2">Project name</label>
+          <input type="text" placeholder="Please insert Project name" class="form-input w-100">
+          <label for="Project-id" class="d-block my-2">Project ID</label>
+          <input type="text" placeholder="Please insert Project ID" class="form-input w-100">
+          <label for="ProjectManager" class="d-block my-2">Project Manager</label>
+          <select id="cars" name="carlist" form="carform" class="form-input w-100">
+            <option value="volvo">Select Project manager </option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <label for="ProjectSummary" class="d-block my-2">Project Summary</label>
+          <input type="text" placeholder="Summary" class="form-input w-100">
+          <div class="row">
+            <div class="col-6">
+              <label for="ProjectValue" class="d-block my-2">Project Value</label>
+              <input type="text" placeholder="Please set Value" class="form-input w-100">
+            </div>
+            <div class="col-6">
+              <label for="ProjectStage" class="d-block my-2">Project Stage</label>
+              <select id="cars" name="carlist" form="carform" class="form-input w-100">
+                <option value="volvo">Select Project Stage</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+          </div>
+          <label for="ProjectStage" class="d-block my-2">Category</label>
+          <select id="cars" name="carlist" form="carform" class="form-input w-100">
+            <option value="volvo">Please select categroy</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <div class="row">
+            <div class="col-6">
+              <label for="Start-date" class="d-block my-2">Start Date</label>
+              <input type="date" id="StartDate" name="StartDate" class="form-input w-100">
+            </div>
+            <div class="col-6">
+              <label for="Due-date" class="d-block my-2">Due Date</label>
+              <input type="date" id="StartDate" name="StartDate" class="form-input w-100">
+            </div>
+          </div>
+          <label for="Invite-members" class="d-block my-2">Invite Members</label>
+          <input type="text" placeholder="john.doe@gmail.com" class="form-input w-100">
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">UPDATE</button>
         <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
       </div>
     </div>

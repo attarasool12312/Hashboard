@@ -172,9 +172,9 @@
     },
   });
 
-  const invoice = document.getElementById("invoiceBars");
+  const lineChartOver = document.getElementById("lineChartOver");
 
-  const bar4 = new Chart(invoice, {
+  const lineChartOver_1 = new Chart(lineChartOver, {
     type: "bar",
     data: {
       labels: [

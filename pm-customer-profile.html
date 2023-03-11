@@ -986,151 +986,198 @@
         </div>
       </div>
     </div>
-    <div class="modal right fade" id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel"
-      aria-hidden="true">
+    <div class="modal right fade " id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel" aria-hidden="true">
       <div class="modal-dialog width-70 wsm-95">
         <div class="modal-content">
           <div class="modal-header">
             <h4>Chart Menu</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="line-tab" data-bs-toggle="tab" data-bs-target="#line" type="button"
-                  role="tab" aria-controls="line" aria-selected="true">
-                  <i class="icon icon-chart-line-solid"></i>
-                  <p class="text-light-gray">Line Chart</p>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="bar-tab" data-bs-toggle="tab" data-bs-target="#bar" type="button"
-                  role="tab" aria-controls="bar" aria-selected="false">
-                  <i class="icon icon-chart-column-solid"></i>
-                  <p class="text-light-gray">Bar Chart</p>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pie-tab" data-bs-toggle="tab" data-bs-target="#pie" type="button"
-                  role="tab" aria-controls="pie" aria-selected="false">
-                  <i class="icon icon-chart-pie-solid"></i>
-                  <p class="text-light-gray">Pie Chart</p>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="cambo-tab" data-bs-toggle="tab" data-bs-target="#cambo" type="button"
-                  role="tab" aria-controls="cambo" aria-selected="false">
-                  <i class="icon icon-cambo-chart"></i>
-                  <p class="text-light-gray">Cambo Chart</p>
-                </button>
-              </li>
-            </ul>
-            <div class="tab-content mt-4">
-              <div class="tab-pane active" id="line" role="tabpanel" aria-labelledby="line-tab">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <div>
-                      <canvas id="lineChart" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div>
-                      <canvas id="lineChart1" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 mt-4">
-                    <div>
-                      <canvas id="lineChart2" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 mt-4">
-                    <div>
-                      <canvas id="lineChart3" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 mt-4">
-                    <div>
-                      <canvas id="lineChart4" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                </div>
+          <div class="modal-body chart-popup">
+            <div class="row">
+              <div class="col-md-3">
+                <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="Radialbar-tab" data-bs-toggle="tab" data-bs-target="#Radialbar" type="button"
+                      role="tab" aria-controls="Radialbar" aria-selected="true">
+                      <p class="text-light-gray">Radialbar</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Scatter-tab" data-bs-toggle="tab" data-bs-target="#Scatter" type="button"
+                      role="tab" aria-controls="Scatter" aria-selected="false">
+                      <p class="text-light-gray">Scatter</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Line-tab" data-bs-toggle="tab" data-bs-target="#Line" type="button"
+                      role="tab" aria-controls="Line" aria-selected="false">
+                      <p class="text-light-gray">Line</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Area-tab" data-bs-toggle="tab" data-bs-target="#Area" type="button"
+                      role="tab" aria-controls="Area" aria-selected="false">
+                      <p class="text-light-gray">Area</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Radar-tab" data-bs-toggle="tab" data-bs-target="#Radar" type="button"
+                      role="tab" aria-controls="Radar" aria-selected="false">
+                      <p class="text-light-gray">Radar</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Map-tab" data-bs-toggle="tab" data-bs-target="#Map" type="button"
+                      role="tab" aria-controls="Map" aria-selected="false">
+                      <p class="text-light-gray">Heat Map</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Donut-tab" data-bs-toggle="tab" data-bs-target="#Donut" type="button"
+                      role="tab" aria-controls="Donut" aria-selected="false">
+                      <p class="text-light-gray">Donut</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Pies-tab" data-bs-toggle="tab" data-bs-target="#Pies" type="button"
+                      role="tab" aria-controls="Pies" aria-selected="false">
+                      <p class="text-light-gray">Pies</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Perfomance-tab" data-bs-toggle="tab" data-bs-target="#Perfomance" type="button"
+                      role="tab" aria-controls="Perfomance" aria-selected="false">
+                      <p class="text-light-gray">Perfomance</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Basic-tab" data-bs-toggle="tab" data-bs-target="#Basic" type="button"
+                      role="tab" aria-controls="Basic" aria-selected="false">
+                      <p class="text-light-gray">Columns Basic</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Items-tab" data-bs-toggle="tab" data-bs-target="#Items" type="button"
+                      role="tab" aria-controls="Items" aria-selected="false">
+                      <p class="text-light-gray">Columns Items</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Mixed-tab" data-bs-toggle="tab" data-bs-target="#Mixed" type="button"
+                      role="tab" aria-controls="Mixed" aria-selected="false">
+                      <p class="text-light-gray">Columns Mixed</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Candlestick-tab" data-bs-toggle="tab" data-bs-target="#Candlestick" type="button"
+                      role="tab" aria-controls="Candlestick" aria-selected="false">
+                      <p class="text-light-gray">Columns Candlestick</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Nagetine-tab" data-bs-toggle="tab" data-bs-target="#Nagetine" type="button"
+                      role="tab" aria-controls="Nagetine" aria-selected="false">
+                      <p class="text-light-gray">Columns With Nagetine Values</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Multiple-tab" data-bs-toggle="tab" data-bs-target="#Multiple" type="button"
+                      role="tab" aria-controls="Multiple" aria-selected="false">
+                      <p class="text-light-gray">Columns Multiple</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Stacked-tab" data-bs-toggle="tab" data-bs-target="#Stacked" type="button"
+                      role="tab" aria-controls="Stacked" aria-selected="false">
+                      <p class="text-light-gray">Columns Stacked</p>
+                    </button>
+                  </li>
+                </ul>
               </div>
-              <div class="tab-pane" id="bar" role="tabpanel" aria-labelledby="bar-tab">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <div>
-                      <canvas id="BarsChart1" class="wsm-100 w-100"
-                        style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+              <div class="col-md-9">
+                <div class="tab-content mt-4">
+                  <div class="tab-pane " id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div>
+                          <canvas id="Radialbar-1" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <canvas id="Radialbar-2" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6">
-                    <div>
-                      <canvas id="BarsChart2" class="wsm-100 w-100"
-                        style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                  <div class="tab-pane " id="Scatter" role="tabpanel" aria-labelledby="Scatter-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <canvas id="invoiceBars" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div>
+                          <canvas id="invoiceBars1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 mt-5">
-                    <div>
-                      <canvas id="BarsChart3" class="wsm-100 w-100"
-                        style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                  <div class="tab-pane " id="Line" role="tabpanel" aria-labelledby="Line-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <canvas id="lineChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308" height="197"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div>
+                          <canvas id="lineChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308" height="197"></canvas>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 mt-5">
-                    <div>
-                      <canvas id="BarsChart4" class="wsm-100 w-100"
-                        style="display: block; box-sizing: border-box; height: 160px; width: 450px;"></canvas>
+                  <div class="tab-pane" id="Area" role="tabpanel" aria-labelledby="Area-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <canvas id="areaChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250" width="630"></canvas>
+                      </div>
+                      <div class="col-md-6">
+                        <canvas id="areaChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250" width="630"></canvas>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-12 col-md-6 mt-5">
-                    <div>
-                      <canvas id="BarsChart5" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 160px; width: 470px;"></canvas>
+                </div>
+                <div class="tab-pane " id="Radar" role="tabpanel" aria-labelledby="Radar-tab">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div>
+                        <canvas id="radarChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div>
+                        <canvas id="radarChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane" id="pie" role="tabpanel" aria-labelledby="pie-tab">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <div>
-                      <canvas id="pieChart" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
+                <div class="tab-pane " id="Donut" role="tabpanel" aria-labelledby="Donut-tab">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div>
+                        <canvas id="dountMenuChart" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div>
-                      <canvas id="pieChart-1" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 mt-4">
-                    <div>
-                      <canvas id="pieChart-2" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
+                    <div class="col-md-6">
+                      <div>
+                        <canvas id="dountMenuChart1" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane" id="cambo" role="tabpanel" aria-labelledby="cambo-tab">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <div>
-                      <canvas id="camboChart" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 270px; width: 470px;"></canvas>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div>
-                      <canvas id="camboChart1" class="wsm-100"
-                        style="display: block; box-sizing: border-box; height: 260px; width: 470px;"></canvas>
-                    </div>
-                  </div>
-                </div>
+                <div class="tab-pane active" id="Pies" role="tabpanel" aria-labelledby="Pies-tab"></div>
               </div>
             </div>
           </div>
@@ -1141,7 +1188,8 @@
           </div>
         </div>
       </div>
-    </div>    
+    </div>
+    </div>   
     <div class="modal fade" id="comment" tabindex="-1" aria-labelledby="commentLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">

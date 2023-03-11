@@ -528,3 +528,72 @@ const invoice = document.getElementById("invoiceBars");
         }
       },
     });
+
+    const dountMenuChart = document.getElementById('dountMenuChart');
+
+    const dountMenuChart_1 = new Chart(dountMenuChart, {
+        type: 'doughnut',
+        data: {
+            labels: ['Strategy ', 'Governance', 'Large Business'],
+            datasets: [{
+                label: '# of Votes',
+                backgroundColor: ['#0075FF', '#7DC066', '#59B4D1', '#9E57E5', '#F3935D', '#E5646C'],
+                borderRadius: 2,
+                data: [10, 15, 25, 20, 15, 15],
+                barThickness: 5,
+                borderWidth: 0,
+                cutout: "90%",
+                borderRadius: 30
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                  display: false,
+                    labels: {
+                        usePointStyle: true,
+                        boxWidth: 8
+                    }
+                }
+            },
+            elements: {
+                customCutout: true,
+            },
+            cutoutPercentage: 32
+        },
+    });
+
+    const dountMenuChart1 = document.getElementById('dountMenuChart1');
+
+    const dountMenuChart_2 = new Chart(dountMenuChart1, {
+        type: 'doughnut',
+        data: {
+            labels: ['Strategy ', 'Governance', 'Large Business'],
+            datasets: [{
+                label: '# of Votes',
+                backgroundColor: ['#0075FF', '#7DC066', '#59B4D1', '#9E57E5', '#F3935D', '#E5646C'],
+                borderRadius: 2,
+                data: [10, 15, 25, 20, 15, 15],
+                barThickness: 5,
+                borderWidth: 0,
+                cutout: "50%",
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                  display: false,
+                    labels: {
+                        usePointStyle: true,
+                        boxWidth: 8
+                    }
+                }
+            },
+            elements: {
+                customCutout: true,
+            },
+            cutoutPercentage: 32
+        },
+    });

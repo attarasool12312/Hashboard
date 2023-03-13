@@ -149,7 +149,7 @@
                 <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
                 </div>
                   <li><a class="dropdown-item mt-3" href="./pm-edit-profile.html"><i class="icon icon-user-profile"></i> My Profile</a></li>
-                  <li><a class="dropdown-item" href="./pm-profile-activities.html"><i class="icon icon-calender-2"></i> Activity</a></li>
+                  <li><a class="dropdown-item" href="./pm-profile-activities.html"><i class="icon icon-calender-2"></i> Actions</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
                   <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
               </ul>
@@ -4210,7 +4210,7 @@ aria-labelledby="interviewLabel" aria-hidden="true">
           </div>
           <div class="col-md-9">
             <div class="tab-content mt-4">
-              <div class="tab-pane " id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
+              <div class="tab-pane active" id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
                 <div class="row">
                   <div class="col-md-4">
                     <div>
@@ -4290,7 +4290,57 @@ aria-labelledby="interviewLabel" aria-hidden="true">
                 </div>
               </div>
             </div>
-            <div class="tab-pane active" id="Pies" role="tabpanel" aria-labelledby="Pies-tab"></div>
+            <div class="tab-pane" id="Pies" role="tabpanel" aria-labelledby="Pies-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <div>
+                    <canvas id="pieChart" class="wsm-100 w-100" style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278" height="278"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="Basic" role="tabpanel" aria-labelledby="Basic-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <div>
+                    <canvas id="barChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <canvas id="barChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <div>
+                    <canvas id="barChart2" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="Multiple" role="tabpanel" aria-labelledby="Multiple-tab">
+              <div class="row">
+                <div class="col-md-8">
+                  <div>
+                    <canvas id="doubleBarChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                  </div>
+                </div>
+                <div class="col-md-8 mt-4">
+                  <div>
+                    <canvas id="doubleBarChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="Stacked" role="tabpanel" aria-labelledby="Stacked-tab">
+              <div class="row">
+                <div class="col-md-8">
+                  <div>
+                    <canvas id="stackedChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 215px; width: 631px;" width="631" height="215"></canvas>
+                </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

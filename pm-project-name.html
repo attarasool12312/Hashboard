@@ -106,7 +106,7 @@
         </div>
       </aside>
       <main class="main">
-        <div class="top-nav bg-white">
+        <div class="top-nav bg-white justify-content-end">
           <div class="sitepanel-toggler for-mobile">
             <div class="close">
               <span></span>
@@ -117,14 +117,14 @@
               <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
             </div>
           </div>
-          <div class="search-form d-none d-md-block">
+          <!-- <div class="search-form d-none d-md-block">
             <form action="">
               <div class="form-group">
                 <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
                 <i class="icon icon-search-form"></i>
               </div>
             </form>
-          </div>
+          </div> -->
           <div class="about-profile">
             <div class="d-none d-md-block">
               <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
@@ -161,6 +161,7 @@
             <h1>Project Name</h1>
             <div class="d-flex align-items-center">
               <button type="button" class="btn ouline-white me-md-3 mt-3 wsm-100 mt-md-0"><i class="icon icon-download me-2"></i>Download</button>
+              <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload Bulk</button>
               <button type="button" class="btn ouline-white me-md-3 btn-fill" data-bs-toggle="modal" data-bs-target="#updateStageModal">Update Project Status </button>
               <button type="button" class="btn ouline-white btn-fill" data-bs-toggle="modal"
               data-bs-target="#businessForm">Edit Project</button>
@@ -465,23 +466,60 @@
                   <div class="chart p-3">
                     <div class="chart-box d-flex justify-content-between flex-column">
                       <a href="#" class="ms-auto"><i class="icon icon-dots"></i></a>
-                      <div class="row">
-                        <div class="col-4">
-                          <div class="pie" data-pie='{ "percent": 70 }'>
-                          </div>
-                          <h5 class="text-center mt-3">Customer Name</h5>
+                      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators" style="bottom: -36px;">
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                        <div class="col-4">
-                          <div>
-                            <canvas id="overPieChart"
-                              style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278"
-                              height="278"></canvas>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="row">
+                              <div class="col-4">
+                                <canvas id="profileChart" class="w-100" style="display: block; box-sizing: border-box; height: 248px; width: 248px;" width="248" height="248"></canvas>
+                              </div>
+                              <div class="col-4">
+                                <div>
+                                  <canvas id="overPieChart"
+                                    style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278"
+                                    height="278"></canvas>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                                  <a href="#" data-bs-toggle="modal" data-bs-target="#chartMenu"><i class="icon icon-plus-big-icon bg-cover"></i></a>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <h5 class="text-center mt-3">Project COCs</h5>
-                        </div>
-                        <div class="col-4">
-                          <div class="w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#chartMenu"><i class="icon icon-plus-big-icon bg-cover"></i></a>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <div class="row">
+                              <div class="col-md-8">
+                                <div>
+                                  <canvas id="sliderThreeChart_1" class="wsm-100" style="display: block; box-sizing: border-box; height: 356px; width: 1000px;" width="1000" height="356"></canvas>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                                  <a href="#" data-bs-toggle="modal" data-bs-target="#chartMenu"><i class="icon icon-plus-big-icon bg-cover"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row">
+                              <div class="col-4">
+                                <canvas id="sliderThreeChart" class="w-100 h-100" style="display: block; box-sizing: border-box; height: 384px; width: 384px;" width="384" height="384"></canvas>
+                              </div>
+                              <div class="col-4">
+                                  <canvas id="sliderThreeChart1" class="wsm-100 w-100 h-100" style="display: block; box-sizing: border-box; height: 384px; width: 384px;" width="384" height="384"></canvas>
+                              </div>
+                              <div class="col-4">
+                                <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                                  <a href="#" data-bs-toggle="modal" data-bs-target="#chartMenu"><i class="icon icon-plus-big-icon bg-cover"></i></a>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -622,105 +660,49 @@
                             <tbody>
                               <tr>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree active bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -737,52 +719,108 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
+                                  <div class="timeline-tree active bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink finish-timeline"></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
                                   <div class=""></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -798,37 +836,37 @@
                                 <div class=""></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange finish-timeline"></div>
+                                <div class="timeline-tree bg-chart-info finish-timeline"></div>
                               </td>
                               <td>
                                 <div class=""></div>
@@ -863,84 +901,28 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -969,34 +951,34 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -1019,34 +1001,90 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -1097,46 +1135,46 @@
                             <tbody>
                               <tr>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -1156,214 +1194,46 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-blue"></div>
+                                  <div class="timeline-tree active bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                              </tr>
-                              <tr>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange finish-timeline"></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree active bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree active bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
+                                  <div class="timeline-tree bg-chart-pink finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -1386,6 +1256,109 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                              </tr>
+                              <tr>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info finish-timeline"></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              </tr>
+                              <tr>
+                                <td>
                                   <div class=""></div>
                                 </td>
                                 <td>
@@ -1401,22 +1374,31 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-orange"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-orange"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-orange"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -1445,34 +1427,34 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -1495,31 +1477,87 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -1573,46 +1611,46 @@
                             <tbody>
                               <tr>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -1632,214 +1670,46 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-blue"></div>
+                                  <div class="timeline-tree active bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-blue"></div>
+                                  <div class="timeline-tree active bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree active bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree active bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree active bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree active bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                              </tr>
-                              <tr>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree active bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree active bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree active bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree active bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange finish-timeline"></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
+                                  <div class="timeline-tree bg-chart-pink finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -1862,6 +1732,109 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
+                                  <div class="timeline-tree active bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                              </tr>
+                              <tr>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree active bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree active bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree active bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree active bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info finish-timeline"></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              </tr>
+                              <tr>
+                                <td>
                                   <div class=""></div>
                                 </td>
                                 <td>
@@ -1877,22 +1850,31 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-orange"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -1921,34 +1903,34 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -1971,34 +1953,90 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -2049,105 +2087,49 @@
                             <tbody>
                               <tr>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree active bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-blue finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -2164,52 +2146,108 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
+                                  <div class="timeline-tree active bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-pink finish-timeline"></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
                                   <div class=""></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -2225,37 +2263,37 @@
                                 <div class=""></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange"></div>
+                                <div class="timeline-tree bg-chart-info"></div>
                               </td>
                               <td>
-                                <div class="timeline-tree bg-orange finish-timeline"></div>
+                                <div class="timeline-tree bg-chart-info finish-timeline"></div>
                               </td>
                               <td>
                                 <div class=""></div>
@@ -2290,84 +2328,28 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -2396,34 +2378,34 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -2446,34 +2428,90 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -2524,46 +2562,46 @@
                             <tbody>
                               <tr>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -2583,214 +2621,46 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-blue"></div>
+                                  <div class="timeline-tree active bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue"></div>
+                                  <div class="timeline-tree bg-chart-pink"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-blue finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                              </tr>
-                              <tr>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange"></div>
-                              </td>
-                              <td>
-                                <div class="timeline-tree bg-orange finish-timeline"></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              <td>
-                                <div class=""></div>
-                              </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree active bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree active bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange"></div>
-                                </td>
-                                <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
-                                </td>
-                                <td>
-                                  <div class=""></div>
+                                  <div class="timeline-tree bg-chart-pink finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -2813,6 +2683,109 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                              </tr>
+                              <tr>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info"></div>
+                              </td>
+                              <td>
+                                <div class="timeline-tree bg-chart-info finish-timeline"></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              <td>
+                                <div class=""></div>
+                              </td>
+                              </tr>
+                              <tr>
+                                <td>
                                   <div class=""></div>
                                 </td>
                                 <td>
@@ -2828,22 +2801,31 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-orange"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-orange"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-orange"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-orange finish-timeline"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -2872,34 +2854,34 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree bg-chart-info"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree bg-chart-info finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -2922,31 +2904,87 @@
                                   <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class=""></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree active bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
                                 </td>
                                 <td>
-                                  <div class="timeline-tree bg-green finish-timeline"></div>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class=""></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree active bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol"></div>
+                                </td>
+                                <td>
+                                  <div class="timeline-tree bg-parpol finish-timeline"></div>
                                 </td>
                                 <td>
                                   <div class=""></div>
@@ -3184,9 +3222,9 @@
                   </select>
                 </div>
               </div>
-              <label for="ProjectStage" class="d-block my-2">Category</label>
+              <label for="ProjectStage" class="d-block my-2">Portfolio</label>
               <select id="cars" name="carlist" form="carform" class="form-input w-100">
-                <option value="volvo">Please select categroy</option>
+                <option value="volvo">Please select Portfolio</option>
                 <option value="saab">Saab</option>
                 <option value="opel">Opel</option>
                 <option value="audi">Audi</option>
@@ -3266,8 +3304,7 @@
             </select>
             <label for="full-name" class="fw-bold mb-2 mt-4">Comment</label>
             <input type="text" placeholder="Comment" class="d-block border border-2 rounded w-100 py-2 px-3">
-            <a href="#" class="text-small text-light-gray text-decoration-none d-block my-2"><i
-                class="icon icon-link me-2"></i>Attach</a>
+            <div class="text w-fit ms-5 my-2"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
             <button type="button" class="btn btn-primary px-4 text-uppercase text-small">Submit</button>
             <div class="border-bottom border-2 py-2 d-flex justify-content-between align-items-center mt-3">
               <p class="text-small text-light-gray">Comment 1</p>
@@ -3381,8 +3418,7 @@
                 </div>
                 <div class="mt-3">
                   <h4><i class="icon icon-link-icon-popup"></i>Attachments</h4>
-                  <a href="#" class="text-decoration-none text-light-gray text-snall text-uppercase ms-4 mt-2 d-block">+
-                    upload attachments</a>
+                  <div class="text w-fit ms-5 mt-2"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
                 </div>
               </div>
               <div class="col-md-4">
@@ -3452,8 +3488,7 @@
                 </div>
                 <div class="mt-3">
                   <h4><i class="icon icon-link-icon-popup"></i>Attachments</h4>
-                  <a href="#" class="text-decoration-none text-light-gray text-snall text-uppercase ms-4 mt-2 d-block">+
-                    upload attachments</a>
+                  <div class="text w-fit ms-5 mt-2"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
                 </div>
               </div>
               <div class="col-md-4">
@@ -3632,8 +3667,7 @@
               <label for="full-name" class="fw-bold mb-2 mt-4">Project Date</label>
               <input type="date" placeholder="Project Date" class="d-block border border-2 rounded w-100 py-2 px-3">
               <div class="uploadfile mt-3">
-                <div class="text"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-upload"></i>
-                  Attachments</label></div>
+                <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
                 <input id="fileupload" type="file" class="fileupload">
               </div>
               <label for="full-name" class="fw-bold mb-2 mt-4">Percentage of Completion</label>
@@ -3691,8 +3725,7 @@
               <label for="full-name" class="fw-bold mb-2 mt-4">Project Date</label>
               <input type="Date" placeholder="Project Date" class="d-block border border-2 rounded w-100 py-2 px-3">
               <div class="uploadfile mt-3">
-                <div class="text"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-upload"></i>
-                  Attachments</label></div>
+                <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
                 <input id="fileupload" type="file" class="fileupload">
               </div>
               <label for="full-name" class="fw-bold mb-2 mt-4">Project Satisfaction</label>
@@ -4353,6 +4386,38 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   </div>
 </div>
 </div>
+<div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="uploadModalLabel">Add New User</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body upload-box">
+        <div class="form-group">
+          <label for="fileField" class="attachment">
+            <div class="row btn-file">
+              <div class="btn-file__preview"></div>
+              <div class="btn-file__actions">
+                <div class="btn-file__actions__item col-xs-12 text-center">
+                  <div class="btn-file__actions__item--shadow">
+                    Upload File
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input name="file" type="file" id="fileField">
+          </label>
+        </div>
+        <a href="" class="text-decoration-none fw-600 text-uppercase">Download Template</a>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-primary text-uppercase">Add</button>
+        <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
   </section>
   <!-- JavaScript
 ================================================== -->
@@ -4368,6 +4433,7 @@ aria-labelledby="interviewLabel" aria-hidden="true">
     src='https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@latest/docs/circularProgressBar.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js'></script>
   <script>
+    
     const OverPie = document.getElementById('overPieChart');
 
     const bar7 = new Chart(OverPie, {
@@ -4397,36 +4463,7 @@ aria-labelledby="interviewLabel" aria-hidden="true">
       },
     });
 
-
-    window.addEventListener("DOMContentLoaded", () => {
-      const elements = [].slice.call(document.querySelectorAll(".pie"));
-      const circle = new CircularProgressBar("pie");
-      if ("IntersectionObserver" in window) {
-        const config = {
-          root: null,
-          rootMargin: "0px",
-          threshold: 0.75,
-        };
-
-        const ovserver = new IntersectionObserver((entries, observer) => {
-          entries.map((entry) => {
-            if (entry.isIntersecting && entry.intersectionRatio > 0.75) {
-              circle.initial(entry.target);
-              observer.unobserve(entry.target);
-            }
-          });
-        }, config);
-
-        elements.map((item) => {
-          ovserver.observe(item);
-        });
-      }
-      else {
-        elements.map((element) => {
-          circle.initial(element);
-        });
-      }
-    });
+    
     $('.tab-click').click(function (e) {
       e.preventDefault();
       $(this).addClass('ouline-white');
@@ -4472,6 +4509,169 @@ fiftyRange.addEventListener('input', e => {
   const nbOutboundHires = +nbOutboundHiresInput.value;
   displayCostAts(nbOutboundHires, +e.target.value, +noAtsElem.value);
 });
+  
+const profileChart = document.getElementById('profileChart');
+
+const profileChart_1 = new Chart(profileChart, {
+  type: 'doughnut',
+  data: {
+    labels: ['Strategy',],
+    datasets: [{
+      label: '# of Votes',
+      backgroundColor: '#775DA6',
+      borderRadius: 10,
+      data: ['70'],
+      barThickness: 5,
+      borderWidth: 0,
+      cutout: "90%",
+      circumference: 270
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false,
+        labels: {
+          usePointStyle: false,
+        }
+      }
+    },
+    elements: {
+      customCutout: true,
+    },
+    cutoutPercentage: 32
+  },
+});
+  
+const sliderThreeChart = document.getElementById("sliderThreeChart_1");
+
+    const sliderThreeChart_1 = new Chart(sliderThreeChart, {
+      type: "bar",
+      data: {
+        labels: ["project A", "project B", "project C", "project D", "project E"],
+        datasets: [
+          {
+            label: "# of Votes",
+            data: [20, 23, 29, 32, 23],
+            borderRadius: 5,
+            borderWidth: 1,
+            backgroundColor: "#775da6",
+            barThickness: 20,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        scales: {
+          x: {
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: true,
+            },
+          },
+          y: {
+            // display: false,
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: false,
+            },
+          },
+        },
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+      },
+    });
+
+const sliderTwoChart = document.getElementById('sliderTwoChart');
+
+const sliderTwoChart_1 = new Chart(sliderTwoChart, {
+  type: 'doughnut',
+  data: {
+    labels: ['Strategy'],
+    datasets: [{
+      label: '# of Votes',
+      backgroundColor: ['#775DA6'],
+      data: [12],
+      borderWidth: 0,
+      weight: 10,
+      cutout: "85%",
+      borderRadius: 10,
+      circumference: 270
+    }, {
+      label: '# of Votes',
+      backgroundColor: ['#FFC107'],
+      data: [12],
+      borderWidth: 0,
+      weight: 8,
+      cutout: "80%",
+      borderRadius: 10,
+      circumference: 200
+    }, {
+      label: '# of Votes',
+      backgroundColor: ['#2196F3'],
+      data: [12],
+      borderWidth: 0,
+      weight: 8,
+      cutout: "75%",
+      borderRadius: 10,
+      circumference: 150
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false,
+        labels: {
+          usePointStyle: false,
+        }
+      }
+    },
+    elements: {
+      arc: {
+        borderWidth: 0
+      }
+    }
+  },
+});
+
+const sliderThreeChart1 = document.getElementById('sliderThreeChart1');
+
+const sliderThreeChart1_2 = new Chart(sliderThreeChart1, {
+  type: 'pie',
+  data: {
+    datasets: [{
+      label: '# of Votes',
+      backgroundColor: ['#87EADE', '#B0E4C8', '#D9B7FB', '#A9DDF5', '#FFC9AC', '#F8BEC1'],
+      borderRadius: 2,
+      data: [13.6, 23.9, 8.1, 27.8, 15.7, 8.9],
+      borderWidth: 0,
+      barThickness: 10,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false,
+        labels: {
+          usePointStyle: false,
+          boxWidth: 8
+        }
+      }
+    }
+  },
+});
+
+
   </script>
 </body>
 

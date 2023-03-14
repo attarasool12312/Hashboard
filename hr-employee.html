@@ -92,7 +92,7 @@
         </div>
     </aside>
       <main class="main">
-        <div class="top-nav bg-white">
+        <div class="top-nav bg-white justify-content-end">
           <div class="sitepanel-toggler for-mobile">
               <div class="close">
                   <span></span>
@@ -103,14 +103,14 @@
                   <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
               </div>
           </div>
-          <div class="search-form d-none d-md-block">
+          <!-- <div class="search-form d-none d-md-block">
               <form action="">
                   <div class="form-group">
                       <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
                       <i class="icon icon-search-form"></i>
                   </div>
               </form>
-          </div>
+          </div> -->
           <div class="about-profile">
               <div class="d-none d-md-block">
                   <button type="button" class="btn ouline-white" data-bs-toggle="modal"
@@ -154,7 +154,7 @@
                   <div>
                     <button type="button" class="btn ouline-white btn-fill me-md-3 wsm-100" data-bs-toggle="modal"
                       data-bs-target="#addEmployee">Add New Employee</button>
-                    <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0">Upload CSV</button>
+                      <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload Bulk</button>
                   </div>
                 </div>
                 <ul class="nav nav-tabs my-3" id="myTab" role="tablist">
@@ -897,6 +897,38 @@ aria-labelledby="interviewLabel" aria-hidden="true">
     </div>
   </div>
 </div>
+</div>
+<div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="uploadModalLabel">Add New User</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body upload-box">
+        <div class="form-group">
+          <label for="fileField" class="attachment">
+            <div class="row btn-file">
+              <div class="btn-file__preview"></div>
+              <div class="btn-file__actions">
+                <div class="btn-file__actions__item col-xs-12 text-center">
+                  <div class="btn-file__actions__item--shadow">
+                    Upload File
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input name="file" type="file" id="fileField">
+          </label>
+        </div>
+        <a href="" class="text-decoration-none fw-600 text-uppercase">Download Template</a>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-primary text-uppercase">Add</button>
+        <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
 </div>
   </section>
 

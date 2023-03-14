@@ -105,7 +105,7 @@
         </div>
       </aside>
       <main class="main">
-        <div class="top-nav bg-white">
+        <div class="top-nav bg-white justify-content-end">
           <div class="sitepanel-toggler for-mobile">
             <div class="close">
               <span></span>
@@ -116,14 +116,14 @@
               <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
             </div>
           </div>
-          <div class="search-form d-none d-md-block">
+          <!-- <div class="search-form d-none d-md-block">
             <form action="">
               <div class="form-group">
                 <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
                 <i class="icon icon-search-form"></i>
               </div>
             </form>
-          </div>
+          </div> -->
           <div class="about-profile">
             <div class="d-none d-md-block">
               <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
@@ -161,6 +161,7 @@
             <div class="d-flex align-items-md-center flex-colume-sm mt-md-3 wsm-100 d-block ms-md-auto">
               <button type="button" class="btn ouline-white me-md-3 mt-3 wsm-100 mt-md-0"><i
                   class="icon icon-download me-2"></i>Download</button>
+                  <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload Bulk</button>
               <button type="button" class="btn ouline-white btn-fill me-md-3 mt-3 mt-md-0" data-bs-toggle="modal"
               data-bs-target="#leftBoxModal">Add new score</button>
             </div>
@@ -361,8 +362,7 @@
               <label for="full-name" class="fw-bold mb-2 mt-4">Project Date</label>
               <input type="date" placeholder="Project Date" class="d-block border border-2 rounded w-100 py-2 px-3">
               <div class="uploadfile mt-3">
-                <div class="text"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-upload"></i>
-                  Attachments</label></div>
+                <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
                 <input id="fileupload" type="file" class="fileupload">
               </div>
               <label for="full-name" class="fw-bold mb-2 mt-4">Percentage of Completion</label>
@@ -645,6 +645,38 @@ aria-labelledby="interviewLabel" aria-hidden="true">
     </div>
   </div>
 </div>
+</div>
+<div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="uploadModalLabel">Add New User</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body upload-box">
+        <div class="form-group">
+          <label for="fileField" class="attachment">
+            <div class="row btn-file">
+              <div class="btn-file__preview"></div>
+              <div class="btn-file__actions">
+                <div class="btn-file__actions__item col-xs-12 text-center">
+                  <div class="btn-file__actions__item--shadow">
+                    Upload File
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input name="file" type="file" id="fileField">
+          </label>
+        </div>
+        <a href="" class="text-decoration-none fw-600 text-uppercase">Download Template</a>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-primary text-uppercase">Add</button>
+        <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
 </div>
   </section>
 

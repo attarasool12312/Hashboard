@@ -106,7 +106,7 @@
         </div>
       </aside>
       <main class="main">
-        <div class="top-nav bg-white">
+        <div class="top-nav bg-white justify-content-end">
           <div class="sitepanel-toggler for-mobile">
             <div class="close">
               <span></span>
@@ -117,14 +117,14 @@
               <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
             </div>
           </div>
-          <div class="search-form d-none d-md-block">
+          <!-- <div class="search-form d-none d-md-block">
             <form action="">
               <div class="form-group">
                 <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
                 <i class="icon icon-search-form"></i>
               </div>
             </form>
-          </div>
+          </div> -->
           <div class="about-profile">
             <div class="d-none d-md-block">
               <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
@@ -1201,15 +1201,15 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="posModalLabel">Add New PO</h5>
+            <h5 class="modal-title" id="posModalLabel">Add New COC</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body upload-files">
             <form>
               <div class="row">
                 <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">PO reference </label>
-                  <input type="text" placeholder="PO-0-00001" class="d-block border border-2 rounded w-100 py-2 px-3">
+                  <label for="full-name" class="fw-bold mb-2 mt-4">COC reference</label>
+                  <input type="text" placeholder="COC-0-00001" class="d-block border border-2 rounded w-100 py-2 px-3">
                 </div>
               </div>
               <label for="full-name" class="fw-bold mb-2 mt-4">Select Customer</label>
@@ -1235,43 +1235,40 @@
               </select>
               <div class="row">
                 <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">PO Amount</label>
+                  <label for="full-name" class="fw-bold mb-2 mt-4">COC Amount</label>
                   <input type="text" placeholder="Amount" class="d-block border border-2 rounded w-100 py-2 px-3">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">Item name</label>
-                  <input type="text" placeholder="Item Name" class="d-block border border-2 rounded w-100 py-2 px-3">
                 </div>
                 <div class="col-md-6">
                   <label for="full-name" class="fw-bold mb-2 mt-4">Select Currency</label>
-                  <select name="Member" id="Member"
-                    class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+                  <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
                     <option value="Member">Currency</option>
                     <option value="saab">Saab</option>
                     <option value="opel">Opel</option>
                     <option value="audi">Audi</option>
                   </select>
-                  <label for="full-name" class="fw-bold mb-2 mt-4">Quantity</label>
-                  <select name="Member" id="Member"
-                    class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                    <option value="Member">Quantity</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <a href="" class="d-block text-decoration-none text-light-gray mt-3">+ Add More Item</a>
-                  <label for="full-name" class="fw-bold mb-2 mt-4">Vendor Name</label>
-                  <input type="text" placeholder="Vendor Name" class="d-block border border-2 rounded w-100 py-2 px-3">
                 </div>
               </div>
-              <div class="row">
+              <label for="full-name" class="fw-bold mb-2 mt-4">Scope scope</label>
+              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+                <option value="Member">Select scope</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <div class="uploadfile">
+                <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
+                <input id="fileupload" type="file" class="fileupload">
+              </div>
+              <div class="row align-items-center">
                 <div class="col-md-6">
                   <label for="full-name" class="fw-bold mb-2 mt-4">Date</label>
                   <input type="date" placeholder="select date" class="d-block border border-2 rounded w-100 py-2 px-3">
                 </div>
                 <div class="col-md-6">
-                  <a href="" class="text-light-gray d-block text-decoration-none fs-4 mt-5"><i
-                      class="icon icon-link"></i> Attachments</a>
+                  <div class="uploadfile mt-57">
+                    <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
+                    <input id="fileupload" type="file" class="fileupload">
+                  </div>
                 </div>
               </div>
             </form>

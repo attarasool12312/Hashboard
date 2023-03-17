@@ -537,6 +537,13 @@ i[class*=h-icon-] {
   height: 24px;
 }
 
+.icon-light-gray-plus {
+  display: inline-block;
+  background-image: url("../images/icons/light-gray-plus.svg");
+  width: 24px;
+  height: 24px;
+}
+
 .icon-avarage-incom {
   display: inline-block;
   background-image: url("../images/icons/avarage-incom.svg");
@@ -2049,6 +2056,13 @@ i[class*=h-icon-] {
   height: 17px;
 }
 
+.icon-tag-cancel {
+  display: inline-block;
+  background-image: url("../images/icons/tag-cancel.svg");
+  width: 17px;
+  height: 17px;
+}
+
 .icon-editable-text {
   display: inline-block;
   background-image: url("../images/icons/editable-text.svg");
@@ -3252,6 +3266,14 @@ h6.text-sm {
 
 .bg-chart-info {
   background-color: #775DA6;
+}
+
+.about-profile .admin-notification .dropdown-toggle::after {
+  display: none;
+}
+.about-profile .admin-notification .dropdown-menu {
+  min-width: 18rem;
+  transform: translate(-100px, 39px) !important;
 }
 
 /*--------------*\

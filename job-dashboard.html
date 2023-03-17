@@ -129,7 +129,11 @@
             <div class="heading">
               <h1>Dashboard</h1>
             </div>
-            <button type="button" class="btn ouline-white"><i class="icon icon-plus"></i> Getting Started</button>
+            <div>
+              <button type="button" class="btn ouline-white"><i class="icon icon-plus"></i> Getting Started</button>
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0" data-bs-toggle="modal"
+                                data-bs-target="#chartMenu">+ Add Chart</button>
+            </div>
           </div>
           <div class="row">
             <div class="col-md-9 mb-4">
@@ -1099,6 +1103,265 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   </div>
 </div>
 </div>
+
+<!-- ****************** -->
+
+<div class="modal right fade" id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel" aria-hidden="true">
+  <div class="modal-dialog width-70 wsm-95">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Chart Menu</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body chart-popup">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="Radialbar-tab" data-bs-toggle="tab" data-bs-target="#Radialbar" type="button"
+                  role="tab" aria-controls="Radialbar" aria-selected="true">
+                  <p class="text-light-gray">Radialbar</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Scatter-tab" data-bs-toggle="tab" data-bs-target="#Scatter" type="button"
+                  role="tab" aria-controls="Scatter" aria-selected="false">
+                  <p class="text-light-gray">Scatter</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Line-tab" data-bs-toggle="tab" data-bs-target="#Line" type="button"
+                  role="tab" aria-controls="Line" aria-selected="false">
+                  <p class="text-light-gray">Line</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Area-tab" data-bs-toggle="tab" data-bs-target="#Area" type="button"
+                  role="tab" aria-controls="Area" aria-selected="false">
+                  <p class="text-light-gray">Area</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Radar-tab" data-bs-toggle="tab" data-bs-target="#Radar" type="button"
+                  role="tab" aria-controls="Radar" aria-selected="false">
+                  <p class="text-light-gray">Radar</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Map-tab" data-bs-toggle="tab" data-bs-target="#Map" type="button"
+                  role="tab" aria-controls="Map" aria-selected="false">
+                  <p class="text-light-gray">Heat Map</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Donut-tab" data-bs-toggle="tab" data-bs-target="#Donut" type="button"
+                  role="tab" aria-controls="Donut" aria-selected="false">
+                  <p class="text-light-gray">Donut</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Pies-tab" data-bs-toggle="tab" data-bs-target="#Pies" type="button"
+                  role="tab" aria-controls="Pies" aria-selected="false">
+                  <p class="text-light-gray">Pies</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Perfomance-tab" data-bs-toggle="tab" data-bs-target="#Perfomance" type="button"
+                  role="tab" aria-controls="Perfomance" aria-selected="false">
+                  <p class="text-light-gray">Perfomance</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Basic-tab" data-bs-toggle="tab" data-bs-target="#Basic" type="button"
+                  role="tab" aria-controls="Basic" aria-selected="false">
+                  <p class="text-light-gray">Columns Basic</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Items-tab" data-bs-toggle="tab" data-bs-target="#Items" type="button"
+                  role="tab" aria-controls="Items" aria-selected="false">
+                  <p class="text-light-gray">Columns Items</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Mixed-tab" data-bs-toggle="tab" data-bs-target="#Mixed" type="button"
+                  role="tab" aria-controls="Mixed" aria-selected="false">
+                  <p class="text-light-gray">Columns Mixed</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Candlestick-tab" data-bs-toggle="tab" data-bs-target="#Candlestick" type="button"
+                  role="tab" aria-controls="Candlestick" aria-selected="false">
+                  <p class="text-light-gray">Columns Candlestick</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Nagetine-tab" data-bs-toggle="tab" data-bs-target="#Nagetine" type="button"
+                  role="tab" aria-controls="Nagetine" aria-selected="false">
+                  <p class="text-light-gray">Columns With Nagetine Values</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Multiple-tab" data-bs-toggle="tab" data-bs-target="#Multiple" type="button"
+                  role="tab" aria-controls="Multiple" aria-selected="false">
+                  <p class="text-light-gray">Columns Multiple</p>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Stacked-tab" data-bs-toggle="tab" data-bs-target="#Stacked" type="button"
+                  role="tab" aria-controls="Stacked" aria-selected="false">
+                  <p class="text-light-gray">Columns Stacked</p>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9">
+            <div class="tab-content mt-4">
+              <div class="tab-pane active" id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div>
+                      <canvas id="Radialbar-1" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div>
+                      <canvas id="Radialbar-2" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane " id="Scatter" role="tabpanel" aria-labelledby="Scatter-tab">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div>
+                      <canvas id="invoiceBars" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <canvas id="invoiceBars1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane " id="Line" role="tabpanel" aria-labelledby="Line-tab">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div>
+                      <canvas id="lineChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308" height="197"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <canvas id="lineChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308" height="197"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="Area" role="tabpanel" aria-labelledby="Area-tab">
+                <div class="row">
+                  <div class="col-md-6">
+                    <canvas id="areaChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250" width="630"></canvas>
+                  </div>
+                  <div class="col-md-6">
+                    <canvas id="areaChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250" width="630"></canvas>
+                  </div>
+                </div>
+            </div>
+            <div class="tab-pane " id="Radar" role="tabpanel" aria-labelledby="Radar-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <div>
+                    <canvas id="radarChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <canvas id="radarChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane " id="Donut" role="tabpanel" aria-labelledby="Donut-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <div>
+                    <canvas id="dountMenuChart" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <canvas id="dountMenuChart1" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="Pies" role="tabpanel" aria-labelledby="Pies-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <div>
+                    <canvas id="pieChart" class="wsm-100 w-100" style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278" height="278"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="Basic" role="tabpanel" aria-labelledby="Basic-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <div>
+                    <canvas id="barChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <canvas id="barChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <div>
+                    <canvas id="barChart2" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="Multiple" role="tabpanel" aria-labelledby="Multiple-tab">
+              <div class="row">
+                <div class="col-md-8">
+                  <div>
+                    <canvas id="doubleBarChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                  </div>
+                </div>
+                <div class="col-md-8 mt-4">
+                  <div>
+                    <canvas id="doubleBarChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="Stacked" role="tabpanel" aria-labelledby="Stacked-tab">
+              <div class="row">
+                <div class="col-md-8">
+                  <div>
+                    <canvas id="stackedChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 215px; width: 631px;" width="631" height="215"></canvas>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-fill px-5 py-2 text-uppercase wsm-100">Update</button>
+        <button type="button" class="btn bg-light px-4 py-2 text-uppercase wsm-100"
+          data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ******************** -->
   </section>
   <!-- JavaScript
 ================================================== -->
@@ -1106,9 +1369,9 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
-  <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/graphs.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/graphs-popup.js"></script>
+  <script src="./assets/js/graphs.js"></script>
   <script>
     $('.tab-click').click(function (e) {
       e.preventDefault();
@@ -1149,6 +1412,197 @@ aria-labelledby="interviewLabel" aria-hidden="true">
           cutoutPercentage: 32
         },
       });
+
+      // ***************
+
+      const workplace = document.getElementById("employeeGraph");
+
+            const bar21 = new Chart(workplace, {
+
+                type: "bar",
+                data: {
+                    labels: [
+                        "Jan",
+                        "Fab",
+                        "Mar",
+                        "Apr",
+                        "May",
+                        "Jun",
+                        "Jul",
+                        "Aug",
+                        "Sep",
+                        "Oct",
+                        "Nov",
+                        "Dec",
+                    ],
+                    datasets: [
+                        {
+                            label: 'Permanent',
+                            data: [200, 700, 500, 100, 800, 1200, 300, 1100, 400, 600, 200, 900],
+                            borderWidth: 0,
+                            barThickness: 20,
+                            backgroundColor: [
+                                "#64BF92"
+                            ],
+                        },
+                        {
+                            label: 'Contract',
+                            data: [200, 700, 500, 100, 800, 1200, 300, 1100, 400, 600, 200, 900],
+                            borderWidth: 0,
+                            barThickness: 20,
+                            backgroundColor: [
+                                "#5473DE",
+                            ],
+                        }
+                    ],
+                },
+                options: {
+                    responsive: true,
+
+                    scales: {
+                        x: {
+                            stacked: true,
+                            display: true,
+                            grid: {
+                                drawOnChartArea: false,
+                            },
+                            ticks: {
+                                display: true,
+                            },
+                        },
+                        y: {
+                            stacked: true,
+                            display: true,
+                            grid: {
+                                drawOnChartArea: true,
+                            },
+                            ticks: {
+                                display: true,
+                            },
+                        },
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            labels: {
+                                usePointStyle: true,
+                                boxWidth: 6
+                            }
+                        }
+                    },
+                },
+
+            });
+
+
+
+            const workDon = document.getElementById('workDountChart');
+
+            const bar22 = new Chart(workDon, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Present', 'Medical Leave', 'Unpaid Leave', 'Absent'],
+                    datasets: [{
+                        label: '# of Votes',
+                        backgroundColor: ['#62BF92', '#7159EF', '#E4C261', '#E67270'],
+                        borderRadius: 2,
+                        data: [70, 20, 5, 5,],
+                        borderWidth: 0,
+                        barThickness: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                usePointStyle: true,
+                                boxWidth: 8
+                            }
+                        }
+                    },
+                    elements: {
+                        customCutout: true,
+                    },
+                    cutoutPercentage: 32
+                },
+            });
+
+
+            const overtime = document.getElementById("overtimeGraph");
+
+            const bar23 = new Chart(overtime, {
+
+                type: "bar",
+                data: {
+                    labels: [
+                        "Jan",
+                        "Fab",
+                        "Mar",
+                        "Apr",
+                        "May",
+                        "Jun"
+                    ],
+                    datasets: [
+                        {
+                            label: 'Basic Salary',
+                            data: [700, 500, 800, 1200, 300, 100],
+                            borderWidth: 0,
+                            barThickness: 25,
+                            backgroundColor: [
+                                "#5374DF"
+                            ],
+                            order: 2
+                        },
+                        {
+                            label: 'Overtime',
+                            data: [700, 500, 700, 1200, 300, 100],
+                            borderColor: "#E1BD67",
+                            backgroundColor: "#ffffff",
+                            type: 'line',
+                            order: 1,
+                        }
+                    ],
+                },
+                options: {
+                    responsive: true,
+
+                    scales: {
+                        x: {
+                            display: true,
+                            grid: {
+                                drawOnChartArea: false,
+                            },
+                            ticks: {
+                                display: true,
+                            },
+                        },
+                        y: {
+                            display: true,
+                            gridLines: {
+                                drawOnChartArea: true,
+                                borderDash: [8, 4],
+                            },
+                            ticks: {
+                                display: true,
+                            },
+                        },
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            labels: {
+                                usePointStyle: true,
+                                boxWidth: 3
+                            }
+                        }
+                    },
+                },
+
+            });
+
+            // *************
     };
   </script>
 </body>

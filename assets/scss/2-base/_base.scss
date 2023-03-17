@@ -576,3 +576,14 @@ h6 {
 .bg-chart-info{
   background-color: #775DA6;
 }
+.about-profile{
+  .admin-notification{
+    .dropdown-toggle::after{
+      display: none;
+    }
+    .dropdown-menu{
+      min-width: 18rem;
+      transform: translate(-100px, 39px) !important;
+    }
+  }
+}

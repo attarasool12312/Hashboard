@@ -126,11 +126,33 @@
             </form>
           </div> -->
           <div class="about-profile">
-            <div class="d-none d-md-block">
+            <div class="d-none d-md-flex align-items-center">
               <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
                   class="icon icon-plus"></i> Add</button>
               <a href=""><i class="icon icon-question"></i></a>
-              <a href="./pm-account-activities.html"><i class="icon icon-notification"></i></a>
+              <div class="dropdown select-dropdown admin-notification">
+                <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
+                  <i class="icon icon-notification"></i>
+                </button>
+                <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
+                  <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
+                    <p>Notification</p>
+                    <a href="./pm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
+                  </div>
+                  <div class="p-2 border-bottom">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                  <div class="p-2 border-bottom">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                  <div class="p-2">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                </ul>
+              </div>
             </div>
             <div class="dropdown select-dropdown admin-profile">
               <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -476,9 +498,45 @@
                           <div class="carousel-item active" data-bs-interval="10000">
                             <div class="row">
                               <div class="col-4">
-                                <canvas id="profileChart" class="w-100" style="display: block; box-sizing: border-box; height: 248px; width: 248px;" width="248" height="248"></canvas>
+                                <div class="w-100 text-end">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="true">
+                                      <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                      </div>
+                                    </button>
+                                    <ul class="dropdown-menu" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(24px, 18px);" data-popper-placement="bottom-start">
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                          Edit</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                          Delete</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div>
+                                  <canvas id="profileChart" class="w-100" style="display: block; box-sizing: border-box; height: 248px; width: 248px;" width="248" height="248"></canvas>
+                                </div>
                               </div>
                               <div class="col-4">
+                                <div class="w-100 text-end">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="true">
+                                      <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                      </div>
+                                    </button>
+                                    <ul class="dropdown-menu" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(24px, 18px);" data-popper-placement="bottom-start">
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                          Edit</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                          Delete</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
                                 <div>
                                   <canvas id="overPieChart"
                                     style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278"
@@ -495,6 +553,23 @@
                           <div class="carousel-item" data-bs-interval="2000">
                             <div class="row">
                               <div class="col-md-8">
+                                <div class="w-100 text-end">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="true">
+                                      <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                      </div>
+                                    </button>
+                                    <ul class="dropdown-menu" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(24px, 18px);" data-popper-placement="bottom-start">
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                          Edit</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                          Delete</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
                                 <div>
                                   <canvas id="sliderThreeChart_1" class="wsm-100" style="display: block; box-sizing: border-box; height: 356px; width: 1000px;" width="1000" height="356"></canvas>
                                 </div>
@@ -509,10 +584,48 @@
                           <div class="carousel-item">
                             <div class="row">
                               <div class="col-4">
-                                <canvas id="sliderThreeChart" class="w-100 h-100" style="display: block; box-sizing: border-box; height: 384px; width: 384px;" width="384" height="384"></canvas>
+                                <div class="w-100 text-end">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="true">
+                                      <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                      </div>
+                                    </button>
+                                    <ul class="dropdown-menu" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(24px, 18px);" data-popper-placement="bottom-start">
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                          Edit</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                          Delete</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div>
+                                  <canvas id="sliderThreeChart" class="w-100 h-100" style="display: block; box-sizing: border-box; height: 384px; width: 384px;" width="384" height="384"></canvas>
+                                </div>
                               </div>
                               <div class="col-4">
+                                <div class="w-100 text-end">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="true">
+                                      <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                      </div>
+                                    </button>
+                                    <ul class="dropdown-menu" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(24px, 18px);" data-popper-placement="bottom-start">
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                          Edit</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                          Delete</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div>
                                   <canvas id="sliderThreeChart1" class="wsm-100 w-100 h-100" style="display: block; box-sizing: border-box; height: 384px; width: 384px;" width="384" height="384"></canvas>
+                                </div>
                               </div>
                               <div class="col-4">
                                 <div class="w-100 h-100 d-flex align-items-center justify-content-center">
@@ -4590,9 +4703,9 @@ const sliderThreeChart = document.getElementById("sliderThreeChart_1");
       },
     });
 
-const sliderTwoChart = document.getElementById('sliderTwoChart');
+const sliderThreeChart2 = document.getElementById('sliderThreeChart');
 
-const sliderTwoChart_1 = new Chart(sliderTwoChart, {
+const sliderThreeChart_2 = new Chart(sliderThreeChart2, {
   type: 'doughnut',
   data: {
     labels: ['Strategy'],

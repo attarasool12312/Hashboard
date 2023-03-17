@@ -102,9 +102,31 @@
                 <li><a class="dropdown-item" href="#">SM</a></li>
               </ul>
             </div>
-            <div class="d-none d-md-block ms-md-3">
+            <div class="d-none d-md-flex align-items-center ms-md-3">
               <a href=""><i class="icon icon-question"></i></a>
-              <a href="./admin-account-activities.html"><i class="icon icon-notification"></i></a>
+              <div class="dropdown select-dropdown admin-notification">
+                <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
+                  <i class="icon icon-notification"></i>
+                </button>
+                <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
+                  <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
+                    <p>Notification</p>
+                    <a href="./admin-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
+                  </div>
+                  <div class="p-2 border-bottom">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                  <div class="p-2 border-bottom">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                  <div class="p-2">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                </ul>
+              </div>
             </div>
             <div class="dropdown select-dropdown admin-profile">
               <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button"
@@ -227,6 +249,21 @@
                     <div class="chart-title">
                       <h5 class="fw-600">Performance Line Chart</h5>
                     </div>
+                    <div class="btn-group">
+                      <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="dots">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu" style="">
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                            Edit</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                            Delete</a></li>
+                      </ul>
+                    </div>
                   </div>
                   <div class="chart-content d-flex justify-content-between">
                     <div class="chart-grap d-flex align-items-end">
@@ -245,16 +282,33 @@
                   <div class="chart-title">
                     <h4 class="fw-600">Market Overview</h4>
                   </div>
-                  <div class="dropdown select-dropdown">
-                    <button class="btn btn-secondary dropdown-toggle pe-4 mt-3 mt-md-0" type="button"
-                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Month Wise
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                  <div class="d-flex align-items-center">
+                    <div class="dropdown select-dropdown">
+                      <button class="btn btn-secondary dropdown-toggle pe-4 mt-3 mt-md-0" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Month Wise
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                    <div class="btn-group">
+                      <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="dots">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu" style="">
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                            Edit</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                            Delete</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div class="chart-head d-md-flex justify-content-between align-items-center mt-3">
@@ -725,6 +779,21 @@
                 <div class="chart-box h-100 d-flex justify-content-between flex-column">
                   <div class="chart-head mb-4 d-md-flex justify-content-between align-items-center">
                     <h4 class="fw-600">Apps Active users</h4>
+                    <div class="btn-group">
+                      <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="dots">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu" style="">
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                            Edit</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                            Delete</a></li>
+                      </ul>
+                    </div>
                   </div>
                   <div class="chart-content">
                     <div class="chart-grap">
@@ -744,19 +813,36 @@
                     <div class="chart-title">
                       <h4 class="fw-600">Sale Reports</h4>
                     </div>
-                    <div class="d-flex justify-content-between flex-column">
-                      <div class="d-flex align-items-start justify-content-md-end  mt-3 mt-md-0 mb-md-0 mb-3">
-                        <div class="dropdown select-dropdown">
-                          <button class="btn btn-secondary dropdown-toggle pe-4 mt-3 mt-md-0" type="button"
-                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Month Wise
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex justify-content-between flex-column">
+                        <div class="d-flex align-items-start justify-content-md-end  mt-3 mt-md-0 mb-md-0 mb-3">
+                          <div class="dropdown select-dropdown">
+                            <button class="btn btn-secondary dropdown-toggle pe-4 mt-3 mt-md-0" type="button"
+                              id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Month Wise
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
                         </div>
+                      </div>
+                      <div class="btn-group">
+                        <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
+                          <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </button>
+                        <ul class="dropdown-menu" style="">
+                          <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                              Edit</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                              Delete</a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>

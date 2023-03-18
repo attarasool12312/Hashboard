@@ -163,6 +163,23 @@
         }
     }
 }
+
+.employees-nav1{
+    border-radius: 8px;
+    padding: 5px;
+
+    li {
+        button {
+            &.active{
+                border: none !important;
+                color: #fff !important;
+                border-radius: 8px;
+                background-color: #775DA6 !important;  
+            } 
+        }
+    }
+
+}
 .about-tab{
     .nav{
         flex-flow: column;

@@ -133,6 +133,9 @@ h6 {
 .container-xl {
   max-width: 1164px !important;
 }
+.container-xxl {
+  max-width: 1200px !important;
+}
 
 .mb-32 {
   margin-bottom: 32px;
@@ -390,6 +393,9 @@ h6 {
   max-width: 50% !important;
   width: 50% !important;
 }
+.width-max-50 {
+  max-width: 50% !important;
+}
 
 .width-70 {
   max-width: 70% !important;
@@ -586,4 +592,14 @@ h6 {
       transform: translate(-100px, 39px) !important;
     }
   }
+}
+.col-30{
+  width: 30%;
+  flex: 0 0 auto;
+}
+.w-0{
+  min-width: 0 !important;
+}
+.opacity-0{
+  opacity: 0;
 }

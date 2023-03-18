@@ -183,14 +183,15 @@
     width: 100% !important;
     button{
       padding: 5px;
+      width: 100%;
       img{
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
       }
       h6{
-        font-size: 12px;
-        margin-left: 5px;
+        font-size: 15px;
       }
+
     }
   }
   .nav-tabs li + li{
@@ -198,8 +199,9 @@
   }
   .nav-tabs li button.active{
     border: none !important;
-    background-color: #775DA6 !important;
-    color: #fff !important;
+    background-color: #EFF4FB !important;
+    color: #000 !important;
     width: 100%;
+    border-radius: 0;
   }
 }

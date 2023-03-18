@@ -526,8 +526,36 @@ i[class*=h-icon-] {
 .icon-share {
   display: inline-block;
   background-image: url("../images/icons/share.svg");
+  width: 22px;
+  height: 20px;
+}
+
+.icon-tab-button-icon {
+  display: inline-block;
+  background-image: url("../images/icons/tab-button-icon.svg");
   width: 24px;
   height: 24px;
+}
+
+.icon-send-message-blue {
+  display: inline-block;
+  background-image: url("../images/icons/send-message-blue.svg");
+  width: 18px;
+  height: 17px;
+}
+
+.icon-send-message-white {
+  display: inline-block;
+  background-image: url("../images/icons/send-message-white.svg");
+  width: 18px;
+  height: 17px;
+}
+
+.icon-x-cancel {
+  display: inline-block;
+  background-image: url("../images/icons/x-cancel.svg");
+  width: 12px;
+  height: 14px;
 }
 
 .icon-emojes {
@@ -2811,6 +2839,10 @@ h6.text-sm {
   max-width: 1164px !important;
 }
 
+.container-xxl {
+  max-width: 1200px !important;
+}
+
 .mb-32 {
   margin-bottom: 32px;
 }
@@ -3072,6 +3104,10 @@ h6.text-sm {
   width: 50% !important;
 }
 
+.width-max-50 {
+  max-width: 50% !important;
+}
+
 .width-70 {
   max-width: 70% !important;
   width: 70% !important;
@@ -3274,6 +3310,19 @@ h6.text-sm {
 .about-profile .admin-notification .dropdown-menu {
   min-width: 18rem;
   transform: translate(-100px, 39px) !important;
+}
+
+.col-30 {
+  width: 30%;
+  flex: 0 0 auto;
+}
+
+.w-0 {
+  min-width: 0 !important;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 /*--------------*\
@@ -4542,6 +4591,17 @@ ul.head-btn .slider-btn .btn.ouline-white {
   background-color: #fff !important;
 }
 
+.employees-nav1 {
+  border-radius: 8px;
+  padding: 5px;
+}
+.employees-nav1 li button.active {
+  border: none !important;
+  color: #fff !important;
+  border-radius: 8px;
+  background-color: #775DA6 !important;
+}
+
 .about-tab .nav {
   flex-flow: column;
 }
@@ -4894,6 +4954,17 @@ ul.head-btn .slider-btn .btn.ouline-white {
 }
 .sitepanel-toggler .close span + span {
   margin-top: 2px;
+}
+
+.trending-section .carousel-control-next, .trending-section .carousel-control-prev {
+  width: fit-content;
+}
+.trending-section .carousel-control-next .carousel-control-next-icon, .trending-section .carousel-control-prev .carousel-control-next-icon {
+  background-image: url("../images/icons/right-arrow-fill.svg");
+}
+.trending-section .carousel-control-next .carousel-control-prev-icon, .trending-section .carousel-control-prev .carousel-control-prev-icon {
+  background-image: url("../images/icons/right-arrow-fill.svg");
+  transform: rotate(180deg);
 }
 
 .side-panel-dropdown {
@@ -7127,19 +7198,96 @@ header nav {
   padding: 10px;
   display: none;
 }
-.right-content-1 .contact-profile {
-  background-color: #775DA6;
-  border-radius: 20px;
-  text-align: center;
-  padding: 30px;
-  color: #fff;
+.right-content-1 .profile-side-bar {
+  background-color: #F9F9F9;
+  width: 100%;
+  padding-bottom: 10px;
 }
-.right-content-1 .contact-profile img {
+.right-content-1 .profile-side-bar .profile-top-content {
+  background-image: url("../images/right-side-bar.png");
+  padding: 70px 30px 30px 30px;
+  background-size: cover;
+}
+.right-content-1 .profile-side-bar .profile-top-content .content-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 95, 183, 0.3);
+}
+.right-content-1 .profile-side-bar .profile-top-content .content-card img {
+  border-radius: 50%;
+  position: absolute;
   width: 70px;
   height: 70px;
-  border-radius: 50%;
+  top: -35px;
+  left: 37%;
   border: 5px solid #fff;
-  margin-bottom: 20px;
+}
+.right-content-1 .profile-side-bar .profile-top-content .content-card h6 {
+  margin-top: 25px;
+}
+.right-content-1 .profile-side-bar .profile-top-content .content-card p {
+  margin: 15px 0;
+}
+.right-content-1 .profile-side-bar .profile-bottom-content {
+  background-color: #775DA6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+  border-radius: 15px;
+}
+.right-content-1 .profile-side-bar .profile-bottom-content div {
+  text-align: center;
+  color: #fff;
+}
+
+.profile-side-bar {
+  background-color: #F9F9F9;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.profile-side-bar .profile-top-content {
+  background-image: url("../images/right-side-bar.png");
+  padding: 70px 30px 30px 30px;
+  background-size: cover;
+}
+.profile-side-bar .profile-top-content .content-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 95, 183, 0.3);
+}
+.profile-side-bar .profile-top-content .content-card img {
+  border-radius: 50%;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: -35px;
+  left: 37%;
+  border: 5px solid #fff;
+}
+.profile-side-bar .profile-top-content .content-card h6 {
+  margin-top: 25px;
+}
+.profile-side-bar .profile-top-content .content-card p {
+  margin: 15px 0;
+}
+.profile-side-bar .profile-bottom-content {
+  background-color: #775DA6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+  border-radius: 15px;
+}
+.profile-side-bar .profile-bottom-content div {
+  text-align: center;
+  color: #fff;
 }
 
 .delivery-card {
@@ -8330,23 +8478,24 @@ body {
 }
 .aside-2 .nav-tabs li button {
   padding: 5px;
+  width: 100%;
 }
 .aside-2 .nav-tabs li button img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
 }
 .aside-2 .nav-tabs li button h6 {
-  font-size: 12px;
-  margin-left: 5px;
+  font-size: 15px;
 }
 .aside-2 .nav-tabs li + li {
   margin: 0;
 }
 .aside-2 .nav-tabs li button.active {
   border: none !important;
-  background-color: #775DA6 !important;
-  color: #fff !important;
+  background-color: #EFF4FB !important;
+  color: #000 !important;
   width: 100%;
+  border-radius: 0;
 }
 
 .fc-unthemed {
@@ -8509,21 +8658,19 @@ body {
 .post-channel-profile {
   padding-left: 40px;
 }
-.post-channel-profile input[type=checkbox] + .box:after {
-  border-radius: 50%;
+.post-channel-profile input[type=checkbox]:checked + .box:after {
+  background-color: #775DA6;
+  border-color: #775DA6;
 }
 .post-channel-profile .check-tasks .relative > .absolute .box:before {
-  top: 13px;
+  top: 20px;
 }
 .post-channel-profile .check-tasks .relative > .absolute .box:after {
-  top: 16px;
+  top: 23px;
 }
 .post-channel-profile img {
-  border: 3px solid #775da6;
-  border-radius: 50%;
-  padding: 3px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: relative;
 }
 .post-channel-profile img::before {

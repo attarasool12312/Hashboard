@@ -195,6 +195,9 @@
                     <li class="nav-item m-0" role="presentation">
                       <button class="nav-link text-uppercase" id="Category-tab" data-bs-toggle="tab" data-bs-target="#Category" type="button" role="tab" aria-controls="Category" aria-selected="false">Portfolio</button>
                     </li>
+                    <li class="nav-item m-0" role="presentation">
+                      <button class="nav-link text-uppercase" id="scope-tab" data-bs-toggle="tab" data-bs-target="#scope" type="button" role="tab" aria-controls="scope" aria-selected="false">Product and Services</button>
+                    </li>
                   <h4 class="fw-600 mt-4">Permissions</h4>
                   <li class="nav-item" role="presentation">
                     <button class="nav-link text-uppercase" id="Permission-tab" data-bs-toggle="tab" data-bs-target="#Permission" type="button" role="tab" aria-controls="Permission" aria-selected="true">Create Permission</button>
@@ -1542,6 +1545,59 @@
                     </table>
                   </div>
                 </div>
+                <div class="tab-pane" id="scope" role="tabpanel" aria-labelledby="scope-tab">
+                  <div class="page-main-title">
+                    <div class="heading">
+                      <h1>Product and Services</h1>
+                    </div>
+                  </div>
+                  <label for="name" class="fw-bold mt-3 mb-2">Add New Product and Services</label>
+                  <input type="text" name="name" id="name" placeholder="Enter a Product and Services Name" class="d-block w-100 border border-2 rounded px-4 py-2">
+                  <div class="text-end w-100">
+                    <button class="btn btn-fill wsm-100 mt-3">Add</button>
+                  </div>
+                  <div class="invoice-table tablepanel mt-3">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">Product and Services Name</th>
+                          <th scope="col">Product and Services ID</th>
+                          <th scope="col">Edit</th>
+                        </tr>
+                      </thead>
+                      <tbody class="right-content interest-body" style="display: table-row-group;">
+                        <tr>
+                          <td scope="row" data-label="Product and Services Name">
+                              <h6 class="ms-3 fw-500 text-sm">Mathilda Bell</h6>
+                          </td>
+                          <td data-label="Product and Services ID">PO-1</td>
+                          <td data-label="Edit"><a href="" class="text-decoration-none fw-600 text-light-gray" data-bs-toggle="modal" data-bs-target="#ScopeModal">Edit</a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Product and Services Name">
+                              <h6 class="ms-3 fw-500 text-sm">Ryan Stevens</h6>
+                          </td>
+                          <td data-label="Product and Services ID">PO-2</td>
+                          <td data-label="Edit"><a href="" class="text-decoration-none fw-600 text-light-gray" data-bs-toggle="modal" data-bs-target="#ScopeModal">Edit</a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Product and Services Name">
+                              <h6 class="ms-3 fw-500 text-sm">Loretta Myers</h6>
+                          </td>
+                          <td data-label="Product and Services ID">PO-3</td>
+                          <td data-label="Edit"><a href="" class="text-decoration-none fw-600 text-light-gray" data-bs-toggle="modal" data-bs-target="#ScopeModal">Edit</a></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Product and Services Name">
+                              <h6 class="ms-3 fw-500 text-sm">Carrie Aguilar</h6>
+                          </td>
+                          <td data-label="Product and Services ID">PO-4</td>
+                          <td data-label="Edit"><a href="" class="text-decoration-none fw-600 text-light-gray" data-bs-toggle="modal" data-bs-target="#ScopeModal">Edit</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1831,6 +1887,26 @@ aria-labelledby="interviewLabel" aria-hidden="true">
         <form>
           <label for="name" class="fw-bold mt-3 mb-2">Edit Category Name</label>
           <input type="text" name="name" id="name" placeholder="Edit Category Name" class="d-block w-100 border border-2 rounded px-4 py-2">
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-primary text-uppercase">Save</button>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cencel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="ScopeModal" tabindex="-1" aria-labelledby="ScopeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ScopeModalLabel">Edit Product and Services</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Edit Product and Services Name</label>
+          <input type="text" name="name" id="name" placeholder="Edit Product and Services Name" class="d-block w-100 border border-2 rounded px-4 py-2">
         </form>
       </div>
       <div class="modal-footer justify-content-between">

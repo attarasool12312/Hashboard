@@ -1,3 +1,556 @@
+const nagetineChart = document.getElementById("nagetineChart");
+
+const nagetineChart_1 = new Chart(nagetineChart, {
+  type: "bar",
+  data: {
+    labels: [
+      "X 01",
+      "X 02",
+      "X 03",
+      "X 04",
+      "X 05",
+      "X 06",
+      "X 07",
+      "X 08",
+      "X 09",
+      "X 10",
+      "X 11",
+      "X 12",
+    ],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [23, -13, 9, -12, 33, -23, 19, -4, 23, -19, 4, 30],
+        borderWidth: 0,
+        backgroundColor: ["#7DC066", "#E5646C"],
+        barThickness: 15,
+        borderRadius: 10,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+
+    scales: {
+      x: {
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: true,
+        },
+      },
+      y: {
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: false,
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  },
+});
+
+const nagetineChart1 = document.getElementById("nagetineChart-1");
+
+const nagetineChart_2 = new Chart(nagetineChart1, {
+  type: "bar",
+  data: {
+    labels: [
+      "X 01",
+      "X 02",
+      "X 03",
+      "X 04",
+      "X 05",
+      "X 06",
+      "X 07",
+      "X 08",
+      "X 09",
+      "X 10",
+      "X 11",
+      "X 12",
+    ],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [23, 9, 33, -13, -12, -23, 19, 23, 4, -4, -19, 30],
+        borderWidth: 0,
+        backgroundColor: ["#7DC066", "#E5646C"],
+        barThickness: 15,
+        borderRadius: 10,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+
+    scales: {
+      x: {
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: true,
+        },
+      },
+      y: {
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: false,
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  },
+});
+
+
+const itemsChart = document.getElementById("itemsChart");
+
+const itemsChart_1 = new Chart(itemsChart, {
+  type: "bar",
+  data: {
+    labels: [
+      "X 01",
+    ],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [50],
+        borderWidth: 0,
+        backgroundColor: ["#7DC066", "#E5646C"],
+        barThickness: 15,
+        borderRadius: 10,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+
+    scales: {
+      x: {
+        display: false,
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: true,
+        },
+      },
+      y: {
+        display: false,
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: false,
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  },
+});
+
+
+const itemsChart1 = document.getElementById("itemsChart-1");
+
+const itemsChart_2 = new Chart(itemsChart1, {
+
+  type: "bar",
+  data: {
+    labels: [
+      "Jan",
+      "Fab",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ],
+    datasets: [
+      {
+        label: 'Permanent',
+        data: [200],
+        borderWidth: 0,
+        barThickness: 15,
+        borderRadius: 30,
+        backgroundColor: ["#7DC066"],
+      },
+      {
+        label: 'Contract',
+        data: [200],
+        borderWidth: 0,
+        barThickness: 15,
+        borderRadius: 30,
+        backgroundColor: ["#0075FF"],
+      },
+      {
+        label: 'Contract',
+        data: [200],
+        borderWidth: 0,
+        barThickness: 15,
+        borderRadius: 30,
+        backgroundColor: ["#F3935D"],
+      }
+    ],
+  },
+  options: {
+    responsive: true,
+
+    scales: {
+      x: {
+        display: false,
+        stacked: true,
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: true,
+        },
+      },
+      y: {
+        display: false,
+        stacked: true,
+        grid: {
+          drawOnChartArea: true,
+        },
+        ticks: {
+          display: true,
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      }
+    },
+  },
+
+});
+
+const itemsChart2 = document.getElementById("itemsChart-2");
+
+const itemsChart_3 = new Chart(itemsChart2, {
+  type: "bar",
+  data: {
+    labels: [
+      "X 01",
+      "X 01",
+      "X 01",
+    ],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [50, 40, 30],
+        borderWidth: 0,
+        backgroundColor: ["#E5646C", "#7DC066", "#0075FF"],
+        barThickness: 15,
+        borderRadius: 10,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+
+    scales: {
+      x: {
+        display: false,
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: true,
+        },
+      },
+      y: {
+        display: false,
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: false,
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  },
+});
+
+const itemsChart4 = document.getElementById("itemsChart-3");
+
+const itemsChart_4 = new Chart(itemsChart4, {
+  type: "bar",
+  data: {
+    labels: [
+      "X 01",
+    ],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [50],
+        borderWidth: 0,
+        backgroundColor: ["#7DC066", "#E5646C"],
+        barThickness: 15,
+        borderRadius: 10,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    indexAxis: 'y',
+    scales: {
+      x: {
+        display: false,
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: true,
+        },
+      },
+      y: {
+        display: false,
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: false,
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  },
+});
+
+const itemsChart5 = document.getElementById("itemsChart-4");
+
+const itemsChart_5 = new Chart(itemsChart5, {
+
+  type: "bar",
+  data: {
+    labels: [
+      "Jan",
+    ],
+    datasets: [
+      {
+        label: 'Permanent',
+        data: [200],
+        borderWidth: 0,
+        barThickness: 15,
+        borderRadius: 30,
+        backgroundColor: ["#7DC066"],
+      },
+      {
+        label: 'Contract',
+        data: [200],
+        borderWidth: 0,
+        barThickness: 15,
+        borderRadius: 30,
+        backgroundColor: ["#0075FF"],
+      },
+      {
+        label: 'Contract',
+        data: [200],
+        borderWidth: 0,
+        barThickness: 15,
+        borderRadius: 30,
+        backgroundColor: ["#F3935D"],
+      }
+    ],
+  },
+  options: {
+    responsive: true,
+    indexAxis: 'y',
+    scales: {
+      x: {
+        display: false,
+        stacked: true,
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: true,
+        },
+      },
+      y: {
+        display: false,
+        stacked: true,
+        grid: {
+          drawOnChartArea: true,
+        },
+        ticks: {
+          display: true,
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      }
+    },
+  },
+
+});
+
+const itemsChart6 = document.getElementById("itemsChart-5");
+
+const itemsChart_6 = new Chart(itemsChart6, {
+  type: "bar",
+  data: {
+    labels: [
+      "X 01",
+      "X 01",
+      "X 01",
+    ],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [50, 40, 30],
+        borderWidth: 0,
+        backgroundColor: ["#E5646C", "#7DC066", "#0075FF"],
+        barThickness: 15,
+        borderRadius: 10,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    indexAxis: 'y',
+    scales: {
+      x: {
+        display: false,
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: true,
+        },
+      },
+      y: {
+        display: false,
+        grid: {
+          drawOnChartArea: false,
+        },
+        ticks: {
+          display: false,
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  },
+});
+
+const mixedChart = document.getElementById("mixedChart");
+
+            const mixedChart_1 = new Chart(mixedChart, {
+
+                type: "bar",
+                data: {
+                    labels: [
+                        "Jan",
+                        "Fab",
+                        "Mar",
+                        "Apr",
+                        "May",
+                        "Jun"
+                    ],
+                    datasets: [
+                        {
+                            label: 'Basic Salary',
+                            data: [700, 500, 800, 1200, 300, 100],
+                            borderWidth: 0,
+                            barThickness: 25,
+                            backgroundColor: "#5374DF",
+                            order: 2
+                        },
+                        {
+                            label: 'Overtime',
+                            data: [700, 500, 700, 1200, 300, 100],
+                            borderColor: "#E1BD67",
+                            backgroundColor: "#ffffff",
+                            type: 'line',
+                            order: 1,
+                        }
+                    ],
+                },
+                options: {
+                    responsive: true,
+
+                    scales: {
+                        x: {
+                            display: true,
+                            grid: {
+                                drawOnChartArea: false,
+                            },
+                            ticks: {
+                                display: true,
+                            },
+                        },
+                        y: {
+                            display: true,
+                            gridLines: {
+                                drawOnChartArea: true,
+                                borderDash: [8, 4],
+                            },
+                            ticks: {
+                                display: true,
+                            },
+                        },
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            labels: {
+                                usePointStyle: true,
+                                boxWidth: 3
+                            }
+                        }
+                    },
+                },
+
+            });
+
 const Radialbar = document.getElementById('Radialbar-1');
 
 const Radialbar_1 = new Chart(Radialbar, {
@@ -524,8 +1077,6 @@ const mapChart_1 = new Chart(mapChart, {
         }
       }
     },
-    scales: {
-    }
   },
 });
 
@@ -1079,3 +1630,4 @@ const stackedChart_2 = new Chart(stackedChart1, {
   },
 
 });
+

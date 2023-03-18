@@ -241,28 +241,28 @@ console.clear();
 //   TabHighlighter("ul.navbar-body li.active a");
 // });  
 // });
-window.onload = function () {
+// window.onload = function () {
 
-  var chart = new CanvasJS.Chart("chartContainer", {
-    animationEnabled: true,
-    theme: "light2", // "light1", "light2", "dark1", "dark2"
-    data: [{
-      type: "column",
-      color: "#775DA6",
-      legendMarkerColor: "grey",
-      dataPoints: [
-        { y: 0, label: "Older" },
-        { y: 1000, label: "Jan" },
-        { y: 2100, label: "Feb" },
-        { y: 1700, label: "Mar" },
-        { y: 7000, label: "Apr" },
-        { y: 2500, label: "Future" },
-      ]
-    }]
-  });
-  chart.render();
+//   var chart = new CanvasJS.Chart("chartContainer", {
+//     animationEnabled: true,
+//     theme: "light2", // "light1", "light2", "dark1", "dark2"
+//     data: [{
+//       type: "column",
+//       color: "#775DA6",
+//       legendMarkerColor: "grey",
+//       dataPoints: [
+//         { y: 0, label: "Older" },
+//         { y: 1000, label: "Jan" },
+//         { y: 2100, label: "Feb" },
+//         { y: 1700, label: "Mar" },
+//         { y: 7000, label: "Apr" },
+//         { y: 2500, label: "Future" },
+//       ]
+//     }]
+//   });
+//   chart.render();
 
-}
+// }
 
 
 

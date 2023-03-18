@@ -29,3 +29,16 @@
         }
     }
 }
+
+.trending-section{
+    .carousel-control-next, .carousel-control-prev{
+        width: fit-content;
+    .carousel-control-next-icon{
+        background-image: url($icons-path + "/right-arrow-fill.svg");
+    }
+    .carousel-control-prev-icon{
+        background-image: url($icons-path + "/right-arrow-fill.svg");
+        transform: rotate(180deg);
+    }
+    }
+}

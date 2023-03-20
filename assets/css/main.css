@@ -3099,6 +3099,14 @@ h6.text-sm {
   width: 100px;
 }
 
+.width-70px {
+  width: 70px;
+}
+
+.width-35px {
+  width: 35px;
+}
+
 .width-50 {
   max-width: 50% !important;
   width: 50% !important;
@@ -3118,6 +3126,15 @@ h6.text-sm {
 }
 @media only screen and (max-width: 767.98px) {
   .min-h-385 {
+    min-height: fit-content;
+  }
+}
+
+.min-h-230 {
+  min-height: 230px !important;
+}
+@media only screen and (max-width: 767.98px) {
+  .min-h-230 {
     min-height: fit-content;
   }
 }
@@ -6692,6 +6709,17 @@ header nav {
   top: 7px;
 }
 
+.applications-api {
+  background-color: #F2F2F2;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.applications-api img {
+  margin-right: 15px;
+}
+
 .range1 {
   width: 400px;
   height: 15px;
@@ -8667,6 +8695,7 @@ body {
 }
 .post-channel-profile .check-tasks .relative > .absolute .box:after {
   top: 23px;
+  border-radius: 7px;
 }
 .post-channel-profile img {
   width: 40px;
@@ -8682,6 +8711,21 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+}
+
+.profile-click,
+.profile-click-1,
+.profile-click-2,
+.profile-click-3,
+.profile-click-4,
+.profile-click-5,
+.profile-click-6,
+.profile-click-7,
+.profile-click-8,
+.profile-click-9,
+.profile-click-10,
+.profile-click-11 {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

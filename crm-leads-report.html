@@ -70,6 +70,7 @@
             <li><a href="./crm-product.html" class="panel_link"><i class="icon icon-expenses"></i> Products</a></li>
             <li><a href="./crm-documents.html" class="panel_link"><i class="icon icon-bar-document"></i> Documents</a>
             </li>
+            <li><a href="./crm-applications-api.html" class="panel_link"><i class="icon icon-bar-document"></i> Applications API</a></li>
             <li class="nav-item panel-dropdown">
               <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Transactions-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -1159,26 +1160,32 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="uploadModalLabel">Add New User</h5>
+        <h5 class="modal-title" id="uploadModalLabel">Add Bulk Payroll</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body upload-box">
-        <div class="form-group">
-          <label for="fileField" class="attachment">
-            <div class="row btn-file">
-              <div class="btn-file__preview"></div>
-              <div class="btn-file__actions">
-                <div class="btn-file__actions__item col-xs-12 text-center">
-                  <div class="btn-file__actions__item--shadow">
-                    Upload File
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Attendance Start Date</label>
+          <input type="date" name="name" id="name" placeholder="Attendance Start Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Attendance End Date</label>
+          <input type="date" name="name" id="name" placeholder="Attendance End Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <div class="form-group">
+            <label for="fileField" class="attachment">
+              <div class="row btn-file">
+                <div class="btn-file__preview"></div>
+                <div class="btn-file__actions">
+                  <div class="btn-file__actions__item col-xs-12 text-center">
+                    <div class="btn-file__actions__item--shadow">
+                      Upload File
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <input name="file" type="file" id="fileField">
-          </label>
-        </div>
-        <a href="" class="text-decoration-none fw-600 text-uppercase">Download Template</a>
+              <input name="file" type="file" id="fileField">
+            </label>
+          </div>
+          <a href="" class="text-decoration-none fw-600 text-uppercase">Download Template</a>
+        </form>
       </div>
       <div class="modal-footer justify-content-between">
         <button type="button" class="btn btn-primary text-uppercase">Add</button>

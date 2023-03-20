@@ -388,6 +388,13 @@ h6 {
 .width-100px{
   width: 100px;
 }
+.width-70px{
+  width: 70px;
+}
+
+.width-35px{
+  width: 35px;
+}
 
 .width-50 {
   max-width: 50% !important;
@@ -404,6 +411,14 @@ h6 {
 
 .min-h-385 {
   min-height: 385px !important;
+
+  @include grid-sm-down {
+    min-height: fit-content;
+  }
+}
+
+.min-h-230 {
+  min-height: 230px !important;
 
   @include grid-sm-down {
     min-height: fit-content;

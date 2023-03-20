@@ -12,6 +12,7 @@
 
   .check-tasks .relative>.absolute .box:after {
     top: 23px;
+    border-radius: 7px;
   }
 
   img{
@@ -29,4 +30,19 @@
       border-radius: 50%;
     }
   }
+}
+
+.profile-click,
+.profile-click-1,
+.profile-click-2,
+.profile-click-3,
+.profile-click-4,
+.profile-click-5,
+.profile-click-6,
+.profile-click-7,
+.profile-click-8,
+.profile-click-9,
+.profile-click-10,
+.profile-click-11{
+  display: none;
 }

@@ -133,6 +133,8 @@
               Benchmarking</a></li>
           <li><a href="./sm-create-template.html" class="panel_link "><i class="icon icon-overviwe"></i>
               Create Template</a></li>
+              <li><a href="./sm-applications-api.html" class="panel_link "><i class="icon icon-overviwe"></i>
+                Application API</a></li>
           <li class="nav-item panel-dropdown">
             <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Transactions-Dropdown"
               role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -161,7 +163,7 @@
           </div>
           <div class="row">
             <div class="col-md-6">
-              <ul class="nav nav-tabs border-0 me-2 me-md-0 employees-nav w-fit flex-row-sm" id="myTab" role="tablist">
+              <ul class="nav nav-tabs border-0 me-2 me-md-0 employees-nav employees-nav1 w-fit flex-row-sm" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link text-uppercase text-md-small active" id="Facebook-tab" data-bs-toggle="tab"
                     data-bs-target="#Facebook" type="button" role="tab" aria-controls="Facebook"
@@ -197,7 +199,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-12 full-content">
+            <div class="col-12">
               <div class="tab-content mt-4">
                 <div class="tab-pane active" id="Facebook" role="tabpanel" aria-labelledby="Facebook-tab">
                   <div class="row">
@@ -394,78 +396,252 @@
                         </div>
                         <div class="row">
                           <div class="col-md-6">
-                            <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
-                              <div class="profile-images d-flex w-100 cursor-pointer details">
-                                <img src="./assets/images/prof-img-1.png" alt="">
-                                <div class="ms-2">
-                                  <h6 class="fw-600">Agnes Moody</h6>
-                                  <p class="text-light-gray text-small">Followers: 1M</p>
+                            <div>
+                              <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
+                                <div class="profile-images d-flex w-100 cursor-pointer details">
+                                  <img src="./assets/images/prof-img-1.png" alt="">
+                                  <div class="ms-2">
+                                    <h6 class="fw-600">Agnes Moody</h6>
+                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                  </div>
+                                </div>
+                                <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <i class="icon icon-light-gray-plus bg-cover"></i>
                                 </div>
                               </div>
-                              <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="icon icon-light-gray-plus bg-cover"></i>
+                              <div class="profile-side-bar mt-3 profile-click">
+                                <div class="profile-top-content">
+                                  <div class="content-card">
+                                    <img src="./assets/images/project-4.png" alt="">
+                                    <h6 class="fw-600">Dianna</h6>
+                                    <p class="text-small">Has maiorum habemus detraxit at. Timeam fabulas splendide et his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur.</p>
+                                    <div class="d-flex align-items-center">
+                                      <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
+                                      <button type="button" class="btn ouline-white ms-2 cancle"><i class="icon icon-x-cancel"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="profile-bottom-content">
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Tweets</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
-                              <div class="profile-images d-flex cursor-pointer details w-100">
-                                <img src="./assets/images/profile-2.png" alt="">
-                                <div class="ms-2">
-                                  <h6 class="fw-600">Glenn Zimmerman</h6>
-                                  <p class="text-light-gray text-small">Followers: 1M</p>
+                            <div>
+                              <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
+                                <div class="profile-images d-flex cursor-pointer details1 w-100">
+                                  <img src="./assets/images/profile-2.png" alt="">
+                                  <div class="ms-2">
+                                    <h6 class="fw-600">Glenn Zimmerman</h6>
+                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                  </div>
+                                </div>
+                                <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <i class="icon icon-light-gray-plus bg-cover"></i>
                                 </div>
                               </div>
-                              <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="icon icon-light-gray-plus bg-cover"></i>
+                              <div class="profile-side-bar mt-3 profile-click-1">
+                                <div class="profile-top-content">
+                                  <div class="content-card">
+                                    <img src="./assets/images/project-4.png" alt="">
+                                    <h6 class="fw-600">Dianna</h6>
+                                    <p class="text-small">Has maiorum habemus detraxit at. Timeam fabulas splendide et his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur.</p>
+                                    <div class="d-flex align-items-center">
+                                      <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
+                                      <button type="button" class="btn ouline-white ms-2 cancle"><i class="icon icon-x-cancel"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="profile-bottom-content">
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Tweets</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
-                              <div class="profile-images d-flex cursor-pointer details w-100">
-                                <img src="./assets/images/profile-3.png" alt="">
-                                <div class="ms-2">
-                                  <h6 class="fw-600">Jayden Byrd</h6>
-                                  <p class="text-light-gray text-small">Followers: 1M</p>
+                            <div>
+                              <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
+                                <div class="profile-images d-flex cursor-pointer details2 w-100">
+                                  <img src="./assets/images/profile-3.png" alt="">
+                                  <div class="ms-2">
+                                    <h6 class="fw-600">Jayden Byrd</h6>
+                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                  </div>
+                                </div>
+                                <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <i class="icon icon-light-gray-plus bg-cover"></i>
                                 </div>
                               </div>
-                              <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="icon icon-light-gray-plus bg-cover"></i>
+                              <div class="profile-side-bar mt-3 profile-click-2">
+                                <div class="profile-top-content">
+                                  <div class="content-card">
+                                    <img src="./assets/images/project-4.png" alt="">
+                                    <h6 class="fw-600">Dianna</h6>
+                                    <p class="text-small">Has maiorum habemus detraxit at. Timeam fabulas splendide et his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur.</p>
+                                    <div class="d-flex align-items-center">
+                                      <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
+                                      <button type="button" class="btn ouline-white ms-2 cancle"><i class="icon icon-x-cancel"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="profile-bottom-content">
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Tweets</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
-                              <div class="profile-images d-flex cursor-pointer details w-100">
-                                <img src="./assets/images/profile-4.png" alt="">
-                                <div class="ms-2">
-                                  <h6 class="fw-600">Gregory Snyder</h6>
-                                  <p class="text-light-gray text-small">Followers: 1M</p>
+                            <div>
+                              <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
+                                <div class="profile-images d-flex cursor-pointer details3 w-100">
+                                  <img src="./assets/images/profile-4.png" alt="">
+                                  <div class="ms-2">
+                                    <h6 class="fw-600">Gregory Snyder</h6>
+                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                  </div>
+                                </div>
+                                <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <i class="icon icon-light-gray-plus bg-cover"></i>
                                 </div>
                               </div>
-                              <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="icon icon-light-gray-plus bg-cover"></i>
+                              <div class="profile-side-bar mt-3 profile-click-3">
+                                <div class="profile-top-content">
+                                  <div class="content-card">
+                                    <img src="./assets/images/project-4.png" alt="">
+                                    <h6 class="fw-600">Dianna</h6>
+                                    <p class="text-small">Has maiorum habemus detraxit at. Timeam fabulas splendide et his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur.</p>
+                                    <div class="d-flex align-items-center">
+                                      <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
+                                      <button type="button" class="btn ouline-white ms-2 cancle"><i class="icon icon-x-cancel"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="profile-bottom-content">
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Tweets</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
-                              <div class="profile-images d-flex cursor-pointer details w-100">
-                                <img src="./assets/images/profile-5.png" alt="">
-                                <div class="ms-2">
-                                  <h6 class="fw-600">Lawrence Silva</h6>
-                                  <p class="text-light-gray text-small">Followers: 1M</p>
+                            <div>
+                              <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
+                                <div class="profile-images d-flex cursor-pointer details4 w-100">
+                                  <img src="./assets/images/profile-5.png" alt="">
+                                  <div class="ms-2">
+                                    <h6 class="fw-600">Lawrence Silva</h6>
+                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                  </div>
+                                </div>
+                                <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <i class="icon icon-light-gray-plus bg-cover"></i>
                                 </div>
                               </div>
-                              <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="icon icon-light-gray-plus bg-cover"></i>
+                              <div class="profile-side-bar mt-3 profile-click-4">
+                                <div class="profile-top-content">
+                                  <div class="content-card">
+                                    <img src="./assets/images/project-4.png" alt="">
+                                    <h6 class="fw-600">Dianna</h6>
+                                    <p class="text-small">Has maiorum habemus detraxit at. Timeam fabulas splendide et his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur.</p>
+                                    <div class="d-flex align-items-center">
+                                      <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
+                                      <button type="button" class="btn ouline-white ms-2 cancle"><i class="icon icon-x-cancel"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="profile-bottom-content">
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Tweets</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
-                              <div class="profile-images d-flex cursor-pointer details w-100">
-                                <img src="./assets/images/profile-6.png" alt="">
-                                <div class="ms-2">
-                                  <h6 class="fw-600">Sadie Palmer</h6>
-                                  <p class="text-light-gray text-small">Followers: 1M</p>
+                            <div>
+                              <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
+                                <div class="profile-images d-flex cursor-pointer details5 w-100">
+                                  <img src="./assets/images/profile-6.png" alt="">
+                                  <div class="ms-2">
+                                    <h6 class="fw-600">Sadie Palmer</h6>
+                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                  </div>
+                                </div>
+                                <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <i class="icon icon-light-gray-plus bg-cover"></i>
                                 </div>
                               </div>
-                              <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="icon icon-light-gray-plus bg-cover"></i>
+                              <div class="profile-side-bar mt-3 profile-click-5">
+                                <div class="profile-top-content">
+                                  <div class="content-card">
+                                    <img src="./assets/images/project-4.png" alt="">
+                                    <h6 class="fw-600">Dianna</h6>
+                                    <p class="text-small">Has maiorum habemus detraxit at. Timeam fabulas splendide et his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur.</p>
+                                    <div class="d-flex align-items-center">
+                                      <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
+                                      <button type="button" class="btn ouline-white ms-2 cancle"><i class="icon icon-x-cancel"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="profile-bottom-content">
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Tweets</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -491,78 +667,252 @@
                         </div>
                         <div class="row">
                           <div class="col-md-6">
-                            <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
-                              <div class="profile-images d-flex cursor-pointer details w-100">
-                                <img src="./assets/images/prof-img-1.png" alt="">
-                                <div class="ms-2">
-                                  <h6 class="fw-600">Agnes Moody</h6>
-                                  <p class="text-light-gray text-small">Followers: 1M</p>
+                            <div>
+                              <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
+                                <div class="profile-images d-flex cursor-pointer details6 w-100">
+                                  <img src="./assets/images/prof-img-1.png" alt="">
+                                  <div class="ms-2">
+                                    <h6 class="fw-600">Agnes Moody</h6>
+                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                  </div>
+                                </div>
+                                <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <i class="icon icon-light-gray-plus bg-cover"></i>
                                 </div>
                               </div>
-                              <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="icon icon-light-gray-plus bg-cover"></i>
+                              <div class="profile-side-bar mt-3 profile-click-6">
+                                <div class="profile-top-content">
+                                  <div class="content-card">
+                                    <img src="./assets/images/project-4.png" alt="">
+                                    <h6 class="fw-600">Dianna</h6>
+                                    <p class="text-small">Has maiorum habemus detraxit at. Timeam fabulas splendide et his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur.</p>
+                                    <div class="d-flex align-items-center">
+                                      <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
+                                      <button type="button" class="btn ouline-white ms-2 cancle"><i class="icon icon-x-cancel"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="profile-bottom-content">
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Tweets</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
-                              <div class="profile-images d-flex cursor-pointer details w-100">
-                                <img src="./assets/images/profile-2.png" alt="">
-                                <div class="ms-2">
-                                  <h6 class="fw-600">Glenn Zimmerman</h6>
-                                  <p class="text-light-gray text-small">Followers: 1M</p>
+                            <div>
+                              <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
+                                <div class="profile-images d-flex cursor-pointer details7 w-100">
+                                  <img src="./assets/images/profile-2.png" alt="">
+                                  <div class="ms-2">
+                                    <h6 class="fw-600">Glenn Zimmerman</h6>
+                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                  </div>
+                                </div>
+                                <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <i class="icon icon-light-gray-plus bg-cover"></i>
                                 </div>
                               </div>
-                              <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="icon icon-light-gray-plus bg-cover"></i>
+                              <div class="profile-side-bar mt-3 profile-click-7">
+                                <div class="profile-top-content">
+                                  <div class="content-card">
+                                    <img src="./assets/images/project-4.png" alt="">
+                                    <h6 class="fw-600">Dianna</h6>
+                                    <p class="text-small">Has maiorum habemus detraxit at. Timeam fabulas splendide et his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur.</p>
+                                    <div class="d-flex align-items-center">
+                                      <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
+                                      <button type="button" class="btn ouline-white ms-2 cancle"><i class="icon icon-x-cancel"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="profile-bottom-content">
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Tweets</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
-                              <div class="profile-images d-flex cursor-pointer details w-100">
-                                <img src="./assets/images/profile-3.png" alt="">
-                                <div class="ms-2">
-                                  <h6 class="fw-600">Jayden Byrd</h6>
-                                  <p class="text-light-gray text-small">Followers: 1M</p>
+                            <div>
+                              <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
+                                <div class="profile-images d-flex cursor-pointer details8 w-100">
+                                  <img src="./assets/images/profile-3.png" alt="">
+                                  <div class="ms-2">
+                                    <h6 class="fw-600">Jayden Byrd</h6>
+                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                  </div>
+                                </div>
+                                <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <i class="icon icon-light-gray-plus bg-cover"></i>
                                 </div>
                               </div>
-                              <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="icon icon-light-gray-plus bg-cover"></i>
+                              <div class="profile-side-bar mt-3 profile-click-8">
+                                <div class="profile-top-content">
+                                  <div class="content-card">
+                                    <img src="./assets/images/project-4.png" alt="">
+                                    <h6 class="fw-600">Dianna</h6>
+                                    <p class="text-small">Has maiorum habemus detraxit at. Timeam fabulas splendide et his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur.</p>
+                                    <div class="d-flex align-items-center">
+                                      <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
+                                      <button type="button" class="btn ouline-white ms-2 cancle"><i class="icon icon-x-cancel"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="profile-bottom-content">
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Tweets</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
-                              <div class="profile-images d-flex cursor-pointer details w-100">
-                                <img src="./assets/images/profile-4.png" alt="">
-                                <div class="ms-2">
-                                  <h6 class="fw-600">Gregory Snyder</h6>
-                                  <p class="text-light-gray text-small">Followers: 1M</p>
+                            <div>
+                              <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
+                                <div class="profile-images d-flex cursor-pointer details9 w-100">
+                                  <img src="./assets/images/profile-4.png" alt="">
+                                  <div class="ms-2">
+                                    <h6 class="fw-600">Gregory Snyder</h6>
+                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                  </div>
+                                </div>
+                                <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <i class="icon icon-light-gray-plus bg-cover"></i>
                                 </div>
                               </div>
-                              <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="icon icon-light-gray-plus bg-cover"></i>
+                              <div class="profile-side-bar mt-3 profile-click-9">
+                                <div class="profile-top-content">
+                                  <div class="content-card">
+                                    <img src="./assets/images/project-4.png" alt="">
+                                    <h6 class="fw-600">Dianna</h6>
+                                    <p class="text-small">Has maiorum habemus detraxit at. Timeam fabulas splendide et his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur.</p>
+                                    <div class="d-flex align-items-center">
+                                      <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
+                                      <button type="button" class="btn ouline-white ms-2 cancle"><i class="icon icon-x-cancel"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="profile-bottom-content">
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Tweets</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
-                              <div class="profile-images d-flex cursor-pointer details w-100">
-                                <img src="./assets/images/profile-5.png" alt="">
-                                <div class="ms-2">
-                                  <h6 class="fw-600">Lawrence Silva</h6>
-                                  <p class="text-light-gray text-small">Followers: 1M</p>
+                            <div>
+                              <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
+                                <div class="profile-images d-flex cursor-pointer details10 w-100">
+                                  <img src="./assets/images/profile-5.png" alt="">
+                                  <div class="ms-2">
+                                    <h6 class="fw-600">Lawrence Silva</h6>
+                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                  </div>
+                                </div>
+                                <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <i class="icon icon-light-gray-plus bg-cover"></i>
                                 </div>
                               </div>
-                              <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="icon icon-light-gray-plus bg-cover"></i>
+                              <div class="profile-side-bar mt-3 profile-click-10">
+                                <div class="profile-top-content">
+                                  <div class="content-card">
+                                    <img src="./assets/images/project-4.png" alt="">
+                                    <h6 class="fw-600">Dianna</h6>
+                                    <p class="text-small">Has maiorum habemus detraxit at. Timeam fabulas splendide et his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur.</p>
+                                    <div class="d-flex align-items-center">
+                                      <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
+                                      <button type="button" class="btn ouline-white ms-2 cancle"><i class="icon icon-x-cancel"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="profile-bottom-content">
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Tweets</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
-                              <div class="profile-images d-flex cursor-pointer details w-100">
-                                <img src="./assets/images/profile-6.png" alt="">
-                                <div class="ms-2">
-                                  <h6 class="fw-600">Sadie Palmer</h6>
-                                  <p class="text-light-gray text-small">Followers: 1M</p>
+                            <div>
+                              <div class="bg-light rounded d-flex p-3 mt-3 align-items-center justify-content-between">
+                                <div class="profile-images d-flex cursor-pointer details11 w-100">
+                                  <img src="./assets/images/profile-6.png" alt="">
+                                  <div class="ms-2">
+                                    <h6 class="fw-600">Sadie Palmer</h6>
+                                    <p class="text-light-gray text-small">Followers: 1M</p>
+                                  </div>
+                                </div>
+                                <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <i class="icon icon-light-gray-plus bg-cover"></i>
                                 </div>
                               </div>
-                              <div class="cursor-pointer bg-white rounded-circle p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="icon icon-light-gray-plus bg-cover"></i>
+                              <div class="profile-side-bar mt-3 profile-click-11">
+                                <div class="profile-top-content">
+                                  <div class="content-card">
+                                    <img src="./assets/images/project-4.png" alt="">
+                                    <h6 class="fw-600">Dianna</h6>
+                                    <p class="text-small">Has maiorum habemus detraxit at. Timeam fabulas splendide et his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur.</p>
+                                    <div class="d-flex align-items-center">
+                                      <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
+                                      <button type="button" class="btn ouline-white ms-2 cancle"><i class="icon icon-x-cancel"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="profile-bottom-content">
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Tweets</p>
+                                  </div>
+                                  <div>
+                                    <h4>10k</h4>
+                                    <p>Followers</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -573,7 +923,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 right-content-1 mt-3">
+            <!-- <div class="col-md-4 right-content-1 mt-3">
               <div class="profile-side-bar">
                 <div class="profile-top-content">
                   <div class="content-card">
@@ -678,7 +1028,7 @@
                 <a href=""
                   class="text-small text-light-gray text-uppercase text-decoration-none d-block cancle">cancle</a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </main>
@@ -1019,26 +1369,32 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="uploadModalLabel">Add New User</h5>
+            <h5 class="modal-title" id="uploadModalLabel">Add Bulk Payroll</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body upload-box">
-            <div class="form-group">
-              <label for="fileField" class="attachment">
-                <div class="row btn-file">
-                  <div class="btn-file__preview"></div>
-                  <div class="btn-file__actions">
-                    <div class="btn-file__actions__item col-xs-12 text-center">
-                      <div class="btn-file__actions__item--shadow">
-                        Upload File
+            <form>
+              <label for="name" class="fw-bold mt-3 mb-2">Attendance Start Date</label>
+              <input type="date" name="name" id="name" placeholder="Attendance Start Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="name" class="fw-bold mt-3 mb-2">Attendance End Date</label>
+              <input type="date" name="name" id="name" placeholder="Attendance End Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <div class="form-group">
+                <label for="fileField" class="attachment">
+                  <div class="row btn-file">
+                    <div class="btn-file__preview"></div>
+                    <div class="btn-file__actions">
+                      <div class="btn-file__actions__item col-xs-12 text-center">
+                        <div class="btn-file__actions__item--shadow">
+                          Upload File
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <input name="file" type="file" id="fileField">
-              </label>
-            </div>
-            <a href="" class="text-decoration-none fw-600 text-uppercase">Download Template</a>
+                  <input name="file" type="file" id="fileField">
+                </label>
+              </div>
+              <a href="" class="text-decoration-none fw-600 text-uppercase">Download Template</a>
+            </form>
           </div>
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-primary text-uppercase">Add</button>
@@ -1059,22 +1415,40 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
     $(".details").click(function () {
-      $(".full-content").addClass("content-div-1");
+      $(".profile-click").toggleClass("d-block");
     });
-    $(".details").click(function () {
-      $(".right-content-1").addClass("d-block");
+    $(".details1").click(function () {
+      $(".profile-click-1").toggleClass("d-block");
     });
-    $(".cancle").click(function () {
-      $(".full-content").removeClass("content-div-1");
+    $(".details2").click(function () {
+      $(".profile-click-2").toggleClass("d-block");
     });
-    $(".cancle").click(function () {
-      $(".right-content-1").removeClass("d-block");
+    $(".details3").click(function () {
+      $(".profile-click-3").toggleClass("d-block");
     });
-    $(".details").click(function () {
-      $(".contact-card").addClass("card-div");
+    $(".details4").click(function () {
+      $(".profile-click-4").toggleClass("d-block");
     });
-    $(".cancle").click(function () {
-      $(".contact-card").removeClass("card-div");
+    $(".details5").click(function () {
+      $(".profile-click-5").toggleClass("d-block");
+    });
+    $(".details6").click(function () {
+      $(".profile-click-6").toggleClass("d-block");
+    });
+    $(".details7").click(function () {
+      $(".profile-click-7").toggleClasss("d-block");
+    });
+    $(".details8").click(function () {
+      $(".profile-click-8").toggleClass("d-block");
+    });
+    $(".details9").click(function () {
+      $(".profile-click-9").toggleClass("d-block");
+    });
+    $(".details10").click(function () {
+      $(".profile-click-10").toggleClass("d-block");
+    });
+    $(".details11").click(function () {
+      $(".profile-click-11").toggleClass("d-block");
     });
   </script>
 </body>

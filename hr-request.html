@@ -63,17 +63,7 @@
                   Management</a></li>
               <li><a href="./hr-request.html" class="panel_link active_panel"><i class="icon icon-contact"></i> My Request</a>
               </li>
-              <li class="nav-item panel-dropdown">
-                <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="icon icon-business"></i>
-                  Attendance
-                </a>
-                <ul class="Business-Dropdown" aria-labelledby="Filing-Dropdown">
-                  <li><a class="panel_link " href="./hr-timesheet.html">Timesheets</a></li>
-                  <li><a class="panel_link " href="./hr-leave-managment.html">Leave Management</a></li>
-                </ul>
-              </li>
+              <li><a class="panel_link " href="./hr-timesheet.html"><i class="icon icon-business"></i> Attendance</a></li>
               <li><a href="./hr-payroll.html" class="panel_link "><i class="icon icon-overviwe"></i> Payroll</a></li>
               <li><a href="./hr-employee-performance.html" class="panel_link"><i class="icon icon-contact"></i> Employee Performance</a></li>
               <li><a href="./hr-announcement.html" class="panel_link "><i class="icon icon-contact"></i> Announcement</a></li>
@@ -176,173 +166,207 @@
                     <p>Showing total 1,652 Orders</p>
                   </div>
                   <div>
-                    <button type="button" class="btn ouline-white btn-fill me-md-3 wsm-100" data-bs-toggle="modal"
-                      data-bs-target="#addEmployee">Add New Request</button>         
+                    <button type="button" class="btn ouline-white btn-fill me-md-3 wsm-100 popup-button">Add New Request</button>         
                   </div>
                 </div>
-                <ul class="nav nav-tabs my-3 border-0" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link text-uppercase active" id="active-tab" data-bs-toggle="tab"
-                      data-bs-target="#active" type="button" role="tab" aria-controls="active"
-                      aria-selected="false">All</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link text-uppercase" id="all-show-tab" data-bs-toggle="tab"
-                      data-bs-target="#show" type="button" role="tab" aria-controls="show" aria-selected="true">Pending</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link text-uppercase" id="Hired-tab" data-bs-toggle="tab"
-                      data-bs-target="#Hired" type="button" role="tab" aria-controls="Hired" aria-selected="true">Completed</button>
-                  </li>
-                </ul>
-                <div class="tab-pane active" id="active" role="tabpanel" aria-labelledby="candidates-tab">
-                  
-                  <div class="employee-diractory-table invoice-table tablepanel rounded">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col">
-                            Order ID                            
-                          </th>
-                          <th scope="col" class="ps-3">Date</th>
-                          <th scope="col" class="ps-3">Event Name</th>
-                          <th scope="col" class="ps-3">Customer</th>
-                          <th scope="col" class="ps-3">Location</th>
-                          <th scope="col" class="ps-3">Sold Tickets</th>
-                          <th scope="col" class="ps-3">Available</th>
-                          <th scope="col" class="ps-3">Refund</th>
-                          <th scope="col" class="ps-3">Total Revenue</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td scope="row" data-label="Full Name">
-                            #0012451
-                          </td>
-                          <td data-label="Position">04/08/2020<br>12:34 AM</td>
-                          <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
-                          <td data-label="Country">Bella Simatupang</td>
-                          <td data-label="Region">London, US</td>
-                          <td data-label="Members">1 Pcs</td>
-                          <td data-label="Members">567k Left</td>
-                          <td><b>No</b></td>
-                          <td>$125,70</td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Full Name">
-                            #0012451
-                          </td>
-                          <td data-label="Position">04/08/2020<br>12:34 AM</td>
-                          <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
-                          <td data-label="Country">Bella Simatupang</td>
-                          <td data-label="Region">London, US</td>
-                          <td data-label="Members">1 Pcs</td>
-                          <td data-label="Members">567k Left</td>
-                          <td><b>No</b></td>
-                          <td>$125,70</td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Full Name">
-                            #0012451
-                          </td>
-                          <td data-label="Position">04/08/2020<br>12:34 AM</td>
-                          <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
-                          <td data-label="Country">Bella Simatupang</td>
-                          <td data-label="Region">London, US</td>
-                          <td data-label="Members">1 Pcs</td>
-                          <td data-label="Members">567k Left</td>
-                          <td><b>No</b></td>
-                          <td>$125,70</td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Full Name">
-                            #0012451
-                          </td>
-                          <td data-label="Position">04/08/2020<br>12:34 AM</td>
-                          <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
-                          <td data-label="Country">Bella Simatupang</td>
-                          <td data-label="Region">London, US</td>
-                          <td data-label="Members">1 Pcs</td>
-                          <td data-label="Members">567k Left</td>
-                          <td><b>No</b></td>
-                          <td>$125,70</td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Full Name">
-                            #0012451
-                          </td>
-                          <td data-label="Position">04/08/2020<br>12:34 AM</td>
-                          <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
-                          <td data-label="Country">Bella Simatupang</td>
-                          <td data-label="Region">London, US</td>
-                          <td data-label="Members">1 Pcs</td>
-                          <td data-label="Members">567k Left</td>
-                          <td><b>No</b></td>
-                          <td>$125,70</td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Full Name">
-                            #0012451
-                          </td>
-                          <td data-label="Position">04/08/2020<br>12:34 AM</td>
-                          <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
-                          <td data-label="Country">Bella Simatupang</td>
-                          <td data-label="Region">London, US</td>
-                          <td data-label="Members">1 Pcs</td>
-                          <td data-label="Members">567k Left</td>
-                          <td><b>No</b></td>
-                          <td>$125,70</td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Full Name">
-                            #0012451
-                          </td>
-                          <td data-label="Position">04/08/2020<br>12:34 AM</td>
-                          <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
-                          <td data-label="Country">Bella Simatupang</td>
-                          <td data-label="Region">London, US</td>
-                          <td data-label="Members">1 Pcs</td>
-                          <td data-label="Members">567k Left</td>
-                          <td><b>No</b></td>
-                          <td>$125,70</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div class="pagination">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-12 col-md-6 d-flex align-items-center">
-                        <p>Items per page:</p>
-                        <select class="form-select w-auto mx-3" aria-label="Default select example">
-                          <option selected="">10</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="1">4</option>
-                          <option value="2">5</option>
-                          <option value="3">6</option>
-                          <option value="3">7</option>
-                          <option value="3">8</option>
-                        </select>
-                        <p class="text-light-gray">1-10 of 103 entries</p>
-                      </div>
-                      <div class="col-12 col-md-6 mt-3 mt-md-0">
-                        <nav aria-label="Page navigation example">
-                          <ul class="pagination justify-content-end">
-                            <li class="page-item disabled">
-                              <a class="page-link bg-transparent border-0" href="#" tabindex="-1"
-                                aria-disabled="true">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link bg-transparent border-0" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link bg-transparent border-0" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link bg-transparent border-0" href="#">Next</a>
-                            </li>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="popup-form">
+                      <form>
+                        <label for="full-name" class="fw-bold mb-2 mt-4">Request</label>
+                        <div class="dropdown select-dropdown">
+                          <button class="btn dropdown-toggle p-3 w-100 border border-2 outline-none box-shadow-none" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Add a Request
+                          </button>
+                          <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1" style="">
+                            <li><a class="dropdown-item fw-600" href="#">+ Add New</a></li>
+                            <li><a class="dropdown-item fw-600" href="#">Resignation</a></li>
+                            <li><a class="dropdown-item fw-600" href="" data-bs-toggle="modal" data-bs-target="#overtimeModal">Overtime</a></li>
+                            <li><a class="dropdown-item fw-600" href="#">Leave Request</a></li>
+                            <li><a class="dropdown-item fw-600" href="" data-bs-toggle="modal" data-bs-target="#CertificateModal">Certificate Letter</a></li>
+                            <li><a class="dropdown-item fw-600" href="" data-bs-toggle="modal" data-bs-target="#performanceModal">Performance Care</a></li>
+                            <li><a class="dropdown-item fw-600" href="" data-bs-toggle="modal" data-bs-target="#personalLoanModal">Personal Loan</a></li>
+                            <li><a class="dropdown-item fw-600" href="" data-bs-toggle="modal" data-bs-target="#housingLoanModal">Housing Loan</a></li>
+                            <li><a class="dropdown-item fw-600" href="" data-bs-toggle="modal" data-bs-target="#educationLoanModal">Education Loan</a></li>
+                            <li><a class="dropdown-item fw-600" href="" data-bs-toggle="modal" data-bs-target="#advanceSalaryModal">Advance Salary</a></li>
+                            <li><a class="dropdown-item fw-600" href="" data-bs-toggle="modal" data-bs-target="#medicalLoanModal">Medical Insurance</a></li>
+                            <li><a class="dropdown-item fw-600" href="" data-bs-toggle="modal" data-bs-target="#AssignmentModal">Business Trip Assignment</a></li>
+                            <li><a class="dropdown-item fw-600" href="" data-bs-toggle="modal" data-bs-target="#paymentModal">Business Trip Payment</a></li>
+                            <li><a class="dropdown-item fw-600" href="" data-bs-toggle="modal" data-bs-target="#GuaranteeModal">Bank Guarantee</a></li>
+                            <li><a class="dropdown-item fw-600" href="" data-bs-toggle="modal" data-bs-target="#vacationModal">Vacation</a></li>
                           </ul>
-                        </nav>
+                        </div>
+                        <div class="w-100 text-end mt-3">
+                          <button type="button" class="btn ouline-white btn-fill me-md-3 wsm-100 popup-cancel">Cancel</button>
+                        </div>
+                      </form>
+                    </div>
+                    <ul class="nav nav-tabs mt-3 border-0" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link text-uppercase active" id="active-tab" data-bs-toggle="tab"
+                          data-bs-target="#active" type="button" role="tab" aria-controls="active"
+                          aria-selected="false">All</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link text-uppercase" id="all-show-tab" data-bs-toggle="tab"
+                          data-bs-target="#show" type="button" role="tab" aria-controls="show" aria-selected="true">Pending</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link text-uppercase" id="Hired-tab" data-bs-toggle="tab"
+                          data-bs-target="#Hired" type="button" role="tab" aria-controls="Hired" aria-selected="true">Completed</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content mt-3">
+                      <div class="tab-pane active" id="active" role="tabpanel" aria-labelledby="candidates-tab">
+                        <div class="employee-diractory-table invoice-table tablepanel rounded">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">
+                                  Order ID                            
+                                </th>
+                                <th scope="col" class="ps-3">Date</th>
+                                <th scope="col" class="ps-3">Event Name</th>
+                                <th scope="col" class="ps-3">Customer</th>
+                                <th scope="col" class="ps-3">Location</th>
+                                <th scope="col" class="ps-3">Sold Tickets</th>
+                                <th scope="col" class="ps-3">Available</th>
+                                <th scope="col" class="ps-3">Refund</th>
+                                <th scope="col" class="ps-3">Total Revenue</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td scope="row" data-label="Full Name">
+                                  #0012451
+                                </td>
+                                <td data-label="Position">04/08/2020<br>12:34 AM</td>
+                                <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
+                                <td data-label="Country">Bella Simatupang</td>
+                                <td data-label="Region">London, US</td>
+                                <td data-label="Members">1 Pcs</td>
+                                <td data-label="Members">567k Left</td>
+                                <td><b>No</b></td>
+                                <td>$125,70</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Full Name">
+                                  #0012451
+                                </td>
+                                <td data-label="Position">04/08/2020<br>12:34 AM</td>
+                                <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
+                                <td data-label="Country">Bella Simatupang</td>
+                                <td data-label="Region">London, US</td>
+                                <td data-label="Members">1 Pcs</td>
+                                <td data-label="Members">567k Left</td>
+                                <td><b>No</b></td>
+                                <td>$125,70</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Full Name">
+                                  #0012451
+                                </td>
+                                <td data-label="Position">04/08/2020<br>12:34 AM</td>
+                                <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
+                                <td data-label="Country">Bella Simatupang</td>
+                                <td data-label="Region">London, US</td>
+                                <td data-label="Members">1 Pcs</td>
+                                <td data-label="Members">567k Left</td>
+                                <td><b>No</b></td>
+                                <td>$125,70</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Full Name">
+                                  #0012451
+                                </td>
+                                <td data-label="Position">04/08/2020<br>12:34 AM</td>
+                                <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
+                                <td data-label="Country">Bella Simatupang</td>
+                                <td data-label="Region">London, US</td>
+                                <td data-label="Members">1 Pcs</td>
+                                <td data-label="Members">567k Left</td>
+                                <td><b>No</b></td>
+                                <td>$125,70</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Full Name">
+                                  #0012451
+                                </td>
+                                <td data-label="Position">04/08/2020<br>12:34 AM</td>
+                                <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
+                                <td data-label="Country">Bella Simatupang</td>
+                                <td data-label="Region">London, US</td>
+                                <td data-label="Members">1 Pcs</td>
+                                <td data-label="Members">567k Left</td>
+                                <td><b>No</b></td>
+                                <td>$125,70</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Full Name">
+                                  #0012451
+                                </td>
+                                <td data-label="Position">04/08/2020<br>12:34 AM</td>
+                                <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
+                                <td data-label="Country">Bella Simatupang</td>
+                                <td data-label="Region">London, US</td>
+                                <td data-label="Members">1 Pcs</td>
+                                <td data-label="Members">567k Left</td>
+                                <td><b>No</b></td>
+                                <td>$125,70</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Full Name">
+                                  #0012451
+                                </td>
+                                <td data-label="Position">04/08/2020<br>12:34 AM</td>
+                                <td data-label="Department">The Story of Dunao Toba <br>(Musical Drama)</td>
+                                <td data-label="Country">Bella Simatupang</td>
+                                <td data-label="Region">London, US</td>
+                                <td data-label="Members">1 Pcs</td>
+                                <td data-label="Members">567k Left</td>
+                                <td><b>No</b></td>
+                                <td>$125,70</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="pagination">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-12 col-md-6 d-flex align-items-center">
+                                <p>Items per page:</p>
+                                <select class="form-select w-auto mx-3" aria-label="Default select example">
+                                  <option selected="">10</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="1">4</option>
+                                  <option value="2">5</option>
+                                  <option value="3">6</option>
+                                  <option value="3">7</option>
+                                  <option value="3">8</option>
+                                </select>
+                                <p class="text-light-gray">1-10 of 103 entries</p>
+                              </div>
+                              <div class="col-12 col-md-6 mt-3 mt-md-0">
+                                <nav aria-label="Page navigation example">
+                                  <ul class="pagination justify-content-end">
+                                    <li class="page-item disabled">
+                                      <a class="page-link bg-transparent border-0" href="#" tabindex="-1"
+                                        aria-disabled="true">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link bg-transparent border-0" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link bg-transparent border-0" href="#">3</a></li>
+                                    <li class="page-item">
+                                      <a class="page-link bg-transparent border-0" href="#">Next</a>
+                                    </li>
+                                  </ul>
+                                </nav>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -458,39 +482,6 @@
       </div>
     </div>
   </div>
-    <div class="modal fade" id="addEmployee" tabindex="-1" aria-labelledby="addEmployeeLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Add New Request</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <label for="full-name" class="fw-bold mb-2 mt-4">Request</label>
-            <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-              <option value="Member">Add a Request</option>
-              <option value="saab">Including Resignation</option>
-              <option value="opel">Overtime</option>
-              <option value="audi">Leave Request</option>
-              <option value="audi">Certificate Letter</option>
-              <option value="audi">Performance Care</option>
-              <option value="audi">Personal Loan</option>
-              <option value="audi">Housing Loan</option>
-              <option value="audi">Education Loan</option>
-              <option value="audi">Advance Salary</option>
-              <option value="audi">Medical Insurance</option>
-              <option value="audi">Business Trip Assignment</option>
-              <option value="audi">Business Trip Payment</option>
-              <option value="audi">Bank Guarantee</option>
-            </select>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn border border-2" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-fill">Save</button>
-          </div>
-        </div>
-      </div>
-    </div>
   <div class="modal right fade" id="userForm" tabindex="-1"
   aria-labelledby="interviewLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -762,39 +753,630 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   </div>
 </div>
 </div>
-<div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+<div class="modal fade" id="CertificateModal" tabindex="-1" aria-labelledby="CertificateModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="uploadModalLabel">Add New User</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title" id="exampleModalLabel">Create Employee Certificate Request</h5>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
       </div>
-      <div class="modal-body upload-box">
-        <div class="form-group">
-          <label for="fileField" class="attachment">
-            <div class="row btn-file">
-              <div class="btn-file__preview"></div>
-              <div class="btn-file__actions">
-                <div class="btn-file__actions__item col-xs-12 text-center">
-                  <div class="btn-file__actions__item--shadow">
-                    Upload File
-                  </div>
-                </div>
-              </div>
-            </div>
-            <input name="file" type="file" id="fileField">
-          </label>
-        </div>
-        <a href="" class="text-decoration-none fw-600 text-uppercase">Download Template</a>
+      <div class="modal-body upload-files">
+        <form>
+          <label for="role" class="fw-bold mt-3 mb-2">Certificate Template</label>
+          <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="Manager">Select Certificate Type</option>
+            <option value="Urdu">Identification Lettter</option>
+            <option value="Hindi">Court</option>
+          </select>
+          <h6 class="fw-600 mt-3 ">Additional Details</h6>
+          <label for="role" class="fw-bold mt-3 mb-2">Comment</label>
+          <textarea name="address" id="address" class="d-block border border-2 w-100 rounded p-2" placeholder="Write your comments to the approver" spellcheck="false"></textarea>
+          <div class="uploadfile">
+            <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
+            <input id="fileupload" type="file" class="fileupload">
+          </div>
+        </form>
       </div>
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-primary text-uppercase">Add</button>
-        <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
+      <div class="modal-footer justify-content-end">
+        <button type="button" class="btn btn-fill text-uppercase">Save</button>
       </div>
     </div>
   </div>
 </div>
-  </section>
+<div class="modal fade" id="vacationModal" tabindex="-1" aria-labelledby="vacationModalLabel" aria-hidden="true">
+  <div class="modal-dialog width-50 wsm-100">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="vacationModalLabel">Create Vacation Request</h5>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <div class="modal-body upload-files">
+        <form>
+          <label for="role" class="fw-bold mt-3 mb-2">Vacation Type</label>
+          <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="Manager">Select Vacation Type</option>
+            <option value="Urdu">Annual Vacation</option>
+            <option value="Hindi">Court</option>
+          </select>
+          <label for="role" class="fw-bold mt-3 mb-2">Vacation Date</label>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="date" name="phone" id="phone" placeholder="Enter a Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+            </div>
+            <div class="col-md-6">
+              <input type="date" name="phone" id="phone" placeholder="Enter a Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+            </div>
+          </div>
+          <div class="bg-light-gray rounded p-3 mt-3">
+            <h5 class="border-bottom pb-3">Additional Details</h5>
+            <label for="role" class="fw-bold mt-3 mb-2">Replacement</label>
+            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <option value="Manager">Select a Replacement</option>
+              <option value="Urdu">Annual Vacation</option>
+              <option value="Hindi">Court</option>
+            </select>
+            <label for="role" class="fw-bold mt-3 mb-2">Comment</label>
+            <textarea name="address" id="address" class="d-block border border-2 w-100 rounded p-2" spellcheck="false"></textarea>
+            <div class="uploadfile">
+              <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
+              <input id="fileupload" type="file" class="fileupload">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-end">
+        <button type="button" class="btn btn-fill text-uppercase">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="AssignmentModal" tabindex="-1" aria-labelledby="AssignmentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="AssignmentModalLabel">Business Trip Request</h5>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="role" class="fw-bold mt-3 mb-2">Mission Type</label>
+          <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="Manager">Select Mission Type</option>
+            <option value="Urdu">Project</option>
+            <option value="Hindi">Company Work / Official Meeting</option>
+            <option value="Hindi">Conference / Exhibition</option>
+            <option value="Hindi">Training</option>
+          </select>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-end">
+        <button type="button" class="btn btn-fill text-uppercase">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="GuaranteeModal" tabindex="-1" aria-labelledby="GuaranteeModalLabel" aria-hidden="true">
+  <div class="modal-dialog width-50 wsm-95">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="GuaranteeModalLabel">Bank Guarantee Request</h5>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <div class="modal-body">
+        <div class="rounded p-3 bg-warning mb-3">
+          <h6 class="fw-bold">You already have a bank guarantee letter</h6>
+          <p>Please contact <a href="#" class="text-fill">People-Care@solutions.com.sa</a> to cancel the previous one and try again.</p>
+        </div>
+        <h6 class="fw-600 border-bottom pb-3 mb-3">Current Bank Details</h6>
+        <div class="row">
+          <div class="col-md-6">
+            <h6 class="fw-600 mb-2">Current Bank</h6>
+            <p>alinma bank</p>
+            <h6 class="fw-600 my-2">Previous Bank Guarantee</h6>
+            <p>yes</p>
+          </div>
+          <div class="col-md-6">
+            <h6 class="fw-600 mb-2">Current Bank Account</h6>
+            <p>SA2605000068200661376001</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="overtimeModal" tabindex="-1" aria-labelledby="overtimeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="overtimeModalLabel">Add Over Time</h5>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <div class="modal-body">
+        <label for="name" class="fw-bold mt-3 mb-2">Period</label>
+        <input type="text" name="name" id="name" placeholder="2 2023 Calender Month" class="d-block w-100 border border-2 rounded px-4 py-2">
+        <div class="bg-light-gray rounded mt-3 p-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <h6>Please fill the over time date:</h6>
+            <a href="#"><i class="icon icon-delete"></i></a>
+          </div>
+          <label for="name" class="fw-bold mt-3 mb-2">Date</label>
+          <input type="text" name="name" id="name" placeholder="Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">From</label>
+          <input type="text" name="name" id="name" placeholder="Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">To</label>
+          <input type="text" name="name" id="name" placeholder="Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Justification</label>
+          <input type="text" name="name" id="name" placeholder="Justification" class="d-block w-100 border border-2 rounded px-4 py-2">
+        </div>
+        <button type="button" class="btn ouline-white bg-light-gray mt-3 w-100 text-start">+ Add Over Time</button>
+      </div>
+      <div class="modal-footer justify-content-end">
+        <button type="button" class="btn btn-fill text-uppercase">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="personalLoanModal" tabindex="-1" aria-labelledby="personalLoanModalLabel" aria-hidden="true">
+  <div class="modal-dialog width-50">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="personalLoanModalLabel">Personal Loan Request</h5>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <div class="modal-body percentage-slider upload-files">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Loan Amount</label>
+          <div class="range-container column m-0" id="ten">
+            <input type="range" id="no-ats" style="--ptage:70%" min="0" max="100" value="70">
+            <label for="no-ats" class="d-none">70</label>
+          </div>
+          <div class="d-flex align-items-center">
+            <input type="text" name="name" id="name" placeholder="19010" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <p class="border border-2 rounded px-3 bg-light-gray py-2 m-0">SAR</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mt-2">
+            <p class="text-light-gray m-0">Min 1,996.00</p>
+            <p class="text-light-gray m-0">Max 66,533.00</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <label for="name" class="fw-bold mt-3 mb-2">Complete loan Period</label>
+            <p class="fw-600">34 months</p>
+          </div>
+          <div class="range-container column m-0" id="fifty">
+            <input type="range" id="ats" min="0" max="100" value="70" style="--ptage:70%">
+            <label for="ats" class="50 d-none">70</label>
+          </div>
+          <div class="w-100 ps-5">
+            <span class="check-tasks">
+              <div class="checkbox relative">
+                <label class="absolute">
+                  <input type="checkbox" data-ng-model="example.check">
+                  <span class="box"></span>
+                </label>
+              </div>
+            </span>
+            <p class="fw-600 mt-1">Agree to <a href="#" class="text-fill">Terms and Conditions</a></p>
+          </div>
+          <div class="bg-light-gray p-3 rounded">
+            <h6 class="fw-600 mt-3 border-bottom border-2 pb-3 mb-3">Additional Details</h6>
+            <label for="role" class="fw-bold mt-3 mb-2">Comment</label>
+            <textarea name="address" id="address" class="d-block border border-2 w-100 rounded p-2" placeholder="Write your comments to the approver" spellcheck="false"></textarea>
+            <div class="uploadfile">
+              <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
+              <input id="fileupload" type="file" class="fileupload">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between align-items-center">
+        <div>
+          <p class="fw-600 m-0">Loan Amount 19,010.00 SAR</p>
+          <h4 class="fw-bold m-0">559.12 <span class="text-small">SAR/Month</span></h4>
+          <p class="text-light-gray fw-600 m-0">Complete loan Period 34 months</p>
+        </div>
+        <button type="button" class="btn btn-fill text-uppercase">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="educationLoanModal" tabindex="-1" aria-labelledby="educationLoanModalLabel" aria-hidden="true">
+  <div class="modal-dialog width-50">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="educationLoanModalLabel">Education Loan Request</h5>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <div class="modal-body percentage-slider upload-files">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Loan Amount</label>
+          <div class="range-container column m-0" id="one">
+            <input type="range" id="no-ats" style="--ptage:70%" min="0" max="100" value="70">
+            <label for="no-ats" class="d-none">70</label>
+          </div>
+          <div class="d-flex align-items-center">
+            <input type="text" name="name" id="name" placeholder="13730" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <p class="border border-2 rounded px-3 bg-light-gray py-2 m-0">SAR</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mt-2">
+            <p class="text-light-gray m-0">Min 1,996.00</p>
+            <p class="text-light-gray m-0">Max 66,533.00</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <label for="name" class="fw-bold mt-3 mb-2">Complete loan Period</label>
+            <p class="fw-600">7 months</p>
+          </div>
+          <div class="range-container column m-0" id="two">
+            <input type="range" id="ats" min="0" max="100" value="70" style="--ptage:70%">
+            <label for="ats" class="50 d-none">70</label>
+          </div>
+          <div class="w-100 ps-5">
+            <span class="check-tasks">
+              <div class="checkbox relative">
+                <label class="absolute">
+                  <input type="checkbox" data-ng-model="example.check">
+                  <span class="box"></span>
+                </label>
+              </div>
+            </span>
+            <p class="fw-600 mt-1">Agree to <a href="#" class="text-fill">Terms and Conditions</a></p>
+          </div>
+          <div class="bg-light-gray p-3 rounded">
+            <h6 class="fw-600 mt-3 border-bottom border-2 pb-3 mb-3">Additional Details</h6>
+            <label for="role" class="fw-bold mt-3 mb-2">Comment</label>
+            <textarea name="address" id="address" class="d-block border border-2 w-100 rounded p-2" placeholder="Write your comments to the approver" spellcheck="false"></textarea>
+            <div class="uploadfile">
+              <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
+              <input id="fileupload" type="file" class="fileupload">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between align-items-center">
+        <div>
+          <p class="fw-600 m-0">Loan Amount 13,730.00 SAR</p>
+          <h4 class="fw-bold m-0">1,961.43 <span class="text-small">SAR/Month</span></h4>
+          <p class="text-light-gray fw-600 m-0">Complete loan Period 7 months</p>
+        </div>
+        <button type="button" class="btn btn-fill text-uppercase">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="advanceSalaryModal" tabindex="-1" aria-labelledby="advanceSalaryModalLabel" aria-hidden="true">
+  <div class="modal-dialog width-50">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="advanceSalaryModalLabel">Advance Salary Request</h5>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <div class="modal-body percentage-slider upload-files">
+        <div class="my-3">
+          <h5 class="fw-600">Deserved Amount</h5>
+          <p>18,338.22</p>
+        </div>
+        <form>
+          <div class="bg-light-gray p-3 rounded">
+            <h6 class="fw-600 mt-3 border-bottom border-2 pb-3 mb-3">Additional Details</h6>
+            <label for="role" class="fw-bold mt-3 mb-2">Comment</label>
+            <textarea name="address" id="address" class="d-block border border-2 w-100 rounded p-2" placeholder="Write your comments to the approver" spellcheck="false"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-end">
+        <button type="button" class="btn btn-fill text-uppercase">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="housingLoanModal" tabindex="-1" aria-labelledby="housingLoanModalLabel" aria-hidden="true">
+  <div class="modal-dialog width-50">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="housingLoanModalLabel">Housing Loan Request</h5>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <div class="modal-body percentage-slider upload-box">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">The date of the first instakkment of the loan</label>
+          <input type="text" name="name" id="name" placeholder="The date of the first installment of the loan" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Property Value*</label>
+          <div class="d-flex align-items-center">
+            <input type="text" name="name" id="name" placeholder="13730" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <p class="border border-2 rounded px-3 bg-light-gray py-2 m-0">SAR</p>
+          </div>
+          <label for="name" class="fw-bold mt-3 mb-2">Property value + total interest*</label>
+          <div class="d-flex align-items-center">
+            <input type="text" name="name" id="name" placeholder="13730" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <p class="border border-2 rounded px-3 bg-light-gray py-2 m-0">SAR</p>
+          </div>
+          <label for="name" class="fw-bold mt-3 mb-2">The highest monthly installment*</label>
+          <div class="d-flex align-items-center">
+            <input type="text" name="name" id="name" placeholder="13730" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <p class="border border-2 rounded px-3 bg-light-gray py-2 m-0">SAR</p>
+          </div>
+          <label for="name" class="fw-bold mt-3 mb-2">The Total Financing Period*</label>
+          <div class="d-flex align-items-center">
+            <input type="text" name="name" id="name" placeholder="13730" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <p class="border border-2 rounded px-3 bg-light-gray py-2 m-0">Months</p>
+          </div>
+          <label for="name" class="fw-bold mt-3 mb-2">Is there monthly government support for housing loan?*</label>
+          <div class="d-flex align-items-center">
+            <div class="ps-5">
+              <span class="check-tasks">
+                <div class="checkbox relative">
+                  <label class="absolute">
+                    <input type="checkbox" data-ng-model="example.check">
+                    <span class="box"></span>
+                  </label>
+                </div>
+              </span>
+              <p class="fw-600">yes</p>
+            </div>
+            <div class="ps-5">
+              <span class="check-tasks">
+                <div class="checkbox relative">
+                  <label class="absolute">
+                    <input type="checkbox" data-ng-model="example.check">
+                    <span class="box"></span>
+                  </label>
+                </div>
+              </span>
+              <p class="fw-600">no</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="name" class="fw-bold mt-3 mb-2">Loan provider*</label>
+            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2 text-light-gray">
+              <option value="Manager">Please pick provider</option>
+              <option value="Urdu">Urdu</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Punjabi">Punjabi</option>
+            </select>
+          </div>
+          <label for="name" class="fw-bold mt-3 mb-2">Attachment*</label>
+          <div class="form-group">
+            <label for="fileField" class="attachment">
+              <div class="row btn-file">
+                <div class="btn-file__preview"></div>
+                <div class="btn-file__actions">
+                  <div class="btn-file__actions__item col-xs-12 text-center bg-gray">
+                    <div class="btn-file__actions__item--shadow text-white">
+                      Browse
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input name="file" type="file" id="fileField">
+            </label>
+          </div>
+          <div class="mt-4 ps-5">
+            <span class="check-tasks">
+              <div class="checkbox relative">
+                <label class="absolute">
+                  <input type="checkbox" data-ng-model="example.check">
+                  <span class="box"></span>
+                </label>
+              </div>
+            </span>
+            <p class="fw-600">Agree to <a href="#" class="text-fill">Terma and Conditions</a></p>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-end">
+        <button type="button" class="btn btn-fill text-uppercase">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="performanceModal" tabindex="-1" aria-labelledby="performanceModalLabel" aria-hidden="true">
+  <div class="modal-dialog width-50">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="performanceModalLabel">Performance Care</h5>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Date</label>
+          <div class="d-flex align-items-center justify-content-between performance">
+            <div class="w-17 p-2 text-center border rounded active-box">
+              <h6 class="fw-600">Today</h6>
+              <p class="text-light-gray">20 Mar</p>
+            </div>
+            <div class="w-17 p-2 text-center border rounded ms-2 active-box">
+              <h6 class="fw-600">Tuesday</h6>
+              <p class="text-light-gray">21 Mar</p>
+            </div>
+            <div class="w-17 p-2 text-center border rounded ms-2 active-box">
+              <h6 class="fw-600">Wednesday</h6>
+              <p class="text-light-gray">22 Mar</p>
+            </div>
+            <div class="w-17 p-2 text-center border rounded ms-2 active-box">
+              <h6 class="fw-600">Thursday</h6>
+              <p class="text-light-gray">23 Mar</p>
+            </div>
+            <div class="w-17 p-2 text-center border rounded ms-2 deactive-box">
+              <h6 class="fw-600">Friday</h6>
+              <p class="text-light-gray">24 Mar</p>
+            </div>
+            <div class="w-17 p-2 text-center border rounded ms-2 deactive-box">
+              <h6 class="fw-600">Saturday</h6>
+              <p class="text-light-gray">25 Mar</p>
+            </div>
+            <div class="w-17 p-2 text-center border rounded ms-2 active-box">
+              <h6 class="fw-600">Sunday</h6>
+              <p class="text-light-gray">26 Mar</p>
+            </div>
+          </div>
+          <div class="bg-light-gray p-3 rounded mt-3">
+            <h6 class="fw-600 mt-3 border-bottom border-2 pb-3 mb-3">Additional Details</h6>
+            <label for="role" class="fw-bold mt-3 mb-2">Comment</label>
+            <textarea name="address" id="address" class="d-block border border-2 w-100 rounded p-2" placeholder="Write your comments to the approver" spellcheck="false"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-end">
+        <button type="button" class="btn btn-fill text-uppercase">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="medicalLoanModal" tabindex="-1" aria-labelledby="medicalLoanModalLabel" aria-hidden="true">
+  <div class="modal-dialog width-50">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="medicalLoanModalLabel">Medical Insurance Request</h5>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <div class="modal-body percentage-slider upload-box">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Insurance For</label>
+          <div class="d-flex align-items-center">
+            <div class="ps-5">
+              <span class="check-tasks">
+                <div class="checkbox relative">
+                  <label class="absolute">
+                    <input type="checkbox" data-ng-model="example.check">
+                    <span class="box"></span>
+                  </label>
+                </div>
+              </span>
+              <p class="fw-600">Parents</p>
+            </div>
+            <div class="ps-5">
+              <span class="check-tasks">
+                <div class="checkbox relative">
+                  <label class="absolute">
+                    <input type="checkbox" data-ng-model="example.check">
+                    <span class="box"></span>
+                  </label>
+                </div>
+              </span>
+              <p class="fw-600">Employee</p>
+            </div>
+            <div class="ps-5">
+              <span class="check-tasks">
+                <div class="checkbox relative">
+                  <label class="absolute">
+                    <input type="checkbox" data-ng-model="example.check">
+                    <span class="box"></span>
+                  </label>
+                </div>
+              </span>
+              <p class="fw-600">Family Member</p>
+            </div>
+          </div>
+          <label for="name" class="fw-bold mt-3 mb-2">Insured Person</label>
+          <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2 text-light-gray">
+            <option value="Manager"></option>
+            <option value="Urdu">Urdu</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Punjabi">Punjabi</option>
+          </select>
+          <label for="name" class="fw-bold mt-3 mb-2">Start Date</label>
+          <input type="date" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Covered By</label>
+            <div class="ps-5">
+              <span class="check-tasks">
+                <div class="checkbox relative">
+                  <label class="absolute">
+                    <input type="checkbox" data-ng-model="example.check">
+                    <span class="box"></span>
+                  </label>
+                </div>
+              </span>
+              <p class="fw-600">Company</p>
+            </div>
+            <div class="ps-5">
+              <span class="check-tasks">
+                <div class="checkbox relative">
+                  <label class="absolute">
+                    <input type="checkbox" data-ng-model="example.check">
+                    <span class="box"></span>
+                  </label>
+                </div>
+              </span>
+              <p class="fw-600">Employee</p>
+            </div>
+            <label for="name" class="fw-bold mt-3 mb-2">Medical Class</label>
+            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2 text-light-gray">
+              <option value="Manager"></option>
+              <option value="Urdu">Urdu</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Punjabi">Punjabi</option>
+            </select>
+            <div class="bg-light-gray p-3 rounded mt-3">
+              <h6 class="fw-600 mt-3 border-bottom border-2 pb-3 mb-3">Additional Details</h6>
+              <label for="role" class="fw-bold mt-3 mb-2">Comment</label>
+              <textarea name="address" id="address" class="d-block border border-2 w-100 rounded p-2" placeholder="Write your comments to the approver" spellcheck="false"></textarea>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-end">
+        <button type="button" class="btn btn-fill text-uppercase">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+  <div class="modal-dialog width-50">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="paymentModalLabel">Business Trip Payment Request</h5>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <div class="modal-body percentage-slider upload-box">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Business Trip</label>
+          <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2 text-light-gray">
+            <option value="Manager"></option>
+            <option value="Urdu">Urdu</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Punjabi">Punjabi</option>
+          </select>
+          <div class="ps-5">
+            <span class="check-tasks">
+              <div class="checkbox relative">
+                <label class="absolute">
+                  <input type="checkbox" data-ng-model="example.check">
+                  <span class="box"></span>
+                </label>
+              </div>
+            </span>
+            <p class="fw-600">Parents</p>
+          </div>
+          <label for="name" class="fw-bold mt-3 mb-2">Tickets Price</label>
+          <div class="d-flex align-items-center">
+            <input type="text" name="name" id="name" placeholder="13730" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <p class="border border-2 rounded px-3 bg-light-gray py-2 m-0">SAR</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="name" class="fw-bold mt-3 mb-2">Operating Expenses</label>
+              <div class="d-flex align-items-center">
+                <input type="text" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <select name="Role" id="Role" class="d-block border border-2 rounded px-1 py-2 text-light-gray">
+                  <option value="Manager">SAR</option>
+                  <option value="Urdu">Urdu</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Punjabi">Punjabi</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="name" class="fw-bold mt-3 mb-2">Operating Expenses SAR</label>
+              <p class="text-light-gray">0.00 SAR</p>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-end">
+        <button type="button" class="btn btn-fill text-uppercase">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 
 
 
@@ -810,9 +1392,68 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/graphs.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+
+  <script>
+    $(".popup-button").click(function(){
+      $(".popup-form").addClass("d-block")
+    });
+    $(".popup-cancel").click(function(){
+      $(".popup-form").removeClass("d-block")
+    });
+
+
+    const scale = (num, in_min, in_max, out_min, out_max) => {
+    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+};
+const moveLabel = (e) => {
+    const value = +e.target.value
+    const label = e.target.nextElementSibling
+
+    const range_width = getComputedStyle(e.target).getPropertyValue('width')
+    const label_width = getComputedStyle(label).getPropertyValue('width')
+
+    const num_width = +range_width.substring(0, range_width.length - 2)
+    const num_label_width = +label_width.substring(0, label_width.length - 2)
+
+    const max = +e.target.max
+    const min = +e.target.min
+
+    const left = value * (num_width / max) - num_label_width / 2 + scale(value, min, max, 10, -10)
+    label.style.left = `${left}px`
+
+    e.target.style = "--ptage:" + value + "%";
+    
+    label.innerHTML = value
+};
+const tenRange = document.getElementById('ten');
+const fiftyRange = document.getElementById('fifty');
+const oneRange = document.getElementById('one');
+const twoRange = document.getElementById('two');
+tenRange.addEventListener('input', e => {
+  moveLabel(e);
+  const nbOutboundHires = +nbOutboundHiresInput.value;
+  displayCostNoAts(nbOutboundHires, +e.target.value);
+  displayCostAts(nbOutboundHires, +atsElem.value, +e.target.value)
+});
+
+fiftyRange.addEventListener('input', e => {
+  moveLabel(e);
+  const nbOutboundHires = +nbOutboundHiresInput.value;
+  displayCostAts(nbOutboundHires, +e.target.value, +noAtsElem.value);
+});
+
+oneRange.addEventListener('input', e => {
+  moveLabel(e);
+  const nbOutboundHires = +nbOutboundHiresInput.value;
+  displayCostAts(nbOutboundHires, +e.target.value, +noAtsElem.value);
+});
+
+twoRange.addEventListener('input', e => {
+  moveLabel(e);
+  const nbOutboundHires = +nbOutboundHiresInput.value;
+  displayCostAts(nbOutboundHires, +e.target.value, +noAtsElem.value);
+});
+  </script>
 </body>
 
 </html>

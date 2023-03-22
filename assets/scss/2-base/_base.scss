@@ -17,7 +17,7 @@ h5,
 h6,
 p,
 span {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 $font-size-1: 36px;
@@ -374,6 +374,9 @@ h6 {
 }
 .w-18 {
   width: 18.5%;
+}
+.w-17{
+  width: 17%;
 }
 .w-11 {
   width: 11.9%;

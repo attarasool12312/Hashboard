@@ -58,8 +58,8 @@
             <li><a href="./job-candidates.html" class="panel_link "><i class="icon icon-people-fill"></i> Candidates</a></li>
             <li><a href="./job-employees.html" class="panel_link "><i class="icon icon-people-fill"></i> Employee</a></li>
             <li><a href="./job-reports.html" class="panel_link "><i class="icon icon-expenses"></i> Report</a></li>
+            <li><a href="./job-applications-api.html" class="panel_link"><i class="icon icon-expenses"></i> Applications API</a></li>
             <li class="nav-item panel-dropdown">
-              <li><a href="./job-applications-api.html" class="panel_link"><i class="icon icon-expenses"></i> Applications API</a></li>
               <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Business-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-bar-document"></i> Setting
@@ -1141,9 +1141,6 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   </div>
 </div>
 </div>
-
-<!-- ****************** -->
-
 <div class="modal right fade show d-block opacity-0" id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel" aria-hidden="true">
   <div class="modal-dialog width-70 wsm-95">
     <div class="modal-content">
@@ -1151,9 +1148,9 @@ aria-labelledby="interviewLabel" aria-hidden="true">
         <h4>Chart Menu</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body chart-popup">
+      <div class="modal-body">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 chart-popup">
             <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">
               <li class="nav-item active" role="presentation">
                 <button class="nav-link active" id="Candlestick-tab" data-bs-toggle="tab" data-bs-target="#Candlestick" type="button"
@@ -1253,7 +1250,7 @@ aria-labelledby="interviewLabel" aria-hidden="true">
               </li>
             </ul>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-9 chart-popup">
             <div class="tab-content mt-4">
               <div class="tab-pane " id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
                 <div class="row">
@@ -1465,6 +1462,7 @@ aria-labelledby="interviewLabel" aria-hidden="true">
           </div>
         </div>
       </div>
+      </div>
       <div class="modal-footer justify-content-between">
         <button type="button" class="btn btn-fill px-5 py-2 text-uppercase wsm-100">Update</button>
         <button type="button" class="btn bg-light px-4 py-2 text-uppercase wsm-100"
@@ -1472,7 +1470,6 @@ aria-labelledby="interviewLabel" aria-hidden="true">
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <!-- ******************** -->

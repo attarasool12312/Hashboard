@@ -62,17 +62,7 @@
               <li><a href="./hr-team-managment.html" class="panel_link "><i class="icon icon-contact"></i> Team
                   Management</a></li>
                   <li><a href="./hr-request.html" class="panel_link"><i class="icon icon-contact"></i> My Request</a></li>
-              <li class="nav-item panel-dropdown">
-                <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="icon icon-business"></i>
-                  Attendance
-                </a>
-                <ul class="Business-Dropdown" aria-labelledby="Filing-Dropdown">
-                  <li><a class="panel_link " href="./hr-timesheet.html">Timesheets</a></li>
-                  <li><a class="panel_link " href="./hr-leave-managment.html">Leave Management</a></li>
-                </ul>
-              </li>
+                  <li><a class="panel_link " href="./hr-timesheet.html"><i class="icon icon-business"></i> Attendance</a></li>
               <li><a href="./hr-payroll.html" class="panel_link "><i class="icon icon-overviwe"></i> Payroll</a></li>
               <li><a href="./hr-employee-performance.html" class="panel_link"><i class="icon icon-contact"></i> Employee Performance</a></li>
               <li><a href="./hr-announcement.html" class="panel_link "><i class="icon icon-contact"></i> Announcement</a></li>
@@ -104,14 +94,6 @@
                   <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
               </div>
           </div>
-          <!-- <div class="search-form d-none d-md-block">
-              <form action="">
-                  <div class="form-group">
-                      <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
-                      <i class="icon icon-search-form"></i>
-                  </div>
-              </form>
-          </div> -->
           <div class="about-profile">
               <div class="d-none d-md-flex align-items-center">
                   <button type="button" class="btn ouline-white" data-bs-toggle="modal"
@@ -166,331 +148,326 @@
           </div>
       </div>
         <div class="container">
-          <section class="employee-directory">
-            <div class="container">
-              <div class="row">
-                <div class="d-flex justify-content-between align-items-center flex-colume-sm">
-                  <div class="employee-directory-title">
-                    <h2>Employee Directory</h2>
-                    <p>Showing 1,652 total employees</p>
-                  </div>
-                  <div>
-                    <button type="button" class="btn ouline-white btn-fill me-md-3 wsm-100" data-bs-toggle="modal"
-                      data-bs-target="#addEmployee">Add New Employee</button>
-                      <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload Bulk</button>
-                  </div>
-                </div>
-                <ul class="nav nav-tabs my-3" id="myTab" role="tablist">
+          <div class="page-main-title align-items-end">
+            <div class="heading">
+              <h1>Employee Directory</h1>
+              <p>Showing 1,652 total employees</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <button type="button" class="btn ouline-white btn-fill me-md-3 wsm-100" data-bs-toggle="modal"
+                data-bs-target="#addEmployee">Add New Employee</button>
+                <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload Bulk</button>
+            </div>
+          </div>
+          <div class="employee-directory rounded">
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link text-uppercase active" id="active-tab" data-bs-toggle="tab"
-                      data-bs-target="#active" type="button" role="tab" aria-controls="active"
-                      aria-selected="false">Active</button>
+                    <button class="nav-link active" id="Active-tab" data-bs-toggle="tab" data-bs-target="#Active" type="button" role="tab" aria-controls="Active" aria-selected="false">Active</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link text-uppercase" id="all-show-tab" data-bs-toggle="tab"
-                      data-bs-target="#show" type="button" role="tab" aria-controls="show" aria-selected="true">Show
-                      All</button>
+                    <button class="nav-link" id="Show-tab" data-bs-toggle="tab" data-bs-target="#Show" type="button" role="tab" aria-controls="Show" aria-selected="false">Show All</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link text-uppercase" id="Hired-tab" data-bs-toggle="tab"
-                      data-bs-target="#Hired" type="button" role="tab" aria-controls="Hired" aria-selected="true">New Hired</button>
+                    <button class="nav-link " id="Hired-tab" data-bs-toggle="tab" data-bs-target="#Hired" type="button" role="tab" aria-controls="Hired" aria-selected="true">New Hired</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link text-uppercase" id="all-inactive-tab" data-bs-toggle="tab"
-                      data-bs-target="#inactive" type="button" role="tab" aria-controls="inactive"
-                      aria-selected="false">Inactive</button>
+                    <button class="nav-link " id="Inactive-tab" data-bs-toggle="tab" data-bs-target="#Inactive" type="button" role="tab" aria-controls="Inactive" aria-selected="true">Inactive</button>
                   </li>
                 </ul>
-                <div class="tab-pane active" id="active" role="tabpanel" aria-labelledby="candidates-tab">
-                  <div class="search">
-                    <i class="fa fa-search"></i>
-                    <input type="text" class="form-control py-2" placeholder="Search for Employee">
-                    <button class="btn btn-fill px-4 ms-md-4 ms-2 py-2">Search</button>
-                  </div>
-                  <div class="employee-diractory-table invoice-table tablepanel">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col" class="ps-5">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
+                <div class="tab-content mt-3">
+                  <div class="tab-pane active" id="Active" role="tabpanel" aria-labelledby="Active-tab">
+                    <div class="search">
+                      <i class="fa fa-search"></i>
+                      <input type="text" class="form-control py-2" placeholder="Search for Employee">
+                      <button class="btn px-4 ms-2 ms-md-4 py-2 btn-fill">Search</button>
+                    </div>
+                    <div class="employee-diractory-table invoice-table tablepanel">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="ps-5">
+                              <span class="check-tasks">
+                                <div class="checkbox relative">
+                                  <label class="absolute">
+                                    <input type="checkbox" data-ng-model="example.check">
+                                    <span class="box"></span>
+                                  </label>
+                                </div>
+                              </span>FULL NAME
+                              <span class="ms-2"><i class="fa fa-arrow-down"></i></span>
+                            </th>
+                            <th scope="col" class="ps-3">POSITION</th>
+                            <th scope="col" class="ps-3">DEPARTMENT</th>
+                            <th scope="col" class="ps-3">COUNTRY</th>
+                            <th scope="col" class="ps-3">REGION</th>
+                            <th scope="col" class="ps-3">MEMBERS</th>
+                            <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
+                            <td scope="row" class="ps-5" data-label="Full Name">
+                              <span class="check-tasks">
+                                <div class="checkbox relative">
+                                  <label class="absolute">
+                                    <input type="checkbox" data-ng-model="example.check">
+                                    <span class="box"></span>
+                                  </label>
+                                </div>
+                              </span>
+                              <div class="d-flex align-items-center">
+                                <img src="./assets/images/profile-4.png" alt="">
+                                <div class="ms-3">
+                                  <h6 class="text-sm">Ronald Haworth</h6>
+                                  <p class="text-light-gray text-small">ID76106</p>
+                                </div>
                               </div>
-                            </span>FULL NAME
-                            <span class="ms-2"><i class="fa fa-arrow-down"></i></span>
-                          </th>
-                          <th scope="col" class="ps-3">POSITION</th>
-                          <th scope="col" class="ps-3">DEPARTMENT</th>
-                          <th scope="col" class="ps-3">COUNTRY</th>
-                          <th scope="col" class="ps-3">REGION</th>
-                          <th scope="col" class="ps-3">MEMBERS</th>
-                          <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
-                          <td scope="row" class="ps-5" data-label="Full Name">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
+                            </td>
+                            <td data-label="Position">VP of Finance</td>
+                            <td data-label="Department">Finance</td>
+                            <td data-label="Country">Bangladesh</td>
+                            <td data-label="Region">West Wing D</td>
+                            <td data-label="Members"><span class="finalized-status">Member</span></td>
+                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                  class="icon icon-dots"></i></a></td>
+                          </tr>
+                          <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
+                            <td scope="row" class="ps-5" data-label="Full Name">
+                              <span class="check-tasks">
+                                <div class="checkbox relative">
+                                  <label class="absolute">
+                                    <input type="checkbox" data-ng-model="example.check">
+                                    <span class="box"></span>
+                                  </label>
+                                </div>
+                              </span>
+                              <div class="d-flex align-items-center">
+                                <img src="./assets/images/profile-5.png" alt="">
+                                <div class="ms-3 ">
+                                  <h6 class="text-sm">Geraldine</h6>
+                                  <p class="text-light-gray text-small">ID70171</p>
+                                </div>
                               </div>
-                            </span>
-                            <div class="d-flex align-items-center">
-                              <img src="./assets/images/profile-4.png" alt="">
-                              <div class="ms-3">
-                                <h6 class="text-sm">Ronald Haworth</h6>
-                                <p class="text-light-gray text-small">ID76106</p>
+                            </td>
+                            <td data-label="Position">Accountant</td>
+                            <td data-label="Department">Finance</td>
+                            <td data-label="Country">United Kingdom</td>
+                            <td data-label="Region">West Wing P</td>
+                            <td data-label="Members"><span class="finalized-status">Leader</span></td>
+                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                  class="icon icon-dots"></i></a></td>
+                          </tr>
+                          <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
+                            <td scope="row" class="ps-5" data-label="Full Name">
+                              <span class="check-tasks">
+                                <div class="checkbox relative">
+                                  <label class="absolute">
+                                    <input type="checkbox" data-ng-model="example.check">
+                                    <span class="box"></span>
+                                  </label>
+                                </div>
+                              </span>
+                              <div class="d-flex align-items-center">
+                                <img src="./assets/images/profile-7.png" alt="">
+                                <div class="ms-3 ">
+                                  <h6 class="text-sm">Dorothy Stevenson</h6>
+                                  <p class="text-light-gray text-small">ID49045</p>
+                                </div>
                               </div>
-                            </div>
-                          </td>
-                          <td data-label="Position">VP of Finance</td>
-                          <td data-label="Department">Finance</td>
-                          <td data-label="Country">Bangladesh</td>
-                          <td data-label="Region">West Wing D</td>
-                          <td data-label="Members"><span class="finalized-status">Member</span></td>
-                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                class="icon icon-dots"></i></a></td>
-                        </tr>
-                        <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
-                          <td scope="row" class="ps-5" data-label="Full Name">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
+                            </td>
+                            <td data-label="Position">Billing Manager</td>
+                            <td data-label="Department">Finance</td>
+                            <td data-label="Country">Canada</td>
+                            <td data-label="Region">West Wing B</td>
+                            <td data-label="Members"><span class="finalized-status">Member</span></td>
+                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                  class="icon icon-dots"></i></a></td>
+                          </tr>
+                          <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
+                            <td scope="row" class="ps-5" data-label="Full Name">
+                              <span class="check-tasks">
+                                <div class="checkbox relative">
+                                  <label class="absolute">
+                                    <input type="checkbox" data-ng-model="example.check">
+                                    <span class="box"></span>
+                                  </label>
+                                </div>
+                              </span>
+                              <div class="d-flex align-items-center">
+                                <img src="./assets/images/profile-6.png" alt="">
+                                <div class="ms-3 ">
+                                  <h6 class="text-sm">Nancy Herrick</h6>
+                                  <p class="text-light-gray text-small">ID01001</p>
+                                </div>
                               </div>
-                            </span>
-                            <div class="d-flex align-items-center">
-                              <img src="./assets/images/profile-5.png" alt="">
-                              <div class="ms-3 ">
-                                <h6 class="text-sm">Geraldine</h6>
-                                <p class="text-light-gray text-small">ID70171</p>
+                            </td>
+                            <td data-label="Position">Accountant</td>
+                            <td data-label="Department">Finance</td>
+                            <td data-label="Country">Switzerland</td>
+                            <td data-label="Region">South Courtyard</td>
+                            <td data-label="Members">
+                              <span class="finalized-status">Leader</span>
+                            </td>
+                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                  class="icon icon-dots"></i></a></td>
+                          </tr>
+                          <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
+                            <td scope="row" class="ps-5" data-label="Full Name">
+                              <span class="check-tasks">
+                                <div class="checkbox relative">
+                                  <label class="absolute">
+                                    <input type="checkbox" data-ng-model="example.check">
+                                    <span class="box"></span>
+                                  </label>
+                                </div>
+                              </span>
+                              <div class="d-flex align-items-center">
+                                <img src="./assets/images/profile-2.png" alt="">
+                                <div class="ms-3 ">
+                                  <h6 class="text-sm">Kristen Davenport</h6>
+                                  <p class="text-light-gray text-small">ID38049</p>
+                                </div>
                               </div>
-                            </div>
-                          </td>
-                          <td data-label="Position">Accountant</td>
-                          <td data-label="Department">Finance</td>
-                          <td data-label="Country">United Kingdom</td>
-                          <td data-label="Region">West Wing P</td>
-                          <td data-label="Members"><span class="finalized-status">Leader</span></td>
-                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                class="icon icon-dots"></i></a></td>
-                        </tr>
-                        <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
-                          <td scope="row" class="ps-5" data-label="Full Name">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
+                            </td>
+                            <td data-label="Position">Regional Manager</td>
+                            <td data-label="Department">Recruitment</td>
+                            <td data-label="Country">China</td>
+                            <td data-label="Region">Control Room A</td>
+                            <td data-label="Members">
+                              <span class="finalized-status">Member</span>
+                            </td>
+                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                  class="icon icon-dots"></i></a></td>
+                          </tr>
+                          <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
+                            <td scope="row" class="ps-5" data-label="Full Name">
+                              <span class="check-tasks">
+                                <div class="checkbox relative">
+                                  <label class="absolute">
+                                    <input type="checkbox" data-ng-model="example.check">
+                                    <span class="box"></span>
+                                  </label>
+                                </div>
+                              </span>
+                              <div class="d-flex align-items-center">
+                                <img src="./assets/images/profile-9.png" alt="">
+                                <div class="ms-3 ">
+                                  <h6 class="text-sm">Keith Flanign</h6>
+                                  <p class="text-light-gray text-small">ID70171</p>
+                                </div>
                               </div>
-                            </span>
-                            <div class="d-flex align-items-center">
-                              <img src="./assets/images/profile-7.png" alt="">
-                              <div class="ms-3 ">
-                                <h6 class="text-sm">Dorothy Stevenson</h6>
-                                <p class="text-light-gray text-small">ID49045</p>
+                            </td>
+                            <td data-label="Position">Marketing Manager</td>
+                            <td data-label="Department">Public Relations</td>
+                            <td data-label="Country">Spain</td>
+                            <td data-label="Region">Control Room A</td>
+                            <td data-label="Members">
+                              <span class="finalized-status">Member</span>
+                            </td>
+                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                  class="icon icon-dots"></i></a></td>
+                          </tr>
+                          <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
+                            <td scope="row" class="ps-5" data-label="Full Name">
+                              <span class="check-tasks">
+                                <div class="checkbox relative">
+                                  <label class="absolute">
+                                    <input type="checkbox" data-ng-model="example.check">
+                                    <span class="box"></span>
+                                  </label>
+                                </div>
+                              </span>
+                              <div class="d-flex align-items-center">
+                                <img src="./assets/images/profile-4.png" alt="">
+                                <div class="ms-3 ">
+                                  <h6 class="text-sm">Bertha Rangel</h6>
+                                  <p class="text-light-gray text-small">ID58341</p>
+                                </div>
                               </div>
-                            </div>
-                          </td>
-                          <td data-label="Position">Billing Manager</td>
-                          <td data-label="Department">Finance</td>
-                          <td data-label="Country">Canada</td>
-                          <td data-label="Region">West Wing B</td>
-                          <td data-label="Members"><span class="finalized-status">Member</span></td>
-                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                class="icon icon-dots"></i></a></td>
-                        </tr>
-                        <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
-                          <td scope="row" class="ps-5" data-label="Full Name">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
+                            </td>
+                            <td data-label="Position">R&D Exectutive</td>
+                            <td data-label="Department">Public Relations</td>
+                            <td data-label="Country">Australia</td>
+                            <td data-label="Region">Control Room B</td>
+                            <td data-label="Members"><span class="finalized-status">Member</span></td>
+                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                  class="icon icon-dots"></i></a></td>
+                          </tr>
+                          <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
+                            <td scope="row" class="ps-5" data-label="Full Name">
+                              <span class="check-tasks">
+                                <div class="checkbox relative">
+                                  <label class="absolute">
+                                    <input type="checkbox" data-ng-model="example.check">
+                                    <span class="box"></span>
+                                  </label>
+                                </div>
+                              </span>
+                              <div class="d-flex align-items-center">
+                                <img src="./assets/images/profile-5.png" alt="">
+                                <div class="ms-3 ">
+                                  <h6 class="text-sm">Billy Morgan</h6>
+                                  <p class="text-light-gray text-small">ID32207</p>
+                                </div>
                               </div>
-                            </span>
-                            <div class="d-flex align-items-center">
-                              <img src="./assets/images/profile-6.png" alt="">
-                              <div class="ms-3 ">
-                                <h6 class="text-sm">Nancy Herrick</h6>
-                                <p class="text-light-gray text-small">ID01001</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td data-label="Position">Accountant</td>
-                          <td data-label="Department">Finance</td>
-                          <td data-label="Country">Switzerland</td>
-                          <td data-label="Region">South Courtyard</td>
-                          <td data-label="Members">
-                            <span class="finalized-status">Leader</span>
-                          </td>
-                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                class="icon icon-dots"></i></a></td>
-                        </tr>
-                        <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
-                          <td scope="row" class="ps-5" data-label="Full Name">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <div class="d-flex align-items-center">
-                              <img src="./assets/images/profile-2.png" alt="">
-                              <div class="ms-3 ">
-                                <h6 class="text-sm">Kristen Davenport</h6>
-                                <p class="text-light-gray text-small">ID38049</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td data-label="Position">Regional Manager</td>
-                          <td data-label="Department">Recruitment</td>
-                          <td data-label="Country">China</td>
-                          <td data-label="Region">Control Room A</td>
-                          <td data-label="Members">
-                            <span class="finalized-status">Member</span>
-                          </td>
-                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                class="icon icon-dots"></i></a></td>
-                        </tr>
-                        <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
-                          <td scope="row" class="ps-5" data-label="Full Name">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <div class="d-flex align-items-center">
-                              <img src="./assets/images/profile-9.png" alt="">
-                              <div class="ms-3 ">
-                                <h6 class="text-sm">Keith Flanign</h6>
-                                <p class="text-light-gray text-small">ID70171</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td data-label="Position">Marketing Manager</td>
-                          <td data-label="Department">Public Relations</td>
-                          <td data-label="Country">Spain</td>
-                          <td data-label="Region">Control Room A</td>
-                          <td data-label="Members">
-                            <span class="finalized-status">Member</span>
-                          </td>
-                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                class="icon icon-dots"></i></a></td>
-                        </tr>
-                        <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
-                          <td scope="row" class="ps-5" data-label="Full Name">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <div class="d-flex align-items-center">
-                              <img src="./assets/images/profile-4.png" alt="">
-                              <div class="ms-3 ">
-                                <h6 class="text-sm">Bertha Rangel</h6>
-                                <p class="text-light-gray text-small">ID58341</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td data-label="Position">R&D Exectutive</td>
-                          <td data-label="Department">Public Relations</td>
-                          <td data-label="Country">Australia</td>
-                          <td data-label="Region">Control Room B</td>
-                          <td data-label="Members"><span class="finalized-status">Member</span></td>
-                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                class="icon icon-dots"></i></a></td>
-                        </tr>
-                        <tr class="cursor-pointer" onclick="window.location.href='./hr-employee-profile.html'">
-                          <td scope="row" class="ps-5" data-label="Full Name">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <div class="d-flex align-items-center">
-                              <img src="./assets/images/profile-5.png" alt="">
-                              <div class="ms-3 ">
-                                <h6 class="text-sm">Billy Morgan</h6>
-                                <p class="text-light-gray text-small">ID32207</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td data-label="Position">
-                            Accountant
-                          </td>
-                          <td data-label="Department">Finance</td>
-                          <td data-label="Country">South Africa</td>
-                          <td data-label="Region">West Wing A</td>
-                          <td data-label="Members"><span class="finalized-status">Member</span></td>
-                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                class="icon icon-dots"></i></a></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div class="pagination">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-12 col-md-6 d-flex align-items-center">
-                        <p>Items per page:</p>
-                        <select class="form-select w-auto mx-3" aria-label="Default select example">
-                          <option selected="">10</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="1">4</option>
-                          <option value="2">5</option>
-                          <option value="3">6</option>
-                          <option value="3">7</option>
-                          <option value="3">8</option>
-                        </select>
-                        <p class="text-light-gray">1-10 of 103 entries</p>
-                      </div>
-                      <div class="col-12 col-md-6 mt-3 mt-md-0">
-                        <nav aria-label="Page navigation example">
-                          <ul class="pagination justify-content-end">
-                            <li class="page-item disabled">
-                              <a class="page-link bg-transparent border-0" href="#" tabindex="-1"
-                                aria-disabled="true">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link bg-transparent border-0" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link bg-transparent border-0" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link bg-transparent border-0" href="#">Next</a>
-                            </li>
-                          </ul>
-                        </nav>
+                            </td>
+                            <td data-label="Position">
+                              Accountant
+                            </td>
+                            <td data-label="Department">Finance</td>
+                            <td data-label="Country">South Africa</td>
+                            <td data-label="Region">West Wing A</td>
+                            <td data-label="Members"><span class="finalized-status">Member</span></td>
+                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                                  class="icon icon-dots"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="pagination">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-12 col-md-6 d-flex align-items-center">
+                            <p>Items per page:</p>
+                            <select class="form-select w-auto mx-3" aria-label="Default select example">
+                              <option selected="">10</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="1">4</option>
+                              <option value="2">5</option>
+                              <option value="3">6</option>
+                              <option value="3">7</option>
+                              <option value="3">8</option>
+                            </select>
+                            <p class="text-light-gray">1-10 of 103 entries</p>
+                          </div>
+                          <div class="col-12 col-md-6 mt-3 mt-md-0">
+                            <nav aria-label="Page navigation example">
+                              <ul class="pagination justify-content-end">
+                                <li class="page-item disabled">
+                                  <a class="page-link bg-transparent border-0" href="#" tabindex="-1"
+                                    aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link bg-transparent border-0" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link bg-transparent border-0" href="#">3</a></li>
+                                <li class="page-item">
+                                  <a class="page-link bg-transparent border-0" href="#">Next</a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </main>
     </div>
@@ -979,9 +956,6 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/graphs.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

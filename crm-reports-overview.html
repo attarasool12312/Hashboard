@@ -253,7 +253,7 @@
                                       </div>
                                     </div>
                                 </div>
-                                <canvas id="invoiceBars-overview" class="wsm-100"
+                                <canvas id="reportsChart" class="wsm-100"
                                     style="display: block; box-sizing: border-box; height: 160px; width: 470px;"
                                     width="470" height="160"></canvas>
                             </div>
@@ -287,7 +287,7 @@
                                 </div>
                                 <h3 class="fw-600">$682.5</h3>
                                 <p class="text-success"><i class="icon icon-check"></i> On track</p>
-                                <canvas id="overChartOverview" class="wsm-100"
+                                <canvas id="reportsEarnChart" class="wsm-100"
                                     style="display: block; box-sizing: border-box; height: 200px; width: 300px;"
                                     width="300" height="200"></canvas>
                             </div>
@@ -359,9 +359,9 @@
                 <h4>Chart Menu</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body chart-popup">
+              <div class="modal-body">
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-md-3 chart-popup">
                     <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">
                       <li class="nav-item active" role="presentation">
                         <button class="nav-link active" id="Candlestick-tab" data-bs-toggle="tab" data-bs-target="#Candlestick" type="button"
@@ -461,7 +461,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-md-9">
+                  <div class="col-md-9 chart-popup">
                     <div class="tab-content mt-4">
                       <div class="tab-pane " id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
                         <div class="row">
@@ -673,6 +673,7 @@
                   </div>
                 </div>
               </div>
+              </div>
               <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-fill px-5 py-2 text-uppercase wsm-100">Update</button>
                 <button type="button" class="btn bg-light px-4 py-2 text-uppercase wsm-100"
@@ -680,7 +681,6 @@
               </div>
             </div>
           </div>
-        </div>
         </div>
         <div class="modal fade" id="addTaskModal" tabindex="-1" aria-labelledby="addTaskModalLabel" aria-hidden="true">
             <div class="modal-dialog width-50 wsm-95">
@@ -1001,21 +1001,21 @@ aria-labelledby="interviewLabel" aria-hidden="true">
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./assets/js/graphs.js"></script>
+    <script src="./assets/js/project-overview.js"></script>
     <script src="./assets/js/graphs-popup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js"></script>
-    <script src="./assets/js/candleschart.js"></script>  
+    <script src="./assets/js/candleschart.js"></script>
     <script src="./assets/js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
-        <script src="./assets/js/chartjs-chart-financial.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+    <script src="./assets/js/chartjs-chart-financial.js"></script>
     <script>
        $('#chartMenu').removeClass('show').removeClass('d-block').removeClass('opacity-0');
 
 
         window.onload = function () {
-            const invoice = document.getElementById("invoiceBars-overview");
+            const reportsChart = document.getElementById("reportsChart");
 
-            const bar4 = new Chart(invoice, {
+            const reportsChart_1 = new Chart(reportsChart, {
                 type: "bar",
                 data: {
                     labels: [
@@ -1087,9 +1087,9 @@ aria-labelledby="interviewLabel" aria-hidden="true">
                 },
             });
 
-            const Overview = document.getElementById('overChartOverview');
+            const reportsEarnChart = document.getElementById('reportsEarnChart');
 
-            const bar6 = new Chart(Overview, {
+            const reportsEarnChart_1 = new Chart(reportsEarnChart, {
                 type: 'bar',
                 data: {
                     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Orange',],

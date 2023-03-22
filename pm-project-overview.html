@@ -87,8 +87,8 @@
                 Profile</a></li>
 
             <li><a href="./pm-contact.html" class="panel_link "><i class="icon icon-project"></i> Contacts</a></li>
+            <li><a href="./pm-applications-api.html" class="panel_link"><i class="icon icon-project"></i> Applications API</a></li>
             <li class="nav-item panel-dropdown">
-              <li><a href="./pm-applications-api.html" class="panel_link"><i class="icon icon-project"></i> Applications API</a></li>
               <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-bar-document"></i> Setting
@@ -400,7 +400,7 @@
                           <div class="chart-content d-flex justify-content-between">
                             <div class="chart-grap d-flex align-items-end">
                               <div>
-                                <canvas id="customers" class="w-100"
+                                <canvas id="overviewCustomerChart" class="w-100"
                                   style="display: block; box-sizing: border-box; height: 160px; width: 450px;"
                                   width="450" height="160"></canvas>
                               </div>
@@ -443,7 +443,7 @@
                           <div class="chart-content d-flex justify-content-between">
                             <div class="chart-grap d-flex align-items-end">
                               <div>
-                                <canvas id="projects" class="w-100"
+                                <canvas id="overviewProjectChart" class="w-100"
                                   style="display: block; box-sizing: border-box; height: 160px; width: 450px;"
                                   width="450" height="160"></canvas>
                               </div>
@@ -478,7 +478,7 @@
                           <div class="chart-content d-flex justify-content-between">
                             <div class="chart-grap d-flex align-items-end">
                               <div>
-                                <canvas id="imageBarChart" class="w-100"
+                                <canvas id="overviewImageChart" class="w-100"
                                   style="display: block; box-sizing: border-box; height: 160px; width: 470px;"
                                   width="470" height="160"></canvas>
                               </div>
@@ -525,7 +525,7 @@
                           <div class="chart-content d-flex justify-content-between">
                             <div class="chart-grap d-flex align-items-end">
                               <div>
-                                <canvas id="projectManagers" class="w-100"
+                                <canvas id="overviewManagersChart" class="w-100"
                                   style="display: block; box-sizing: border-box; height: 160px; width: 450px;"
                                   width="450" height="160"></canvas>
                               </div>
@@ -2990,7 +2990,7 @@
                           </div>
                           <div class="workforce-donut p-3">
                             <div>
-                              <canvas id="dashboardCart" class="w-100"
+                              <canvas id="dashboardCategory" class="w-100"
                                 style="display: block; box-sizing: border-box; height: 150px !important; width: 150px !important;"></canvas>
                             </div>
                           </div>
@@ -3021,7 +3021,7 @@
                             </div>
                           </div>
                           <div>
-                            <canvas id="satisfaction" class="w-100"
+                            <canvas id="dashboardSatisfaction" class="w-100"
                               style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
                               height="160"></canvas>
                           </div>
@@ -3052,7 +3052,7 @@
                             </div>
                           </div>
                           <div>
-                            <canvas id="invoiceBar" class="w-100"
+                            <canvas id="dashboardInvoice" class="w-100"
                               style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                               height="160"></canvas>
                           </div>
@@ -3095,7 +3095,7 @@
                             </div>
                           </div>
                           <div>
-                            <canvas id="projectManager" class="w-100"
+                            <canvas id="dashboardManager" class="w-100"
                               style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
                               height="160"></canvas>
                           </div>
@@ -3291,7 +3291,7 @@
                             </div>
                           </div>
                           <div>
-                            <canvas id="projectManageres" class="w-100"
+                            <canvas id="dashboardProjectManage" class="w-100"
                               style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
                               height="160"></canvas>
                           </div>
@@ -6514,9 +6514,9 @@
             <h4>Chart Menu</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body chart-popup">
+          <div class="modal-body">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-3 chart-popup">
                 <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">
                   <li class="nav-item active" role="presentation">
                     <button class="nav-link active" id="Candlestick-tab" data-bs-toggle="tab" data-bs-target="#Candlestick" type="button"
@@ -6616,7 +6616,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-md-9">
+              <div class="col-md-9 chart-popup">
                 <div class="tab-content mt-4">
                   <div class="tab-pane " id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
                     <div class="row">
@@ -6828,6 +6828,7 @@
               </div>
             </div>
           </div>
+          </div>
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-fill px-5 py-2 text-uppercase wsm-100">Update</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase wsm-100"
@@ -6835,7 +6836,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
     <div class="modal fade" id="projectDetailsModal" tabindex="-1" aria-labelledby="projectDetailsModalLabel"
       aria-hidden="true">
@@ -8083,9 +8083,7 @@
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./assets/js/graphs.js"></script>
   <script src="./assets/js/project-overview.js"></script>
-  <script src="./assets/js/popup-form.js"></script>
   <script src="./assets/js/graphs-popup.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js"></script>
   <script src="./assets/js/candleschart.js"></script>

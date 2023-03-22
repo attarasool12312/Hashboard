@@ -302,7 +302,7 @@
                         <div class="chart-grap d-flex align-items-end mt-3">
                           <!--<img class="img-fluid" src="./assets/images/email-send.png" alt="">-->
                           <div>
-                            <canvas id="overPieChart" class="wsm-100 w-100"
+                            <canvas id="overviewStageChart" class="wsm-100 w-100"
                               style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
                           </div>
                         </div>
@@ -336,7 +336,7 @@
                       <div class="chart-content d-flex justify-content-between">
                         <div class="chart-grap d-flex align-items-end">
                           <div>
-                            <canvas id="overChart" class="wsm-100"
+                            <canvas id="overviewAmountsChart" class="wsm-100"
                               style="display: block; box-sizing: border-box; height: 200px; width: 300px;"></canvas>
                           </div>
                         </div>
@@ -375,7 +375,7 @@
                         <div class="chart-grap d-flex align-items-end">
                           <!-- <img class="img-fluid" src="./assets/images/revenue.png" alt=""> -->
                           <div>
-                            <canvas id="overLineChart" class="wsm-100"
+                            <canvas id="overviewRevenueChart" class="wsm-100"
                               style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
                           </div>
                         </div>
@@ -834,9 +834,9 @@
             <h4>Chart Menu</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body chart-popup">
+          <div class="modal-body">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-3 chart-popup">
                 <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">
                   <li class="nav-item active" role="presentation">
                     <button class="nav-link active" id="Candlestick-tab" data-bs-toggle="tab" data-bs-target="#Candlestick" type="button"
@@ -936,7 +936,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-md-9">
+              <div class="col-md-9 chart-popup">
                 <div class="tab-content mt-4">
                   <div class="tab-pane " id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
                     <div class="row">
@@ -1148,6 +1148,7 @@
               </div>
             </div>
           </div>
+          </div>
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-fill px-5 py-2 text-uppercase wsm-100">Update</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase wsm-100"
@@ -1155,7 +1156,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
     <div class="modal fade" id="taskOverview" tabindex="-1" aria-labelledby="taskOverviewModalLabel" aria-hidden="true">
       <div class="modal-dialog width-50 wsm-95">
@@ -2376,9 +2376,9 @@
   <script>
  $('#chartMenu').removeClass('show').removeClass('d-block').removeClass('opacity-0');
 
-    const Overview = document.getElementById('overChart');
+    const overviewAmountsChart = document.getElementById('overviewAmountsChart');
 
-    const bar6 = new Chart(Overview, {
+    const overviewAmountsChart_1 = new Chart(overviewAmountsChart, {
       type: 'bar',
       data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Orange', 'Orange', 'Orange', 'Orange', 'Orange', 'Orange',],
@@ -2423,9 +2423,9 @@
     });
 
 
-    const OverPie = document.getElementById('overPieChart');
+    const overviewStageChart = document.getElementById('overviewStageChart');
 
-    const bar7 = new Chart(OverPie, {
+    const overviewStageChart_1 = new Chart(overviewStageChart, {
       type: 'pie',
       data: {
         labels: ['860 send', '730 open', '234 spam'],
@@ -2452,9 +2452,9 @@
       },
     });
 
-    const overline = document.getElementById("overLineChart");
+    const overviewRevenueChart = document.getElementById("overviewRevenueChart");
 
-    const bar24 = new Chart(overline, {
+    const overviewRevenueChart_1 = new Chart(overviewRevenueChart, {
       type: "line",
       data: {
         labels: ["19 Sep", "26 Sep", "3 Oct", "10 Oct", "17 Oct"],

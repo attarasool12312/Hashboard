@@ -63,17 +63,7 @@
             <li><a href="./hr-team-managment.html" class="panel_link "><i class="icon icon-contact"></i> Team
                 Management</a></li>
                 <li><a href="./hr-request.html" class="panel_link"><i class="icon icon-contact"></i> My Request</a></li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-business"></i>
-                Attendance
-              </a>
-              <ul class="Business-Dropdown" aria-labelledby="Filing-Dropdown">
-                <li><a class="panel_link " href="./hr-timesheet.html">Timesheets</a></li>
-                <li><a class="panel_link " href="./hr-leave-managment.html">Leave Management</a></li>
-              </ul>
-            </li>
+                <li><a class="panel_link " href="./hr-timesheet.html"><i class="icon icon-business"></i> Attendance</a></li>
             <li><a href="./hr-payroll.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 Payroll</a></li>
                 <li><a href="./hr-employee-performance.html" class="panel_link"><i class="icon icon-contact"></i> Employee Performance</a></li>
@@ -256,7 +246,7 @@
               </div>
               <div class="tab-pane" id="Approval" role="tabpanel" aria-labelledby="Approval-tab">
                 <div class="page-main-title justify-content-end">
-                  <button class="btn btn-fill popup-button">Add New</button>
+                  <button class="btn btn-fill popup-button" data-bs-toggle="modal" data-bs-target="#approvalModal">Add New</button>
                 </div>
                 <div class="row">
                   <div class="col-12">
@@ -571,32 +561,6 @@
 
                     </div>
                   </div>
-                </div>
-                <div class="mx-auto bg-white p-3 rounded mt-4 width-50 popup-form">
-                  <div class="d-flex align-items-center justify-content-between">
-                    <h6>Approval Setting</h6>
-                    <button class="border-0 bg-white remove-popup"><i class="icon icon-x"></i></button>
-                  </div>
-                  <form>
-                    <label for="role" class="fw-bold mt-3 mb-2">Department Name</label>
-                    <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-                      <option value="Manager">Select Department</option>
-                      <option value="Urdu">Urdu</option>
-                      <option value="Hindi">Hindi</option>
-                      <option value="Punjabi">Punjabi</option>
-                    </select>
-                    <label for="role" class="fw-bold mt-3 mb-2">Team Members</label>
-                    <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-                      <option value="Manager">Select team members</option>
-                      <option value="Urdu">Urdu</option>
-                      <option value="Hindi">Hindi</option>
-                      <option value="Punjabi">Punjabi</option>
-                    </select>
-                    <div class="d-flex align-items-center justify-content-between mt-4">
-                      <button type="button" class="btn btn-fill text-uppercase">Save</button>
-                      <button type="button" class="btn border border-2 text-uppercase remove-popup">cancel</button>
-                    </div>
-                  </form>
                 </div>
               </div>
               <div class="tab-pane" id="Permission" role="tabpanel" aria-labelledby="Permission-tab">
@@ -1417,6 +1381,7 @@ aria-labelledby="interviewLabel" aria-hidden="true">
     </div>
   </div>
 </div>
+ 
   </section>
   <!-- JavaScript
 ================================================== -->

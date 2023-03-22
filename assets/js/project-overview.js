@@ -1,7 +1,7 @@
 window.onload = function () {
-    const doublebar = document.getElementById("customers");
+    const overviewCustomerChart = document.getElementById("overviewCustomerChart");
 
-    const bar3 = new Chart(doublebar, {
+    const overviewCustomerChart_1 = new Chart(overviewCustomerChart, {
         type: "bar",
         data: {
             labels: ["customer1", "customer2", "customer3", "customer4", "customer5", "customer6"],
@@ -54,9 +54,9 @@ window.onload = function () {
         },
     });
 
-    const mybar = document.getElementById("projects");
+    const overviewProjectChart = document.getElementById("overviewProjectChart");
 
-    const bar4 = new Chart(mybar, {
+    const overviewProjectChart_1 = new Chart(overviewProjectChart, {
         type: "bar",
         data: {
             labels: ["Project1", "Project2", "Project3", "Project4", "Project5", "Project6"],
@@ -109,9 +109,9 @@ window.onload = function () {
         },
     });
 
-    const mybar1 = document.getElementById("projectManagers");
+    const overviewManagersChart = document.getElementById("overviewManagersChart");
 
-    const bar5 = new Chart(mybar1, {
+    const overviewManagersChart_1 = new Chart(overviewManagersChart, {
         type: "bar",
         data: {
             labels: ["35", "40", "50", "45", "47", "44", "45", "38", "40", "50", "49", "39"],
@@ -155,9 +155,9 @@ window.onload = function () {
         },
     });
 
-    const imageBarChart = document.getElementById("imageBarChart");
+    const overviewImageChart = document.getElementById("overviewImageChart");
 
-    const imageBarChart_1 = new Chart(imageBarChart, {
+    const overviewImageChart_1 = new Chart(overviewImageChart, {
         type: "bar",
         data: {
             labels: [
@@ -226,9 +226,9 @@ window.onload = function () {
         },
     });
 
-    const workDon = document.getElementById('dashboardCart');
+    const dashboardCategory = document.getElementById('dashboardCategory');
 
-    const bar22 = new Chart(workDon, {
+    const dashboardCategory_1 = new Chart(dashboardCategory, {
         type: 'doughnut',
         data: {
             labels: ['Strategy ', 'Governance', 'Large Business'],
@@ -259,9 +259,9 @@ window.onload = function () {
         },
     });
 
-    const mybar7 = document.getElementById("satisfaction");
+    const dashboardSatisfaction = document.getElementById("dashboardSatisfaction");
 
-    const bar7 = new Chart(mybar7, {
+    const dashboardSatisfaction_1 = new Chart(dashboardSatisfaction, {
         type: "bar",
         data: {
             labels: ["35", "40", "50", "45", "47", "44", "45", "38", "40", "50", "49", "39"],
@@ -305,9 +305,9 @@ window.onload = function () {
         },
     });
 
-    const invoice1 = document.getElementById("invoiceBar");
+    const dashboardInvoice = document.getElementById("dashboardInvoice");
 
-    const box = new Chart(invoice1, {
+    const dashboardInvoice_1 = new Chart(dashboardInvoice, {
         type: "bar",
         data: {
             labels: [
@@ -376,9 +376,9 @@ window.onload = function () {
         },
     });
 
-    const mybar3 = document.getElementById("projectManager");
+    const dashboardManager = document.getElementById("dashboardManager");
 
-    const box1 = new Chart(mybar3, {
+    const dashboardManager_1 = new Chart(dashboardManager, {
         type: "bar",
         data: {
             labels: ["Q3 - 83", "Q4 - 299"],
@@ -422,9 +422,9 @@ window.onload = function () {
         },
     });
 
-    const mybar4 = document.getElementById("projectManageres");
+    const dashboardProjectManage = document.getElementById("dashboardProjectManage");
 
-    const box0 = new Chart(mybar4, {
+    const dashboardProjectManage_1 = new Chart(dashboardProjectManage, {
         type: "bar",
         data: {
             labels: ["Today", "Aug", "Sep", "Oct", "Nov", "Dec"],

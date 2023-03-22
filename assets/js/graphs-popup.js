@@ -22,7 +22,7 @@ const nagetineChart_1 = new Chart(nagetineChart, {
         label: "# of Votes",
         data: [23, -13, 9, -12, 33, -23, 19, -4, 23, -19, 4, 30],
         borderWidth: 0,
-        backgroundColor: ["#7DC066", "#E5646C"],
+        backgroundColor: ["#70B6C1", "#775DA6"],
         barThickness: 15,
         borderRadius: 10,
       },
@@ -81,7 +81,7 @@ const nagetineChart_2 = new Chart(nagetineChart1, {
         label: "# of Votes",
         data: [23, 9, 33, -13, -12, -23, 19, 23, 4, -4, -19, 30],
         borderWidth: 0,
-        backgroundColor: ["#7DC066", "#E5646C"],
+        backgroundColor: ["#775DA6", "#70B6C1"],
         barThickness: 15,
         borderRadius: 10,
       },
@@ -130,7 +130,7 @@ const itemsChart_1 = new Chart(itemsChart, {
         label: "# of Votes",
         data: [50],
         borderWidth: 0,
-        backgroundColor: ["#7DC066", "#E5646C"],
+        backgroundColor: "#775DA6",
         barThickness: 15,
         borderRadius: 10,
       },
@@ -195,7 +195,7 @@ const itemsChart_2 = new Chart(itemsChart1, {
         borderWidth: 0,
         barThickness: 15,
         borderRadius: 30,
-        backgroundColor: ["#7DC066"],
+        backgroundColor: ["#775DA6"],
       },
       {
         label: 'Contract',
@@ -203,7 +203,7 @@ const itemsChart_2 = new Chart(itemsChart1, {
         borderWidth: 0,
         barThickness: 15,
         borderRadius: 30,
-        backgroundColor: ["#0075FF"],
+        backgroundColor: ["#FFB1B7"],
       },
       {
         label: 'Contract',
@@ -211,7 +211,7 @@ const itemsChart_2 = new Chart(itemsChart1, {
         borderWidth: 0,
         barThickness: 15,
         borderRadius: 30,
-        backgroundColor: ["#F3935D"],
+        backgroundColor: ["#70B6C1"],
       }
     ],
   },
@@ -268,7 +268,7 @@ const itemsChart_3 = new Chart(itemsChart2, {
         label: "# of Votes",
         data: [50, 40, 30],
         borderWidth: 0,
-        backgroundColor: ["#E5646C", "#7DC066", "#0075FF"],
+        backgroundColor: ["#70B6C1", "#775DA6", "#FFB1B7"],
         barThickness: 15,
         borderRadius: 10,
       },
@@ -318,7 +318,7 @@ const itemsChart_4 = new Chart(itemsChart4, {
         label: "# of Votes",
         data: [50],
         borderWidth: 0,
-        backgroundColor: ["#7DC066", "#E5646C"],
+        backgroundColor: "#FFB1B7",
         barThickness: 15,
         borderRadius: 10,
       },
@@ -371,7 +371,7 @@ const itemsChart_5 = new Chart(itemsChart5, {
         borderWidth: 0,
         barThickness: 15,
         borderRadius: 30,
-        backgroundColor: ["#7DC066"],
+        backgroundColor: ["#FFB1B7"],
       },
       {
         label: 'Contract',
@@ -379,7 +379,7 @@ const itemsChart_5 = new Chart(itemsChart5, {
         borderWidth: 0,
         barThickness: 15,
         borderRadius: 30,
-        backgroundColor: ["#0075FF"],
+        backgroundColor: ["#775DA6"],
       },
       {
         label: 'Contract',
@@ -387,7 +387,7 @@ const itemsChart_5 = new Chart(itemsChart5, {
         borderWidth: 0,
         barThickness: 15,
         borderRadius: 30,
-        backgroundColor: ["#F3935D"],
+        backgroundColor: ["#70B6C1"],
       }
     ],
   },
@@ -444,7 +444,7 @@ const itemsChart_6 = new Chart(itemsChart6, {
         label: "# of Votes",
         data: [50, 40, 30],
         borderWidth: 0,
-        backgroundColor: ["#E5646C", "#7DC066", "#0075FF"],
+        backgroundColor: ["#70B6C1", "#775DA6", "#FFB1B7"],
         barThickness: 15,
         borderRadius: 10,
       },
@@ -501,13 +501,13 @@ const mixedChart = document.getElementById("mixedChart");
                             data: [700, 500, 800, 1200, 300, 100],
                             borderWidth: 0,
                             barThickness: 25,
-                            backgroundColor: "#5374DF",
+                            backgroundColor: "#775DA6",
                             order: 2
                         },
                         {
                             label: 'Overtime',
                             data: [700, 500, 700, 1200, 300, 100],
-                            borderColor: "#E1BD67",
+                            borderColor: "#70B6C1",
                             backgroundColor: "#ffffff",
                             type: 'line',
                             order: 1,
@@ -540,9 +540,9 @@ const mixedChart = document.getElementById("mixedChart");
                     },
                     plugins: {
                         legend: {
-                            display: true,
+                            display: false,
                             labels: {
-                                usePointStyle: true,
+                                usePointStyle: false,
                                 boxWidth: 3
                             }
                         }
@@ -594,7 +594,7 @@ const Radialbar_2 = new Chart(Radialbar2, {
     labels: ['Strategy'],
     datasets: [{
       label: '# of Votes',
-      backgroundColor: ['#775DA6'],
+      backgroundColor: ['#70B6C1'],
       data: [12],
       borderWidth: 0,
       weight: 10,
@@ -603,7 +603,7 @@ const Radialbar_2 = new Chart(Radialbar2, {
       circumference: 270
     }, {
       label: '# of Votes',
-      backgroundColor: ['#FFC107'],
+      backgroundColor: ['#775DA6'],
       data: [12],
       borderWidth: 0,
       weight: 8,
@@ -612,7 +612,7 @@ const Radialbar_2 = new Chart(Radialbar2, {
       circumference: 200
     }, {
       label: '# of Votes',
-      backgroundColor: ['#2196F3'],
+      backgroundColor: ['#FFB1B7'],
       data: [12],
       borderWidth: 0,
       weight: 8,
@@ -671,13 +671,13 @@ const bar4 = new Chart(invoice, {
           { x: 3, y: 19, r: 6 }
         ],
         borderWidth: 0,
-        backgroundColor: '#7DC066',
+        backgroundColor: '#898989',
         barThickness: 30,
         backgroundColor: [
-          '#7DC066',
-          '#E5646C',
-          '#9E57E5',
-          '#0075FF'
+          '#70B6C1',
+          '#775DA6',
+          '#FFB1B7',
+          '#898989'
         ]
       },
     ],
@@ -748,10 +748,10 @@ const bar_4 = new Chart(invoice1, {
         backgroundColor: '#7DC066',
         barThickness: 30,
         backgroundColor: [
-          '#7DC066',
-          '#9E57E5',
-          '#59B4D1',
-          '#F3935D'
+          '#70B6C1',
+          '#775DA6',
+          '#FFB1B7',
+          '#898989'
         ]
       },
     ],
@@ -842,13 +842,13 @@ const lineChart_2 = new Chart(lineChart1, {
       {
         label: ["Top Products"],
         data: [50, 50, 80, 105, 85, 90, 70, 60, 56, 65],
-        borderColor: "#775da6",
+        borderColor: "#775DA6",
         backgroundColor: "rgb(239, 236, 244)"
       },
       {
         label: ["Top Products"],
         data: [40, 60, 70, 90, 75, 100, 80, 50, 60, 95],
-        borderColor: "#775da6",
+        borderColor: "#70B6C1",
         backgroundColor: "rgb(239, 236, 244)"
       },
     ],
@@ -893,16 +893,16 @@ const areaChart_1 = new Chart(areaChart, {
     datasets: [{
       label: 'PM',
       data: [68, 12, 66, 59, 12, 43, 59],
-      backgroundColor: '#97cfe042',
-      borderColor: '#B822FF',
+      backgroundColor: '#70b6c11e',
+      borderColor: '#70B6C1',
       fill: true,
       tension: 0.4
     },
     {
       label: 'CRM',
       data: [60, 22, 36, 49, 52, 63, 79],
-      backgroundColor: '#775da656',
-      borderColor: '#1DB2F1',
+      backgroundColor: '#775da636',
+      borderColor: '#775DA6',
       fill: true,
       tension: 0.4
     }]
@@ -934,8 +934,8 @@ const areaChart_2 = new Chart(areaChart1, {
     datasets: [{
       label: 'PM',
       data: [68, 47, 56, 65, 44, 42, 32,],
-      backgroundColor: '#9e707391',
-      borderColor: '#E5646C',
+      backgroundColor: '#ffb1b731',
+      borderColor: '#FFB1B7',
       fill: true,
       tension: 0.4
     }]
@@ -968,7 +968,7 @@ const radarChart_1 = new Chart(radarChart, {
       label: 'PM',
       data: [60, 55, 63, 45, 50, 55, 50,],
       backgroundColor: '#5188c757',
-      borderColor: '#0075FF',
+      borderColor: '#775DA6',
       fill: true,
       tension: 0.4
     }]
@@ -997,24 +997,24 @@ const radarChart_2 = new Chart(radarChart1, {
     datasets: [{
       label: 'PM',
       data: [70, 65, 65, 55, 45, 60, 65,],
-      backgroundColor: '#59b5d14f',
-      borderColor: '#59B4D1',
+      backgroundColor: '#70b6c141',
+      borderColor: '#70B6C1',
       fill: true,
       tension: 0.4,
       borderWidth: 0
     }, {
       label: 'PM',
       data: [60, 60, 55, 65, 60, 55, 60,],
-      backgroundColor: '#9e57e54d',
-      borderColor: '#9E57E5',
+      backgroundColor: '#775da646',
+      borderColor: '#775DA6',
       fill: true,
       tension: 0.4,
       borderWidth: 0
     }, {
       label: 'PM',
       data: [40, 50, 65, 60, 65, 65, 50,],
-      backgroundColor: '#e5646d44',
-      borderColor: '#9E57E5',
+      backgroundColor: '#ffb1b733',
+      borderColor: '#FFB1B7',
       fill: true,
       tension: 0.4,
       borderWidth: 0
@@ -1035,51 +1035,6 @@ const radarChart_2 = new Chart(radarChart1, {
   },
 });
 
-const mapChart = document.getElementById("mapChart");
-
-const mapChart_1 = new Chart(mapChart, {
-  type: 'radar',
-  data: {
-    labels: ['Name 01', 'Name 02', 'Name 03', 'Name 04', 'Name 05', 'Name 06', 'Name 07'],
-    datasets: [{
-      label: 'PM',
-      data: [70, 65, 65, 55, 45, 60, 65,],
-      backgroundColor: '#59b5d14f',
-      borderColor: '#59B4D1',
-      fill: true,
-      tension: 0.4,
-      borderWidth: 0
-    }, {
-      label: 'PM',
-      data: [60, 60, 55, 65, 60, 55, 60,],
-      backgroundColor: '#9e57e54d',
-      borderColor: '#9E57E5',
-      fill: true,
-      tension: 0.4,
-      borderWidth: 0
-    }, {
-      label: 'PM',
-      data: [40, 50, 65, 60, 65, 65, 50,],
-      backgroundColor: '#e5646d44',
-      borderColor: '#9E57E5',
-      fill: true,
-      tension: 0.4,
-      borderWidth: 0
-    }]
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: {
-        display: false,
-        labels: {
-          usePointStyle: false,
-        }
-      }
-    },
-  },
-});
-
 const dountMenuChart = document.getElementById('dountMenuChart');
 
 const dountMenuChart_1 = new Chart(dountMenuChart, {
@@ -1088,7 +1043,7 @@ const dountMenuChart_1 = new Chart(dountMenuChart, {
     labels: ['Strategy ', 'Governance', 'Large Business'],
     datasets: [{
       label: '# of Votes',
-      backgroundColor: ['#0075FF', '#7DC066', '#59B4D1', '#9E57E5', '#F3935D', '#E5646C'],
+      backgroundColor: ['#70B6C1', '#775DA6', '#FFB1B7', '#898989'],
       borderRadius: 2,
       data: [10, 15, 25, 20, 15, 15],
       barThickness: 5,
@@ -1123,7 +1078,7 @@ const dountMenuChart_2 = new Chart(dountMenuChart1, {
     labels: ['Strategy ', 'Governance', 'Large Business'],
     datasets: [{
       label: '# of Votes',
-      backgroundColor: ['#0075FF', '#7DC066', '#59B4D1', '#9E57E5', '#F3935D', '#E5646C'],
+      backgroundColor: ['#70B6C1', '#775DA6', '#FFB1B7', '#898989'],
       borderRadius: 2,
       data: [10, 15, 25, 20, 15, 15],
       barThickness: 5,
@@ -1156,7 +1111,7 @@ const pieChart_1 = new Chart(pieChart, {
   data: {
     datasets: [{
       label: '# of Votes',
-      backgroundColor: ['#87EADE', '#B0E4C8', '#D9B7FB', '#A9DDF5', '#FFC9AC', '#F8BEC1'],
+      backgroundColor: ['#70B6C1', '#775DA6', '#FFB1B7', '#898989'],
       borderRadius: 2,
       data: [13.6, 23.9, 8.1, 27.8, 15.7, 8.9],
       borderWidth: 0,
@@ -1348,7 +1303,7 @@ const doubleBarChart_1 = new Chart(doubleBarChart, {
         data: [10, 13, 9, 12, 13, 8],
         borderRadius: 5,
         borderWidth: 1,
-        backgroundColor: "#F3935D",
+        backgroundColor: "#70B6C1",
         barThickness: 12,
       },
       {
@@ -1356,7 +1311,7 @@ const doubleBarChart_1 = new Chart(doubleBarChart, {
         data: [10, 13, 9, 12, 11, 13],
         borderRadius: 5,
         borderWidth: 1,
-        backgroundColor: "#0075FF",
+        backgroundColor: "#775DA6",
         barThickness: 12,
       },
       {
@@ -1364,7 +1319,7 @@ const doubleBarChart_1 = new Chart(doubleBarChart, {
         data: [10, 13, 9, 12, 11, 13],
         borderRadius: 5,
         borderWidth: 1,
-        backgroundColor: "#7DC066",
+        backgroundColor: "#FFB1B7",
         barThickness: 12,
       },
     ],
@@ -1410,7 +1365,7 @@ const doubleBarChart_2 = new Chart(doubleBarChart1, {
         data: [10, 13, 9],
         borderRadius: 5,
         borderWidth: 1,
-        backgroundColor: "#F3935D",
+        backgroundColor: "#70B6C1",
         barThickness: 12,
       },
       {
@@ -1418,7 +1373,7 @@ const doubleBarChart_2 = new Chart(doubleBarChart1, {
         data: [10, 13, 9],
         borderRadius: 5,
         borderWidth: 1,
-        backgroundColor: "#0075FF",
+        backgroundColor: "#775DA6",
         barThickness: 12,
       },
       {
@@ -1426,7 +1381,7 @@ const doubleBarChart_2 = new Chart(doubleBarChart1, {
         data: [10, 13, 9],
         borderRadius: 5,
         borderWidth: 1,
-        backgroundColor: "#7DC066",
+        backgroundColor: "#FFB1B7",
         barThickness: 12,
       },
     ],
@@ -1487,7 +1442,7 @@ const stackedChart_1 = new Chart(stackedChart, {
         borderWidth: 0,
         barThickness: 15,
         borderRadius: 30,
-        backgroundColor: ["#7DC066"],
+        backgroundColor: "#775DA6",
       },
       {
         label: 'Contract',
@@ -1495,7 +1450,7 @@ const stackedChart_1 = new Chart(stackedChart, {
         borderWidth: 0,
         barThickness: 15,
         borderRadius: 30,
-        backgroundColor: ["#0075FF"],
+        backgroundColor: "#FFB1B7",
       },
       {
         label: 'Contract',
@@ -1503,7 +1458,7 @@ const stackedChart_1 = new Chart(stackedChart, {
         borderWidth: 0,
         barThickness: 15,
         borderRadius: 30,
-        backgroundColor: ["#F3935D"],
+        backgroundColor: "#70B6C1",
       }
     ],
   },
@@ -1534,9 +1489,9 @@ const stackedChart_1 = new Chart(stackedChart, {
     },
     plugins: {
       legend: {
-        display: true,
+        display: false,
         labels: {
-          usePointStyle: true,
+          usePointStyle: false,
           boxWidth: 6
         }
       }
@@ -1544,90 +1499,3 @@ const stackedChart_1 = new Chart(stackedChart, {
   },
 
 });
-
-
-const stackedChart1 = document.getElementById("stackedChart1");
-
-const stackedChart_2 = new Chart(stackedChart1, {
-
-  type: "bar",
-  data: {
-    labels: [
-      "Jan",
-      "Fab",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ],
-    datasets: [
-      {
-        label: 'Permanent',
-        data: [200, 700, 500, 100, 800, 1200, 300, 1100, 400, 600, 200, 900],
-        borderWidth: 0,
-        barThickness: 15,
-        borderRadius: 30,
-        backgroundColor: ["#7DC066"],
-      },
-      {
-        label: 'Contract',
-        data: [200, 700, 500, 100, 800, 1200, 300, 1100, 400, 600, 200, 900],
-        borderWidth: 0,
-        barThickness: 15,
-        borderRadius: 30,
-        backgroundColor: ["#0075FF"],
-      },
-      {
-        label: 'Contract',
-        data: [200, 700, 500, 100, 800, 1200, 300, 1100, 400, 600, 200, 900],
-        borderWidth: 0,
-        barThickness: 15,
-        borderRadius: 30,
-        backgroundColor: ["#F3935D"],
-      }
-    ],
-  },
-  options: {
-    responsive: true,
-
-    scales: {
-      x: {
-        stacked: true,
-        display: true,
-        grid: {
-          drawOnChartArea: false,
-        },
-        ticks: {
-          display: true,
-        },
-      },
-      y: {
-        stacked: true,
-        display: true,
-        grid: {
-          drawOnChartArea: true,
-        },
-        ticks: {
-          display: true,
-        },
-      },
-    },
-    plugins: {
-      legend: {
-        display: true,
-        labels: {
-          usePointStyle: true,
-          boxWidth: 6
-        }
-      }
-    },
-  },
-
-});
-

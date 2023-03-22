@@ -1,5 +1,3 @@
-
-
 function setChart(){
   var ctx = document.getElementById("candlestickChart").getContext('2d');
   const startingdate = luxon.DateTime.fromRFC2822('01 Aug 2022 00:00 GMT');

@@ -204,7 +204,6 @@
 
   .tab {
     display: none;
-
     h2 {
       margin-top: 30px;
     }
@@ -743,6 +742,13 @@
   .form-group label.attachment input[type='file'] {
     display: none;
   }
+}
+
+.ck.ck-toolbar.ck-toolbar_grouping{
+  width: 99%;
+}
+.ck.ck-editor__main {
+  width: 99%;
 }
 
 /* Make circles that indicate the steps of the form: */

@@ -1,15 +1,36 @@
-.balance{
-    list-style: none;
-    padding-left: 0;
-    padding:  0 20px;
-    li{
-        padding: 14px 16px;
-    }
-}
-.check-tasks{
-    img{
-        width: 35px;
-        height: 35px;
+.payslips{
+    position: relative;
+    .payslips-arrow{
+        position: absolute;
+        bottom: -10%;
+        left: 45%;
         border-radius: 50%;
+        width: fit-content;
+        background-color: #e0dcdc;
+        padding: 10px;
+    }
+    .history-details{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 20px;
+            width: 2px;
+            height: 100%;
+            background-color: #F2F2F2;
+        }
+        .history-year{
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                height: 1px;
+                width: 14px;
+                top: 45%;
+                left: 47px;
+                background-color: #ded6d6;
+            }
+        }
     }
 }

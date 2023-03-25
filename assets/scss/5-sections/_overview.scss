@@ -44,14 +44,6 @@
             top: 60%;
             left: -37px;
             transform: translateY(-50%);
-            .box{
-                &:after{
-                    top: 10px;
-                }
-                &:before{
-                    top: 7px;
-                }
-            }
         }
     }
 }

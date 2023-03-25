@@ -554,6 +554,7 @@ h6 {
     width: 35px;
     height: 35px;
     border-radius: 5px;
+    background-size: cover;
   }
 }
 .bg-gray-light{
@@ -614,6 +615,9 @@ h6 {
 .col-30{
   width: 30%;
   flex: 0 0 auto;
+  @include grid-sm-down{
+    width: 100%;
+  }
 }
 .w-0{
   min-width: 0 !important;
@@ -621,3 +625,10 @@ h6 {
 .opacity-0{
   opacity: 0;
 }
+.ck{
+  .ck-sticky-panel__content{
+      @include grid-sm-down{
+        width: 365px;
+      }
+    }
+  }

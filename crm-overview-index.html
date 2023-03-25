@@ -172,10 +172,10 @@
               <p>Welcome back to Rhombus CRM dashboard</p>
             </div>
             <div class="add-button me-3 d-flex flex-colume-sm wsm-100">
-              <button type="button" class="btn ouline-white me-md-3"><i
+              <button type="button" class="btn ouline-white me-md-3 mt-3 mt-md-0"><i
                   class="icon icon-download me-2"></i>Download</button>
               <!-- <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload Bulk</button> -->
-              <button type="button" class="btn ouline-white btn-fill me-md-3 add-component">Add Component</button>
+              <button type="button" class="btn ouline-white btn-fill me-md-3 add-component mt-3 mt-md-0">Add Component</button>
               <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0" data-bs-toggle="modal"
                 data-bs-target="#chartMenu">+ Add Chart</button>
             </div>
@@ -278,7 +278,7 @@
                 <div class="col-md-4 mb-4 contact-card-3">
                   <div class="chart">
                     <div class="chart-box h-100 d-flex justify-content-between flex-column">
-                      <div class="chart-head d-md-flex justify-content-between align-items-center">
+                      <div class="chart-head d-flex justify-content-between align-items-center">
                         <div class="chart-title">
                           <h3 class="fw-600">Per stage</h3>
                         </div>
@@ -313,7 +313,7 @@
                 <div class="col-md-4 mb-4 mt-3 mt-md-0 contact-card-3">
                   <div class="chart">
                     <div class="chart-box d-flex h-100 justify-content-between flex-column">
-                      <div class="chart-head d-md-flex justify-content-between align-items-center">
+                      <div class="chart-head d-flex justify-content-between align-items-center">
                         <div class="chart-title">
                           <h3 class="fw-600">Income Amounts</h3>
                         </div>
@@ -347,7 +347,7 @@
                 <div class="col-md-4 mb-4 mt-3 mt-md-0 contact-card-3">
                   <div class="chart">
                     <div class="chart-box d-flex h-100 justify-content-between flex-column">
-                      <div class="chart-head d-md-flex justify-content-between align-items-center">
+                      <div class="chart-head d-flex justify-content-between align-items-center">
                         <div class="chart-title">
                           <h3 class="fw-600">Revenue</h3>
                         </div>
@@ -838,14 +838,14 @@
             <div class="row">
               <div class="col-md-3 chart-popup">
                 <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">
-                  <li class="nav-item active" role="presentation">
+                  <!-- <li class="nav-item active" role="presentation">
                     <button class="nav-link active" id="Candlestick-tab" data-bs-toggle="tab" data-bs-target="#Candlestick" type="button"
                       role="tab" aria-controls="Candlestick" aria-selected="false">
                       <p class="text-light-gray">Columns Candlestick</p>
                     </button>
-                  </li>
+                  </li> -->
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Basic-tab" data-bs-toggle="tab" data-bs-target="#Basic" type="button"
+                    <button class="nav-link active" id="Basic-tab" data-bs-toggle="tab" data-bs-target="#Basic" type="button"
                       role="tab" aria-controls="Basic" aria-selected="false">
                       <p class="text-light-gray">Columns Basic</p>
                     </button>
@@ -910,12 +910,12 @@
                       <p class="text-light-gray">Radar</p>
                     </button>
                   </li>
-                  <li class="nav-item" role="presentation">
+                  <!-- <li class="nav-item" role="presentation">
                     <button class="nav-link" id="Map-tab" data-bs-toggle="tab" data-bs-target="#Map" type="button"
                       role="tab" aria-controls="Map" aria-selected="false">
                       <p class="text-light-gray">Heat Map</p>
                     </button>
-                  </li>
+                  </li> -->
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="Donut-tab" data-bs-toggle="tab" data-bs-target="#Donut" type="button"
                       role="tab" aria-controls="Donut" aria-selected="false">
@@ -928,12 +928,12 @@
                       <p class="text-light-gray">Pies</p>
                     </button>
                   </li>
-                  <li class="nav-item" role="presentation">
+                  <!-- <li class="nav-item" role="presentation">
                     <button class="nav-link" id="Perfomance-tab" data-bs-toggle="tab" data-bs-target="#Perfomance" type="button"
                       role="tab" aria-controls="Perfomance" aria-selected="false">
                       <p class="text-light-gray">Perfomance</p>
                     </button>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               <div class="col-md-9 chart-popup">
@@ -1027,7 +1027,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="Basic" role="tabpanel" aria-labelledby="Basic-tab">
+                <div class="tab-pane active" id="Basic" role="tabpanel" aria-labelledby="Basic-tab">
                   <div class="row">
                     <div class="col-md-6">
                       <div>
@@ -1136,7 +1136,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="tab-pane active" id="Candlestick" role="tabpanel" aria-labelledby="Candlestick-tab">
+                <!-- <div class="tab-pane active" id="Candlestick" role="tabpanel" aria-labelledby="Candlestick-tab">
                   <div class="row">
                     <div class="col-12">
                       <div>
@@ -1144,7 +1144,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -1228,7 +1228,7 @@
                   <div class="ms-4 mt-3">
                     <form>
                       <textarea name="comments" id="comments" cols="54" rows="5"
-                        class="border border-2 rounded text-light-gray p-2" placeholder="Your Message"></textarea>
+                        class="border border-2 rounded text-light-gray p-2 wsm-100" placeholder="Your Message"></textarea>
                     </form>
                     <div class="popup-textarea">
                       <img src="./assets/images/profile-2.png" alt="">
@@ -1299,7 +1299,7 @@
                   <div class="ms-4 mt-3">
                     <form>
                       <textarea name="comments" id="comments" cols="54" rows="5"
-                        class="border border-2 rounded text-light-gray p-2" placeholder="Your Message"></textarea>
+                        class="border border-2 rounded text-light-gray p-2 wsm-100" placeholder="Your Message"></textarea>
                     </form>
                     <div class="popup-textarea">
                       <img src="./assets/images/profile-2.png" alt="">
@@ -2367,11 +2367,11 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/graphs.js"></script>
   <script src="./assets/js/graphs-popup.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js"></script>
-  <script src="./assets/js/candleschart.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js"></script> -->
+  <!-- <script src="./assets/js/candleschart.js"></script> -->
   <script src="./assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
-  <script src="./assets/js/chartjs-chart-financial.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script> -->
+  <!-- <script src="./assets/js/chartjs-chart-financial.js"></script> -->
 
   <script>
  $('#chartMenu').removeClass('show').removeClass('d-block').removeClass('opacity-0');

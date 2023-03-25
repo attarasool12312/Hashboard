@@ -257,6 +257,20 @@ i[class*=h-icon-] {
   height: 18px;
 }
 
+.icon-down-chevron {
+  display: inline-block;
+  background-image: url("../images/icons/down-chevron.svg");
+  width: 18px;
+  height: 18px;
+}
+
+.icon-heart-fill {
+  display: inline-block;
+  background-image: url("../images/icons/heart-fill.svg");
+  width: 25px;
+  height: 15px;
+}
+
 .icon-plus {
   display: inline-block;
   background-image: url("../images/icons/plus.svg");
@@ -477,6 +491,13 @@ i[class*=h-icon-] {
 .icon-delete {
   display: inline-block;
   background-image: url("../images/icons/delete.svg");
+  width: 16px;
+  height: 16px;
+}
+
+.icon-eye-headen {
+  display: inline-block;
+  background-image: url("../images/icons/eye-headen.svg");
   width: 16px;
   height: 16px;
 }
@@ -3272,6 +3293,7 @@ h6.text-sm {
   width: 35px;
   height: 35px;
   border-radius: 5px;
+  background-size: cover;
 }
 
 .bg-gray-light {
@@ -3337,6 +3359,11 @@ h6.text-sm {
   width: 30%;
   flex: 0 0 auto;
 }
+@media only screen and (max-width: 767.98px) {
+  .col-30 {
+    width: 100%;
+  }
+}
 
 .w-0 {
   min-width: 0 !important;
@@ -3344,6 +3371,12 @@ h6.text-sm {
 
 .opacity-0 {
   opacity: 0;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .ck .ck-sticky-panel__content {
+    width: 365px;
+  }
 }
 
 /*--------------*\
@@ -4295,6 +4328,14 @@ ul.head-btn .slider-btn .btn.ouline-white {
   display: none;
 }
 
+.ck.ck-toolbar.ck-toolbar_grouping {
+  width: 99%;
+}
+
+.ck.ck-editor__main {
+  width: 99%;
+}
+
 /* Make circles that indicate the steps of the form: */
 /*--------------*\
     Modals Section
@@ -5048,7 +5089,7 @@ ul.head-btn .slider-btn .btn.ouline-white {
   background-color: #ffffff;
   color: gray;
   border-color: gray;
-  min-width: 120px;
+  min-width: 100px;
   text-align: left;
   position: relative;
 }
@@ -6729,12 +6770,6 @@ header nav {
   left: -37px;
   transform: translateY(-50%);
 }
-.check-tasks .relative > .absolute .box:after {
-  top: 10px;
-}
-.check-tasks .relative > .absolute .box:before {
-  top: 7px;
-}
 
 .applications-api {
   background-color: #F2F2F2;
@@ -8022,19 +8057,41 @@ section.section-panel {
   padding-bottom: 14px;
 }
 
-.balance {
-  list-style: none;
-  padding-left: 0;
-  padding: 0 20px;
+.payslips {
+  position: relative;
 }
-.balance li {
-  padding: 14px 16px;
-}
-
-.check-tasks img {
-  width: 35px;
-  height: 35px;
+.payslips .payslips-arrow {
+  position: absolute;
+  bottom: -10%;
+  left: 45%;
   border-radius: 50%;
+  width: fit-content;
+  background-color: #e0dcdc;
+  padding: 10px;
+}
+.payslips .history-details {
+  position: relative;
+}
+.payslips .history-details::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 2px;
+  height: 100%;
+  background-color: #F2F2F2;
+}
+.payslips .history-details .history-year {
+  position: relative;
+}
+.payslips .history-details .history-year::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 14px;
+  top: 45%;
+  left: 47px;
+  background-color: #ded6d6;
 }
 
 .sales-overview-invoices {

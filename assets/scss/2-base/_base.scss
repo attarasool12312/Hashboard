@@ -576,6 +576,9 @@ h6 {
 .popup-form{
   display: none;
 }
+.popup-form1{
+  display: none;
+}
 .upload-files{
   .fileupload{
     opacity:0;
@@ -631,4 +634,8 @@ h6 {
         width: 365px;
       }
     }
+  }
+
+  .bg-body-white{
+    background-color: #F8FAFB;
   }

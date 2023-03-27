@@ -112,17 +112,17 @@
     <div class="admin-wrapper">
       <aside class="aside left-sidbar">
         <ul>
-          <li><a href="./sm-overview.html" class="panel_link "><i class="icon icon-overviwe"></i> Dashboard</a>
+          <li><a href="./sm-overview.html" class="panel_link"><i class="icon icon-overviwe"></i>
+              Dashboard</a>
           </li>
           <li><a href="./sm-trending.html" class="panel_link "><i class="icon icon-trending"></i>
               Trending</a></li>
-              <li><a href="./sm-feeds.html" class="panel_link "><i class="icon icon-memory"></i>Feeds</a></li>
+          <li><a href="./sm-feeds.html" class="panel_link "><i class="icon icon-memory"></i>Feeds</a></li>
           <li><a href="./sm-new-post.html" class="panel_link"><i class="icon icon-friends"></i>
               New Post</a></li>
-          <li><a href="./sm-collaboration.html" class="panel_link active_panel"><i class="icon icon-event"></i>
-              Collaboration</a>
+          <li><a href="./sm-collaboration.html" class="panel_link "><i class="icon icon-event"></i> Collaboration</a>
           </li>
-          <li><a href="./sm-bots.html" class="panel_link "><i class="icon icon-bots"></i>Bots</a></li>
+          <li><a href="./sm-bots.html" class="panel_link active_panel"><i class="icon icon-bots"></i>Bots</a></li>
           <li><a href="" class="panel_link "><i class="icon icon-memory"></i>Tracker</a></li>
           <li><a href="./sm-link-new-account.html" class="panel_link "><i class="icon icon-memory"></i>Link new
               account</a></li>
@@ -135,8 +135,8 @@
               Benchmarking</a></li>
           <li><a href="./sm-create-template.html" class="panel_link "><i class="icon icon-overviwe"></i>
               Create Template</a></li>
-              <li><a href="./sm-applications-api.html" class="panel_link "><i class="icon icon-overviwe"></i>
-                Application API</a></li>
+          <li><a href="./sm-applications-api.html" class="panel_link "><i class="icon icon-overviwe"></i>
+              Application API</a></li>
           <li class="nav-item panel-dropdown">
             <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Transactions-Dropdown"
               role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -155,227 +155,34 @@
       <main class="main pt-4 pb-4">
         <div class="container">
           <div class="page-main-title">
-            <h1>Collaboration</h1>
-            <div class="d-flex align-iteme-center flex-colume-sm wsm-100 mt-3 mt-md-0">
-              <button type="button" class="btn ouline-white me-md-2"><i
-                  class="icon icon-download me-2"></i>Download</button>
-              <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 mt-md-0" data-bs-toggle="modal"
-                data-bs-target="#uploadModal">Upload Bulk</button>
-            </div>
+            <h1>Bots</h1>
           </div>
           <div class="row">
-            <div class="col-md-6">
-              <div class="d-flex align-items-center flex-colume-sm">
-                <ul class="nav nav-tabs border-0 me-2 me-md-0 employees-nav employees-nav1 w-fit flex-row-sm" id="myTab"
-                  role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link text-uppercase text-md-small active" id="Facebook-tab" data-bs-toggle="tab"
-                      data-bs-target="#Facebook" type="button" role="tab" aria-controls="Facebook"
-                      aria-selected="false">Facebook</button>
-                  </li>
-                  <li class="nav-item m-0" role="presentation">
-                    <button class="nav-link text-uppercase text-md-small" id="Tiwtter-tab" data-bs-toggle="tab"
-                      data-bs-target="#Tiwtter" type="button" role="tab" aria-controls="Tiwtter"
-                      aria-selected="true">Tiwtter</button>
-                  </li>
-                  <li class="nav-item m-0" role="presentation">
-                    <button class="nav-link text-uppercase text-md-small" id="Instagram-tab" data-bs-toggle="tab"
-                      data-bs-target="#Instagram" type="button" role="tab" aria-controls="Instagram"
-                      aria-selected="true">Instagram</button>
-                  </li>
-                  <li class="nav-item m-0" role="presentation">
-                    <button class="nav-link text-uppercase text-md-small" id="YouTube-tab" data-bs-toggle="tab"
-                      data-bs-target="#YouTube" type="button" role="tab" aria-controls="YouTube"
-                      aria-selected="true">YouTube</button>
-                  </li>
-                </ul>
-                <button type="button" class="btn ouline-white ms-md-3 wsm-100">All Channels</button>
+            <div class="col-md-3">
+              <div class="bg-white rounded p-3 cursor-pointer h-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="icon icon-bots mb-3"></i>
+                <h6 class="fw-600 mb-3 text-center">New Bot</h6>
               </div>
             </div>
-            <div class="col-md-6 d-flex justify-content-end flex-colume-sm">
-              <div class="dropdown select-dropdown ms-4">
-                <button class="btn dropdown-toggle pe-5 w-100 bg-white border-0 mt-3 mt-md-0" type="button" id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Filter
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-              <div class="dropdown select-dropdown ms-4">
-                <button class="btn dropdown-toggle pe-5 w-100 bg-white border-0 mt-3 mt-md-0" type="button" id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  New to old
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+            <div class="col-md-3">
+              <div class="bg-white rounded p-3 cursor-pointer h-100" onclick="window.location.href='./sm-bots-detail.html'">
+                <i class="icon icon-bots mb-3"></i>
+                <h6 class="fw-600 mb-3 text-center">Customer Care Bot</h6>
+                <i class="icon icon-edit-fill bg-cover d-block ms-auto"></i>
               </div>
             </div>
-            <div class="col-12 mt-3">
-              <div class="bg-white rounded">
-                <div class="row w-100 mx-auto">
-                  <div class="col-md-3 border-end p-0">
-                    <div class="border-bottom d-flex align-items-center justify-content-between h-100 p-3 ">
-                      <h5 class="fw-600">Active Conversations</h5>
-                      <span class="p-2 bg-light-gray rounded">4</span>
-                    </div>
-                  </div>
-                  <div class="col-md-9 p-0">
-                    <div class="border-bottom p-3 d-flex align-items-center justify-content-between">
-                      <div class="d-flex align-items-center post-channel-profile p-0">
-                        <img src="./assets/images/profile-10.png" alt="" class="border-0">
-                        <div>
-                          <h6 class="fw-600">Henry Dholi</h6>
-                          <p>Reply to message</p>
-                        </div>
-                      </div>
-                      <div class="btn-group">
-                        <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown"
-                          aria-expanded="true">
-                          <div class="dots d-flex ">
-                            <span class="me-1"></span>
-                            <span class="m-0 me-1"></span>
-                            <span class="m-0"></span>
-                          </div>
-                        </button>
-                        <ul class="dropdown-menu"
-                          style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(24px, 18px);"
-                          data-popper-placement="bottom-start">
-                          <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                              Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                              Delete</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="col-md-3">
+              <div class="bg-white rounded p-3 cursor-pointer h-100" onclick="window.location.href='./sm-bots-detail.html'">
+                <i class="icon icon-bots mb-3"></i>
+                <h6 class="fw-600 mb-3 text-center">Sales Bot</h6>
+                <i class="icon icon-edit-fill bg-cover d-block ms-auto"></i>
               </div>
-              <div class="bg-white rounded aside-2">
-                <div class="row w-100 mx-auto">
-                  <div class="col-md-3 border-end p-0">
-                    <div class="py-4 px-3">
-                      <div class="search-form d-none d-md-block">
-                        <form action="">
-                          <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
-                            <i class="icon icon-search-form"></i>
-                          </div>
-                        </form>
-                      </div>
-                      <ul class="nav nav-tabs border-0 mt-2" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link d-flex align-items-center active" id="Mark-tab" data-bs-toggle="tab" data-bs-target="#Mark" type="button" role="tab" aria-controls="Mark" aria-selected="true">
-                            <img src="./assets/images/mark-marson.png" class="img-fluid" alt="">
-                            <div class="text-start ms-2">
-                              <h6 class="text-sm">Mark Marson</h6>
-                              <p class="text-small">I cam across your ...</p>
-                            </div>
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link d-flex align-items-center" id="Salsabilla-tab" data-bs-toggle="tab" data-bs-target="#Salsabilla" type="button" role="tab" aria-controls="Salsabilla" aria-selected="false">
-                            <img src="./assets/images/salsabilla.png" class="img-fluid" alt="">
-                            <div class="text-start ms-2">
-                              <h6 class="text-sm">Salsabilla</h6>
-                              <p class="text-small">I like your confidence 💪</p>
-                            </div>
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link d-flex align-items-center" id="Marson-tab" data-bs-toggle="tab" data-bs-target="#Marson" type="button" role="tab" aria-controls="Marson" aria-selected="false">
-                            <img src="./assets/images/profile.png" class="img-fluid" alt="">
-                            <div class="text-start ms-2">
-                              <h6 class="text-sm">Mark Marson</h6>
-                              <p class="text-small">Can you share your offer?</p>
-                            </div>
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link d-flex align-items-center" id="Danny-tab" data-bs-toggle="tab" data-bs-target="#Danny" type="button" role="tab" aria-controls="Danny" aria-selected="false">
-                            <img src="./assets/images/danny-quin.png" class="img-fluid" alt="">
-                            <div class="text-start ms-2">
-                              <h6 class="text-sm">Danny Quinn</h6>
-                              <p class="text-small">I’m waiting for you response!</p>
-                            </div>
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link d-flex align-items-center" id="Morgan-tab" data-bs-toggle="tab" data-bs-target="#Morgan" type="button" role="tab" aria-controls="Morgan" aria-selected="false">
-                            <img src="./assets/images/jason-gutierrez.png" class="img-fluid" alt="">
-                            <div class="text-start ms-2">
-                              <h6 class="text-sm">Morgan</h6>
-                              <p class="text-small">I’m waiting for you response!</p>
-                            </div>
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link d-flex align-items-center" id="Ananda-tab" data-bs-toggle="tab" data-bs-target="#Ananda" type="button" role="tab" aria-controls="Ananda" aria-selected="false">
-                            <img src="./assets/images/anna-ananda.png" class="img-fluid" alt="">
-                            <div class="text-start ms-2">
-                              <h6 class="text-sm">Anna Ananda</h6>
-                              <p class="text-small">Hello, how are you?</p>
-                            </div>
-                          </button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-md-9 p-0 message-area">
-                    <div class="msg-body pe-4">
-                      <ul>
-                        <li class="sender">
-                          <h6 class="d-flex">Andri Thomas</h6>
-                                <p class="fw-600 p-3 bg-light-gray rounded width-max-50">I want to make an appointment tomorrow from 2:00 to 5:00pm?</p>
-                                <span class="time ps-3 mt-1">10:06 am</span>
-                        </li>
-                        <li class="repaly">
-                            <p class="width-max-50 p-3">Hello, Thomas! I will check the schedule and inform you</p>
-                            <span class="time mt-1">10:20 am</span>
-                        </li>
-                        <li class="sender">
-                          <h6 class="d-flex">Andri Thomas</h6>
-                                <p class="fw-600 p-3 bg-light-gray rounded width-max-50">Ok, Thanks for your reply.</p>
-                                <span class="time ps-3 mt-1">10:06 am</span>
-                        </li>
-                        <li class="repaly">
-                            <p class="width-max-50 p-3">You are welcome!</p>
-                            <span class="time mt-1">10:20 am</span>
-                        </li>
-                    </ul>
-                    </div>
-                    <div class="send-box mb-3 upload-files">
-                      <form action="">
-                          <div class="input-group">
-                              <input type="text" class="form-control ps-3" aria-label="message…" placeholder="Type something here...">
-                              <div class="add-emojes">
-                                <div class="d-flex align-items-center justify-content-end mt-2">
-                                  <div class="dropdown select-dropdown admin-profile">
-                                    <button class="btn dropdown-toggle text-dark w-0 bg-white border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                    <ul class="dropdown-menu bg-light" aria-labelledby="dropdownMenuButton1" style="">
-                                        <li><a class="dropdown-item" href="#">Template A</a></li>
-                                        <li><a class="dropdown-item" href="#">Template B</a></li>
-                                        <li><a class="dropdown-item" href="#">Template C</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="uploadfile w-5 me-3 mt-3">
-                                    <div class="text w-5"><label for="fileupload" class="cursor-pointer fw-bold mt-2"><i class="icon icon-link-icon"></i></label></div>
-                                    <input id="fileupload" type="file" class="fileupload w-5">
-                                  </div>
-                                    <a href="#" class="d-block ms-2"><i class="icon icon-emoji"></i></a>
-                                </div>
-                              </div>
-                          </div>
-                          <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 mt-md-0"><i class="icon icon-send-message-white"></i></button>
-                      </form>
-                  </div>
-                  </div>
-                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bg-white rounded p-3 cursor-pointer h-100" onclick="window.location.href='./sm-bots-detail.html'">
+                <i class="icon icon-bots mb-3"></i>
+                <h6 class="fw-600 mb-3 text-center">Complaint Bot</h6>
+                <i class="icon icon-edit-fill bg-cover d-block ms-auto"></i>
               </div>
             </div>
           </div>
@@ -652,9 +459,11 @@
           <div class="modal-body upload-box">
             <form>
               <label for="name" class="fw-bold mt-3 mb-2">Attendance Start Date</label>
-              <input type="date" name="name" id="name" placeholder="Attendance Start Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <input type="date" name="name" id="name" placeholder="Attendance Start Date"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
               <label for="name" class="fw-bold mt-3 mb-2">Attendance End Date</label>
-              <input type="date" name="name" id="name" placeholder="Attendance End Date" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <input type="date" name="name" id="name" placeholder="Attendance End Date"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
               <div class="form-group">
                 <label for="fileField" class="attachment">
                   <div class="row btn-file">
@@ -680,6 +489,39 @@
         </div>
       </div>
     </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New Bot</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body upload-files">
+        <form>
+          <label for="role" class="fw-bold mt-3 mb-2">Select Profile</label>
+          <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="Manager">Twitter Account</option>
+            <option value="Urdu">Urdu</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Punjabi">Punjabi</option>
+          </select>
+          <label for="role" class="fw-bold mt-3 mb-2">Name your chatbot</label>
+          <input type="tel" name="phone" id="phone" placeholder="Ahmed" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="role" class="fw-bold mt-3 mb-2">Chatbot Description</label>
+          <input type="tel" name="phone" id="phone" placeholder="New chatbot" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <div class="uploadfile mt-3">
+            <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button me-2"></i> Chatbot avatar</label></div>
+            <input id="fileupload" type="file" class="fileupload">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-primary text-uppercase">add</button>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
   </section>
 
   <!-- JavaScript
@@ -688,22 +530,9 @@
   <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
-  <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./assets/js/graphs-popup.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".comment").click(function () {
-        $(".right-content").toggleClass("d-block");
-      });
-      $(".comment-1").click(function () {
-        $(".right-content-1").toggleClass("d-block");
-      });
-      $(".comment-2").click(function () {
-        $(".right-content-2").toggleClass("d-block");
-      });
-    });
-  </script>
+  <script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>

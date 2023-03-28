@@ -77,14 +77,40 @@
 
 
   .preview-message{
-    width: 250px;
-    height: 55vh;
+    width: 290px;
+    height: 70vh;
     background: #fff;
     border-radius: 8px;
-    position: fixed;
+    position: absolute;
     z-index: 111;
-    top: 36%;
-    right: 25%;
+    top: 0%;
+    right: 24%;
     display: none;
+  }
+  .keywords{
+    width: 290px;
+    height: auto;
+    background: #fff;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 111;
+    top: 0%;
+    right: 24%;
+    display: none;
+
+    .nav-tabs{
+      .nav-item{
+        width: 50%;
+        margin: 0;
+        .nav-link{
+          width: 100%;
+          &.active{
+            border: none !important;
+            background: #a7a1b14b !important;
+            border-radius: 0 !important;
+          }
+        }
+      }
+    }
   }
 }

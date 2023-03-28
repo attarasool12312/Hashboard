@@ -8125,15 +8125,38 @@ section.section-panel {
   cursor: pointer;
 }
 .board-tab .preview-message {
-  width: 250px;
-  height: 55vh;
+  width: 290px;
+  height: 70vh;
   background: #fff;
   border-radius: 8px;
-  position: fixed;
+  position: absolute;
   z-index: 111;
-  top: 36%;
-  right: 25%;
+  top: 0%;
+  right: 24%;
   display: none;
+}
+.board-tab .keywords {
+  width: 290px;
+  height: auto;
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 111;
+  top: 0%;
+  right: 24%;
+  display: none;
+}
+.board-tab .keywords .nav-tabs .nav-item {
+  width: 50%;
+  margin: 0;
+}
+.board-tab .keywords .nav-tabs .nav-item .nav-link {
+  width: 100%;
+}
+.board-tab .keywords .nav-tabs .nav-item .nav-link.active {
+  border: none !important;
+  background: rgba(167, 161, 177, 0.2941176471) !important;
+  border-radius: 0 !important;
 }
 
 .deals-content {

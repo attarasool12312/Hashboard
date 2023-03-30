@@ -48,6 +48,16 @@
                 </div>
             </form>
         </div> -->
+        <div class="dropdown select-dropdown me-3 d-none d-md-block">
+          <button class="btn dropdown-toggle pe-5 w-100 bg-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Link all Account
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+      </div>
         <div class="about-profile">
             <div class="d-none d-md-flex align-items-center">
                 <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a>
@@ -145,10 +155,6 @@
                 <div class="container">
                     <div class="page-main-title">
                         <h1>New Post</h1>
-                        <div class="d-flex align-iteme-center flex-colume-sm wsm-100 mt-3 mt-md-0">
-                            <button type="button" class="btn ouline-white btn-fill me-md-3" data-bs-toggle="modal"
-                                data-bs-target="#ScheduleModal">Schedule</button>
-                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -156,16 +162,11 @@
                                 <div>
                                     <img src="./assets/images/profile-2.png" alt="">
                                     <textarea name="post" id="post" cols="30" rows="7" class="d-block mt-3 fw-600 w-100 border border-2 rounded p-2 bg-light-gray" placeholder="Life is what happens when you're busy making other plans"></textarea>
+                                    <label for="role" class="fw-bold mt-3">Role</label>
+                                    <p class="text-light-gray">Track and report on your social marketing Campaign with the Campaign Planner notes and more.</p>
+                                    <input type="tel" name="phone" id="phone" placeholder="Add New Compaign" class="d-block w-100 border border-2 rounded px-4 py-2">
                                 </div>
                                 <div class="d-flex align-items-center justify-content-end mt-2">
-                                  <div class="dropdown select-dropdown admin-profile">
-                                    <button class="btn dropdown-toggle text-dark w-0 border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                    <ul class="dropdown-menu bg-light" aria-labelledby="dropdownMenuButton1" style="">
-                                        <li><a class="dropdown-item" href="#">Template A</a></li>
-                                        <li><a class="dropdown-item" href="#">Template B</a></li>
-                                        <li><a class="dropdown-item" href="#">Template C</a></li>
-                                    </ul>
-                                  </div>
                                   <div class="uploadfile w-10">
                                     <div class="text w-10"><label for="fileupload" class="cursor-pointer fw-bold mt-2"><i class="icon icon-link-icon"></i></label></div>
                                     <input id="fileupload" type="file" class="fileupload w-10">
@@ -250,7 +251,8 @@
                         </div>
                         <div class="co-12 mt-3">
                           <div class="d-flex align-items-center justify-content-between flex-colume-sm">
-                            <button type="button" class="btn ouline-white bg-light-gray me-md-3 wsm-100">Schedule</button>
+                            <button type="button" class="btn ouline-white bg-light-gray me-md-3 wsm-100" data-bs-toggle="modal"
+                            data-bs-target="#ScheduleModal">Schedule</button>
                             <div class="d-flex align-items-center flex-colume-sm wsm-100">
                               <div class="dropdown select-dropdown me-3">
                                 <button class="btn dropdown-toggle pe-5 w-100 bg-white border-0 mt-3 mt-md-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">

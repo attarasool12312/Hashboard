@@ -39,7 +39,8 @@
       text-align: left;
       position: relative;
       @include grid-md-down {
-        width: 100%;
+        min-width: 100%;
+        padding-right: 10px;
       }
       &::after {
         position: absolute;

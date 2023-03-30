@@ -27,6 +27,10 @@
     width: 57%;
     height: 2px;
     background-color: #775DA6;
+    @include grid-sm-down{
+    left: 15%;
+    width: 67%;
+    }
   }
 
   .bot-message-detail {

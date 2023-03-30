@@ -5166,7 +5166,8 @@ ul.head-btn .slider-btn .btn.ouline-white {
 }
 @media only screen and (max-width: 991.98px) {
   .select-dropdown .dropdown-toggle {
-    width: 100%;
+    min-width: 100%;
+    padding-right: 10px;
   }
 }
 .select-dropdown .dropdown-toggle::after {
@@ -6507,6 +6508,11 @@ input[type=checkbox]:checked + .box:before {
 .logo .navbar-brand {
   width: 200px;
   display: inline-block;
+}
+@media only screen and (max-width: 767.98px) {
+  .logo .navbar-brand {
+    margin: 0;
+  }
 }
 .logo .navbar-brand img {
   width: 100%;
@@ -8083,6 +8089,12 @@ section.section-panel {
   width: 57%;
   height: 2px;
   background-color: #775DA6;
+}
+@media only screen and (max-width: 767.98px) {
+  .board-tab::after {
+    left: 15%;
+    width: 67%;
+  }
 }
 .board-tab .bot-message-detail {
   display: flex;

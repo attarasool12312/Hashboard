@@ -151,6 +151,7 @@
               <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
             </ul>
           </li>
+          <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-memory"></i>Financial</a></li>
         </ul>
       </aside>
       <main class="main pt-4 pb-4">
@@ -419,7 +420,7 @@
                 <div class="chart-box h-100 d-flex justify-content-between flex-column">
                   <div class="chart-head d-flex justify-content-between">
                     <div class="chart-title">
-                      <h3 class="fw-600">Posy Type</h3>
+                      <h3 class="fw-600">Post Type</h3>
                     </div>
                     <div class="btn-group">
                       <button type="button" class="btn p-2 border-none ms-4 outline-none" data-bs-toggle="dropdown"
@@ -943,40 +944,39 @@
 
     const url = 'https://unpkg.com/world-atlas@2.0.2/countries-50m.json';
 
-    fetch(url).then((result) => result.json()).then((datapoint) => {
-      const countries = ChartGeo.topojson.feature(datapoint, datapoint.objects.countries).features;
+fetch(url).then((result) => result.json()).then((datapoint) => {
+  const countries = ChartGeo.topojson.feature(datapoint, datapoint.objects.countries).features;
 
-      console.log()
+  const locationChart = document.getElementById("locationChart");
 
-
-      const locationChart = document.getElementById("locationChart");
-
-      const locationChart_1 = new Chart(locationChart, {
-        type: "choropleth",
-        data: {
-          labels: countries.map(country => country.properties.name),
-          datasets: [
-            {
-              label: "Countries",
-              data: countries.map(country => ({ feature: country, value: Math.random() })),
-            },
-          ],
+  const locationChart_1 = new Chart(locationChart, {
+    type: "choropleth",
+    data: {
+      labels: countries.map(country => country.properties.name),
+      datasets: [
+        {
+          label: "Countries",
+          data: countries.map(country => ({ feature: country, value: Math.random() })),
+          backgroundColor: '#775DA6', // set background color to #775DA6
         },
-        options: {
-          responsive: true,
-          scales: {
-            xy: {
-              projection: 'equalEarth'
-            }
-          },
-          plugins: {
-            legend: {
-              display: false,
-            },
-          },
+      ],
+    },
+    options: {
+      responsive: true,
+      scales: {
+        xy: {
+          projection: 'equalEarth'
+        }
+      },
+      plugins: {
+        legend: {
+          display: false,
         },
-      });
-    });
+      },
+    },
+  });
+});
+
 
     const usabilityCategory = document.getElementById('usabilityCategory');
 

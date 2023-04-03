@@ -1,0 +1,15 @@
+.invoice-table-product{
+  input[type=checkbox] + .box:after{
+    top: 9px;
+  }
+  input[type=checkbox]:checked + .box:before{
+    top: 6px;
+  }
+  input[type=checkbox]:checked + .box:after{
+    background-color: #775DA6;
+    border-color: #775DA6;
+  }
+  tbody td {
+    padding: 13px;
+}
+}

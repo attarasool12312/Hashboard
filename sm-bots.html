@@ -150,6 +150,7 @@
               <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
             </ul>
           </li>
+          <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-memory"></i>Financial</a></li>
         </ul>
       </aside>
       <main class="main pt-4 pb-4">
@@ -159,27 +160,31 @@
           </div>
           <div class="row">
             <div class="col-md-3 mb-3">
-              <div class="bg-white rounded p-3 cursor-pointer h-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <div class="bg-white rounded p-3 cursor-pointer h-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 <i class="icon icon-bots mb-3"></i>
                 <h6 class="fw-600 mb-3 text-center">New Bot</h6>
               </div>
             </div>
             <div class="col-md-3 mb-3">
-              <div class="bg-white rounded p-3 cursor-pointer h-100" onclick="window.location.href='./sm-bots-detail.html'">
+              <div class="bg-white rounded p-3 cursor-pointer h-100"
+                onclick="window.location.href='./sm-bots-detail.html'">
                 <i class="icon icon-bots mb-3"></i>
                 <h6 class="fw-600 mb-3 text-center">Customer Care Bot</h6>
                 <i class="icon icon-edit-fill bg-cover d-block ms-auto"></i>
               </div>
             </div>
             <div class="col-md-3 mb-3">
-              <div class="bg-white rounded p-3 cursor-pointer h-100" onclick="window.location.href='./sm-bots-detail.html'">
+              <div class="bg-white rounded p-3 cursor-pointer h-100"
+                onclick="window.location.href='./sm-bots-detail.html'">
                 <i class="icon icon-bots mb-3"></i>
                 <h6 class="fw-600 mb-3 text-center">Sales Bot</h6>
                 <i class="icon icon-edit-fill bg-cover d-block ms-auto"></i>
               </div>
             </div>
             <div class="col-md-3 mb-3">
-              <div class="bg-white rounded p-3 cursor-pointer h-100" onclick="window.location.href='./sm-bots-detail.html'">
+              <div class="bg-white rounded p-3 cursor-pointer h-100"
+                onclick="window.location.href='./sm-bots-detail.html'">
                 <i class="icon icon-bots mb-3"></i>
                 <h6 class="fw-600 mb-3 text-center">Complaint Bot</h6>
                 <i class="icon icon-edit-fill bg-cover d-block ms-auto"></i>
@@ -489,39 +494,42 @@
         </div>
       </div>
     </div>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New Bot</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body upload-files">
-        <form>
-          <label for="role" class="fw-bold mt-3 mb-2">Select Profile</label>
-          <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-            <option value="Manager">Twitter Account</option>
-            <option value="Urdu">Urdu</option>
-            <option value="Hindi">Hindi</option>
-            <option value="Punjabi">Punjabi</option>
-          </select>
-          <label for="role" class="fw-bold mt-3 mb-2">Name your chatbot</label>
-          <input type="tel" name="phone" id="phone" placeholder="Ahmed" class="d-block w-100 border border-2 rounded px-4 py-2">
-          <label for="role" class="fw-bold mt-3 mb-2">Chatbot Description</label>
-          <input type="tel" name="phone" id="phone" placeholder="New chatbot" class="d-block w-100 border border-2 rounded px-4 py-2">
-          <div class="uploadfile mt-3">
-            <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button me-2"></i> Chatbot avatar</label></div>
-            <input id="fileupload" type="file" class="fileupload">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New Bot</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        </form>
-      </div>
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-primary text-uppercase">add</button>
-        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">cancel</button>
+          <div class="modal-body upload-files">
+            <form>
+              <label for="role" class="fw-bold mt-3 mb-2">Select Profile</label>
+              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="Manager">Twitter Account</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Punjabi">Punjabi</option>
+              </select>
+              <label for="role" class="fw-bold mt-3 mb-2">Name your chatbot</label>
+              <input type="tel" name="phone" id="phone" placeholder="Ahmed"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="role" class="fw-bold mt-3 mb-2">Chatbot Description</label>
+              <input type="tel" name="phone" id="phone" placeholder="New chatbot"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+              <div class="uploadfile mt-3">
+                <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i
+                      class="icon icon-blue-added-button me-2"></i> Chatbot avatar</label></div>
+                <input id="fileupload" type="file" class="fileupload">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary text-uppercase">add</button>
+            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">cancel</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
   </section>
 
   <!-- JavaScript

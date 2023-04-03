@@ -78,6 +78,7 @@
                 <li><a class="dropdown-item panel_link " href="./pm-revenue-plan.html">Revenue Plan</a></li>
                 <li><a class="dropdown-item panel_link " href="./pm-project-cocs.html">COCs Overview</a></li>
                 <li><a class="dropdown-item panel_link " href="./pm-project-pos.html">Project POs</a></li>
+                <li><a class="dropdown-item panel_link" href="./pm-balance-sheet.html">Balance Sheet</a></li>
               </ul>
             </li>
             <li><a href="./pm-transferred-projects.html" class="panel_link "><i
@@ -185,6 +186,7 @@
             <div class="d-flex align-items-center flex-colume-sm wsm-100">
               <button type="button" class="btn ouline-white me-md-3 mt-3 wsm-100 mt-md-0 wsm-100"><i class="icon icon-download me-2"></i>Download</button>
               <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0 wsm-100" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload Bulk</button>
+              <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0 wsm-100" data-bs-toggle="modal" data-bs-target="#expensesModal">Add Expenses</button>
               <button type="button" class="btn ouline-white me-md-3 btn-fill wsm-100 mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#updateStageModal">Update Project Status </button>
               <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0" data-bs-toggle="modal"
               data-bs-target="#businessForm">Edit Project</button>
@@ -3364,6 +3366,39 @@
           </div>
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-primary px-4 text-uppercase">update</button>
+            <button type="button" class="btn border border-2 px-4 text-uppercase" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="expensesModal" tabindex="-1" aria-labelledby="expensesLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="expensesModalLabel">All Expenses</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="full-name" class="fw-bold mb-2 mt-4">Invoice Name</label>
+            <input type="text" placeholder="Invoice Name" class="d-block border border-2 rounded w-100 py-2 px-3">
+            <label for="full-name" class="fw-bold mb-2 mt-4">Vendor Name</label>
+            <input type="text" placeholder="Vendor Name"
+              class="d-block border border-2 rounded w-100 py-2 px-3">
+            <label for="full-name" class="fw-bold mb-2 mt-4">Description</label>
+            <textarea name="description" id="description" cols="30" rows="5" class="d-block border border-2 rounded w-100 py-2 px-3"></textarea>
+            <label for="full-name" class="fw-bold mb-2 mt-4">Quantity</label>
+            <select name="Member" id="Member" class="d-block border border-2 rounded w-50 py-2 px-3">
+              <option value="Member">Low</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+            <label for="full-name" class="fw-bold mb-2 mt-4">Total Amount</label>
+            <input type="number" placeholder="Total Amount" class="d-block border border-2 rounded w-100 py-2 px-3">
+            <div class="text w-fit ms-5 my-2"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-4 text-uppercase">Save</button>
             <button type="button" class="btn border border-2 px-4 text-uppercase" data-bs-dismiss="modal">Close</button>
           </div>
         </div>

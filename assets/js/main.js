@@ -31,6 +31,10 @@ $(document).ready(function () {
   });
 });
 
+$(".open-button").click(function(){
+  $(".aside").toggleClass("open")
+});
+
 
 let uploadBotton = document.getElementById("upload-button");
 let chosenImage = document.getElementById("chosen-image");

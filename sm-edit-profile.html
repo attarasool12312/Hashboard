@@ -29,129 +29,123 @@
 <body>
   <header class="bg-white">
     <div class="header-main">
-      <div class="sitepanel-toggler m-0">
-        <div class="close">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="sitepanel-toggler m-0">
+            <div class="close">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
         </div>
-        <div class="logo">
-          <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
-        </div>
-      </div>
-      <!-- <div class="search-form header-form d-none d-md-block">
-                <form action="">
-                    <div class="form-group">
-                        <input class="form-control max-width" type="text" placeholder="Search in Rhombus…"
-                            aria-label="Search">
-                        <i class="icon icon-search-form"></i>
+        <!-- <div class="search-form header-form d-none d-md-block">
+            <form action="">
+                <div class="form-group">
+                    <input class="form-control max-width" type="text" placeholder="Search in Rhombus…"
+                        aria-label="Search">
+                    <i class="icon icon-search-form"></i>
+                </div>
+            </form>
+        </div> -->
+        <div class="about-profile">
+            <div class="d-none d-md-flex align-items-center">
+              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i class="icon icon-plus"></i> Add</button>
+                <!-- <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a> -->
+                <div class="dropdown select-dropdown admin-notification">
+                  <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
+                    <i class="icon icon-notification"></i>
+                  </button>
+                  <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
+                    <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
+                      <p>Notification</p>
+                      <a href="./sm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
                     </div>
-                </form>
-            </div> -->
-      <div class="about-profile">
-        <div class="d-none d-md-flex align-items-center">
-          <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a>
-          <div class="dropdown select-dropdown admin-notification">
-            <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1"
-              data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
-              <i class="icon icon-notification"></i>
-            </button>
-            <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
-              <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
-                <p>Notification</p>
-                <a href="./sm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
+                    <div class="p-2 border-bottom">
+                      <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                      <p class="text-light-gray mt-3">12 May, 2025</p>
+                    </div>
+                    <div class="p-2 border-bottom">
+                      <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                      <p class="text-light-gray mt-3">12 May, 2025</p>
+                    </div>
+                    <div class="p-2">
+                      <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                      <p class="text-light-gray mt-3">12 May, 2025</p>
+                    </div>
+                  </ul>
+                </div>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+                <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="profile-img me-2 border-0">
+                    <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                  </div>
+                  <div class="admin-info d-none d-md-block">
+                    <h5 class="">Katie Pena</h5>
+                    <h6 class="text-small text-light-gray">Admin</h6>
+                  </div>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <div class="profile-images text-center">
+                    <img src="./assets/images/profile-2.png" alt="">
+                  <h6 class="text-small mt-2">Allen Moreno</h6>
+                  <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                  </div>
+                    <li><a class="dropdown-item mt-3" href="./sm-edit-profile.html"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                    <li><a class="dropdown-item" href="./sm-profile-activities.html"><i class="icon icon-calender-2"></i> Actions</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+                </ul>
               </div>
-              <div class="p-2 border-bottom">
-                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                <p class="text-light-gray mt-3">12 May, 2025</p>
-              </div>
-              <div class="p-2 border-bottom">
-                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                <p class="text-light-gray mt-3">12 May, 2025</p>
-              </div>
-              <div class="p-2">
-                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                <p class="text-light-gray mt-3">12 May, 2025</p>
-              </div>
-            </ul>
-          </div>
         </div>
-        <div class="dropdown select-dropdown admin-profile">
-          <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button"
-            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            <div class="profile-img me-2 border-0">
-              <img class="img-fluid" src="./assets/images/profile.png" alt="">
-            </div>
-            <div class="admin-info d-none d-md-block">
-              <h5 class="">Katie Pena</h5>
-              <h6 class="text-small text-light-gray">Admin</h6>
-            </div>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <div class="profile-images text-center">
-              <img src="./assets/images/profile-2.png" alt="">
-              <h6 class="text-small mt-2">Allen Moreno</h6>
-              <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
-            </div>
-            <li><a class="dropdown-item mt-3" href="./sm-edit-profile.html"><i class="icon icon-user-profile"></i> My
-                Profile</a></li>
-            <li><a class="dropdown-item" href="./sm-profile-activities.html"><i class="icon icon-calender-2"></i>
-                Actions</a></li>
-            <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
-            <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
 
-  </header>
+</header>
   <section class="section-panel">
     <div class="admin-wrapper">
       <aside class="aside left-sidbar">
         <ul>
           <li><a href="./sm-overview.html" class="panel_link"><i class="icon icon-overviwe"></i>
-              Dashboard</a>
+              <span>Dashboard</span></a>
           </li>
           <li><a href="./sm-trending.html" class="panel_link "><i class="icon icon-trending"></i>
-              Trending</a></li>
-          <li><a href="./sm-feeds.html" class="panel_link "><i class="icon icon-memory"></i>Feeds</a></li>
-          <li><a href="./sm-new-post.html" class="panel_link"><i class="icon icon-friends"></i>
-              New Post</a></li>
-          <li><a href="./sm-collaboration.html" class="panel_link "><i class="icon icon-event"></i>
-              Collaboration</a>
+              <span>Trending</span></a></li>
+          <li><a href="./sm-feeds.html" class="panel_link "><i class="icon icon-expenses"></i><span>Feeds</span></a></li>
+          <li><a href="./sm-new-post.html" class="panel_link"><i class="icon icon-bar-document"></i>
+              <span>New Post</span></a></li>
+          <li><a href="./sm-collaboration.html" class="panel_link "><i class="icon icon-collaboration"></i>
+              <span>Collaboration</span></a>
           </li>
-          <li><a href="./sm-bots.html" class="panel_link "><i class="icon icon-bots"></i>Bots</a></li>
-          <li><a href="./sm-tracker.html" class="panel_link "><i class="icon icon-memory"></i>Tracker</a></li>
-          <li><a href="./sm-link-new-account.html" class="panel_link "><i class="icon icon-memory"></i>Link
-              new account</a></li>
-          <li><a href="./sm-campaign-analysis.html" class="panel_link "><i class="icon icon-saved-post"></i>
-              Campaign analysis</a>
+          <li><a href="./sm-bots.html" class="panel_link "><i class="icon icon-bots"></i><span>Bots</span></a></li>
+          <li><a href="./sm-tracker.html" class="panel_link "><i class="icon icon-reports"></i><span>Tracker</span></a></li>
+          <li><a href="./sm-link-new-account.html" class="panel_link "><i class="icon icon-link-account"></i><span>Link new account</span></a></li>
+          <li><a href="./sm-campaign-analysis.html" class="panel_link "><i class="icon icon-reports"></i>
+              <span>Campaign analysis</span></a>
           </li>
-          <li><a href="./sm-influencers.html" class="panel_link active_panel"><i class="icon icon-contact"></i>
-              Influencers</a></li>
+          <li><a href="./sm-influencers.html" class="panel_link active_panel"><i class="icon icon-Influencers"></i>
+              <span>Influencers</span></a></li>
           <li><a href="./sm-benchmarking.html" class="panel_link "><i class="icon icon-benchmarking"></i>
-              Benchmarking</a></li>
-          <li><a href="./sm-create-template.html" class="panel_link "><i class="icon icon-overviwe"></i>
-              Create Template</a></li>
-          <li><a href="./sm-applications-api.html" class="panel_link "><i class="icon icon-overviwe"></i>
-              Application API</a></li>
+              <span>Benchmarking</span></a></li>
+          <li><a href="./sm-create-template.html" class="panel_link "><i class="icon icon-create-template"></i>
+              <span>Create Template</span></a></li>
           <li class="nav-item panel-dropdown">
             <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Transactions-Dropdown"
               role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="icon icon-bar-document"></i> Setting
+              <i class="icon icon-settings"></i> <span>Setting</span>
             </a>
             <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
               <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i
-                    class="icon icon-bar-document"></i> Account</a></li>
+                    class="icon icon-settings"></i> <span>Account</span></a></li>
               <li><a class="dropdown-item panel_link" href="./sm-setting-general.html"><i
-                    class="icon icon-bar-document"></i> General</a></li>
-              <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
+                    class="icon icon-settings"></i> <span>General</span></a></li>
+              <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i> <span>Profile</span></a></li>
             </ul>
           </li>
-          <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-memory"></i>Financial</a></li>
+          <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-memory"></i><span>Financial</span></a></li>
+          <div class="open-button">
+            <i class="icon icon-right-arrow"></i>
+          </div>
         </ul>
       </aside>
       <main class="main pt-4 pb-4">
@@ -160,19 +154,6 @@
             <h1>Profile</h1>
           </div>
           <div class="row">
-            <div class="col-12 text-end">
-              <div class="dropdown select-dropdown">
-                <button class="btn dropdown-toggle pe-5 bg-white border-0" type="button" id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Local
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-            </div>
             <div class="col-md-11 mx-auto mt-4">
               <div class="main-profile-area border-radius bg-white">
                 <div class="cover-area">
@@ -183,37 +164,33 @@
                     <div class="people-story align-items-md-end">
                       <a href="#"><img src="./assets/images/profile-pic.jpg" class="img-fluid" alt=""></a>
                       <div class="mt-4">
-                        <h3 class="fw-600">Katie Pena<i class="icon icon-check ms-2"></i></h3>
+                        <h3 class="fw-600">Katie Pena</h3>
                         <div class="peopl-follwing-area d-flex mt-3">
                           <a href="" class="me-md-4 me-2 text-decoration-none text-darken">
-                            <h6 class="fw-600">1.077<span class="text-light-gray ms-2 fw-normal">Projects</span>
+                            <h6 class="fw-600">1.077<span class="text-light-gray ms-2 fw-normal">Post</span>
                             </h6>
                           </a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div
+                  <!-- <div
                     class="edit-profile-area d-flex align-items-end mt-3 mt-md-0 justify-content-end justify-content-md-start me-3 me-md-0">
                     <div class="add-button text-center">
                       <button type="button" class="btn ouline-white fw-500"><i class="icon icon-pain-draw me-2"></i>Edit
                         Profile</button>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="profile-tabs-area mt-3">
                   <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="Projects-tab" data-bs-toggle="tab" data-bs-target="#Projects"
-                        type="button" role="tab" aria-controls="Projects" aria-selected="true">Projects</button>
+                      <button class="nav-link active" id="Reports-tab" data-bs-toggle="tab" data-bs-target="#Reports"
+                        type="button" role="tab" aria-controls="Reports" aria-selected="false">Reports</button>
                     </li>
                     <li class="nav-item" role="presentation">
                       <button class="nav-link" id="Tasks-tab" data-bs-toggle="tab" data-bs-target="#Tasks" type="button"
                         role="tab" aria-controls="Tasks" aria-selected="false">Tasks</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="Reports-tab" data-bs-toggle="tab" data-bs-target="#Reports"
-                        type="button" role="tab" aria-controls="Reports" aria-selected="false">Reports</button>
                     </li>
                   </ul>
                 </div>
@@ -235,7 +212,7 @@
                       class="icon icon-download me-2"></i>Download</button>
                 </div>
                 <div class="tab-content mt-3">
-                  <div class="tab-pane active" id="Projects" role="tabpanel" aria-labelledby="Projects-tab">
+                  <!-- <div class="tab-pane " id="Projects" role="tabpanel" aria-labelledby="Projects-tab">
                     <div class="document-main-content cursor-pointer"
                       onclick="window.location.href='./pm-project-name.html'">
                       <div class="chart-box h-100">
@@ -435,117 +412,94 @@
                         </ul>
                       </nav>
                     </div>
-                  </div>
-                  <div class="tab-pane" id="Reports" role="tabpanel" aria-labelledby="Reports-tab">
+                  </div> -->
+                  <div class="tab-pane active" id="Reports" role="tabpanel" aria-labelledby="Reports-tab">
                     <div class="row">
-                      <div class="col-md-3 mt-3 contact-card">
+                      <div class="col-md-3 pe-0">
                         <div class="sm-box h-100 bg-white">
                           <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
                             <span>
-                              <h3 class="fw-bold">$22,880.50</h3>
+                              <h3 class="fw-bold">2,104</h3>
                             </span>
                             <span class=""><i class="icon icon-cart-box"></i></span>
                           </div>
-                          <p class="text-light-gray">on-going projects value</p>
-                          <div class="progress-percentage mt-4">
-                            <div class="progress-percentage-box">
-                              <!-- example starts here -->
-                              <div class="progress">
-                                <div class="progress-bar darkblue" role="progressbar" aria-valuenow="0"
-                                  aria-valuemin="0" aria-valuemax="100" style="width: 67%;">
-                                  <span>67%</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                          <p class="text-light-gray">Twitter Followers</p>
+                          <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
                         </div>
                       </div>
-                      <div class="col-md-3 mt-3 contact-card">
+                      <div class="col-md-3 mt-3 mt-md-0 pe-0">
                         <div class="sm-box h-100 bg-white">
                           <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
                             <span>
-                              <h3 class="fw-bold">340</h3>
+                              <h3 class="fw-bold">211</h3>
                             </span>
                             <span class=""><i class="icon icon-avarage-incom"></i></span>
                           </div>
-                          <p class="text-light-gray">Ogoing Projects</p>
-                          <div class="progress-percentage mt-4">
-                            <div class="progress-percentage-box">
-                              <!-- example starts here -->
-                              <div class="progress">
-                                <div class="progress-bar pink" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                  aria-valuemax="100" style="width: 18%;">
-                                  <span>18%</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                          <p class="text-light-gray">Facebook Followers </p>
+                          <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
                         </div>
                       </div>
-                      <div class="col-md-3 mt-3 contact-card">
+                      <div class="col-md-3 mt-3 mt-md-0  pe-0">
                         <div class="sm-box h-100 bg-white">
                           <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
                             <span>
-                              <h3 class="fw-bold">78%</h3>
+                              <h3 class="fw-bold">1,553</h3>
                             </span>
                             <span class=""><i class="icon icon-conversations"></i></span>
                           </div>
-                          <p class="text-light-gray">Satisfaction index</p>
-                          <div class="progress-percentage mt-4">
-                            <div class="progress-percentage-box">
-                              <!-- example starts here -->
-                              <div class="progress">
-                                <div class="progress-bar sky-blue" role="progressbar" aria-valuenow="0"
-                                  aria-valuemin="0" aria-valuemax="100" style="width: 78%;">
-                                  <span>78%</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                          <p class="text-light-gray">Instagram Followers</p>
+                          <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
                         </div>
                       </div>
-                      <div class="col-md-3 mt-3 contact-card">
+                      <div class="col-md-3 mt-3 mt-md-0 pe-0">
                         <div class="sm-box h-100 bg-white">
                           <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
                             <span>
-                              <h3 class="fw-bold">778</h3>
+                              <h3 class="fw-bold">19.1%</h3>
                             </span>
                             <span class=""><i class="icon icon-right-arrow-yellow"></i></span>
                           </div>
-                          <p class="text-light-gray">Total completed Projects</p>
-                          <div class="progress-percentage mt-4">
-                            <div class="progress-percentage-box">
-                              <!-- example starts here -->
-                              <div class="progress">
-                                <div class="progress-bar yellow" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                  aria-valuemax="100" style="width: 80%;">
-                                  <span>80%</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                          <p class="text-light-gray">YouTube Followers </p>
+                          <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
                         </div>
                       </div>
-                      <div class="col-md-6 mt-3 contact-card-2">
+                      <div class="col-md-6 mt-3 pe-0">
                         <div class="chart">
                           <div class="chart-box h-100 d-flex justify-content-between flex-column">
                             <div class="chart-head d-md-flex justify-content-between align-items-center">
                               <div class="chart-title">
-                                <h3 class="fw-600">Top Customers</h3>
+                                <h5 class="fw-600">Avg Engagement Per Pst</h5>
                               </div>
                               <div class="d-flex justify-content-between flex-column">
                                 <div class="d-flex align-items-start justify-content-md-end  mt-3 mt-md-0 mb-md-0 mb-3">
-                                  <p class="fw-500 me-3"><span class="dot-shape bg-purple"></span> Value
+                                  <p class="fw-500 me-3"><span class="dot-shape bg-purple"></span> Link
                                   </p>
-                                  <p class="fw-500"><span class="dot-shape bg-sky-blue"></span>
-                                    Invoiced</p>
+                                  <p class="fw-500"><span class="dot-shape bg-sky-blue"></span> like,
+                                    comment
+                                  </p>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown"
+                                      aria-expanded="false">
+                                      <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                      </div>
+                                    </button>
+                                    <ul class="dropdown-menu" style="">
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                          Edit</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                          Delete</a></li>
+                                    </ul>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div class="chart-content d-flex justify-content-between">
                               <div class="chart-grap d-flex align-items-end">
                                 <div>
-                                  <canvas id="customers" class="w-100"
+                                  <canvas id="commentChart" class="wsm-100"
                                     style="display: block; box-sizing: border-box; height: 160px; width: 450px;"
                                     width="450" height="160"></canvas>
                                 </div>
@@ -554,28 +508,36 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-6 mt-3 contact-card-2">
+                      <div class="col-md-6 mt-3 pe-0">
                         <div class="chart">
                           <div class="chart-box h-100 d-flex justify-content-between flex-column">
-                            <div class="chart-head d-md-flex justify-content-between align-items-center">
+                            <div class="chart-head mb-4 d-flex align-items-center justify-content-between">
                               <div class="chart-title">
-                                <h3 class="fw-600">Top Projects</h3>
+                                <h5 class="fw-600">New Followers</h5>
                               </div>
-                              <div class="d-flex justify-content-between flex-column">
-                                <div class="d-flex align-items-start justify-content-md-end  mt-3 mt-md-0 mb-md-0 mb-3">
-                                  <p class="fw-500 me-3"><span class="dot-shape bg-purple"></span> Value
-                                  </p>
-                                  <p class="fw-500"><span class="dot-shape bg-sky-blue"></span>
-                                    Invoiced</p>
-                                </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown"
+                                  aria-expanded="false">
+                                  <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+                                </button>
+                                <ul class="dropdown-menu" style="">
+                                  <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                      Edit</a></li>
+                                  <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                      Delete</a></li>
+                                </ul>
                               </div>
                             </div>
-                            <div class="chart-content d-flex justify-content-between">
-                              <div class="chart-grap d-flex align-items-end">
+                            <div class="chart-content">
+                              <div class="chart-grap">
                                 <div>
-                                  <canvas id="projects" class="w-100"
-                                    style="display: block; box-sizing: border-box; height: 160px; width: 450px;"
-                                    width="450" height="160"></canvas>
+                                  <canvas id="followersChart" class="wsm-100"
+                                    style="display: block; box-sizing: border-box; height: 220px; width: 453px;"
+                                    width="453" height="220"></canvas>
                                 </div>
                               </div>
                             </div>
@@ -1289,6 +1251,41 @@
         </div>
       </div>
     </div>
+    <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add new User</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form>
+              <label for="Customer-name" class="d-block mb-2">User Name</label>
+              <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">User ID</label>
+              <input type="text" placeholder="Please Insert USer ID" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+              <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Email</label>
+              <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Position</label>
+              <input type="text" placeholder="Enter a User Position" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">Role</label>
+              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="Manager">Admin</option>
+                <option value="Urdu">Extended</option>
+                <option value="Hindi">Standard</option>
+                <option value="Punjabi">Limited</option>
+              </select>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- JavaScript
@@ -1297,120 +1294,127 @@
   <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
-  <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./assets/js/project-overview.js"></script>
+  <script src="./assets/js/main.js"></script>
   <script>
-    const doublebar = document.getElementById("doubleBars");
+    window.onload = function () {
+      const commentChart = document.getElementById("commentChart");
 
-    const bar3 = new Chart(doublebar, {
-      type: "bar",
-      data: {
-        labels: ["customer1", "customer2", "customer3", "customer4", "customer5", "customer6"],
-        datasets: [
-          {
-            label: "# of Votes",
-            data: [10, 13, 9, 12, 13, 8],
-            borderRadius: 5,
-            borderWidth: 1,
-            backgroundColor: "#775da6",
-            barThickness: 12,
-          },
-          {
-            label: "# of Votes",
-            data: [10, 13, 9, 12, 11, 13],
-            borderRadius: 5,
-            borderWidth: 1,
-            backgroundColor: "#abdfe7",
-            barThickness: 12,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        scales: {
-          x: {
-            // display: false,
-            grid: {
-              drawOnChartArea: false,
+      const commentChart_1 = new Chart(commentChart, {
+        type: "bar",
+        data: {
+          labels: ["Jan", "Mar", "Apr", "May", "Jun", "Jul"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [10, 13, 9, 12, 13, 8],
+              borderRadius: 5,
+              borderWidth: 1,
+              backgroundColor: "#775da6",
+              barThickness: 12,
             },
-            ticks: {
-              display: true,
+            {
+              label: "# of Votes",
+              data: [10, 13, 9, 12, 11, 13],
+              borderRadius: 5,
+              borderWidth: 1,
+              backgroundColor: "#abdfe7",
+              barThickness: 12,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            x: {
+              // display: false,
+              grid: {
+                drawOnChartArea: false,
+              },
+              ticks: {
+                display: true,
+              },
+            },
+            y: {
+              display: false,
+              grid: {
+                drawOnChartArea: false,
+              },
+              ticks: {
+                display: false,
+              },
             },
           },
-          y: {
-            display: false,
-            grid: {
-              drawOnChartArea: false,
-            },
-            ticks: {
+          plugins: {
+            legend: {
               display: false,
             },
           },
         },
-        plugins: {
-          legend: {
-            display: false,
-          },
-        },
-      },
-    });
+      });
 
-    const doublebar1 = document.getElementById("customers");
+      const followersChart = document.getElementById('followersChart');
 
-    const bar_3 = new Chart(doublebar1, {
-      type: "bar",
-      data: {
-        labels: ["Project1", "Project1", "Project3", "Project4", "Project5", "Project6"],
-        datasets: [
-          {
-            label: "# of Votes",
-            data: [10, 13, 9, 12, 13, 8],
-            borderRadius: 5,
-            borderWidth: 1,
-            backgroundColor: "#775da6",
-            barThickness: 12,
-          },
-          {
-            label: "# of Votes",
-            data: [10, 13, 9, 12, 11, 13],
-            borderRadius: 5,
-            borderWidth: 1,
-            backgroundColor: "#abdfe7",
-            barThickness: 12,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        scales: {
-          x: {
-            // display: false,
-            grid: {
-              drawOnChartArea: false,
+      const followersChart_1 = new Chart(followersChart, {
+        type: 'line',
+        data: {
+          labels: ['Jan', 'Fab', 'Mar', 'Apr', 'May', 'Jun'],
+          datasets: [
+            {
+              label: ['Facebook'],
+              data: [200, 190, 195, 188, 210, 220, 215],
+              borderColor: '#775da6',
+              backgroundColor: '#775da6',
             },
-            ticks: {
+            {
+              label: ['Twitter'],
+              data: [150, 145, 148, 155, 148, 140, 144],
+              borderColor: '#70b6c1',
+              backgroundColor: '#70b6c1',
+            },
+            {
+              label: ['YouTube'],
+              data: [100, 120, 110, 105, 115, 130, 135],
+              borderColor: '#ffb1b7',
+              backgroundColor: '#ffb1b7',
+            }
+          ],
+        },
+        options: {
+          responsive: true,
+          elements: {
+            point: {
+              radius: 0
+            }
+          },
+          scales: {
+            x: {
+              // display: false,
+              beginAtZero: true,
+              grid: {
+                drawOnChartArea: false,
+              },
+              ticks: {
+                display: true,
+              }
+            },
+            y: {
+              beginAtZero: true,
+            }
+          },
+          plugins: {
+            legend: {
               display: true,
-            },
-          },
-          y: {
-            display: false,
-            grid: {
-              drawOnChartArea: false,
-            },
-            ticks: {
-              display: false,
-            },
-          },
+              position: 'bottom',
+              labels: {
+                usePointStyle: true,
+                boxWidth: 8
+              }
+            }
+          }
         },
-        plugins: {
-          legend: {
-            display: false,
-          },
-        },
-      },
-    });
-
+      });
+    };
   </script>
 </body>
 

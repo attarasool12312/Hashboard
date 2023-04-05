@@ -47,46 +47,49 @@
             </div>
           </div>
           <ul>
-            <li><a href="./crm-overview-index.html" class="panel_link "><i class="icon icon-overviwe"></i> Dashboard</a>
+            <li><a href="./crm-overview-index.html" class="panel_link "><i class="icon icon-overviwe"></i> <span>Dashboard</span></a>
             </li>
             <li><a href="./crm-compnies-list.html" class="panel_link"><i
-                  class="icon icon-bar-companies"></i> Customer Profiles</a></li>
-            <li><a href="./crm-deals.html" class="panel_link"><i class="icon icon-deal-bag"></i> Deals</a></li>
-            <li><a href="./crm-contact.html" class="panel_link"><i class="icon icon-contact"></i> Contact</a></li>
+                  class="icon icon-customer-profile"></i> <span>Customer Profiles</span></a></li>
+            <li><a href="./crm-deals.html" class="panel_link"><i class="icon icon-deal-bag"></i> <span>Deals</span></a></li>
+            <li><a href="./crm-contact.html" class="panel_link"><i class="icon icon-collaboration"></i> <span>Contact</span></a></li>
             <li class="nav-item panel-dropdown position-relative">
-              <a href="./crm-reports-overview.html" class="mb-auto panel_link"><i class="icon icon-project"></i>
-                Report</a>
+              <a href="./crm-reports-overview.html" class="mb-auto panel_link"><i class="icon icon-reports"></i>
+                <span>Report</span></a>
               <div>
                 <a class="dropdown-btn nav-link dropdown-toggle position-absolute" href="" id="Setting-Dropdown"
-                  role="button" data-bs-toggle="dropdown" aria-expanded="false" style="top: 11px; right: 17px;">
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false" style="top: 11px; right: 0;">
                 </a>
                 <ul class="Setting-Dropdown m-0" aria-labelledby="Setting-Dropdown">
-                  <li><a class="dropdown-item panel_link" href="./crm-overview-reports.html">Customer Reports</a></li>
-                  <li><a class="dropdown-item panel_link" href="./crm-leads-report.html">Leads Reports</a></li>
-                  <li><a class="dropdown-item panel_link" href="./crm-sales-report.html">Sales Reports</a></li>
+                  <li><a class="dropdown-item panel_link" href="./crm-overview-reports.html"><i class="icon icon-reports"></i><span>Customer Reports</span></a></li>
+                  <li><a class="dropdown-item panel_link" href="./crm-leads-report.html"><i class="icon icon-reports"></i><span>Leads Reports</span></a></li>
+                  <li><a class="dropdown-item panel_link" href="./crm-sales-report.html"><i class="icon icon-reports"></i><span>Sales Reports</span></a></li>
                 </ul>
               </div>
             </li>
             <li><a href="./crm-revenue-analysis.html" class="panel_link"><i
-                  class="icon icon-report-board"></i> Revenue Analysis</a></li>
+                  class="icon icon-sales"></i> <span>Revenue Analysis</span></a></li>
                   <li><a href="./crm-transferred-projects.html" class="panel_link"><i
-                    class="icon icon-transferred-projects"></i> Transfer as project</a></li>
-            <li><a href="./crm-product.html" class="panel_link"><i class="icon icon-expenses"></i> Products</a></li>
-            <li><a href="./crm-documents.html" class="panel_link"><i class="icon icon-bar-document"></i> Documents</a>
+                    class="icon icon-transferred-projects"></i> <span>Transfer as project</span></a></li>
+            <li><a href="./crm-product.html" class="panel_link"><i class="icon icon-project"></i> <span>Products</span></a></li>
+            <li><a href="./crm-documents.html" class="panel_link"><i class="icon icon-bar-document"></i> <span>Documents</span></a>
             </li>
-            <li><a href="./crm-applications-api.html" class="panel_link"><i class="icon icon-bar-document"></i> Applications API</a></li>
+            <li><a href="./crm-applications-api.html" class="panel_link"><i class="icon icon-link-account"></i> <span>Applications API</span></a></li>
             <li class="nav-item panel-dropdown">
               <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Transactions-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-bar-document"></i> Setting
+                <i class="icon icon-settings"></i> <span>Setting</span>
               </a>
               <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i class="icon icon-bar-document"></i> Account</a></li>
-                <li><a class="dropdown-item panel_link active_panel" href="./crm-setting-general.html"><i class="icon icon-bar-document"></i> General</a></li>
-                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
+                <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i class="icon icon-settings"></i> <span>Account</span></a></li>
+                <li><a class="dropdown-item panel_link active_panel" href="./crm-setting-general.html"><i class="icon icon-settings"></i> <span>General</span></a></li>
+                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i> <span>Profile</span></a></li>
               </ul>
             </li>
-            <li><a href="./hr-dashboard.html" class="panel_link">Move To HR Management </a></li>
+            <li><a href="./hr-dashboard.html" class="panel_link"><span>Move To HR Management</span></a></li>
+            <div class="open-button">
+              <i class="icon icon-right-arrow"></i>
+            </div>
           </ul>
         </div>
       </aside>
@@ -322,285 +325,245 @@
                               <thead>
                                 <tr>
                                   <th>Feature</th>
-                                  <th>Default User</th>
-                                  <th>Content Manager</th>
-                                  <th>Hiring Manager</th>
-                                  <th>Recruitment Lead</th>
-                                  <th>Recruitment Admin</th>
-                                  <th>Company Admin</th>
+                                  <th>Owner</th>
+                                  <th>Admin</th>
+                                  <th>Extended</th>
+                                  <th>Standard</th>
+                                  <th>Limited</th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Add new deal</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Edit deal</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Add new stage</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Edit stages</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Add new customer</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Edit customer profile</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Add new contact</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Edit contact</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Add new product</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Edit production</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Add new documents</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Edit Documents</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
                                 <tr class="border-bottom">
                                   <td scope="col" data-label="Feature">Transfer deal</td>
-                                  <td scope="col" data-label="Default User">
+                                  <td scope="col" data-label="Owner">
                                       <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Content Manager">
+                                  <td scope="col" data-label="Admin">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Hiring Manager">
+                                  <td scope="col" data-label="Extended">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Lead">
+                                  <td scope="col" data-label="Standard">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
-                                  <td scope="col" data-label="Recruitment Admin">
-                                    <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  </td>
-                                  <td scope="col" data-label="Company Admin">
+                                  <td scope="col" data-label="Limited">
                                     <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                                   </td>
                                 </tr>
@@ -617,285 +580,245 @@
                       <thead>
                         <tr>
                           <th>Feature</th>
-                          <th>Default User</th>
-                          <th>Content Manager</th>
-                          <th>Hiring Manager</th>
-                          <th>Recruitment Lead</th>
-                          <th>Recruitment Admin</th>
-                          <th>Company Admin</th>
+                          <th>Owner</th>
+                          <th>Admin</th>
+                          <th>Extended</th>
+                          <th>Standard</th>
+                          <th>Limited</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Add new deal</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Edit deal</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Add new stage</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Edit stages</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Add new customer</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Edit customer profile</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Add new contact</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Edit contact</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Add new product</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Edit production</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Add new documents</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Edit Documents</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>
                         <tr class="border-bottom">
                           <td scope="col" data-label="Feature">Transfer deal</td>
-                          <td scope="col" data-label="Default User">
+                          <td scope="col" data-label="Owner">
                               <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Content Manager">
+                          <td scope="col" data-label="Admin">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Hiring Manager">
+                          <td scope="col" data-label="Extended">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Lead">
+                          <td scope="col" data-label="Standard">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
-                          <td scope="col" data-label="Recruitment Admin">
-                            <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
-                          </td>
-                          <td scope="col" data-label="Company Admin">
+                          <td scope="col" data-label="Limited">
                             <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1" value="option1">
                           </td>
                         </tr>

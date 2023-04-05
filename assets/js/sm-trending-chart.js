@@ -463,6 +463,7 @@ fetch(url).then((result) => result.json()).then((datapoint) => {
         {
           label: "Countries",
           data: countries.map(country => ({ feature: country, value: Math.random() })),
+          backgroundColor: '#775DA6', // set background color to #775DA6
         },
       ],
     },
@@ -500,6 +501,7 @@ fetch(url1).then((result) => result.json()).then((datapoint) => {
         {
           label: "Countries",
           data: countries.map(country => ({ feature: country, value: Math.random() })),
+          backgroundColor: '#775DA6', // set background color to #775DA6
         },
       ],
     },

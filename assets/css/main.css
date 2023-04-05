@@ -988,8 +988,8 @@ i[class*=h-icon-] {
 .icon-friends {
   display: inline-block;
   background-image: url("../images/icons/friends.svg");
-  width: 22px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 
 .icon-event {
@@ -1359,8 +1359,43 @@ i[class*=h-icon-] {
 .icon-twitter {
   display: inline-block;
   background-image: url("../images/icons/twitter.svg");
-  width: 14px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-instagram {
+  display: inline-block;
+  background-image: url("../images/icons/instagram.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-collaboration {
+  display: inline-block;
+  background-image: url("../images/icons/collaboration.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-link-account {
+  display: inline-block;
+  background-image: url("../images/icons/link-account.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-Influencers {
+  display: inline-block;
+  background-image: url("../images/icons/Influencers.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-create-template {
+  display: inline-block;
+  background-image: url("../images/icons/create-template.svg");
+  width: 24px;
+  height: 24px;
 }
 
 .icon-facebook-1 {
@@ -1688,8 +1723,8 @@ i[class*=h-icon-] {
 .icon-transferred-projects {
   display: inline-block;
   background-image: url("../images/icons/transferred-projects.svg");
-  width: 25px;
-  height: 23px;
+  width: 24px;
+  height: 24px;
 }
 
 .icon-project-cirlce {
@@ -1807,8 +1842,22 @@ i[class*=h-icon-] {
 .icon-settings {
   display: inline-block;
   background-image: url("../images/icons/settings.svg");
-  width: 22px;
-  height: 17px;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-project-menu {
+  display: inline-block;
+  background-image: url("../images/icons/project-menu.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-customer-profile {
+  display: inline-block;
+  background-image: url("../images/icons/customer-profile.svg");
+  width: 24px;
+  height: 24px;
 }
 
 .icon-expeness {
@@ -1996,15 +2045,43 @@ i[class*=h-icon-] {
 .icon-facebook {
   display: inline-block;
   background-image: url("../images/icons/facebook.svg");
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
 }
 
 .icon-benchmarking {
   display: inline-block;
   background-image: url("../images/icons/benchmarking.svg");
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-youtube-box-icon {
+  display: inline-block;
+  background-image: url("../images/icons/youtube-box-icon.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-photo-film-box-icon {
+  display: inline-block;
+  background-image: url("../images/icons/photo-film-box-icon.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-thumbs-up-box-icon {
+  display: inline-block;
+  background-image: url("../images/icons/thumbs-up-box-icon.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-comments-box-icon {
+  display: inline-block;
+  background-image: url("../images/icons/comments-box-icon.svg");
+  width: 24px;
+  height: 24px;
 }
 
 .icon-arrow-signal-down {
@@ -4838,8 +4915,8 @@ ul.head-btn .slider-btn .btn.ouline-white {
   width: 100%;
 }
 .section-panel .admin-wrapper .aside {
-  max-width: 300px;
-  width: 300px;
+  max-width: 95px;
+  width: 95px;
   background: #FFFFFF;
   padding: 5px 16px 0 16px;
   border-right: 1px solid #EDEDED;
@@ -4858,7 +4935,15 @@ ul.head-btn .slider-btn .btn.ouline-white {
     height: 100vh;
     overflow: auto;
     padding: 10px 16px 0 16px;
+    max-width: 300px;
+    width: 300px;
   }
+}
+.section-panel .admin-wrapper .aside .side-panel-dropdown span {
+  display: none;
+}
+.section-panel .admin-wrapper .aside .side-panel-dropdown .panel-button i {
+  margin: 0;
 }
 .section-panel .admin-wrapper .aside.is-active {
   left: 0;
@@ -4866,6 +4951,7 @@ ul.head-btn .slider-btn .btn.ouline-white {
 .section-panel .admin-wrapper .aside ul {
   list-style: none;
   padding: 0;
+  position: relative;
 }
 .section-panel .admin-wrapper .aside ul li a {
   text-decoration: none;
@@ -4879,8 +4965,8 @@ ul.head-btn .slider-btn .btn.ouline-white {
   border-radius: 12px;
   padding: 14px 12px;
 }
-.section-panel .admin-wrapper .aside ul li a i {
-  margin-right: 12px;
+.section-panel .admin-wrapper .aside ul li a span {
+  display: none;
 }
 .section-panel .admin-wrapper .aside ul li.panel-dropdown .Business-Dropdown {
   display: none;
@@ -4974,6 +5060,17 @@ ul.head-btn .slider-btn .btn.ouline-white {
 .section-panel .admin-wrapper .aside.right-sidbar ul li p {
   font-size: 12px;
   font-weight: 400;
+}
+.section-panel .admin-wrapper .aside .open-button {
+  position: absolute;
+  top: 45%;
+  left: 104%;
+  background: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 1px 10px;
+  cursor: pointer;
 }
 .section-panel .admin-wrapper .aside-1 {
   max-width: 300px;
@@ -5101,6 +5198,25 @@ ul.head-btn .slider-btn .btn.ouline-white {
 .section-panel .admin-wrapper .aside-1.right-sidbar ul li p {
   font-size: 12px;
   font-weight: 400;
+}
+.section-panel .admin-wrapper .open {
+  max-width: 300px;
+  width: 300px;
+}
+.section-panel .admin-wrapper .open .side-panel-dropdown span {
+  display: inline-block;
+}
+.section-panel .admin-wrapper .open .side-panel-dropdown .panel-button i {
+  margin-right: 12px;
+}
+.section-panel .admin-wrapper .open ul li a i {
+  margin-right: 10px;
+}
+.section-panel .admin-wrapper .open ul li a span {
+  display: inline-block;
+}
+.section-panel .admin-wrapper .open .open-button {
+  left: 102%;
 }
 
 .active_panel {

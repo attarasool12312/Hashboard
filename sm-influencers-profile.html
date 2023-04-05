@@ -29,17 +29,17 @@
 <body>
   <header class="bg-white">
     <div class="header-main">
-      <div class="sitepanel-toggler m-0">
-        <div class="close">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="sitepanel-toggler m-0">
+            <div class="close">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
         </div>
-        <div class="logo">
-          <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
-        </div>
-      </div>
-      <!-- <div class="search-form header-form d-none d-md-block">
+        <!-- <div class="search-form header-form d-none d-md-block">
             <form action="">
                 <div class="form-group">
                     <input class="form-control max-width" type="text" placeholder="Search in Rhombus…"
@@ -48,134 +48,113 @@
                 </div>
             </form>
         </div> -->
-      <div class="about-profile">
-        <div class="d-none d-md-flex align-items-center">
-          <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a>
-          <div class="dropdown select-dropdown admin-notification">
-            <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1"
-              data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
-              <i class="icon icon-notification"></i>
-            </button>
-            <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
-              <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
-                <p>Notification</p>
-                <a href="./sm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
+        <div class="about-profile">
+            <div class="d-none d-md-flex align-items-center">
+              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i class="icon icon-plus"></i> Add</button>
+                <!-- <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a> -->
+                <div class="dropdown select-dropdown admin-notification">
+                  <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
+                    <i class="icon icon-notification"></i>
+                  </button>
+                  <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
+                    <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
+                      <p>Notification</p>
+                      <a href="./sm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
+                    </div>
+                    <div class="p-2 border-bottom">
+                      <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                      <p class="text-light-gray mt-3">12 May, 2025</p>
+                    </div>
+                    <div class="p-2 border-bottom">
+                      <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                      <p class="text-light-gray mt-3">12 May, 2025</p>
+                    </div>
+                    <div class="p-2">
+                      <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                      <p class="text-light-gray mt-3">12 May, 2025</p>
+                    </div>
+                  </ul>
+                </div>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+                <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="profile-img me-2 border-0">
+                    <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                  </div>
+                  <div class="admin-info d-none d-md-block">
+                    <h5 class="">Katie Pena</h5>
+                    <h6 class="text-small text-light-gray">Admin</h6>
+                  </div>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <div class="profile-images text-center">
+                    <img src="./assets/images/profile-2.png" alt="">
+                  <h6 class="text-small mt-2">Allen Moreno</h6>
+                  <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                  </div>
+                    <li><a class="dropdown-item mt-3" href="./sm-edit-profile.html"><i class="icon icon-user-profile"></i> My Profile</a></li>
+                    <li><a class="dropdown-item" href="./sm-profile-activities.html"><i class="icon icon-calender-2"></i> Actions</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+                </ul>
               </div>
-              <div class="p-2 border-bottom">
-                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                <p class="text-light-gray mt-3">12 May, 2025</p>
-              </div>
-              <div class="p-2 border-bottom">
-                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                <p class="text-light-gray mt-3">12 May, 2025</p>
-              </div>
-              <div class="p-2">
-                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                <p class="text-light-gray mt-3">12 May, 2025</p>
-              </div>
-            </ul>
-          </div>
         </div>
-        <div class="dropdown select-dropdown admin-profile">
-          <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button"
-            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            <div class="profile-img me-2 border-0">
-              <img class="img-fluid" src="./assets/images/profile.png" alt="">
-            </div>
-            <div class="admin-info d-none d-md-block">
-              <h5 class="">Katie Pena</h5>
-              <h6 class="text-small text-light-gray">Admin</h6>
-            </div>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <div class="profile-images text-center">
-              <img src="./assets/images/profile-2.png" alt="">
-              <h6 class="text-small mt-2">Allen Moreno</h6>
-              <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
-            </div>
-            <li><a class="dropdown-item mt-3" href="./sm-edit-profile.html"><i class="icon icon-user-profile"></i> My
-                Profile</a></li>
-            <li><a class="dropdown-item" href="./sm-profile-activities.html"><i class="icon icon-calender-2"></i>
-                Actions</a></li>
-            <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
-            <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
 
-  </header>
+</header>
   <section class="section-panel">
     <div class="admin-wrapper">
       <aside class="aside left-sidbar">
         <ul>
           <li><a href="./sm-overview.html" class="panel_link"><i class="icon icon-overviwe"></i>
-              Dashboard</a>
+              <span>Dashboard</span></a>
           </li>
           <li><a href="./sm-trending.html" class="panel_link "><i class="icon icon-trending"></i>
-              Trending</a></li>
-          <li><a href="./sm-feeds.html" class="panel_link "><i class="icon icon-memory"></i>Feeds</a></li>
-          <li><a href="./sm-new-post.html" class="panel_link"><i class="icon icon-friends"></i>
-              New Post</a></li>
-          <li><a href="./sm-collaboration.html" class="panel_link "><i class="icon icon-event"></i>
-              Collaboration</a>
+              <span>Trending</span></a></li>
+          <li><a href="./sm-feeds.html" class="panel_link "><i class="icon icon-expenses"></i><span>Feeds</span></a></li>
+          <li><a href="./sm-new-post.html" class="panel_link"><i class="icon icon-bar-document"></i>
+              <span>New Post</span></a></li>
+          <li><a href="./sm-collaboration.html" class="panel_link "><i class="icon icon-collaboration"></i>
+              <span>Collaboration</span></a>
           </li>
-          <li><a href="./sm-bots.html" class="panel_link "><i class="icon icon-bots"></i>Bots</a></li>
-          <li><a href="./sm-tracker.html" class="panel_link "><i class="icon icon-memory"></i>Tracker</a></li>
-          <li><a href="./sm-link-new-account.html" class="panel_link "><i class="icon icon-memory"></i>Link
-              new account</a></li>
-          <li><a href="./sm-campaign-analysis.html" class="panel_link "><i class="icon icon-saved-post"></i>
-              Campaign analysis</a>
+          <li><a href="./sm-bots.html" class="panel_link "><i class="icon icon-bots"></i><span>Bots</span></a></li>
+          <li><a href="./sm-tracker.html" class="panel_link "><i class="icon icon-reports"></i><span>Tracker</span></a></li>
+          <li><a href="./sm-link-new-account.html" class="panel_link "><i class="icon icon-link-account"></i><span>Link new account</span></a></li>
+          <li><a href="./sm-campaign-analysis.html" class="panel_link "><i class="icon icon-reports"></i>
+              <span>Campaign analysis</span></a>
           </li>
-          <li><a href="./sm-influencers.html" class="panel_link active_panel"><i class="icon icon-contact"></i>
-              Influencers</a></li>
+          <li><a href="./sm-influencers.html" class="panel_link active_panel"><i class="icon icon-Influencers"></i>
+              <span>Influencers</span></a></li>
           <li><a href="./sm-benchmarking.html" class="panel_link "><i class="icon icon-benchmarking"></i>
-              Benchmarking</a></li>
-          <li><a href="./sm-create-template.html" class="panel_link "><i class="icon icon-overviwe"></i>
-              Create Template</a></li>
-          <li><a href="./sm-applications-api.html" class="panel_link "><i class="icon icon-overviwe"></i>
-              Application API</a></li>
+              <span>Benchmarking</span></a></li>
+          <li><a href="./sm-create-template.html" class="panel_link "><i class="icon icon-create-template"></i>
+              <span>Create Template</span></a></li>
           <li class="nav-item panel-dropdown">
             <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Transactions-Dropdown"
               role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="icon icon-bar-document"></i> Setting
+              <i class="icon icon-settings"></i> <span>Setting</span>
             </a>
             <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
               <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i
-                    class="icon icon-bar-document"></i> Account</a></li>
+                    class="icon icon-settings"></i> <span>Account</span></a></li>
               <li><a class="dropdown-item panel_link" href="./sm-setting-general.html"><i
-                    class="icon icon-bar-document"></i> General</a></li>
-              <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> Profile</a></li>
+                    class="icon icon-settings"></i> <span>General</span></a></li>
+              <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i> <span>Profile</span></a></li>
             </ul>
           </li>
-          <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-memory"></i>Financial</a></li>
+          <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-memory"></i><span>Financial</span></a></li>
+          <div class="open-button">
+            <i class="icon icon-right-arrow"></i>
+          </div>
         </ul>
       </aside>
       <main class="main pt-4 pb-4">
         <div class="container">
           <div class="page-main-title">
-            <h1>Influencers</h1>
-            <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0" data-bs-toggle="modal"
-              data-bs-target="#influencerModal">Add new influencer</button>
+            <h1>Profile</h1>
           </div>
           <div class="row">
-            <div class="col-12 text-end">
-              <div class="dropdown select-dropdown">
-                <button class="btn dropdown-toggle pe-5 bg-white border-0" type="button" id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Local
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-10 mx-auto mt-4">
+            <div class="col-md-10 mx-auto">
               <div class="main-profile-area border-radius bg-white">
                 <div class="cover-area">
                   <img src="./assets/images/cover.jpg" alt="" class="img-fluid">
@@ -201,85 +180,141 @@
                     </div>
                   </div>
                 </div>
-                <div class="p-3">
-                  <div class="bg-light-gray rounded profile-images pb-4">
-                    <div class="bg-white rounded py-2 px-3 d-flex justify-content-between align-items-center">
-                      <div class="d-flex align-items-center">
-                        <img src="./assets/images/profile-2.png" alt="">
-                        <div class="ms-2">
-                          <h6 class="text-small fw-600">Michal</h6>
-                          <p class="text-light-gray text-small">@XXXX</p>
-                        </div>
-                        <span class="btn-fill px-3 rounded text-small ms-5">5K +</span>
-                      </div>
-                      <p class="text-light-gray text-small">at: 12:00 PM </p>
-                    </div>
-                    <div class="p-3">
-                      <p class="text-light-gray mt-3 text-small">Commented on Post: <span class="text-dark fw-600">50%
-                          discount in our website
-                          https;//www.hasboard.com.sa </span></p>
-                      <p class="fw-600 my-3">Amazing offer. thnx</p>
-                    </div>
-                    <div class="d-flex p-3 pt-0">
-                      <a href="#"><i class="icon icon-like"></i></a>
-                      <a href=""><i class="icon icon-recycle ms-3"></i></a>
-                      <a class="comment cursor-pointer"><i class="icon icon-comment ms-3 mt-1"></i></a>
-                    </div>
-                    <div class="bg-white p-3 width-70 rounded ms-4 wsm-100 right-content">
-                      <img src="./assets/images/profile-2.png" alt="">
-                      <div class="d-flex align-items-center justify-content-between mt-4 ">
-                        <textarea name="comment" id="comment" cols="30" rows="3"
-                          class="border border-2 p-2 rounded w-100 text-light-gray"
-                          placeholder="Life is what happens when you're busy making other plans"></textarea>
-                        <div class="d-flex align-items-center">
-                          <span class="d-flex align-items-center text-decoration-none text-dark me-3"><i
-                              class="icon icon-photo-video-icon me-2"></i>
-                            <h6 class="text-sm text-sm-9">Photo/video</h6>
+                <div class="profile-tabs-area mt-3">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="twitter-tab" data-bs-toggle="tab" data-bs-target="#twitter" type="button" role="tab" aria-controls="twitter" aria-selected="false">Twitter</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="facebook-tab" data-bs-toggle="tab" data-bs-target="#facebook" type="button" role="tab" aria-controls="facebook" aria-selected="false">Facebook</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="LinkedIn-tab" data-bs-toggle="tab" data-bs-target="#LinkedIn" type="button" role="tab" aria-controls="LinkedIn" aria-selected="false">LinkedIn</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="instagram-tab" data-bs-toggle="tab" data-bs-target="#instagram" type="button" role="tab" aria-controls="instagram" aria-selected="false">Instagram</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="youtube-tab" data-bs-toggle="tab" data-bs-target="#youtube" type="button" role="tab" aria-controls="youtube" aria-selected="false">Youtube</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="whatsApp-tab" data-bs-toggle="tab" data-bs-target="#whatsApp" type="button" role="tab" aria-controls="whatsApp" aria-selected="false">WhatsApp Business</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-content mt-3">
+                <div class="tab-pane active" id="twitter" role="tabpanel" aria-labelledby="twitter-tab">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="sm-box h-100 bg-white">
+                        <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                          <span>
+                            <p class="text-light-gray">Media Posts</p>
                           </span>
-                          <a href="#"><i class="icon icon-share mt-1"></i></a>
+                          <span class=""><i class="icon icon-photo-film-box-icon"></i></span>
                         </div>
+                        <h3 class="fw-bold">2.53K</h3>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-12 mt-3">
-                    <div class="bg-light-gray rounded profile-images pb-4">
-                      <div class="bg-white rounded py-2 px-3 d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center">
-                          <img src="./assets/images/profile-2.png" alt="">
-                          <div class="ms-2">
-                            <h6 class="text-small fw-600">Michal</h6>
-                            <p class="text-light-gray text-small">@XXXX</p>
-                          </div>
-                          <span class="btn-fill px-3 rounded text-small ms-5">5K +</span>
+                    <div class="col-md-3">
+                      <div class="sm-box h-100 bg-white">
+                        <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                          <span>
+                            <p class="text-light-gray">Followers</p>
+                          </span>
+                          <span class=""><i class="icon icon-friends"></i></span>
                         </div>
-                        <p class="text-light-gray text-small">at: 12:00 PM </p>
+                        <h3 class="fw-bold">3.81M</h3>
                       </div>
-                      <div class="p-3">
-                        <p class="text-light-gray mt-3 text-small">Commented on Post: <span class="text-dark fw-600">50%
-                            discount in our website
-                            https;//www.hasboard.com.sa </span></p>
-                        <p class="fw-600 my-3">Amazing offer. thnx</p>
-                      </div>
-                      <div class="d-flex p-3 pt-0">
-                        <a href="#"><i class="icon icon-like"></i></a>
-                        <a href=""><i class="icon icon-recycle ms-3"></i></a>
-                        <a class="comment-1 cursor-pointer"><i class="icon icon-comment ms-3 mt-1"></i></a>
-                      </div>
-                      <div class="bg-white p-3 width-70 rounded ms-4 wsm-100 right-content-1">
-                        <img src="./assets/images/profile-2.png" alt="">
-                        <div class="d-flex align-items-center justify-content-between mt-4 ">
-                          <textarea name="comment" id="comment" cols="30" rows="3"
-                            class="border border-2 p-2 rounded w-100 text-light-gray"
-                            placeholder="Life is what happens when you're busy making other plans"></textarea>
-                          <div class="d-flex align-items-center">
-                            <span class="d-flex align-items-center text-decoration-none text-dark me-3"><i
-                                class="icon icon-photo-video-icon me-2"></i>
-                              <h6 class="text-sm text-sm-9">Photo/video</h6>
-                            </span>
-                            <a href="#"><i class="icon icon-share mt-1"></i></a>
-                          </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="sm-box h-100 bg-white">
+                        <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                          <span>
+                            <p class="text-light-gray">Total Likes</p>
+                          </span>
+                          <span class=""><i class="icon icon-thumbs-up-box-icon"></i></span>
                         </div>
+                        <h3 class="fw-bold">9.27M</h3>
                       </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="sm-box h-100 bg-white">
+                        <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                          <span>
+                            <p class="text-light-gray">Total Comments</p>
+                          </span>
+                          <span class=""><i class="icon icon-comments-box-icon"></i></span>
+                        </div>
+                        <h3 class="fw-bold">107.37K</h3>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                      <div class="sm-box h-100 bg-white">
+                        <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                          <span>
+                            <p class="text-light-gray">AVG. Likes</p>
+                          </span>
+                          <span class=""><i class="icon icon-cart-box"></i></span>
+                        </div>
+                        <h3 class="fw-bold">64.79K</h3>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                      <div class="sm-box h-100 bg-white">
+                        <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                          <span>
+                            <p class="text-light-gray">AVG. Comments</p>
+                          </span>
+                          <span class=""><i class="icon icon-avarage-incom"></i></span>
+                        </div>
+                        <h3 class="fw-bold">751</h3>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                      <div class="sm-box h-100 bg-white">
+                        <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                          <span>
+                            <p class="text-light-gray">AVG. Engagement Rate</p>
+                          </span>
+                          <span class=""><i class="icon icon-conversations"></i></span>
+                        </div>
+                        <h3 class="fw-bold">1.722</h3>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <img src="./assets/images/friend-3.jpg" class="rounded w-100 h-100" alt="">
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <img src="./assets/images/gallery-11.png" class="rounded w-100 h-100" alt="">
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <img src="./assets/images/hijabfest-indonesia.jpg" class="rounded w-100 h-100" alt="">
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <img src="./assets/images/project-1.png" class="rounded w-100 h-100" alt="">
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <img src="./assets/images/project-2.png" class="rounded w-100 h-100" alt="">
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <img src="./assets/images/project-3.png" class="rounded w-100 h-100" alt="">
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <img src="./assets/images/project-4.png" class="rounded w-100 h-100" alt="">
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <img src="./assets/images/project-5.png" class="rounded w-100 h-100" alt="">
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <img src="./assets/images/project-6.png" class="rounded w-100 h-100" alt="">
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <img src="./assets/images/project-7.png" class="rounded w-100 h-100" alt="">
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <img src="./assets/images/suggest.jpg" class="rounded w-100 h-100" alt="">
                     </div>
                   </div>
                 </div>
@@ -288,55 +323,6 @@
           </div>
         </div>
       </main>
-    </div>
-    <div class="modal fade" id="influencerModal" tabindex="-1" aria-labelledby="influencerModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="influencerModalLabel">Add new influencer</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <label for="name" class="fw-bold mt-3 mb-2">Select Channel</label>
-              <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="Twitter">Twitter</option>
-                <option value="Urdu">Urdu</option>
-                <option value="Hindi">Hindi</option>
-                <option value="Punjabi">Punjabi</option>
-              </select>
-              <label for="name" class="fw-bold mt-3 mb-2">Account name</label>
-              <div class="d-flex align-items-center">
-                <input type="tel" name="phone" id="phone" placeholder="Enter a Phone Number"
-                  class="d-block me-2 w-100 border border-2 rounded px-4 py-2">
-                <i class="icon icon-check"></i>
-              </div>
-              <div class="d-flex align-items-center mt-4 profile-images">
-                <img src="./assets/images/profile-2.png" alt="">
-                <div class="ms-2">
-                  <p class="text-small fw-600">XXXXXXXXXXXX</p>
-                  <p class="text-light-gray">XXX</p>
-                </div>
-              </div>
-              <p class="text-light-gray mt-3">Followers: 20K</p>
-              <p class="text-light-gray">Tweets: 20K</p>
-              <button type="button" class="btn btn-primary px-5 text-uppercase mt-3 d-block">Follow</button>
-              <label for="name" class="fw-bold mt-3 mb-2">Select Category</label>
-              <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="Sport">Sport</option>
-                <option value="Urdu">Urdu</option>
-                <option value="Hindi">Hindi</option>
-                <option value="Punjabi">Punjabi</option>
-              </select>
-            </form>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-primary px-4">Add</button>
-            <button type="button" class="btn border border-2 px-4" data-bs-dismiss="modal">Cancel</button>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="modal right fade" id="SettingForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
       <div class="modal-dialog width-50 wsm-95">
@@ -593,6 +579,41 @@
           </div>
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Update</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add new User</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form>
+              <label for="Customer-name" class="d-block mb-2">User Name</label>
+              <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">User ID</label>
+              <input type="text" placeholder="Please Insert USer ID" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+              <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Email</label>
+              <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Position</label>
+              <input type="text" placeholder="Enter a User Position" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">Role</label>
+              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="Manager">Admin</option>
+                <option value="Urdu">Extended</option>
+                <option value="Hindi">Standard</option>
+                <option value="Punjabi">Limited</option>
+              </select>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>

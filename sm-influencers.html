@@ -29,17 +29,17 @@
 <body>
   <header class="bg-white">
     <div class="header-main">
-        <div class="sitepanel-toggler m-0">
-            <div class="close">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="logo">
-                <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
-            </div>
+      <div class="sitepanel-toggler m-0">
+        <div class="close">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <!-- <div class="search-form header-form d-none d-md-block">
+        <div class="logo">
+          <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+        </div>
+      </div>
+      <!-- <div class="search-form header-form d-none d-md-block">
             <form action="">
                 <div class="form-group">
                     <input class="form-control max-width" type="text" placeholder="Search in Rhombus…"
@@ -48,60 +48,75 @@
                 </div>
             </form>
         </div> -->
-        <div class="about-profile">
-            <div class="d-none d-md-flex align-items-center">
-              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i class="icon icon-plus"></i> Add</button>
-                <!-- <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a> -->
-                <div class="dropdown select-dropdown admin-notification">
-                  <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
-                    <i class="icon icon-notification"></i>
-                  </button>
-                  <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
-                    <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
-                      <p>Notification</p>
-                      <a href="./sm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
-                    </div>
-                    <div class="p-2 border-bottom">
-                      <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                      <p class="text-light-gray mt-3">12 May, 2025</p>
-                    </div>
-                    <div class="p-2 border-bottom">
-                      <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                      <p class="text-light-gray mt-3">12 May, 2025</p>
-                    </div>
-                    <div class="p-2">
-                      <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                      <p class="text-light-gray mt-3">12 May, 2025</p>
-                    </div>
-                  </ul>
-                </div>
-            </div>
-            <div class="dropdown select-dropdown admin-profile">
-                <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  <div class="profile-img me-2 border-0">
-                    <img class="img-fluid" src="./assets/images/profile.png" alt="">
-                  </div>
-                  <div class="admin-info d-none d-md-block">
-                    <h5 class="">Katie Pena</h5>
-                    <h6 class="text-small text-light-gray">Admin</h6>
-                  </div>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <div class="profile-images text-center">
-                    <img src="./assets/images/profile-2.png" alt="">
-                  <h6 class="text-small mt-2">Allen Moreno</h6>
-                  <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
-                  </div>
-                    <li><a class="dropdown-item mt-3" href="./sm-edit-profile.html"><i class="icon icon-user-profile"></i> My Profile</a></li>
-                    <li><a class="dropdown-item" href="./sm-profile-activities.html"><i class="icon icon-calender-2"></i> Actions</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
-                </ul>
+      <div class="about-profile">
+        <div class="d-none d-md-flex align-items-center">
+          <select name="Role" id="Role" class="d-block border border-2 rounded px-2 py-2 me-2 text-light-gray">
+            <option value="Manager">Choose Channel</option>
+            <option value="Manager">Admin</option>
+            <option value="Urdu">Extended</option>
+            <option value="Hindi">Standard</option>
+            <option value="Punjabi">Limited</option>
+          </select>
+          <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+              class="icon icon-plus"></i> Add</button>
+          <!-- <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a> -->
+          <div class="dropdown select-dropdown admin-notification">
+            <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
+              <i class="icon icon-notification"></i>
+            </button>
+            <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
+              <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
+                <p>Notification</p>
+                <a href="./sm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
               </div>
+              <div class="p-2 border-bottom">
+                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                <p class="text-light-gray mt-3">12 May, 2025</p>
+              </div>
+              <div class="p-2 border-bottom">
+                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                <p class="text-light-gray mt-3">12 May, 2025</p>
+              </div>
+              <div class="p-2">
+                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                <p class="text-light-gray mt-3">12 May, 2025</p>
+              </div>
+            </ul>
+          </div>
         </div>
+        <div class="dropdown select-dropdown admin-profile">
+          <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button"
+            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="profile-img me-2 border-0">
+              <img class="img-fluid" src="./assets/images/profile.png" alt="">
+            </div>
+            <div class="admin-info d-none d-md-block">
+              <h5 class="">Katie Pena</h5>
+              <h6 class="text-small text-light-gray">Admin</h6>
+            </div>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <div class="profile-images text-center">
+              <img src="./assets/images/profile-2.png" alt="">
+              <h6 class="text-small mt-2">Allen Moreno</h6>
+              <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+            </div>
+            <li><a class="dropdown-item mt-3" href="./sm-edit-profile.html"><i class="icon icon-user-profile"></i> My
+                Profile</a></li>
+            <li><a class="dropdown-item" href="./sm-profile-activities.html"><i class="icon icon-calender-2"></i>
+                Actions</a></li>
+            <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+            <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-</header>
+  </header>
   <section class="section-panel">
     <div class="admin-wrapper">
       <aside class="aside left-sidbar">
@@ -111,15 +126,18 @@
           </li>
           <li><a href="./sm-trending.html" class="panel_link "><i class="icon icon-trending"></i>
               <span>Trending</span></a></li>
-          <li><a href="./sm-feeds.html" class="panel_link "><i class="icon icon-expenses"></i><span>Feeds</span></a></li>
+          <li><a href="./sm-feeds.html" class="panel_link "><i class="icon icon-expenses"></i><span>Feeds</span></a>
+          </li>
           <li><a href="./sm-new-post.html" class="panel_link"><i class="icon icon-bar-document"></i>
               <span>New Post</span></a></li>
           <li><a href="./sm-collaboration.html" class="panel_link "><i class="icon icon-collaboration"></i>
               <span>Collaboration</span></a>
           </li>
           <li><a href="./sm-bots.html" class="panel_link "><i class="icon icon-bots"></i><span>Bots</span></a></li>
-          <li><a href="./sm-tracker.html" class="panel_link "><i class="icon icon-reports"></i><span>Tracker</span></a></li>
-          <li><a href="./sm-link-new-account.html" class="panel_link "><i class="icon icon-link-account"></i><span>Link new account</span></a></li>
+          <li><a href="./sm-tracker.html" class="panel_link "><i class="icon icon-reports"></i><span>Tracker</span></a>
+          </li>
+          <li><a href="./sm-link-new-account.html" class="panel_link "><i class="icon icon-link-account"></i><span>Link
+                new account</span></a></li>
           <li><a href="./sm-campaign-analysis.html" class="panel_link "><i class="icon icon-reports"></i>
               <span>Campaign analysis</span></a>
           </li>
@@ -139,10 +157,10 @@
                     class="icon icon-settings"></i> <span>Account</span></a></li>
               <li><a class="dropdown-item panel_link" href="./sm-setting-general.html"><i
                     class="icon icon-settings"></i> <span>General</span></a></li>
-              <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i> <span>Profile</span></a></li>
             </ul>
           </li>
-          <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-memory"></i><span>Financial</span></a></li>
+          <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-memory"></i><span>Financial</span></a>
+          </li>
           <div class="open-button">
             <i class="icon icon-right-arrow"></i>
           </div>
@@ -219,47 +237,159 @@
                   <div class="row">
                     <div class="col-md-3 contact-card">
                       <h6 class="mt-md-5">Catgory</h6>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Lifestyle</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Lifestyle</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Music</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Music</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Beauty</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Beauty</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Family</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Family</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Modelling</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Modelling</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Positivity</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Positivity</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Fitness & Gym</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Fitness & Gym</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Clothing & Outfits</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Clothing & Outfits</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Fashion</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Fashion</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Ball Sports</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Ball Sports</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Travel</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Travel</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Shopping & Retail</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Shopping & Retail</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Jewellery & Acc.</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Jewellery & Acc.</p>
                       </div>
-                      <div class="d-flex align-items-center mt-2">
-                        <p class="fw-600 ms-2 text-light-gray">Luxury</p>
+                      <div class="mt-2 ps-5">
+                        <span class="check-tasks">
+                          <div class="checkbox relative">
+                            <label class="absolute">
+                              <input type="checkbox" data-ng-model="example.check">
+                              <span class="box"></span>
+                            </label>
+                          </div>
+                        </span>
+                        <p class="fw-600 text-light-gray">Luxury</p>
                       </div>
                       <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Add Category</button>
@@ -310,7 +440,8 @@
                                       his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit
                                       iracundia neglegentur.</p>
                                     <div class="d-flex align-items-center">
-                                      <button type="button" onclick="window.location.href='./sm-influencers-profile.html'"
+                                      <button type="button"
+                                        onclick="window.location.href='./sm-influencers-profile.html'"
                                         class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
                                       <button type="button" class="btn ouline-white ms-2 cancle"><i
                                           class="icon icon-x-cancel"></i></button>
@@ -356,7 +487,8 @@
                                       his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit
                                       iracundia neglegentur.</p>
                                     <div class="d-flex align-items-center">
-                                      <button type="button" onclick="window.location.href='./sm-influencers-profile.html'"
+                                      <button type="button"
+                                        onclick="window.location.href='./sm-influencers-profile.html'"
                                         class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
                                       <button type="button" class="btn ouline-white ms-2 cancle"><i
                                           class="icon icon-x-cancel"></i></button>
@@ -402,7 +534,8 @@
                                       his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit
                                       iracundia neglegentur.</p>
                                     <div class="d-flex align-items-center">
-                                      <button type="button" onclick="window.location.href='./sm-influencers-profile.html'"
+                                      <button type="button"
+                                        onclick="window.location.href='./sm-influencers-profile.html'"
                                         class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
                                       <button type="button" class="btn ouline-white ms-2 cancle"><i
                                           class="icon icon-x-cancel"></i></button>
@@ -450,7 +583,8 @@
                                       his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit
                                       iracundia neglegentur.</p>
                                     <div class="d-flex align-items-center">
-                                      <button type="button" onclick="window.location.href='./sm-influencers-profile.html'"
+                                      <button type="button"
+                                        onclick="window.location.href='./sm-influencers-profile.html'"
                                         class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
                                       <button type="button" class="btn ouline-white ms-2 cancle"><i
                                           class="icon icon-x-cancel"></i></button>
@@ -496,7 +630,8 @@
                                       his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit
                                       iracundia neglegentur.</p>
                                     <div class="d-flex align-items-center">
-                                      <button type="button" onclick="window.location.href='./sm-influencers-profile.html'"
+                                      <button type="button"
+                                        onclick="window.location.href='./sm-influencers-profile.html'"
                                         class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
                                       <button type="button" class="btn ouline-white ms-2 cancle"><i
                                           class="icon icon-x-cancel"></i></button>
@@ -542,7 +677,8 @@
                                       his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit
                                       iracundia neglegentur.</p>
                                     <div class="d-flex align-items-center">
-                                      <button type="button" onclick="window.location.href='./sm-influencers-profile.html'"
+                                      <button type="button"
+                                        onclick="window.location.href='./sm-influencers-profile.html'"
                                         class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
                                       <button type="button" class="btn ouline-white ms-2 cancle"><i
                                           class="icon icon-x-cancel"></i></button>
@@ -611,7 +747,8 @@
                                       his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit
                                       iracundia neglegentur.</p>
                                     <div class="d-flex align-items-center">
-                                      <button type="button" onclick="window.location.href='./sm-influencers-profile.html'"
+                                      <button type="button"
+                                        onclick="window.location.href='./sm-influencers-profile.html'"
                                         class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
                                       <button type="button" class="btn ouline-white ms-2 cancle"><i
                                           class="icon icon-x-cancel"></i></button>
@@ -657,7 +794,8 @@
                                       his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit
                                       iracundia neglegentur.</p>
                                     <div class="d-flex align-items-center">
-                                      <button type="button" onclick="window.location.href='./sm-influencers-profile.html'"
+                                      <button type="button"
+                                        onclick="window.location.href='./sm-influencers-profile.html'"
                                         class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
                                       <button type="button" class="btn ouline-white ms-2 cancle"><i
                                           class="icon icon-x-cancel"></i></button>
@@ -703,7 +841,8 @@
                                       his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit
                                       iracundia neglegentur.</p>
                                     <div class="d-flex align-items-center">
-                                      <button type="button" onclick="window.location.href='./sm-influencers-profile.html'"
+                                      <button type="button"
+                                        onclick="window.location.href='./sm-influencers-profile.html'"
                                         class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
                                       <button type="button" class="btn ouline-white ms-2 cancle"><i
                                           class="icon icon-x-cancel"></i></button>
@@ -751,7 +890,8 @@
                                       his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit
                                       iracundia neglegentur.</p>
                                     <div class="d-flex align-items-center">
-                                      <button type="button" onclick="window.location.href='./sm-influencers-profile.html'"
+                                      <button type="button"
+                                        onclick="window.location.href='./sm-influencers-profile.html'"
                                         class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
                                       <button type="button" class="btn ouline-white ms-2 cancle"><i
                                           class="icon icon-x-cancel"></i></button>
@@ -797,7 +937,8 @@
                                       his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit
                                       iracundia neglegentur.</p>
                                     <div class="d-flex align-items-center">
-                                      <button type="button" onclick="window.location.href='./sm-influencers-profile.html'"
+                                      <button type="button"
+                                        onclick="window.location.href='./sm-influencers-profile.html'"
                                         class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
                                       <button type="button" class="btn ouline-white ms-2 cancle"><i
                                           class="icon icon-x-cancel"></i></button>
@@ -843,7 +984,8 @@
                                       his.Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit
                                       iracundia neglegentur.</p>
                                     <div class="d-flex align-items-center">
-                                      <button type="button" onclick="window.location.href='./sm-influencers-profile.html'"
+                                      <button type="button"
+                                        onclick="window.location.href='./sm-influencers-profile.html'"
                                         class="btn ouline-white btn-fill mt-3 mt-md-0 w-100">Profile</button>
                                       <button type="button" class="btn ouline-white ms-2 cancle"><i
                                           class="icon icon-x-cancel"></i></button>
@@ -1271,6 +1413,7 @@
               <input type="text" placeholder="Enter a User Position" class="form-input w-100">
               <label for="ProjectSummary" class="d-block my-2">Role</label>
               <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="Manager">Owner</option>
                 <option value="Manager">Admin</option>
                 <option value="Urdu">Extended</option>
                 <option value="Hindi">Standard</option>

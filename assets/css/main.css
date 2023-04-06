@@ -2021,6 +2021,13 @@ i[class*=h-icon-] {
   height: 20px;
 }
 
+.icon-check-theme {
+  display: inline-block;
+  background-image: url("../images/icons/check-theme.svg");
+  width: 17px;
+  height: 13px;
+}
+
 .icon-plus-big-icon {
   display: inline-block;
   background-image: url("../images/icons/plus-big-icon.svg");

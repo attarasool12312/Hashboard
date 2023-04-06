@@ -50,6 +50,13 @@
         </div> -->
         <div class="about-profile">
             <div class="d-none d-md-flex align-items-center">
+              <select name="Role" id="Role" class="d-block border border-2 rounded px-2 py-2 me-2 text-light-gray">
+                <option value="Manager">Choose Channel</option>
+                <option value="Manager">Admin</option>
+                <option value="Urdu">Extended</option>
+                <option value="Hindi">Standard</option>
+                <option value="Punjabi">Limited</option>
+              </select>
               <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i class="icon icon-plus"></i> Add</button>
                 <!-- <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a> -->
                 <div class="dropdown select-dropdown admin-notification">
@@ -137,7 +144,6 @@
                     class="icon icon-settings"></i> <span>Account</span></a></li>
               <li><a class="dropdown-item panel_link" href="./sm-setting-general.html"><i
                     class="icon icon-settings"></i> <span>General</span></a></li>
-              <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i> <span>Profile</span></a></li>
             </ul>
           </li>
           <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-memory"></i><span>Financial</span></a></li>
@@ -560,6 +566,7 @@
               <input type="text" placeholder="Enter a User Position" class="form-input w-100">
               <label for="ProjectSummary" class="d-block my-2">Role</label>
               <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="Manager">Owner</option>
                 <option value="Manager">Admin</option>
                 <option value="Urdu">Extended</option>
                 <option value="Hindi">Standard</option>

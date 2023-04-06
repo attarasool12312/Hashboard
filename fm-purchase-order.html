@@ -42,7 +42,7 @@
             </div>
           </div>
           <ul>
-            <li><a href="./fm-index.html" class="panel_link active_panel"><i class="icon icon-overviwe"></i>
+            <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a></li>
             <li class="nav-item panel-dropdown">
               <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown"
@@ -55,17 +55,17 @@
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Business-Dropdown"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-project-supplies"></i> <span>Products</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link" href="./fm-products.html"><span>Products</span></a>
+                <li><a class="dropdown-item panel_link " href="./fm-products.html"><span>Products</span></a>
                 </li>
                 <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><span>Price Lists</span></a></li>
               </ul>
             </li>
-            <li><a href="./fm-purchase-order.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Purchase Orders</span></a></li>
+            <li><a href="./fm-purchase-order.html" class="panel_link active_panel"><i class="icon icon-project-supplies"></i> <span>Purchase Orders</span></a></li>
             <li><a href="" class="panel_link "><i class="icon icon-expeness"></i>
               <span>Expenses</span></a></li>
             <li class="nav-item panel-dropdown">
@@ -186,194 +186,235 @@
         <div class="container">
           <div class="page-main-title align-items-center">
             <div class="heading">
-              <h1>Hi Katie Pena</h1>
-              <p>Welcome back to Rhombus POS dashboard</p>
+              <h1>Purchase Orders</h1>
             </div>
-            <div class="dropdown select-dropdown">
-              <button class="btn dropdown-toggle pe-5 w-100 border border-2" type="button" id="dropdownMenuButton1"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <b class="text-dark">Date:</b> Last 7 Days (2 Jan ’21 - 8 Jan ’21)
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <div class="d-flex align-items-center">
+              <div class="search-form d-none d-md-block">
+                <form action="">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Search order, invoice, email, company…" aria-label="Search">
+                    <i class="icon icon-search-form"></i>
+                  </div>
+                </form>
+              </div>
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2">New Purchase</button>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3 mb-3 contact-card">
-              <div class="sm-box h-100 bg-white box-hover">
-                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                  <span>
-                    <p class="fw-600">New Sales</p>
-                  </span>
-                  <span class=""><i class="icon icon-cart-box"></i></span>
-                </div>
-                <h3 class="fw-bold">$22,880.50</h3>
-              </div>
+            <div class="col-12">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="Active-tab" data-bs-toggle="tab" data-bs-target="#Active" type="button" role="tab" aria-controls="Active" aria-selected="true">Active</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Approved-tab" data-bs-toggle="tab" data-bs-target="#Approved" type="button" role="tab" aria-controls="Approved" aria-selected="false">Approved</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="All-tab" data-bs-toggle="tab" data-bs-target="#All" type="button" role="tab" aria-controls="All" aria-selected="false">All</button>
+                </li>
+              </ul>
             </div>
-            <div class="col-md-3 mb-3 contact-card">
-              <div class="sm-box h-100 bg-white box-hover">
-                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                  <span>
-                    <p class="fw-600">Pending invoices</p>
-                  </span>
-                  <span class=""><i class="icon icon-avarage-incom"></i></span>
+            <div class="tab-content mt-3">
+              <div class="tab-pane active" id="Active" role="tabpanel" aria-labelledby="Active-tab">
+                <div class="invoice-table tablepanel mt-3 invoice-table-product">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="ps-5">
+                          <span class="check-tasks">
+                            <div class="checkbox relative">
+                              <label class="absolute">
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                          PO No</th>
+                        <th scope="col">Vendor name</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Packed</th>
+                        <th scope="col">Fulfilled</th>
+                        <th scope="col">Invoiced</th>
+                        <th scope="col">Paid</th>
+                        <th scope="col">Order Total</th>
+                        <th scope="col">Created date</th>
+                        <th scope="col"><a href="" class="fs-3 text-decoration-none text-fill" data-bs-toggle="modal" data-bs-target="#columnModal">+</a></th>
+                      </tr>
+                    </thead>
+                    <tbody class="right-content interest-body" style="display: table-row-group;">
+                      <tr onclick="window.location.href='fm-purchase-order-detail.html'" class="cursor-pointer">
+                        <td scope="row" data-label="PO No" class="ps-5">
+                          <span class="check-tasks">
+                            <div class="checkbox relative">
+                              <label class="absolute">
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                          <h6 class="fw-500 text-sm">#PO-0001</h6>
+                        </td>
+                        <td data-label="Vendor name">Vinta</td>
+                        <td data-label="Status"><span class="finalized-status">Finalized</span></td>
+                        <td data-label="Packed" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$200.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
+                      </tr>
+                      <tr onclick="window.location.href='fm-purchase-order-detail.html'" class="cursor-pointer">
+                        <td scope="row" data-label="PO No" class="ps-5">
+                          <span class="check-tasks">
+                            <div class="checkbox relative">
+                              <label class="absolute">
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                          <h6 class="fw-500 text-sm">#PO-0002</h6>
+                        </td>
+                        <td data-label="Vendor name">Awesome brand</td>
+                        <td data-label="Status"><span class="finalized-status">Finalized</span></td>
+                        <td data-label="Packed" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$1.200.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
+                      </tr>
+                      <tr onclick="window.location.href='fm-purchase-order-detail.html'" class="cursor-pointer">
+                        <td scope="row" data-label="PO No" class="ps-5">
+                          <span class="check-tasks">
+                            <div class="checkbox relative">
+                              <label class="absolute">
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                          <h6 class="fw-500 text-sm">#PO-0003</h6>
+                        </td>
+                        <td data-label="Vendor name">Vinta</td>
+                        <td data-label="Status"><span class="finalized-status">Finalized</span></td>
+                        <td data-label="Packed" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$400.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
+                      </tr>
+                      <tr onclick="window.location.href='fm-purchase-order-detail.html'" class="cursor-pointer">
+                        <td scope="row" data-label="PO No" class="ps-5">
+                          <span class="check-tasks">
+                            <div class="checkbox relative">
+                              <label class="absolute">
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                          <h6 class="fw-500 text-sm">#PO-0004</h6>
+                        </td>
+                        <td data-label="Vendor name">SuperStar</td>
+                        <td data-label="Status"><span class="finalized-status">Finalized</span></td>
+                        <td data-label="Packed" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$50.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
+                      </tr>
+                      <tr onclick="window.location.href='fm-purchase-order-detail.html'" class="cursor-pointer">
+                        <td scope="row" data-label="PO No" class="ps-5">
+                          <span class="check-tasks">
+                            <div class="checkbox relative">
+                              <label class="absolute">
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                          <h6 class="fw-500 text-sm">#PO-0005</h6>
+                        </td>
+                        <td data-label="Vendor name">SuperStar</td>
+                        <td data-label="Status"><span class="finalized-status">Active</span></td>
+                        <td data-label="Packed" class="text-center">-</td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center">-</td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$17.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
+                      </tr>
+                      <tr onclick="window.location.href='fm-purchase-order-detail.html'" class="cursor-pointer">
+                        <td scope="row" data-label="PO No" class="ps-5">
+                          <span class="check-tasks">
+                            <div class="checkbox relative">
+                              <label class="absolute">
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                          <h6 class="fw-500 text-sm">#PO0006</h6>
+                        </td>
+                        <td data-label="Vendor name">Awesome brand</td>
+                        <td data-label="Status"><span class="finalized-status">Active</span></td>
+                        <td data-label="Packed" class="text-center">-</td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$24.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
+                      </tr>
+                      <tr onclick="window.location.href='fm-purchase-order-detail.html'" class="cursor-pointer">
+                        <td scope="row" data-label="PO No" class="ps-5">
+                          <span class="check-tasks">
+                            <div class="checkbox relative">
+                              <label class="absolute">
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                          <h6 class="fw-500 text-sm">#PO0007</h6>
+                        </td>
+                        <td data-label="Vendor name">Maskobis</td>
+                        <td data-label="Status"><span class="finalized-status">Active</span></td>
+                        <td data-label="Packed" class="text-center">-</td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$224.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <h3 class="fw-bold">133</h3>
-              </div>
-            </div>
-            <div class="col-md-3 mb-3 contact-card">
-              <div class="sm-box h-100 bg-white box-hover">
-                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                  <span>
-                    <p class="fw-600">Closed Invoices</p>
-                  </span>
-                  <span class=""><i class="icon icon-conversations"></i></span>
-                </div>
-                <h3 class="fw-bold">1,200</h3>
-              </div>
-            </div>
-            <div class="col-md-3 mb-3 contact-card">
-              <div class="sm-box h-100 bg-white box-hover">
-                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                  <span>
-                    <p class="fw-600">Total customers</p>
-                  </span>
-                  <span class=""><i class="icon icon-right-arrow-yellow"></i></span>
-                </div>
-                <h3 class="fw-bold">56</h3>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="chart">
-                <div class="chart-box h-100 d-flex justify-content-between flex-column">
-                  <div class="chart-head d-md-flex justify-content-between align-items-center">
-                    <div class="chart-title">
-                      <h4 class="fw-600">Cash Flow</h4>
-                    </div>
-                    <a href="" class="text-decoration-none text-fill">View full report <i
-                        class="icon icon-right-arrow"></i></a>
+                <div class="invoice-pagination d-flex mt-3 justify-content-between align-items-center flex-colume-sm">
+                  <div class="d-flex align-items-center">
+                    <p class="text-sm">Showing</p>
+                    <select id="cars" class="border-1 me-3 ms-2 border-radius p-2">
+                      <option value="volvo">15</option>
+                      <option value="saab">25</option>
+                      <option value="opel">35</option>
+                      <option value="audi">50</option>
+                    </select>
+                    <span class="text-light-gray text-sm">items per page</span>
                   </div>
-                  <div class="chart-content mt-3">
-                    <div class="chart-grap d-flex align-items-end">
-                      <!-- <img class="img-fluid" src="./assets/images/bank.png" alt=""> -->
-                      <div>
-                        <canvas id="cashFlowChart" class="wsm-100"
-                          style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="chart">
-                <div class="chart-box h-100 d-flex justify-content-between flex-column">
-                  <div class="chart-head d-md-flex justify-content-between align-items-center">
-                    <div class="chart-title">
-                      <h4 class="fw-600">Sales Performance</h4>
-                    </div>
-                    <a href="" class="text-decoration-none text-fill">View full report <i
-                        class="icon icon-right-arrow"></i></a>
-                  </div>
-                  <div class="chart-content mt-3">
-                    <div class="chart-grap d-flex align-items-end">
-                      <!-- <img class="img-fluid" src="./assets/images/bank.png" alt=""> -->
-                      <div>
-                        <canvas id="salesPerformanceChart" class="wsm-100"
-                          style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="chart">
-                <div class="chart-box h-100 d-flex justify-content-between flex-column">
-                  <div class="chart-head d-md-flex justify-content-between align-items-center">
-                    <div class="chart-title">
-                      <h4 class="fw-600">Sales by branch</h4>
-                    </div>
-                    <a href="" class="text-decoration-none text-fill">View full report <i
-                        class="icon icon-right-arrow"></i></a>
-                  </div>
-                  <div class="chart-content mt-3">
-                    <div class="bg-light d-flex align-items-center justify-content-between p-3 rounded">
-                      <div class="post-channel-profile d-flex align-items-center p-0">
-                        <img src="./assets/images/sale-branch.png" alt="Profile Image">
-                        <div class="ms-2">
-                          <p class="fw-600 text-small">#SO0005</p>
-                          <p class="text-light-gray text-small">Rhombus Commerce</p>
-                        </div>
-                      </div>
-                      <div class="text-end">
-                        <p class="fw-bold">$15.00</p>
-                        <p class="mt-1 text-light-gray text-small">Overdue 10 hours</p>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between p-3 rounded">
-                      <div class="post-channel-profile d-flex align-items-center p-0">
-                        <img src="./assets/images/sale-branch.png" alt="Profile Image">
-                        <div class="ms-2">
-                          <p class="fw-600 text-small">#SO0001</p>
-                          <p class="text-light-gray text-small">Henry Salt</p>
-                        </div>
-                      </div>
-                      <div class="text-end">
-                        <p class="fw-bold">$35.00</p>
-                        <p class="mt-1 text-light-gray text-small">Overdue 2 days</p>
-                      </div>
-                    </div>
-                    <div class="bg-light d-flex align-items-center justify-content-between p-3 rounded">
-                      <div class="post-channel-profile d-flex align-items-center p-0">
-                        <img src="./assets/images/sale-branch.png" alt="Profile Image">
-                        <div class="ms-2">
-                          <p class="fw-600 text-small">#SO0005</p>
-                          <p class="text-light-gray text-small">Rhombus Commerce 01</p>
-                        </div>
-                      </div>
-                      <div class="text-end">
-                        <p class="fw-bold">$50.00</p>
-                        <p class="mt-1 text-light-gray text-small">Overdue 3 days</p>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between p-3 rounded">
-                      <div class="post-channel-profile d-flex align-items-center p-0">
-                        <img src="./assets/images/sale-branch.png" alt="Profile Image">
-                        <div class="ms-2">
-                          <p class="fw-600 text-small">#SO0005</p>
-                          <p class="text-light-gray text-small">Sweet natural sugar</p>
-                        </div>
-                      </div>
-                      <div class="text-end">
-                        <p class="fw-bold">$10.00</p>
-                        <p class="mt-1 text-light-gray text-small">Overdue 4 days</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="chart">
-                <div class="chart-box h-100 d-flex justify-content-between flex-column">
-                  <div class="chart-head d-md-flex justify-content-between align-items-center">
-                    <div class="chart-title">
-                      <h4 class="fw-600">Branch A performance</h4>
-                    </div>
-                  </div>
-                  <div class="chart-content mt-3">
-                    <div class="chart-grap d-flex align-items-end">
-                      <!-- <img class="img-fluid" src="./assets/images/bank.png" alt=""> -->
-                      <div>
-                        <canvas id="branchPerformanceChart" class="w-100"
-                          style="display: block; box-sizing: border-box; height: 272px; width: 491px;" width="491"
-                          height="272"></canvas>
-                      </div>
-                    </div>
+                  <div class="pagination-right d-flex align-items-center gap-4 mt-4 mt-md-0">
+                    <button class="btn pagination-btn active">1</button>
+                    <button class="btn pagination-btn">2</button>
+                    <a class="text-light-gray text-decoration-none">Next</a>
+                    <a class="text-light-gray text-decoration-none">End</a>
                   </div>
                 </div>
               </div>
@@ -678,185 +719,6 @@
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- <script src="./assets/js/graphs-popup.js"></script> -->
-  <!-- <script src="./assets/js/graphs.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js"></script> -->
-  <!-- <script src="./assets/js/candleschart.js"></script> -->
   <script src="./assets/js/main.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script> -->
-  <!-- <script src="./assets/js/chartjs-chart-financial.js"></script> -->
-  <script>
-
-    const cashFlowChart = document.getElementById("cashFlowChart");
-
-    const cashFlowChart_1 = new Chart(cashFlowChart, {
-      type: "line",
-      data: {
-        labels: ["Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08"],
-        datasets: [
-          {
-            label: ["Top Products"],
-            data: [50, 100, 80, 105, 85, 70, 60],
-            borderColor: "#775da6",
-            backgroundColor: "rgb(239, 236, 244)",
-            fill: true,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        elements: {
-          point: {
-            radius: 0,
-          },
-        },
-        scales: {
-          x: {
-            // display: false,
-            beginAtZero: true,
-            grid: {
-              drawOnChartArea: false,
-            },
-            ticks: {
-              display: true,
-            },
-          },
-          y: {
-            // display: false,
-            beginAtZero: true,
-          },
-        },
-        plugins: {
-          legend: {
-            display: false,
-          },
-        },
-      },
-    });
-
-    const salesPerformanceChart = document.getElementById("salesPerformanceChart");
-
-    const salesPerformanceChart_1 = new Chart(salesPerformanceChart, {
-      type: "line",
-      data: {
-        labels: ["Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08"],
-        datasets: [
-          {
-            label: ["Top Products"],
-            data: [50, 100, 80, 105, 85, 70, 60],
-            borderColor: "#775da6",
-            backgroundColor: "rgb(239, 236, 244)",
-            fill: true,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        elements: {
-          point: {
-            radius: 0,
-          },
-        },
-        scales: {
-          x: {
-            // display: false,
-            beginAtZero: true,
-            grid: {
-              drawOnChartArea: false,
-            },
-            ticks: {
-              display: true,
-            },
-          },
-          y: {
-            // display: false,
-            beginAtZero: true,
-          },
-        },
-        plugins: {
-          legend: {
-            display: false,
-          },
-        },
-      },
-    });
-
-    const branchPerformanceChart = document.getElementById("branchPerformanceChart");
-
-    const branchPerformanceChart_1 = new Chart(branchPerformanceChart, {
-
-      type: "bar",
-      data: {
-        labels: ["Jan", "Fab", "Mar", "Apr", "May", "Jun"],
-        datasets: [
-          {
-            label: 'Basic Salary',
-            data: [700, 500, 800, 1200, 300, 100],
-            borderWidth: 0,
-            barThickness: 25,
-            backgroundColor: "#5374DF",
-            order: 2
-          },
-          {
-            label: 'Overtime',
-            data: [700, 500, 700, 1200, 300, 100],
-            borderColor: "#E1BD67",
-            backgroundColor: "#ffffff",
-            type: 'line',
-            order: 1,
-          }
-        ],
-      },
-      options: {
-        responsive: true,
-
-        scales: {
-          x: {
-            display: true,
-            grid: {
-              drawOnChartArea: false,
-            },
-            ticks: {
-              display: true,
-            },
-          },
-          y: {
-            display: true,
-            position: 'left',
-            gridLines: {
-              drawOnChartArea: true,
-              borderDash: [8, 4],
-            },
-            ticks: {
-              display: true,
-            },
-          },
-          y1: {
-            display: true,
-            position: 'right',
-            gridLines: {
-              drawOnChartArea: false,
-            },
-            ticks: {
-              display: true,
-            },
-          }
-        },
-        plugins: {
-          legend: {
-            display: true,
-            position: 'bottom',
-            labels: {
-              usePointStyle: true,
-              boxWidth: 3
-            }
-          }
-        },
-      },
-
-    });
-
-  </script>
 </body>
-
 </html>

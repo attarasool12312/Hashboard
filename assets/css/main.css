@@ -376,6 +376,13 @@ i[class*=h-icon-] {
   height: 20px;
 }
 
+.icon-headphones {
+  display: inline-block;
+  background-image: url("../images/icons/headphones.svg");
+  width: 18px;
+  height: 18px;
+}
+
 .icon-sm-outline-star {
   display: inline-block;
   background-image: url("../images/icons/sm-outline-star.svg");
@@ -3555,6 +3562,11 @@ h6.text-sm {
   background-color: #F8FAFB;
 }
 
+.box-hover:hover {
+  background-color: #f1f1f1 !important;
+  border: 2px solid #6542A7;
+}
+
 /*--------------*\
     Boxes Section
 \*--------------*/
@@ -3737,6 +3749,7 @@ h6.text-sm {
   padding: 24px;
   border: 1px solid #DCDCDC;
   border-radius: 8px;
+  border: 2px solid #FFFFFF;
 }
 
 .dots {
@@ -4510,6 +4523,10 @@ ul.head-btn .slider-btn .btn.ouline-white {
 
 .ck.ck-editor__main {
   width: 99%;
+}
+
+.ck-blurred.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline {
+  height: 116px;
 }
 
 /* Make circles that indicate the steps of the form: */

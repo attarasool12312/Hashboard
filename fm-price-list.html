@@ -41,50 +41,62 @@
               <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
             </div>
           </div>
-          <div class="side-panel-dropdown">
-            <button class="panel-button dropdown-toggle" type="button">
-              <i class="icon icon-lajou-cafe"></i> <span>Lajou cafe</span>
-            </button>
-            <ul class="panel-dropdown-menu">
-              <li><a class="panel-dropdown-item" href="#">Action</a></li>
-              <li><a class="panel-dropdown-item" href="#">Another action</a></li>
-              <li><a class="panel-dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
           <ul>
-            <li><a href="./hr-dashboard.html" class="panel_link "><i class="icon icon-overviwe"></i>
+            <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a></li>
-            <li><a href="./hr-employee.html" class="panel_link "><i class="icon icon-contact"></i>
-                <span>Employees</span></a></li>
-            <li><a href="./hr-team-managment.html" class="panel_link "><i class="icon icon-contact"></i>
-                <span>Team Management</span></a></li>
-            <li><a href="./hr-request.html" class="panel_link"><i class="icon icon-contact"></i> <span>My
-                  Request</span></a></li>
-            <li><a class="panel_link " href="./hr-timesheet.html"><i class="icon icon-business"></i>
-                <span>Attendance</span></a></li>
-            <li><a href="./hr-payroll.html" class="panel_link "><i class="icon icon-overviwe"></i>
-                <span>Payroll</span></a></li>
-            <li><a href="./hr-employee-performance.html" class="panel_link "><i class="icon icon-contact"></i>
-                <span>Employee Performance</span></a></li>
-            <li><a href="./hr-announcement.html" class="panel_link active_panel"><i class="icon icon-contact"></i>
-                <span>Announcement</span></a></li>
-            <li><a href="./hr-applications-api.html" class="panel_link"><i class="icon icon-contact"></i>
-                <span>Applications API</span></a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Transactions-Dropdown"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-bar-document"></i> <span>Setting</span>
+                <i class="icon icon-sales-information"></i> <span>Sales</span>
               </a>
               <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href=""><span>Quote</span></a></li>
+                <li><a class="dropdown-item panel_link " href=""><span>Invoices</span></a>
+              </ul>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-project-supplies"></i> <span>Products</span>
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link active_panel" href="./fm-products.html"><span>Products</span></a>
+                </li>
+                <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><span>Price Lists</span></a></li>
+              </ul>
+            </li>
+            <li><a href="" class="panel_link "><i class="icon icon-expeness"></i>
+                <span>Expenses</span></a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-expenses"></i> <span>Payment</span>
+              </a>
+              <ul class="Sales-Dropdown" aria-labelledby="Sales-Dropdown">
+                <li><a class="dropdown-item panel_link " href=""><span>Customer</span></a></li>
+                <li><a class="dropdown-item panel_link " href=""><span>Supplier</span></a></li>
+              </ul>
+            </li>
+            <li><a href="" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a>
+            </li>
+            <li><a href="" class="panel_link "><i class="icon icon-reports"></i>
+                <span>Reports</span></a></li>
+            <li><a href="" class="panel_link "><i class="icon icon-transferred-projects"></i>
+                <span>Transferred documents</span></a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Setting-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-settings"></i> <span>Setting</span>
+              </a>
+              <ul class="Setting-Dropdown" aria-labelledby="Transactions-Dropdown">
                 <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i
-                      class="icon icon-bar-document"></i> <span>Account</span></a></li>
-                <li><a class="dropdown-item panel_link" href="./hr-setting-general.html"><i
-                      class="icon icon-bar-document"></i> <span>General</span></a></li>
-                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i>
+                      class="icon icon-settings"></i> <span>Account</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-setting-general.html"><i
+                      class="icon icon-settings"></i> <span>General</span></a></li>
+                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i>
                     <span>Profile</span></a></li>
               </ul>
             </li>
-            <li><a href="./job-dashboard.html" class=""><span>Move to Job</span></a></li>
             <div class="open-button">
               <i class="icon icon-right-arrow"></i>
             </div>
@@ -104,13 +116,13 @@
             </div>
           </div>
           <!-- <div class="search-form d-none d-md-block">
-                    <form action="">
-                        <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
-                            <i class="icon icon-search-form"></i>
-                        </div>
-                    </form>
-                </div> -->
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div> -->
           <div class="about-profile">
             <div class="d-none d-md-flex align-items-center">
               <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
@@ -124,7 +136,7 @@
                 <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
                   <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
                     <p>Notification</p>
-                    <a href="./hr-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
+                    <a href="./fm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
                   </div>
                   <div class="p-2 border-bottom">
                     <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
@@ -161,9 +173,9 @@
                   <h6 class="text-small mt-2">Allen Moreno</h6>
                   <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
                 </div>
-                <li><a class="dropdown-item mt-3" href="./hr-edit-profile.html"><i class="icon icon-user-profile"></i>
+                <li><a class="dropdown-item mt-3" href="./fm-edit-profile.html"><i class="icon icon-user-profile"></i>
                     My Profile</a></li>
-                <li><a class="dropdown-item" href="./hr-profile-activities.html"><i class="icon icon-calender-2"></i>
+                <li><a class="dropdown-item" href="./fm-profile-activities.html"><i class="icon icon-calender-2"></i>
                     Actions</a></li>
                 <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
                 <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
@@ -172,196 +184,267 @@
           </div>
         </div>
         <div class="container">
-          <div class="page-main-title">
+          <div class="page-main-title align-items-center">
             <div class="heading">
-              <h1>Announcement</h1>
+              <h1>Products</h1>
             </div>
-            <div class="d-flex align-items-start align-items-center mt-3 mt-md-0 mb-md-0 mb-3 flex-colume-sm wsm-100">
-              <div class="dropdown select-dropdown me-3">
-                <button class="btn btn-secondary dropdown-toggle pe-5 mt-3 mt-md-0" type="button"
-                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  By Customer
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+            <div class="d-flex align-items-center">
+              <div class="search-form d-none d-md-block">
+                <form action="">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Search product name, supplier, type or tags…"
+                      aria-label="Search">
+                    <i class="icon icon-search-form"></i>
+                  </div>
+                </form>
               </div>
-              <div class="dropdown select-dropdown me-3">
-                <button class="btn btn-secondary dropdown-toggle pe-5 mt-3 mt-md-0" type="button"
-                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Sort by :Newest
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0" data-bs-toggle="modal"
-                data-bs-target="#businessForm-2">Add New Announce</button>
+              <button type="button" class="btn ouline-white wsm-100 mt-3 mt-md-0 ms-md-2"><i
+                  class="icon icon-dark-print me-2"></i>Filter</button>
+                  <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2">Edit</button>
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2" onclick="window.location.href='./fm-products-new-create.html'">Create New</button>
             </div>
           </div>
-          <div class="document-main-content">
-            <h6 class="mb-4 text-sm fw-500">Profability</h6>
-            <div class="doc-profability">
-              <div class="sm-box box-hover">
-                <h5 class="fw-600 mb-2">Monthly Report Docs</h5>
-                <p class="text-light-gray">Docs > Monthly</p>
-                <div class="social-noticications">
-                  <ul class="images">
-                    <li><img src="./assets/images/icons/social1.svg" alt=""></li>
-                    <li><img src="./assets/images/icons/social2.svg" alt=""></li>
-                    <li><img src="./assets/images/icons/social3.svg" alt=""></li>
-                  </ul>
-                  <ul>
-                    <li>+23</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="sm-box box-hover">
-                <h5 class="fw-600 mb-2">Image Presentation</h5>
-                <p class="text-light-gray">Image File > Learn</p>
-                <div class="social-noticications">
-                  <ul class="images">
-                    <li><img src="./assets/images/icons/social1.svg" alt=""></li>
-                    <li><img src="./assets/images/icons/social2.svg" alt=""></li>
-                    <li><img src="./assets/images/icons/social3.svg" alt=""></li>
-                  </ul>
-                  <ul>
-                    <li>+8</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="sm-box box-hover">
-                <h5 class="fw-600 mb-2">Planning Video 021</h5>
-                <p class="text-light-gray">Docs > Audio File</p>
-                <div class="social-noticications">
-                  <ul class="images">
-                    <li><img src="./assets/images/icons/social1.svg" alt=""></li>
-                    <li><img src="./assets/images/icons/social2.svg" alt=""></li>
-                    <li><img src="./assets/images/icons/social3.svg" alt=""></li>
-                  </ul>
-                  <ul>
-                    <li>+5</li>
-                  </ul>
-                </div>
-              </div>
+          <div class="row">
+            <div class="col-12">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="Active-tab" data-bs-toggle="tab" data-bs-target="#Active"
+                    type="button" role="tab" aria-controls="Active" aria-selected="true">Active</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="All-tab" data-bs-toggle="tab" data-bs-target="#All" type="button"
+                    role="tab" aria-controls="All" aria-selected="false">All</button>
+                </li>
+              </ul>
             </div>
-            <h6 class="mb-4 text-sm fw-500">Your Folders</h6>
-            <div class="row doc-folders">
-              <div class="col-md-3">
-                <div class="folder-box box-hover">
-                  <i class="icon icon-folder"></i>
-                  <h6 class="ms-3 fw-500">Important file</h6>
+            <div class="tab-content mt-3">
+              <div class="tab-pane active" id="Active" role="tabpanel" aria-labelledby="Active-tab">
+                <div class="invoice-table tablepanel mt-3 invoice-table-product">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">SKU</th>
+                        <th scope="col">MAC</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Commited Stock</th>
+                        <th scope="col">Incoming Stock</th>
+                        <th scope="col">Created Date</th>
+                        <th><a href="" class="fs-3 text-decoration-none text-fill" data-bs-toggle="modal" data-bs-target="#columnModal">+</a></th>
+                      </tr>
+                    </thead>
+                    <tbody class="right-content interest-body" style="display: table-row-group;">
+                      <tr>
+                        <td scope="row" data-label="Product Name">
+                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                            <img src="./assets/images/product-2.png" alt="" class="rounded-0">
+                            <h6 class="ms-3 fw-500 text-sm">GD Cotton T-shirt</h6>
+                          </div>
+                        </td>
+                        <td data-label="Name">White/ Medium</td>
+                        <td data-label="SKU">T001-W-L</td>
+                        <td data-label="MAC">$23.00</td>
+                        <td data-label="Stock">6</td>
+                        <td data-label="Commited Stock">0</td>
+                        <td data-label="Incoming Stock">0</td>
+                        <td data-label="Created Date">18 Feb 2022</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Product Name">
+                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                            <img src="./assets/images/shirt-8.png" alt="" class="rounded-0">
+                            <h6 class="ms-3 fw-500 text-sm">GD Cotton T-shirt</h6>
+                          </div>
+                        </td>
+                        <td data-label="Name">T-Music/ Medium</td>
+                        <td data-label="SKU">T007-M-L</td>
+                        <td data-label="MAC">$23.00</td>
+                        <td data-label="Stock">9</td>
+                        <td data-label="Commited Stock">0</td>
+                        <td data-label="Incoming Stock">0</td>
+                        <td data-label="Created Date">16 Mar 2022</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Product Name">
+                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                            <img src="./assets/images/shirt-8.png" alt="" class="rounded-0">
+                            <h6 class="ms-3 fw-500 text-sm">GD Cotton T-shirt</h6>
+                          </div>
+                        </td>
+                        <td data-label="Name">T-Music/ Large</td>
+                        <td data-label="SKU">T007-M-L</td>
+                        <td data-label="MAC">$23.00</td>
+                        <td data-label="Stock">34</td>
+                        <td data-label="Commited Stock">0</td>
+                        <td data-label="Incoming Stock">0</td>
+                        <td data-label="Created Date">16 Mar 2022</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Product Name">
+                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                            <img src="./assets/images/product-4.png" alt="" class="rounded-0">
+                            <h6 class="ms-3 fw-500 text-sm">Sweetshirt Hoodie</h6>
+                          </div>
+                        </td>
+                        <td data-label="Name">White/ Medium</td>
+                        <td data-label="SKU">S001-W-M</td>
+                        <td data-label="MAC">$34.00</td>
+                        <td data-label="Stock">15</td>
+                        <td data-label="Commited Stock">0</td>
+                        <td data-label="Incoming Stock">0</td>
+                        <td data-label="Created Date">16 Mar 2022</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Product Name">
+                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                            <img src="./assets/images/product-4.png" alt="" class="rounded-0">
+                            <h6 class="ms-3 fw-500 text-sm">Sweetshirt Hoodie</h6>
+                          </div>
+                        </td>
+                        <td data-label="Name">White/ Large</td>
+                        <td data-label="SKU">S001-W-L</td>
+                        <td data-label="MAC">$34.00</td>
+                        <td data-label="Stock">23</td>
+                        <td data-label="Commited Stock">0</td>
+                        <td data-label="Incoming Stock">0</td>
+                        <td data-label="Created Date">16 Mar 2022</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Product Name">
+                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                            <img src="./assets/images/product-4.png" alt="" class="rounded-0">
+                            <h6 class="ms-3 fw-500 text-sm">Sweetshirt Hoodie</h6>
+                          </div>
+                        </td>
+                        <td data-label="Name">White/ XL</td>
+                        <td data-label="SKU">S001-W-XL</td>
+                        <td data-label="MAC">$34.00</td>
+                        <td data-label="Stock">12</td>
+                        <td data-label="Commited Stock">12</td>
+                        <td data-label="Incoming Stock">0</td>
+                        <td data-label="Created Date">16 Mar 2022</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Product Name">
+                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                            <img src="./assets/images/shirt-3.png" alt="" class="rounded-0">
+                            <h6 class="ms-3 fw-500 text-sm">GD Cotton T-shirt</h6>
+                          </div>
+                        </td>
+                        <td data-label="Name">Red/ Medium</td>
+                        <td data-label="SKU">T003-N-S</td>
+                        <td data-label="MAC">$19.00</td>
+                        <td data-label="Stock">32</td>
+                        <td data-label="Commited Stock">3</td>
+                        <td data-label="Incoming Stock">0</td>
+                        <td data-label="Created Date">18 Feb 2022</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Product Name">
+                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                            <img src="./assets/images/product-9.png" alt="" class="rounded-0">
+                            <h6 class="ms-3 fw-500 text-sm">Woman shoes</h6>
+                          </div>
+                        </td>
+                        <td data-label="Name">White/ Medium</td>
+                        <td data-label="SKU">WS01-W-L</td>
+                        <td data-label="MAC">$45.00</td>
+                        <td data-label="Stock">12</td>
+                        <td data-label="Commited Stock">0</td>
+                        <td data-label="Incoming Stock">0</td>
+                        <td data-label="Created Date">08 Oct 2022</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Product Name">
+                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                            <img src="./assets/images/product-9.png" alt="" class="rounded-0">
+                            <h6 class="ms-3 fw-500 text-sm">Woman shoes</h6>
+                          </div>
+                        </td>
+                        <td data-label="Name">White/ Small</td>
+                        <td data-label="SKU">WS01-W-S</td>
+                        <td data-label="MAC">$45.00</td>
+                        <td data-label="Stock">34</td>
+                        <td data-label="Commited Stock">3</td>
+                        <td data-label="Incoming Stock">0</td>
+                        <td data-label="Created Date">09 May 2022</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Product Name">
+                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                            <img src="./assets/images/product-5.png" alt="" class="rounded-0">
+                            <h6 class="ms-3 fw-500 text-sm">Cocktail Dress</h6>
+                          </div>
+                        </td>
+                        <td data-label="Name">Dress/ Medium</td>
+                        <td data-label="SKU">D002-B-M</td>
+                        <td data-label="MAC">$560.00</td>
+                        <td data-label="Stock">34</td>
+                        <td data-label="Commited Stock">0</td>
+                        <td data-label="Incoming Stock">0</td>
+                        <td data-label="Created Date">29 Nov 2022</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="invoice-pagination d-flex mt-3 justify-content-between align-items-center flex-colume-sm">
+                  <div class="d-flex align-items-center">
+                    <p class="text-sm">Showing</p>
+                    <select id="cars" class="border-1 me-3 ms-2 border-radius p-2">
+                      <option value="volvo">15</option>
+                      <option value="saab">25</option>
+                      <option value="opel">35</option>
+                      <option value="audi">50</option>
+                    </select>
+                    <span class="text-light-gray text-sm">items per page</span>
+                  </div>
+                  <div class="pagination-right d-flex align-items-center gap-4 mt-4 mt-md-0">
+                    <button class="btn pagination-btn active">1</button>
+                    <button class="btn pagination-btn">2</button>
+                    <a class="text-light-gray text-decoration-none">Next</a>
+                    <a class="text-light-gray text-decoration-none">End</a>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="folder-box box-hover">
-                  <i class="icon icon-folder"></i>
-                  <h6 class="ms-3 fw-500">CRM file</h6>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="folder-box box-hover">
-                  <i class="icon icon-folder"></i>
-                  <h6 class="ms-3 fw-500">CV & Resume</h6>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="folder-box box-hover">
-                  <i class="icon icon-folder"></i>
-                  <h6 class="ms-3 fw-500">Pitching presentation</h6>
-                </div>
-              </div>
-            </div>
-            <div class="row doc-folders">
-              <div class="col-md-3">
-                <div class="folder-box box-hover">
-                  <i class="icon icon-folder"></i>
-                  <h6 class="ms-3 fw-500">2021_Docs</h6>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="folder-box box-hover">
-                  <i class="icon icon-folder"></i>
-                  <h6 class="ms-3 fw-500">2020_Docs</h6>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="folder-box box-hover">
-                  <i class="icon icon-folder"></i>
-                  <h6 class="ms-3 fw-500">Monthly Report</h6>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="folder-box box-hover">
-                  <i class="icon icon-folder"></i>
-                  <h6 class="ms-3 fw-500">Syllabus Sample</h6>
-                </div>
-              </div>
-            </div>
-            <div class="row doc-folders mb-4">
-              <div class="col-md-3">
-                <div class="folder-box box-hover">
-                  <i class="icon icon-folder"></i>
-                  <h6 class="ms-3 fw-500">Download assets</h6>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="folder-box box-hover">
-                  <i class="icon icon-folder"></i>
-                  <h6 class="ms-3 fw-500">Client Deals (2021)</h6>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="folder-box box-hover">
-                  <i class="icon icon-folder"></i>
-                  <h6 class="ms-3 fw-500">Company list</h6>
-                </div>
-              </div>
-            </div>
-            <h6 class="mb-4 text-sm fw-500">Your Files</h6>
-            <div class="doc-files flex-colume-sm">
-              <img src="./assets/images/Card-1.png" alt="" class="wsm-100">
-              <img src="./assets/images/Card-2.png" alt="" class="wsm-100">
-              <img src="./assets/images/Card-3.png" alt="" class="wsm-100">
-              <img src="./assets/images/Card-4.png" alt="" class="wsm-100">
             </div>
           </div>
         </div>
       </main>
     </div>
-    <div class="modal right fade" id="businessForm-2" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+    <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4>Add New Announcement</h4>
+            <h4>Add new User</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body bg-light customer-add-form upload-files">
+          <div class="modal-body bg-light customer-add-form">
             <form>
-              <label for="Customer-name" class="d-block mb-2">Customer Name</label>
-              <select id="cars" name="carlist" form="carform" class="form-input w-100">
-                <option value="volvo">Please insert customer name</option>
-                <option value="saab">Select Department</option>
-                <option value="opel">Select Employee</option>
-                <option value="audi">Discerption</option>
-              </select>
-              <label for="Project-name" class="d-block my-2">Deal ID</label>
-              <input type="text" placeholder="Please insert deal ID" class="form-input w-100">
-              <label for="ProjectSummary" class="d-block my-2">Summary</label>
-              <input type="text" placeholder="Summary" class="form-input w-100">
-              <div class="uploadfile mt-3">
-                <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i
-                      class="icon icon-blue-added-button"></i></label></div>
-                <input id="fileupload" type="file" class="fileupload">
-              </div>
+              <label for="Customer-name" class="d-block mb-2">User Name</label>
+              <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">User ID</label>
+              <input type="text" placeholder="Please Insert USer ID" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+              <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Email</label>
+              <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Position</label>
+              <input type="text" placeholder="Enter a User Position" class="form-input w-100">
             </form>
           </div>
           <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">ADD</button>
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
@@ -627,17 +710,46 @@
         </div>
       </div>
     </div>
+<div class="modal fade" id="columnModal" tabindex="-1" aria-labelledby="columnModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="columnModalLabel">Add New Column</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Type Column Name</label>
+          <input type="text" name="name" id="name" placeholder="Column Name" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Select Column Type</label>
+          <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2 text-light-gray">
+            <option value="Manager">Column Type</option>
+            <option value="Urdu">Auto Generate</option>
+            <option value="Hindi">Selection</option>
+            <option value="Punjabi">Checkbox</option>
+            <option value="Punjabi">Select User</option>
+            <option value="Punjabi">Date</option>
+            <option value="Punjabi">Amount</option>
+            <option value="Punjabi">Attachments</option>
+          </select>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-fill text-uppercase">Add</button>
+        <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   </section>
-
-
-
-
   <!-- JavaScript
 ================================================== -->
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
   <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 

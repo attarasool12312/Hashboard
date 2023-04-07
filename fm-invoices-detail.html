@@ -45,22 +45,22 @@
             <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Transactions-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-sales-information"></i> <span>Sales</span>
               </a>
               <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-quote-history.html"><span>Quote</span></a></li>
+                <li><a class="dropdown-item panel_link active_panel" href="./fm-quote-history.html"><span>Quote</span></a></li>
                 <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><span>Invoices</span></a>
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-project-supplies"></i> <span>Products</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-products.html"><span>Products</span></a>
+                <li><a class="dropdown-item panel_link " href="./fm-products.html"><span>Products</span></a>
                 </li>
                 <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><span>Price Lists</span></a></li>
               </ul>
@@ -186,497 +186,204 @@
         <div class="container">
           <div class="page-main-title align-items-center">
             <div class="heading">
-              <h1>Products</h1>
+              <h3><span class="text-light-gray">Invoice/</span> #INV-0001</h3>
             </div>
             <div class="d-flex align-items-center">
-              <div class="search-form d-none d-md-block">
-                <form action="">
-                  <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Search product name, supplier, type or tags…" aria-label="Search">
-                    <i class="icon icon-search-form"></i>
-                  </div>
-                </form>
+              <div class="dropdown select-dropdown">
+                <button class="btn dropdown-toggle pe-5 w-100 bg-white border-0 mt-3 mt-md-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  More option
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
               </div>
-              <button type="button" class="btn ouline-white wsm-100 mt-3 mt-md-0 ms-md-2"><i class="icon icon-dark-print me-2"></i>Filter</button>
-              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2" onclick="window.location.href='./fm-products-new-create.html'">Create New</button>
+              <button type="button" class="btn ouline-white mt-3 wsm-100 mt-md-0 mx-md-2">Clone sales order</button>
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0" onclick="window.location.href='./fm-invoices-create.html'">New Invoice</button>
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="Active-tab" data-bs-toggle="tab" data-bs-target="#Active" type="button" role="tab" aria-controls="Active" aria-selected="true">Active</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="Product-tab" data-bs-toggle="tab" data-bs-target="#Product" type="button" role="tab" aria-controls="Product" aria-selected="false">All Product</button>
-                </li>
-              </ul>
-            </div>
-            <div class="tab-content mt-3">
-              <div class="tab-pane active" id="Active" role="tabpanel" aria-labelledby="Active-tab">
-                <div class="bg-white p-4 d-flex align-items-center justify-content-between rounded">
-                  <div class="col-md-8">
-                    <h6 class="fw-600">Bring in your products and stock levels</h6>
-                    <p class="text-light-gray mt-2">All of your products will be managed here. Manually create products or import products using a spreadsheet. You can also sync products from your eCommerce store.</p>
-                  </div>
-                  <div class="col-md-4 text-end">
-                    <button type="button" class="btn ouline-white">Add a Product</button>
+            <div class="col-md-8">
+              <div class="chart">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 class="fw-600">Rhombus Commerce <span class="finalized-status ms-3">Finalized</span></h3>
+                  <div class="btn-group">
+                    <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="dots d-flex">
+                        <span></span>
+                        <span class="m-0 ms-1"></span>
+                        <span class="m-0 ms-1"></span>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu" style="">
+                      <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                          Edit</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                          Delete</a></li>
+                    </ul>
                   </div>
                 </div>
-                <div class="invoice-table tablepanel mt-3 invoice-table-product">
+                <div class="row mt-3 border-top border-bottom">
+                  <div class="col-md-6 py-3">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="text-light-gray">Bill to</p>
+                      <p>Head Office</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Ship to</p>
+                      <p>Head Office</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Ship from</p>
+                      <p>Primary Location</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Issue date</p>
+                      <p>Feb 8th 2021</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 py-3 border-start">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="text-light-gray">Shipment date</p>
+                      <p>Feb 10th 2021</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Email</p>
+                      <p>hello@designspace.io</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Currency</p>
+                      <p>US Dollar (USD)</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Totals are</p>
+                      <p>Tax Exclusive</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="invoice-table tablepanel mt-3 invoice-table-product p-0">
                   <table class="table table-striped">
                     <thead>
                       <tr>
-                        <th scope="col" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          Name</th>
-                        <th scope="col">Supplier</th>
-                        <th scope="col">Product Type</th>
-                        <th scope="col">Brand</th>
-                        <th scope="col">Batch Tracked</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Quantity</th>
                         <th scope="col">Available</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Edit</th>
+                        <th scope="col">Price ($)</th>
+                        <th scope="col">Discount</th>
+                        <th scope="col">Tax</th>
+                        <th scope="col">Total ($)</th>
                       </tr>
                     </thead>
                     <tbody class="right-content interest-body" style="display: table-row-group;">
                       <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-1.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Silver Watch</h6>
-                          </div>
-                        </td>
-                        <td data-label="PM Name">Vinta Supplier</td>
-                        <td data-label="Project Value">Watch</td>
-                        <td data-label="Actual Revenue">Vinta</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">12 in 2 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
+                        <td scope="row" data-label="Item Name">
                           <div class="d-flex align-items-center justify-content-end justify-content-md-start">
                             <img src="./assets/images/product-2.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Cotton t-shirt</h6>
+                            <h6 class="fw-500 text-sm">Cotton t-shirt</h6>
                           </div>
                         </td>
-                        <td data-label="PM Name">Vinta Supplier</td>
-                        <td data-label="Project Value">Shirt</td>
-                        <td data-label="Actual Revenue">Vinta</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">67 in 4 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
+                        <td data-label="Quantity">2</td>
+                        <td data-label="Available">67</td>
+                        <td data-label="Price ($)">$23.00</td>
+                        <td data-label="Discount">-</td>
+                        <td data-label="Tax">0%</td>
+                        <td data-label="Total ($)">$46.00</td>
                       </tr>
                       <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-3.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Diamond Ring</h6>
-                          </div>
-                        </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Ring</td>
-                        <td data-label="Actual Revenue">Awesome brand</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">23 in 1 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
+                        <td scope="row" data-label="Item Name">
                           <div class="d-flex align-items-center justify-content-end justify-content-md-start">
                             <img src="./assets/images/product-4.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Sweetshirt Hoodie</h6>
+                            <h6 class="fw-500 text-sm">Sweetshirt Hoodie</h6>
                           </div>
                         </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Man Outwear</td>
-                        <td data-label="Actual Revenue">Awesome brand</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">67 in 1 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
+                        <td data-label="Quantity">1</td>
+                        <td data-label="Available">62</td>
+                        <td data-label="Price ($)">$124.00</td>
+                        <td data-label="Discount">-</td>
+                        <td data-label="Tax">0%</td>
+                        <td data-label="Total ($)">$124.00</td>
                       </tr>
                       <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
+                        <td scope="row" data-label="Item Name">
                           <div class="d-flex align-items-center justify-content-end justify-content-md-start">
                             <img src="./assets/images/product-5.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Cocktail Dress</h6>
+                            <h6 class="fw-500 text-sm">Cocktail Dress</h6>
                           </div>
                         </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Dress</td>
-                        <td data-label="Actual Revenue">Awesome brand</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">120 in 2 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-6.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Oldskool Vans</h6>
-                          </div>
-                        </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Man shoes</td>
-                        <td data-label="Actual Revenue">Vans</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">67 in 2 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-7.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Nikon Camera</h6>
-                          </div>
-                        </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Camera</td>
-                        <td data-label="Actual Revenue">Cannon</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">12 in 1 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-8.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">ES high heel</h6>
-                          </div>
-                        </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Woman shoes</td>
-                        <td data-label="Actual Revenue">Awesome brand</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">23 in 4 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-9.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Woman shoes</h6>
-                          </div>
-                        </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Woman shoes</td>
-                        <td data-label="Actual Revenue">Awesome brand</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">34 in 1 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-10.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Travel Backpack</h6>
-                          </div>
-                        </td>
-                        <td data-label="PM Name">Vinta Supplier</td>
-                        <td data-label="Project Value">Backpack</td>
-                        <td data-label="Actual Revenue">Vinta</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">67 in 2 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
+                        <td data-label="Quantity">1</td>
+                        <td data-label="Available">32</td>
+                        <td data-label="Price ($)">$140.00</td>
+                        <td data-label="Discount">-</td>
+                        <td data-label="Tax">0%</td>
+                        <td data-label="Total ($)">$140.00</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <div class="invoice-pagination d-flex mt-3 justify-content-between align-items-center flex-colume-sm">
-                  <div class="d-flex align-items-center">
-                    <p class="text-sm">Showing</p>
-                    <select id="cars" class="border-1 me-3 ms-2 border-radius p-2">
-                      <option value="volvo">15</option>
-                      <option value="saab">25</option>
-                      <option value="opel">35</option>
-                      <option value="audi">50</option>
-                    </select>
-                    <span class="text-light-gray text-sm">items per page</span>
+                <div class="col-12 mt-3">
+                  <div class="d-flex align-items-center justify-content-between py-2 border-bottom">
+                    <p class="text-light-gray">Total units</p>
+                    <p>4</p>
                   </div>
-                  <div class="pagination-right d-flex align-items-center gap-4 mt-4 mt-md-0">
-                    <button class="btn pagination-btn active">1</button>
-                    <button class="btn pagination-btn">2</button>
-                    <a class="text-light-gray text-decoration-none">Next</a>
-                    <a class="text-light-gray text-decoration-none">End</a>
+                  <div class="d-flex align-items-center justify-content-between py-2 border-bottom">
+                    <p class="text-light-gray">Subtotal</p>
+                    <p>$310.00</p>
                   </div>
+                  <div class="d-flex align-items-center justify-content-between py-2 border-bottom">
+                    <p class="text-light-gray">Discount</p>
+                    <p>$-10</p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between py-2">
+                    <p class="fw-600">Subtotal</p>
+                    <p class="fw-600">$300.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sm-box bg-white p-2">
+                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold">Invoice #INV-0001</h5>
+                  <select name="Role" id="Role" class="d-block border-0 px-2 py-2 me-2 text-light-gray">
+                    <option value="Manager">Finalized</option>
+                    <option value="Manager">Admin</option>
+                    <option value="Urdu">Extended</option>
+                    <option value="Hindi">Standard</option>
+                    <option value="Punjabi">Limited</option>
+                  </select>
+                </div>
+              </div>
+              <div class="sm-box bg-white p-2 mt-2">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h6 class="fw-bold">Quotation</h6>
+                  <span class="purple-status">Invoiced</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-2 px-1">
+                  <p><i class="icon icon-file"></i> Quo-0001</p>
+                  <div class="dropdown select-dropdown">
+                    <button class="btn dropdown-toggle pe-4 w-100 bg-white border-0 mt-3 mt-md-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="icon icon-check"></i> $124.00
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded mt-2">
+                <div class="p-3 border-bottom d-flex align-items-center justify-content-between">
+                  <p class="fw-600">Payments</p>
+                  <p>$300.00 to pay</p>
+                </div>
+                <div class="p-3 d-flex">
+                  <i class="icon icon-info me-2 mt-1"></i>
+                  <p class="text-light-gray w-95">There are three different section on this page. Product details, Product variants and Product pack sizes.</p>
+                </div>
+                <div class="px-3 pb-3 d-flex">
+                  <button type="button" class="btn ouline-white btn-fill w-100 mt-3 mt-md-0">Mark all as paid</button>
                 </div>
               </div>
             </div>

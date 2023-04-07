@@ -22,7 +22,6 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
   <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
   <link href="./assets/css/main.css" rel="stylesheet" />
   <link href="./assets/css/responsive.css" rel="stylesheet" />
 </head>
@@ -56,19 +55,20 @@
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Business-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-project-supplies"></i> <span>Products</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-products.html"><span>Products</span></a>
+                <li><a class="dropdown-item panel_link" href="./fm-products.html"><span>Products</span></a>
                 </li>
                 <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><span>Price Lists</span></a></li>
               </ul>
             </li>
-            <li><a href="./fm-purchase-order.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Purchase Orders</span></a></li>
+            <li><a href="./fm-purchase-order.html" class="panel_link "><i class="icon icon-project-supplies"></i>
+                <span>Purchase Orders</span></a></li>
             <li><a href="" class="panel_link "><i class="icon icon-expeness"></i>
-              <span>Expenses</span></a></li>
+                <span>Expenses</span></a></li>
             <li class="nav-item panel-dropdown">
               <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -79,8 +79,9 @@
                 <li><a class="dropdown-item panel_link " href=""><span>Supplier</span></a></li>
               </ul>
             </li>
-            <li><a href="" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a></li>
-            <li><a href="./fm-report.html" class="panel_link "><i class="icon icon-reports"></i>
+            <li><a href="" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a>
+            </li>
+            <li><a href="./fm-report.html" class="panel_link active_panel"><i class="icon icon-reports"></i>
                 <span>Reports</span></a></li>
             <li><a href="" class="panel_link "><i class="icon icon-transferred-projects"></i>
                 <span>Transferred documents</span></a></li>
@@ -187,223 +188,167 @@
         <div class="container">
           <div class="page-main-title align-items-center">
             <div class="heading">
-              <h3><span class="text-light-gray">Products/</span> Ctreate a new purchased product</h3>
+              <h1>Reporting</h1>
+              <p>Last Data Refresh: 10 minutes ago <i class="icon icon-info ms-3"></i></p>
             </div>
-            <button type="button" class="btn ouline-white border border-2">Cancel</button>
+            <div class="d-flex align-items-center">
+              <div class="dropdown select-dropdown">
+                <button class="btn dropdown-toggle pe-5 w-100 border border-2" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <b class="text-dark">Date:</b> Last 7 Days (2 Jan ’21 - 8 Jan ’21)
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0">Create Report</button>
+            </div>
           </div>
           <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-4 mb-3 contact-card">
+              <div class="sm-box h-100 bg-white box-hover">
+                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                  <span>
+                    <p class="fw-600">New Sales</p>
+                  </span>
+                  <span class=""><i class="icon icon-cart-box"></i></span>
+                </div>
+                <h3 class="fw-bold">$22,880.50</h3>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 contact-card">
+              <div class="sm-box h-100 bg-white box-hover">
+                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                  <span>
+                    <p class="fw-600">Gross Profit</p>
+                  </span>
+                  <span class=""><i class="icon icon-avarage-incom"></i></span>
+                </div>
+                <h3 class="fw-bold">Rp8,768.00</h3>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 contact-card">
+              <div class="sm-box h-100 bg-white box-hover">
+                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                  <span>
+                    <p class="fw-600">Product Sold</p>
+                  </span>
+                  <span class=""><i class="icon icon-conversations"></i></span>
+                </div>
+                <h3 class="fw-bold">Rp2,898.00</h3>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
               <div class="chart">
-                <h3 class="fw-600">Product Details</h3>
-                <p class="text-light-gray mt-2">Please provide details of this product.</p>
-                <div class="row my-3">
-                  <div class="col-md-8">
-                    <label for="name" class="fw-bold mt-3 mb-2">Product Name*</label>
-                    <input type="text" name="name" id="name" placeholder="Type your product name" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <div class="chart-box h-100 d-flex justify-content-between flex-column">
+                  <div class="chart-title">
+                    <h4 class="fw-600">Revenue vs Costs</h4>
                   </div>
-                  <div class="col-md-4">
-                    <label for="name" class="fw-bold mt-3 mb-2">SKU</label>
-                    <input type="text" name="name" id="name" placeholder="T000-A-A" class="d-block w-100 border border-2 rounded px-4 py-2">
-                    <div class="ps-5 mt-2">
-                      <span class="check-tasks">
-                        <div class="checkbox relative">
-                          <label class="absolute">
-                            <input type="checkbox" data-ng-model="example.check">
-                            <span class="box"></span>
-                          </label>
+                  <div class="chart-content mt-3">
+                    <div class="chart-grap d-flex align-items-end">
+                      <!-- <img class="img-fluid" src="./assets/images/bank.png" alt=""> -->
+                      <div>
+                        <canvas id="revenueChart" class="wsm-100"
+                          style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="chart">
+                <div class="chart-box h-100 d-flex justify-content-between flex-column">
+                  <div class="chart-head d-md-flex justify-content-between align-items-center mb-3">
+                    <div class="chart-title">
+                      <h4 class="fw-600">Orders to ship</h4>
+                    </div>
+                    <a href="" class="text-decoration-none text-fill">View all <i
+                        class="icon icon-right-arrow"></i></a>
+                  </div>
+                  <div class="chart-content mt-3">
+                    <div class="row pb-2">
+                      <div class="col-md-8">
+                        <div class="dropdown select-dropdown">
+                          <button class="btn dropdown-toggle pe-5 w-100 border border-2" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Head Office
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
                         </div>
-                      </span>
-                      <p class="fw-600">Auto-generate SKU</p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <label for="name" class="fw-bold mt-3 mb-2">Supplier</label>
-                  <div class="d-flex align-items-center">
-                    <div class="col-md-10">
-                      <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-                        <option value="Manager">Select a supplier</option>
-                        <option value="Urdu">Urdu</option>
-                        <option value="Hindi">Hindi</option>
-                        <option value="Punjabi">Punjabi</option>
-                      </select>
-                    </div>
-                    <div class="col-md-2 text-end">
-                      <button type="button" class="btn ouline-white border border-2 text-fill">+ New</button>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <label for="name" class="fw-bold mt-3 mb-2">Product type</label>
-                  <div class="d-flex align-items-center">
-                    <div class="col-md-10">
-                      <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-                        <option value="Manager">Select a type</option>
-                        <option value="Urdu">Urdu</option>
-                        <option value="Hindi">Hindi</option>
-                        <option value="Punjabi">Punjabi</option>
-                      </select>
-                    </div>
-                    <div class="col-md-2 text-end">
-                      <button type="button" class="btn ouline-white border border-2 text-fill">+ New</button>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <label for="name" class="fw-bold mt-3 mb-2">Brand</label>
-                  <div class="d-flex align-items-center">
-                    <div class="col-md-10">
-                      <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-                        <option value="Manager">Select a supplier</option>
-                        <option value="Urdu">Urdu</option>
-                        <option value="Hindi">Hindi</option>
-                        <option value="Punjabi">Punjabi</option>
-                      </select>
-                    </div>
-                    <div class="col-md-2 text-end">
-                      <button type="button" class="btn ouline-white border border-2 text-fill">+ New</button>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <label for="name" class="fw-bold mt-3 mb-2">Product Description</label>
-                  <form>
-                    <textarea name="content" id="editor" class="p-4 rounded" placeholder="Describe your product.."></textarea>
-                </form>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <label for="name" class="fw-bold mt-3 mb-2">Weight</label>
-                    <div class="d-flex align-items-center">
-                      <div class="col-md-10">
-                        <input type="text" name="name" id="name" placeholder="e.g Summer 2022" class="d-block w-100 border border-2 rounded px-4 py-2">
                       </div>
-                      <div class="col-md-2">
-                        <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2 h-100 border-start-0">
-                          <option value="Manager">L</option>
-                          <option value="Urdu">G</option>
-                          <option value="Hindi">M</option>
-                          <option value="Punjabi">Xl</option>
-                        </select>
+                      <div class="col-md-4">
+                        <div class="dropdown select-dropdown">
+                          <button class="btn dropdown-toggle pe-5 w-100 border border-2" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Order Value
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-light d-flex align-items-center justify-content-between p-3 border-top">
+                      <div class="d-flex align-items-center">
+                        <span class="me-2">1.</span>
+                        <p class="text-light-gray">Cotton t-shirt - White/ Medium</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-end">
+                        <p class="fw-bold">6400.00</p>
+                        <p class="text-fill ms-2 text-small">(51.23%)</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between p-3">
+                      <div class="d-flex align-items-center">
+                        <span class="me-2">2.</span>
+                        <p class="text-light-gray">Sweetshirt Hoodie - White/ Medium</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-end">
+                        <p class="fw-bold">2400.00</p>
+                        <p class="text-fill ms-2 text-small">(19.35%)</p>
+                      </div>
+                    </div>
+                    <div class="bg-light d-flex align-items-center justify-content-between p-3 border-top">
+                      <div class="d-flex align-items-center">
+                        <span class="me-2">3.</span>
+                        <p class="text-light-gray">Cocktail Dress - White/ Medium</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-end">
+                        <p class="fw-bold">1400.00</p>
+                        <p class="text-fill ms-2 text-small">(11.23%)</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between p-3">
+                      <div class="d-flex align-items-center">
+                        <span class="me-2">4.</span>
+                        <p class="text-light-gray">GD Cotton T-shirt</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-end">
+                        <p class="fw-bold">800</p>
+                        <p class="text-fill ms-2 text-small">(8.67%)</p>
+                      </div>
+                    </div>
+                    <div class="bg-light d-flex align-items-center justify-content-between p-3 border-top">
+                      <div class="d-flex align-items-center">
+                        <span class="me-2">5.</span>
+                        <p class="text-light-gray">Diamond ring</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-end">
+                        <p class="fw-bold">670</p>
+                        <p class="text-fill ms-2 text-small">(5.23%)</p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <label for="name" class="fw-bold mt-3 mb-2">Tags</label>
-                    <input type="text" name="name" id="name" placeholder="e.g Summer 2022" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  </div>
                 </div>
-                <h3 class="fw-600 mt-3">Configure how stock for this product is tracked :</h3>
-                <div class="mt-2 ps-5"><span class="check-tasks">
-                  <div class="checkbox relative">
-                    <label class="absolute">
-                      <input type="checkbox" data-ng-model="example.check">
-                      <span class="box"></span>
-                    </label>
-                  </div>
-                </span>Manage stock levels</div>
-                <div class="mt-2 ps-5"><span class="check-tasks">
-                  <div class="checkbox relative">
-                    <label class="absolute">
-                      <input type="checkbox" data-ng-model="example.check">
-                      <span class="box"></span>
-                    </label>
-                  </div>
-                </span>Sellable</div>
-                <div class="mt-2 ps-5"><span class="check-tasks">
-                  <div class="checkbox relative">
-                    <label class="absolute">
-                      <input type="checkbox" data-ng-model="example.check">
-                      <span class="box"></span>
-                    </label>
-                  </div>
-                </span>Batch tracked</div>
-              <h3 class="fw-600 mt-3">Configure how stock for this product is tracked :</h3>
-              <label for="name" class="fw-bold mt-3 mb-2">Initial Stock*</label>
-              <input type="text" name="name" id="name" placeholder="Enter initial stock" class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="name" class="fw-bold mt-3 mb-2">Stock Location</label>
-              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="Manager">Primary location</option>
-                <option value="Urdu">Urdu</option>
-                <option value="Hindi">Hindi</option>
-                <option value="Punjabi">Punjabi</option>
-              </select>
-              <label for="name" class="fw-bold mt-3 mb-2">Initial Cost</label>
-              <div class="d-flex align-items-center">
-                <div class="col-1 border border-2 py-2 rounded-start">
-                  <p class="fw-600 text-center">$</p>
-                </div>
-                <div class="col-11">
-                  <input type="number" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2 border-start-0">                  
-                </div>
-              </div>
-              <p class="text-light-gray mt-2">Initial cost is required if initial stock on hand is a greater than zero.</p>
-              <label for="name" class="fw-bold mt-4 mb-2">Buy Price</label>
-              <div class="d-flex align-items-center">
-                <div class="col-1 border border-2 py-2 rounded-start">
-                  <p class="fw-600 text-center">$</p>
-                </div>
-                <div class="col-11">
-                  <input type="number" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2 border-start-0">                  
-                </div>
-              </div>
-              <label for="name" class="fw-bold mt-3 mb-2">Wholesale Price</label>
-              <div class="d-flex align-items-center">
-                <div class="col-1 border border-2 py-2 rounded-start">
-                  <p class="fw-600 text-center">$</p>
-                </div>
-                <div class="col-11">
-                  <input type="number" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2 border-start-0">                  
-                </div>
-              </div>
-              <label for="name" class="fw-bold mt-3 mb-2">Retail Price</label>
-              <div class="d-flex align-items-center">
-                <div class="col-1 border border-2 py-2 rounded-start">
-                  <p class="fw-600 text-center">$</p>
-                </div>
-                <div class="col-11">
-                  <input type="number" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2 border-start-0">                  
-                </div>
-              </div>
-              <h3 class="fw-600 mt-3">Configure how stock for this product is tracked :</h3>
-              <p class="text-light-gray">A single variants will be created automatically unless you enable the multiple variant options.</p>
-              <div class="mt-3 border border-2 py-2 px-1 rounded">
-                <div class="ps-5">
-                  <span class="check-tasks">
-                    <div class="checkbox relative">
-                      <label class="absolute">
-                        <input type="checkbox" data-ng-model="example.check">
-                        <span class="box"></span>
-                      </label>
-                    </div>
-                  </span>
-                  <p>This products has multiple variants</p>
-                </div>
-              </div>
-              <h3 class="fw-600 mt-3">Configure how stock for this product is tracked :</h3>
-              <p class="text-light-gray">A single variants will be created automatically unless you enable the multiple variant options.</p>
-              <div class="mt-3 border border-2 py-2 px-1 rounded">
-                <div class="ps-5">
-                  <span class="check-tasks">
-                    <div class="checkbox relative">
-                      <label class="absolute">
-                        <input type="checkbox" data-ng-model="example.check">
-                        <span class="box"></span>
-                      </label>
-                    </div>
-                  </span>
-                  <p>This products has multiple variants</p>
-                </div>
-              </div>
-              <div class="pt-3 border-top border-top-2 mt-4">
-                <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2">Create Product</button>
-              </div>
-            </div>
-            </div>
-            <div class="col-md-3">
-              <div class="sm-box h-100 bg-white">
-                  <h6 class="fw-600">Create a New product</h6>
-                  <p class="text-light-gray mt-1">There are three different section on this page. Product details, Product variants and Product pack sizes.</p>
               </div>
             </div>
           </div>
@@ -707,9 +652,55 @@
   <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-  <script src='https://cdn.ckeditor.com/ckeditor5/28.0.0/classic/ckeditor.js'></script>
-  <script src='https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js'></script>
-  <script src="./assets/js/editor.js"></script>
+  <script>
+
+    const revenueChart = document.getElementById("revenueChart");
+
+    const revenueChart_1 = new Chart(revenueChart, {
+      type: "line",
+      data: {
+        labels: ["Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08"],
+        datasets: [
+          {
+            label: ["Top Products"],
+            data: [50, 100, 80, 105, 85, 70, 60],
+            borderColor: "#775da6",
+            backgroundColor: "rgb(239, 236, 244)",
+            fill: true,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        elements: {
+          point: {
+            radius: 0,
+          },
+        },
+        scales: {
+          x: {
+            // display: false,
+            beginAtZero: true,
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: true,
+            },
+          },
+          y: {
+            // display: false,
+            beginAtZero: true,
+          },
+        },
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+      },
+    });
+  </script>
 </body>
+
 </html>

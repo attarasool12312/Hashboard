@@ -306,6 +306,13 @@ i[class*=h-icon-] {
   height: 16px;
 }
 
+.icon-truck-fill {
+  display: inline-block;
+  background-image: url("../images/icons/truck-fill.svg");
+  width: 16px;
+  height: 16px;
+}
+
 .icon-up-arrow {
   display: inline-block;
   background-image: url("../images/icons/up-arrow.svg");
@@ -2917,6 +2924,13 @@ i[class*=h-icon-] {
   height: 35px;
 }
 
+.icon-file {
+  display: inline-block;
+  background-image: url("../images/icons/file.svg");
+  width: 12px;
+  height: 13px;
+}
+
 /*--------------*\
     Base
 \*--------------*/
@@ -3177,6 +3191,16 @@ h6.text-sm {
   border-radius: 50%;
 }
 
+.purple-status {
+  background-color: #FFD86C;
+  color: #775DA6;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 5px 8px;
+}
+
 .dot-shape {
   width: 8px;
   height: 8px;
@@ -3358,6 +3382,11 @@ h6.text-sm {
     max-width: 95% !important;
     width: 95% !important;
   }
+}
+
+.w-95 {
+  width: 95%;
+  max-width: 95%;
 }
 
 @media only screen and (max-width: 767.98px) {

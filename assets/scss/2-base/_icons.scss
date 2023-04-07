@@ -41,6 +41,7 @@ $icons: (
   "question" "svg" 22px 22px,
   "notification" "svg" 24px 24px,
   "check" "svg" 16px 16px,
+  "truck-fill" "svg" 16px 16px,
   "up-arrow" "svg" 12px 8px,
   "bots" "svg" 24px 24px,
   "message-outline" "svg" 20px 20px,
@@ -414,6 +415,7 @@ $icons: (
   "lost-icon" "svg" 61px 61px,
   "plus-big-icon-1" "svg" 20px 20px,
   "leads-line-chart-white" "svg" 179px 35px,
+  "file" "svg" 12px 13px,
   );
   
 @each $name, $fileType, $width, $height in $icons {

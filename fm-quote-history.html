@@ -45,29 +45,31 @@
             <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#"
+                id="Transactions-Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-sales-information"></i> <span>Sales</span>
               </a>
               <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-quote-history.html"><span>Quote</span></a></li>
+                <li><a class="dropdown-item panel_link active_panel"
+                    href="./fm-quote-history.html"><span>Quote</span></a></li>
                 <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><span>Invoices</span></a>
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-project-supplies"></i> <span>Products</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-products.html"><span>Products</span></a>
+                <li><a class="dropdown-item panel_link " href="./fm-products.html"><span>Products</span></a>
                 </li>
                 <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><span>Price Lists</span></a></li>
               </ul>
             </li>
-            <li><a href="./fm-purchase-order.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Purchase Orders</span></a></li>
+            <li><a href="./fm-purchase-order.html" class="panel_link "><i class="icon icon-project-supplies"></i>
+                <span>Purchase Orders</span></a></li>
             <li><a href="" class="panel_link "><i class="icon icon-expeness"></i>
-              <span>Expenses</span></a></li>
+                <span>Expenses</span></a></li>
             <li class="nav-item panel-dropdown">
               <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,7 +80,8 @@
                 <li><a class="dropdown-item panel_link " href=""><span>Supplier</span></a></li>
               </ul>
             </li>
-            <li><a href="" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a></li>
+            <li><a href="" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a>
+            </li>
             <li><a href="./fm-report.html" class="panel_link "><i class="icon icon-reports"></i>
                 <span>Reports</span></a></li>
             <li><a href="" class="panel_link "><i class="icon icon-transferred-projects"></i>
@@ -186,43 +189,48 @@
         <div class="container">
           <div class="page-main-title align-items-center">
             <div class="heading">
-              <h1>Products</h1>
+              <h1>Quotation History</h1>
             </div>
             <div class="d-flex align-items-center">
               <div class="search-form d-none d-md-block">
                 <form action="">
                   <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Search product name, supplier, type or tags…" aria-label="Search">
+                    <input class="form-control" type="text" placeholder="Search order, invoice, email, company…"
+                      aria-label="Search">
                     <i class="icon icon-search-form"></i>
                   </div>
                 </form>
               </div>
-              <button type="button" class="btn ouline-white wsm-100 mt-3 mt-md-0 ms-md-2"><i class="icon icon-dark-print me-2"></i>Filter</button>
-              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2" onclick="window.location.href='./fm-products-new-create.html'">Create New</button>
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2" onclick="window.location.href='./fm-quote-history-create.html'">New sales order</button>
             </div>
           </div>
           <div class="row">
             <div class="col-12">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="Active-tab" data-bs-toggle="tab" data-bs-target="#Active" type="button" role="tab" aria-controls="Active" aria-selected="true">Active</button>
+                  <button class="nav-link active" id="Active-tab" data-bs-toggle="tab" data-bs-target="#Active"
+                    type="button" role="tab" aria-controls="Active" aria-selected="true">Active</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="Product-tab" data-bs-toggle="tab" data-bs-target="#Product" type="button" role="tab" aria-controls="Product" aria-selected="false">All Product</button>
+                  <button class="nav-link" id="Orders-tab" data-bs-toggle="tab" data-bs-target="#Orders"
+                    type="button" role="tab" aria-controls="Orders" aria-selected="false">All Orders</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Invoice-tab" data-bs-toggle="tab" data-bs-target="#Invoice" type="button"
+                    role="tab" aria-controls="Invoice" aria-selected="false">To Invoice</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Ship-tab" data-bs-toggle="tab" data-bs-target="#Ship" type="button"
+                    role="tab" aria-controls="Ship" aria-selected="false">To Ship</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Backorder-tab" data-bs-toggle="tab" data-bs-target="#Backorder" type="button"
+                    role="tab" aria-controls="Backorder" aria-selected="false">To Backorder</button>
                 </li>
               </ul>
             </div>
             <div class="tab-content mt-3">
               <div class="tab-pane active" id="Active" role="tabpanel" aria-labelledby="Active-tab">
-                <div class="bg-white p-4 d-flex align-items-center justify-content-between rounded">
-                  <div class="col-md-8">
-                    <h6 class="fw-600">Bring in your products and stock levels</h6>
-                    <p class="text-light-gray mt-2">All of your products will be managed here. Manually create products or import products using a spreadsheet. You can also sync products from your eCommerce store.</p>
-                  </div>
-                  <div class="col-md-4 text-end">
-                    <button type="button" class="btn ouline-white">Add a Product</button>
-                  </div>
-                </div>
                 <div class="invoice-table tablepanel mt-3 invoice-table-product">
                   <table class="table table-striped">
                     <thead>
@@ -236,19 +244,23 @@
                               </label>
                             </div>
                           </span>
-                          Name</th>
-                        <th scope="col">Supplier</th>
-                        <th scope="col">Product Type</th>
-                        <th scope="col">Brand</th>
-                        <th scope="col">Batch Tracked</th>
-                        <th scope="col">Available</th>
+                          Order no.
+                        </th>
+                        <th scope="col">Company name</th>
                         <th scope="col">Status</th>
-                        <th scope="col">Edit</th>
+                        <th scope="col">Packed</th>
+                        <th scope="col">Fulfilled</th>
+                        <th scope="col">Invoiced</th>
+                        <th scope="col">Paid</th>
+                        <th scope="col">Order Total</th>
+                        <th scope="col">Created date</th>
+                        <th scope="col"><a href="" class="fs-3 text-decoration-none text-fill" data-bs-toggle="modal"
+                            data-bs-target="#columnModal">+</a></th>
                       </tr>
                     </thead>
                     <tbody class="right-content interest-body" style="display: table-row-group;">
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
+                        <td scope="row" data-label="Order no." class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -257,39 +269,20 @@
                               </label>
                             </div>
                           </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-1.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Silver Watch</h6>
-                          </div>
+                          <h6 class="fw-500 text-sm">#Quo-0001</h6>
                         </td>
-                        <td data-label="PM Name">Vinta Supplier</td>
-                        <td data-label="Project Value">Watch</td>
-                        <td data-label="Actual Revenue">Vinta</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">12 in 2 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
+                        <td data-label="Vendor name">Vinta</td>
+                        <td data-label="Status"><span class="finalized-status">Finalized</span></td>
+                        <td data-label="Packed" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$200.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
                       </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
+                        <td scope="row" data-label="Order no." class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -298,39 +291,20 @@
                               </label>
                             </div>
                           </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-2.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Cotton t-shirt</h6>
-                          </div>
+                          <h6 class="fw-500 text-sm">#Quo-0002</h6>
                         </td>
-                        <td data-label="PM Name">Vinta Supplier</td>
-                        <td data-label="Project Value">Shirt</td>
-                        <td data-label="Actual Revenue">Vinta</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">67 in 4 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
+                        <td data-label="Vendor name">Awesome brand</td>
+                        <td data-label="Status"><span class="finalized-status">Finalized</span></td>
+                        <td data-label="Packed" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$1.200.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
                       </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
+                        <td scope="row" data-label="Order no." class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -339,39 +313,20 @@
                               </label>
                             </div>
                           </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-3.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Diamond Ring</h6>
-                          </div>
+                          <h6 class="fw-500 text-sm">#Quo-0003</h6>
                         </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Ring</td>
-                        <td data-label="Actual Revenue">Awesome brand</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">23 in 1 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
+                        <td data-label="Vendor name">Vinta</td>
+                        <td data-label="Status"><span class="finalized-status">Finalized</span></td>
+                        <td data-label="Packed" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$400.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
                       </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
+                        <td scope="row" data-label="Order no." class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -380,39 +335,20 @@
                               </label>
                             </div>
                           </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-4.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Sweetshirt Hoodie</h6>
-                          </div>
+                          <h6 class="fw-500 text-sm">#Quo-0004</h6>
                         </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Man Outwear</td>
-                        <td data-label="Actual Revenue">Awesome brand</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">67 in 1 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
+                        <td data-label="Vendor name">SuperStar</td>
+                        <td data-label="Status"><span class="finalized-status">Finalized</span></td>
+                        <td data-label="Packed" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$50.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
                       </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
+                        <td scope="row" data-label="Order no." class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -421,39 +357,20 @@
                               </label>
                             </div>
                           </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-5.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Cocktail Dress</h6>
-                          </div>
+                          <h6 class="fw-500 text-sm">#Quo-0005</h6>
                         </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Dress</td>
-                        <td data-label="Actual Revenue">Awesome brand</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">120 in 2 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
+                        <td data-label="Vendor name">SuperStar</td>
+                        <td data-label="Status"><span class="finalized-status">Active</span></td>
+                        <td data-label="Packed" class="text-center">-</td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center">-</td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$17.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
                       </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
+                        <td scope="row" data-label="Order no." class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -462,39 +379,20 @@
                               </label>
                             </div>
                           </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-6.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Oldskool Vans</h6>
-                          </div>
+                          <h6 class="fw-500 text-sm">#CR0006</h6>
                         </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Man shoes</td>
-                        <td data-label="Actual Revenue">Vans</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">67 in 2 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
+                        <td data-label="Vendor name">Awesome brand</td>
+                        <td data-label="Status"><span class="finalized-status">Active</span></td>
+                        <td data-label="Packed" class="text-center">-</td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$24.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
                       </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
+                        <td scope="row" data-label="Order no." class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -503,159 +401,17 @@
                               </label>
                             </div>
                           </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-7.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Nikon Camera</h6>
-                          </div>
+                          <h6 class="fw-500 text-sm">#CR0007</h6>
                         </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Camera</td>
-                        <td data-label="Actual Revenue">Cannon</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">12 in 1 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-8.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">ES high heel</h6>
-                          </div>
-                        </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Woman shoes</td>
-                        <td data-label="Actual Revenue">Awesome brand</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">23 in 4 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-9.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Woman shoes</h6>
-                          </div>
-                        </td>
-                        <td data-label="PM Name">Shoes Supplier</td>
-                        <td data-label="Project Value">Woman shoes</td>
-                        <td data-label="Actual Revenue">Awesome brand</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">34 in 1 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" data-label="Loged by" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-10.png" alt="" class="rounded-0">
-                            <h6 class="ms-3 fw-500 text-sm">Travel Backpack</h6>
-                          </div>
-                        </td>
-                        <td data-label="PM Name">Vinta Supplier</td>
-                        <td data-label="Project Value">Backpack</td>
-                        <td data-label="Actual Revenue">Vinta</td>
-                        <td data-label="Cost">No</td>
-                        <td data-label="Revenue Balance">67 in 2 variants</td>
-                        <td data-label="Revenue Balance"><span class="finalized-status">Active</span></td>
-                        <td data-label="Revenue Balance">
-                          <div class="btn-group">
-                            <button type="button" class="btn p-2 border-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots d-flex align-items-center  m-0 p-0">
-                                <span class="me-1"></span>
-                                <span class="me-1 mt-0"></span>
-                                <span class="mt-0"></span>
-                              </div>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                              <li><a class="dropdown-item" href="./fm-products-detailes.html">
-                                  See Details</a></li>
-                            </ul>
-                          </div>
-                        </td>
+                        <td data-label="Vendor name">Maskobis</td>
+                        <td data-label="Status"><span class="finalized-status">Active</span></td>
+                        <td data-label="Packed" class="text-center">-</td>
+                        <td data-label="Fulfilled" class="text-center">-</td>
+                        <td data-label="Invoiced" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Paid" class="text-center">-</td>
+                        <td data-label="Order Total">$224.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td></td>
                       </tr>
                     </tbody>
                   </table>
@@ -982,4 +738,5 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

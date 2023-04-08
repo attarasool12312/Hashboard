@@ -66,7 +66,7 @@
               </ul>
             </li>
             <li><a href="./fm-purchase-order.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Purchase Orders</span></a></li>
-            <li><a href="" class="panel_link "><i class="icon icon-expeness"></i>
+            <li><a href="./fm-expenses.html" class="panel_link "><i class="icon icon-expeness"></i>
               <span>Expenses</span></a></li>
             <li class="nav-item panel-dropdown">
               <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown" role="button"
@@ -75,10 +75,10 @@
               </a>
               <ul class="Sales-Dropdown" aria-labelledby="Sales-Dropdown">
                 <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><span>Customer</span></a></li>
-                <li><a class="dropdown-item panel_link " href=""><span>Supplier</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><span>Supplier</span></a></li>
               </ul>
             </li>
-            <li><a href="" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a></li>
+            <li><a href="./fm-project-suppliers.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a></li>
             <li><a href="./fm-report.html" class="panel_link "><i class="icon icon-reports"></i>
                 <span>Reports</span></a></li>
             <li><a href="" class="panel_link "><i class="icon icon-transferred-projects"></i>
@@ -1230,6 +1230,48 @@
           </div>
         </div>
       </main>
+    </div>
+    <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add new User</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form>
+              <label for="Customer-name" class="d-block mb-2">User Name</label>
+              <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">User Type</label>
+              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
+                <option value="Manager">Owner</option>
+                <option value="Manager">Admin</option>
+                <option value="Urdu">Extended</option>
+                <option value="Hindi">Standard</option>
+                <option value="Punjabi">Limited</option>
+              </select>
+              <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+              <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Email</label>
+              <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Position</label>
+              <input type="text" placeholder="Enter a User Position" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">Role</label>
+              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
+                <option value="Manager">Owner</option>
+                <option value="Manager">Admin</option>
+                <option value="Urdu">Extended</option>
+                <option value="Hindi">Standard</option>
+                <option value="Punjabi">Limited</option>
+              </select>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
     </div>
 <div class="modal fade" id="departmentModal" tabindex="-1" aria-labelledby="departmentModalLabel" aria-hidden="true">
   <div class="modal-dialog">

@@ -71,16 +71,16 @@
             <li><a href="./fm-expenses.html" class="panel_link "><i class="icon icon-expeness"></i>
                 <span>Expenses</span></a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Sales-Dropdown" role="button"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-expenses"></i> <span>Payment</span>
               </a>
               <ul class="Sales-Dropdown" aria-labelledby="Sales-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-payment-customer.html"><span>Customer</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><span>Customer</span></a></li>
                 <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><span>Supplier</span></a></li>
               </ul>
             </li>
-            <li><a href="./fm-project-suppliers.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a>
+            <li><a href="./fm-project-suppliers.html" class="panel_link active_panel"><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a>
             </li>
             <li><a href="./fm-report.html" class="panel_link "><i class="icon icon-reports"></i>
                 <span>Reports</span></a></li>
@@ -189,7 +189,7 @@
         <div class="container">
           <div class="page-main-title align-items-center">
             <div class="heading">
-              <h1>Customer Payment</h1>
+              <h1>Projects & Suppliers</h1>
             </div>
             <div class="d-flex align-items-center">
               <div class="search-form d-none d-md-block">
@@ -201,24 +201,24 @@
                   </div>
                 </form>
               </div>
-              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2">New Payment</button>
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2" data-bs-toggle="modal" data-bs-target="#newProjectModal">Add New</button>
             </div>
           </div>
           <div class="row">
             <div class="col-12">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="Active-tab" data-bs-toggle="tab" data-bs-target="#Active"
-                    type="button" role="tab" aria-controls="Active" aria-selected="true">Active</button>
+                  <button class="nav-link active" id="Projects-tab" data-bs-toggle="tab" data-bs-target="#Projects"
+                    type="button" role="tab" aria-controls="Projects" aria-selected="true">Projects</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="Expenses-tab" data-bs-toggle="tab" data-bs-target="#Expenses" type="button"
-                    role="tab" aria-controls="Expenses" aria-selected="false">All Expenses</button>
+                  <button class="nav-link" id="Supplier-tab" data-bs-toggle="tab" data-bs-target="#Supplier" type="button"
+                    role="tab" aria-controls="Supplier" aria-selected="false">Supplier</button>
                 </li>
               </ul>
             </div>
             <div class="tab-content mt-3">
-              <div class="tab-pane active" id="Active" role="tabpanel" aria-labelledby="Active-tab">
+              <div class="tab-pane active" id="Projects" role="tabpanel" aria-labelledby="Projects-tab">
                 <div class="invoice-table tablepanel mt-3 invoice-table-product">
                   <table class="table table-striped">
                     <thead>
@@ -232,22 +232,22 @@
                               </label>
                             </div>
                           </span>
-                          Invoice no.
+                          Customer ID
                         </th>
                         <th scope="col">Customer</th>
-                        <th scope="col">Account</th>
-                        <th scope="col">Received Date</th>
-                        <th scope="col">Tax</th>
-                        <th scope="col">Paid Through</th>
-                        <th scope="col">Amount</th>
-                        <th scope="col">Payment Type</th>
+                        <th scope="col">Contact Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Contact</th>
+                        <th scope="col">Tax number</th>
+                        <th scope="col">Total Paid</th>
+                        <th scope="col">Total Remain</th>
                         <th scope="col"><a href="" class="fs-3 text-decoration-none text-fill" data-bs-toggle="modal"
                             data-bs-target="#columnModal">+</a></th>
                       </tr>
                     </thead>
                     <tbody class="right-content interest-body" style="display: table-row-group;">
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-payment-customer-create.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Customer ID" class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -259,16 +259,16 @@
                           <h6 class="fw-500 text-sm">#000001</h6>
                         </td>
                         <td data-label="Customer">Vinta</td>
-                        <td data-label="Account"><span class="finalized-status">Ali</span></td>
-                        <td data-label="Received Date">12 Dec 2021</td>
-                        <td data-label="Tax">15%</td>
-                        <td data-label="Paid Through">Petty Cash</td>
-                        <td data-label="Amount">$20.00</td>
-                        <td data-label="Payment Type">Advance</td>
+                        <td data-label="Contact Name"><span class="finalized-status">Ali</span></td>
+                        <td data-label="Email">12 Dec 2021</td>
+                        <td data-label="Contact">15%</td>
+                        <td data-label="Tax number">Petty Cash</td>
+                        <td data-label="Total Paid">$20.00</td>
+                        <td data-label="Total Remain">Advance</td>
                         <td></td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-payment-customer-create.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Customer ID" class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -280,16 +280,16 @@
                           <h6 class="fw-500 text-sm">#000002</h6>
                         </td>
                         <td data-label="Customer">Awesome brand</td>
-                        <td data-label="Account"><span class="finalized-status">Ali</span></td>
-                        <td data-label="Received Date">12 Dec 2021</td>
-                        <td data-label="Tax">15%</td>
-                        <td data-label="Paid Through">Petty Cash</td>
-                        <td data-label="Amount">$1.200.00</td>
-                        <td data-label="Payment Type">#INV-0001</td>
+                        <td data-label="Contact Name"><span class="finalized-status">Ali</span></td>
+                        <td data-label="Email">12 Dec 2021</td>
+                        <td data-label="Contact">15%</td>
+                        <td data-label="Tax number">Petty Cash</td>
+                        <td data-label="Total Paid">$1.200.00</td>
+                        <td data-label="Total Remain">#INV-0001</td>
                         <td></td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-payment-customer-create.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Customer ID" class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -301,16 +301,16 @@
                           <h6 class="fw-500 text-sm">#000003</h6>
                         </td>
                         <td data-label="Customer">Vinta</td>
-                        <td data-label="Account"><span class="finalized-status">Ali</span></td>
-                        <td data-label="Received Date">12 Dec 2021</td>
-                        <td data-label="Tax">15%</td>
-                        <td data-label="Paid Through">Bank Account</td>
-                        <td data-label="Amount">$400.00</td>
-                        <td data-label="Payment Type">#INV-0002</td>
+                        <td data-label="Contact Name"><span class="finalized-status">Ali</span></td>
+                        <td data-label="Email">12 Dec 2021</td>
+                        <td data-label="Contact">15%</td>
+                        <td data-label="Tax number">Bank Account</td>
+                        <td data-label="Total Paid">$400.00</td>
+                        <td data-label="Total Remain">#INV-0002</td>
                         <td></td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-payment-customer-create.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Customer ID" class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -322,16 +322,16 @@
                           <h6 class="fw-500 text-sm">#000004</h6>
                         </td>
                         <td data-label="Customer">SuperStar</td>
-                        <td data-label="Account"><span class="finalized-status">Ali</span></td>
-                        <td data-label="Received Date">12 Dec 2021</td>
-                        <td data-label="Tax">15%</td>
-                        <td data-label="Paid Through">Bank Account</td>
-                        <td data-label="Amount">$50.00</td>
-                        <td data-label="Payment Type">Advance</td>
+                        <td data-label="Contact Name"><span class="finalized-status">Ali</span></td>
+                        <td data-label="Email">12 Dec 2021</td>
+                        <td data-label="Contact">15%</td>
+                        <td data-label="Tax number">Bank Account</td>
+                        <td data-label="Total Paid">$50.00</td>
+                        <td data-label="Total Remain">Advance</td>
                         <td></td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-payment-customer-create.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Customer ID" class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -343,16 +343,16 @@
                           <h6 class="fw-500 text-sm">#000005</h6>
                         </td>
                         <td data-label="Customer">SuperStar</td>
-                        <td data-label="Account"><span class="finalized-status">Fahad</span></td>
-                        <td data-label="Received Date">12 Dec 2021</td>
-                        <td data-label="Tax">15%</td>
-                        <td data-label="Paid Through">Bank Account</td>
-                        <td data-label="Amount">$17.00</td>
-                        <td data-label="Payment Type">Advance</td>
+                        <td data-label="Contact Name"><span class="finalized-status">Fahad</span></td>
+                        <td data-label="Email">12 Dec 2021</td>
+                        <td data-label="Contact">15%</td>
+                        <td data-label="Tax number">Bank Account</td>
+                        <td data-label="Total Paid">$17.00</td>
+                        <td data-label="Total Remain">Advance</td>
                         <td></td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-payment-customer-create.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Customer ID" class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -364,16 +364,16 @@
                           <h6 class="fw-500 text-sm">#000006</h6>
                         </td>
                         <td data-label="Customer">Awesome brand</td>
-                        <td data-label="Account"><span class="finalized-status">Fahad</span></td>
-                        <td data-label="Received Date">12 Dec 2021</td>
-                        <td data-label="Tax">Not inc</td>
-                        <td data-label="Paid Through">Refund</td>
-                        <td data-label="Amount">$24.00</td>
-                        <td data-label="Payment Type">Advance</td>
+                        <td data-label="Contact Name"><span class="finalized-status">Fahad</span></td>
+                        <td data-label="Email">12 Dec 2021</td>
+                        <td data-label="Contact">Not inc</td>
+                        <td data-label="Tax number">Refund</td>
+                        <td data-label="Total Paid">$24.00</td>
+                        <td data-label="Total Remain">Advance</td>
                         <td></td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-payment-customer-create.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Customer ID" class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -385,12 +385,12 @@
                           <h6 class="fw-500 text-sm">#000007</h6>
                         </td>
                         <td data-label="Customer">Maskobis</td>
-                        <td data-label="Account"><span class="finalized-status">Fahad</span></td>
-                        <td data-label="Received Date">12 Dec 2021</td>
-                        <td data-label="Tax">Not inc</td>
-                        <td data-label="Paid Through">Refund</td>
-                        <td data-label="Amount">$224.00</td>
-                        <td data-label="Payment Type">Advance</td>
+                        <td data-label="Contact Name"><span class="finalized-status">Fahad</span></td>
+                        <td data-label="Email">12 Dec 2021</td>
+                        <td data-label="Contact">Not inc</td>
+                        <td data-label="Tax number">Refund</td>
+                        <td data-label="Total Paid">$224.00</td>
+                        <td data-label="Total Remain">Advance</td>
                         <td></td>
                       </tr>
                     </tbody>
@@ -722,6 +722,65 @@
         </div>
       </div>
     </div>
+<div class="modal fade" id="newProjectModal" tabindex="-1" aria-labelledby="newProjectModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newProjectModalLabel">Add New Project</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label for="role" class="fw-bold mt-3 mb-2">Customer name</label>
+        <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <option value="Manager">Please insert customer name</option>
+          <option value="Urdu">Urdu</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Punjabi">Punjabi</option>
+        </select>
+        <label for="role" class="fw-bold mt-3 mb-2">Project ID</label>
+        <input type="text" name="phone" id="phone" placeholder="Please insert Customer ID" class="d-block w-100 border border-2 rounded px-4 py-2">
+        <label for="role" class="fw-bold mt-3 mb-2">Customer Contact</label>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" name="phone" id="phone" placeholder="Name" class="d-block w-100 border border-2 rounded px-4 py-2">            
+          </div>
+          <div class="col-md-6">
+            <input type="email" name="phone" id="phone" placeholder="Email" class="d-block w-100 border border-2 rounded px-4 py-2">
+          </div>
+          <div class="col-md-6">
+            <input type="tel" name="phone" id="phone" placeholder="Phone" class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">
+          </div>
+        </div>
+        <label for="role" class="fw-bold mt-3 mb-2">Account Manager</label>
+        <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <option value="Manager">Select account manager</option>
+          <option value="Urdu">Urdu</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Punjabi">Punjabi</option>
+        </select>
+        <label for="role" class="fw-bold mt-3 mb-2">Project Manager</label>
+        <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <option value="Manager">Summary</option>
+          <option value="Urdu">Urdu</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Punjabi">Punjabi</option>
+        </select>
+        <label for="role" class="fw-bold mt-3 mb-2">Category</label>
+        <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <option value="Manager">Please select categroy</option>
+          <option value="Urdu">Urdu</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Punjabi">Punjabi</option>
+        </select>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-fill text-uppercase">Add</button>
+        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   </section>
   <!-- JavaScript
 ================================================== -->

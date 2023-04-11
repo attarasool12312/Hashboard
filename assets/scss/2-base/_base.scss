@@ -712,3 +712,8 @@ h6 {
     border: 2px solid #6542A7;
   }
 }
+.border-sm-none{
+  @include grid-sm-down{
+    border: none !important;
+  }
+}

@@ -51,8 +51,8 @@
               </a>
               <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
                 <li><a class="dropdown-item panel_link active_panel"
-                    href="./fm-quote-history.html"><span>Quote</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><span>Invoices</span></a>
+                    href="./fm-quote-history.html"><i class="icon icon-sales-information"></i><span>Quote</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><i class="icon icon-sales-information"></i><span>Invoices</span></a>
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
@@ -61,9 +61,9 @@
                 <i class="icon icon-project-supplies"></i> <span>Products</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-products.html"><span>Products</span></a>
+                <li><a class="dropdown-item panel_link " href="./fm-products.html"><i class="icon icon-project-supplies"></i><span>Products</span></a>
                 </li>
-                <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><span>Price Lists</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><i class="icon icon-project-supplies"></i><span>Price Lists</span></a></li>
               </ul>
             </li>
             <li><a href="./fm-purchase-order.html" class="panel_link "><i class="icon icon-project-supplies"></i>
@@ -76,8 +76,8 @@
                 <i class="icon icon-expenses"></i> <span>Payment</span>
               </a>
               <ul class="Sales-Dropdown" aria-labelledby="Sales-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><span>Customer</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><span>Supplier</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><i class="icon icon-expenses"></i><span>Customer</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><i class="icon icon-expenses"></i><span>Supplier</span></a></li>
               </ul>
             </li>
             <li><a href="./fm-project-suppliers.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a>
@@ -187,7 +187,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="page-main-title align-items-center">
+          <div class="page-main-title align-items-md-center">
             <div class="heading">
               <h3><span class="text-light-gray">Expenses/</span> #0000001</h3>
             </div>
@@ -195,16 +195,16 @@
           </div>
           <div class="col-12">
             <div class="chart">
-              <div class="d-flex align-items-center justify-content-between">
-                <h3 class="fw-600">Rhombus Commerce <span class="finalized-status ms-3">Finalized</span></h3>
-                <h5 class="fw-600">#0000001</h5>
+              <div class="d-flex align-items-md-center justify-content-between flex-colume-sm">
+                <h3 class="fw-600">Rhombus Commerce <span class="finalized-status ms-1 ms-md-3">Finalized</span></h3>
+                <h5 class="fw-600 mt-3 mt-md-0">#0000001</h5>
               </div>
               <div class="row mt-3 border-top border-bottom">
                 <div class="col-md-4 py-3">
                   <div class="d-flex align-items-center justify-content-between">
                     <p class="text-light-gray">Supplier*</p>
                     <select name="Role" id="Role"
-                      class="d-block border border-2 rounded px-2 py-2 me-2 text-light-gray w-50">
+                      class="d-block border border-2 rounded px-2 py-2 text-light-gray w-50">
                       <option value="Manager">Head Office</option>
                       <option value="Manager">Admin</option>
                       <option value="Urdu">Extended</option>
@@ -215,7 +215,7 @@
                   <div class="d-flex align-items-center justify-content-between mt-3">
                     <p class="text-light-gray">Invoice number</p>
                     <select name="Role" id="Role"
-                      class="d-block border border-2 rounded px-2 py-2 me-2 text-light-gray w-50">
+                      class="d-block border border-2 rounded px-2 py-2 text-light-gray w-50">
                       <option value="Manager">#000001</option>
                       <option value="Manager">Admin</option>
                       <option value="Urdu">Extended</option>
@@ -226,7 +226,7 @@
                   <div class="d-flex align-items-center justify-content-between mt-3">
                     <p class="text-light-gray">Project name</p>
                     <select name="Role" id="Role"
-                      class="d-block border border-2 rounded px-2 py-2 me-2 text-light-gray w-50">
+                      class="d-block border border-2 rounded px-2 py-2 text-light-gray w-50">
                       <option value="Manager">Primary Location</option>
                       <option value="Manager">Admin</option>
                       <option value="Urdu">Extended</option>
@@ -235,7 +235,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-4 py-3 border-start border-end">
+                <div class="col-md-4 py-3 border-start border-end border-sm-none">
                   <div class="d-flex align-items-center justify-content-between">
                     <p class="text-light-gray">Issue date</p>
                     <input type="date" name="name" id="name" placeholder="Type item name"
@@ -260,7 +260,7 @@
                   <div class="d-flex align-items-center justify-content-between">
                     <p class="text-light-gray">Currency</p>
                     <select name="Role" id="Role"
-                      class="d-block border border-2 rounded px-2 py-2 me-2 text-light-gray w-50">
+                      class="d-block border border-2 rounded px-2 py-2 text-light-gray w-50">
                       <option value="Manager">($) USD</option>
                       <option value="Manager">Admin</option>
                       <option value="Urdu">Extended</option>
@@ -271,7 +271,7 @@
                   <div class="d-flex align-items-center justify-content-between mt-3">
                     <p class="text-light-gray">Amount</p>
                     <select name="Role" id="Role"
-                      class="d-block border border-2 rounded px-2 py-2 me-2 text-light-gray w-50">
+                      class="d-block border border-2 rounded px-2 py-2 text-light-gray w-50">
                       <option value="Manager">$20</option>
                       <option value="Manager">Admin</option>
                       <option value="Urdu">Extended</option>
@@ -282,7 +282,7 @@
                   <div class="d-flex align-items-center justify-content-between mt-3">
                     <p class="text-light-gray">Totals are</p>
                     <select name="Role" id="Role"
-                      class="d-block border border-2 rounded px-2 py-2 me-2 text-light-gray w-50">
+                      class="d-block border border-2 rounded px-2 py-2 text-light-gray w-50">
                       <option value="Manager">Tax Exclucive</option>
                       <option value="Manager">Admin</option>
                       <option value="Urdu">Extended</option>
@@ -293,7 +293,7 @@
                   <div class="d-flex align-items-center justify-content-between mt-3">
                     <p class="text-light-gray">Paid Type</p>
                     <select name="Role" id="Role"
-                      class="d-block border border-2 rounded px-2 py-2 me-2 text-light-gray w-50">
+                      class="d-block border border-2 rounded px-2 py-2 text-light-gray w-50">
                       <option value="Manager">Advance</option>
                       <option value="Manager">Admin</option>
                       <option value="Urdu">Extended</option>
@@ -313,7 +313,7 @@
                       class="d-block w-100 border border-2 rounded px-4 py-2">
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mt-5 mt-md-0">
                   <div class="d-flex align-items-center justify-content-between py-2 border-bottom">
                     <p class="text-light-gray">Item Subtotal</p>
                     <p>$7,200.00</p>
@@ -351,7 +351,7 @@
             <form>
               <label for="Customer-name" class="d-block mb-2">User Name</label>
               <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
-              <label for="Project-id" class="d-block my-2">User Type</label>
+              <label for="Project-id" class="d-block my-2">Department</label>
               <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
                 <option value="Manager">Owner</option>
                 <option value="Manager">Admin</option>

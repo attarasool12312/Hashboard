@@ -51,8 +51,8 @@
                 <i class="icon icon-sales-information"></i> <span>Sales</span>
               </a>
               <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-quote-history.html"><span>Quote</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><span>Invoices</span></a>
+                <li><a class="dropdown-item panel_link " href="./fm-quote-history.html"><i class="icon icon-sales-information"></i><span>Quote</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><i class="icon icon-sales-information"></i><span>Invoices</span></a>
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
@@ -61,9 +61,9 @@
                 <i class="icon icon-project-supplies"></i> <span>Products</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-products.html"><span>Products</span></a>
+                <li><a class="dropdown-item panel_link active_panel" href="./fm-products.html"><i class="icon icon-project-supplies"></i><span>Products</span></a>
                 </li>
-                <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><span>Price Lists</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><i class="icon icon-project-supplies"></i><span>Price Lists</span></a></li>
               </ul>
             </li>
             <li><a href="./fm-purchase-order.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Purchase Orders</span></a></li>
@@ -75,8 +75,8 @@
                 <i class="icon icon-expenses"></i> <span>Payment</span>
               </a>
               <ul class="Sales-Dropdown" aria-labelledby="Sales-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><span>Customer</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><span>Supplier</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><i class="icon icon-expenses"></i><span>Customer</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><i class="icon icon-expenses"></i><span>Supplier</span></a></li>
               </ul>
             </li>
             <li><a href="./fm-project-suppliers.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a></li>
@@ -185,11 +185,11 @@
           </div>
         </div>
         <div class="container">
-          <div class="page-main-title align-items-center">
+          <div class="page-main-title align-items-md-center">
             <div class="heading">
               <h3><span class="text-light-gray">Products/</span> Ctreate a new purchased product</h3>
             </div>
-            <button type="button" class="btn ouline-white border border-2">Cancel</button>
+            <button type="button" class="btn ouline-white border border-2 wsm-100 mt-3 mt-md-0">Cancel</button>
           </div>
           <div class="row">
             <div class="col-md-9">
@@ -220,7 +220,7 @@
                 <div>
                   <label for="name" class="fw-bold mt-3 mb-2">Supplier</label>
                   <div class="d-flex align-items-center">
-                    <div class="col-md-10">
+                    <div class="col-8 col-md-10">
                       <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
                         <option value="Manager">Select a supplier</option>
                         <option value="Urdu">Urdu</option>
@@ -228,7 +228,7 @@
                         <option value="Punjabi">Punjabi</option>
                       </select>
                     </div>
-                    <div class="col-md-2 text-end">
+                    <div class="col-3 col-md-2 text-end">
                       <button type="button" class="btn ouline-white border border-2 text-fill">+ New</button>
                     </div>
                   </div>
@@ -236,7 +236,7 @@
                 <div>
                   <label for="name" class="fw-bold mt-3 mb-2">Product type</label>
                   <div class="d-flex align-items-center">
-                    <div class="col-md-10">
+                    <div class="col-8 col-md-10">
                       <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
                         <option value="Manager">Select a type</option>
                         <option value="Urdu">Urdu</option>
@@ -244,7 +244,7 @@
                         <option value="Punjabi">Punjabi</option>
                       </select>
                     </div>
-                    <div class="col-md-2 text-end">
+                    <div class="col-3 col-md-2 text-end">
                       <button type="button" class="btn ouline-white border border-2 text-fill">+ New</button>
                     </div>
                   </div>
@@ -252,7 +252,7 @@
                 <div>
                   <label for="name" class="fw-bold mt-3 mb-2">Brand</label>
                   <div class="d-flex align-items-center">
-                    <div class="col-md-10">
+                    <div class="col-8 col-md-10">
                       <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
                         <option value="Manager">Select a supplier</option>
                         <option value="Urdu">Urdu</option>
@@ -260,7 +260,7 @@
                         <option value="Punjabi">Punjabi</option>
                       </select>
                     </div>
-                    <div class="col-md-2 text-end">
+                    <div class="col-3 col-md-2 text-end">
                       <button type="button" class="btn ouline-white border border-2 text-fill">+ New</button>
                     </div>
                   </div>
@@ -421,7 +421,7 @@
             <form>
               <label for="Customer-name" class="d-block mb-2">User Name</label>
               <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
-              <label for="Project-id" class="d-block my-2">User Type</label>
+              <label for="Project-id" class="d-block my-2">Department</label>
               <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
                 <option value="Manager">Owner</option>
                 <option value="Manager">Admin</option>

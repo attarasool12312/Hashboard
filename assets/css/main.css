@@ -2231,6 +2231,12 @@ h6.text-sm {
   border: 2px solid #6542A7;
 }
 
+@media only screen and (max-width: 767.98px) {
+  .border-sm-none {
+    border: none !important;
+  }
+}
+
 /*--------------*\
     Boxes Section
 \*--------------*/
@@ -3646,8 +3652,21 @@ ul.head-btn .slider-btn .btn.ouline-white {
   border-radius: 12px;
   padding: 14px 12px;
 }
+.section-panel .admin-wrapper .aside ul li a i {
+  margin-right: 0;
+}
+@media only screen and (max-width: 991.98px) {
+  .section-panel .admin-wrapper .aside ul li a i {
+    margin-right: 10px;
+  }
+}
 .section-panel .admin-wrapper .aside ul li a span {
   display: none;
+}
+@media only screen and (max-width: 991.98px) {
+  .section-panel .admin-wrapper .aside ul li a span {
+    display: inline-block;
+  }
 }
 .section-panel .admin-wrapper .aside ul li.panel-dropdown .Business-Dropdown {
   display: none;

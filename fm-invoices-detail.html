@@ -50,8 +50,8 @@
                 <i class="icon icon-sales-information"></i> <span>Sales</span>
               </a>
               <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-quote-history.html"><span>Quote</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><span>Invoices</span></a>
+                <li><a class="dropdown-item panel_link active_panel" href="./fm-quote-history.html"><i class="icon icon-sales-information"></i><span>Quote</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><i class="icon icon-sales-information"></i><span>Invoices</span></a>
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
@@ -60,9 +60,9 @@
                 <i class="icon icon-project-supplies"></i> <span>Products</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-products.html"><span>Products</span></a>
+                <li><a class="dropdown-item panel_link " href="./fm-products.html"><i class="icon icon-project-supplies"></i><span>Products</span></a>
                 </li>
-                <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><span>Price Lists</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><i class="icon icon-project-supplies"></i><span>Price Lists</span></a></li>
               </ul>
             </li>
             <li><a href="./fm-purchase-order.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Purchase Orders</span></a></li>
@@ -74,8 +74,8 @@
                 <i class="icon icon-expenses"></i> <span>Payment</span>
               </a>
               <ul class="Sales-Dropdown" aria-labelledby="Sales-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><span>Customer</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><span>Supplier</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><i class="icon icon-expenses"></i><span>Customer</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><i class="icon icon-expenses"></i><span>Supplier</span></a></li>
               </ul>
             </li>
             <li><a href="./fm-project-suppliers.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a></li>
@@ -184,11 +184,11 @@
           </div>
         </div>
         <div class="container">
-          <div class="page-main-title align-items-center">
+          <div class="page-main-title align-items-md-center">
             <div class="heading">
               <h3><span class="text-light-gray">Invoice/</span> #INV-0001</h3>
             </div>
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center flex-colume-sm wsm-100">
               <div class="dropdown select-dropdown">
                 <button class="btn dropdown-toggle pe-5 w-100 bg-white border-0 mt-3 mt-md-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   More option
@@ -243,7 +243,7 @@
                       <p>Feb 8th 2021</p>
                     </div>
                   </div>
-                  <div class="col-md-6 py-3 border-start">
+                  <div class="col-md-6 py-3 border-start border-sm-none">
                     <div class="d-flex align-items-center justify-content-between">
                       <p class="text-light-gray">Shipment date</p>
                       <p>Feb 10th 2021</p>
@@ -342,7 +342,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="sm-box bg-white p-2">
+              <div class="sm-box bg-white p-2 mt-3 mt-md-0">
                 <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
                   <h5 class="fw-bold">Invoice #INV-0001</h5>
                   <select name="Role" id="Role" class="d-block border-0 px-2 py-2 me-2 text-light-gray">
@@ -359,7 +359,7 @@
                   <h6 class="fw-bold">Quotation</h6>
                   <span class="purple-status">Invoiced</span>
                 </div>
-                <div class="d-flex justify-content-between align-items-center mb-2 px-1">
+                <div class="d-flex justify-content-between align-items-md-center mb-2 px-1 flex-colume-sm">
                   <p><i class="icon icon-file"></i> Quo-0001</p>
                   <div class="dropdown select-dropdown">
                     <button class="btn dropdown-toggle pe-4 w-100 bg-white border-0 mt-3 mt-md-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -402,7 +402,7 @@
             <form>
               <label for="Customer-name" class="d-block mb-2">User Name</label>
               <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
-              <label for="Project-id" class="d-block my-2">User Type</label>
+              <label for="Project-id" class="d-block my-2">Department</label>
               <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
                 <option value="Manager">Owner</option>
                 <option value="Manager">Admin</option>

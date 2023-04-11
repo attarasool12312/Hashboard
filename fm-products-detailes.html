@@ -50,8 +50,8 @@
                 <i class="icon icon-sales-information"></i> <span>Sales</span>
               </a>
               <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-quote-history.html"><span>Quote</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><span>Invoices</span></a>
+                <li><a class="dropdown-item panel_link " href="./fm-quote-history.html"><i class="icon icon-sales-information"></i><span>Quote</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><i class="icon icon-sales-information"></i><span>Invoices</span></a>
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
@@ -60,9 +60,9 @@
                 <i class="icon icon-project-supplies"></i> <span>Products</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-products.html"><span>Products</span></a>
+                <li><a class="dropdown-item panel_link active_panel" href="./fm-products.html"><i class="icon icon-project-supplies"></i><span>Products</span></a>
                 </li>
-                <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><span>Price Lists</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><i class="icon icon-project-supplies"></i><span>Price Lists</span></a></li>
               </ul>
             </li>
             <li><a href="./fm-purchase-order.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Purchase Orders</span></a></li>
@@ -74,8 +74,8 @@
                 <i class="icon icon-expenses"></i> <span>Payment</span>
               </a>
               <ul class="Sales-Dropdown" aria-labelledby="Sales-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><span>Customer</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><span>Supplier</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><i class="icon icon-expenses"></i><span>Customer</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><i class="icon icon-expenses"></i><span>Supplier</span></a></li>
               </ul>
             </li>
             <li><a href="./fm-project-suppliers.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a>
@@ -187,7 +187,7 @@
         <div class="container">
           <div class="page-main-title align-items-center">
             <div class="heading d-flex align-items-center">
-              <h4 class="text-light-gray fw-600">Products/ <span class="text-dark ms-4">Cotton t-shirt</span></h4>
+              <h4 class="text-light-gray fw-600">Products/ <span class="text-dark ms-2 ms-md-4">Cotton t-shirt</span></h4>
               <span class="finalized-status ms-5">Active</span>
             </div>
             <button type="button" class="btn ouline-white bg-danger text-white wsm-100 mt-3 mt-md-0 ms-md-2">Delete
@@ -212,27 +212,29 @@
             </div>
             <div class="tab-content mt-3">
               <div class="tab-pane active" id="Variants" role="tabpanel" aria-labelledby="Variants-tab">
-                <div class="bg-white p-4 d-flex align-items-center justify-content-between rounded invoice-table">
+                <div class="bg-white p-4 d-flex align-items-md-center justify-content-between rounded invoice-table flex-colume-sm">
                   <div class="col-md-3">
-                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                    <div class="d-flex align-items-center justify-content-start">
                       <img src="./assets/images/product-2.png" alt="" class="rounded-0">
                       <h6 class="ms-3 fw-500 text-sm">Cotton t-shirt variant (7)</h6>
                     </div>
                   </div>
-                  <div class="col-md-9 d-flex justify-content-end">
-                    <div class="search-form d-none d-md-block">
-                      <form action="">
-                        <div class="form-group">
-                          <input class="form-control" type="text"
-                            placeholder="Search product name, supplier, type or tags…" aria-label="Search">
-                          <i class="icon icon-search-form"></i>
-                        </div>
-                      </form>
+                  <div class="col-md-9">
+                    <div class="d-flex justify-content-start justify-content-md-end mt-3 mt-md-0 flex-colume-sm">
+                      <div class="search-form wsm-100">
+                        <form action="">
+                          <div class="form-group">
+                            <input class="form-control wsm-100" type="text"
+                              placeholder="Search product name, supplier, type or tags…" aria-label="Search">
+                            <i class="icon icon-search-form"></i>
+                          </div>
+                        </form>
+                      </div>
+                      <button type="button" class="btn ouline-white ms-0 ms-md-2 mt-3 mt-md-0">Add a New Bundle</button>
+                      <button type="button" class="btn ouline-white ms-0 ms-md-2 mt-3 mt-md-0">Add a Variant</button>
+                      <button type="button" class="btn ouline-white ms-0 ms-md-2 mt-3 mt-md-0"><i class="icon icon-edit"></i> Edit
+                        Product</button>
                     </div>
-                    <button type="button" class="btn ouline-white ms-2">Add a New Bundle</button>
-                    <button type="button" class="btn ouline-white ms-2">Add a Variant</button>
-                    <button type="button" class="btn ouline-white ms-2"><i class="icon icon-edit"></i> Edit
-                      Product</button>
                   </div>
                 </div>
                 <div class="invoice-table tablepanel mt-2 invoice-table-product">
@@ -464,29 +466,26 @@
                               class="icon icon-eye m-0"></i></button>
                         </td>
                       </tr>
-                      <tr>
-                        <td scope="row" data-label="SKU"><input type="text" name="name" id="name" placeholder="SKU"
-                            class="d-block w-100 border border-2 rounded px-4 py-2"></td>
-                        <td data-label="Name"><input type="text" name="name" id="name" placeholder="Name"
-                            class="d-block w-100 border border-2 rounded px-4 py-2"></td>
-                        <td data-label="Wholesale"><input type="number" name="name" id="name" placeholder="20.00"
-                            class="d-block w-100 border border-2 rounded px-4 py-2"></td>
-                        <td data-label="RRP"><input type="number" name="name" id="name" placeholder="20.00"
-                            class="d-block w-100 border border-2 rounded px-4 py-2"></td>
-                        <td data-label="Buy Price"><input type="number" name="name" id="name" placeholder="10.00"
-                            class="d-block w-100 border border-2 rounded px-4 py-2"></td>
-                        <td data-label="Stock"><input type="text" name="name" id="name" placeholder="Stock"
-                            class="d-block w-100 border border-2 rounded px-4 py-2"></td>
-                        <td data-label="Color"><input type="text" name="name" id="name" placeholder="Color"
-                            class="d-block w-100 border border-2 rounded px-4 py-2"></td>
-                        <td data-label="Size"><input type="text" name="name" id="name" placeholder="Size"
-                            class="d-block w-100 border border-2 rounded px-4 py-2"></td>
-                        <td data-label="Action" class="d-flex align-items-center justify-content-end"><a href=""
-                            class="text-decoration-none text-light-gray fs-5">X</a></td>
-                      </tr>
                     </tbody>
                   </table>
-                  <div class="text-center pt-2 w-100 border-top">
+                  <div class="d-flex align-items-center flex-colume-sm mt-md-3">
+                    <input type="text" name="name" id="name" placeholder="Type item name"
+                      class="d-block w-100 border border-2 rounded px-2 py-2">
+                    <input type="text" name="name" id="name" placeholder="SKU"
+                      class="d-block w-100 border border-2 rounded px-2 py-2 ms-0 ms-md-2 mt-3 mt-md-0">
+                    <input type="number" name="name" id="name" placeholder="20.00"
+                      class="d-block w-100 border border-2 rounded px-2 py-2 ms-0 ms-md-2 mt-3 mt-md-0">
+                    <input type="number" name="name" id="name" placeholder="20.00"
+                      class="d-block w-100 border border-2 rounded px-2 py-2 ms-0 ms-md-2 mt-3 mt-md-0">
+                    <input type="number" name="name" id="name" placeholder="20.00"
+                      class="d-block w-100 border border-2 rounded px-2 py-2 ms-0 ms-md-2 mt-3 mt-md-0">
+                    <input type="number" name="name" id="name" placeholder="20.00"
+                      class="d-block w-100 border border-2 rounded px-2 py-2 ms-0 ms-md-2 mt-3 mt-md-0">
+                    <input type="number" name="name" id="name" placeholder="20.00"
+                      class="d-block w-100 border border-2 rounded px-2 py-2 ms-0 ms-md-2 mt-3 mt-md-0">
+                    <a href="" class="fs-5 text-decoration-none text-fill ms-0 ms-md-2 mt-3 mt-md-0">X</a>
+                  </div>
+                  <div class="text-center pt-2 w-100 border-top border-sm-none mt-md-3">
                     <a href="" class="text-fill text-decoration-none">Save as a new variant</a>
                   </div>
                 </div>
@@ -507,7 +506,7 @@
             <form>
               <label for="Customer-name" class="d-block mb-2">User Name</label>
               <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
-              <label for="Project-id" class="d-block my-2">User Type</label>
+              <label for="Project-id" class="d-block my-2">Department</label>
               <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
                 <option value="Manager">Owner</option>
                 <option value="Manager">Admin</option>

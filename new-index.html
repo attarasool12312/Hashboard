@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en" class="dark-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default"
+  data-assets-path="../../assets/" data-template="vertical-menu-template-starter">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <title>Hashboard</title>
+
+  <meta name="description" content="" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/fontawesome.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/tabler-icons.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/flag-icons.css" />
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/css/rtl/theme-default.css"
+    class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/css/demo.css" />
+
+  <!-- Vendors CSS -->
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/node-waves/node-waves.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/typeahead-js/typeahead.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+  <link rel="stylesheet"
+    href="./assets/new-dashboard/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/select2/select2.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+  <!-- Page CSS -->
+
+  <!-- Helpers -->
+  <script src="./assets/new-dashboard/vendor/js/helpers.js"></script>
+  <!-- <script src="./assets/new-dashboard/vendor/js/template-customizer.js"></script> -->
+  <!-- <script src="./assets/new-dashboard/js/config.js"></script> -->
+
+  <link href="./assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="./new-index.html" class="panel_link active_panel">
+              <i class="icon icon-home"></i>
+                <span>Home</span></a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon icon-dashboard-1"></i>
+                <span>Dashboard</span>
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="">
+                    <span>Indicators</span></a></li>
+                <li><a class="dropdown-item panel_link " href=""> <span>Templates</span></a>
+                </li>
+                <li><a class="dropdown-item panel_link " href=""> <span>Backgrounds</span></a></li>
+                <li><a class="dropdown-item panel_link " href=""> <span>Graphics</span></a></li>
+              </ul>
+            </li>
+            <li><a href="./new-task-management.html" class="panel_link "><i class="icon icon-initiative-management"></i>
+                <span>Task Management</span></a></li>
+            <li><a href="./pm-index.html" class="panel_link "><img
+                  src="./assets/new-dashboard/img/icons/nav/widget.svg" />
+                <span>Widget</span></a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown-1" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-settings"></i>
+                <span>Settings</span>
+              </a>
+              <ul class="Business-Dropdown-1" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href=""> <i class="icon icon-settings"></i> <span>Dashboard
+                      Integration</span></a></li>
+              </ul>
+            </li>
+            <div class="open-button">
+              <i class="icon icon-right-arrow"></i>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="flex-grow-1">
+          <nav class="layout-navbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="ti ti-menu-2 ti-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <div class="navbar-nav align-items-center">
+                <div class="dropdown theme-filter" id="dropDown">
+                  <button
+                    class="btn btn-sm border-0 d-flex justify-content-betweendropdown-toggle p-50 waves-effect waves-float waves-light"
+                    type="button" id="dropdownItem4" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" style="background: transparent !important; z-index: 9">
+                    Financial dashboard
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownItem4" style="">
+                    <a class="dropdown-item" href="#">Financial dashboard</a>
+                    <a class="dropdown-item" href="#">Contact center dashboard
+                    </a>
+                    <a class="dropdown-item" href="#">Customer experience dashboard</a>
+                  </div>
+                  <span class="dropdown" id="dropDownIcon"><img
+                      src="./assets/new-dashboard/img/icons/nav/arrow-down.svg" alt="" /></span>
+                </div>
+              </div>
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <div class="contact-support">
+                  <a href="#" class="text-white">Contact Support</a>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="container">
+
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
+  <script src="./assets/new-dashboard/vendor/libs/jquery/jquery.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/popper/popper.js"></script>
+  <script src="./assets/new-dashboard/vendor/js/bootstrap.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/node-waves/node-waves.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/hammer/hammer.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/i18n/i18n.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/typeahead-js/typeahead.js"></script>
+  <script src="./assets/new-dashboard/vendor/js/menu.js"></script>
+  <!-- endbuild -->
+
+  <!-- Vendors JS -->
+  <script src="./assets/new-dashboard/vendor/libs/moment/moment.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/datatables/jquery.dataTables.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/datatables-responsive/datatables.responsive.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/datatables-buttons/datatables-buttons.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/jszip/jszip.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/pdfmake/pdfmake.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/datatables-buttons/buttons.html5.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/datatables-buttons/buttons.print.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/select2/select2.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/cleavejs/cleave.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/cleavejs/cleave-phone.js"></script>
+
+  <!-- Main JS -->
+  <script src="./assets/new-dashboard/js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <!-- Page JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script>
+    $("html").removeClass("layout-menu-collapsed");
+    $("#expandMenuOnClick").on("click", function () {
+      $("html").removeClass("layout-menu-collapsed");
+    });
+  </script>
+</body>
+
+</html>

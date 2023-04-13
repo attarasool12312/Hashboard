@@ -1559,6 +1559,27 @@ i[class*=h-icon-] {
   height: 13px;
 }
 
+.icon-home {
+  display: inline-block;
+  background-image: url("../images/icons/home.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-dashboard-1 {
+  display: inline-block;
+  background-image: url("../images/icons/dashboard-1.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-initiative-management {
+  display: inline-block;
+  background-image: url("../images/icons/initiative-management.svg");
+  width: 24px;
+  height: 24px;
+}
+
 /*--------------*\
     Base
 \*--------------*/

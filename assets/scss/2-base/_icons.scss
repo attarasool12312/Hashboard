@@ -220,6 +220,9 @@ $icons: (
   "plus-big-icon-1" "svg" 20px 20px,
   "leads-line-chart-white" "svg" 179px 35px,
   "file" "svg" 12px 13px,
+  "home" "svg" 24px 24px,
+  "dashboard-1" "svg" 24px 24px,
+  "initiative-management" "svg" 24px 24px,
   );
   
 @each $name, $fileType, $width, $height in $icons {

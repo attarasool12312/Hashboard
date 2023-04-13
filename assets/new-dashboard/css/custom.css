@@ -1,0 +1,27 @@
+
+aside#layout-menu {
+    background: linear-gradient(343.62deg, rgba(6, 11, 39, 0.78) -1.19%, rgba(16, 18, 69, 0.78) 101.11%);
+    backdrop-filter: blur(2px);
+    margin: 24px;
+    left: 24px;
+    padding-top: 10px;
+    border-radius: 24px;
+}
+.layout-container {
+    background-image: url(../../assets/img/bg/bg.svg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.border-26 {
+  border-radius: 26px !important;
+}
+label.btn.btn-outline-secondary {
+    height: 24px;
+    font-size: 10px;
+    border-radius: 12px;
+    border-color: #0075FF;
+    color: white;
+}
+.card-title {
+    color: white;
+}

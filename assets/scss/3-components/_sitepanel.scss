@@ -132,6 +132,14 @@
                                 display: block;
                             }
                         }
+
+                        .Setting-Dropdown-2 {
+                            display: none;
+
+                            &.show {
+                                display: block;
+                            }
+                        }
                     }
                 }
 
@@ -306,6 +314,14 @@
                         }
 
                         .Setting-Dropdown-1 {
+                            display: none;
+
+                            &.show {
+                                display: block;
+                            }
+                        }
+
+                        .Setting-Dropdown-2 {
                             display: none;
 
                             &.show {

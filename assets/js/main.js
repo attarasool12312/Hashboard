@@ -22,6 +22,9 @@ $(document).ready(function () {
   $('#Setting-Dropdown-1').click(function () {
     $('.Setting-Dropdown-1').toggleClass('show');
   });
+  $('#Setting-Dropdown-2').click(function () {
+    $('.Setting-Dropdown-2').toggleClass('show');
+  });
   $('.close').click(function () {
     $('.aside').toggleClass('is-active');
   });

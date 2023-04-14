@@ -38,6 +38,7 @@
       min-width: 100px;
       text-align: left;
       position: relative;
+      width: 100%;
       @include grid-md-down {
         min-width: 100%;
         padding-right: 10px;

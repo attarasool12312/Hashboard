@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html lang="en" class="dark-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default"
+  data-assets-path="../../assets/" data-template="vertical-menu-template-starter">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="" />
+
+  <title>Hashboard</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/fontawesome.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/tabler-icons.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/flag-icons.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/css/demo.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/node-waves/node-waves.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/typeahead-js/typeahead.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/apex-charts/apex-charts.css" />
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="./assets/new-dashboard/vendor/js/helpers.js"></script>
+</head>
+
+<body>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="./new-index.html" class="panel_link ">
+                <i class="icon icon-home"></i>
+                <span>Home</span></a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-dashboard-1"></i>
+                <span>Dashboard</span>
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="">
+                    <span>Indicators</span></a></li>
+                <li><a class="dropdown-item panel_link active_panel" href="./new-templates.html">
+                    <span>Templates</span></a>
+                </li>
+                <li><a class="dropdown-item panel_link " href="./new-background.html"> <span>Backgrounds</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./new-graphics.html"> <span>Graphics</span></a></li>
+              </ul>
+            </li>
+            <li><a href="./new-task-management.html" class="panel_link "><i class="icon icon-initiative-management"></i>
+                <span>Task Management</span></a></li>
+            <li><a href="./pm-index.html" class="panel_link "><img
+                  src="./assets/new-dashboard/img/icons/nav/widget.svg" />
+                <span>Widget</span></a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown-1"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-settings"></i>
+                <span>Settings</span>
+              </a>
+              <ul class="Business-Dropdown-1" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href=""> <i class="icon icon-settings"></i> <span>Dashboard
+                      Integration</span></a></li>
+              </ul>
+            </li>
+            <div class="open-button">
+              <i class="icon icon-right-arrow"></i>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="flex-grow-1">
+          <nav class="layout-navbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="ti ti-menu-2 ti-sm"></i>
+              </a>
+            </div>
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <div class="navbar-nav align-items-center">
+                <div class="dropdown theme-filter" id="dropDown">
+                  <button
+                    class="btn btn-sm border-0 d-flex justify-content-betweendropdown-toggle p-50 waves-effect waves-float waves-light"
+                    type="button" id="dropdownItem4" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" style="background: transparent !important; z-index: 9">
+                    Select Management
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownItem4" style="">
+                    <a class="dropdown-item" href="#">Project Management</a>
+                    <a class="dropdown-item" href="#">CRM Management</a>
+                    <a class="dropdown-item" href="#">JOB Management</a>
+                    <a class="dropdown-item" href="#">HR Management</a>
+                    <a class="dropdown-item" href="#">Social Media Management</a>
+                    <a class="dropdown-item" href="#">Admin Dashboard</a>
+                    <a class="dropdown-item" href="#">Financial Management</a>
+                  </div>
+                  <span class="dropdown" id="dropDownIcon"><img
+                      src="./assets/new-dashboard/img/icons/nav/arrow-down.svg" alt="" /></span>
+                </div>
+              </div>
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <div class="contact-support">
+                  <a href="#" class="text-dark fw-600">Contact Support</a>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="container">
+          <div class="row mt-4">
+            <div class="col-md-3">
+              <div class="second-menu" id="secondMenu">
+                <div class="search">
+                  <input type="text" class="form-control search-input border-0" placeholder="Placeholder"
+                    aria-label="Placeholder" />
+                </div>
+                <ul class="box-widget backgrounds">
+                  <li><a href="#"><img src="./assets/new-dashboard/img/theme/theme-icon-1.png">Base Dark </a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/theme/5.png">Base One </a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/theme/6.png">Base Two </a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/theme/7.png">Base Three </a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/theme/10.png">Base Four </a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/theme/11.png">Base Five </a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/theme/12.png">Base Six </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="layout-page flex-grow-1 container-p-y" style="padding: 0 !important;">
+                <div class="row">
+                  <div class="col-md-12 mb-4">
+                    <div class="boxes">
+                      <div class="box mr-16 orange mb-3">
+                        <h4>$902.008K</h4>
+                        <div class="box-footer">
+                          <span>My Balance</span>
+                          <span>+12.09%<img src="./assets/new-dashboard/img/icons/growth.svg"></span>
+                        </div>
+                      </div>
+                      <div class="box mr-16 light-green mb-3">
+                        <h4>$902.008K</h4>
+                        <div class="box-footer">
+                          <span>My Balance</span>
+                          <span>+12.09%<img src="./assets/new-dashboard/img/icons/growth.svg"></span>
+                        </div>
+                      </div>
+                      <div class="box mr-16 light-purple mb-3">
+                        <h4>$902.008K</h4>
+                        <div class="box-footer">
+                          <span>My Balance</span>
+                          <span>+12.09%<img src="./assets/new-dashboard/img/icons/growth.svg"></span>
+                        </div>
+                      </div>
+                      <div class="box mr-16 light-blue mb-3">
+                        <h4>$902.008K</h4>
+                        <div class="box-footer">
+                          <span>My Balance</span>
+                          <span>+12.09%<img src="./assets/new-dashboard/img/icons/growth.svg"></span>
+                        </div>
+                      </div>
+                      <div class="box mr-16 light-red mb-3">
+                        <h4>$902.008K</h4>
+                        <div class="box-footer">
+                          <span>My Balance</span>
+                          <span>+12.09%<img src="./assets/new-dashboard/img/icons/growth.svg"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="card  p-0">
+                        <div class="card-header d-flex justify-content-between">
+                          <div>
+                            <h5 class="card-title text-dark mb-0">Tasks Overview</h5>
+                          </div>
+                          <div class="d-sm-flex d-none align-items-center">
+                            <div class="btn-group d-none d-sm-flex" role="group"
+                              aria-label="radio toggle button group">
+                              <input type="radio" class="btn-check" name="btnradio" id="dailyRadio" checked
+                                autocomplete="off" />
+                              <label class="btn btn-outline-secondary" for="dailyRadio">1 Month</label>
+                              <input type="radio" class="btn-check" name="btnradio" id="monthlyRadio"
+                                autocomplete="off" />
+                              <label class="btn btn-outline-secondary" for="monthlyRadio">6 Month</label>
+                              <input type="radio" class="btn-check" name="btnradio" id="yearlyRadio"
+                                autocomplete="off" />
+                              <label class="btn btn-outline-secondary" for="yearlyRadio">1 year</label>
+                              <input type="radio" class="btn-check" name="btnradio" id="yearlyRadio"
+                                autocomplete="off" />
+                              <label class="btn btn-outline-secondary" for="yearlyRadio">All</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-100 p-4">
+                          <canvas id="overviewChart" class="w-100" style="display: block; box-sizing: border-box; height: 154px; width: 452px;" width="452" height="154"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" col-md-4 p-0">
+                      <!-- <div class="card blue-bg ">
+                        <div class="card-header d-flex justify-content-between">
+                          <div>
+                            <h5 class="card-title mb-0">Weekly Summary</h5>
+                          </div>
+                        </div>
+                        <div style="height: 200px;"></div>
+                      </div> -->
+                      <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                          <div>
+                            <h5 class="card-title mb-0 text-dark">Sales by Locations</h5>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="location">
+                            <div class="text-dark">
+                              <img src="./assets/new-dashboard/img/icons/flag.svg">United States
+                            </div>
+                            <div class="text-right text-dark"><span class="value">74%</span>
+                            </div>
+                          </div>
+                          <div class="location">
+                            <div class="text-dark">
+                              <img src="./assets/new-dashboard/img/icons/flag.svg">United States
+                            </div>
+                            <div class="text-right text-dark"><span class="value">74%</span>
+                            </div>
+                          </div>
+                          <div class="location">
+                            <div class="text-dark">
+                              <img src="./assets/new-dashboard/img/icons/flag.svg">United States
+                            </div>
+                            <div class="text-right text-dark"><span class="value">74%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="col-md-12 mt-16 pr-0">
+                      <div class="card">
+                        <h5 class="card-header">Latest Orders</h5>
+                        <div class="table-responsive text-nowrap">
+                          <table class="table">
+                            <tbody class="table-border-bottom-0">
+                              <tr>
+                                <td>
+                                  ODSP29475
+                                </td>
+                                <td>11 Sep 2022</td>
+                                <td>
+                                  11 Sep 2022
+                                </td>
+                                <td><img class="br-12" src="./assets/new-dashboard/img/icons/order-img.png">Magnetic Paper
+                                  Clip</td>
+                                <td>Bank Transfer</td>
+                                <td><span class="badge bg-label-success me-1">Paid</span></td>
+                                <td>
+                                  3
+                                </td>
+                                <td>
+                                  $293.01
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  ODSP29475
+                                </td>
+                                <td>11 Sep 2022</td>
+                                <td>
+                                  11 Sep 2022
+                                </td>
+                                <td><img class="br-12" src="./assets/new-dashboard/img/icons/order-img.png">Magnetic Paper
+                                  Clip</td>
+                                <td>Bank Transfer</td>
+                                <td><span class="badge bg-label-success me-1">Paid</span></td>
+                                <td>
+                                  3
+                                </td>
+                                <td>
+                                  $293.01
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  ODSP29475
+                                </td>
+                                <td>11 Sep 2022</td>
+                                <td>
+                                  11 Sep 2022
+                                </td>
+                                <td><img class="br-12" src="./assets/new-dashboard/img/icons/order-img.png">Magnetic Paper
+                                  Clip</td>
+                                <td>Bank Transfer</td>
+                                <td><span class="badge bg-label-success me-1">Paid</span></td>
+                                <td>
+                                  3
+                                </td>
+                                <td>
+                                  $293.01
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/jquery/jquery.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/popper/popper.js"></script>
+  <script src="./assets/new-dashboard/vendor/js/bootstrap.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/node-waves/node-waves.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/hammer/hammer.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/i18n/i18n.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/typeahead-js/typeahead.js"></script>
+  <script src="./assets/new-dashboard/vendor/js/menu.js"></script>
+  <script src="./assets/new-dashboard/vendor/libs/apex-charts/apexcharts.js"></script>
+  <script src="./assets/new-dashboard/js/main.js"></script>
+  <script src="./assets/new-dashboard/js/charts-apex.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <script>
+    $('html').removeClass('layout-menu-collapsed');
+    $('#expandMenuOnClick').on('click', function () {
+      $('#layout-menu.menu-double').removeClass('menu-double-99');
+      $('html').removeClass('layout-menu-collapsed');
+      $('#layout-navbar').addClass('double-menu-navbar');
+    });
+
+    $('#togglarIcon').click(function () {
+      $('#layout-navbar').removeClass('double-menu-navbar');
+      $('#layout-menu.menu-double').addClass('menu-double-99');
+    });
+
+
+    const overviewChart = document.getElementById("overviewChart");
+
+const overviewChart_1 = new Chart(overviewChart, {
+    type: "bar",
+    data: {
+        labels: ["7/12", "8/12", "9/12", "10/12", "11/12", "12/12", "13/12", "14/12", "15/12", "16/12",],
+        datasets: [
+            {
+                label: "# of Votes",
+                data: [50, 60, 80, 30, 40, 50, 90, 70, 10, 35],
+                borderWidth: 0,
+                backgroundColor: "#775da6",
+                barThickness: 8,
+                borderRadius: 30,
+                backgroundColor: "#775da6",
+            },
+        ],
+    },
+    options: {
+        responsive: true,
+
+        scales: {
+            x: {
+                // display: false,
+                grid: {
+                    drawOnChartArea: false,
+                },
+                ticks: {
+                    display: true,
+                },
+            },
+            y: {
+                // display: false,
+                grid: {
+                    drawOnChartArea: false,
+                },
+                ticks: {
+                    display: true,
+                },
+            },
+        },
+        plugins: {
+            legend: {
+                display: false,
+            },
+        },
+    },
+});
+  </script>
+</body>
+
+</html>

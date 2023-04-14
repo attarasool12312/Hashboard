@@ -3728,6 +3728,12 @@ ul.head-btn .slider-btn .btn.ouline-white {
 .section-panel .admin-wrapper .aside ul li.panel-dropdown .Setting-Dropdown-1.show {
   display: block;
 }
+.section-panel .admin-wrapper .aside ul li.panel-dropdown .Setting-Dropdown-2 {
+  display: none;
+}
+.section-panel .admin-wrapper .aside ul li.panel-dropdown .Setting-Dropdown-2.show {
+  display: block;
+}
 .section-panel .admin-wrapper .aside ul .like-pages h6 {
   padding-left: 11px;
 }
@@ -3864,6 +3870,12 @@ ul.head-btn .slider-btn .btn.ouline-white {
   display: none;
 }
 .section-panel .admin-wrapper .aside-1 ul li.panel-dropdown .Setting-Dropdown-1.show {
+  display: block;
+}
+.section-panel .admin-wrapper .aside-1 ul li.panel-dropdown .Setting-Dropdown-2 {
+  display: none;
+}
+.section-panel .admin-wrapper .aside-1 ul li.panel-dropdown .Setting-Dropdown-2.show {
   display: block;
 }
 .section-panel .admin-wrapper .aside-1 ul .like-pages h6 {
@@ -4028,6 +4040,7 @@ ul.head-btn .slider-btn .btn.ouline-white {
   min-width: 100px;
   text-align: left;
   position: relative;
+  width: 100%;
 }
 @media only screen and (max-width: 991.98px) {
   .select-dropdown .dropdown-toggle {

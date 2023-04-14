@@ -11731,10 +11731,10 @@ button.list-group-item-gray.active {
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-light {
+/* .bg-light {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
-}
+} */
 
 .bg-dark {
   --bs-bg-opacity: 1;
@@ -11766,15 +11766,15 @@ button.list-group-item-gray.active {
   background-color: transparent !important;
 }
 
-.bg-lighter {
+/* .bg-lighter {
   --bs-bg-opacity: 1;
   background-color: rgba(75, 70, 92, 0.03) !important;
-}
+} */
 
-.bg-lightest {
+/* .bg-lightest {
   --bs-bg-opacity: 1;
   background-color: rgba(75, 70, 92, 0.015) !important;
-}
+} */
 
 .bg-gradient {
   background-image: var(--bs-gradient) !important;

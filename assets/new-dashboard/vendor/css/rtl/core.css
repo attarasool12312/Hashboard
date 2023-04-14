@@ -2624,11 +2624,11 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.btn:hover {
+/* .btn:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
-}
+} */
 .btn-check + .btn:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
@@ -2747,7 +2747,7 @@ textarea.form-control-lg {
 .dropdown-toggle {
   white-space: nowrap;
 }
-.dropdown-toggle::after {
+/* .dropdown-toggle::after {
   display: inline-block;
   margin-left: 0.5em;
   vertical-align: middle;
@@ -2759,7 +2759,7 @@ textarea.form-control-lg {
   border-top: 0;
   border-left: 0;
   transform: rotate(45deg);
-}
+} */
 .dropdown-toggle:empty::after {
   margin-left: 0;
 }
@@ -6750,9 +6750,9 @@ a.invert-bg-dark:hover, a.invert-bg-dark:focus {
 .btn .ti {
   line-height: 0.9;
 }
-.btn:not([class*=btn-label-]):not([class*=btn-outline-]) {
+/* .btn:not([class*=btn-label-]):not([class*=btn-outline-]) {
   box-shadow: 0px 2px 4px rgba(165, 163, 174, 0.4);
-}
+} */
 .btn:not([class*=btn-]) {
   box-shadow: none !important;
 }
@@ -6800,11 +6800,11 @@ label.btn {
   background-color: #a8aaae;
   border-color: #a8aaae;
 }
-.btn-secondary:hover {
+/* .btn-secondary:hover {
   color: #fff !important;
   background-color: #97999d !important;
   border-color: #97999d !important;
-}
+} */
 .btn-check:focus + .btn-secondary, .btn-secondary:focus, .btn-secondary.focus {
   color: #fff;
   background-color: #97999d;
@@ -8202,9 +8202,9 @@ html:not([dir=rtl]) .input-group > .btn-group:last-child > .btn:not([class*=btn-
 .nav-tabs .nav-link {
   line-height: 1.375;
 }
-.nav-tabs .nav-link, .nav-tabs .nav-link.active {
+/* .nav-tabs .nav-link, .nav-tabs .nav-link.active {
   border-width: 0;
-}
+} */
 
 .nav-pills .nav-link.active {
   box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
@@ -12597,10 +12597,10 @@ html:not([dir=rtl]) .card .card-separator {
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-light {
+/* .bg-light {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
-}
+} */
 
 .bg-dark {
   --bs-bg-opacity: 1;

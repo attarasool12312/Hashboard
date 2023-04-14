@@ -7,14 +7,10 @@
   <meta charset="utf-8" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="" />
 
   <title>Hashboard</title>
 
-  <meta name="description" content="" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
@@ -33,20 +29,15 @@
   <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
   <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/node-waves/node-waves.css" />
   <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/typeahead-js/typeahead.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
-  <link rel="stylesheet"
-    href="./assets/new-dashboard/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/select2/select2.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/apex-charts/apex-charts.css" />
+  <link rel="stylesheet" href="./assets/css/main.css">
+
   <!-- Page CSS -->
 
   <!-- Helpers -->
   <script src="./assets/new-dashboard/vendor/js/helpers.js"></script>
-  <!-- <script src="./assets/new-dashboard/vendor/js/template-customizer.js"></script> -->
+  <!-- <script src="./assets/new-dashboard/vendor/js/template-customizer.js"></script>     -->
   <!-- <script src="./assets/new-dashboard/js/config.js"></script> -->
-
-  <link href="./assets/css/main.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -65,13 +56,13 @@
             </div>
           </div>
           <ul>
-            <li><a href="./new-index.html" class="panel_link active_panel">
-              <i class="icon icon-home"></i>
+            <li><a href="./new-index.html" class="panel_link">
+                <i class="icon icon-home"></i>
                 <span>Home</span></a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="icon icon-dashboard-1"></i>
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-dashboard-1"></i>
                 <span>Dashboard</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
@@ -80,7 +71,8 @@
                 <li><a class="dropdown-item panel_link " href="./new-templates.html"> <span>Templates</span></a>
                 </li>
                 <li><a class="dropdown-item panel_link " href="./new-background.html"> <span>Backgrounds</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./new-graphics.html"> <span>Graphics</span></a></li>
+                <li><a class="dropdown-item panel_link active_panel" href="./new-graphics.html">
+                    <span>Graphics</span></a></li>
               </ul>
             </li>
             <li><a href="./new-task-management.html" class="panel_link "><i class="icon icon-initiative-management"></i>
@@ -89,8 +81,8 @@
                   src="./assets/new-dashboard/img/icons/nav/widget.svg" />
                 <span>Widget</span></a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown-1" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown-1"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-settings"></i>
                 <span>Settings</span>
               </a>
@@ -145,57 +137,82 @@
           </nav>
         </div>
         <div class="container">
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <div class="second-menu" id="secondMenu">
+                <div class="search">
+                  <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text"
+                      class="form-control search-input border-0 tt-input" placeholder="Placeholder"
+                      aria-label="Placeholder" autocomplete="off" spellcheck="false" dir="auto"
+                      style="position: relative; vertical-align: top;">
+                    <pre aria-hidden="true"
+                      style="position: absolute; visibility: hidden; white-space: pre; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+                    <div class="tt-menu navbar-search-suggestion ps"
+                      style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+                      <div class="tt-dataset tt-dataset-pages"></div>
+                      <div class="tt-dataset tt-dataset-files"></div>
+                      <div class="tt-dataset tt-dataset-members"></div>
+                      <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                      </div>
+                      <div class="ps__rail-y" style="top: 0px; right: 4px;">
+                        <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                      </div>
+                    </div>
+                  </span>
+                </div>
+                <ul class="box-widget backgrounds">
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/1.png">Percentage circle</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/2.png">Stack Colum an...</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/3.png">Multi pointer ga..</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/4.png">Big screen title</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/5.png">Multi pointer ga..</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/6.png">Big screen title</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/7.png">Multi pointer ga..</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/8.png">Big screen title</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/9.png">Multi pointer ga..</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/10.png">Big screen title</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/11.png">Multi pointer ga..</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/12.png">Big screen title</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/13.png">Multi pointer ga..</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/14.png">Big screen title</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/15.png">Multi pointer ga..</a></li>
+                  <li><a href="#"><img src="./assets/new-dashboard/img/backgrounds-2/16.png">Big screen title</a></li>
 
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
   </section>
 
-  <!-- Core JS -->
-  <!-- build:js assets/vendor/js/core.js -->
-  
   <script src="./assets/new-dashboard/vendor/libs/jquery/jquery.js"></script>
   <script src="./assets/new-dashboard/vendor/libs/popper/popper.js"></script>
   <script src="./assets/new-dashboard/vendor/js/bootstrap.js"></script>
   <script src="./assets/new-dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
   <script src="./assets/new-dashboard/vendor/libs/node-waves/node-waves.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
   <script src="./assets/new-dashboard/vendor/libs/hammer/hammer.js"></script>
   <script src="./assets/new-dashboard/vendor/libs/i18n/i18n.js"></script>
   <script src="./assets/new-dashboard/vendor/libs/typeahead-js/typeahead.js"></script>
   <script src="./assets/new-dashboard/vendor/js/menu.js"></script>
-  <!-- endbuild -->
-
-  <!-- Vendors JS -->
-  <script src="./assets/new-dashboard/vendor/libs/moment/moment.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables/jquery.dataTables.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-responsive/datatables.responsive.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-buttons/datatables-buttons.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/jszip/jszip.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/pdfmake/pdfmake.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-buttons/buttons.html5.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-buttons/buttons.print.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/select2/select2.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/cleavejs/cleave.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/cleavejs/cleave-phone.js"></script>
-
-  <!-- Main JS -->
+  <script src="./assets/new-dashboard/vendor/libs/apex-charts/apexcharts.js"></script>
   <script src="./assets/new-dashboard/js/main.js"></script>
+  <script src="./assets/new-dashboard/js/charts-apex.js"></script>
   <script src="./assets/js/main.js"></script>
-  <!-- Page JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
   <script>
-    $("html").removeClass("layout-menu-collapsed");
-    $("#expandMenuOnClick").on("click", function () {
-      $("html").removeClass("layout-menu-collapsed");
+    $('html').removeClass('layout-menu-collapsed');
+    $('#expandMenuOnClick').on('click', function () {
+      $('#layout-menu.menu-double').removeClass('menu-double-99');
+      $('html').removeClass('layout-menu-collapsed');
+      $('#layout-navbar').addClass('double-menu-navbar');
+    });
+
+    $('#togglarIcon').click(function () {
+      $('#layout-navbar').removeClass('double-menu-navbar');
+      $('#layout-menu.menu-double').addClass('menu-double-99');
     });
   </script>
 </body>

@@ -44,48 +44,22 @@
           <ul>
             <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a></li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#"
-                id="Transactions-Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-sales-information"></i> <span>Sales</span>
-              </a>
-              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link "
-                    href="./fm-quote-history.html"><i class="icon icon-sales-information"></i><span>Quote</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><i class="icon icon-sales-information"></i><span>Invoices</span></a>
-              </ul>
-            </li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-project-supplies"></i> <span>Products</span>
-              </a>
-              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-products.html"><i class="icon icon-project-supplies"></i><span>Products</span></a>
-                </li>
-                <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><i class="icon icon-project-supplies"></i><span>Price Lists</span></a></li>
-              </ul>
-            </li>
-            <li><a href="./fm-purchase-order.html" class="panel_link "><i class="icon icon-project-supplies"></i>
-                <span>Purchase Orders</span></a></li>
+            <li><a href="./fm-invoices.html" class="panel_link "><i class="icon icon-sales-information"></i>
+                <span>Invoices page</span></a></li>
+            <li><a href="./fm-quote-history.html" class="panel_link "><i class="icon icon-sales-information"></i>
+                <span>Quotations page</span></a></li>
+            <li><a href="./fm-purchase-order.html" class="panel_link"><i class="icon icon-project-supplies"></i>
+                <span>Purchase Orders Page</span></a></li>
             <li><a href="./fm-expenses.html" class="panel_link active_panel"><i class="icon icon-expeness"></i>
                 <span>Expenses</span></a></li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-expenses"></i> <span>Payment</span>
-              </a>
-              <ul class="Sales-Dropdown" aria-labelledby="Sales-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><i class="icon icon-expenses"></i><span>Customer</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><i class="icon icon-expenses"></i><span>Supplier</span></a></li>
-              </ul>
-            </li>
-            <li><a href="./fm-project-suppliers.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a>
-            </li>
-            <li><a href="./fm-report.html" class="panel_link "><i class="icon icon-reports"></i>
+            <li><a href="./fm-customers-suppliers.html" class="panel_link"><i class="icon icon-expenses"></i>
+                <span>Customers & Suppliers</span></a></li>
+            <li><a href="./fm-project-suppliers.html" class="panel_link"><i class="icon icon-project-supplies"></i>
+                <span>Products & Services</span></a></li>
+            <li><a href="" class="panel_link"><i class="icon icon-transferred-projects"></i>
+                <span>Transferred Document</span></a></li>
+            <li><a href="./fm-report.html" class="panel_link"><i class="icon icon-reports"></i>
                 <span>Reports</span></a></li>
-            <li><a href="" class="panel_link "><i class="icon icon-transferred-projects"></i>
-                <span>Transferred documents</span></a></li>
             <li class="nav-item panel-dropdown">
               <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Setting-Dropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -96,8 +70,8 @@
                       class="icon icon-settings"></i> <span>Account</span></a></li>
                 <li><a class="dropdown-item panel_link " href="./fm-setting-general.html"><i
                       class="icon icon-settings"></i> <span>General</span></a></li>
-                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i>
-                    <span>Profile</span></a></li>
+                      <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i>
+                        <span>Subscription and billing “add it for all apps”</span></a></li>
               </ul>
             </li>
             <li><a href="./new-index.html" class="panel_link "><span>New Dashboard</span></a></li>
@@ -213,8 +187,8 @@
                     type="button" role="tab" aria-controls="Active" aria-selected="true">Active</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="Expenses-tab" data-bs-toggle="tab" data-bs-target="#Expenses" type="button"
-                    role="tab" aria-controls="Expenses" aria-selected="false">All Expenses</button>
+                  <button class="nav-link" id="Expenses-tab" data-bs-toggle="tab" data-bs-target="#Expenses"
+                    type="button" role="tab" aria-controls="Expenses" aria-selected="false">All Expenses</button>
                 </li>
               </ul>
             </div>
@@ -242,6 +216,8 @@
                         <th scope="col">Paid Through</th>
                         <th scope="col">Amount</th>
                         <th scope="col">Created date</th>
+                        <th scope="col">Generate XML</th>
+                        <th scope="col">Invoice QR</th>
                         <th scope="col"><a href="" class="fs-3 text-decoration-none text-fill" data-bs-toggle="modal"
                             data-bs-target="#columnModal">+</a></th>
                       </tr>
@@ -266,6 +242,8 @@
                         <td data-label="Paid Through">Petty Cash</td>
                         <td data-label="Amount">$20.00</td>
                         <td data-label="Created date">Advance</td>
+                        <td data-label="Generate XML"><a href=""><i class="icon icon-download"></i></a></td>
+                        <td data-label="Invoice QR"><a href=""><i class="icon icon-qrcode"></i></a></td>
                         <td></td>
                       </tr>
                       <tr class="cursor-pointer" onclick="window.location.href='./fm-expenses-create.html'">
@@ -287,6 +265,8 @@
                         <td data-label="Paid Through">Petty Cash</td>
                         <td data-label="Amount">$1.200.00</td>
                         <td data-label="Created date">#INV-0001</td>
+                        <td data-label="Generate XML"><a href=""><i class="icon icon-download"></i></a></td>
+                        <td data-label="Invoice QR"><a href=""><i class="icon icon-qrcode"></i></a></td>
                         <td></td>
                       </tr>
                       <tr class="cursor-pointer" onclick="window.location.href='./fm-expenses-create.html'">
@@ -308,6 +288,8 @@
                         <td data-label="Paid Through">Bank Account</td>
                         <td data-label="Amount">$400.00</td>
                         <td data-label="Created date">#INV-0002</td>
+                        <td data-label="Generate XML"><a href=""><i class="icon icon-download"></i></a></td>
+                        <td data-label="Invoice QR"><a href=""><i class="icon icon-qrcode"></i></a></td>
                         <td></td>
                       </tr>
                       <tr class="cursor-pointer" onclick="window.location.href='./fm-expenses-create.html'">
@@ -329,6 +311,8 @@
                         <td data-label="Paid Through">Bank Account</td>
                         <td data-label="Amount">$50.00</td>
                         <td data-label="Created date">Advance</td>
+                        <td data-label="Generate XML"><a href=""><i class="icon icon-download"></i></a></td>
+                        <td data-label="Invoice QR"><a href=""><i class="icon icon-qrcode"></i></a></td>
                         <td></td>
                       </tr>
                       <tr class="cursor-pointer" onclick="window.location.href='./fm-expenses-create.html'">
@@ -350,6 +334,8 @@
                         <td data-label="Paid Through">Bank Account</td>
                         <td data-label="Amount">$17.00</td>
                         <td data-label="Created date">Advance</td>
+                        <td data-label="Generate XML"><a href=""><i class="icon icon-download"></i></a></td>
+                        <td data-label="Invoice QR"><a href=""><i class="icon icon-qrcode"></i></a></td>
                         <td></td>
                       </tr>
                       <tr class="cursor-pointer" onclick="window.location.href='./fm-expenses-create.html'">
@@ -371,6 +357,8 @@
                         <td data-label="Paid Through">Refund</td>
                         <td data-label="Amount">$24.00</td>
                         <td data-label="Created date">Advance</td>
+                        <td data-label="Generate XML"><a href=""><i class="icon icon-download"></i></a></td>
+                        <td data-label="Invoice QR"><a href=""><i class="icon icon-qrcode"></i></a></td>
                         <td></td>
                       </tr>
                       <tr class="cursor-pointer" onclick="window.location.href='./fm-expenses-create.html'">
@@ -392,6 +380,8 @@
                         <td data-label="Paid Through">Refund</td>
                         <td data-label="Amount">$224.00</td>
                         <td data-label="Created date">Advance</td>
+                        <td data-label="Generate XML"><a href=""><i class="icon icon-download"></i></a></td>
+                        <td data-label="Invoice QR"><a href=""><i class="icon icon-qrcode"></i></a></td>
                         <td></td>
                       </tr>
                     </tbody>

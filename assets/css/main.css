@@ -453,6 +453,13 @@ i[class*=h-icon-] {
   height: 24px;
 }
 
+.icon-qrcode {
+  display: inline-block;
+  background-image: url("../images/icons/qrcode.svg");
+  width: 17px;
+  height: 17px;
+}
+
 .icon-edit {
   display: inline-block;
   background-image: url("../images/icons/edit.svg");
@@ -1588,6 +1595,7 @@ body {
   color: #202020 !important;
   font-size: 14px;
   background-color: #F2F2F2;
+  margin: 0;
 }
 
 h1,

@@ -44,45 +44,22 @@
           <ul>
             <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a></li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Transactions-Dropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-sales-information"></i> <span>Sales</span>
-              </a>
-              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-quote-history.html"><i class="icon icon-sales-information"></i><span>Quote</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><i class="icon icon-sales-information"></i><span>Invoices</span></a>
-              </ul>
-            </li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-project-supplies"></i> <span>Products</span>
-              </a>
-              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-products.html"><i class="icon icon-project-supplies"></i><span>Products</span></a>
-                </li>
-                <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><i class="icon icon-project-supplies"></i><span>Price Lists</span></a></li>
-              </ul>
-            </li>
-            <li><a href="./fm-purchase-order.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Purchase Orders</span></a></li>
+            <li><a href="./fm-invoices.html" class="panel_link active_panel"><i class="icon icon-sales-information"></i>
+                <span>Invoices page</span></a></li>
+            <li><a href="./fm-quote-history.html" class="panel_link "><i class="icon icon-sales-information"></i>
+                <span>Quotations page</span></a></li>
+            <li><a href="./fm-purchase-order.html" class="panel_link"><i class="icon icon-project-supplies"></i>
+                <span>Purchase Orders Page</span></a></li>
             <li><a href="./fm-expenses.html" class="panel_link "><i class="icon icon-expeness"></i>
-              <span>Expenses</span></a></li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-expenses"></i> <span>Payment</span>
-              </a>
-              <ul class="Sales-Dropdown" aria-labelledby="Sales-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><i class="icon icon-expenses"></i><span>Customer</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><i class="icon icon-expenses"></i><span>Supplier</span></a></li>
-              </ul>
-            </li>
-            <li><a href="./fm-project-suppliers.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a></li>
-            <li><a href="./fm-report.html" class="panel_link "><i class="icon icon-reports"></i>
+                <span>Expenses</span></a></li>
+            <li><a href="./fm-customers-suppliers.html" class="panel_link"><i class="icon icon-expenses"></i>
+                <span>Customers & Suppliers</span></a></li>
+            <li><a href="./fm-project-suppliers.html" class="panel_link"><i class="icon icon-project-supplies"></i>
+                <span>Products & Services</span></a></li>
+            <li><a href="" class="panel_link"><i class="icon icon-transferred-projects"></i>
+                <span>Transferred Document</span></a></li>
+            <li><a href="./fm-report.html" class="panel_link"><i class="icon icon-reports"></i>
                 <span>Reports</span></a></li>
-            <li><a href="" class="panel_link "><i class="icon icon-transferred-projects"></i>
-                <span>Transferred documents</span></a></li>
             <li class="nav-item panel-dropdown">
               <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Setting-Dropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -93,8 +70,8 @@
                       class="icon icon-settings"></i> <span>Account</span></a></li>
                 <li><a class="dropdown-item panel_link " href="./fm-setting-general.html"><i
                       class="icon icon-settings"></i> <span>General</span></a></li>
-                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i>
-                    <span>Profile</span></a></li>
+                      <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i>
+                        <span>Subscription and billing “add it for all apps”</span></a></li>
               </ul>
             </li>
             <li><a href="./new-index.html" class="panel_link "><span>New Dashboard</span></a></li>
@@ -228,38 +205,58 @@
                 <div class="row mt-3 border-top border-bottom">
                   <div class="col-md-6 py-3">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="text-light-gray">Bill to</p>
+                      <p class="text-light-gray">Customer</p>
                       <p>Head Office</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Ship to</p>
+                      <p class="text-light-gray">Invoice number</p>
                       <p>Head Office</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Ship from</p>
+                      <p class="text-light-gray">Project name</p>
                       <p>Primary Location</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Issue date</p>
+                      <p class="text-light-gray">Invoice Type</p>
                       <p>Feb 8th 2021</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Currency</p>
+                      <p>USD ($)</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Price Unit</p>
+                      <p>Sell</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Total are</p>
+                      <p>Tax Exclucive</p>
                     </div>
                   </div>
                   <div class="col-md-6 py-3 border-start border-sm-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="text-light-gray">Shipment date</p>
+                      <p class="text-light-gray">Add Attachment</p>
                       <p>Feb 10th 2021</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Email</p>
-                      <p>hello@designspace.io</p>
+                      <p class="text-light-gray">Issue date</p>
+                      <p>22-12-2022</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Currency</p>
-                      <p>US Dollar (USD)</p>
+                      <p class="text-light-gray">Payment Due</p>
+                      <p>22-12-2022</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Totals are</p>
+                      <p class="text-light-gray">Reference</p>
                       <p>Tax Exclusive</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Contact</p>
+                      <p>Tax Exclusive</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Payment Memethod</p>
+                      <p>Tax Exclucive</p>
                     </div>
                   </div>
                 </div>

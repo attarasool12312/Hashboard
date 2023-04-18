@@ -44,45 +44,22 @@
           <ul>
             <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a></li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-sales-information"></i> <span>Sales</span>
-              </a>
-              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-quote-history.html"><i class="icon icon-sales-information"></i><span>Quote</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-invoices.html"><i class="icon icon-sales-information"></i><span>Invoices</span></a>
-              </ul>
-            </li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-project-supplies"></i> <span>Products</span>
-              </a>
-              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-products.html"><i class="icon icon-project-supplies"></i><span>Products</span></a>
-                </li>
-                <li><a class="dropdown-item panel_link " href="./fm-price-list.html"><i class="icon icon-project-supplies"></i><span>Price Lists</span></a></li>
-              </ul>
-            </li>
-            <li><a href="./fm-purchase-order.html" class="panel_link active_panel"><i class="icon icon-project-supplies"></i> <span>Purchase Orders</span></a></li>
+            <li><a href="./fm-invoices.html" class="panel_link "><i class="icon icon-sales-information"></i>
+                <span>Invoices page</span></a></li>
+            <li><a href="./fm-quote-history.html" class="panel_link "><i class="icon icon-sales-information"></i>
+                <span>Quotations page</span></a></li>
+            <li><a href="./fm-purchase-order.html" class="panel_link active_panel"><i class="icon icon-project-supplies"></i>
+                <span>Purchase Orders Page</span></a></li>
             <li><a href="./fm-expenses.html" class="panel_link "><i class="icon icon-expeness"></i>
-              <span>Expenses</span></a></li>
-            <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-expenses"></i> <span>Payment</span>
-              </a>
-              <ul class="Sales-Dropdown" aria-labelledby="Sales-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-payment-customer.html"><i class="icon icon-expenses"></i><span>Customer</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-payment-supplier.html"><i class="icon icon-expenses"></i><span>Supplier</span></a></li>
-              </ul>
-            </li>
-            <li><a href="./fm-project-suppliers.html" class="panel_link "><i class="icon icon-project-supplies"></i> <span>Projects & Suppliers</a></li>
-            <li><a href="./fm-report.html" class="panel_link "><i class="icon icon-reports"></i>
+                <span>Expenses</span></a></li>
+            <li><a href="./fm-customers-suppliers.html" class="panel_link"><i class="icon icon-expenses"></i>
+                <span>Customers & Suppliers</span></a></li>
+            <li><a href="./fm-project-suppliers.html" class="panel_link"><i class="icon icon-project-supplies"></i>
+                <span>Products & Services</span></a></li>
+            <li><a href="" class="panel_link"><i class="icon icon-transferred-projects"></i>
+                <span>Transferred Document</span></a></li>
+            <li><a href="./fm-report.html" class="panel_link"><i class="icon icon-reports"></i>
                 <span>Reports</span></a></li>
-            <li><a href="" class="panel_link "><i class="icon icon-transferred-projects"></i>
-                <span>Transferred documents</span></a></li>
             <li class="nav-item panel-dropdown">
               <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Setting-Dropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -93,8 +70,8 @@
                       class="icon icon-settings"></i> <span>Account</span></a></li>
                 <li><a class="dropdown-item panel_link " href="./fm-setting-general.html"><i
                       class="icon icon-settings"></i> <span>General</span></a></li>
-                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i>
-                    <span>Profile</span></a></li>
+                      <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i>
+                        <span>Subscription and billing “add it for all apps”</span></a></li>
               </ul>
             </li>
             <li><a href="./new-index.html" class="panel_link "><span>New Dashboard</span></a></li>
@@ -189,7 +166,7 @@
             <div class="heading">
               <h3><span class="text-light-gray">Purchase Orders/</span> #PO-0002</h3>
             </div>
-              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2">Import via CSV</button>
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2">Print via CSV</button>
           </div>
             <div class="col-12">
               <div class="chart">
@@ -229,6 +206,10 @@
                         <option value="Punjabi">Limited</option>
                       </select>
                     </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Delivery date</p>
+                      <input type="date" name="name" id="name" placeholder="Type item name" class="d-block w-50 border border-2 rounded px-2 py-2">
+                    </div>
                   </div>
                   <div class="col-md-4 py-3 border-start border-end border-sm-none">
                     <div class="d-flex align-items-center justify-content-between">
@@ -244,8 +225,19 @@
                       <input type="text" name="name" id="name" placeholder="All" class="d-block w-50 border border-2 rounded px-2 py-2">
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Email</p>
-                      <input type="email" name="name" id="name" placeholder=" hello@designspace.io " class="d-block w-50 border border-2 rounded px-2 py-2">
+                      <p class="text-light-gray">Contact</p>
+                      <div class="dropdown select-dropdown">
+                        <button class="btn dropdown-toggle pe-5 w-100 border border-2" type="button"
+                          id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          New Contact
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="" data-bs-toggle="modal"
+                              data-bs-target="#addContactModal">Add new contact</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                   <div class="col-md-4 py-3">
@@ -374,8 +366,16 @@
                   <div class="col-md-6">
                     <textarea name="text" id="text" cols="30" rows="3" class="w-100 border border-2 rounded px-3 py-2 text-light-gray" placeholder="Normal"></textarea>
                     <div class="d-flex align-items-center mt-3">
-                      <p class="text-light-gray me-3">Tags</p>
-                      <input type="text" name="name" id="name" placeholder="Enter a Full Name" class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <p class="text-light-gray me-3">Add Address</p>
+                      <input type="text" name="name" id="name" placeholder="Enter a Address" class="d-block w-100 border border-2 rounded px-4 py-2">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mt-3 flex-colume-sm">
+                      <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 me-md-2 px-4">Save
+                      </button>
+                      <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 me-md-2 px-4">Submit
+                      </button>
+                      <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 me-md-2 px-4" data-bs-toggle="modal" data-bs-target="#getApprovalModal">Git Approval
+                      </button>
                     </div>
                   </div>
                   <div class="col-md-6 mt-5 mt-md-0">
@@ -700,6 +700,58 @@
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Update</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="addContactModal" tabindex="-1" aria-labelledby="addContactLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addContactLabel">Add New Contact</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="name" class="fw-bold mt-3 mb-2">Contact Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter a Contact Name"
+              class="d-block w-100 border border-2 rounded px-4 py-2">
+            <label for="name" class="fw-bold mt-3 mb-2">Email</label>
+            <input type="email" name="name" id="name" placeholder="Enter a Email"
+              class="d-block w-100 border border-2 rounded px-4 py-2">
+            <label for="name" class="fw-bold mt-3 mb-2">Address (Country -  City)</label>
+            <input type="text" name="name" id="name" placeholder="Enter a Address"
+              class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="name" class="fw-bold mt-3 mb-2">Phone</label>
+              <input type="tel" name="name" id="name" placeholder="Enter a Phone"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary text-uppercase">Save</button>
+            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="getApprovalModal" tabindex="-1" aria-labelledby="getApprovalModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="getApprovalModalLabel">Get Approval</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <select name="Role" id="Role"
+            class="d-block border border-2 rounded px-2 py-2 text-light-gray w-100">
+            <option value="Manager">Select User</option>
+            <option value="Manager">Admin</option>
+            <option value="Urdu">Extended</option>
+            <option value="Hindi">Standard</option>
+            <option value="Punjabi">Limited</option>
+          </select>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary text-uppercase">Save</button>
+            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>

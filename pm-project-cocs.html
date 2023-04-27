@@ -95,7 +95,6 @@
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
                 <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i class="icon icon-settings"></i> <span>Account</span></a></li>
                 <li><a class="dropdown-item panel_link" href="./pm-setting-general.html"><i class="icon icon-settings"></i> <span>General</span></a></li>
-                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i> <span>Profile</span></a></li>
               </ul>
             </li>
             <li><a href="./crm-overview-index.html"><span>Move to CRM</span></a></li>
@@ -186,7 +185,7 @@
               <h1>Project COCs</h1>
             </div>
             <div class="page-sales-btn">
-              <button class="btn btn-empty bg-white" data-bs-toggle="modal" data-bs-target="#posModal">Add New COC</button>
+              <button class="btn btn-empty bg-white" data-bs-toggle="modal" data-bs-target="#cocModal">Add New COC</button>
               <button type="button" class="btn ouline-white btn-fill ms-md-3" data-bs-toggle="modal"
                 data-bs-target="#businessForm">Transfer</button>
               <button class="btn btn-fill">Export</button>
@@ -538,146 +537,124 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="posModal" tabindex="-1" aria-labelledby="posModalLabel" aria-hidden="true">
+    <div class="modal fade" id="cocModal" tabindex="-1" aria-labelledby="cocModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="posModalLabel">Add New COC</h5>
+            <h5 class="modal-title" id="cocModalLabel">Add New COC</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body upload-files">
             <form>
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">COC reference</label>
-                  <input type="text" placeholder="COC-0-00001" class="d-block border border-2 rounded w-100 py-2 px-3">
-                </div>
-              </div>
-              <label for="full-name" class="fw-bold mb-2 mt-4">Select Customer</label>
+              <label for="full-name" class="fw-bold mb-2 mt-4">Customer name</label>
               <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                <option value="Member">Risks</option>
+                <option value="Member">Please insert customer name</option>
                 <option value="saab">Saab</option>
                 <option value="opel">Opel</option>
                 <option value="audi">Audi</option>
               </select>
-              <label for="full-name" class="fw-bold mb-2 mt-4">Select Project</label>
+              <label for="full-name" class="fw-bold mb-2 mt-4">Project name</label>
               <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
                 <option value="Member">Please insert Project name</option>
                 <option value="saab">Saab</option>
                 <option value="opel">Opel</option>
                 <option value="audi">Audi</option>
               </select>
+              <label for="full-name" class="fw-bold mb-2 mt-4">Project ID</label>
+              <input type="text" placeholder="Please insert Project ID" class="d-block border border-2 rounded w-100 py-2 px-3">
               <label for="full-name" class="fw-bold mb-2 mt-4">Project Manager</label>
               <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                <option value="Member">Please insert Project ID</option>
+                <option value="Member">Select Project manager</option>
                 <option value="saab">Saab</option>
                 <option value="opel">Opel</option>
                 <option value="audi">Audi</option>
               </select>
               <div class="row">
                 <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">COC Amount</label>
-                  <input type="text" placeholder="Amount" class="d-block border border-2 rounded w-100 py-2 px-3">
+                  <label for="full-name" class="fw-bold mb-2 mt-4">Issue date</label>
+                  <input type="date" placeholder="Please select date" class="d-block border border-2 rounded w-100 py-2 px-3">                  
                 </div>
                 <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">Select Currency</label>
+                  <label for="full-name" class="fw-bold mb-2 mt-4">Payment date</label>
+                  <input type="text" placeholder="Please select date" class="d-block border border-2 rounded w-100 py-2 px-3">
+                </div>
+              </div>
+              <label for="full-name" class="fw-bold mb-2 mt-4">Item 1</label>
+              <input type="text" placeholder="Type Item 1" class="d-block border border-2 rounded w-100 py-2 px-3">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="full-name" class="fw-bold mb-2 mt-4">Unit Price</label>
+                  <input type="text" placeholder="Unit Price" class="d-block border border-2 rounded w-100 py-2 px-3">
+                  <label for="full-name" class="fw-bold mb-2 mt-4">Quantity</label>
+                  <input type="text" placeholder="Quantity" class="d-block border border-2 rounded w-100 py-2 px-3">
+                </div>
+                <div class="col-md-6">
+                  <label for="full-name" class="fw-bold mb-2 mt-4">Currency</label>
                   <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                    <option value="Member">Currency</option>
+                    <option value="Member">Unit Price</option>
                     <option value="saab">Saab</option>
                     <option value="opel">Opel</option>
                     <option value="audi">Audi</option>
                   </select>
                 </div>
               </div>
-              <label for="full-name" class="fw-bold mb-2 mt-4">Scope</label>
-              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                <option value="Member">Select scope</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <div class="uploadfile">
-                <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
-                <input id="fileupload" type="file" class="fileupload">
+              <div class="upload-files">
+                <div class="uploadfile">
+                  <div class="text w-fit"><label for="fileupload" class="cursor-pointer"><i class="icon icon-blue-added-button"></i> Add Item</label></div>
+                  <input id="fileupload" type="file" class="fileupload">
+                </div>
               </div>
-              <div class="col-md-6">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Date</label>
-                <input type="date" placeholder="select date" class="d-block border border-2 rounded w-100 py-2 px-3">
+              <a href="" class="text-fill d-block text-decoration-none text-small">+ upload attachments</a>
+              <div class="form-check mt-3">
+                <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Transfer To Finance
+                </label>
               </div>
             </form>
           </div>
           <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-fill text-uppercase">Submit</button>
+            <button type="button" class="btn btn-fill text-uppercase">Add</button>
             <button type="button" class="btn btn-secondary text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal right fade" id="businessForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+    <div class="modal fade" id="businessForm" tabindex="-1" aria-labelledby="businessFormModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4>Transfer as Project</h4>
+            <h5 class="modal-title" id="businessFormModalLabel">Transfer COC</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body bg-light customer-add-form upload-files">
+          <div class="modal-body upload-files">
             <form>
-              <label for="Customer-name" class="d-block mb-2">Customer Name</label>
-              <select id="cars" name="carlist" form="carform" class="form-input w-100">
-                <option value="volvo">Please insert customer name</option>
+              <label for="full-name" class="fw-bold mb-2 mt-4">Select COC</label>
+              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
+                <option value="Member">Select COC</option>
                 <option value="saab">Saab</option>
                 <option value="opel">Opel</option>
                 <option value="audi">Audi</option>
               </select>
-              <label for="Customer-name" class="d-block mb-2">Deal ID</label>
-              <select id="cars" name="carlist" form="carform" class="form-input w-100">
-                <option value="volvo">Please insert Project name</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <label for="Customer-name" class="d-block mb-2">Account Manager</label>
-              <select id="cars" name="carlist" form="carform" class="form-input w-100">
-                <option value="volvo">Please insert Project ID</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="Project-name" class="d-block my-2">Deal Value</label>
-                  <input type="text" placeholder="Value" class="form-input w-100">
-                  <label for="Project-name" class="d-block my-2">Margin</label>
-                  <input type="text" placeholder="Margin" class="form-input w-100">
-                </div>
-                <div class="col-md-6">
-                  <label for="Customer-name" class="d-block mb-2">Currency</label>
-                  <select id="cars" name="carlist" form="carform" class="form-input w-100">
-                    <option value="volvo">Currency</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                  <label for="Customer-name" class="d-block mb-2">Formula</label>
-                  <select id="cars" name="carlist" form="carform" class="form-input w-100">
-                    <option value="volvo">Formula</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                  </select>
+              <label for="full-name" class="fw-bold mb-2 mt-4">Project name</label>
+              <input type="text" placeholder="Please insert Project name" class="d-block border border-2 rounded w-100 py-2 px-3">
+              <label for="full-name" class="fw-bold mb-2 mt-4">Project ID</label>
+              <input type="text" placeholder="Please insert Project ID" class="d-block border border-2 rounded w-100 py-2 px-3">
+              <div class="upload-files">
+                <div class="uploadfile">
+                  <div class="text w-fit"><label for="fileupload" class="cursor-pointer"><i class="icon icon-blue-added-button"></i> Attach file</label></div>
+                  <input id="fileupload" type="file" class="fileupload">
                 </div>
               </div>
-              <label for="Project-name" class="d-block my-2">Comment</label>
-              <input type="text" placeholder="Comment" class="form-input w-100">
-              <div class="uploadfile mt-3">
-                <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
-                <input id="fileupload" type="file" class="fileupload">
+              <div class="d-flex">
+                <a href="" class="d-block text-decoration-none text-small text-dark">Copy of COC</a>
+                <a href="" class="text-fill d-block text-decoration-none text-small ms-3">Download</a>
               </div>
             </form>
           </div>
           <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-primary px-4 py-2 text-uppercase">Transfer</button>
-            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-fill text-uppercase">Transfer</button>
+            <button type="button" class="btn btn-secondary text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
@@ -696,16 +673,10 @@ aria-labelledby="interviewLabel" aria-hidden="true">
           <button class="nav-link text-uppercase active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="false">general</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link text-uppercase" id="Setting-tab" data-bs-toggle="tab" data-bs-target="#Setting" type="button" role="tab" aria-controls="Setting" aria-selected="false">Access Setting</button>
-        </li>
-        <li class="nav-item" role="presentation">
           <button class="nav-link text-uppercase" id="security-tab" data-bs-toggle="tab" data-bs-target="#security" type="button" role="tab" aria-controls="security" aria-selected="false">security</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link text-uppercase" id="billing-tab" data-bs-toggle="tab" data-bs-target="#billing" type="button" role="tab" aria-controls="billing" aria-selected="false">billing</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link text-uppercase" id="notifications-tab" data-bs-toggle="tab" data-bs-target="#notifications" type="button" role="tab" aria-controls="notifications" aria-selected="false">notifications</button>
         </li>
       </ul>
       <div class="tab-content">
@@ -750,49 +721,6 @@ aria-labelledby="interviewLabel" aria-hidden="true">
                 <input type="tel" name="phone" id="phone" placeholder="Enter a Phone Number" class="d-block w-100 border border-2 rounded px-4 py-2">
               </div>
             </div>
-          </form>
-        </div>
-        <div class="tab-pane py-4" id="Setting" role="tabpanel" aria-labelledby="Setting-tab">
-          <form>
-            <div class="row">
-              <div class="col-md-6">
-                <label for="account" class="fw-bold mt-3 mb-2">Account</label>
-                <input type="text" name="account" id="account" placeholder="Enter a account" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <label for="account" class="fw-bold mt-3 mb-2">Account</label>
-                <input type="text" name="account" id="account" placeholder="Enter a account" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <label for="account" class="fw-bold mt-3 mb-2">Account</label>
-                <input type="text" name="account" id="account" placeholder="Enter a account" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <label for="account" class="fw-bold mt-3 mb-2">Account</label>
-                <input type="text" name="account" id="account" placeholder="Enter a account" class="d-block w-100 border border-2 rounded px-4 py-2">                      
-              </div>
-              <div class="col-md-6">
-                <label for="access" class="fw-bold mt-3 mb-2">Access Type</label>
-                <select name="access" id="access" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  <option value="User">User</option>
-                  <option value="Admin">Admin</option>
-                  <option value="Admin +">Admin +</option>
-                </select>
-                <label for="access" class="fw-bold mt-3 mb-2">Access Type</label>
-                <select name="access" id="access" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  <option value="User">User</option>
-                  <option value="Admin">Admin</option>
-                  <option value="Admin +">Admin +</option>
-                </select>
-                <label for="access" class="fw-bold mt-3 mb-2">Access Type</label>
-                <select name="access" id="access" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  <option value="User">User</option>
-                  <option value="Admin">Admin</option>
-                  <option value="Admin +">Admin +</option>
-                </select>
-                <label for="access" class="fw-bold mt-3 mb-2">Access Type</label>
-                <select name="access" id="access" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  <option value="User">User</option>
-                  <option value="Admin">Admin</option>
-                  <option value="Admin +">Admin +</option>
-                </select>
-              </div>
-            </div>
-            <a href="#" class="text-decoration-none text-uppercase mt-3 d-block">+ ADD MORE</a>
           </form>
         </div>
         <div class="tab-pane py-4" id="security" role="tabpanel" aria-labelledby="security-tab">
@@ -847,10 +775,6 @@ aria-labelledby="interviewLabel" aria-hidden="true">
               <a href="#" class="text-decoration-none ms-3">Update</a>
             </div>
           </div>
-          <div class="d-flex align-items-center justify-content-between border-bottom py-3">
-            <p>License keys</p>
-            <a href="#" class="text-decoration-none ms-3">Redeem a license key</a>
-          </div>
           <h5 class="fw-600 my-3">Payment History</h5>
           <div class="border rounded">
             <div class="d-flex align-items-center justify-content-between border-bottom p-3">
@@ -884,36 +808,6 @@ aria-labelledby="interviewLabel" aria-hidden="true">
               </div>
             </div>
           </div>
-        </div>
-        <div class="tab-pane py-4" id="notifications" role="tabpanel" aria-labelledby="notifications-tab">
-          <div class="d-flex align-items-center justify-content-between py-2">
-            <div>
-              <h6 class="fw-600">New Lead</h6>
-              <p class="text-small">Receive a notification for new leads</p>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckChecked" checked>
-            </div>
-          </div>
-          <div class="d-flex align-items-center justify-content-between py-2">
-            <div>
-              <h6 class="fw-600">New Customer</h6>
-              <p class="text-small">Receive a notification for new customer</p>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckChecked">
-            </div>
-          </div>
-          <div class="d-flex align-items-center justify-content-between py-2">
-            <div>
-              <h6 class="fw-600">New Project</h6>
-              <p class="text-small">Receive a notification for new project</p>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckChecked" checked>
-            </div>
-          </div>
-          <h6 class="mt-4 fw-600">More Options +</h6>
         </div>
       </div>
     </div>

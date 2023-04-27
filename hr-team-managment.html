@@ -68,7 +68,6 @@
                   <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
                     <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i class="icon icon-bar-document"></i> <span>Account</span></a></li>
                     <li><a class="dropdown-item panel_link" href="./hr-setting-general.html"><i class="icon icon-bar-document"></i> <span>General</span></a></li>
-                    <li><a class="dropdown-item panel_link " href=""><i class="icon icon-bar-document"></i> <span>Profile</span></a></li>
                   </ul>
                 </li>
             <li><a href="./job-dashboard.html" class=""><span>Move to Job</span></a></li>
@@ -1100,16 +1099,10 @@ aria-labelledby="interviewLabel" aria-hidden="true">
           <button class="nav-link text-uppercase active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="false">general</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link text-uppercase" id="Setting-tab" data-bs-toggle="tab" data-bs-target="#Setting" type="button" role="tab" aria-controls="Setting" aria-selected="false">Access Setting</button>
-        </li>
-        <li class="nav-item" role="presentation">
           <button class="nav-link text-uppercase" id="security-tab" data-bs-toggle="tab" data-bs-target="#security" type="button" role="tab" aria-controls="security" aria-selected="false">security</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link text-uppercase" id="billing-tab" data-bs-toggle="tab" data-bs-target="#billing" type="button" role="tab" aria-controls="billing" aria-selected="false">billing</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link text-uppercase" id="notifications-tab" data-bs-toggle="tab" data-bs-target="#notifications" type="button" role="tab" aria-controls="notifications" aria-selected="false">notifications</button>
         </li>
       </ul>
       <div class="tab-content">
@@ -1154,49 +1147,6 @@ aria-labelledby="interviewLabel" aria-hidden="true">
                 <input type="tel" name="phone" id="phone" placeholder="Enter a Phone Number" class="d-block w-100 border border-2 rounded px-4 py-2">
               </div>
             </div>
-          </form>
-        </div>
-        <div class="tab-pane py-4" id="Setting" role="tabpanel" aria-labelledby="Setting-tab">
-          <form>
-            <div class="row">
-              <div class="col-md-6">
-                <label for="account" class="fw-bold mt-3 mb-2">Account</label>
-                <input type="text" name="account" id="account" placeholder="Enter a account" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <label for="account" class="fw-bold mt-3 mb-2">Account</label>
-                <input type="text" name="account" id="account" placeholder="Enter a account" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <label for="account" class="fw-bold mt-3 mb-2">Account</label>
-                <input type="text" name="account" id="account" placeholder="Enter a account" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <label for="account" class="fw-bold mt-3 mb-2">Account</label>
-                <input type="text" name="account" id="account" placeholder="Enter a account" class="d-block w-100 border border-2 rounded px-4 py-2">                      
-              </div>
-              <div class="col-md-6">
-                <label for="access" class="fw-bold mt-3 mb-2">Access Type</label>
-                <select name="access" id="access" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  <option value="User">User</option>
-                  <option value="Admin">Admin</option>
-                  <option value="Admin +">Admin +</option>
-                </select>
-                <label for="access" class="fw-bold mt-3 mb-2">Access Type</label>
-                <select name="access" id="access" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  <option value="User">User</option>
-                  <option value="Admin">Admin</option>
-                  <option value="Admin +">Admin +</option>
-                </select>
-                <label for="access" class="fw-bold mt-3 mb-2">Access Type</label>
-                <select name="access" id="access" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  <option value="User">User</option>
-                  <option value="Admin">Admin</option>
-                  <option value="Admin +">Admin +</option>
-                </select>
-                <label for="access" class="fw-bold mt-3 mb-2">Access Type</label>
-                <select name="access" id="access" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  <option value="User">User</option>
-                  <option value="Admin">Admin</option>
-                  <option value="Admin +">Admin +</option>
-                </select>
-              </div>
-            </div>
-            <a href="#" class="text-decoration-none text-uppercase mt-3 d-block">+ ADD MORE</a>
           </form>
         </div>
         <div class="tab-pane py-4" id="security" role="tabpanel" aria-labelledby="security-tab">
@@ -1251,10 +1201,6 @@ aria-labelledby="interviewLabel" aria-hidden="true">
               <a href="#" class="text-decoration-none ms-3">Update</a>
             </div>
           </div>
-          <div class="d-flex align-items-center justify-content-between border-bottom py-3">
-            <p>License keys</p>
-            <a href="#" class="text-decoration-none ms-3">Redeem a license key</a>
-          </div>
           <h5 class="fw-600 my-3">Payment History</h5>
           <div class="border rounded">
             <div class="d-flex align-items-center justify-content-between border-bottom p-3">
@@ -1288,36 +1234,6 @@ aria-labelledby="interviewLabel" aria-hidden="true">
               </div>
             </div>
           </div>
-        </div>
-        <div class="tab-pane py-4" id="notifications" role="tabpanel" aria-labelledby="notifications-tab">
-          <div class="d-flex align-items-center justify-content-between py-2">
-            <div>
-              <h6 class="fw-600">New Lead</h6>
-              <p class="text-small">Receive a notification for new leads</p>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckChecked" checked>
-            </div>
-          </div>
-          <div class="d-flex align-items-center justify-content-between py-2">
-            <div>
-              <h6 class="fw-600">New Customer</h6>
-              <p class="text-small">Receive a notification for new customer</p>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckChecked">
-            </div>
-          </div>
-          <div class="d-flex align-items-center justify-content-between py-2">
-            <div>
-              <h6 class="fw-600">New Project</h6>
-              <p class="text-small">Receive a notification for new project</p>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckChecked" checked>
-            </div>
-          </div>
-          <h6 class="mt-4 fw-600">More Options +</h6>
         </div>
       </div>
     </div>

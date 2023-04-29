@@ -43,47 +43,94 @@
             </div>
           </div>
           <ul>
-            <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
+            <li><a href="./fm-index.html" class="panel_link active_panel"><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a></li>
-            <li><a href="./fm-invoices.html" class="panel_link "><i class="icon icon-sales-information"></i>
-                <span>Invoices page</span></a></li>
-            <li><a href="./fm-quote-history.html" class="panel_link "><i class="icon icon-sales-information"></i>
-                <span>Quotations page</span></a></li>
-            <li><a href="./fm-purchase-order.html" class="panel_link"><i class="icon icon-project-supplies"></i>
-                <span>Purchase Orders Page</span></a></li>
-            <li><a href="./fm-expenses.html" class="panel_link "><i class="icon icon-expeness"></i>
-                <span>Expenses</span></a></li>
-            <li><a href="./fm-customers-suppliers.html" class="panel_link"><i class="icon icon-expenses"></i>
-                <span>Customers & Suppliers</span></a></li>
-            <li><a href="./fm-project-suppliers.html" class="panel_link"><i class="icon icon-project-supplies"></i>
-                <span>Products & Services</span></a></li>
-            <li><a href="" class="panel_link"><i class="icon icon-transferred-projects"></i>
-                <span>Transferred Document</span></a></li>
-            <li><a href="./fm-report.html" class="panel_link"><i class="icon icon-reports"></i>
-                <span>Reports</span></a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Setting-Dropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-settings"></i> <span>Setting</span>
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-sales-information"></i><span>Invoices page</span>
               </a>
-              <ul class="Setting-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i
-                      class="icon icon-settings"></i> <span>Account</span></a></li>
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-setting-general.html"><i
-                      class="icon icon-settings"></i> <span>General</span></a></li>
-                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i>
-                    <span>Subscription and billing “add it for all apps”</span></a></li>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./fm-quote-history.html"><i class="icon icon-sales-information"></i>
+                    <span>Quotations</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-sales-order.html"><i class="icon icon-sales-information"></i> <span>Sales
+                      Orders</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-invoices.html"><i class="icon icon-sales-information"></i>
+                    <span>Invoices</span></a></li>
               </ul>
             </li>
-            <li><a href="./new-index.html" class="panel_link "><span>New Dashboard</span></a></li>
-            <div class="open-button">
-              <i class="icon icon-right-arrow"></i>
-            </div>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown-1" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-project-supplies"></i><span>Purchases</span>
+              </a>
+              <ul class="Business-Dropdown-1" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./fm-purchase-order-create.html"><i class="icon icon-project-supplies"></i>
+                    <span>Purchase Orders</span></a></li>
+                <li><a class="dropdown-item panel_link" href=""><i class="icon icon-project-supplies"></i> <span>Bills</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-expeness"></i><span>Payrolls</span>
+              </a>
+              <ul class="Sales-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-expeness"></i>
+                    <span>Employees</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-payment-customer-create.html"><i class="icon icon-expeness"></i> <span>Payrolls</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-expenses"></i><span>Customers & vendors</span>
+              </a>
+              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./fm-customers-suppliers.html"><i class="icon icon-expenses"></i>
+                    <span>Customers & projects</span></a></li>
+                <li><a class="dropdown-item panel_link" href=""><i class="icon icon-expenses"></i> <span>Vendors</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Setting-Dropdown-1" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-project-supplies"></i><span>Products & Services</span>
+              </a>
+              <ul class="Setting-Dropdown-1" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-project-supplies"></i>
+                    <span>Products & Services</span></a></li>
+              </ul>
+            </li>
+            <li><a href="" class="panel_link"><i class="icon icon-transferred-projects"></i>
+              <span>Transferred Document</span></a></li>
+              <li><a href="" class="panel_link"><i class="icon icon-project-supplies"></i>
+                <span>Profit & Loss statement</span></a></li>
+          <li><a href="./fm-report.html" class="panel_link"><i class="icon icon-reports"></i>
+              <span>Reports</span></a></li>
+              <li class="nav-item panel-dropdown">
+                <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Setting-Dropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="icon icon-settings"></i> <span>Setting</span>
+                </a>
+                <ul class="Setting-Dropdown" aria-labelledby="Transactions-Dropdown">
+                  <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i
+                        class="icon icon-settings"></i> <span>Account</span></a></li>
+                  <li><a class="dropdown-item panel_link " href="./fm-setting-general.html"><i
+                        class="icon icon-settings"></i> <span>General</span></a></li>
+                  <li><a class="dropdown-item panel_link overflow-hidden" href=""><i class="icon icon-settings"></i>
+                      <span>Subscription and billing “add it for all apps”</span></a></li>
+                </ul>
+              </li>
+              <li><a href="./new-index.html" class="panel_link "><span>New Dashboard</span></a></li>
+              <div class="open-button">
+                <i class="icon icon-right-arrow"></i>
+              </div>
           </ul>
         </div>
       </aside>
       <main class="main">
-        <div class="top-nav bg-white justify-content-end">
+        <div class="top-nav bg-white justify-content-between">
           <div class="sitepanel-toggler for-mobile">
             <div class="close">
               <span></span>
@@ -94,14 +141,14 @@
               <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
             </div>
           </div>
-          <!-- <div class="search-form d-none d-md-block">
+          <div class="search-form d-none d-md-block">
             <form action="">
               <div class="form-group">
                 <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
                 <i class="icon icon-search-form"></i>
               </div>
             </form>
-          </div> -->
+          </div>
           <div class="about-profile">
             <div class="d-none d-md-flex align-items-center">
               <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i

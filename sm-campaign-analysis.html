@@ -528,393 +528,6 @@
         </div>
       </main>
     </div>
-    <div class="modal right fade show d-block opacity-0" id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel"
-      aria-hidden="true">
-      <div class="modal-dialog width-70 wsm-95">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4>Chart Menu</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-3 chart-popup">
-                <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">
-                  <!-- <li class="nav-item active" role="presentation">
-                        <button class="nav-link active" id="Candlestick-tab" data-bs-toggle="tab" data-bs-target="#Candlestick" type="button"
-                          role="tab" aria-controls="Candlestick" aria-selected="false">
-                          <p class="text-light-gray">Columns Candlestick</p>
-                        </button>
-                      </li> -->
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="Basic-tab" data-bs-toggle="tab" data-bs-target="#Basic"
-                      type="button" role="tab" aria-controls="Basic" aria-selected="false">
-                      <p class="text-light-gray">Columns Basic</p>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Items-tab" data-bs-toggle="tab" data-bs-target="#Items" type="button"
-                      role="tab" aria-controls="Items" aria-selected="false">
-                      <p class="text-light-gray">Columns Items</p>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Mixed-tab" data-bs-toggle="tab" data-bs-target="#Mixed" type="button"
-                      role="tab" aria-controls="Mixed" aria-selected="false">
-                      <p class="text-light-gray">Columns Mixed</p>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Nagetine-tab" data-bs-toggle="tab" data-bs-target="#Nagetine"
-                      type="button" role="tab" aria-controls="Nagetine" aria-selected="false">
-                      <p class="text-light-gray">Columns With Nagetine Values</p>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Multiple-tab" data-bs-toggle="tab" data-bs-target="#Multiple"
-                      type="button" role="tab" aria-controls="Multiple" aria-selected="false">
-                      <p class="text-light-gray">Columns Multiple</p>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Stacked-tab" data-bs-toggle="tab" data-bs-target="#Stacked"
-                      type="button" role="tab" aria-controls="Stacked" aria-selected="false">
-                      <p class="text-light-gray">Columns Stacked</p>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Radialbar-tab" data-bs-toggle="tab" data-bs-target="#Radialbar"
-                      type="button" role="tab" aria-controls="Radialbar" aria-selected="true">
-                      <p class="text-light-gray">Radialbar</p>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Scatter-tab" data-bs-toggle="tab" data-bs-target="#Scatter"
-                      type="button" role="tab" aria-controls="Scatter" aria-selected="false">
-                      <p class="text-light-gray">Scatter</p>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Line-tab" data-bs-toggle="tab" data-bs-target="#Line" type="button"
-                      role="tab" aria-controls="Line" aria-selected="false">
-                      <p class="text-light-gray">Line</p>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Area-tab" data-bs-toggle="tab" data-bs-target="#Area" type="button"
-                      role="tab" aria-controls="Area" aria-selected="false">
-                      <p class="text-light-gray">Area</p>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Radar-tab" data-bs-toggle="tab" data-bs-target="#Radar" type="button"
-                      role="tab" aria-controls="Radar" aria-selected="false">
-                      <p class="text-light-gray">Radar</p>
-                    </button>
-                  </li>
-                  <!-- <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="Map-tab" data-bs-toggle="tab" data-bs-target="#Map" type="button"
-                          role="tab" aria-controls="Map" aria-selected="false">
-                          <p class="text-light-gray">Heat Map</p>
-                        </button>
-                      </li> -->
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Donut-tab" data-bs-toggle="tab" data-bs-target="#Donut" type="button"
-                      role="tab" aria-controls="Donut" aria-selected="false">
-                      <p class="text-light-gray">Donut</p>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Pies-tab" data-bs-toggle="tab" data-bs-target="#Pies" type="button"
-                      role="tab" aria-controls="Pies" aria-selected="false">
-                      <p class="text-light-gray">Pies</p>
-                    </button>
-                  </li>
-                  <!-- <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="Perfomance-tab" data-bs-toggle="tab" data-bs-target="#Perfomance" type="button"
-                          role="tab" aria-controls="Perfomance" aria-selected="false">
-                          <p class="text-light-gray">Perfomance</p>
-                        </button>
-                      </li> -->
-                </ul>
-              </div>
-              <div class="col-md-9 chart-popup">
-                <div class="tab-content mt-4">
-                  <div class="tab-pane " id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div>
-                          <canvas id="Radialbar-1" class="w-100"
-                            style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
-                            height="422"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div>
-                          <canvas id="Radialbar-2" class="w-100"
-                            style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
-                            height="422"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane " id="Scatter" role="tabpanel" aria-labelledby="Scatter-tab">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div>
-                          <canvas id="invoiceBars" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div>
-                          <canvas id="invoiceBars1" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane " id="Line" role="tabpanel" aria-labelledby="Line-tab">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div>
-                          <canvas id="lineChart" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308"
-                            height="197"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div>
-                          <canvas id="lineChart1" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308"
-                            height="197"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="Area" role="tabpanel" aria-labelledby="Area-tab">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <canvas id="areaChart" class="wsm-100"
-                          style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
-                          width="630"></canvas>
-                      </div>
-                      <div class="col-md-6">
-                        <canvas id="areaChart1" class="wsm-100"
-                          style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
-                          width="630"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane " id="Radar" role="tabpanel" aria-labelledby="Radar-tab">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div>
-                          <canvas id="radarChart" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div>
-                          <canvas id="radarChart1" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane " id="Donut" role="tabpanel" aria-labelledby="Donut-tab">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div>
-                          <canvas id="dountMenuChart" class="w-100"
-                            style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
-                            height="422"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div>
-                          <canvas id="dountMenuChart1" class="w-100"
-                            style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
-                            height="422"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="Pies" role="tabpanel" aria-labelledby="Pies-tab">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div>
-                          <canvas id="pieChart" class="wsm-100 w-100"
-                            style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278"
-                            height="278"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane active" id="Basic" role="tabpanel" aria-labelledby="Basic-tab">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div>
-                          <canvas id="barChart" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div>
-                          <canvas id="barChart1" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-4">
-                        <div>
-                          <canvas id="barChart2" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="Multiple" role="tabpanel" aria-labelledby="Multiple-tab">
-                    <div class="row">
-                      <div class="col-md-8">
-                        <div>
-                          <canvas id="doubleBarChart" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-8 mt-4">
-                        <div>
-                          <canvas id="doubleBarChart1" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="Stacked" role="tabpanel" aria-labelledby="Stacked-tab">
-                    <div class="row">
-                      <div class="col-md-8">
-                        <div>
-                          <canvas id="stackedChart" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 215px; width: 631px;" width="631"
-                            height="215"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="Nagetine" role="tabpanel" aria-labelledby="Nagetine-tab">
-                    <div class="row">
-                      <div class="col-md-8">
-                        <div>
-                          <canvas id="nagetineChart" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-8">
-                        <div>
-                          <canvas id="nagetineChart-1" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="Items" role="tabpanel" aria-labelledby="Items-tab">
-                    <div class="row">
-                      <div class="col-md-3">
-                        <div>
-                          <canvas id="itemsChart" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div>
-                          <canvas id="itemsChart-1" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div>
-                          <canvas id="itemsChart-2" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div>
-                          <canvas id="itemsChart-3" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-3 mt-4">
-                        <div>
-                          <canvas id="itemsChart-4" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                      <div class="col-md-3 mt-4">
-                        <div>
-                          <canvas id="itemsChart-5" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="Mixed" role="tabpanel" aria-labelledby="Mixed-tab">
-                    <div class="row">
-                      <div class="col-md-8">
-                        <div>
-                          <canvas id="mixedChart" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 260px; width: 470px;"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane " id="Map" role="tabpanel" aria-labelledby="Map-tab">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div>
-                          <canvas id="mapChart2" class="wsm-100"
-                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
-                            height="160"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- <div class="tab-pane active" id="Candlestick" role="tabpanel" aria-labelledby="Candlestick-tab">
-                      <div class="row">
-                        <div class="col-12">
-                          <div>
-                            <canvas id="candlestickChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 140px; width: 411px;" width="369" height="125"></canvas>
-                          </div>
-                        </div>
-                      </div>
-                    </div> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-fill px-5 py-2 text-uppercase wsm-100">Update</button>
-            <button type="button" class="btn bg-light px-4 py-2 text-uppercase wsm-100"
-              data-bs-dismiss="modal">Cancel</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="modal right fade" id="newCampaignMenu" tabindex="-1" aria-labelledby="interviewLabel"
       aria-hidden="true">
       <div class="modal-dialog">
@@ -1002,165 +615,176 @@
         </div>
       </div>
     </div>
-    <div class="modal right fade" id="SettingForm" tabindex="-1"
-aria-labelledby="interviewLabel" aria-hidden="true">
-<div class="modal-dialog width-50 wsm-95">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h4>Profile settings</h4>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body bg-light customer-add-form">
-      <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link text-uppercase active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="false">general</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link text-uppercase" id="security-tab" data-bs-toggle="tab" data-bs-target="#security" type="button" role="tab" aria-controls="security" aria-selected="false">security</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link text-uppercase" id="billing-tab" data-bs-toggle="tab" data-bs-target="#billing" type="button" role="tab" aria-controls="billing" aria-selected="false">billing</button>
-        </li>
-      </ul>
-      <div class="tab-content">
-        <div class="tab-pane py-4 active" id="general" role="tabpanel" aria-labelledby="general-tab">
-          <form>
-            <div class="upload-file">
-              <div class="file-upload">
-                <figure>
-                  <img id="chosen-image">
-                  <figcaption id="file-name">
-                  </figcaption>
-                </figure>
-                <input type="file" id="upload-button" accept="image/*" />
-                <label for="upload-button">
-                  Add Image
-                </label>
+    <div class="modal right fade" id="SettingForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog width-50 wsm-95">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Profile settings</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-uppercase active" id="general-tab" data-bs-toggle="tab"
+                  data-bs-target="#general" type="button" role="tab" aria-controls="general"
+                  aria-selected="false">general</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-uppercase" id="security-tab" data-bs-toggle="tab"
+                  data-bs-target="#security" type="button" role="tab" aria-controls="security"
+                  aria-selected="false">security</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-uppercase" id="billing-tab" data-bs-toggle="tab" data-bs-target="#billing"
+                  type="button" role="tab" aria-controls="billing" aria-selected="false">billing</button>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane py-4 active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                <form>
+                  <div class="upload-file">
+                    <div class="file-upload">
+                      <figure>
+                        <img id="chosen-image">
+                        <figcaption id="file-name">
+                        </figcaption>
+                      </figure>
+                      <input type="file" id="upload-button" accept="image/*" />
+                      <label for="upload-button">
+                        Add Image
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="name" class="fw-bold mt-3 mb-2">Full Name</label>
+                      <input type="text" name="name" id="name" placeholder="Enter a Full Name"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <label for="email" class="fw-bold mt-3 mb-2">Email</label>
+                      <input type="email" name="email" id="email" placeholder="Enter a Email"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <label for="language" class="fw-bold mt-3 mb-2">Language</label>
+                      <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="English">English</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Punjabi">Punjabi</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="role" class="fw-bold mt-3 mb-2">Role</label>
+                      <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="Manager">Manager</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Punjabi">Punjabi</option>
+                      </select>
+                      <label for="phone" class="fw-bold mt-3 mb-2">Phone</label>
+                      <input type="tel" name="phone" id="phone" placeholder="Enter a Phone Number"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                    </div>
+                  </div>
+                </form>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <label for="name" class="fw-bold mt-3 mb-2">Full Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter a Full Name" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <label for="email" class="fw-bold mt-3 mb-2">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter a Email" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <label for="language" class="fw-bold mt-3 mb-2">Language</label>
-                <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  <option value="English">English</option>
-                  <option value="Urdu">Urdu</option>
-                  <option value="Hindi">Hindi</option>
-                  <option value="Punjabi">Punjabi</option>
-                </select>
+              <div class="tab-pane py-4" id="security" role="tabpanel" aria-labelledby="security-tab">
+                <h5 class="fw-600 mb-3">Change Password</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="password" class="fw-bold mt-3 mb-2">Current Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="password" class="fw-bold mt-3 mb-2">New Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                </div>
+                <h5 class="fw-600 mb-3">Security Questions</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="questions" class="fw-bold mt-3 mb-2">Questions #1</label>
+                    <select name="questions" id="questions" class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <option value="questions">What is your friend's name</option>
+                      <option value="Admin">Admin</option>
+                      <option value="Admin +">Admin +</option>
+                    </select>
+                    <label for="questions" class="fw-bold mt-3 mb-2">Questions #1</label>
+                    <select name="questions" id="questions" class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <option value="questions">What is your friend's name</option>
+                      <option value="Admin">Admin</option>
+                      <option value="Admin +">Admin +</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="answer" class="fw-bold mt-3 mb-2">Answer</label>
+                    <input type="text" name="answer" id="answer" placeholder="Enter Your Answer"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                    <label for="answer" class="fw-bold mt-3 mb-2">Answer</label>
+                    <input type="text" name="answer" id="answer" placeholder="Enter Your Answer"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6">
-                <label for="role" class="fw-bold mt-3 mb-2">Role</label>
-                <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  <option value="Manager">Manager</option>
-                  <option value="Urdu">Urdu</option>
-                  <option value="Hindi">Hindi</option>
-                  <option value="Punjabi">Punjabi</option>
-                </select>
-                <label for="phone" class="fw-bold mt-3 mb-2">Phone</label>
-                <input type="tel" name="phone" id="phone" placeholder="Enter a Phone Number" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <div class="tab-pane py-4" id="billing" role="tabpanel" aria-labelledby="billing-tab">
+                <h5 class="fw-600 mb-3">Billing Settings</h5>
+                <div class="d-flex align-items-center justify-content-between border-bottom py-3">
+                  <p>Payment Method</p>
+                  <div class="d-flex align-items-center">
+                    <p>MasterCard ending in 4078,exp: 08/2020</p>
+                    <a href="#" class="text-decoration-none ms-3">Update</a>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between border-bottom py-3">
+                  <p>Billing Period</p>
+                  <div class="d-flex align-items-center">
+                    <p>Plan billed monthly</p>
+                    <a href="#" class="text-decoration-none ms-3">Update</a>
+                  </div>
+                </div>
+                <h5 class="fw-600 my-3">Payment History</h5>
+                <div class="border rounded">
+                  <div class="d-flex align-items-center justify-content-between border-bottom p-3">
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold me-3">21 Oct 2018</p>
+                      <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <p>$28.00</p>
+                      <a href="#" class="text-decoration-none ms-3">Invoice</a>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between border-bottom p-3">
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold me-3">21 Oct 2018</p>
+                      <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <p>$28.00</p>
+                      <a href="#" class="text-decoration-none ms-3">Invoice</a>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between p-3">
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold me-3">21 Oct 2018</p>
+                      <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <p>$28.00</p>
+                      <a href="#" class="text-decoration-none ms-3">Invoice</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </form>
-        </div>
-        <div class="tab-pane py-4" id="security" role="tabpanel" aria-labelledby="security-tab">
-          <h5 class="fw-600 mb-3">Change Password</h5>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="password" class="fw-bold mt-3 mb-2">Current Password</label>
-              <input type="password" name="password" id="password" placeholder="Enter Your Password" class="d-block w-100 border border-2 rounded px-4 py-2">
-            </div>
-            <div class="col-md-6">
-              <label for="password" class="fw-bold mt-3 mb-2">New Password</label>
-              <input type="password" name="password" id="password" placeholder="Enter Your Password" class="d-block w-100 border border-2 rounded px-4 py-2">
             </div>
           </div>
-          <h5 class="fw-600 mb-3">Security Questions</h5>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="questions" class="fw-bold mt-3 mb-2">Questions #1</label>
-              <select name="questions" id="questions" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="questions">What is your friend's name</option>
-                <option value="Admin">Admin</option>
-                <option value="Admin +">Admin +</option>
-              </select>
-              <label for="questions" class="fw-bold mt-3 mb-2">Questions #1</label>
-              <select name="questions" id="questions" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="questions">What is your friend's name</option>
-                <option value="Admin">Admin</option>
-                <option value="Admin +">Admin +</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <label for="answer" class="fw-bold mt-3 mb-2">Answer</label>
-              <input type="text" name="answer" id="answer" placeholder="Enter Your Answer" class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="answer" class="fw-bold mt-3 mb-2">Answer</label>
-              <input type="text" name="answer" id="answer" placeholder="Enter Your Answer" class="d-block w-100 border border-2 rounded px-4 py-2">
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane py-4" id="billing" role="tabpanel" aria-labelledby="billing-tab">
-          <h5 class="fw-600 mb-3">Billing Settings</h5>
-          <div class="d-flex align-items-center justify-content-between border-bottom py-3">
-            <p>Payment Method</p>
-            <div class="d-flex align-items-center">
-              <p>MasterCard ending in 4078,exp: 08/2020</p>
-              <a href="#" class="text-decoration-none ms-3">Update</a>
-            </div>
-          </div>
-          <div class="d-flex align-items-center justify-content-between border-bottom py-3">
-            <p>Billing Period</p>
-            <div class="d-flex align-items-center">
-              <p>Plan billed monthly</p>
-              <a href="#" class="text-decoration-none ms-3">Update</a>
-            </div>
-          </div>
-          <h5 class="fw-600 my-3">Payment History</h5>
-          <div class="border rounded">
-            <div class="d-flex align-items-center justify-content-between border-bottom p-3">
-              <div class="d-flex align-items-center">
-                <p class="fw-bold me-3">21 Oct 2018</p>
-                <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
-              </div>
-              <div class="d-flex align-items-center">
-                <p>$28.00</p>
-                <a href="#" class="text-decoration-none ms-3">Invoice</a>
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-between border-bottom p-3">
-              <div class="d-flex align-items-center">
-                <p class="fw-bold me-3">21 Oct 2018</p>
-                <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
-              </div>
-              <div class="d-flex align-items-center">
-                <p>$28.00</p>
-                <a href="#" class="text-decoration-none ms-3">Invoice</a>
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-between p-3">
-              <div class="d-flex align-items-center">
-                <p class="fw-bold me-3">21 Oct 2018</p>
-                <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
-              </div>
-              <div class="d-flex align-items-center">
-                <p>$28.00</p>
-                <a href="#" class="text-decoration-none ms-3">Invoice</a>
-              </div>
-            </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Update</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal-footer justify-content-between">
-      <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Update</button>
-      <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
-    </div>
-  </div>
-</div>
-</div>
     <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">

@@ -44,45 +44,92 @@
           <ul>
             <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a></li>
-            <li><a href="./fm-invoices.html" class="panel_link "><i class="icon icon-sales-information"></i>
-                <span>Invoices page</span></a></li>
-            <li><a href="./fm-quote-history.html" class="panel_link active_panel"><i class="icon icon-sales-information"></i>
-                <span>Quotations page</span></a></li>
-            <li><a href="./fm-purchase-order.html" class="panel_link"><i class="icon icon-project-supplies"></i>
-                <span>Purchase Orders Page</span></a></li>
-            <li><a href="./fm-expenses.html" class="panel_link "><i class="icon icon-expeness"></i>
-                <span>Expenses</span></a></li>
-            <li><a href="./fm-customers-suppliers.html" class="panel_link"><i class="icon icon-expenses"></i>
-                <span>Customers & Suppliers</span></a></li>
-            <li><a href="./fm-project-suppliers.html" class="panel_link"><i class="icon icon-project-supplies"></i>
-                <span>Products & Services</span></a></li>
-            <li><a href="" class="panel_link"><i class="icon icon-transferred-projects"></i>
-                <span>Transferred Document</span></a></li>
-            <li><a href="./fm-report.html" class="panel_link"><i class="icon icon-reports"></i>
-                <span>Reports</span></a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Setting-Dropdown" role="button"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon icon-settings"></i> <span>Setting</span>
+                <i class="icon icon-sales-information"></i><span>Invoices page</span>
               </a>
-              <ul class="Setting-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i
-                      class="icon icon-settings"></i> <span>Account</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./fm-setting-general.html"><i
-                      class="icon icon-settings"></i> <span>General</span></a></li>
-                      <li><a class="dropdown-item panel_link " href=""><i class="icon icon-settings"></i>
-                        <span>Subscription and billing “add it for all apps”</span></a></li>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link active_panel" href="./fm-quote-history.html"><i class="icon icon-sales-information"></i>
+                    <span>Quotations</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-sales-order.html"><i class="icon icon-sales-information"></i> <span>Sales
+                      Orders</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-invoices.html"><i class="icon icon-sales-information"></i>
+                    <span>Invoices</span></a></li>
               </ul>
             </li>
-            <li><a href="./new-index.html" class="panel_link "><span>New Dashboard</span></a></li>
-            <div class="open-button">
-              <i class="icon icon-right-arrow"></i>
-            </div>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown-1" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-project-supplies"></i><span>Purchases</span>
+              </a>
+              <ul class="Business-Dropdown-1" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./fm-purchase-order-create.html"><i class="icon icon-project-supplies"></i>
+                    <span>Purchase Orders</span></a></li>
+                <li><a class="dropdown-item panel_link" href=""><i class="icon icon-project-supplies"></i> <span>Bills</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-expeness"></i><span>Payrolls</span>
+              </a>
+              <ul class="Sales-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-expeness"></i>
+                    <span>Employees</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-payment-customer-create.html"><i class="icon icon-expeness"></i> <span>Payrolls</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-expenses"></i><span>Customers & vendors</span>
+              </a>
+              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./fm-customers-suppliers.html"><i class="icon icon-expenses"></i>
+                    <span>Customers & projects</span></a></li>
+                <li><a class="dropdown-item panel_link" href=""><i class="icon icon-expenses"></i> <span>Vendors</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Setting-Dropdown-1" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-project-supplies"></i><span>Products & Services</span>
+              </a>
+              <ul class="Setting-Dropdown-1" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href=""><i class="icon icon-project-supplies"></i>
+                    <span>Products & Services</span></a></li>
+              </ul>
+            </li>
+            <li><a href="" class="panel_link"><i class="icon icon-transferred-projects"></i>
+              <span>Transferred Document</span></a></li>
+              <li><a href="" class="panel_link"><i class="icon icon-project-supplies"></i>
+                <span>Profit & Loss statement</span></a></li>
+          <li><a href="./fm-report.html" class="panel_link"><i class="icon icon-reports"></i>
+              <span>Reports</span></a></li>
+              <li class="nav-item panel-dropdown">
+                <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Setting-Dropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="icon icon-settings"></i> <span>Setting</span>
+                </a>
+                <ul class="Setting-Dropdown" aria-labelledby="Transactions-Dropdown">
+                  <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i
+                        class="icon icon-settings"></i> <span>Account</span></a></li>
+                  <li><a class="dropdown-item panel_link " href="./fm-setting-general.html"><i
+                        class="icon icon-settings"></i> <span>General</span></a></li>
+                  <li><a class="dropdown-item panel_link overflow-hidden" href=""><i class="icon icon-settings"></i>
+                      <span>Subscription and billing “add it for all apps”</span></a></li>
+                </ul>
+              </li>
+              <li><a href="./new-index.html" class="panel_link "><span>New Dashboard</span></a></li>
+              <div class="open-button">
+                <i class="icon icon-right-arrow"></i>
+              </div>
           </ul>
         </div>
       </aside>
       <main class="main">
-        <div class="top-nav bg-white justify-content-end">
+        <div class="top-nav bg-white justify-content-between">
           <div class="sitepanel-toggler for-mobile">
             <div class="close">
               <span></span>
@@ -93,14 +140,14 @@
               <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
             </div>
           </div>
-          <!-- <div class="search-form d-none d-md-block">
+          <div class="search-form d-none d-md-block">
             <form action="">
               <div class="form-group">
                 <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
                 <i class="icon icon-search-form"></i>
               </div>
             </form>
-          </div> -->
+          </div>
           <div class="about-profile">
             <div class="d-none d-md-flex align-items-center">
               <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
@@ -167,18 +214,9 @@
               <h3><span class="text-light-gray">Quotation/</span> #Quo-0001</h3>
             </div>
             <div class="d-flex align-items-center wsm-100 flex-colume-sm">
-              <div class="dropdown select-dropdown">
-                <button class="btn dropdown-toggle pe-5 w-100 bg-white border-0 mt-3 mt-md-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  More option
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
+              <button type="button" class="btn ouline-white mt-3 wsm-100 mt-md-0 mx-md-2">Print</button>
               <button type="button" class="btn ouline-white mt-3 wsm-100 mt-md-0 mx-md-2">Clone sales order</button>
-              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0" onclick="window.location.href='./fm-quote-history-create.html'">New sales order</button>
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0" onclick="window.location.href='./fm-quote-history-create.html'">New Sales Order</button>
             </div>
           </div>
           <div class="row">
@@ -205,46 +243,38 @@
                 <div class="row mt-3 border-top border-bottom">
                   <div class="col-md-6 py-3">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="text-light-gray">Customer</p>
+                      <p class="text-light-gray">Bill to</p>
                       <p>Head Office</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Bill To</p>
+                      <p class="text-light-gray">Ship to</p>
+                      <p>Head Office</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <p class="text-light-gray">Project Name</p>
                       <p>Primary Location</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Project Name*</p>
-                      <p>Primary Location</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Issue date</p>
+                      <p class="text-light-gray">Payment Terms</p>
                       <p>Feb 8th 2021</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
                       <p class="text-light-gray">Stock Due</p>
                       <p>Feb 8th 2021</p>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Payment Due</p>
-                      <p>Feb 8th 2021</p>
-                    </div>
                   </div>
                   <div class="col-md-6 py-3 border-start border-sm-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="text-light-gray">Reference</p>
-                      <p>Tax Exclusive</p>
+                      <p class="text-light-gray">Issue date</p>
+                      <p>Feb 10th 2021</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Contact</p>
-                      <p>Contect Name</p>
+                      <p class="text-light-gray">Email</p>
+                      <p>hello@designspace.io </p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
                       <p class="text-light-gray">Currency</p>
                       <p>US Dollar (USD)</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Price Unit</p>
-                      <p>Buy</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
                       <p class="text-light-gray">Totals are</p>
@@ -368,31 +398,21 @@
                   <p class="fw-600">Payments</p>
                   <p>$300.00 to pay</p>
                 </div>
-                <div class="p-3 d-flex">
-                  <i class="icon icon-info me-2 mt-1"></i>
-                  <p class="text-light-gray w-95">There are three different section on this page. Product details, Product variants and Product pack sizes.</p>
+                <div class="px-3 pb-3 d-flex mt-3">
+                  <button type="button" class="btn ouline-white btn-fill w-100 mt-md-0">Mark all as accepted and create sales order</button>
+                </div>
+              </div>
+              <div class="bg-white rounded mt-2">
+                <div class="p-3 border-bottom d-flex align-items-center justify-content-between">
+                  <p class="fw-600">Attachment</p>
+                  <p>1</p>
+                </div>
+                <div class="p-3 d-flex justify-content-between align-items-center">
+                  <p class="text-light-gray">Attached file: Email</p>
+                  <p class="text-light-gray">50MB</p>
                 </div>
                 <div class="px-3 pb-3 d-flex">
                   <button type="button" class="btn ouline-white btn-fill w-100 mt-3 mt-md-0">Mark all as paid</button>
-                </div>
-              </div>
-              <div class="sm-box bg-white p-2 mt-2">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <h6 class="fw-bold">Shipments</h6>
-                  <p class="text-light-gray">7 to fulfil</p>
-                </div>
-                <div class="d-flex justify-content-between align-items-md-center mb-2 px-1 flex-colume-sm">
-                  <p><i class="icon icon-truck-fill"></i> Shipment #1</p>
-                  <div class="dropdown select-dropdown">
-                    <button class="btn dropdown-toggle pe-4 w-100 bg-white border-0 mt-3 mt-md-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      7
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
-                      <li><a class="dropdown-item" href="#">1</a></li>
-                      <li><a class="dropdown-item" href="#">2</a></li>
-                      <li><a class="dropdown-item" href="#">3</a></li>
-                    </ul>
-                  </div>
                 </div>
               </div>
             </div>

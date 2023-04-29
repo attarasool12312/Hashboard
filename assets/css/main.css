@@ -1587,6 +1587,41 @@ i[class*=h-icon-] {
   height: 24px;
 }
 
+.icon-file-table {
+  display: inline-block;
+  background-image: url("../images/icons/file-table.svg");
+  width: 10px;
+  height: 18px;
+}
+
+.icon-download-table {
+  display: inline-block;
+  background-image: url("../images/icons/download-table.svg");
+  width: 15px;
+  height: 15px;
+}
+
+.icon-clone-table {
+  display: inline-block;
+  background-image: url("../images/icons/clone-table.svg");
+  width: 15px;
+  height: 15px;
+}
+
+.icon-envelope-table {
+  display: inline-block;
+  background-image: url("../images/icons/envelope-table.svg");
+  width: 15px;
+  height: 15px;
+}
+
+.icon-eidt-table {
+  display: inline-block;
+  background-image: url("../images/icons/eidt-table.svg");
+  width: 15px;
+  height: 15px;
+}
+
 /*--------------*\
     Base
 \*--------------*/

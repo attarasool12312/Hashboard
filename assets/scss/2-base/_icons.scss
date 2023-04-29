@@ -224,6 +224,11 @@ $icons: (
   "home" "svg" 24px 24px,
   "dashboard-1" "svg" 24px 24px,
   "initiative-management" "svg" 24px 24px,
+  "file-table" "svg" 10px 18px,
+  "download-table" "svg" 15px 15px,
+  "clone-table" "svg" 15px 15px,
+  "envelope-table" "svg" 15px 15px,
+  "eidt-table" "svg" 15px 15px,
   );
   
 @each $name, $fileType, $width, $height in $icons {

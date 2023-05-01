@@ -453,6 +453,13 @@ i[class*=h-icon-] {
   height: 24px;
 }
 
+.icon-upload {
+  display: inline-block;
+  background-image: url("../images/icons/upload.svg");
+  width: 24px;
+  height: 24px;
+}
+
 .icon-qrcode {
   display: inline-block;
   background-image: url("../images/icons/qrcode.svg");
@@ -1620,6 +1627,13 @@ i[class*=h-icon-] {
   background-image: url("../images/icons/eidt-table.svg");
   width: 15px;
   height: 15px;
+}
+
+.icon-plus-items {
+  display: inline-block;
+  background-image: url("../images/icons/plus-items.svg");
+  width: 47px;
+  height: 47px;
 }
 
 /*--------------*\

@@ -45,15 +45,16 @@
             <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown" role="button"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-sales-information"></i><span>Sales Page</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-quote-history.html"><i
+                <li><a class="dropdown-item panel_link " href="./fm-quote-history.html"><i
                       class="icon icon-sales-information"></i>
                     <span>Quotations</span></a></li>
-                <li><a class="dropdown-item panel_link" href="./fm-sales-order.html"><i class="icon icon-sales-information"></i> <span>Sales
+                <li><a class="dropdown-item panel_link " href="./fm-sales-order.html"><i
+                      class="icon icon-sales-information"></i> <span>Sales
                       Orders</span></a></li>
                 <li><a class="dropdown-item panel_link" href="./fm-invoices.html"><i
                       class="icon icon-sales-information"></i>
@@ -61,12 +62,12 @@
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown-1"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown-1"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-project-supplies"></i><span>Purchases</span>
               </a>
               <ul class="Business-Dropdown-1" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-purchase-orders.html"><i
+                <li><a class="dropdown-item panel_link active_panel" href="./fm-purchase-orders.html"><i
                       class="icon icon-project-supplies"></i>
                     <span>Purchase Orders</span></a></li>
                 <li><a class="dropdown-item panel_link" href="./fm-bills.html"><i class="icon icon-project-supplies"></i>
@@ -218,58 +219,43 @@
         <div class="container">
           <div class="page-main-title align-items-md-center">
             <div class="heading">
-              <h1>Quotation History</h1>
+              <h1>Purchase Orders</h1>
             </div>
             <div class="d-flex align-items-center flex-colume-sm wsm-100">
-              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
-                  class="icon icon-download"></i> Download </button>
+              <div class="search-form wsm-100">
+                <form action="">
+                  <div class="form-group">
+                    <input class="form-control wsm-100 mt-3 mt-md-0" type="text"
+                      placeholder="Search order, invoice, email, company…" aria-label="Search">
+                    <i class="icon icon-search-form"></i>
+                  </div>
+                </form>
+              </div>
               <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2"
-                onclick="window.location.href='./fm-quote-history-create.html'">New sales order</button>
+                onclick="window.location.href='./fm-purchase-orders-create.html'">New Purchase</button>
             </div>
           </div>
           <div class="row">
             <div class="col-md-6">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="All-tab" data-bs-toggle="tab" data-bs-target="#All" type="button"
-                    role="tab" aria-controls="All" aria-selected="true">All</button>
-                </li>
-                <li class="nav-item" role="presentation">
                   <button class="nav-link" id="Active-tab" data-bs-toggle="tab" data-bs-target="#Active" type="button"
                     role="tab" aria-controls="Active" aria-selected="false">Active</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="Draft-tab" data-bs-toggle="tab" data-bs-target="#Draft" type="button"
-                    role="tab" aria-controls="Draft" aria-selected="false">Draft</button>
+                  <button class="nav-link" id="Approved-tab" data-bs-toggle="tab" data-bs-target="#Approved" type="button"
+                    role="tab" aria-controls="Approved" aria-selected="false">Approved</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="Accepted-tab" data-bs-toggle="tab" data-bs-target="#Accepted"
-                    type="button" role="tab" aria-controls="Accepted" aria-selected="false">Accepted</button>
+                  <button class="nav-link active" id="All-tab" data-bs-toggle="tab" data-bs-target="#All" type="button"
+                    role="tab" aria-controls="All" aria-selected="true">All</button>
                 </li>
               </ul>
             </div>
             <div class="col-md-6">
               <div class="d-flex align-items-center justify-content-end">
-                <div class="search-form wsm-100">
-                  <form action="">
-                    <div class="form-group">
-                      <input class="form-control wsm-100 mt-3 mt-md-0" type="text"
-                        placeholder="Search order, invoice, email, company…" aria-label="Search">
-                      <i class="icon icon-search-form"></i>
-                    </div>
-                  </form>
-                </div>
-                <div class="dropdown select-dropdown ms-3">
-                  <button class="btn dropdown-toggle pe-5 w-100 bg-white border-0 mt-3 mt-md-0" type="button"
-                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Filter by
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
+                <button type="button" class="btn ouline-white"><i
+                    class="icon icon-download"></i> Download </button>
               </div>
             </div>
             <div class="col-md-3 mt-3">
@@ -280,7 +266,7 @@
                   </span>
                   <span class=""><i class="icon icon-cart-box"></i></span>
                 </div>
-                <p class="text-light-gray">Total Quotations</p>
+                <p class="text-light-gray">Total Purchase Order</p>
               </div>
             </div>
             <div class="col-md-3 mt-3">
@@ -313,7 +299,7 @@
                   </span>
                   <span class=""><i class="icon icon-cart-box"></i></span>
                 </div>
-                <p class="text-light-gray">Invoiced</p>
+                <p class="text-light-gray">Billed</p>
               </div>
             </div>
             <div class="tab-content mt-3">
@@ -331,22 +317,22 @@
                               </label>
                             </div>
                           </span>
-                          Quo no.
+                          PO No
                         </th>
-                        <th scope="col">Customer name</th>
+                        <th scope="col">Vendor name</th>
                         <th scope="col">Status</th>
-                        <th scope="col"># of Items</th>
-                        <th scope="col">Discount</th>
-                        <th scope="col">VAT %</th>
-                        <th scope="col">VAT Amount</th>
-                        <th scope="col">Total</th>
                         <th scope="col">Created date</th>
-                        <th scope="col"><a href="" class="fs-3 text-decoration-none text-fill">+</a></th>
+                        <th scope="col">Expiry Date</th>
+                        <th scope="col">Discount</th>
+                        <th scope="col">Payment Terms</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Created date</th>
+                        <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody class="right-content interest-body" style="display: table-row-group;">
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-purchase-orders-detail.html'">
+                        <td scope="row" data-label="PO No" class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -355,64 +341,15 @@
                               </label>
                             </div>
                           </span>
-                          <h6 class="fw-500 text-sm">#Quo-0001</h6>
+                          <h6 class="fw-500 text-sm">#PO-0001</h6>
                         </td>
-                        <td data-label="Customer name">Vinta</td>
-                        <td data-label="Status"><span class="finalized-status">Approved</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
-                        <td data-label="Created date">12 Dec 2021</td>
-                        <td>
-                          <div class="row p-0">
-                            <div class="col-md-3 p-0 mb-2">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <h6 class="fw-500 text-sm">#Quo-0002</h6>
-                        </td>
-                        <td data-label="Customer name">Awesome brand</td>
+                        <td data-label="Vendor name">Vinta</td>
                         <td data-label="Status"><span class="finalized-status">Draft</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td data-label="Expiry Date">12 Dec 2021</td>
+                        <td data-label="Discount" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Payment Terms">After 30 Days</td>
+                        <td data-label="Amount">$200.00</td>
                         <td data-label="Created date">12 Dec 2021</td>
                         <td>
                           <div class="row p-0">
@@ -420,22 +357,27 @@
                               <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-file-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-download-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-clone-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-envelope-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
                               <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-eidt-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
                               <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
@@ -443,8 +385,8 @@
                           </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-purchase-orders-detail.html'">
+                        <td scope="row" data-label="PO No" class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -453,15 +395,177 @@
                               </label>
                             </div>
                           </span>
-                          <h6 class="fw-500 text-sm">#Quo-0003</h6>
+                          <h6 class="fw-500 text-sm">#PO-0002</h6>
                         </td>
-                        <td data-label="Customer name">Vinta</td>
+                        <td data-label="Vendor name">Awesome brand</td>
+                        <td data-label="Status"><span class="finalized-status">Draft</span></td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td data-label="Expiry Date">12 Dec 2021</td>
+                        <td data-label="Discount" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Payment Terms">After 30 Days</td>
+                        <td data-label="Amount">$200.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td>
+                          <div class="row p-0">
+                            <div class="col-md-3 p-0 mb-2">
+                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-file-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-download-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-clone-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-envelope-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-eidt-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-purchase-orders-detail.html'">
+                        <td scope="row" data-label="PO No" class="ps-5">
+                          <span class="check-tasks">
+                            <div class="checkbox relative">
+                              <label class="absolute">
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                          <h6 class="fw-500 text-sm">#PO-0003</h6>
+                        </td>
+                        <td data-label="Vendor name">Vinta</td>
+                        <td data-label="Status"><span class="finalized-status">Draft</span></td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td data-label="Expiry Date">12 Dec 2021</td>
+                        <td data-label="Discount" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Payment Terms">After 30 Days</td>
+                        <td data-label="Amount">$200.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td>
+                          <div class="row p-0">
+                            <div class="col-md-3 p-0 mb-2">
+                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-file-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-download-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-clone-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-envelope-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-eidt-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-purchase-orders-detail.html'">
+                        <td scope="row" data-label="PO No" class="ps-5">
+                          <span class="check-tasks">
+                            <div class="checkbox relative">
+                              <label class="absolute">
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                          <h6 class="fw-500 text-sm">#PO-0004</h6>
+                        </td>
+                        <td data-label="Vendor name">SuperStar</td>
+                        <td data-label="Status"><span class="finalized-status">Draft</span></td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td data-label="Expiry Date">12 Dec 2021</td>
+                        <td data-label="Discount" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Payment Terms">After 30 Days</td>
+                        <td data-label="Amount">$200.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td>
+                          <div class="row p-0">
+                            <div class="col-md-3 p-0 mb-2">
+                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-file-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-download-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-clone-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-envelope-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-eidt-table m-0"></i></a>
+                            </div>
+                            <div class="col-md-3 p-0">
+                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-purchase-orders-detail.html'">
+                        <td scope="row" data-label="PO No" class="ps-5">
+                          <span class="check-tasks">
+                            <div class="checkbox relative">
+                              <label class="absolute">
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                          <h6 class="fw-500 text-sm">#PO-0005</h6>
+                        </td>
+                        <td data-label="Vendor name">SuperStar</td>
                         <td data-label="Status"><span class="finalized-status">Approved</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td data-label="Expiry Date">12 Dec 2021</td>
+                        <td data-label="Discount" class="text-center">-</td>
+                        <td data-label="Payment Terms">After 30 Days</td>
+                        <td data-label="Amount">$200.00</td>
                         <td data-label="Created date">12 Dec 2021</td>
                         <td>
                           <div class="row p-0">
@@ -469,22 +573,27 @@
                               <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-file-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-download-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-clone-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-envelope-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
                               <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-eidt-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
                               <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
@@ -492,8 +601,8 @@
                           </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-purchase-orders-detail.html'">
+                        <td scope="row" data-label="PO No" class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -502,15 +611,15 @@
                               </label>
                             </div>
                           </span>
-                          <h6 class="fw-500 text-sm">#Quo-0004</h6>
+                          <h6 class="fw-500 text-sm">#PO-0006</h6>
                         </td>
-                        <td data-label="Customer name">SuperStar</td>
-                        <td data-label="Status"><span class="finalized-status">Approved</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
+                        <td data-label="Vendor name">Awesome brand</td>
+                        <td data-label="Status"><span class="finalized-status">Billed</span></td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td data-label="Expiry Date">12 Dec 2021</td>
+                        <td data-label="Discount" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Payment Terms">After 30 Days</td>
+                        <td data-label="Amount">$200.00</td>
                         <td data-label="Created date">12 Dec 2021</td>
                         <td>
                           <div class="row p-0">
@@ -518,22 +627,27 @@
                               <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-file-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-download-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-clone-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-envelope-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
                               <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-eidt-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
                               <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
@@ -541,8 +655,8 @@
                           </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-purchase-orders-detail.html'">
+                        <td scope="row" data-label="PO No" class="ps-5">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -551,15 +665,15 @@
                               </label>
                             </div>
                           </span>
-                          <h6 class="fw-500 text-sm">#Quo-0005</h6>
+                          <h6 class="fw-500 text-sm">#PO-0007</h6>
                         </td>
-                        <td data-label="Customer name">SuperStar</td>
-                        <td data-label="Status"><span class="finalized-status">Sent</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
+                        <td data-label="Vendor name">Maskobis</td>
+                        <td data-label="Status"><span class="finalized-status">Billed</span></td>
+                        <td data-label="Created date">12 Dec 2021</td>
+                        <td data-label="Expiry Date">12 Dec 2021</td>
+                        <td data-label="Discount" class="text-center"><i class="icon icon-check-theme"></i></td>
+                        <td data-label="Payment Terms">After 30 Days</td>
+                        <td data-label="Amount">$200.00</td>
                         <td data-label="Created date">12 Dec 2021</td>
                         <td>
                           <div class="row p-0">
@@ -567,120 +681,27 @@
                               <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-file-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-download-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-clone-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <h6 class="fw-500 text-sm">#CR0006</h6>
-                        </td>
-                        <td data-label="Customer name">Awesome brand</td>
-                        <td data-label="Status"><span class="finalized-status">Invoiced</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
-                        <td data-label="Created date">12 Dec 2021</td>
-                        <td>
-                          <div class="row p-0">
-                            <div class="col-md-3 p-0 mb-2">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-envelope-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
                               <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-quote-history-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <h6 class="fw-500 text-sm">#CR0007</h6>
-                        </td>
-                        <td data-label="Customer name">Maskobis</td>
-                        <td data-label="Status"><span class="finalized-status">Invoiced</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
-                        <td data-label="Created date">12 Dec 2021</td>
-                        <td>
-                          <div class="row p-0">
-                            <div class="col-md-3 p-0 mb-2">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
+                              <a href="" class="border border-2 rounded p-1"><i
+                                  class="icon icon-eidt-table m-0"></i></a>
                             </div>
                             <div class="col-md-3 p-0">
                               <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>

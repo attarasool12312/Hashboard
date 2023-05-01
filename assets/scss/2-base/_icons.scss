@@ -62,6 +62,7 @@ $icons: (
   "filter" "svg" 24px 24px,
   "dots" "svg" 24px 24px,
   "download" "svg" 24px 24px,
+  "upload" "svg" 24px 24px,
   "qrcode" "svg" 17px 17px,
   "edit" "svg" 13px 16px,
   "eye" "svg" 16px 18px,
@@ -229,6 +230,7 @@ $icons: (
   "clone-table" "svg" 15px 15px,
   "envelope-table" "svg" 15px 15px,
   "eidt-table" "svg" 15px 15px,
+  "plus-items" "svg" 47px 47px,
   );
   
 @each $name, $fileType, $width, $height in $icons {

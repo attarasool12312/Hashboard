@@ -45,7 +45,7 @@
             <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown" role="button"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-sales-information"></i><span>Sales Page</span>
               </a>
@@ -53,7 +53,8 @@
                 <li><a class="dropdown-item panel_link " href="./fm-quote-history.html"><i
                       class="icon icon-sales-information"></i>
                     <span>Quotations</span></a></li>
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-sales-order.html"><i class="icon icon-sales-information"></i> <span>Sales
+                <li><a class="dropdown-item panel_link " href="./fm-sales-order.html"><i
+                      class="icon icon-sales-information"></i> <span>Sales
                       Orders</span></a></li>
                 <li><a class="dropdown-item panel_link" href="./fm-invoices.html"><i
                       class="icon icon-sales-information"></i>
@@ -69,19 +70,21 @@
                 <li><a class="dropdown-item panel_link " href="./fm-purchase-orders.html"><i
                       class="icon icon-project-supplies"></i>
                     <span>Purchase Orders</span></a></li>
-                <li><a class="dropdown-item panel_link" href="./fm-bills.html"><i class="icon icon-project-supplies"></i>
+                <li><a class="dropdown-item panel_link " href="./fm-bills.html"><i
+                      class="icon icon-project-supplies"></i>
                     <span>Bills</span></a></li>
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Sales-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-expeness"></i><span>Payrolls</span>
               </a>
               <ul class="Sales-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-employees.html"><i class="icon icon-expeness"></i>
+                <li><a class="dropdown-item panel_link " href="./fm-employees.html"><i
+                      class="icon icon-expeness"></i>
                     <span>Employees</span></a></li>
-                <li><a class="dropdown-item panel_link" href="./fm-payrolls.html"><i
+                <li><a class="dropdown-item panel_link active_panel" href="./fm-payrolls.html"><i
                       class="icon icon-expeness"></i> <span>Payrolls</span></a></li>
               </ul>
             </li>
@@ -218,41 +221,15 @@
         <div class="container">
           <div class="page-main-title align-items-md-center">
             <div class="heading">
-              <h1>Sales Orders</h1>
+              <h1>Payrolls</h1>
             </div>
             <div class="d-flex align-items-center flex-colume-sm wsm-100">
-              <div class="search-form wsm-100">
-                <form action="">
-                  <div class="form-group">
-                    <input class="form-control wsm-100 mt-3 mt-md-0" type="text"
-                      placeholder="Search order, invoice, email, company…" aria-label="Search">
-                    <i class="icon icon-search-form"></i>
-                  </div>
-                </form>
-              </div>
+              <button type="button" class="btn ouline-white wsm-100 mt-3 mt-md-0 ms-md-2"><i class="icon icon-download"></i> Download</button>              
               <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2"
-                onclick="window.location.href='./fm-sales-order-create.html'">New Invoice</button>
+                onclick="window.location.href='./fm-payrolls-create.html'">Add New Payroll</button>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="All-tab" data-bs-toggle="tab" data-bs-target="#All" type="button"
-                    role="tab" aria-controls="All" aria-selected="true">All invoices</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="Active-tab" data-bs-toggle="tab" data-bs-target="#Active" type="button"
-                    role="tab" aria-controls="Active" aria-selected="false">Active</button>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <div class="d-flex align-items-center justify-content-end">
-                <button type="button" class="btn ouline-white"><i
-                  class="icon icon-download"></i> Download </button>
-              </div>
-            </div>
             <div class="col-md-3 mt-3">
               <div class="sm-box h-100 bg-white box-hover">
                 <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
@@ -261,7 +238,7 @@
                   </span>
                   <span class=""><i class="icon icon-cart-box"></i></span>
                 </div>
-                <p class="text-light-gray">Total Quotations</p>
+                <p class="text-light-gray">Total Payrolls</p>
               </div>
             </div>
             <div class="col-md-3 mt-3">
@@ -272,7 +249,7 @@
                   </span>
                   <span class=""><i class="icon icon-cart-box"></i></span>
                 </div>
-                <p class="text-light-gray">Draft</p>
+                <p class="text-light-gray">Avr Last Year Payroll</p>
               </div>
             </div>
             <div class="col-md-3 mt-3">
@@ -283,7 +260,7 @@
                   </span>
                   <span class=""><i class="icon icon-cart-box"></i></span>
                 </div>
-                <p class="text-light-gray">Approved</p>
+                <p class="text-light-gray">Avr. Last Payroll</p>
               </div>
             </div>
             <div class="col-md-3 mt-3">
@@ -294,7 +271,7 @@
                   </span>
                   <span class=""><i class="icon icon-cart-box"></i></span>
                 </div>
-                <p class="text-light-gray">Invoiced</p>
+                <p class="text-light-gray">Total Employees</p>
               </div>
             </div>
             <div class="tab-content mt-3">
@@ -303,392 +280,53 @@
                   <table class="table table-striped">
                     <thead>
                       <tr>
-                        <th scope="col" class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          Quo no.
-                        </th>
-                        <th scope="col">Customer name</th>
-                        <th scope="col">Status</th>
-                        <th scope="col"># of Items</th>
-                        <th scope="col">Discount</th>
-                        <th scope="col">VAT %</th>
-                        <th scope="col">VAT Amount</th>
-                        <th scope="col">Total</th>
-                        <th scope="col">Created date</th>
-                        <th scope="col"><a href="" class="fs-3 text-decoration-none text-fill">+</a></th>
+                        <th scope="col">Reference</th>
+                        <th scope="col">From</th>
+                        <th scope="col">To</th>
+                        <th scope="col">Total Hours</th>
+                        <th scope="col">Absence</th>
+                        <th scope="col">Undertime</th>
+                        <th scope="col">Remaining hours</th>
+                        <th scope="col">Overtime</th>
+                        <th scope="col">Total salary</th>
                       </tr>
                     </thead>
                     <tbody class="right-content interest-body" style="display: table-row-group;">
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-sales-order-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <h6 class="fw-500 text-sm">#SO0001</h6>
-                        </td>
-                        <td data-label="Customer name">Vinta</td>
-                        <td data-label="Status"><span class="finalized-status">Approved</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
-                        <td data-label="Created date">12 Dec 2021</td>
-                        <td>
-                          <div class="row p-0">
-                            <div class="col-md-3 p-0 mb-2">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
-                            </div>
-                          </div>
-                        </td>
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-payrolls-details.html'">
+                        <td scope="row" data-label="Reference">Payroll - 1234</td>
+                        <td data-label="From">25-4-2023</td>
+                        <td data-label="To">24-5-2023</td>
+                        <td data-label="Total Hours">1200</td>
+                        <td data-label="Absence">1 Day</td>
+                        <td data-label="Undertime">1 hour</td>
+                        <td data-label="Remaining hours">1 hour</td>
+                        <td data-label="Overtime">0</td>
+                        <td data-label="Total salary">400,000.00</td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-sales-order-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <h6 class="fw-500 text-sm">#SO0002</h6>
-                        </td>
-                        <td data-label="Customer name">Awesome brand</td>
-                        <td data-label="Status"><span class="finalized-status">Draft</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
-                        <td data-label="Created date">12 Dec 2021</td>
-                        <td>
-                          <div class="row p-0">
-                            <div class="col-md-3 p-0 mb-2">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
-                            </div>
-                          </div>
-                        </td>
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-payrolls-details.html'">
+                        <td scope="row" data-label="Reference">Payroll - 12345</td>
+                        <td data-label="From">25-4-2023</td>
+                        <td data-label="To">24-5-2023</td>
+                        <td data-label="Total Hours">1200</td>
+                        <td data-label="Absence">1 Day</td>
+                        <td data-label="Undertime">1 hour</td>
+                        <td data-label="Remaining hours">1 hour</td>
+                        <td data-label="Overtime">0</td>
+                        <td data-label="Total salary">400,000.00</td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-sales-order-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <h6 class="fw-500 text-sm">#SO0003</h6>
-                        </td>
-                        <td data-label="Customer name">Vinta</td>
-                        <td data-label="Status"><span class="finalized-status">Approved</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
-                        <td data-label="Created date">12 Dec 2021</td>
-                        <td>
-                          <div class="row p-0">
-                            <div class="col-md-3 p-0 mb-2">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-sales-order-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <h6 class="fw-500 text-sm">#SO0004</h6>
-                        </td>
-                        <td data-label="Customer name">SuperStar</td>
-                        <td data-label="Status"><span class="finalized-status">Approved</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
-                        <td data-label="Created date">12 Dec 2021</td>
-                        <td>
-                          <div class="row p-0">
-                            <div class="col-md-3 p-0 mb-2">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-sales-order-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <h6 class="fw-500 text-sm">#SO0005</h6>
-                        </td>
-                        <td data-label="Customer name">SuperStar</td>
-                        <td data-label="Status"><span class="finalized-status">Sent</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
-                        <td data-label="Created date">12 Dec 2021</td>
-                        <td>
-                          <div class="row p-0">
-                            <div class="col-md-3 p-0 mb-2">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-sales-order-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <h6 class="fw-500 text-sm">#SO0006</h6>
-                        </td>
-                        <td data-label="Customer name">Awesome brand</td>
-                        <td data-label="Status"><span class="finalized-status">Invoiced</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
-                        <td data-label="Created date">12 Dec 2021</td>
-                        <td>
-                          <div class="row p-0">
-                            <div class="col-md-3 p-0 mb-2">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-sales-order-detail.html'">
-                        <td scope="row" data-label="Quo no." class="ps-5">
-                          <span class="check-tasks">
-                            <div class="checkbox relative">
-                              <label class="absolute">
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                          <h6 class="fw-500 text-sm">#SO0007</h6>
-                        </td>
-                        <td data-label="Customer name">Maskobis</td>
-                        <td data-label="Status"><span class="finalized-status">Invoiced</span></td>
-                        <td data-label="# of Items">4</td>
-                        <td data-label="Discount">10%</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Amount">$160.00</td>
-                        <td data-label="Total">$200.00</td>
-                        <td data-label="Created date">12 Dec 2021</td>
-                        <td>
-                          <div class="row p-0">
-                            <div class="col-md-3 p-0 mb-2">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eye m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-file-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-download-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-clone-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-envelope-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-edit m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-eidt-table m-0"></i></a>
-                            </div>
-                            <div class="col-md-3 p-0">
-                              <a href="" class="border border-2 rounded p-1"><i class="icon icon-delete m-0"></i></a>
-                            </div>
-                          </div>
-                        </td>
+                      <tr class="cursor-pointer" onclick="window.location.href='./fm-payrolls-details.html'">
+                        <td scope="row" data-label="Reference">Payroll - 123456</td>
+                        <td data-label="From">25-4-2023</td>
+                        <td data-label="To">24-5-2023</td>
+                        <td data-label="Total Hours">1200</td>
+                        <td data-label="Absence">1 Day</td>
+                        <td data-label="Undertime">1 hour</td>
+                        <td data-label="Remaining hours">1 hour</td>
+                        <td data-label="Overtime">0</td>
+                        <td data-label="Total salary">400,000.00</td>
                       </tr>
                     </tbody>
                   </table>
-                </div>
-                <div class="invoice-pagination d-flex mt-3 justify-content-between align-items-center flex-colume-sm">
-                  <div class="d-flex align-items-center">
-                    <p class="text-sm">Showing</p>
-                    <select id="cars" class="border-1 me-3 ms-2 border-radius p-2">
-                      <option value="volvo">15</option>
-                      <option value="saab">25</option>
-                      <option value="opel">35</option>
-                      <option value="audi">50</option>
-                    </select>
-                    <span class="text-light-gray text-sm">items per page</span>
-                  </div>
-                  <div class="pagination-right d-flex align-items-center gap-4 mt-4 mt-md-0">
-                    <button class="btn pagination-btn active">1</button>
-                    <button class="btn pagination-btn">2</button>
-                    <a class="text-light-gray text-decoration-none">Next</a>
-                    <a class="text-light-gray text-decoration-none">End</a>
-                  </div>
                 </div>
               </div>
             </div>

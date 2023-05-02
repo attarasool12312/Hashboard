@@ -22,6 +22,7 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
   <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
   <link href="./assets/css/main.css" rel="stylesheet" />
   <link href="./assets/css/responsive.css" rel="stylesheet" />
 </head>
@@ -76,15 +77,15 @@
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Sales-Dropdown"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-expeness"></i><span>Payrolls</span>
               </a>
               <ul class="Sales-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-employees.html"><i
+                <li><a class="dropdown-item panel_link " href="./fm-employees.html"><i
                       class="icon icon-expeness"></i>
                     <span>Employees</span></a></li>
-                <li><a class="dropdown-item panel_link" href="./fm-payrolls.html"><i
+                <li><a class="dropdown-item panel_link " href="./fm-payrolls.html"><i
                       class="icon icon-expeness"></i> <span>Payrolls</span></a></li>
               </ul>
             </li>
@@ -102,12 +103,12 @@
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Setting-Dropdown-1"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Setting-Dropdown-1"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-project-supplies"></i><span>Products & Services</span>
               </a>
               <ul class="Setting-Dropdown-1" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./fm-products-services.html"><i class="icon icon-project-supplies"></i>
+                <li><a class="dropdown-item panel_link active_panel" href="./fm-products-services.html"><i class="icon icon-project-supplies"></i>
                     <span>Products & Services</span></a></li>
               </ul>
             </li>
@@ -224,153 +225,164 @@
         <div class="container">
           <div class="page-main-title align-items-md-center">
             <div class="heading">
-              <h1>Employees</h1>
+              <h3><span class="text-light-gray">Product & Services/</span> Create a new purchased product Or Services</h3>
             </div>
-            <div class="d-flex align-items-center flex-colume-sm wsm-100">
-              <button type="button" class="btn ouline-white wsm-100 mt-3 mt-md-0 ms-md-2"><i class="icon icon-download"></i> Download</button>              
-              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2"
-                onclick="window.location.href='./fm-employees-create.html'">Add New Empolyee</button>
-            </div>
+            <button type="button" class="btn ouline-white border border-2 wsm-100 mt-3 mt-md-0">Cancel</button>
           </div>
           <div class="row">
-            <div class="col-md-3 mt-3">
-              <div class="sm-box h-100 bg-white box-hover">
-                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                  <span>
-                    <h3 class="fw-bold">1,244</h3>
-                  </span>
-                  <span class=""><i class="icon icon-cart-box"></i></span>
+            <div class="col-md-9">
+              <div class="form-check">
+                <input class="form-check-input d-block w-20" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label ms-3 fw-600 text-light-gray" for="flexCheckDefault">
+                  Product 
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input class="form-check-input d-block w-20" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label ms-3 fw-600 text-light-gray" for="flexCheckDefault">
+                  Service
+                </label>
+              </div>
+              <div class="chart mt-3">
+                <h3 class="fw-600">Product Details</h3>
+                <p class="text-light-gray mt-2">Please provide details of this product.</p>
+                <div class="row my-3">
+                  <div class="col-md-8">
+                    <label for="name" class="fw-bold mt-3 mb-2">Product Name*</label>
+                    <input type="text" name="name" id="name" placeholder="Type your product name" class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="name" class="fw-bold mt-3 mb-2">SKU</label>
+                    <input type="text" name="name" id="name" placeholder="T000-A-A" class="d-block w-100 border border-2 rounded px-4 py-2">
+                    <div class="ps-5 mt-2">
+                      <span class="check-tasks">
+                        <div class="checkbox relative">
+                          <label class="absolute">
+                            <input type="checkbox" data-ng-model="example.check">
+                            <span class="box"></span>
+                          </label>
+                        </div>
+                      </span>
+                      <p class="fw-600">Auto-generate SKU</p>
+                    </div>
+                  </div>
                 </div>
-                <p class="text-light-gray">Total Employees</p>
+                <div>
+                  <label for="name" class="fw-bold mt-3 mb-2">Vendor</label>
+                  <div class="d-flex align-items-center">
+                    <div class="col-8 col-md-10">
+                      <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="Manager">Select a Vendor</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Punjabi">Punjabi</option>
+                      </select>
+                    </div>
+                    <div class="col-3 col-md-2 text-end">
+                      <button type="button" class="btn ouline-white border border-2 text-fill">+ New</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <label for="name" class="fw-bold mt-3 mb-2">Product type</label>
+                  <div class="d-flex align-items-center">
+                    <div class="col-8 col-md-10">
+                      <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="Manager">Select a type</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Punjabi">Punjabi</option>
+                      </select>
+                    </div>
+                    <div class="col-3 col-md-2 text-end">
+                      <button type="button" class="btn ouline-white border border-2 text-fill">+ New</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <label for="name" class="fw-bold mt-3 mb-2">Brand</label>
+                  <div class="d-flex align-items-center">
+                    <div class="col-8 col-md-10">
+                      <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="Manager">Select a supplier</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Punjabi">Punjabi</option>
+                      </select>
+                    </div>
+                    <div class="col-3 col-md-2 text-end">
+                      <button type="button" class="btn ouline-white border border-2 text-fill">+ New</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <label for="name" class="fw-bold mt-3 mb-2">Product Description</label>
+                  <form>
+                    <textarea name="content" id="editor" class="p-4 rounded" placeholder="Describe your product.."></textarea>
+                </form>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="name" class="fw-bold mt-3 mb-2">Weight</label>
+                    <div class="d-flex align-items-center">
+                      <div class="col-md-10">
+                        <input type="text" name="name" id="name" placeholder="e.g Summer 2022" class="d-block w-100 border border-2 rounded px-4 py-2">
+                      </div>
+                      <div class="col-md-2">
+                        <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2 h-100 border-start-0">
+                          <option value="Manager">L</option>
+                          <option value="Urdu">G</option>
+                          <option value="Hindi">M</option>
+                          <option value="Punjabi">Xl</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="name" class="fw-bold mt-3 mb-2">Tags</label>
+                    <input type="text" name="name" id="name" placeholder="e.g Summer 2022" class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                </div>
+              <label for="name" class="fw-bold mt-3 mb-2">Initial Cost</label>
+              <div class="d-flex align-items-center">
+                <div class="col-1 border border-2 py-2 rounded-start">
+                  <p class="fw-600 text-center">$</p>
+                </div>
+                <div class="col-11">
+                  <input type="number" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2 border-start-0">                  
+                </div>
+              </div>
+              <label for="name" class="fw-bold mt-4 mb-2">Buy Price</label>
+              <div class="d-flex align-items-center">
+                <div class="col-1 border border-2 py-2 rounded-start">
+                  <p class="fw-600 text-center">$</p>
+                </div>
+                <div class="col-11">
+                  <input type="number" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2 border-start-0">                  
+                </div>
+              </div>
+              <label for="name" class="fw-bold mt-3 mb-2">Wholesale Price</label>
+              <div class="d-flex align-items-center">
+                <div class="col-1 border border-2 py-2 rounded-start">
+                  <p class="fw-600 text-center">$</p>
+                </div>
+                <div class="col-11">
+                  <input type="number" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2 border-start-0">                  
+                </div>
+              </div>
+              <label for="name" class="fw-bold mt-3 mb-2">Retail Price</label>
+              <div class="d-flex align-items-center">
+                <div class="col-1 border border-2 py-2 rounded-start">
+                  <p class="fw-600 text-center">$</p>
+                </div>
+                <div class="col-11">
+                  <input type="number" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2 border-start-0">                  
+                </div>
+              </div>
+              <div class="pt-3 border-top border-top-2 mt-4">
+                <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2">Create Product</button>
               </div>
             </div>
-            <div class="col-md-3 mt-3">
-              <div class="sm-box h-100 bg-white box-hover">
-                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                  <span>
-                    <h3 class="fw-bold">1,000</h3>
-                  </span>
-                  <span class=""><i class="icon icon-cart-box"></i></span>
-                </div>
-                <p class="text-light-gray">Males</p>
-              </div>
-            </div>
-            <div class="col-md-3 mt-3">
-              <div class="sm-box h-100 bg-white box-hover">
-                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                  <span>
-                    <h3 class="fw-bold">200</h3>
-                  </span>
-                  <span class=""><i class="icon icon-cart-box"></i></span>
-                </div>
-                <p class="text-light-gray">Females</p>
-              </div>
-            </div>
-            <div class="col-md-3 mt-3">
-              <div class="sm-box h-100 bg-white box-hover">
-                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                  <span>
-                    <h3 class="fw-bold">20,000.00</h3>
-                  </span>
-                  <span class=""><i class="icon icon-cart-box"></i></span>
-                </div>
-                <p class="text-light-gray">Avr. Salaries</p>
-              </div>
-            </div>
-            <div class="tab-content mt-3">
-              <div class="tab-pane active" id="Active" role="tabpanel" aria-labelledby="Active-tab">
-                <div class="invoice-table tablepanel mt-3 invoice-table-product">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col">Employee Name</th>
-                        <th scope="col">Emp ID</th>
-                        <th scope="col">Gender</th>
-                        <th scope="col">Nationality</th>
-                        <th scope="col">Basic</th>
-                        <th scope="col">Total</th>
-                        <th scope="col">Joined</th>
-                        <th scope="col">Grade</th>
-                        <th scope="col"></th>
-                      </tr>
-                    </thead>
-                    <tbody class="right-content interest-body" style="display: table-row-group;">
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-employees-profile.html'">
-                        <td scope="row" data-label="Bill no.">
-                          <div class="d-flex align-items-center">
-                            <img src="./assets/images/profile-2.png" alt="">
-                            <div class="ms-3 ">
-                              <p class="text-sm">Jon x</p>
-                              <p class="text-fill">Work Email</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td data-label="Vendor">12345</td>
-                        <td data-label="Vendor">Female</td>
-                        <td data-label="Order Date">Saudi</td>
-                        <td data-label="Tax rate">18,000.00</td>
-                        <td data-label="Paid Through">22,000.00</td>
-                        <td data-label="Amount">01-2-2023</td>
-                        <td data-label="Created date">2</td>
-                        <td>
-                          <div class="d-flex align-items-center justify-content-between">
-                            <a href=""><i class="icon icon-eye"></i></a>
-                            <a href=""><i class="icon icon-delete"></i></a>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-employees-profile.html'">
-                        <td scope="row" data-label="Bill no.">
-                          <div class="d-flex align-items-center">
-                            <img src="./assets/images/profile-3.png" alt="">
-                            <div class="ms-3 ">
-                              <p class="text-sm">Ali</p>
-                              <p class="text-fill">Work Email</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td data-label="Vendor">12345</td>
-                        <td data-label="Vendor">Male</td>
-                        <td data-label="Order Date">Saudi</td>
-                        <td data-label="Tax rate">18,000.00</td>
-                        <td data-label="Paid Through">22,000.00</td>
-                        <td data-label="Amount">01-2-2023</td>
-                        <td data-label="Created date">2</td>
-                        <td>
-                          <div class="d-flex align-items-center justify-content-between">
-                            <a href=""><i class="icon icon-eye"></i></a>
-                            <a href=""><i class="icon icon-delete"></i></a>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-employees-profile.html'">
-                        <td scope="row" data-label="Bill no.">
-                          <div class="d-flex align-items-center">
-                            <img src="./assets/images/profile-4.png" alt="">
-                            <div class="ms-3 ">
-                              <p class="text-sm">Saleh</p>
-                              <p class="text-fill">Work Email</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td data-label="Vendor">12345</td>
-                        <td data-label="Vendor">Male</td>
-                        <td data-label="Order Date">Saudi</td>
-                        <td data-label="Tax rate">18,000.00</td>
-                        <td data-label="Paid Through">22,000.00</td>
-                        <td data-label="Amount">01-2-2023</td>
-                        <td data-label="Created date">2</td>
-                        <td>
-                          <div class="d-flex align-items-center justify-content-between">
-                            <a href=""><i class="icon icon-eye"></i></a>
-                            <a href=""><i class="icon icon-delete"></i></a>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -433,6 +445,10 @@
                   aria-selected="false">general</button>
               </li>
               <li class="nav-item" role="presentation">
+                <button class="nav-link text-uppercase" id="Setting-tab" data-bs-toggle="tab" data-bs-target="#Setting"
+                  type="button" role="tab" aria-controls="Setting" aria-selected="false">Access Setting</button>
+              </li>
+              <li class="nav-item" role="presentation">
                 <button class="nav-link text-uppercase" id="security-tab" data-bs-toggle="tab"
                   data-bs-target="#security" type="button" role="tab" aria-controls="security"
                   aria-selected="false">security</button>
@@ -440,6 +456,11 @@
               <li class="nav-item" role="presentation">
                 <button class="nav-link text-uppercase" id="billing-tab" data-bs-toggle="tab" data-bs-target="#billing"
                   type="button" role="tab" aria-controls="billing" aria-selected="false">billing</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-uppercase" id="notifications-tab" data-bs-toggle="tab"
+                  data-bs-target="#notifications" type="button" role="tab" aria-controls="notifications"
+                  aria-selected="false">notifications</button>
               </li>
             </ul>
             <div class="tab-content">
@@ -487,6 +508,53 @@
                         class="d-block w-100 border border-2 rounded px-4 py-2">
                     </div>
                   </div>
+                </form>
+              </div>
+              <div class="tab-pane py-4" id="Setting" role="tabpanel" aria-labelledby="Setting-tab">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="account" class="fw-bold mt-3 mb-2">Account</label>
+                      <input type="text" name="account" id="account" placeholder="Enter a account"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <label for="account" class="fw-bold mt-3 mb-2">Account</label>
+                      <input type="text" name="account" id="account" placeholder="Enter a account"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <label for="account" class="fw-bold mt-3 mb-2">Account</label>
+                      <input type="text" name="account" id="account" placeholder="Enter a account"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <label for="account" class="fw-bold mt-3 mb-2">Account</label>
+                      <input type="text" name="account" id="account" placeholder="Enter a account"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="access" class="fw-bold mt-3 mb-2">Access Type</label>
+                      <select name="access" id="access" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="User">User</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Admin +">Admin +</option>
+                      </select>
+                      <label for="access" class="fw-bold mt-3 mb-2">Access Type</label>
+                      <select name="access" id="access" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="User">User</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Admin +">Admin +</option>
+                      </select>
+                      <label for="access" class="fw-bold mt-3 mb-2">Access Type</label>
+                      <select name="access" id="access" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="User">User</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Admin +">Admin +</option>
+                      </select>
+                      <label for="access" class="fw-bold mt-3 mb-2">Access Type</label>
+                      <select name="access" id="access" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="User">User</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Admin +">Admin +</option>
+                      </select>
+                    </div>
+                  </div>
+                  <a href="#" class="text-decoration-none text-uppercase mt-3 d-block">+ ADD MORE</a>
                 </form>
               </div>
               <div class="tab-pane py-4" id="security" role="tabpanel" aria-labelledby="security-tab">
@@ -545,6 +613,10 @@
                     <a href="#" class="text-decoration-none ms-3">Update</a>
                   </div>
                 </div>
+                <div class="d-flex align-items-center justify-content-between border-bottom py-3">
+                  <p>License keys</p>
+                  <a href="#" class="text-decoration-none ms-3">Redeem a license key</a>
+                </div>
                 <h5 class="fw-600 my-3">Payment History</h5>
                 <div class="border rounded">
                   <div class="d-flex align-items-center justify-content-between border-bottom p-3">
@@ -578,6 +650,36 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="tab-pane py-4" id="notifications" role="tabpanel" aria-labelledby="notifications-tab">
+                <div class="d-flex align-items-center justify-content-between py-2">
+                  <div>
+                    <h6 class="fw-600">New Lead</h6>
+                    <p class="text-small">Receive a notification for new leads</p>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckChecked" checked>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between py-2">
+                  <div>
+                    <h6 class="fw-600">New Customer</h6>
+                    <p class="text-small">Receive a notification for new customer</p>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckChecked">
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between py-2">
+                  <div>
+                    <h6 class="fw-600">New Project</h6>
+                    <p class="text-small">Receive a notification for new project</p>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckChecked" checked>
+                  </div>
+                </div>
+                <h6 class="mt-4 fw-600">More Options +</h6>
               </div>
             </div>
           </div>
@@ -773,6 +875,9 @@
   <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src='https://cdn.ckeditor.com/ckeditor5/28.0.0/classic/ckeditor.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js'></script>
+  <script src="./assets/js/editor.js"></script>
 </body>
-
 </html>

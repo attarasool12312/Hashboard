@@ -116,13 +116,7 @@
                         class="icon icon-settings"></i> <span>Account</span></a></li>
                   <li><a class="dropdown-item panel_link " href="./fm-setting-general.html"><i
                         class="icon icon-settings"></i> <span>General</span></a></li>
-                        <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal"
-                          data-bs-target="#setting1Modal"><i class="icon icon-settings"></i> <span>Setting 1</span></a></li>
-                      <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal"
-                          data-bs-target="#setting2Modal"><i class="icon icon-settings"></i> <span>Setting 2</span></a></li>
-                      <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal"
-                          data-bs-target="#payrollModal"><i class="icon icon-settings"></i> <span>Payroll Setting</span></a>
-                      </li>
+                       
                 </ul>
               </li>
               <li><a href="./new-index.html" class="panel_link "><span>New Dashboard</span></a></li>
@@ -214,7 +208,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-md-2 mt-5">
+            <div class="col-md-3 mt-5">
               <div class="general-tabs">
                 <h4 class="fw-600">Company</h4>
                 <ul class="nav nav-tabs flex-column border-0" id="myTab" role="tablist">
@@ -222,6 +216,21 @@
                     <button class="nav-link text-uppercase active" id="Organization-tab" data-bs-toggle="tab"
                       data-bs-target="#Organization" type="button" role="tab" aria-controls="Organization"
                       aria-selected="true">Organization Details</button>
+                  </li>
+                  <li class="nav-item m-0" role="presentation">
+                    <button class="nav-link text-uppercase" id="Organication-tab" data-bs-toggle="tab"
+                      data-bs-target="#Organication" type="button" role="tab" aria-controls="Organication"
+                      aria-selected="true">Organication Setting</button>
+                  </li>
+                  <li class="nav-item m-0" role="presentation">
+                    <button class="nav-link text-uppercase" id="InvoiceBill-tab" data-bs-toggle="tab"
+                      data-bs-target="#InvoiceBill" type="button" role="tab" aria-controls="InvoiceBill"
+                      aria-selected="true">Invoice & Bill setting</button>
+                  </li>
+                  <li class="nav-item m-0" role="presentation">
+                    <button class="nav-link text-uppercase" id="Payroll-tab" data-bs-toggle="tab"
+                      data-bs-target="#Payroll" type="button" role="tab" aria-controls="Payroll"
+                      aria-selected="true">Payroll setting</button>
                   </li>
                   <li class="nav-item m-0" role="presentation">
                     <button class="nav-link text-uppercase" id="Expenses-tab" data-bs-toggle="tab"
@@ -233,6 +242,7 @@
                       data-bs-target="#Invoice" type="button" role="tab" aria-controls="Invoice"
                       aria-selected="true">Invoice setting</button>
                   </li>
+                  
                   <li class="nav-item m-0" role="presentation">
                     <button class="nav-link text-uppercase" id="Email-tab" data-bs-toggle="tab" data-bs-target="#Email"
                       type="button" role="tab" aria-controls="Email" aria-selected="true">Email Setting</button>
@@ -260,9 +270,9 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-9">
               <div class="tab-content mt-5">
-                <div class="tab-pane " id="Organization" role="tabpanel" aria-labelledby="Organization-tab">
+                <div class="tab-pane active " id="Organization" role="tabpanel" aria-labelledby="Organization-tab">
                   <h2 class="fw-600">Basic Information</h2>
                   <form>
                     <div class="d-flex mt-4">
@@ -398,7 +408,7 @@
                     </div>
                   </form>
                 </div>
-                <div class="tab-pane active" id="Invoice" role="tabpanel" aria-labelledby="Invoice-tab">
+                <div class="tab-pane " id="Invoice" role="tabpanel" aria-labelledby="Invoice-tab">
                   <div class="mt-4 d-flex align-items-center">
                     <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#invoiceTemplateModal">New Invoice Template</button>
                     <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0">Default Setting</button>
@@ -1688,6 +1698,162 @@
                     </table>
                   </div>
                 </div>
+                <div class="tab-pane" id="Organication" role="tabpanel" aria-labelledby="Organication-tab">
+                    <form>
+                      <div class="d-flex mt-4">
+                        <label for="role" class="fw-bold me-3 col-md-3">Company Name</label>
+                        <input type="text" placeholder="Initiation stage stage" class="d-block w-100 border border-2 rounded px-4 py-2">
+                      </div>
+                      <div class="d-flex mt-3">
+                        <label for="role" class="fw-bold me-3 col-md-3">Company Name (Arabic)</label>
+                        <input type="text" placeholder="Initiation stage stage" class="d-block w-100 border border-2 rounded px-4 py-2">
+                      </div>
+                      <div class="d-flex mt-3">
+                        <label for="role" class="fw-bold me-3 col-md-3">Tax Number</label>
+                        <input type="text" placeholder="Report category" class="d-block w-100 border border-2 rounded px-4 py-2">
+                      </div>
+                      <div class="d-flex mt-3">
+                        <label for="role" class="fw-bold me-3 col-md-3">VAT Number</label>
+                        <input type="text" placeholder="Report data 1" class="d-block w-100 border border-2 rounded px-4 py-2">
+                      </div>
+                      <div class="d-flex mt-3">
+                        <label for="role" class="fw-bold me-3 col-md-3">Adress</label>
+                        <input type="text" placeholder="Report data 2" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        </div>
+                        <div class="d-flex mt-3">
+                          <label for="role" class="fw-bold me-3 col-md-3">Email</label>
+                          <input type="email" placeholder="Report data 2" class="d-block w-100 border border-2 rounded px-4 py-2">
+                          </div>
+                          <div class="d-flex mt-3">
+                            <label for="role" class="fw-bold me-3 col-md-3">Phone</label>
+                            <input type="number" placeholder="000000" class="d-block w-100 border border-2 rounded px-4 py-2">
+                            </div>
+                            <div class="d-flex mt-3">
+                              <label for="role" class="fw-bold me-3 col-md-3">Preferred Currency</label>
+                              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
+                                <option value="Manager">Select one of the below</option>
+                                <option value="Manager">SAR</option>
+                                <option value="Urdu">Sab</option>
+                                <option value="Hindi">Opel</option>
+                                <option value="Punjabi">Audi</option>
+                              </select>
+                              </div>
+                              <div class="text-end w-100">
+                                <button class="btn btn-fill wsm-100 mt-3">Submit</button>
+                              </div>
+                    </form>
+                </div>
+                <div class="tab-pane" id="InvoiceBill" role="tabpanel" aria-labelledby="InvoiceBill-tab">
+                  <form>
+                    <div class="d-flex mt-4">
+                      <label for="role" class="fw-bold me-3 col-md-3">Bank Name</label>
+                      <input type="text" placeholder="Initiation stage stage" class="d-block w-100 border border-2 rounded px-4 py-2">
+                    </div>
+                    <div class="d-flex mt-3">
+                      <label for="role" class="fw-bold me-3 col-md-3">Bank Account</label>
+                      <input type="number" placeholder="Initiation stage stage" class="d-block w-100 border border-2 rounded px-4 py-2">
+                    </div>
+                    <div class="d-flex mt-3">
+                      <label for="role" class="fw-bold me-3 col-md-3">Payment Terms</label>
+                      <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="volvo">After 30 Days</option>
+                      </select>
+                      </div>
+                      <div class="w-100 text-end mt-2">
+                        <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray" data-bs-toggle="modal" data-bs-target="#PaymentModal">+ Add new</a>
+                      </div>
+                      <div class="d-flex mt-3">
+                        <label for="role" class="fw-bold me-3 col-md-3">Tax Type</label>
+                        <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
+                          <option value="volvo">15%</option>
+                        </select>
+                        </div>
+                        <div class="w-100 text-end mt-2">
+                          <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray" data-bs-toggle="modal" data-bs-target="#TaxModal">+ Add new</a>
+                        </div>
+                        <div class="d-flex mt-3">
+                          <label for="role" class="fw-bold me-3 col-md-3">Accounts</label>
+                          <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
+                            <option class="" value="#">Petty Cash 122</option>
+                          </select>
+                          </div>
+                          <div class="w-100 text-end mt-2">
+                            <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray" data-bs-toggle="modal" data-bs-target="#AccountsModal">+ Add new</a>
+                          </div>
+                      
+                        
+                          
+                            <div class="text-end w-100">
+                              <button class="btn btn-fill wsm-100 mt-3">Submit</button>
+                            </div>
+                  </form>
+                </div>
+                <div class="tab-pane" id="Payroll" role="tabpanel" aria-labelledby="Payroll-tab">
+                  <form>
+                    <div class="d-flex mt-4">
+                      <label for="role" class="fw-bold me-3 col-md-3">Overtime multiplier</label>
+                      <div class="d-flex align-items-center w-100">
+                        <input type="number" name="name" id="name" placeholder="1.5" class="d-block w-100 border border-2 rounded-start px-4 py-2 border-end-0">
+                        <p class="text-light-gray fw-600 bg-white border border-2 rounded-end border-start-0 py-2 pe-2">Hours</p>
+                      </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                      <label for="role" class="fw-bold me-3 col-md-3">Late multiplier</label>
+                      <div class="d-flex align-items-center w-100">
+                        <input type="number" name="name" id="name" placeholder="1.5" class="d-block w-100 border border-2 rounded-start px-4 py-2 border-end-0">
+                        <p class="text-light-gray fw-600 bg-white border border-2 rounded-end border-start-0 py-2 pe-2">Hours</p>
+                      </div>
+                                        </div>
+                    <div class="d-flex mt-3">
+                      <label for="role" class="fw-bold me-3 col-md-3">Undertime multiplier</label>
+                      <div class="d-flex align-items-center w-100">
+                        <input type="number" name="name" id="name" placeholder="1.5" class="d-block w-100 border border-2 rounded-start px-4 py-2 border-end-0">
+                        <p class="text-light-gray fw-600 bg-white border border-2 rounded-end border-start-0 py-2 pe-2">Hours</p>
+                      </div>
+                      </div>
+                    
+                      <div class="d-flex mt-3">
+                        <label for="role" class="fw-bold me-3 col-md-3">Liability account</label>
+                        <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
+                          <option value="#">Cost of goods</option>
+                        </select>
+                        </div>
+                        <div class="w-100 text-end mt-2">
+                          <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray">+ Add new</a>
+                        </div>
+                        <div class="d-flex mt-3">
+                          <label for="role" class="fw-bold me-3 col-md-3">Direct Cost Salaries</label>
+                          <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
+                            <option value="#">Cost of goods</option>
+                          </select>
+                          </div>
+                          <div class="w-100 text-end mt-2">
+                            <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray">+ Add new</a>
+                          </div>
+                          <div class="d-flex mt-3">
+                            <label for="role" class="fw-bold me-3 col-md-3">Bonuses</label>
+                            <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
+                              <option value="#">Cost of goods</option>
+                            </select>
+                            </div>
+                            <div class="w-100 text-end mt-2">
+                              <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray">+ Add new</a>
+                            </div>
+                            <div class="d-flex mt-3">
+                              <label for="role" class="fw-bold me-3 col-md-3">Deduction</label>
+                              <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
+                                <option value="#">Other Income</option>
+                              </select>
+                              </div>
+                              <div class="w-100 text-end mt-2">
+                                <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray">+ Add new</a>
+                              </div>
+                          
+                            <div class="text-end w-100">
+                              <button class="btn btn-fill wsm-100 mt-3">Submit</button>
+                            </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -1895,182 +2061,6 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   </div>
 </div>
 </div>
-    <div class="modal fade" id="setting1Modal" tabindex="-1" aria-labelledby="setting1ModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="setting1ModalLabel">Setting 1</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <label for="Customer-name" class="d-block mb-2 mt-3">Company Name</label>
-              <input type="text" name="name" id="name" placeholder="Initiation stage stage"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="Customer-name" class="d-block mb-2 mt-3">Company Name (Arabic)</label>
-              <input type="text" name="name" id="name" placeholder="Initiation stage stage"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="Customer-name" class="d-block mb-2 mt-3">Tax Number</label>
-              <input type="text" name="name" id="name" placeholder="Report category"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="Customer-name" class="d-block mb-2 mt-3">VAT Number</label>
-              <input type="text" name="name" id="name" placeholder="Report data 1"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="Customer-name" class="d-block mb-2 mt-3">Adress</label>
-              <input type="text" name="name" id="name" placeholder="Report data 2"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="Customer-name" class="d-block mb-2 mt-3">Email</label>
-              <input type="text" name="name" id="name" placeholder="Report data 2"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="Customer-name" class="d-block mb-2 mt-3">Phone</label>
-              <input type="tel" name="name" id="name" placeholder="000000"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="Customer-name" class="d-block mb-2 mt-3">Preferred Currency</label>
-              <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="volvo">SAR</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-            </form>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-fill text-uppercase">Submit</button>
-            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="setting2Modal" tabindex="-1" aria-labelledby="setting2ModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="setting2ModalLabel">Setting 2</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <label for="Customer-name" class="d-block mb-2 mt-3">Bank Name</label>
-              <input type="text" name="name" id="name" placeholder="Initiation stage stage"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="Customer-name" class="d-block mb-2 mt-3">Bank Account</label>
-              <input type="text" name="name" id="name" placeholder="Initiation stage stage"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="Customer-name" class="d-block mb-2 mt-3">Payment Terms</label>
-              <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="volvo">After 30 Days</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <div class="w-100 text-end mt-2">
-                <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray">+ Add new</a>
-              </div>
-              <label for="Customer-name" class="d-block mb-2 mt-3">Tax Type</label>
-              <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="volvo">15%</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <div class="w-100 text-end mt-2">
-                <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray">+ Add new</a>
-              </div>
-              <label for="Customer-name" class="d-block mb-2 mt-3">Accounts</label>
-              <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="volvo">Petty Cash</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <div class="w-100 text-end mt-2">
-                <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray">+ Add new</a>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-fill text-uppercase">Submit</button>
-            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="payrollModal" tabindex="-1" aria-labelledby="payrollModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="payrollModalLabel">Payroll Setting</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <label for="Customer-name" class="d-block mb-2 mt-3">Overtime multiplier</label>
-              <div class="d-flex align-items-center">
-                <input type="number" name="name" id="name" placeholder="1.5"
-                class="d-block w-100 border border-2 rounded-start px-4 py-2 border-end-0">
-                <p class="text-light-gray fw-600 border border-2 rounded-end border-start-0 py-2 pe-2">Hours</p>
-              </div>
-              <label for="Customer-name" class="d-block mb-2 mt-3">Late multiplier</label>
-              <div class="d-flex align-items-center">
-                <input type="number" name="name" id="name" placeholder="1.5"
-                class="d-block w-100 border border-2 rounded-start px-4 py-2 border-end-0">
-                <p class="text-light-gray fw-600 border border-2 rounded-end border-start-0 py-2 pe-2">Hours</p>
-              </div>
-              <label for="Customer-name" class="d-block mb-2 mt-3">Undertime multiplier</label>
-              <div class="d-flex align-items-center">
-                <input type="number" name="name" id="name" placeholder="1.5"
-                class="d-block w-100 border border-2 rounded-start px-4 py-2 border-end-0">
-                <p class="text-light-gray fw-600 border border-2 rounded-end border-start-0 py-2 pe-2">Hours</p>
-              </div>
-              <label for="Customer-name" class="d-block mb-2 mt-3">Liability account</label>
-              <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="volvo">Cost of goods</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <div class="w-100 text-end mt-2">
-                <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray">+ Add new</a>
-              </div>
-              <label for="Customer-name" class="d-block mb-2 mt-3">Direct Cost Salaries</label>
-              <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="volvo">Cost of goods</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <div class="w-100 text-end mt-2">
-                <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray">+ Add new</a>
-              </div>
-              <label for="Customer-name" class="d-block mb-2 mt-3">Bonuses</label>
-              <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="volvo">Cost of goods</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <div class="w-100 text-end mt-2">
-                <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray">+ Add new</a>
-              </div>
-              <label for="Customer-name" class="d-block mb-2 mt-3">Deduction</label>
-              <select id="cars" name="carlist" form="carform" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="volvo">Other Income</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <div class="w-100 text-end mt-2">
-                <a href="" class="fw-600 text-decoration-none text-uppercase text-light-gray">+ Add new</a>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-fill text-uppercase">Submit</button>
-            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 <div class="modal fade" id="invoiceTemplateModal" tabindex="-1" aria-labelledby="invoiceTemplateModalLabel" aria-hidden="true">
   <div class="modal-dialog width-70 width-95">
     <div class="modal-content">
@@ -2542,6 +2532,57 @@ aria-labelledby="interviewLabel" aria-hidden="true">
         </div>
       </div>
     </div>
+<div class="modal fade" id="PaymentModal" tabindex="-1" aria-labelledby="PaymentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="PaymentModalLabel">Payment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label for="name" class="fw-bold mt-3 mb-2">Payment Terms</label>
+        <input type="text" name="name" id="name" placeholder="Enter Payment Term" class="d-block w-100 border border-2 rounded px-4 py-2">      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Save</button>
+        <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="TaxModal" tabindex="-1" aria-labelledby="TaxModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TaxModalLabel">Tax</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label for="name" class="fw-bold mt-3 mb-2">Tax Type</label>
+        <input type="text" name="name" id="name" placeholder="Enter Tax Type" class="d-block w-100 border border-2 rounded px-4 py-2">      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Save</button>
+        <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="AccountsModal" tabindex="-1" aria-labelledby="AccountsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="AccountsModalLabel">Accounts</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label for="name" class="fw-bold mt-3 mb-2">Account</label>
+        <input type="text" name="name" id="name" placeholder="Enter Account" class="d-block w-100 border border-2 rounded px-4 py-2">      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Save</button>
+        <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
   </section>
   <!-- JavaScript
 ================================================== -->

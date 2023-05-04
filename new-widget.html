@@ -13,8 +13,11 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/fontawesome.css" />
+
+  <!-- <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/fontawesome.css" />
   <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/tabler-icons.css" />
   <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/flag-icons.css" />
   <link rel="stylesheet" href="./assets/new-dashboard/vendor/css/rtl/core.css" class="template-customizer-core-css" />
@@ -27,7 +30,7 @@
   <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/apex-charts/apex-charts.css" />
   <link rel="stylesheet" href="./assets/css/main.css">
 
-  <script src="./assets/new-dashboard/vendor/js/helpers.js"></script>
+  <script src="./assets/new-dashboard/vendor/js/helpers.js"></script> -->
 </head>
 
 <body>
@@ -91,16 +94,11 @@
         <div class="flex-grow-1">
           <nav class="layout-navbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
             id="layout-navbar">
-            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
-                <i class="ti ti-menu-2 ti-sm"></i>
-              </a>
-            </div>
-            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <div class="navbar-nav-right d-flex align-items-center justify-content-between w-100" id="navbar-collapse">
               <div class="navbar-nav align-items-center">
                 <div class="dropdown theme-filter" id="dropDown">
                   <button
-                    class="btn btn-sm border-0 d-flex justify-content-betweendropdown-toggle p-50 waves-effect waves-float waves-light"
+                    class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0"
                     type="button" id="dropdownItem4" data-bs-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" style="background: transparent !important; z-index: 9">
                     Select Management
@@ -120,7 +118,7 @@
               </div>
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <div class="contact-support">
-                  <a href="#" class="text-dark fw-600">Contact Support</a>
+                  <a href="#" class="text-dark fw-600 text-decoration-none">Contact Support</a>
                 </div>
               </ul>
             </div>
@@ -177,7 +175,11 @@
     </div>
   </section>
 
-  <script src="./assets/new-dashboard/vendor/libs/jquery/jquery.js"></script>
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <!-- <script src="./assets/new-dashboard/vendor/libs/jquery/jquery.js"></script>
   <script src="./assets/new-dashboard/vendor/libs/popper/popper.js"></script>
   <script src="./assets/new-dashboard/vendor/js/bootstrap.js"></script>
   <script src="./assets/new-dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
@@ -189,7 +191,7 @@
   <script src="./assets/new-dashboard/vendor/libs/apex-charts/apexcharts.js"></script>
   <script src="./assets/new-dashboard/js/main.js"></script>
   <script src="./assets/new-dashboard/js/charts-apex.js"></script>
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/main.js"></script> -->
 
 </body>
 

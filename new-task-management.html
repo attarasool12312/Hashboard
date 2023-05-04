@@ -14,36 +14,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/fontawesome.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/tabler-icons.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/flag-icons.css" />
-
-  <!-- Core CSS -->
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/css/rtl/core.css" class="template-customizer-core-css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/css/rtl/theme-default.css"
-    class="template-customizer-theme-css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/css/demo.css" />
-
-  <!-- Vendors CSS -->
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/node-waves/node-waves.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/typeahead-js/typeahead.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
-  <link rel="stylesheet"
-    href="./assets/new-dashboard/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/select2/select2.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
-  <!-- Page CSS -->
-
-  <!-- Helpers -->
-  <script src="./assets/new-dashboard/vendor/js/helpers.js"></script>
-  <!-- <script src="./assets/new-dashboard/vendor/js/template-customizer.js"></script> -->
-  <!-- <script src="./assets/new-dashboard/js/config.js"></script> -->
-  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="./assets/css/main.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -107,16 +80,11 @@
         <div class="flex-grow-1">
           <nav class="layout-navbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
             id="layout-navbar">
-            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
-                <i class="ti ti-menu-2 ti-sm"></i>
-              </a>
-            </div>
-            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <div class="navbar-nav-right d-flex align-items-center justify-content-between w-100" id="navbar-collapse">
               <div class="navbar-nav align-items-center">
                 <div class="dropdown theme-filter" id="dropDown">
                   <button
-                    class="btn btn-sm border-0 d-flex justify-content-betweendropdown-toggle p-50 waves-effect waves-float waves-light"
+                    class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0"
                     type="button" id="dropdownItem4" data-bs-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" style="background: transparent !important; z-index: 9">
                     Select Management
@@ -136,7 +104,7 @@
               </div>
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <div class="contact-support">
-                  <a href="#" class="text-dark fw-600">Contact Support</a>
+                  <a href="#" class="text-dark fw-600 text-decoration-none">Contact Support</a>
                 </div>
               </ul>
             </div>
@@ -199,7 +167,7 @@
                             <img src="./assets/new-dashboard/img/avatars/7.png" alt="Avatar" class="rounded-circle" />
                           </li>
                         </ul>
-                        <button class="btn bg-blue create-btn text-white ml-14">
+                        <button class="btn bg-blue create-btn text-white ms-3">
                           <img src="./assets/new-dashboard/img/databoard/plus.svg"> Invite Member
                         </button>
                       </div>
@@ -226,7 +194,7 @@
                             </div>
                           </div>
                           <div class="task-body">
-                            <div class="task-name">
+                            <div class="d-flex justify-content-between">
                               <h6>Research potential tradeshows</h6>
                               <div class="dropdown theme-filter ">
                                 <button
@@ -250,7 +218,7 @@
                             <div class="task-image">
                               <img src="./assets/new-dashboard/img/task/image.png">
                             </div>
-                            <div class="attachment-message">
+                            <div class="d-flex justify-content-between">
                               <div>
                                 <label><img src="./assets/new-dashboard/img/icons/attachment.svg">4</label>
                                 <label><img src="./assets/new-dashboard/img/icons/message.svg">5</label>
@@ -278,7 +246,7 @@
                             </div>
                           </div>
                           <div class="task-body">
-                            <div class="task-name">
+                            <div class="d-flex justify-content-between">
                               <h6>Research potential tradeshows</h6>
                               <div class="dropdown theme-filter ">
                                 <button
@@ -304,7 +272,7 @@
                                 Review vendor rules and regulations
                               </p>
                             </div>
-                            <div class="attachment-message">
+                            <div class="d-flex justify-content-between">
                               <div>
                                 <label><img src="./assets/new-dashboard/img/icons/attachment.svg">4</label>
                                 <label><img src="./assets/new-dashboard/img/icons/message.svg">5</label>
@@ -356,7 +324,7 @@
                             </div>
                           </div>
                           <div class="task-body">
-                            <div class="task-name">
+                            <div class="d-flex justify-content-between">
                               <h6>Research potential tradeshows</h6>
                               <div class="dropdown theme-filter ">
                                 <button
@@ -380,7 +348,7 @@
                             <div class="task-image">
                               <img src="./assets/new-dashboard/img/task/image.png">
                             </div>
-                            <div class="attachment-message">
+                            <div class="d-flex justify-content-between">
                               <div>
                                 <label><img src="./assets/new-dashboard/img/icons/attachment.svg">4</label>
                                 <label><img src="./assets/new-dashboard/img/icons/message.svg">5</label>
@@ -408,7 +376,7 @@
                             </div>
                           </div>
                           <div class="task-body">
-                            <div class="task-name">
+                            <div class="d-flex justify-content-between">
                               <h6>Research potential tradeshows</h6>
                               <div class="dropdown theme-filter ">
                                 <button
@@ -434,7 +402,7 @@
                                 Review vendor rules and regulations
                               </p>
                             </div>
-                            <div class="attachment-message">
+                            <div class="d-flex justify-content-between">
                               <div>
                                 <label><img src="./assets/new-dashboard/img/icons/attachment.svg">4</label>
                                 <label><img src="./assets/new-dashboard/img/icons/message.svg">5</label>
@@ -486,7 +454,7 @@
                             </div>
                           </div>
                           <div class="task-body">
-                            <div class="task-name">
+                            <div class="d-flex justify-content-between">
                               <h6>Research potential tradeshows</h6>
                               <div class="dropdown theme-filter ">
                                 <button
@@ -510,7 +478,7 @@
                             <div class="task-image">
                               <img src="./assets/new-dashboard/img/task/image.png">
                             </div>
-                            <div class="attachment-message">
+                            <div class="d-flex justify-content-between">
                               <div>
                                 <label><img src="./assets/new-dashboard/img/icons/attachment.svg">4</label>
                                 <label><img src="./assets/new-dashboard/img/icons/message.svg">5</label>
@@ -538,7 +506,7 @@
                             </div>
                           </div>
                           <div class="task-body">
-                            <div class="task-name">
+                            <div class="d-flex justify-content-between">
                               <h6>Research potential tradeshows</h6>
                               <div class="dropdown theme-filter ">
                                 <button
@@ -564,7 +532,7 @@
                                 Review vendor rules and regulations
                               </p>
                             </div>
-                            <div class="attachment-message">
+                            <div class="d-flex justify-content-between">
                               <div>
                                 <label><img src="./assets/new-dashboard/img/icons/attachment.svg">4</label>
                                 <label><img src="./assets/new-dashboard/img/icons/message.svg">5</label>
@@ -616,7 +584,7 @@
                             </div>
                           </div>
                           <div class="task-body">
-                            <div class="task-name">
+                            <div class="d-flex justify-content-between">
                               <h6>Research potential tradeshows</h6>
                               <div class="dropdown theme-filter ">
                                 <button
@@ -640,7 +608,7 @@
                             <div class="task-image">
                               <img src="./assets/new-dashboard/img/task/image.png">
                             </div>
-                            <div class="attachment-message">
+                            <div class="d-flex justify-content-between">
                               <div>
                                 <label><img src="./assets/new-dashboard/img/icons/attachment.svg">4</label>
                                 <label><img src="./assets/new-dashboard/img/icons/message.svg">5</label>
@@ -668,7 +636,7 @@
                             </div>
                           </div>
                           <div class="task-body">
-                            <div class="task-name">
+                            <div class="d-flex justify-content-between">
                               <h6>Research potential tradeshows</h6>
                               <div class="dropdown theme-filter ">
                                 <button
@@ -694,7 +662,7 @@
                                 Review vendor rules and regulations
                               </p>
                             </div>
-                            <div class="attachment-message">
+                            <div class="d-flex justify-content-between">
                               <div>
                                 <label><img src="./assets/new-dashboard/img/icons/attachment.svg">4</label>
                                 <label><img src="./assets/new-dashboard/img/icons/message.svg">5</label>
@@ -734,7 +702,7 @@
 
                   <!-- ===========START LIST ============ -->
                   <div class="col-md-12" style="display: none;" id="listId">
-                    <div class="card pad-24">
+                    <div class="p-4">
                       <div class="col-md-12  super-hub ">
                         <div class="row d-grid">
                           <div>
@@ -917,7 +885,7 @@
                         <!-------- ADD List ---->
                         <button class="btn dashed add"><img src="./assets/new-dashboard/img/icons/add.svg"> Add</button>
                       </div>
-                      <div class="col-md-12  super-hub  mt-24">
+                      <div class="col-md-12  super-hub  mt-4">
                         <div class="row d-grid">
                           <div>
                             <h3 class="text-dark">In Work<span class="blue-circle text-small text-white">3</span></h3>
@@ -3639,47 +3607,10 @@
     </div>
   </section>
 
-  <!-- Core JS -->
-  <!-- build:js assets/vendor/js/core.js -->
-  <script src="./assets/new-dashboard/vendor/libs/jquery/jquery.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/popper/popper.js"></script>
-  <script src="./assets/new-dashboard/vendor/js/bootstrap.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/node-waves/node-waves.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/hammer/hammer.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/i18n/i18n.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/typeahead-js/typeahead.js"></script>
-  <script src="./assets/new-dashboard/vendor/js/menu.js"></script>
-  <!-- endbuild -->
-
-  <!-- Vendors JS -->
-  <script src="./assets/new-dashboard/vendor/libs/moment/moment.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables/jquery.dataTables.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-responsive/datatables.responsive.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-buttons/datatables-buttons.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/jszip/jszip.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/pdfmake/pdfmake.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-buttons/buttons.html5.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/datatables-buttons/buttons.print.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/select2/select2.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/cleavejs/cleave.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/cleavejs/cleave-phone.js"></script>
-
-  <!-- Main JS -->
-  <script src="./assets/new-dashboard/js/main.js"></script>
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/main.js"></script>
-  <!-- Page JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
   <script>
     $('html').removeClass('layout-menu-collapsed');
     $('#expandMenuOnClick').on('click', function () {

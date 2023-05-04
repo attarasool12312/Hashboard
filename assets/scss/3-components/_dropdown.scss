@@ -78,3 +78,21 @@
     }
   }
 }
+.setting-panal{
+  .select-dropdown .dropdown-toggle{
+    background-color: transparent;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .dropdown-menu{
+    background-color: transparent;
+    border:  0;
+    position: static !important;
+    transform: translate(0px, 0px) !important;
+    .dropdown-item{
+      font-size: 13px;
+      font-weight: 500;
+      color: #898989;
+    }
+  }
+}

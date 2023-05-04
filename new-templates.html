@@ -13,20 +13,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
-
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/fontawesome.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/tabler-icons.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/fonts/flag-icons.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/css/rtl/core.css" class="template-customizer-core-css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/css/demo.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/node-waves/node-waves.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/typeahead-js/typeahead.css" />
-  <link rel="stylesheet" href="./assets/new-dashboard/vendor/libs/apex-charts/apex-charts.css" />
-  <link rel="stylesheet" href="./assets/css/main.css">
-  <script src="./assets/new-dashboard/vendor/js/helpers.js"></script>
 </head>
 
 <body>
@@ -90,16 +79,11 @@
         <div class="flex-grow-1">
           <nav class="layout-navbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
             id="layout-navbar">
-            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
-                <i class="ti ti-menu-2 ti-sm"></i>
-              </a>
-            </div>
-            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <div class="navbar-nav-right d-flex align-items-center justify-content-between w-100" id="navbar-collapse">
               <div class="navbar-nav align-items-center">
                 <div class="dropdown theme-filter" id="dropDown">
                   <button
-                    class="btn btn-sm border-0 d-flex justify-content-betweendropdown-toggle p-50 waves-effect waves-float waves-light"
+                    class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0"
                     type="button" id="dropdownItem4" data-bs-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" style="background: transparent !important; z-index: 9">
                     Select Management
@@ -119,7 +103,7 @@
               </div>
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <div class="contact-support">
-                  <a href="#" class="text-dark fw-600">Contact Support</a>
+                  <a href="#" class="text-dark fw-600 text-decoration-none">Contact Support</a>
                 </div>
               </ul>
             </div>
@@ -145,39 +129,39 @@
               </div>
             </div>
             <div class="col-md-9">
-              <div class="layout-page flex-grow-1 container-p-y" style="padding: 0 !important;">
+              <div class="pt-0 flex-grow-1 container-p-y" style="padding: 0 !important;">
                 <div class="row">
                   <div class="col-md-12 mb-4">
                     <div class="boxes">
-                      <div class="box mr-16 orange mb-3">
+                      <div class="box me-3 orange mb-3">
                         <h4>$902.008K</h4>
                         <div class="box-footer">
                           <span>My Balance</span>
                           <span>+12.09%<img src="./assets/new-dashboard/img/icons/growth.svg"></span>
                         </div>
                       </div>
-                      <div class="box mr-16 light-green mb-3">
+                      <div class="box me-3 light-green mb-3">
                         <h4>$902.008K</h4>
                         <div class="box-footer">
                           <span>My Balance</span>
                           <span>+12.09%<img src="./assets/new-dashboard/img/icons/growth.svg"></span>
                         </div>
                       </div>
-                      <div class="box mr-16 light-purple mb-3">
+                      <div class="box me-3 light-purple mb-3">
                         <h4>$902.008K</h4>
                         <div class="box-footer">
                           <span>My Balance</span>
                           <span>+12.09%<img src="./assets/new-dashboard/img/icons/growth.svg"></span>
                         </div>
                       </div>
-                      <div class="box mr-16 light-blue mb-3">
+                      <div class="box me-3 light-blue mb-3">
                         <h4>$902.008K</h4>
                         <div class="box-footer">
                           <span>My Balance</span>
                           <span>+12.09%<img src="./assets/new-dashboard/img/icons/growth.svg"></span>
                         </div>
                       </div>
-                      <div class="box mr-16 light-red mb-3">
+                      <div class="box me-3 light-red mb-3">
                         <h4>$902.008K</h4>
                         <div class="box-footer">
                           <span>My Balance</span>
@@ -188,10 +172,10 @@
                   </div>
                   <div class="row">
                     <div class="col-md-8">
-                      <div class="card  p-0">
+                      <div class="p-0">
                         <div class="card-header d-flex justify-content-between">
                           <div>
-                            <h5 class="card-title text-dark mb-0">Tasks Overview</h5>
+                            <h5 class="text-dark mb-0">Tasks Overview</h5>
                           </div>
                           <div class="d-sm-flex d-none align-items-center">
                             <div class="btn-group d-none d-sm-flex" role="group"
@@ -217,40 +201,32 @@
                       </div>
                     </div>
                     <div class=" col-md-4 p-0">
-                      <!-- <div class="card blue-bg ">
+                      <div>
                         <div class="card-header d-flex justify-content-between">
                           <div>
-                            <h5 class="card-title mb-0">Weekly Summary</h5>
-                          </div>
-                        </div>
-                        <div style="height: 200px;"></div>
-                      </div> -->
-                      <div class="card">
-                        <div class="card-header d-flex justify-content-between">
-                          <div>
-                            <h5 class="card-title mb-0 text-dark">Sales by Locations</h5>
+                            <h5 class="mb-0 text-dark">Sales by Locations</h5>
                           </div>
                         </div>
                         <div class="card-body">
-                          <div class="location">
-                            <div class="text-dark">
-                              <img src="./assets/new-dashboard/img/icons/flag.svg">United States
+                          <div>
+                            <div>
+                              <img src="./assets/new-dashboard/img/icons/flag.svg"> <span class="ms-2">United States</span>
                             </div>
-                            <div class="text-right text-dark"><span class="value">74%</span>
-                            </div>
-                          </div>
-                          <div class="location">
-                            <div class="text-dark">
-                              <img src="./assets/new-dashboard/img/icons/flag.svg">United States
-                            </div>
-                            <div class="text-right text-dark"><span class="value">74%</span>
+                            <div class="text-end text-dark"><span class="value">74%</span>
                             </div>
                           </div>
-                          <div class="location">
-                            <div class="text-dark">
-                              <img src="./assets/new-dashboard/img/icons/flag.svg">United States
+                          <div>
+                            <div>
+                              <img src="./assets/new-dashboard/img/icons/flag.svg"><span class="ms-2">United States</span>
                             </div>
-                            <div class="text-right text-dark"><span class="value">74%</span>
+                            <div class="text-end text-dark"><span class="value">74%</span>
+                            </div>
+                          </div>
+                          <div>
+                            <div>
+                              <img src="./assets/new-dashboard/img/icons/flag.svg"><span class="ms-2">United States</span>
+                            </div>
+                            <div class="text-end text-dark"><span class="value">74%</span>
                             </div>
                           </div>
                         </div>
@@ -258,8 +234,8 @@
                     </div>
                   </div>
                   <div class="row ">
-                    <div class="col-md-12 mt-16 pr-0">
-                      <div class="card">
+                    <div class="col-md-12 mt-3 pe-0">
+                      <div>
                         <h5 class="card-header">Latest Orders</h5>
                         <div class="table-responsive text-nowrap">
                           <table class="table">
@@ -336,20 +312,11 @@
     </div>
   </section>
 
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/jquery/jquery.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/popper/popper.js"></script>
-  <script src="./assets/new-dashboard/vendor/js/bootstrap.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/node-waves/node-waves.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/hammer/hammer.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/i18n/i18n.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/typeahead-js/typeahead.js"></script>
-  <script src="./assets/new-dashboard/vendor/js/menu.js"></script>
-  <script src="./assets/new-dashboard/vendor/libs/apex-charts/apexcharts.js"></script>
-  <script src="./assets/new-dashboard/js/main.js"></script>
-  <script src="./assets/new-dashboard/js/charts-apex.js"></script>
   <script src="./assets/js/main.js"></script>
+
 
   <script>
     $('html').removeClass('layout-menu-collapsed');

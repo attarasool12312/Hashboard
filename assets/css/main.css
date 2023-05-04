@@ -6487,6 +6487,11 @@ header nav {
   bottom: 0;
   left: 74px;
 }
+@media only screen and (max-width: 767.98px) {
+  .project-information .online-image .online-dot {
+    left: 183px;
+  }
+}
 
 .all-chart circle.pie-circle-1 {
   stroke: #FE4D97;

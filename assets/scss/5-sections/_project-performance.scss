@@ -101,6 +101,9 @@
             position: absolute;
             bottom: 0;
             left: 74px;
+            @include grid-sm-down{
+                left: 183px;
+            }
         }
     }
 }

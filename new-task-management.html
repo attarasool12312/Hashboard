@@ -7,24 +7,21 @@
   <meta charset="utf-8" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-  <meta name="description" content="" />
 
   <title>Hashboard</title>
 
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
-  <section class="section-panel">
-    <div class="admin-wrapper">
-      <aside class="aside">
-        <div class="left-top">
-          <div class="sitepanel-toggler">
+  <header class="bg-white">
+    <div class="flex-grow-1">
+      <nav class="layout-navbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+        id="layout-navbar">
+        <div class="navbar-nav-right d-flex align-items-center justify-content-between w-100" id="navbar-collapse">
+          <div class="sitepanel-toggler m-0">
             <div class="close">
               <span></span>
               <span></span>
@@ -34,8 +31,40 @@
               <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
             </div>
           </div>
+          <div class="navbar-nav align-items-center">
+            <div class="dropdown theme-filter mt-3" id="dropDown">
+              <button class="btn dropdown-toggle pe-5 w-100" type="button" id="dropdownItem4" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" style="background: transparent !important; z-index: 9">
+                Select Management
+              </button>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownItem4" style="">
+                <a class="dropdown-item" href="#">Project Management</a>
+                <a class="dropdown-item" href="#">CRM Management</a>
+                <a class="dropdown-item" href="#">JOB Management</a>
+                <a class="dropdown-item" href="#">HR Management</a>
+                <a class="dropdown-item" href="#">Social Media Management</a>
+                <a class="dropdown-item" href="#">Admin Dashboard</a>
+                <a class="dropdown-item" href="#">Financial Management</a>
+              </div>
+              <span class="dropdown" id="dropDownIcon"><img src="./assets/new-dashboard/img/icons/nav/arrow-down.svg"
+                  alt="" /></span>
+            </div>
+          </div>
+          <ul class="navbar-nav flex-row align-items-center ms-auto">
+            <div class="contact-support">
+              <a href="#" class="text-dark fw-600 text-decoration-none">Contact Support</a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
           <ul>
-            <li><a href="./new-index.html" class="panel_link">
+            <li><a href="./new-index.html" class="panel_link active_panel">
                 <i class="icon icon-home"></i>
                 <span>Home</span></a></li>
             <li class="nav-item panel-dropdown">
@@ -45,20 +74,12 @@
                 <span>Dashboard</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./new-chart.html">
-                    <span>Indicators</span></a></li>
                 <li><a class="dropdown-item panel_link " href="./new-templates.html"> <span>Templates</span></a>
                 </li>
                 <li><a class="dropdown-item panel_link " href="./new-background.html"> <span>Backgrounds</span></a></li>
                 <li><a class="dropdown-item panel_link " href="./new-graphics.html"> <span>Graphics</span></a></li>
               </ul>
             </li>
-            <li><a href="./new-task-management.html" class="panel_link active_panel"><i
-                  class="icon icon-initiative-management"></i>
-                <span>Task Management</span></a></li>
-            <li><a href="./new-widget.html" class="panel_link "><img
-                  src="./assets/new-dashboard/img/icons/nav/widget.svg" />
-                <span>Widget</span></a></li>
             <li class="nav-item panel-dropdown">
               <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown-1"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -76,40 +97,7 @@
           </ul>
         </div>
       </aside>
-      <main class="main">
-        <div class="flex-grow-1">
-          <nav class="layout-navbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
-            id="layout-navbar">
-            <div class="navbar-nav-right d-flex align-items-center justify-content-between w-100" id="navbar-collapse">
-              <div class="navbar-nav align-items-center">
-                <div class="dropdown theme-filter" id="dropDown">
-                  <button
-                    class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0"
-                    type="button" id="dropdownItem4" data-bs-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false" style="background: transparent !important; z-index: 9">
-                    Select Management
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownItem4" style="">
-                    <a class="dropdown-item" href="#">Project Management</a>
-                    <a class="dropdown-item" href="#">CRM Management</a>
-                    <a class="dropdown-item" href="#">JOB Management</a>
-                    <a class="dropdown-item" href="#">HR Management</a>
-                    <a class="dropdown-item" href="#">Social Media Management</a>
-                    <a class="dropdown-item" href="#">Admin Dashboard</a>
-                    <a class="dropdown-item" href="#">Financial Management</a>
-                  </div>
-                  <span class="dropdown" id="dropDownIcon"><img
-                      src="./assets/new-dashboard/img/icons/nav/arrow-down.svg" alt="" /></span>
-                </div>
-              </div>
-              <ul class="navbar-nav flex-row align-items-center ms-auto">
-                <div class="contact-support">
-                  <a href="#" class="text-dark fw-600 text-decoration-none">Contact Support</a>
-                </div>
-              </ul>
-            </div>
-          </nav>
-        </div>
+      <main class="main pt-4 pb-4">
         <div class="container">
           <div class="pt-4 flex-grow-1 container-p-y">
             <div class="content-wrapper">
@@ -121,16 +109,16 @@
                         <div>
                           <h2>SupeHub Web Design</h2>
                           <div class="d-sm-flex d-none align-items-center ">
-                            <div class="btn-group d-none d-sm-flex data-view" role="group"
+                            <div class="btn-group d-none d-sm-flex data-view mt-3" role="group"
                               aria-label="radio toggle button group">
                               <input type="radio" class="btn-check" name="btnradio" id="dailyRadio" checked
                                 autocomplete="off" />
-                              <label id="boardButton" class="btn btn-outline-secondary" for="dailyRadio"><img
+                              <label id="boardButton" class="btn btn-outline-secondary me-2" for="dailyRadio"><img
                                   src="./assets/images/icons/board.svg">
                                 Board</label>
                               <input type="radio" class="btn-check" name="btnradio" id="monthlyRadio"
                                 autocomplete="off" />
-                              <label id="listButton" class="btn btn-outline-secondary" for="monthlyRadio"><img
+                              <label id="listButton" class="btn btn-outline-secondary me-2" for="monthlyRadio"><img
                                   src="./assets/images/icons/list.svg">List</label>
                               <input type="radio" class="btn-check" name="btnradio" id="yearlyRadio"
                                 autocomplete="off" />
@@ -142,16 +130,16 @@
                       </div>
                       <div class="right-filter">
                         <button class="btn bg-transparent header-btns">
-                          <img src="./assets/images/icons/shock.svg">
+                          <img src="./assets/images/icons/shock.svg" class="mb-2 me-1">
                         </button>
                         <button class="btn bg-transparent header-btns">
                           <img src="./assets/images/icons/outline-star.svg">
                         </button>
                         <button class="btn bg-transparent header-btns">
-                          <img src="./assets/images/icons/settings-sm.svg">
+                          <img src="./assets/images/icons/settings-sm.svg" class="mb-2">
                         </button>
                         <button class="btn bg-transparent header-btns">
-                          <img src="./assets/images/icons/more.svg">
+                          <img src="./assets/images/icons/more.svg" class="mb-2">
                         </button>
                         <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
                           <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
@@ -212,7 +200,7 @@
                             </div>
                             <div class="task-status">
                               <label class="green status text-white">New Feature</label>
-                              <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                              <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                                 left</label>
                             </div>
                             <div class="task-image">
@@ -220,8 +208,8 @@
                             </div>
                             <div class="d-flex justify-content-between">
                               <div>
-                                <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                                <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                                <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                                <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                               </div>
                               <div>
                                 <ul
@@ -263,8 +251,8 @@
                               </div>
                             </div>
                             <div class="task-status">
-                              <label class="green status text-white">New Feature</label>
-                              <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                              <label class="green status text-white pt-1">New Feature</label>
+                              <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                                 left</label>
                             </div>
                             <div class="task-content">
@@ -274,8 +262,8 @@
                             </div>
                             <div class="d-flex justify-content-between">
                               <div>
-                                <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                                <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                                <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                                <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                               </div>
                               <div>
                                 <ul
@@ -341,8 +329,8 @@
                               </div>
                             </div>
                             <div class="task-status">
-                              <label class="green status text-white">New Feature</label>
-                              <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                              <label class="green status text-white pt-1">New Feature</label>
+                              <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                                 left</label>
                             </div>
                             <div class="task-image">
@@ -350,8 +338,8 @@
                             </div>
                             <div class="d-flex justify-content-between">
                               <div>
-                                <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                                <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                                <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                                <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                               </div>
                               <div>
                                 <ul
@@ -393,8 +381,8 @@
                               </div>
                             </div>
                             <div class="task-status">
-                              <label class="green status text-white">New Feature</label>
-                              <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                              <label class="green status text-white pt-1">New Feature</label>
+                              <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                                 left</label>
                             </div>
                             <div class="task-content">
@@ -404,8 +392,8 @@
                             </div>
                             <div class="d-flex justify-content-between">
                               <div>
-                                <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                                <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                                <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                                <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                               </div>
                               <div>
                                 <ul
@@ -471,8 +459,8 @@
                               </div>
                             </div>
                             <div class="task-status">
-                              <label class="green status text-white">New Feature</label>
-                              <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                              <label class="green status text-white pt-1">New Feature</label>
+                              <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                                 left</label>
                             </div>
                             <div class="task-image">
@@ -480,8 +468,8 @@
                             </div>
                             <div class="d-flex justify-content-between">
                               <div>
-                                <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                                <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                                <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                                <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                               </div>
                               <div>
                                 <ul
@@ -523,8 +511,8 @@
                               </div>
                             </div>
                             <div class="task-status">
-                              <label class="green status text-white">New Feature</label>
-                              <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                              <label class="green status text-white pt-1">New Feature</label>
+                              <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                                 left</label>
                             </div>
                             <div class="task-content">
@@ -534,8 +522,8 @@
                             </div>
                             <div class="d-flex justify-content-between">
                               <div>
-                                <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                                <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                                <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                                <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                               </div>
                               <div>
                                 <ul
@@ -601,8 +589,8 @@
                               </div>
                             </div>
                             <div class="task-status">
-                              <label class="green status text-white">New Feature</label>
-                              <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                              <label class="green status text-white pt-1">New Feature</label>
+                              <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                                 left</label>
                             </div>
                             <div class="task-image">
@@ -610,8 +598,8 @@
                             </div>
                             <div class="d-flex justify-content-between">
                               <div>
-                                <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                                <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                                <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                                <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                               </div>
                               <div>
                                 <ul
@@ -653,8 +641,8 @@
                               </div>
                             </div>
                             <div class="task-status">
-                              <label class="green status text-white">New Feature</label>
-                              <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                              <label class="green status text-white pt-1">New Feature</label>
+                              <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                                 left</label>
                             </div>
                             <div class="task-content">
@@ -664,8 +652,8 @@
                             </div>
                             <div class="d-flex justify-content-between">
                               <div>
-                                <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                                <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                                <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                                <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                               </div>
                               <div>
                                 <ul
@@ -729,11 +717,11 @@
                         <div class="backlog-col">
                           <h5 class="m-0">Research potential tradeshows<span>Review vendor rules and
                               regulationsbacklog-col</span></h5>
-                          <label class="green status text-white">New Feature</label>
-                          <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                          <label class="green status text-white pt-1">New Feature</label>
+                          <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                             left</label>
-                            <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                            <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                            <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                            <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                           <ul
                             class="list-unstyled justify-content-center users-list m-0 avatar-group d-flex align-items-center">
                             <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
@@ -769,10 +757,10 @@
                           <h5 class="m-0">Research potential tradeshows<span>Review vendor rules and
                               regulationsbacklog-col</span></h5>
                           <label class="red status text-white">Fix Bugs</label>
-                          <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                          <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                             left</label>
-                            <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                            <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                            <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                            <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                           <ul
                             class="list-unstyled justify-content-center users-list m-0 avatar-group d-flex align-items-center">
                             <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
@@ -808,10 +796,10 @@
                           <h5 class="m-0">Research potential tradeshows<span>Review vendor rules and
                               regulationsbacklog-col</span></h5>
                           <label class="purple status text-white">Prototype</label>
-                          <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                          <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                             left</label>
-                            <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                            <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                            <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                            <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                           <ul
                             class="list-unstyled justify-content-center users-list m-0 avatar-group d-flex align-items-center">
                             <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
@@ -846,11 +834,11 @@
                         <div class="backlog-col">
                           <h5 class="m-0">Research potential tradeshows<span>Review vendor rules and
                               regulationsbacklog-col</span></h5>
-                          <label class="green status text-white">New Feature</label>
-                          <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                          <label class="green status text-white pt-1">New Feature</label>
+                          <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                             left</label>
-                            <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                            <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                            <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                            <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                           <ul
                             class="list-unstyled justify-content-center users-list m-0 avatar-group d-flex align-items-center">
                             <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
@@ -912,11 +900,11 @@
                         <div class="backlog-col">
                           <h5 class="m-0">Research potential tradeshows<span>Review vendor rules and
                               regulationsbacklog-col</span></h5>
-                          <label class="green status text-white">New Feature</label>
-                          <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                          <label class="green status text-white pt-1">New Feature</label>
+                          <label class="days"><img src="./assets/images/icons/multi-day.svg"class="mb-1">21 days
                             left</label>
-                            <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                            <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                            <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                            <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                           <ul
                             class="list-unstyled justify-content-center users-list m-0 avatar-group d-flex align-items-center">
                             <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
@@ -952,10 +940,10 @@
                           <h5 class="m-0">Research potential tradeshows<span>Review vendor rules and
                               regulationsbacklog-col</span></h5>
                           <label class="red status text-white">Fix Bugs</label>
-                          <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                          <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                             left</label>
-                            <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                            <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                            <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                            <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                           <ul
                             class="list-unstyled justify-content-center users-list m-0 avatar-group d-flex align-items-center">
                             <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
@@ -991,10 +979,10 @@
                           <h5 class="m-0">Research potential tradeshows<span>Review vendor rules and
                               regulationsbacklog-col</span></h5>
                           <label class="purple status text-white">Prototype</label>
-                          <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                          <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                             left</label>
-                            <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                            <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                            <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                            <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                           <ul
                             class="list-unstyled justify-content-center users-list m-0 avatar-group d-flex align-items-center">
                             <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
@@ -1029,11 +1017,11 @@
                         <div class="backlog-col">
                           <h5 class="m-0">Research potential tradeshows<span>Review vendor rules and
                               regulationsbacklog-col</span></h5>
-                          <label class="green status text-white">New Feature</label>
-                          <label class="days"><img src="./assets/images/icons/multi-day.svg">21 days
+                          <label class="green status text-white pt-1">New Feature</label>
+                          <label class="days"><img src="./assets/images/icons/multi-day.svg" class="mb-1">21 days
                             left</label>
-                            <label><img src="./assets/images/icons/attachment-sm.svg">4</label>
-                            <label><img src="./assets/images/icons/message-sm.svg">5</label>
+                            <label><img src="./assets/images/icons/attachment-sm.svg" class="mb-1">4</label>
+                            <label><img src="./assets/images/icons/message-sm.svg" class="mb-1">5</label>
                           <ul
                             class="list-unstyled justify-content-center users-list m-0 avatar-group d-flex align-items-center">
                             <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
@@ -3604,13 +3592,22 @@
           </div>
         </div>
       </main>
+      <aside class="aside">
+        <div class="left-top">
+          <ul>
+            <li><a href="./new-chart.html" class="panel_link "><img src="./assets/images/icons/widget.svg" />
+                <span>Indicators</span></a></li>
+            <li><a href="./new-widget.html" class="panel_link "><img src="./assets/images/icons/widget.svg" />
+                <span>Widget</span></a></li>
+          </ul>
+        </div>
+      </aside>
     </div>
   </section>
 
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/main.js"></script>
-
   <script>
     $('html').removeClass('layout-menu-collapsed');
     $('#expandMenuOnClick').on('click', function () {

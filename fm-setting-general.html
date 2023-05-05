@@ -252,49 +252,53 @@
                       data-bs-target="#Invoice" type="button" role="tab" aria-controls="Invoice"
                       aria-selected="true">Invoice setting</button>
                   </li>
-                  <div class="dropdown select-dropdown">
-                    <button class="btn dropdown-toggle pe-5 w-100 border-0" type="button" id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      Email Setting
-                    </button>
-                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
-                      <li class="nav-item m-0" role="presentation">
-                        <button class="nav-link text-uppercase" id="emailPreferences-tab" data-bs-toggle="tab"
-                          data-bs-target="#emailPreferences" type="button" role="tab" aria-controls="emailPreferences"
-                          aria-selected="true">Send Email Preferences</button>
-                      </li>
-                      <li class="nav-item m-0" role="presentation">
-                        <button class="nav-link text-uppercase" id="Statement-tab" data-bs-toggle="tab"
-                          data-bs-target="#Statement" type="button" role="tab" aria-controls="Statement"
-                          aria-selected="true">Customer Statement</button>
-                      </li>
-                      <li class="nav-item m-0" role="presentation">
-                        <button class="nav-link text-uppercase" id="quoteNotification-tab" data-bs-toggle="tab"
-                          data-bs-target="#quoteNotification" type="button" role="tab" aria-controls="quoteNotification"
-                          aria-selected="true">Quote Notification</button>
-                      </li>
-                      <li class="nav-item m-0" role="presentation">
-                        <button class="nav-link text-uppercase" id="invoiceNotification-tab" data-bs-toggle="tab"
-                          data-bs-target="#invoiceNotification" type="button" role="tab"
-                          aria-controls="invoiceNotification" aria-selected="true">Invoice Notification</button>
-                      </li>
-                      <li class="nav-item m-0" role="presentation">
-                        <button class="nav-link text-uppercase" id="Credit-tab" data-bs-toggle="tab"
-                          data-bs-target="#Credit" type="button" role="tab" aria-controls="Credit"
-                          aria-selected="true">Credit Note Notification</button>
-                      </li>
-                      <li class="nav-item m-0" role="presentation">
-                        <button class="nav-link text-uppercase" id="Thankyou-tab" data-bs-toggle="tab"
-                          data-bs-target="#Thankyou" type="button" role="tab" aria-controls="Thankyou"
-                          aria-selected="true">Payment Thank-you</button>
-                      </li>
-                      <li class="nav-item m-0" role="presentation">
-                        <button class="nav-link text-uppercase" id="Initiated-tab" data-bs-toggle="tab"
-                          data-bs-target="#Initiated" type="button" role="tab" aria-controls="Initiated"
-                          aria-selected="true">Payment Initiated</button>
-                      </li>
-                    </ul>
-                  </div>
+                  <li class="nav-item m-0" role="presentation">
+                    <div class="dropdown select-dropdown">
+                      <button class="btn dropdown-toggle pe-5 w-100 border-0" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Email Setting
+                      </button>
+                      <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                        <ul class="nav nav-tabs flex-column border-0 mt-0 pt-0" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link text-uppercase" id="emailPreferences-tab" data-bs-toggle="tab"
+                            data-bs-target="#emailPreferences" type="button" role="tab" aria-controls="emailPreferences"
+                            aria-selected="true">Send Email Preferences</button>
+                        </li>
+                        <li class="nav-item m-0" role="presentation">
+                          <button class="nav-link text-uppercase" id="Statement-tab" data-bs-toggle="tab"
+                            data-bs-target="#Statement" type="button" role="tab" aria-controls="Statement"
+                            aria-selected="true">Customer Statement</button>
+                        </li>
+                        <li class="nav-item m-0" role="presentation">
+                          <button class="nav-link text-uppercase" id="quoteNotification-tab" data-bs-toggle="tab"
+                            data-bs-target="#quoteNotification" type="button" role="tab" aria-controls="quoteNotification"
+                            aria-selected="true">Quote Notification</button>
+                        </li>
+                        <li class="nav-item m-0" role="presentation">
+                          <button class="nav-link text-uppercase" id="invoiceNotification-tab" data-bs-toggle="tab"
+                            data-bs-target="#invoiceNotification" type="button" role="tab" aria-controls="invoiceNotification"
+                            aria-selected="true">Invoice Notification</button>
+                        </li>
+                        <li class="nav-item m-0" role="presentation">
+                          <button class="nav-link text-uppercase" id="Credit-tab" data-bs-toggle="tab"
+                            data-bs-target="#Credit" type="button" role="tab" aria-controls="Credit"
+                            aria-selected="true">Credit Note Notification</button>
+                        </li>
+                        <li class="nav-item m-0" role="presentation">
+                          <button class="nav-link text-uppercase" id="Thankyou-tab-tab" data-bs-toggle="tab"
+                            data-bs-target="#Thankyou-tab" type="button" role="tab" aria-controls="Thankyou-tab"
+                            aria-selected="true">Payment Thank-you</button>
+                        </li>
+                        <li class="nav-item m-0" role="presentation">
+                          <button class="nav-link text-uppercase" id="Initiated-tab-tab" data-bs-toggle="tab"
+                            data-bs-target="#Initiated-tab" type="button" role="tab" aria-controls="Initiated-tab"
+                            aria-selected="true">Payment Initiated</button>
+                        </li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </li>
                   <li class="nav-item m-0" role="presentation">
                     <button class="nav-link text-uppercase" id="Permission-tab" data-bs-toggle="tab"
                       data-bs-target="#Permission" type="button" role="tab" aria-controls="Permission"
@@ -320,7 +324,7 @@
             </div>
             <div class="col-md-9">
               <div class="tab-content mt-5">
-                <div class="tab-pane" id="organizationDetails" role="tabpanel"
+                <div class="tab-pane active" id="organizationDetails" role="tabpanel"
                   aria-labelledby="organizationDetails-tab">
                   <h2 class="fw-600">Basic Information</h2>
                   <form>
@@ -1936,7 +1940,7 @@
                     </table>
                   </div>
                 </div>
-                <div class="tab-pane active" id="emailPreferences" role="tabpanel"
+                <div class="tab-pane" id="emailPreferences" role="tabpanel"
                   aria-labelledby="emailPreferences-tab">
                   <div class="page-main-title">
                     <div class="heading">

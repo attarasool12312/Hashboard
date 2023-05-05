@@ -16,11 +16,12 @@
 </head>
 
 <body>
-  <section class="section-panel">
-    <div class="admin-wrapper">
-      <aside class="aside">
-        <div class="left-top">
-          <div class="sitepanel-toggler">
+  <header class="bg-white">
+    <div class="flex-grow-1">
+      <nav class="layout-navbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+        id="layout-navbar">
+        <div class="navbar-nav-right d-flex align-items-center justify-content-between w-100" id="navbar-collapse">
+          <div class="sitepanel-toggler m-0">
             <div class="close">
               <span></span>
               <span></span>
@@ -30,33 +31,58 @@
               <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
             </div>
           </div>
+          <div class="navbar-nav align-items-center">
+            <div class="dropdown theme-filter mt-3" id="dropDown">
+              <button class="btn dropdown-toggle pe-5 w-100" type="button" id="dropdownItem4" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" style="background: transparent !important; z-index: 9">
+                Select Management
+              </button>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownItem4" style="">
+                <a class="dropdown-item" href="#">Project Management</a>
+                <a class="dropdown-item" href="#">CRM Management</a>
+                <a class="dropdown-item" href="#">JOB Management</a>
+                <a class="dropdown-item" href="#">HR Management</a>
+                <a class="dropdown-item" href="#">Social Media Management</a>
+                <a class="dropdown-item" href="#">Admin Dashboard</a>
+                <a class="dropdown-item" href="#">Financial Management</a>
+              </div>
+              <span class="dropdown" id="dropDownIcon"><img src="./assets/new-dashboard/img/icons/nav/arrow-down.svg"
+                  alt="" /></span>
+            </div>
+          </div>
+          <ul class="navbar-nav flex-row align-items-center ms-auto">
+            <div class="contact-support">
+              <a href="#" class="text-dark fw-600 text-decoration-none">Contact Support</a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
           <ul>
             <li><a href="./new-index.html" class="panel_link active_panel">
-              <i class="icon icon-home"></i>
+                <i class="icon icon-home"></i>
                 <span>Home</span></a></li>
             <li class="nav-item panel-dropdown">
               <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="icon icon-dashboard-1"></i>
+                <i class="icon icon-dashboard-1"></i>
                 <span>Dashboard</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./new-chart.html">
-                    <span>Indicators</span></a></li>
                 <li><a class="dropdown-item panel_link " href="./new-templates.html"> <span>Templates</span></a>
                 </li>
                 <li><a class="dropdown-item panel_link " href="./new-background.html"> <span>Backgrounds</span></a></li>
                 <li><a class="dropdown-item panel_link " href="./new-graphics.html"> <span>Graphics</span></a></li>
               </ul>
             </li>
-            <li><a href="./new-task-management.html" class="panel_link "><i class="icon icon-initiative-management"></i>
-                <span>Task Management</span></a></li>
-            <li><a href="./new-widget.html" class="panel_link "><img
-                  src="./assets/new-dashboard/img/icons/nav/widget.svg" />
-                <span>Widget</span></a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown-1" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown-1"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-settings"></i>
                 <span>Settings</span>
               </a>
@@ -71,44 +97,21 @@
           </ul>
         </div>
       </aside>
-      <main class="main">
-        <div class="flex-grow-1">
-          <nav class="layout-navbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
-            id="layout-navbar">
-            <div class="navbar-nav-right d-flex align-items-center justify-content-between w-100" id="navbar-collapse">
-              <div class="navbar-nav align-items-center">
-                <div class="dropdown theme-filter" id="dropDown">
-                  <button
-                    class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0"
-                    type="button" id="dropdownItem4" data-bs-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false" style="background: transparent !important; z-index: 9">
-                    Select Management
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownItem4" style="">
-                    <a class="dropdown-item" href="#">Project Management</a>
-                    <a class="dropdown-item" href="#">CRM Management</a>
-                    <a class="dropdown-item" href="#">JOB Management</a>
-                    <a class="dropdown-item" href="#">HR Management</a>
-                    <a class="dropdown-item" href="#">Social Media Management</a>
-                    <a class="dropdown-item" href="#">Admin Dashboard</a>
-                    <a class="dropdown-item" href="#">Financial Management</a>
-                  </div>
-                  <span class="dropdown" id="dropDownIcon"><img
-                      src="./assets/new-dashboard/img/icons/nav/arrow-down.svg" alt="" /></span>
-                </div>
-              </div>
-              <ul class="navbar-nav flex-row align-items-center ms-auto">
-                <div class="contact-support">
-                  <a href="#" class="text-dark fw-600 text-decoration-none">Contact Support</a>
-                </div>
-              </ul>
-            </div>
-          </nav>
-        </div>
+      <main class="main pt-4 pb-4">
         <div class="container">
 
         </div>
       </main>
+      <aside class="aside">
+        <div class="left-top">
+          <ul>
+            <li><a href="./new-chart.html" class="panel_link "><img src="./assets/images/icons/widget.svg" />
+                <span>Indicators</span></a></li>
+            <li><a href="./new-widget.html" class="panel_link "><img src="./assets/images/icons/widget.svg" />
+                <span>Widget</span></a></li>
+          </ul>
+        </div>
+      </aside>
     </div>
   </section>
 

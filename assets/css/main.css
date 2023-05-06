@@ -4132,7 +4132,7 @@ ul.head-btn .slider-btn .btn.ouline-white {
   }
 }
 .select-dropdown .dropdown-toggle {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   color: gray;
   border-color: gray;
   min-width: 100px;
@@ -8761,6 +8761,12 @@ button.btn.view {
 .avatar-group .avatar img,
 .avatar-group .avatar .avatar-initial {
   border: 2px solid #fff;
+}
+
+.btn-outline-secondary:hover {
+  color: #fff !important;
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
 
 /*# sourceMappingURL=main.css.map */

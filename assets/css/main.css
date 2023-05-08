@@ -8127,16 +8127,6 @@ button.btn.border-1 {
   margin-bottom: 8px;
 }
 
-.box {
-  display: inline-block !important;
-  border-radius: 12px;
-  color: white;
-  padding: 15px;
-}
-.box h4 {
-  color: white;
-}
-
 .task-header {
   display: flex;
   justify-content: space-between;

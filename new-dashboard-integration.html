@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Hashboard</title>
+
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header class="bg-white">
+    <div class="flex-grow-1">
+      <nav class="layout-navbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+        id="layout-navbar">
+        <div class="navbar-nav-right d-flex align-items-center justify-content-between w-100" id="navbar-collapse">
+          <div class="sitepanel-toggler m-0">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="navbar-nav align-items-center">
+            <div class="dropdown theme-filter mt-3" id="dropDown">
+              <button class="btn dropdown-toggle pe-5 w-100" type="button" id="Overview-tab" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" style="background: transparent !important; z-index: 9">
+                Select Management
+              </button>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="Overview-tab" >
+                <a class="dropdown-item" href="#">Project Management</a>
+                <a class="dropdown-item" href="#">CRM Management</a>
+                <a class="dropdown-item" href="#">JOB Management</a>
+                <a class="dropdown-item" href="#">HR Management</a>
+                <a class="dropdown-item" href="#">Social Media Management</a>
+                <a class="dropdown-item" href="#">Admin Dashboard</a>
+                <a class="dropdown-item" href="#">Financial Management</a>
+              </div>
+            </div>
+          </div>
+          <ul class="navbar-nav flex-row align-items-center ms-auto">
+            <div class="contact-support">
+              <a href="#" class="text-dark fw-600 text-decoration-none">Contact Support</a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <ul>
+            <li><a href="./new-index.html" class="panel_link ">
+                <i class="icon icon-home"></i>
+                <span>Home</span></a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-dashboard-1"></i>
+                <span>Dashboard</span>
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./new-templates.html"><i class="icon icon-dashboard-1"></i> <span>Templates</span></a>
+                </li>
+                <li><a class="dropdown-item panel_link " href="./new-background.html"><i class="icon icon-dashboard-1"></i> <span>Backgrounds</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./new-graphics.html"><i class="icon icon-dashboard-1"></i> <span>Graphics</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./new-task-management.html"><i class="icon icon-dashboard-1"></i> <span>Task Management</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown-1"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-settings"></i>
+                <span>Settings</span>
+              </a>
+              <ul class="Business-Dropdown-1" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link active_panel" href="./new-dashboard-integration.html"> <i class="icon icon-settings"></i> <span>Dashboard
+                      Integration</span></a></li>
+              </ul>
+            </li>
+            <div class="open-button">
+              <i class="icon icon-right-arrow"></i>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <main class="main pt-4 pb-4">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="search-form d-none d-md-block">
+              <form action="">
+                <div class="form-group">
+                  <input class="form-control placeholder-dark w-100" type="text" placeholder="Placeholder">
+                  <i class="icon icon-search-form"></i>
+                </div>
+              </form>
+            </div>
+            <div class="d-flex">
+              <div class="dropdown select-dropdown ms-4">
+                <button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  All
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="dropdown select-dropdown ms-4">
+                <button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  All
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="invoice-table mt-4 tablepanel">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">TITLE</th>
+                  <th scope="col">CONNECTED</th>
+                  <th scope="col">PERMISSIONS</th>
+                  <th scope="col">STATUS</th>
+                  <th scope="col">AVAILABLE METRICS</th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row" data-label="Company name">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/images/amazon.jpg" alt="">
+                      <div class="ms-3 ">
+                        <h6 class="text-sm">Google Analytics 4</h6>
+                        <p class="text-light-gray">Google Analytics 4</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td data-label="Location">
+                    <h6 class="text-sm">Nov 1, 2022</h6>
+                    <p class="text-light-gray">by Design studio</p>
+                  </td>
+                  <td data-label="Employees">All users</td>
+                  <td data-label="Revenue (USD)">
+                    <h6 class="text-sm">Not Connected</h6>
+                    <p class="text-light-gray">One or more steps required to complete this connection.</p>
+                  </td>
+                  <td></td>
+                  <td><button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0">Reconnect</button></td>
+                  <td><a href=""><i class="icon icon-edit"></i></a></td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Company name">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/images/dropbox.png" alt="">
+                      <div class="ms-3 ">
+                        <h6 class="text-sm">Google Analytics 4</h6>
+                        <p class="text-light-gray">Google Analytics 4</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td data-label="Location">
+                    <h6 class="text-sm">Nov 1, 2022</h6>
+                    <p class="text-light-gray">by Design studio</p>
+                  </td>
+                  <td data-label="Employees">All users</td>
+                  <td data-label="Revenue (USD)">
+                    <h6 class="text-sm">Not Connected</h6>
+                    <p class="text-light-gray">One or more steps required to complete this connection.</p>
+                  </td>
+                  <td></td>
+                  <td><button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0">Reconnect</button></td>
+                  <td><a href=""><i class="icon icon-edit"></i></a></td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Company name">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/images/apple.jpg" alt="">
+                      <div class="ms-3 ">
+                        <h6 class="text-sm">Google Analytics 4</h6>
+                        <p class="text-light-gray">Google Analytics 4</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td data-label="Location">
+                    <h6 class="text-sm">Nov 1, 2022</h6>
+                    <p class="text-light-gray">by Design studio</p>
+                  </td>
+                  <td data-label="Employees">All users</td>
+                  <td data-label="Revenue (USD)">
+                    <h6 class="text-sm">Not Connected</h6>
+                    <p class="text-light-gray">One or more steps required to complete this connection.</p>
+                  </td>
+                  <td>13 Metrics</td>
+                  <td><button type="button" class="btn ouline-white border border-2 mt-3 wsm-100 me-md-2 mt-md-0">Reconnect</button></td>
+                  <td><a href=""><i class="icon icon-edit"></i></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="invoice-pagination d-flex mt-3 justify-content-between align-items-center flex-colume-sm">
+            <div class="d-flex align-items-center">
+              <p class="text-sm">Showing</p>
+              <select id="cars" class="border-1 me-3 ms-2 border-radius p-2">
+                <option value="volvo">15</option>
+                <option value="saab">25</option>
+                <option value="opel">35</option>
+                <option value="audi">50</option>
+              </select>
+              <span class="text-light-gray text-sm">items per page</span>
+            </div>
+            <div class="pagination-right d-flex align-items-center gap-4 mt-4 mt-md-0">
+              <button class="btn pagination-btn active">1</button>
+              <button class="btn pagination-btn">2</button>
+              <a class="text-light-gray text-decoration-none">Next</a>
+              <a class="text-light-gray text-decoration-none">End</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside class="aside-1">
+        <div class="left-top">
+          <ul>
+            <li><a href="./new-chart.html" class="panel_link "><img src="./assets/images/icons/widget.svg" />
+                <span>Indicators</span></a></li>
+            <li><a href="./new-widget.html" class="panel_link "><img src="./assets/images/icons/widget.svg" />
+                <span>Data Source</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/chartjs-chart-geo@3.5.2/build/index.umd.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  
+
+
+  <script>
+    $("#dropdownMenuButton").click(function(){
+      $(".open-dropdown").toggleClass("d-block")
+    });
+
+    const overviewCustomerChart = document.getElementById("overviewCustomerChart");
+
+const overviewCustomerChart_1 = new Chart(overviewCustomerChart, {
+    type: "bar",
+    data: {
+        labels: ["customer1", "customer2", "customer3", "customer4", "customer5", "customer6"],
+        datasets: [
+            {
+                label: "# of Votes",
+                data: [10, 13, 9, 12, 13, 8],
+                borderRadius: 5,
+                borderWidth: 1,
+                backgroundColor: "#775da6",
+                barThickness: 12,
+            },
+            {
+                label: "# of Votes",
+                data: [10, 13, 9, 12, 11, 13],
+                borderRadius: 5,
+                borderWidth: 1,
+                backgroundColor: "#abdfe7",
+                barThickness: 12,
+            },
+        ],
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: {
+                // display: false,
+                grid: {
+                    drawOnChartArea: false,
+                },
+                ticks: {
+                    display: true,
+                },
+            },
+            y: {
+                display: false,
+                grid: {
+                    drawOnChartArea: false,
+                },
+                ticks: {
+                    display: false,
+                },
+            },
+        },
+        plugins: {
+            legend: {
+                display: false,
+            },
+        },
+    },
+});
+
+// For CRM
+  const overviewStageChart = document.getElementById('overviewStageChart');
+
+    const overviewStageChart_1 = new Chart(overviewStageChart, {
+      type: 'pie',
+      data: {
+        labels: ['860 send', '730 open', '234 spam'],
+        datasets: [{
+          label: '# of Votes',
+          backgroundColor: ['#ffb1b7', '#775da6', '#70b6c1'],
+          borderRadius: 2,
+          data: [45, 45, 10],
+          borderWidth: 0,
+          barThickness: 10,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              usePointStyle: true,
+              boxWidth: 8
+            }
+          }
+        }
+      },
+    });
+    // For dashboard
+    const workplace = document.getElementById("employeeGraph");
+
+const bar21 = new Chart(workplace, {
+
+    type: "bar",
+    data: {
+        labels: [
+            "Jan",
+            "Fab",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+        ],
+        datasets: [
+            {
+                label: 'Permanent',
+                data: [200, 700, 500, 100, 800, 1200, 300, 1100, 400, 600, 200, 900],
+                borderWidth: 0,
+                barThickness: 20,
+                backgroundColor: [
+                    "#64BF92"
+                ],
+            },
+            {
+                label: 'Contract',
+                data: [200, 700, 500, 100, 800, 1200, 300, 1100, 400, 600, 200, 900],
+                borderWidth: 0,
+                barThickness: 20,
+                backgroundColor: [
+                    "#5473DE",
+                ],
+            }
+        ],
+    },
+    options: {
+        responsive: true,
+
+        scales: {
+            x: {
+                stacked: true,
+                display: true,
+                grid: {
+                    drawOnChartArea: false,
+                },
+                ticks: {
+                    display: true,
+                },
+            },
+            y: {
+                stacked: true,
+                display: true,
+                grid: {
+                    drawOnChartArea: true,
+                },
+                ticks: {
+                    display: true,
+                },
+            },
+        },
+        plugins: {
+            legend: {
+                display: true,
+                labels: {
+                    usePointStyle: true,
+                    boxWidth: 6
+                }
+            }
+        },
+    },
+
+});
+// For JOB
+const donBar = document.getElementById('dountChart-1');
+
+const bar8 = new Chart(donBar, {
+  type: 'doughnut',
+  data: {
+    labels: ['Published14', 'Internal 2', 'Private 2', 'On Hold 2', 'Closed 4'],
+    datasets: [{
+      label: '# of Votes',
+      backgroundColor: ['#013A26', '#F74300', '#630094', '#85C9E8', '#F74300', '#5CA34A'],
+      borderRadius: 2,
+      data: [45, 15, 15, 15, 10],
+      borderWidth: 0,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 8
+        }
+      }
+    },
+    elements: {
+      customCutout: true,
+    },
+    cutoutPercentage: 32
+  },
+});
+// For Sm
+const url = 'https://unpkg.com/world-atlas@2.0.2/countries-50m.json';
+
+fetch(url).then((result) => result.json()).then((datapoint) => {
+  const countries = ChartGeo.topojson.feature(datapoint, datapoint.objects.countries).features;
+
+  console.log()
+
+
+  const locationsChart = document.getElementById("locationsChart");
+
+  const locationsChart_1 = new Chart(locationsChart, {
+    type: "choropleth",
+    data: {
+      labels: countries.map(country => country.properties.name),
+      datasets: [
+        {
+          label: "Countries",
+          data: countries.map(country => ({ feature: country, value: Math.random() })),
+          backgroundColor: '#775DA6', // set background color to #775DA6
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      scales: {
+        xy: {
+          projection: 'equalEarth'
+        }
+      },
+      plugins: {
+        legend: {
+          display: false,
+        },
+      },
+    },
+  });
+});
+
+const RepThree = document.getElementById('RepThree');
+
+    const bar14 = new Chart(RepThreeLine, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Fab', 'Mar', 'Apr', 'May', 'Jun'],
+        datasets: [
+          {
+            label: ['Facebook'],
+            data: [200, 190, 195, 188, 210, 220, 215],
+            borderColor: '#775da6',
+            backgroundColor: '#775da6',
+          },
+          {
+            label: ['Twitter'],
+            data: [150, 145, 148, 155, 148, 140, 144],
+            borderColor: '#70b6c1',
+            backgroundColor: '#70b6c1',
+          },
+          {
+            label: ['YouTube'],
+            data: [100, 120, 110, 105, 115, 130, 135],
+            borderColor: '#ffb1b7',
+            backgroundColor: '#ffb1b7',
+          }
+        ],
+      },
+      options: {
+        responsive: true,
+        elements: {
+          point: {
+            radius: 0
+          }
+        },
+        scales: {
+          x: {
+            // display: false,
+            beginAtZero: true,
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: true,
+            }
+          },
+          y: {
+            beginAtZero: true,
+          }
+        },
+        plugins: {
+          legend: {
+            display: true,
+            position: 'bottom',
+            labels: {
+              usePointStyle: true,
+              boxWidth: 8
+            }
+          }
+        }
+      },
+    });
+    // For Financial
+    const cashFlowChart = document.getElementById("cashFlowChart");
+
+    const cashFlowChart_1 = new Chart(cashFlowChart, {
+      type: "line",
+      data: {
+        labels: ["Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08"],
+        datasets: [
+          {
+            label: ["Top Products"],
+            data: [50, 100, 80, 105, 85, 70, 60],
+            borderColor: "#775da6",
+            backgroundColor: "rgb(239, 236, 244)",
+            fill: true,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        elements: {
+          point: {
+            radius: 0,
+          },
+        },
+        scales: {
+          x: {
+            // display: false,
+            beginAtZero: true,
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: true,
+            },
+          },
+          y: {
+            // display: false,
+            beginAtZero: true,
+          },
+        },
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>

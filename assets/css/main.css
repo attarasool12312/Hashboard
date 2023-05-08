@@ -2356,6 +2356,10 @@ h6.text-sm {
   gap: 16px;
 }
 
+.return-bg-color {
+  background-color: #70B6C1 !important;
+}
+
 /*--------------*\
     Boxes Section
 \*--------------*/
@@ -2698,6 +2702,9 @@ ul.head-btn .slider-btn .btn.ouline-white {
 .search-form form .form-group input.padding-right {
   padding-left: 10px;
   padding-right: 64px;
+}
+.search-form form .form-group input::placeholder {
+  color: #6c757d !important;
 }
 .search-form form .form-group i,
 .search-form form .form-group img {

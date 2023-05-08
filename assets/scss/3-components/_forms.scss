@@ -16,6 +16,10 @@
           padding-left: 10px;
           padding-right: 64px;
         }
+
+        &::placeholder{
+          color: #6c757d !important;
+        }
       }
 
       i,

@@ -56,6 +56,9 @@
                       Orders</span></a></li>
                 <li><a class="dropdown-item panel_link active_panel" href="./fm-invoices.html"><i class="icon icon-sales-information"></i>
                     <span>Invoices</span></a></li>
+                    <li><a class="dropdown-item panel_link" href="./fm-credit-note.html"><i
+                      class="icon icon-sales-information"></i>
+                    <span>Credit Note</span></a></li>
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
@@ -67,6 +70,8 @@
                 <li><a class="dropdown-item panel_link " href="./fm-purchase-orders.html"><i class="icon icon-project-supplies"></i>
                     <span>Purchase Orders</span></a></li>
                 <li><a class="dropdown-item panel_link" href="./fm-bills.html"><i class="icon icon-project-supplies"></i> <span>Bills</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-debit-note.html"><i class="icon icon-project-supplies"></i>
+                  <span>Debit</span></a></li>
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
@@ -213,8 +218,17 @@
             </div>
             <div class="d-flex align-items-center wsm-100 flex-colume-sm">
               <button type="button" class="btn ouline-white mt-3 wsm-100 mt-md-0 mx-md-2">Print</button>
-              <button type="button" class="btn ouline-white mt-3 wsm-100 mt-md-0 mx-md-2">Clone Invoice</button>
-              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0" onclick="window.location.href='./fm-invoices-returned-detail.html'">Return Invoice</button>
+              <div class="dropdown select-dropdown me-2">
+                <button class="btn dropdown-toggle mt-3 mt-md-0 pe-5 w-100 border border-2" type="button" id="dropdownMenuButton-1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Action
+                </button>
+                <ul class="dropdown-menu open-dropdown-1" aria-labelledby="dropdownMenuButton1" style="">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>             
+               <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 return-bg-color" onclick="window.location.href='./fm-invoices-returned-detail.html'">Return Invoice</button>
               <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0" onclick="window.location.href='./fm-invoices-create.html'">New Invoice</button>
             </div>
           </div>
@@ -638,6 +652,10 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   <script src="./assets/js/main.js"></script>
 
   <script>
+    $("#dropdownMenuButton-1").click(function(){
+      $(".open-dropdown-1").toggleClass("d-block")
+    });
+
         $(document).ready(function() {
 			ClassicEditor.create(document.querySelector("#editor1"));
 			ClassicEditor.create(document.querySelector("#editor2"));

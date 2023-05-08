@@ -76,10 +76,11 @@
                 <span>Dashboard</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link " href="./new-templates.html"> <span>Templates</span></a>
+                <li><a class="dropdown-item panel_link " href="./new-templates.html"><i class="icon icon-dashboard-1"></i> <span>Templates</span></a>
                 </li>
-                <li><a class="dropdown-item panel_link " href="./new-background.html"> <span>Backgrounds</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./new-graphics.html"> <span>Graphics</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./new-background.html"><i class="icon icon-dashboard-1"></i> <span>Backgrounds</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./new-graphics.html"><i class="icon icon-dashboard-1"></i> <span>Graphics</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./new-task-management.html"><i class="icon icon-dashboard-1"></i> <span>Task Management</span></a></li>
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
@@ -104,9 +105,13 @@
           <div class="row mt-4">
             <div class="col-md-3">
               <div class="second-menu" id="secondMenu">
-                <div class="search">
-                  <input type="text" class="form-control search-input border-0 w-100" placeholder="Placeholder"
-                    aria-label="Placeholder" />
+                <div class="search-form d-none d-md-block w-100">
+                  <form action="">
+                    <div class="form-group">
+                      <input class="form-control placeholder-dark w-100" type="text" placeholder="Placeholder">
+                      <i class="icon icon-search-form"></i>
+                    </div>
+                  </form>
                 </div>
                 <ul class="box-widget backgrounds w-100">
                   <li><a href="#" class="text-decoration-none"><img src="./assets/images/theme/theme-icon-1.png">Base Dark </a></li>
@@ -122,43 +127,84 @@
             <div class="col-md-9">
               <div class="pt-0 flex-grow-1 container-p-y" style="padding: 0 !important;">
                 <div class="row">
-                  <div class="col-md-12 mb-4">
-                    <div class="boxes">
-                      <div class="box me-3 orange mb-3">
-                        <h4>$902.008K</h4>
-                        <div class="box-footer">
-                          <span>My Balance</span>
-                          <span>+12.09%<img src="./assets/images/icons/growth.svg"></span>
-                        </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="sm-box h-100 bg-white box-hover">
+                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                        <span>
+                          <h3 class="fw-bold">$902.008K</h3>
+                        </span>
                       </div>
-                      <div class="box me-3 light-green mb-3">
-                        <h4>$902.008K</h4>
-                        <div class="box-footer">
-                          <span>My Balance</span>
-                          <span>+12.09%<img src="./assets/images/icons/growth.svg"></span>
-                        </div>
+                      <p class="text-light-gray text-small">My Balance +12.09%</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="sm-box h-100 bg-white box-hover">
+                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                        <span>
+                          <h3 class="fw-bold">$902.008K</h3>
+                        </span>
                       </div>
-                      <div class="box me-3 light-purple mb-3">
-                        <h4>$902.008K</h4>
-                        <div class="box-footer">
-                          <span>My Balance</span>
-                          <span>+12.09%<img src="./assets/images/icons/growth.svg"></span>
-                        </div>
+                      <p class="text-light-gray text-small">My Balance +12.09%</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="sm-box h-100 bg-white box-hover">
+                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                        <span>
+                          <h3 class="fw-bold">$902.008K</h3>
+                        </span>
                       </div>
-                      <div class="box me-3 light-blue mb-3">
-                        <h4>$902.008K</h4>
-                        <div class="box-footer">
-                          <span>My Balance</span>
-                          <span>+12.09%<img src="./assets/images/icons/growth.svg"></span>
-                        </div>
+                      <p class="text-light-gray text-small">My Balance +12.09%</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="sm-box h-100 bg-white box-hover">
+                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                        <span>
+                          <h3 class="fw-bold">$902.008K</h3>
+                        </span>
                       </div>
-                      <div class="box me-3 light-red mb-3">
-                        <h4>$902.008K</h4>
-                        <div class="box-footer">
-                          <span>My Balance</span>
-                          <span>+12.09%<img src="./assets/images/icons/growth.svg"></span>
-                        </div>
+                      <p class="text-light-gray text-small">My Balance +12.09%</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="sm-box h-100 bg-white box-hover">
+                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                        <span>
+                          <h3 class="fw-bold">$902.008K</h3>
+                        </span>
                       </div>
+                      <p class="text-light-gray text-small">My Balance +12.09%</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="sm-box h-100 bg-white box-hover">
+                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                        <span>
+                          <h3 class="fw-bold">$902.008K</h3>
+                        </span>
+                      </div>
+                      <p class="text-light-gray text-small">My Balance +12.09%</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="sm-box h-100 bg-white box-hover">
+                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                        <span>
+                          <h3 class="fw-bold">$902.008K</h3>
+                        </span>
+                      </div>
+                      <p class="text-light-gray text-small">My Balance +12.09%</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="sm-box h-100 bg-white box-hover">
+                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                        <span>
+                          <h3 class="fw-bold">$902.008K</h3>
+                        </span>
+                      </div>
+                      <p class="text-light-gray text-small">My Balance +12.09%</p>
                     </div>
                   </div>
                   <div class="row">
@@ -303,13 +349,13 @@
           </div>
         </div>
       </main>
-      <aside class="aside">
+      <aside class="aside-1">
         <div class="left-top">
           <ul>
             <li><a href="./new-chart.html" class="panel_link "><img src="./assets/images/icons/widget.svg" />
                 <span>Indicators</span></a></li>
             <li><a href="./new-widget.html" class="panel_link "><img src="./assets/images/icons/widget.svg" />
-                <span>Widget</span></a></li>
+                <span>Data Source</span></a></li>
           </ul>
         </div>
       </aside>

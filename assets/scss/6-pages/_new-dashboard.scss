@@ -128,14 +128,16 @@ button {
 
 .backlog-col {
     border: 1px solid #727880;
-    display: grid;
-    grid-template-columns: 30% 10% 10% 4% 4% 13% 3% 3% 3%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 5px;
     padding: 16px;
     border-radius: 12px;
     margin-bottom: 8px;
+    @include grid-sm-down{
+        flex-flow: column;
+    }
 }
 
 .task-header {
@@ -520,6 +522,7 @@ label {
     .right-filter {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
 
         .navbar-search-wrapper {
             width: 190px;
@@ -604,7 +607,7 @@ input {
 
 .header-btns {
     border: 1px solid #383252 !important;
-    padding: 10px 12px !important;
+    padding: 10px 12px;
     margin-left: 22px;
 }
 

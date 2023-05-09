@@ -3916,6 +3916,11 @@ ul.head-btn .slider-btn .btn.ouline-white {
   flex-flow: column;
   justify-content: space-between;
 }
+@media only screen and (max-width: 991.98px) {
+  .section-panel .admin-wrapper .aside-1 {
+    display: none;
+  }
+}
 .section-panel .admin-wrapper .aside-1 ul {
   list-style: none;
   padding: 0;
@@ -4079,7 +4084,7 @@ ul.head-btn .slider-btn .btn.ouline-white {
   width: 28px;
   height: 28px;
   padding: 5px;
-  margin-right: 15px;
+  margin-right: 3px;
   margin-top: 8px;
   cursor: pointer;
 }
@@ -4158,6 +4163,9 @@ ul.head-btn .slider-btn .btn.ouline-white {
   right: 10px;
   top: 50%;
   transform: translateX(-50%);
+}
+.select-dropdown .dropdown-toggle.bg-transparent {
+  background-color: transparent !important;
 }
 
 .is-purple-dropdown {
@@ -8117,14 +8125,18 @@ button.btn.border-1 {
 
 .backlog-col {
   border: 1px solid #727880;
-  display: grid;
-  grid-template-columns: 30% 10% 10% 4% 4% 13% 3% 3% 3%;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 5px;
   padding: 16px;
   border-radius: 12px;
   margin-bottom: 8px;
+}
+@media only screen and (max-width: 767.98px) {
+  .backlog-col {
+    flex-flow: column;
+  }
 }
 
 .task-header {
@@ -8422,6 +8434,7 @@ label.btn.btn-outline-secondary {
 .dropdowns-filter .right-filter {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .dropdowns-filter .right-filter .navbar-search-wrapper {
   width: 190px;
@@ -8477,7 +8490,7 @@ input.search-input {
 
 .header-btns {
   border: 1px solid #383252 !important;
-  padding: 10px 12px !important;
+  padding: 10px 12px;
   margin-left: 22px;
 }
 

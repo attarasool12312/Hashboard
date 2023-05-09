@@ -259,7 +259,7 @@
                   </li>
                   <li class="nav-item m-0" role="presentation">
                     <div class="dropdown select-dropdown">
-                      <button class="btn dropdown-toggle pe-5 w-100 border-0" type="button" id="dropdownMenuButton1"
+                      <button class="bg-transparent btn dropdown-toggle pe-5 w-100 border-0" type="button" id="dropdownMenuButton1"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Email Setting
                       </button>
@@ -555,7 +555,14 @@
                       <label for="role" class="fw-bold me-3 col-md-3">Accounts</label>
                       <select id="cars" name="carlist" form="carform"
                         class="d-block w-100 border border-2 rounded px-4 py-2">
-                        <option class="" value="#">Petty Cash 122</option>
+                        <option class="" value="#">Current Assets 1-101</option>
+                        <option class="" value="#">Bank 1-102</option>
+                        <option class="" value="#">Petty Cash 1-103</option>
+                        <option class="" value="#">Accounts Receiable 1-104</option>
+                        <option class="" value="#">Fixed Assets 1-200</option>
+                        <option class="" value="#">Office Equipment 1-201</option>
+                        <option class="" value="#">Motor Vichle</option>
+
                       </select>
                     </div>
                     <div class="w-100 text-end mt-2">
@@ -604,7 +611,12 @@
                       <label for="role" class="fw-bold me-3 col-md-3">Liability account</label>
                       <select id="cars" name="carlist" form="carform"
                         class="d-block w-100 border border-2 rounded px-4 py-2">
-                        <option value="#">Cost of goods</option>
+                        <option value="#">Current Liabilities 2-101</option>
+                        <option value="#">Credit Card 2-102</option>
+                        <option value="#">Account Payable 2-103</option>
+                        <option value="#">Long Term Liabilities 2-200</option>
+                        <option value="#">Bank Loan 2-201</option>
+                        <option value="#">Vichle Loan 2-202</option>
                       </select>
                     </div>
                     <div class="w-100 text-end mt-2">
@@ -626,7 +638,11 @@
                       <label for="role" class="fw-bold me-3 col-md-3">Bonuses</label>
                       <select id="cars" name="carlist" form="carform"
                         class="d-block w-100 border border-2 rounded px-4 py-2">
-                        <option value="#">Cost of goods</option>
+                        <option value="#">Capital 3-101</option>
+                        <option value="#">Drawings 3-102</option>
+                        <option value="#">Labour 4-101</option>
+                        <option value="#">Materials 4-102</option>
+                        <option value="#">Bank Intrest 4-103</option>
                       </select>
                     </div>
                     <div class="w-100 text-end mt-2">
@@ -637,7 +653,14 @@
                       <label for="role" class="fw-bold me-3 col-md-3">Deduction</label>
                       <select id="cars" name="carlist" form="carform"
                         class="d-block w-100 border border-2 rounded px-4 py-2">
-                        <option value="#">Other Income</option>
+                        <option value="#">Cost of Goods Sold 6-100</option>
+                        <option value="#">Advertising 6-101</option>
+                        <option value="#">Bank Fees 6-102</option>
+                        <option value="#">General Expenses 6-103</option>
+                        <option value="#">Internet 6-104</option>
+                        <option value="#">Stationery 6-105</option>
+                        <option value="#">Subscriptions 6-106</option>
+                        <option value="#">Telephone 6-107</option>
                       </select>
                     </div>
                     <div class="w-100 text-end mt-2">
@@ -1953,23 +1976,7 @@
                     </div>
                     <button type="button" class="btn ouline-white btn-fill me-md-3 mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#addContactModal">+ New Sender</button>
                   </div>
-                  <h4 class="mb-3">Public Domains <i class="icon icon-info"></i></h4>
-                  <div class="row w-100 mx-auto">
-                    <div class="col-md-4 border border-2 py-3">
-                      <p class="text-light-gray text-uppercase">Emails are sent through</p>
-                      <h6 class="fw-600 mt-3">Email address of Zoho Books</h6>
-                      <p class="text-light-gray">(message-service@sender.zohobooks.com)</p>
-                    </div>
-                    <div class="col-md-8 bg-info-light py-3">
-                      <p class="text-light-gray">
-                        <i class="icon icon-info"></i>
-                        If you send emails from public domain, they are likely to land in Spam folder. So, if emails are
-                        with any of the following email addresses in the from field, email will be sent from
-                        <b>message-service@sender.zohobooks.com.</b> if you still want to send emails using the public
-                        domain, <a href="" class="text-decoration-none">Changes setting</a>
-                      </p>
-                    </div>
-                  </div>
+                  
                   <table class="table border border-2 mt-3">
                     <thead>
                       <tr>
@@ -2592,12 +2599,8 @@
         <input type="text" name="name" id="name"
           class="d-block w-100 border border-2 rounded px-4 py-2">
           <label for="name" class="fw-bold mt-3 mb-2">Email</label>
-          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
-            <option value="English">Select from organization user or type</option>
-            <option value="Urdu">Urdu</option>
-            <option value="Hindi">Hindi</option>
-            <option value="Punjabi">Punjabi</option>
-          </select>
+          <input type="email" name="name" id="name"
+          class="d-block w-100 border border-2 rounded px-4 py-2">
         </div>
       <div class="modal-footer justify-content-between">
         <button type="button" class="btn btn-fill text-uppercase">Save</button>

@@ -49,6 +49,9 @@
         top: 50%;
         transform: translateX(-50%);
       }
+      &.bg-transparent{
+        background-color: transparent !important;
+      }
     }
   }
   .is-purple-dropdown{

@@ -78,8 +78,6 @@
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
                 <li><a class="dropdown-item panel_link " href="./new-templates.html"><i class="icon icon-dashboard-1"></i> <span>Templates</span></a>
                 </li>
-                <li><a class="dropdown-item panel_link " href="./new-background.html"><i class="icon icon-dashboard-1"></i> <span>Backgrounds</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./new-graphics.html"><i class="icon icon-dashboard-1"></i> <span>Graphics</span></a></li>
                 <li><a class="dropdown-item panel_link " href="./new-task-management.html"><i class="icon icon-dashboard-1"></i> <span>Task Management</span></a></li>
               </ul>
             </li>
@@ -102,29 +100,485 @@
       </aside>
       <main class="main pt-4 pb-4">
         <div class="container">
-
+          <div class="page-main-title justify-content-end">
+            <div class="heading d-flex align-items-center">
+              <button class="btn btn-fill wsm-100 mt-3 mt-md-0 add-component me-3">Add Chart</button>
+              <button class="btn btn-fill wsm-100 mt-3 mt-md-0">Save</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 full-content"></div>
+            <div class="col-md-3 bg-white py-3 rounded right-content mt-3 mt-md-0 second-menu">
+              <div class="w-100 text-end"><button type="button" class="btn-close remove-component"
+                  data-bs-dismiss="modal" aria-label="Close"></button></div>
+                  <ul class="box-widget w-100">
+                    <li class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#basicModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block pt-4 bg-white">Columns Basic</a></li>
+                    <li class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#columnsItemsModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block pt-4 bg-white">Columns Items</a></li>
+                    <li class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#columnsMixedModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block pt-4 bg-white">Columns Mixed</a></li>
+                    <li class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#columnsNagetineModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block bg-white">Columns with Nagetine Values</a></li>
+                    <li class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#columnsMultipleModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block pt-4 bg-white">Columns Multiple</a></li>
+                    <li class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#StackedModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block pt-4 bg-white">Columns Stacked</a></li>
+                    <li class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#RadialbarModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block pt-4 bg-white">Radialbar</a></li>
+                    <li class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#ScatterModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block pt-4 bg-white">Scatter</a></li>
+                    <li class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#LineModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block pt-4 bg-white">Line</a></li>
+                    <li class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#AreaModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block pt-4 bg-white">Area</a></li>
+                    <li class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#RadarModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block pt-4 bg-white">Radar</a></li>
+                    <li class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#DonutModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block pt-4 bg-white">Donut</a></li>
+                    <li class="cursor-pointer w-100" data-bs-toggle="modal" data-bs-target="#PiesModal"><a
+                        class="border border-2 h-100 text-decoration-none d-block pt-4 bg-white">Pies</a></li>
+                  </ul>
+            </div>
+          </div>
         </div>
       </main>
-      <aside class="aside-1">
-        <div class="left-top">
-          <ul>
-            <li><a href="./new-chart.html" class="panel_link "><img src="./assets/images/icons/widget.svg" />
-                <span>Indicators</span></a></li>
-            <li><a href="./new-widget.html" class="panel_link "><img src="./assets/images/icons/widget.svg" />
-                <span>Data Source</span></a></li>
-          </ul>
+    </div>
+    <div class="modal fade" id="StackedModal" tabindex="-1" aria-labelledby="StackedModalLabel" aria-hidden="true">
+      <div class="modal-dialog width-50 wsm-95">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="StackedModalLabel">Columns Stacked Chart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-8">
+              <div>
+                <canvas id="stackedChart" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 215px; width: 631px;" width="631"
+                  height="215"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary text-uppercase">Save</button>
+            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
-      </aside>
+      </div>
+      </div>
+    <div class="modal fade" id="columnsMultipleModal" tabindex="-1" aria-labelledby="columnsMultipleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog width-50 wsm-95">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="columnsMultipleModalLabel">Columns Multiple Chart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-8">
+              <div>
+                <canvas id="doubleBarChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+              </div>
+            </div>
+            <div class="col-md-8 mt-4">
+              <div>
+                <canvas id="doubleBarChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="Stacked" role="tabpanel" aria-labelledby="Stacked-tab">
+          <div class="row">
+            <div class="col-md-8">
+              <div>
+                <canvas id="stackedChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 215px; width: 631px;" width="631" height="215"></canvas>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-primary text-uppercase">Save</button>
+          <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal right fade show d-block opacity-0" id="basicModal" tabindex="-1" aria-labelledby="basicModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog width-50 wsm-95">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="basicModalLabel">Columns Basic Chart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <canvas id="candlestickChart" class="wsm-100"
+              style="display: block; box-sizing: border-box; height: 140px; width: 411px;" width="369"
+              height="125"></canvas>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-primary text-uppercase">Save</button>
+          <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="columnsItemsModal" tabindex="-1" aria-labelledby="columnsItemsModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog width-50 wsm-95">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="columnsItemsModalLabel">Columns Items Chart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div>
+                <canvas id="itemsChart" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                  height="160"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div>
+                <canvas id="itemsChart-1" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                  height="160"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div>
+                <canvas id="itemsChart-2" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                  height="160"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div>
+                <canvas id="itemsChart-3" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                  height="160"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div>
+                <canvas id="itemsChart-4" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                  height="160"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div>
+                <canvas id="itemsChart-5" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                  height="160"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-primary text-uppercase">Save</button>
+          <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="columnsMixedModal" tabindex="-1" aria-labelledby="columnsMixedModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog width-50 wsm-95">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="columnsMixedModalLabel">Columns Mixed Chart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <canvas id="mixedChart" class="wsm-100"
+              style="display: block; box-sizing: border-box; height: 260px; width: 470px;"></canvas>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-primary text-uppercase">Save</button>
+          <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="columnsNagetineModal" tabindex="-1" aria-labelledby="columnsNagetineModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog width-50 wsm-95">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="columnsNagetineModalLabel">Columns with Nagetine Values Chart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-8">
+              <div>
+                <canvas id="nagetineChart" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                  height="160"></canvas>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div>
+                <canvas id="nagetineChart-1" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                  height="160"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-primary text-uppercase">Save</button>
+          <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="RadialbarModal" tabindex="-1" aria-labelledby="RadialbarModalLabel" aria-hidden="true">
+    <div class="modal-dialog width-50 wsm-95">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="RadialbarModalLabel">Radialbar Chart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div>
+                <canvas id="Radialbar-1" class="w-100"
+                  style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
+                  height="422"></canvas>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div>
+                <canvas id="Radialbar-2" class="w-100"
+                  style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
+                  height="422"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-primary text-uppercase">Save</button>
+          <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="ScatterModal" tabindex="-1" aria-labelledby="ScatterModalLabel" aria-hidden="true">
+    <div class="modal-dialog width-50 wsm-95">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ScatterModalLabel">Scatter Chart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+                <canvas id="invoiceBars" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                  height="160"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <canvas id="invoiceBars1" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                  height="160"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-primary text-uppercase">Save</button>
+          <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="LineModal" tabindex="-1" aria-labelledby="LineModalLabel" aria-hidden="true">
+    <div class="modal-dialog width-50 wsm-95">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LineModalLabel">Line Chart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+                <canvas id="lineChart" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308"
+                  height="197"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <canvas id="lineChart1" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308"
+                  height="197"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-primary text-uppercase">Save</button>
+          <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="AreaModal" tabindex="-1" aria-labelledby="AreaModalLabel" aria-hidden="true">
+    <div class="modal-dialog width-50 wsm-95">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="AreaModalLabel">Area Chart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <canvas id="areaChart" class="wsm-100"
+                style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
+                width="630"></canvas>
+            </div>
+            <div class="col-md-6">
+              <canvas id="areaChart1" class="wsm-100"
+                style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
+                width="630"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-primary text-uppercase">Save</button>
+          <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="RadarModal" tabindex="-1" aria-labelledby="RadarModalLabel" aria-hidden="true">
+    <div class="modal-dialog width-50 wsm-95">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="RadarModalLabel">Radar Chart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+                <canvas id="radarChart" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
+                  height="160"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <canvas id="radarChart1" class="wsm-100"
+                  style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
+                  height="160"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-primary text-uppercase">Save</button>
+          <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="DonutModal" tabindex="-1" aria-labelledby="DonutModalLabel" aria-hidden="true">
+    <div class="modal-dialog width-50 wsm-95">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="DonutModalLabel">Donut Chart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+                <canvas id="dountMenuChart" class="w-100"
+                  style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
+                  height="422"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <canvas id="dountMenuChart1" class="w-100"
+                  style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
+                  height="422"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-primary text-uppercase">Save</button>
+          <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="PiesModal" tabindex="-1" aria-labelledby="PiesModalLabel" aria-hidden="true">
+    <div class="modal-dialog width-50 wsm-95">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="PiesModalLabel">Pies Chart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+                <canvas id="pieChart" class="wsm-100 w-100"
+                  style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278"
+                  height="278"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-primary text-uppercase">Save</button>
+          <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
-  <script src="./assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/graphs-popup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js"></script>
+  <script src="./assets/js/candleschart.js"></script>
+  <script src="./assets/js/main.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+  <script src="./assets/js/chartjs-chart-financial.js"></script>
   <script>
-    $("html").removeClass("layout-menu-collapsed");
-    $("#expandMenuOnClick").on("click", function () {
-      $("html").removeClass("layout-menu-collapsed");
+        $('#basicModal').removeClass('show').removeClass('d-block').removeClass('opacity-0');
+    $(".add-component").click(function () {
+      $(".full-content").addClass("col-9");
+    });
+    $(".add-component").click(function () {
+      $(".right-content").addClass("d-block");
+    });
+    $(".remove-component").click(function () {
+      $(".right-content").removeClass("d-block");
+    });
+    $(".remove-component").click(function () {
+      $(".full-content").removeClass("col-9");
     });
   </script>
 </body>

@@ -1468,6 +1468,20 @@ i[class*=h-icon-] {
   height: 50px;
 }
 
+.icon-image {
+  display: inline-block;
+  background-image: url("../images/icons/image.svg");
+  width: 50px;
+  height: 50px;
+}
+
+.icon-icon-tabs {
+  display: inline-block;
+  background-image: url("../images/icons/icon-tabs.svg");
+  width: 50px;
+  height: 50px;
+}
+
 .icon-calander-small {
   display: inline-block;
   background-image: url("../images/icons/calander-small.svg");
@@ -2147,7 +2161,11 @@ h6.text-sm {
   border-radius: 50%;
 }
 
-.page-side-button button {
+.page-side-button {
+  width: 70px;
+  height: 70px;
+}
+.page-side-button p {
   font-size: 9px !important;
 }
 
@@ -2318,34 +2336,6 @@ h6.text-sm {
   .border-sm-none {
     border: none !important;
   }
-}
-
-.bg-info-light {
-  background-color: rgba(147, 147, 207, 0.4117647059);
-}
-
-.orange {
-  background: #F3935D;
-}
-
-.light-green {
-  background: #7DC066;
-}
-
-.light-purple {
-  background: #9E57E5;
-}
-
-.light-blue {
-  background: #59B4D1;
-}
-
-.light-red {
-  background: #E5646C;
-}
-
-.grid-set {
-  grid-template-columns: 57% 43%;
 }
 
 .br-12 {
@@ -4163,9 +4153,6 @@ ul.head-btn .slider-btn .btn.ouline-white {
   right: 10px;
   top: 50%;
   transform: translateX(-50%);
-}
-.select-dropdown .dropdown-toggle.bg-transparent {
-  background-color: transparent !important;
 }
 
 .is-purple-dropdown {

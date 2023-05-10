@@ -184,652 +184,657 @@
           </div>
           <div class="row">
             <div class="col-12 full-content">
-              <div class="row">
-                <div class="col-md-3 mb-4 contact-card">
-                  <div class="sm-box h-100 bg-white box-hover">
-                    <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                      <span>
-                        <h3 class="fw-bold">$22,880.50</h3>
-                      </span>
-                      <span class=""><i class="icon icon-cart-box"></i></span>
-                    </div>
-                    <p class="text-light-gray">Closed deals</p>
-                    <div class="progress-percentage mt-4">
-                      <div class="progress-percentage-box">
-                        <!-- example starts here -->
-                        <div class="progress">
-                          <div class="progress-bar darkblue" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 67%;">
-                            <span>67%</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 mb-4 contact-card">
-                  <div class="sm-box h-100 bg-white box-hover">
-                    <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                      <span>
-                        <h3 class="fw-bold">$1,096.30</h3>
-                      </span>
-                      <span class=""><i class="icon icon-avarage-incom"></i></span>
-                    </div>
-                    <p class="text-light-gray">Interest</p>
-                    <div class="progress-percentage mt-4">
-                      <div class="progress-percentage-box">
-                        <!-- example starts here -->
-                        <div class="progress">
-                          <div class="progress-bar pink" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 18%;">
-                            <span>18%</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 mb-4 contact-card">
-                  <div class="sm-box h-100 bg-white cursor-pointer box-hover"
-                    onClick="window.location.href='./crm-reports-overview.html'">
-                    <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                      <span>
-                        <h3 class="fw-bold">33.98%</h3>
-                      </span>
-                      <span class=""><i class="icon icon-conversations"></i></span>
-                    </div>
-                    <p class="text-light-gray">Revenue VS. Target</p>
-                    <div class="progress-percentage mt-4">
-                      <div class="progress-percentage-box">
-                        <!-- example starts here -->
-                        <div class="progress">
-                          <div class="progress-bar sky-blue" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 78%;">
-                            <span>78%</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 mb-4 contact-card">
-                  <div class="sm-box h-100 bg-white cursor-pointer box-hover"
-                    onClick="window.location.href='./crm-compnies-list.html'">
-                    <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                      <span>
-                        <h3 class="fw-bold">778</h3>
-                      </span>
-                      <span class=""><i class="icon icon-right-arrow-yellow"></i></span>
-                    </div>
-                    <p class="text-light-gray">Customers</p>
-                    <div class="progress-percentage mt-4">
-                      <div class="progress-percentage-box">
-                        <!-- example starts here -->
-                        <div class="progress">
-                          <div class="progress-bar yellow" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 80%;">
-                            <span>80%</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 mb-4 contact-card-3">
-                  <div class="chart">
-                    <div class="chart-box h-100 d-flex justify-content-between flex-column">
-                      <div class="chart-head d-flex justify-content-between align-items-center">
-                        <div class="chart-title">
-                          <h3 class="fw-600">Per stage</h3>
-                        </div>
-                        <div class="btn-group">
-                          <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="dots">
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </button>
-                          <ul class="dropdown-menu" style="">
-                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                Edit</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                Delete</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="chart-content d-flex justify-content-between">
-                        <div class="chart-grap d-flex align-items-end mt-3">
-                          <!--<img class="img-fluid" src="./assets/images/email-send.png" alt="">-->
-                          <div>
-                            <canvas id="overviewStageChart" class="wsm-100 w-100"
-                              style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4 mt-3 mt-md-0 contact-card-3">
-                  <div class="chart">
-                    <div class="chart-box d-flex h-100 justify-content-between flex-column">
-                      <div class="chart-head d-flex justify-content-between align-items-center">
-                        <div class="chart-title">
-                          <h3 class="fw-600">Income Amounts</h3>
-                        </div>
-                        <div class="btn-group">
-                          <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="dots">
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </button>
-                          <ul class="dropdown-menu" style="">
-                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                Edit</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                Delete</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="chart-content d-flex justify-content-between">
-                        <div class="chart-grap d-flex align-items-end">
-                          <div>
-                            <canvas id="overviewAmountsChart" class="wsm-100"
-                              style="display: block; box-sizing: border-box; height: 200px; width: 300px;"></canvas>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4 mt-3 mt-md-0 contact-card-3">
-                  <div class="chart">
-                    <div class="chart-box d-flex h-100 justify-content-between flex-column">
-                      <div class="chart-head d-flex justify-content-between align-items-center">
-                        <div class="chart-title">
-                          <h3 class="fw-600">Revenue</h3>
-                        </div>
-                        <div class="btn-group">
-                          <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="dots">
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </button>
-                          <ul class="dropdown-menu" style="">
-                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                Edit</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                Delete</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="chart-desc">
-                        <h2 class="fw-bold">$165,750.23</h2>
-                        <p class="text-light-gray">Won from 262 Deals</p>
-                      </div>
-                      <div class="chart-content d-flex justify-content-between">
-                        <div class="chart-grap d-flex align-items-end">
-                          <!-- <img class="img-fluid" src="./assets/images/revenue.png" alt=""> -->
-                          <div>
-                            <canvas id="overviewRevenueChart" class="wsm-100"
-                              style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-8 mb-4 mb-md-3 contact-card-4">
-                  <div class="chart">
-                    <div class="chart-box d-flex justify-content-between flex-column">
-                      <div class="chart-head d-flex justify-content-between align-items-center">
-                        <div class="chart-title">
-                          <h3 class="fw-600">Top Performance</h3>
-                          <p class="text-light-gray">Last 2 Weeks</p>
-                        </div>
-                        <div class="d-flex align-items-start justify-content-md-end  mt-3 mt-md-0 mb-md-0 mb-3">
-                          <div class="btn-group">
-                            <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+            <div id="page">
+                  <div data-type="text">
+                    <div class="block-content">
+                        <div class="row">
+                          <div class="col-md-3 mb-4 contact-card">
+                            <div class="sm-box h-100 bg-white box-hover">
+                              <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                                <span>
+                                  <h3 class="fw-bold">$22,880.50</h3>
+                                </span>
+                                <span class=""><i class="icon icon-cart-box"></i></span>
                               </div>
-                            </button>
-                            <ul class="dropdown-menu" style="">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="chart-content d-flex justify-content-between flex-column">
-                        <div class="chart-content d-flex justify-content-between align-items-end">
-                          <div class="prof-table table tablepanel">
-                            <table class="mt-3">
-                              <thead>
-                                <tr>
-                                  <th>No</th>
-                                  <th>Ref</th>
-                                  <th>Leads</th>
-                                  <th>Deals</th>
-                                  <th>Tasks</th>
-                                  <th>Rate</th>
-                                  <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr class="bg-light-gray">
-                                  <td data-label="No">1</td>
-                                  <td data-label="Ref">
-                                    <div class="ref-prof justify-content-end justify-content-md-start">
-                                      <div class="prof-img me-2"><img src="./assets/images/prof-img-1.png" alt=""
-                                          class="img-fluid"></div>
-                                      <div class="prof-details">
-                                        <h6 class="text-sm fw-500">Mathilda Bell</h6>
-                                        <p class="text-light-gray">$8,192.000</p>
-                                      </div>
+                              <p class="text-light-gray">Closed deals</p>
+                              <div class="progress-percentage mt-4">
+                                <div class="progress-percentage-box">
+                                  <!-- example starts here -->
+                                  <div class="progress">
+                                    <div class="progress-bar darkblue" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                      aria-valuemax="100" style="width: 67%;">
+                                      <span>67%</span>
                                     </div>
-                                  </td>
-                                  <td data-label="Leads">187</td>
-                                  <td data-label="Deals">154</td>
-                                  <td data-label="Tasks">28 Tasks Done</td>
-                                  <td data-label="Rate">
-                                    <div class="round-progress blue ms-auto ms-md-0">
-                                      <span class="progress-left">
-                                        <span class="progress-bar"></span>
-                                      </span>
-                                      <span class="progress-right">
-                                        <span class="progress-bar"></span>
-                                      </span>
-                                      <div class="progress-value">90%</div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td data-label="No">2</td>
-                                  <td data-label="Ref">
-                                    <div class="ref-prof justify-content-end justify-content-md-start">
-                                      <div class="prof-img me-2"><img src="./assets/images/marion-figueroa.jpg" alt=""
-                                          class="img-fluid"></div>
-                                      <div class="prof-details">
-                                        <h6 class="text-sm fw-500">Marion Figueroa</h6>
-                                        <p class="text-light-gray">$6,100.000</p>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td data-label="Leads">235</td>
-                                  <td data-label="Deals">148</td>
-                                  <td data-label="Tasks">21 Tasks Done</td>
-                                  <td data-label="Rate">
-                                    <div class="round-progress blue ms-auto ms-md-0">
-                                      <span class="progress-left">
-                                        <span class="progress-bar"></span>
-                                      </span>
-                                      <span class="progress-right">
-                                        <span class="progress-bar"></span>
-                                      </span>
-                                      <div class="progress-value">90%</div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="bg-light-gray">
-                                  <td data-label="No">3</td>
-                                  <td data-label="Ref">
-                                    <div class="ref-prof justify-content-end justify-content-md-start">
-                                      <div class="prof-img me-2"><img src="./assets/images/lee-barrett.jpg" alt=""
-                                          class="img-fluid"></div>
-                                      <div class="prof-details">
-                                        <h6 class="text-sm fw-500">Lee Barrett</h6>
-                                        <p class="text-light-gray">$4,220.000</p>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td data-label="Leads">365</td>
-                                  <td data-label="Deals">126</td>
-                                  <td data-label="Tasks">10 Tasks Done</td>
-                                  <td data-label="Rate">
-                                    <div class="round-progress blue ms-auto ms-md-0">
-                                      <span class="progress-left">
-                                        <span class="progress-bar"></span>
-                                      </span>
-                                      <span class="progress-right">
-                                        <span class="progress-bar"></span>
-                                      </span>
-                                      <div class="progress-value">90%</div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td data-label="No">4</td>
-                                  <td data-label="Ref">
-                                    <div class="ref-prof justify-content-end justify-content-md-start">
-                                      <div class="prof-img me-2"><img src="./assets/images/joseph-brooks.jpg" alt=""
-                                          class="img-fluid"></div>
-                                      <div class="prof-details">
-                                        <h6 class="text-sm fw-500">Joseph Brooks</h6>
-                                        <p class="text-light-gray">$1,628.000</p>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td data-label="Leads">458</td>
-                                  <td data-label="Deals">110</td>
-                                  <td data-label="Tasks">9 Tasks Done</td>
-                                  <td data-label="Rate">
-                                    <div class="round-progress blue ms-auto ms-md-0">
-                                      <span class="progress-left">
-                                        <span class="progress-bar"></span>
-                                      </span>
-                                      <span class="progress-right">
-                                        <span class="progress-bar"></span>
-                                      </span>
-                                      <div class="progress-value">90%</div>
-                                    </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4 mb-md-3 contact-card-3">
-                  <div class="chart">
-                    <div class="chart-box d-flex justify-content-between flex-column h-100">
-                      <div class="chart-head d-flex justify-content-between align-items-center">
-                        <div class="chart-title">
-                          <h3 class="fw-600">Tasks</h3>
-                          <span class="text-light-gray">4 of 8 remaining</span>
-                        </div>
-                        <div class="d-flex align-items-start justify-content-md-end  mt-3 mt-md-0 mb-md-0 mb-3">
-                          <div class="btn-group">
-                            <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                                  </div>
+                                </div>
                               </div>
-                            </button>
-                            <ul class="dropdown-menu" style="">
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                  Edit</a></li>
-                              <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                  Delete</a></li>
-                            </ul>
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-4 contact-card">
+                            <div class="sm-box h-100 bg-white box-hover">
+                              <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                                <span>
+                                  <h3 class="fw-bold">$1,096.30</h3>
+                                </span>
+                                <span class=""><i class="icon icon-avarage-incom"></i></span>
+                              </div>
+                              <p class="text-light-gray">Interest</p>
+                              <div class="progress-percentage mt-4">
+                                <div class="progress-percentage-box">
+                                  <!-- example starts here -->
+                                  <div class="progress">
+                                    <div class="progress-bar pink" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                      aria-valuemax="100" style="width: 18%;">
+                                      <span>18%</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-4 contact-card">
+                            <div class="sm-box h-100 bg-white cursor-pointer box-hover"
+                              onClick="window.location.href='./crm-reports-overview.html'">
+                              <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                                <span>
+                                  <h3 class="fw-bold">33.98%</h3>
+                                </span>
+                                <span class=""><i class="icon icon-conversations"></i></span>
+                              </div>
+                              <p class="text-light-gray">Revenue VS. Target</p>
+                              <div class="progress-percentage mt-4">
+                                <div class="progress-percentage-box">
+                                  <!-- example starts here -->
+                                  <div class="progress">
+                                    <div class="progress-bar sky-blue" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                      aria-valuemax="100" style="width: 78%;">
+                                      <span>78%</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-4 contact-card">
+                            <div class="sm-box h-100 bg-white cursor-pointer box-hover"
+                              onClick="window.location.href='./crm-compnies-list.html'">
+                              <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                                <span>
+                                  <h3 class="fw-bold">778</h3>
+                                </span>
+                                <span class=""><i class="icon icon-right-arrow-yellow"></i></span>
+                              </div>
+                              <p class="text-light-gray">Customers</p>
+                              <div class="progress-percentage mt-4">
+                                <div class="progress-percentage-box">
+                                  <!-- example starts here -->
+                                  <div class="progress">
+                                    <div class="progress-bar yellow" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                      aria-valuemax="100" style="width: 80%;">
+                                      <span>80%</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4 mb-4 contact-card-3">
+                            <div class="chart">
+                              <div class="chart-box h-100 d-flex justify-content-between flex-column">
+                                <div class="chart-head d-flex justify-content-between align-items-center">
+                                  <div class="chart-title">
+                                    <h3 class="fw-600">Per stage</h3>
+                                  </div>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                      </div>
+                                    </button>
+                                    <ul class="dropdown-menu" style="">
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                          Edit</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                          Delete</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="chart-content d-flex justify-content-between">
+                                  <div class="chart-grap d-flex align-items-end mt-3">
+                                    <!--<img class="img-fluid" src="./assets/images/email-send.png" alt="">-->
+                                    <div>
+                                      <canvas id="overviewStageChart" class="wsm-100 w-100"
+                                        style="display: block; box-sizing: border-box; height: 240px; width: 100%;"></canvas>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-4 mt-3 mt-md-0 contact-card-3">
+                            <div class="chart">
+                              <div class="chart-box d-flex h-100 justify-content-between flex-column">
+                                <div class="chart-head d-flex justify-content-between align-items-center">
+                                  <div class="chart-title">
+                                    <h3 class="fw-600">Income Amounts</h3>
+                                  </div>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                      </div>
+                                    </button>
+                                    <ul class="dropdown-menu" style="">
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                          Edit</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                          Delete</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="chart-content d-flex justify-content-between">
+                                  <div class="chart-grap d-flex align-items-end">
+                                    <div>
+                                      <canvas id="overviewAmountsChart" class="wsm-100"
+                                        style="display: block; box-sizing: border-box; height: 200px; width: 300px;"></canvas>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-4 mt-3 mt-md-0 contact-card-3">
+                            <div class="chart">
+                              <div class="chart-box d-flex h-100 justify-content-between flex-column">
+                                <div class="chart-head d-flex justify-content-between align-items-center">
+                                  <div class="chart-title">
+                                    <h3 class="fw-600">Revenue</h3>
+                                  </div>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                      </div>
+                                    </button>
+                                    <ul class="dropdown-menu" style="">
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                          Edit</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                          Delete</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="chart-desc">
+                                  <h2 class="fw-bold">$165,750.23</h2>
+                                  <p class="text-light-gray">Won from 262 Deals</p>
+                                </div>
+                                <div class="chart-content d-flex justify-content-between">
+                                  <div class="chart-grap d-flex align-items-end">
+                                    <!-- <img class="img-fluid" src="./assets/images/revenue.png" alt=""> -->
+                                    <div>
+                                      <canvas id="overviewRevenueChart" class="wsm-100"
+                                        style="display: block; box-sizing: border-box; height: 220px; width: 100%;"></canvas>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-8 mb-4 mb-md-3 contact-card-4">
+                            <div class="chart">
+                              <div class="chart-box d-flex justify-content-between flex-column">
+                                <div class="chart-head d-flex justify-content-between align-items-center">
+                                  <div class="chart-title">
+                                    <h3 class="fw-600">Top Performance</h3>
+                                    <p class="text-light-gray">Last 2 Weeks</p>
+                                  </div>
+                                  <div class="d-flex align-items-start justify-content-md-end  mt-3 mt-md-0 mb-md-0 mb-3">
+                                    <div class="btn-group">
+                                      <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="dots">
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                        </div>
+                                      </button>
+                                      <ul class="dropdown-menu" style="">
+                                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                            Edit</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                            Delete</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="chart-content d-flex justify-content-between flex-column">
+                                  <div class="chart-content d-flex justify-content-between align-items-end">
+                                    <div class="prof-table table tablepanel">
+                                      <table class="mt-3">
+                                        <thead>
+                                          <tr>
+                                            <th>No</th>
+                                            <th>Ref</th>
+                                            <th>Leads</th>
+                                            <th>Deals</th>
+                                            <th>Tasks</th>
+                                            <th>Rate</th>
+                                            <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr class="bg-light-gray">
+                                            <td data-label="No">1</td>
+                                            <td data-label="Ref">
+                                              <div class="ref-prof justify-content-end justify-content-md-start">
+                                                <div class="prof-img me-2"><img src="./assets/images/prof-img-1.png" alt=""
+                                                    class="img-fluid"></div>
+                                                <div class="prof-details">
+                                                  <h6 class="text-sm fw-500">Mathilda Bell</h6>
+                                                  <p class="text-light-gray">$8,192.000</p>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td data-label="Leads">187</td>
+                                            <td data-label="Deals">154</td>
+                                            <td data-label="Tasks">28 Tasks Done</td>
+                                            <td data-label="Rate">
+                                              <div class="round-progress blue ms-auto ms-md-0">
+                                                <span class="progress-left">
+                                                  <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                  <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td data-label="No">2</td>
+                                            <td data-label="Ref">
+                                              <div class="ref-prof justify-content-end justify-content-md-start">
+                                                <div class="prof-img me-2"><img src="./assets/images/marion-figueroa.jpg" alt=""
+                                                    class="img-fluid"></div>
+                                                <div class="prof-details">
+                                                  <h6 class="text-sm fw-500">Marion Figueroa</h6>
+                                                  <p class="text-light-gray">$6,100.000</p>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td data-label="Leads">235</td>
+                                            <td data-label="Deals">148</td>
+                                            <td data-label="Tasks">21 Tasks Done</td>
+                                            <td data-label="Rate">
+                                              <div class="round-progress blue ms-auto ms-md-0">
+                                                <span class="progress-left">
+                                                  <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                  <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr class="bg-light-gray">
+                                            <td data-label="No">3</td>
+                                            <td data-label="Ref">
+                                              <div class="ref-prof justify-content-end justify-content-md-start">
+                                                <div class="prof-img me-2"><img src="./assets/images/lee-barrett.jpg" alt=""
+                                                    class="img-fluid"></div>
+                                                <div class="prof-details">
+                                                  <h6 class="text-sm fw-500">Lee Barrett</h6>
+                                                  <p class="text-light-gray">$4,220.000</p>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td data-label="Leads">365</td>
+                                            <td data-label="Deals">126</td>
+                                            <td data-label="Tasks">10 Tasks Done</td>
+                                            <td data-label="Rate">
+                                              <div class="round-progress blue ms-auto ms-md-0">
+                                                <span class="progress-left">
+                                                  <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                  <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td data-label="No">4</td>
+                                            <td data-label="Ref">
+                                              <div class="ref-prof justify-content-end justify-content-md-start">
+                                                <div class="prof-img me-2"><img src="./assets/images/joseph-brooks.jpg" alt=""
+                                                    class="img-fluid"></div>
+                                                <div class="prof-details">
+                                                  <h6 class="text-sm fw-500">Joseph Brooks</h6>
+                                                  <p class="text-light-gray">$1,628.000</p>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td data-label="Leads">458</td>
+                                            <td data-label="Deals">110</td>
+                                            <td data-label="Tasks">9 Tasks Done</td>
+                                            <td data-label="Rate">
+                                              <div class="round-progress blue ms-auto ms-md-0">
+                                                <span class="progress-left">
+                                                  <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                  <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-4 mb-md-3 contact-card-3">
+                            <div class="chart">
+                              <div class="chart-box d-flex justify-content-between flex-column h-100">
+                                <div class="chart-head d-flex justify-content-between align-items-center">
+                                  <div class="chart-title">
+                                    <h3 class="fw-600">Tasks</h3>
+                                    <span class="text-light-gray">4 of 8 remaining</span>
+                                  </div>
+                                  <div class="d-flex align-items-start justify-content-md-end  mt-3 mt-md-0 mb-md-0 mb-3">
+                                    <div class="btn-group">
+                                      <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="dots">
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                        </div>
+                                      </button>
+                                      <ul class="dropdown-menu" style="">
+                                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                            Edit</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                            Delete</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="check-tasks">
+                                  <ul class="p-0">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                      <a class="text-decoration-none text-dark d-flex">
+                                        <span>
+                                          <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" data-ng-model="example.check">
+                                              <span class="box"></span>
+                                            </label>
+                                          </div>
+                                        </span>
+                                        <span data-bs-toggle="modal" data-bs-target="#taskOverview"
+                                          class="cursor-pointer">Marketing dashboard app</span>
+                                      </a>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                      <a class="text-decoration-none text-dark d-flex">
+                                        <span>
+                                          <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" data-ng-model="example.check">
+                                              <span class="box"></span>
+                                            </label>
+                                          </div>
+                                        </span>
+                                        <span data-bs-toggle="modal" data-bs-target="#taskOverview" class="cursor-pointer">Create
+                                          new version 4.0</span>
+          
+                                      </a>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                      <a class="text-decoration-none text-dark d-flex">
+                                        <span>
+                                          <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" data-ng-model="example.check">
+                                              <span class="box"></span>
+                                            </label>
+                                          </div>
+                                        </span>
+                                        <span data-bs-toggle="modal" data-bs-target="#taskOverview" class="cursor-pointer">User
+                                          Testing</span>
+          
+                                      </a>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                      <a class="text-decoration-none text-dark d-flex">
+                                        <span>
+                                          <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" data-ng-model="example.check">
+                                              <span class="box"></span>
+                                            </label>
+                                          </div>
+                                        </span>
+                                        <span data-bs-toggle="modal" data-bs-target="#taskOverview" class="cursor-pointer">Design
+                                          system</span>
+          
+                                      </a>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                      <a class="text-decoration-none text-dark d-flex">
+                                        <span>
+                                          <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" data-ng-model="example.check">
+                                              <span class="box"></span>
+                                            </label>
+                                          </div>
+                                        </span>
+                                        <span data-bs-toggle="modal" data-bs-target="#taskOverview" class="cursor-pointer">Awesome
+                                          Task</span>
+          
+                                      </a>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                      <a class="text-decoration-none text-dark d-flex">
+                                        <span>
+                                          <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" data-ng-model="example.check">
+                                              <span class="box"></span>
+                                            </label>
+                                          </div>
+                                        </span>
+                                        <span data-bs-toggle="modal" data-bs-target="#taskOverview"
+                                          class="cursor-pointer">Marketing dahsboard concept</span>
+          
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <button type="button" class="btn ouline-white btn-fill text-sm fw-600 w-fit ms-auto mt-3"
+                                  data-bs-toggle="modal" data-bs-target="#addTaskModal">Add</button>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="check-tasks">
-                        <ul class="p-0">
-                          <li class="d-flex align-items-center justify-content-between">
-                            <a class="text-decoration-none text-dark d-flex">
-                              <span>
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" data-ng-model="example.check">
-                                    <span class="box"></span>
-                                  </label>
-                                </div>
-                              </span>
-                              <span data-bs-toggle="modal" data-bs-target="#taskOverview"
-                                class="cursor-pointer">Marketing dashboard app</span>
-                            </a>
-                          </li>
-                          <li class="d-flex align-items-center justify-content-between">
-                            <a class="text-decoration-none text-dark d-flex">
-                              <span>
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" data-ng-model="example.check">
-                                    <span class="box"></span>
-                                  </label>
-                                </div>
-                              </span>
-                              <span data-bs-toggle="modal" data-bs-target="#taskOverview" class="cursor-pointer">Create
-                                new version 4.0</span>
-
-                            </a>
-                          </li>
-                          <li class="d-flex align-items-center justify-content-between">
-                            <a class="text-decoration-none text-dark d-flex">
-                              <span>
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" data-ng-model="example.check">
-                                    <span class="box"></span>
-                                  </label>
-                                </div>
-                              </span>
-                              <span data-bs-toggle="modal" data-bs-target="#taskOverview" class="cursor-pointer">User
-                                Testing</span>
-
-                            </a>
-                          </li>
-                          <li class="d-flex align-items-center justify-content-between">
-                            <a class="text-decoration-none text-dark d-flex">
-                              <span>
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" data-ng-model="example.check">
-                                    <span class="box"></span>
-                                  </label>
-                                </div>
-                              </span>
-                              <span data-bs-toggle="modal" data-bs-target="#taskOverview" class="cursor-pointer">Design
-                                system</span>
-
-                            </a>
-                          </li>
-                          <li class="d-flex align-items-center justify-content-between">
-                            <a class="text-decoration-none text-dark d-flex">
-                              <span>
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" data-ng-model="example.check">
-                                    <span class="box"></span>
-                                  </label>
-                                </div>
-                              </span>
-                              <span data-bs-toggle="modal" data-bs-target="#taskOverview" class="cursor-pointer">Awesome
-                                Task</span>
-
-                            </a>
-                          </li>
-                          <li class="d-flex align-items-center justify-content-between">
-                            <a class="text-decoration-none text-dark d-flex">
-                              <span>
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" data-ng-model="example.check">
-                                    <span class="box"></span>
-                                  </label>
-                                </div>
-                              </span>
-                              <span data-bs-toggle="modal" data-bs-target="#taskOverview"
-                                class="cursor-pointer">Marketing dahsboard concept</span>
-
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <button type="button" class="btn ouline-white btn-fill text-sm fw-600 w-fit ms-auto mt-3"
-                        data-bs-toggle="modal" data-bs-target="#addTaskModal">Add</button>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
             <div class="col-md-3 bg-white py-3 rounded right-content mt-3 mt-md-0">
               <div class="w-100 text-end"><button type="button" class="btn-close remove-component"
                   data-bs-dismiss="modal" aria-label="Close"></button></div>
-              <div class="row page-side-button mt-3">
-                <p class="text-small text-light-gray fw-600 mb-2">Commonly Used</p>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 text-light-gray" data-bs-toggle="modal"
-                    data-bs-target="#tableModal"><i class="icon icon-table-component bg-cover"></i>Table</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#textInputModal"><i
-                      class="icon icon-text-input-component bg-cover"></i>Text Input</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#selectModal"><i
-                      class="icon icon-image bg-cover"></i>Image</button>
-                </div>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 text-light-gray" data-bs-toggle="modal"
-                    data-bs-target="#textModal"><i class="icon icon-text-box-component bg-cover"></i>Text</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#formModal"><i
-                      class="icon icon-form-component bg-cover"></i>Form</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#selectModal"><i class="icon icon-key-value bg-cover"></i>Key
-                    Value</button>
-                </div>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 text-light-gray" data-bs-toggle="modal"
-                    data-bs-target="#buttonModal"><i class="icon icon-button-component bg-cover"></i>Button</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#selectModal"><i
-                      class="icon icon-selecter-input-component bg-cover"></i>Select</button>
-                </div>
-              </div>
-              <div class="row page-side-button mt-3">
-                <p class="text-small text-light-gray fw-600 mb-2">Number Inputs</p>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#buttonModal"><i
-                      class="icon icon-percent bg-cover"></i>Percent</button>
-                </div>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#buttonModal"><i
-                      class="icon icon-slider bg-cover"></i>Slider</button>
-                </div>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#progressModal"><i
-                      class="icon icon-rating bg-cover"></i>Rating</button>
-                </div>
-              </div>
-              <div class="row page-side-button mt-3">
-                <p class="text-small text-light-gray fw-600 mb-2">Select Inputs</p>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 text-light-gray" data-bs-toggle="modal"
-                    data-bs-target="#buttonModal"><i class="icon icon-button-group bg-cover"></i>Button Group</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#checkGroupModal"><i
-                      class="icon icon-checkbox-group-input-component bg-cover"></i>Checkbox Group</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#checkGroupModal"><i
-                      class="icon icon-multiselect bg-cover"></i>Multiselect</button>
-                </div>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 text-light-gray" data-bs-toggle="modal"
-                    data-bs-target="#checkGroupModal"><i class="icon icon-checkbox-tree bg-cover"></i>Checkbox
-                    Tree</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#checkGroupModal"><i
-                      class="icon icon-multiselect-listbox bg-cover"></i>Multiselect Listbox</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#switchModal"><i
-                      class="icon icon-switch-input-component bg-cover"></i>Switch</button>
-                </div>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 text-light-gray" data-bs-toggle="modal"
-                    data-bs-target="#checkInputModal"><i
-                      class="icon icon-checkbox-input-component bg-cover"></i>Checkbox</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#tabsModal"><i class="icon icon-listbox"></i>Listbox</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#tabsModal"><i class="icon icon-radio-group"></i>Radio
-                    Group</button>
-                </div>
-              </div>
-              <div class="row page-side-button mt-3">
-                <p class="text-small text-light-gray fw-600 mb-2">Special Inputs</p>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#circleModal"><i
-                      class="icon icon-comment-component bg-cover"></i>Comment</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#circleModal"><i
-                      class="icon icon-file-dropzone bg-cover"></i>File Dropzone</button>
-                </div>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#circleModal"><i
-                      class="icon icon-query-builder bg-cover"></i>Query Builder</button>
-                </div>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#switchGroupModal"><i
-                      class="icon icon-file-button bg-cover"></i>File Button</button>
-                </div>
-              </div>
-              <div class="row page-side-button mt-3">
-                <p class="text-small text-light-gray fw-600 mb-2">Presentation</p>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#circleModal"><i
-                      class="icon icon-icon bg-cover"></i>Icon</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#circleModal"><i
-                      class="icon icon-pdf bg-cover"></i>PDF</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#circleModal"><i
-                      class="icon icon-status bg-cover"></i>Status</button>
-                </div>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#circleModal"><i
-                      class="icon icon-circular-image bg-cover"></i>Circular Image</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#selectModal"><i
-                      class="icon icon-progressbar-component bg-cover"></i>Progress Bar</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#circleModal"><i
-                      class="icon icon-tags bg-cover"></i>Tags</button>
-                </div>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#circleModal"><i
-                      class="icon icon-circul-progressbar-component bg-cover"></i>Progress Circle</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#circleModal"><i
-                      class="icon icon-statistic bg-cover"></i>Statistic</button>
-                  <button type="button" class="btn border border-2 rounded p-0 mt-3 text-light-gray"
-                    data-bs-toggle="modal" data-bs-target="#circleModal"><i
-                      class="icon icon-timeline bg-cover"></i>Timeline</button>
-                </div>
-              </div>
-              <div class="row page-side-button mt-3">
-                <p class="text-small text-light-gray fw-600 mb-2">Navigation</p>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 text-light-gray" data-bs-toggle="modal"
-                    data-bs-target="#chartModal"><i class="icon icon-navigation bg-cover"></i>Navigation</button>
-                </div>
-                <div class="col-md-4 text-center">
-                  <button type="button" class="btn border border-2 rounded p-0 text-light-gray" data-bs-toggle="modal"
-                    data-bs-target="#selectModal"><i class="icon icon-page-input bg-cover"></i>Page Input</button>
-                </div>
-              </div>
+                  <div id="root">
+                    <div class="row main-content page-side-button w-100 mx-auto h-100">
+                        <div class="drag-container">
+                          <div class="row" id="draggable">
+                            <div data-type="table" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-table-component bg-cover"></i><p>Table</p>
+                              </div>
+                            </div>
+                            <div data-type="textInput" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-text-input-component bg-cover"></i><p>Text Input</p>
+                              </div>
+                            </div>
+                            <div data-type="Image" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-image bg-cover"></i><p>Image</p>
+                              </div>
+                            </div>
+                            <div data-type="Text" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-text-box-component bg-cover"></i><p>Text</p>
+                              </div>
+                            </div>
+                            <div data-type="Form" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-form-component bg-cover"></i><p>Form</p>
+                              </div>
+                            </div>
+                            <div data-type="keyValue" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-key-value bg-cover"></i><p>Key Value</p>
+                              </div>
+                            </div>
+                            <div data-type="Button" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-button-component bg-cover"></i><p>Button</p>
+                              </div>
+                            </div>
+                            <div data-type="Select" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-selecter-input-component bg-cover"></i><p>Select</p>
+                              </div>
+                            </div>
+                            <div data-type="Percent" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-percent bg-cover"></i><p>Percent</p>
+                              </div>
+                            </div>
+                            <div data-type="buttonGroup" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-button-group bg-cover"></i><p>Button Group</p>
+                              </div>
+                            </div>
+                            <div data-type="checkboxGroup" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-checkbox-group-input-component bg-cover"></i><p>Checkbox Group</p>
+                              </div>
+                            </div>
+                            <div data-type="Multiselect" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-multiselect bg-cover"></i><p>Multiselect</p>
+                              </div>
+                            </div>
+                            <div data-type="Switch" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-switch-input-component bg-cover"></i><p>Switch</p>
+                              </div>
+                            </div>
+                            <div data-type="Checkbox" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-checkbox-input-component bg-cover"></i><p>Checkbox</p>
+                              </div>
+                            </div>
+                            <div data-type="Listbox" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-listbox"></i><p>Listbox</p>
+                              </div>
+                            </div>
+                            <div data-type="radioGroup" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-radio-group"></i><p>Radio Group</p>
+                              </div>
+                            </div>
+                            <div data-type="Comment" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-comment-component bg-cover"></i><p>Comment</p>
+                              </div>
+                            </div>
+                            <div data-type="queryBuilder" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-query-builder bg-cover"></i><p>Query Builder</p>
+                              </div>
+                            </div>
+                            <div data-type="fileDropzone" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-file-button bg-cover"></i><p>File Dropzone</p>
+                              </div>
+                            </div>
+                            <div data-type="Icon" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-icon-tabs bg-cover"></i><p>Icon</p>
+                              </div>
+                            </div>
+                            <div data-type="Status" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-status bg-cover"></i><p>Status</p>
+                              </div>
+                            </div>
+                            <div data-type="circularImage" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-circular-image bg-cover"></i><p>Circular Image</p>
+                              </div>
+                            </div>
+                            <div data-type="progressBar" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-progressbar-component bg-cover"></i><p>Progress Bar</p>
+                              </div>
+                            </div>
+                            <div data-type="Tags" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-tags bg-cover"></i><p>Tags</p>
+                              </div>
+                            </div>
+                            <div data-type="Statistic" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-statistic bg-cover"></i><p>Statistic</p>
+                              </div>
+                            </div>
+                            <div data-type="Timeline" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-timeline bg-cover"></i><p>Timeline</p>
+                              </div>
+                            </div>
+                            <div data-type="Navigation" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-navigation bg-cover"></i><p>Navigation</p>
+                              </div>
+                            </div>
+                            <div data-type="pageInput" class="drag-item col ps-0">
+                              <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
+                                <i class="icon icon-page-input bg-cover"></i><p>Page Input</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
             </div>
           </div>
         </div>
       </main>
     </div>
-    <div class="modal right fade show d-block opacity-0" id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel" aria-hidden="true">
+    <div class="modal right fade show d-block opacity-0" id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel"
+      aria-hidden="true">
       <div class="modal-dialog width-70 wsm-95">
         <div class="modal-content">
           <div class="modal-header">
@@ -847,8 +852,8 @@
                     </button>
                   </li> -->
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="Basic-tab" data-bs-toggle="tab" data-bs-target="#Basic" type="button"
-                      role="tab" aria-controls="Basic" aria-selected="false">
+                    <button class="nav-link active" id="Basic-tab" data-bs-toggle="tab" data-bs-target="#Basic"
+                      type="button" role="tab" aria-controls="Basic" aria-selected="false">
                       <p class="text-light-gray">Columns Basic</p>
                     </button>
                   </li>
@@ -865,32 +870,32 @@
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Nagetine-tab" data-bs-toggle="tab" data-bs-target="#Nagetine" type="button"
-                      role="tab" aria-controls="Nagetine" aria-selected="false">
+                    <button class="nav-link" id="Nagetine-tab" data-bs-toggle="tab" data-bs-target="#Nagetine"
+                      type="button" role="tab" aria-controls="Nagetine" aria-selected="false">
                       <p class="text-light-gray">Columns With Nagetine Values</p>
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Multiple-tab" data-bs-toggle="tab" data-bs-target="#Multiple" type="button"
-                      role="tab" aria-controls="Multiple" aria-selected="false">
+                    <button class="nav-link" id="Multiple-tab" data-bs-toggle="tab" data-bs-target="#Multiple"
+                      type="button" role="tab" aria-controls="Multiple" aria-selected="false">
                       <p class="text-light-gray">Columns Multiple</p>
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Stacked-tab" data-bs-toggle="tab" data-bs-target="#Stacked" type="button"
-                      role="tab" aria-controls="Stacked" aria-selected="false">
+                    <button class="nav-link" id="Stacked-tab" data-bs-toggle="tab" data-bs-target="#Stacked"
+                      type="button" role="tab" aria-controls="Stacked" aria-selected="false">
                       <p class="text-light-gray">Columns Stacked</p>
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Radialbar-tab" data-bs-toggle="tab" data-bs-target="#Radialbar" type="button"
-                      role="tab" aria-controls="Radialbar" aria-selected="true">
+                    <button class="nav-link" id="Radialbar-tab" data-bs-toggle="tab" data-bs-target="#Radialbar"
+                      type="button" role="tab" aria-controls="Radialbar" aria-selected="true">
                       <p class="text-light-gray">Radialbar</p>
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Scatter-tab" data-bs-toggle="tab" data-bs-target="#Scatter" type="button"
-                      role="tab" aria-controls="Scatter" aria-selected="false">
+                    <button class="nav-link" id="Scatter-tab" data-bs-toggle="tab" data-bs-target="#Scatter"
+                      type="button" role="tab" aria-controls="Scatter" aria-selected="false">
                       <p class="text-light-gray">Scatter</p>
                     </button>
                   </li>
@@ -943,13 +948,17 @@
                   <div class="tab-pane " id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
                     <div class="row">
                       <div class="col-md-4">
-                        <div>
-                          <canvas id="Radialbar-1" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="Radialbar-1" class="w-100"
+                            style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
+                            height="422"></canvas>
                         </div>
                       </div>
                       <div class="col-md-4">
-                        <div>
-                          <canvas id="Radialbar-2" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="Radialbar-2" class="w-100"
+                            style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
+                            height="422"></canvas>
                         </div>
                       </div>
                     </div>
@@ -957,13 +966,17 @@
                   <div class="tab-pane " id="Scatter" role="tabpanel" aria-labelledby="Scatter-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div>
-                          <canvas id="invoiceBars" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="invoiceBars" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div>
-                          <canvas id="invoiceBars1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="invoiceBars1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
                         </div>
                       </div>
                     </div>
@@ -971,13 +984,17 @@
                   <div class="tab-pane " id="Line" role="tabpanel" aria-labelledby="Line-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div>
-                          <canvas id="lineChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308" height="197"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="lineChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308"
+                            height="197"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div>
-                          <canvas id="lineChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308" height="197"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="lineChart1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308"
+                            height="197"></canvas>
                         </div>
                       </div>
                     </div>
@@ -985,176 +1002,272 @@
                   <div class="tab-pane" id="Area" role="tabpanel" aria-labelledby="Area-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <canvas id="areaChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250" width="630"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="areaChart" class="wsm-100"
+                          style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
+                          width="630"></canvas>
+                        </div>
                       </div>
                       <div class="col-md-6">
-                        <canvas id="areaChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250" width="630"></canvas>
-                      </div>
-                    </div>
-                </div>
-                <div class="tab-pane " id="Radar" role="tabpanel" aria-labelledby="Radar-tab">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="radarChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="radarChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="areaChart1" class="wsm-100"
+                          style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
+                          width="630"></canvas>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane " id="Donut" role="tabpanel" aria-labelledby="Donut-tab">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="dountMenuChart" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                  <div class="tab-pane " id="Radar" role="tabpanel" aria-labelledby="Radar-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="radarChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
+                            height="160"></canvas>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="dountMenuChart1" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="Pies" role="tabpanel" aria-labelledby="Pies-tab">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="pieChart" class="wsm-100 w-100" style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278" height="278"></canvas>
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="radarChart1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
+                            height="160"></canvas>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane active" id="Basic" role="tabpanel" aria-labelledby="Basic-tab">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="barChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                  <div class="tab-pane " id="Donut" role="tabpanel" aria-labelledby="Donut-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="dountMenuChart" class="w-100"
+                            style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
+                            height="422"></canvas>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="barChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mt-4">
-                      <div>
-                        <canvas id="barChart2" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="Multiple" role="tabpanel" aria-labelledby="Multiple-tab">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div>
-                        <canvas id="doubleBarChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-8 mt-4">
-                      <div>
-                        <canvas id="doubleBarChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="dountMenuChart1" class="w-100"
+                            style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
+                            height="422"></canvas>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane" id="Stacked" role="tabpanel" aria-labelledby="Stacked-tab">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div>
-                        <canvas id="stackedChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 215px; width: 631px;" width="631" height="215"></canvas>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="Nagetine" role="tabpanel" aria-labelledby="Nagetine-tab">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div>
-                        <canvas id="nagetineChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-8">
-                      <div>
-                        <canvas id="nagetineChart-1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                  <div class="tab-pane" id="Pies" role="tabpanel" aria-labelledby="Pies-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="pieChart" class="wsm-100 w-100"
+                            style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278"
+                            height="278"></canvas>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane" id="Items" role="tabpanel" aria-labelledby="Items-tab">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <div>
-                        <canvas id="itemsChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                  <div class="tab-pane" id="Basic" role="tabpanel" aria-labelledby="Basic-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="barChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div>
-                        <canvas id="itemsChart-1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="barChart1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div>
-                        <canvas id="itemsChart-2" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div>
-                        <canvas id="itemsChart-3" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-3 mt-4">
-                      <div>
-                        <canvas id="itemsChart-4" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-3 mt-4">
-                      <div>
-                        <canvas id="itemsChart-5" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                      <div class="col-md-6 mt-4">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="barChart2" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane" id="Mixed" role="tabpanel" aria-labelledby="Mixed-tab">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div>
-                        <canvas id="mixedChart" class="wsm-100"
+                  <div class="tab-pane" id="Multiple" role="tabpanel" aria-labelledby="Multiple-tab">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="doubleBarChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-8 mt-4">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="doubleBarChart1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="Stacked" role="tabpanel" aria-labelledby="Stacked-tab">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="stackedChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 215px; width: 631px;" width="631"
+                            height="215"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="Nagetine" role="tabpanel" aria-labelledby="Nagetine-tab">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="nagetineChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="nagetineChart-1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="Items" role="tabpanel" aria-labelledby="Items-tab">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="itemsChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="itemsChart-1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="itemsChart-2" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="itemsChart-3" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mt-4">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="itemsChart-4" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mt-4">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="itemsChart-5" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="Mixed" role="tabpanel" aria-labelledby="Mixed-tab">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="mixedChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 260px; width: 470px;"></canvas>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane " id="Map" role="tabpanel" aria-labelledby="Map-tab">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="mapChart2" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                    </div>
-                </div>
-                <!-- <div class="tab-pane active" id="Candlestick" role="tabpanel" aria-labelledby="Candlestick-tab">
-                  <div class="row">
-                    <div class="col-12">
-                      <div>
-                        <canvas id="candlestickChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 140px; width: 411px;" width="369" height="125"></canvas>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div> -->
+                  <div class="tab-pane " id="Map" role="tabpanel" aria-labelledby="Map-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="mapChart2" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane active" id="Candlestick" role="tabpanel" aria-labelledby="Candlestick-tab">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="candlestickChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 140px; width: 411px;" width="369"
+                            height="125"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
           </div>
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-fill px-5 py-2 text-uppercase wsm-100">Update</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase wsm-100"
               data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="chartAddModal" tabindex="-1" aria-labelledby="chartAddModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="chartAddModalLabel">Add chart new</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="role" class="fw-bold mt-3 mb-2">Chart Title</label>
+            <input type="text" name="name" id="name" placeholder="Enter a Full Name" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <label for="role" class="fw-bold mt-3 mb-2">Select Data Source</label>
+            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <option value="Manager"></option>
+              <option value="Urdu">Database</option>
+              <option value="Hindi">API</option>
+            </select>
+            <label for="role" class="fw-bold mt-3 mb-2">Select Data</label>
+            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <option value="Manager"></option>
+              <option value="Urdu">Number of Projects</option>
+              <option value="Hindi">Total Projects Cost</option>
+            </select>
+            <label for="role" class="fw-bold mt-3 mb-2">Select API</label>
+            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <option value="Manager"></option>
+              <option value="Urdu">Zendesk Sell API</option>
+              <option value="Hindi">Zoho CRM API</option>
+              <option value="Hindi">Hubspot CRM</option>
+              <option value="Hindi">Salesforce API</option>
+              <option value="Hindi">Microsoft Dynamics API</option>
+              <option value="Hindi">Excel and Google Sheets</option>
+              <option value="Hindi">Jira Cloud</option>
+              <option value="Hindi">Google Drive</option>
+              <option value="Hindi">Dropbox</option>
+              <option value="Hindi">One drive – sharepoints</option>
+              <option value="Hindi">Outlook</option>
+              <option value="Hindi">Clickup</option>
+            </select>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill text-uppercase">Add</button>
+            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
@@ -1306,787 +1419,6 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="tableModal" tabindex="-1" aria-labelledby="tableLabel" aria-hidden="true">
-      <div class="modal-dialog width-70">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="tableLabel">Table</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body bg-light-gray">
-            <div class="invoice-table tablepanel">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Company</th>
-                    <th scope="col">Created Date</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row" data-label="Name">
-                      <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                        <img src="./assets/images/prof-img-1.png" alt="">
-                        <h6 class="ms-3 fw-500 text-sm">Mathilda Bell</h6>
-                      </div>
-                    </td>
-                    <td data-label="Phone">(435) 474-3348</td>
-                    <td data-label="Email">napozje@paw.com</td>
-                    <td data-label="Company">Awesome Company</td>
-                    <td data-label="Created Date">16 Mar 2022</td>
-                    <td>
-                      <div class="btn-group border-end">
-                        <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <div class="dots d-flex align-items-center  m-0 p-0">
-                            <span class="me-1"></span>
-                            <span class="me-1 mt-0"></span>
-                            <span class="mt-0"></span>
-                          </div>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                              Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
-                              Invitation Email</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                              Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="document-main-content cursor-pointer" onclick="location.href='./pm-project-name.html';">
-                  <div class="chart-box h-100">
-                    <div class="chart-content">
-                      <div class="chart-grap doc-profability w-100 p-0">
-                        <div class="sm-box d-flex w-100 p-3 justify-content-around align-items-center flex-colume-sm">
-                          <div class="col-12 col-md-5 d-flex align-items-center mb-3 mb-md-0">
-                            <img src="./assets/images/prof-img-1.png" alt="/">
-                            <h6 class="ms-2">Behance Presentation</h6>
-                          </div>
-                          <div class="col-12 col-md-3 d-flex align-content-between justify-content-around mb-3 mb-md-0">
-                            <div class="social-noticications pt-0">
-                              <ul class="images mx-auto">
-                                <li><img src="./assets/images/icons/social1.svg" alt=""></li>
-                                <li><img src="./assets/images/icons/social2.svg" alt=""></li>
-                                <li><img src="./assets/images/icons/social1.svg" alt=""></li>
-                                <li><img src="./assets/images/icons/social3.svg" alt=""></li>
-                                <li><img src="./assets/images/icons/social2.svg" alt=""></li>
-                              </ul>
-                            </div>
-                            <div>
-                              <h6>32/110</h6>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-4 d-flex align-iteme-center justify-content-between">
-                            <button class="btn-progress">Planning</button>
-                            <button class="btn-approved">Approved</button>
-                            <p class="text-light-gray">75,000 USD</p>
-                            <div class="btn-group">
-                              <button type="button" class="btn d-flex align-items-center border-0 ms-1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="dots d-flex m-0">
-                                  <span></span>
-                                  <span class="m-0 ms-1"></span>
-                                  <span class="m-0 ms-1"></span>
-                                </div>
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                    Edit</a></li>
-                                <li><a class="dropdown-item">
-                                    See Project Details</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                    Delete</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="chart-content d-flex justify-content-between flex-column">
-                  <div class="chart-content d-flex justify-content-between align-items-end">
-                    <div class="prof-table table tablepanel">
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>No</th>
-                            <th>Ref</th>
-                            <th>Leads</th>
-                            <th>Deals</th>
-                            <th>Tasks</th>
-                            <th>Rate</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="bg-light-gray">
-                            <td data-label="No">1</td>
-                            <td data-label="Ref">
-                              <div class="ref-prof justify-content-end justify-content-md-start">
-                                <div class="prof-img me-2"><img src="./assets/images/prof-img-1.png" alt=""
-                                    class="img-fluid"></div>
-                                <div class="prof-details">
-                                  <h6 class="text-sm fw-500">Mathilda Bell</h6>
-                                  <p class="text-light-gray">$8,192.000</p>
-                                </div>
-                              </div>
-                            </td>
-                            <td data-label="Leads">187</td>
-                            <td data-label="Deals">154</td>
-                            <td data-label="Tasks">28 Tasks Done</td>
-                            <td data-label="Rate">
-                              <div class="round-progress blue ms-auto ms-md-0">
-                                <span class="progress-left">
-                                  <span class="progress-bar"></span>
-                                </span>
-                                <span class="progress-right">
-                                  <span class="progress-bar"></span>
-                                </span>
-                                <div class="progress-value">90%</div>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="table">
-                  <table class="">
-                    <thead>
-                      <tr>
-                        <th scope="col">Account</th>
-                        <th scope="col">This month</th>
-                        <th scope="col">YTD</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Entertainment (600)</td>
-                        <td class="fw-600">2,500,00</td>
-                        <td class="fw-600">10,453.75</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="textModal" tabindex="-1" aria-labelledby="textModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="textModalLabel">Text</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h1>Hello Sir</h1>
-            <h2>Hello Sir</h2>
-            <h3>Hello Sir</h3>
-            <h4>Hello Sir</h4>
-            <h5>Hello Sir</h5>
-            <h6>Hello Sir</h6>
-            <p>Hello Sir</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
-      <div class="modal-dialog width-70">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="formModalLabel">Form</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="upload-file">
-                  <div class="file-upload">
-                    <figure>
-                      <img id="chosen-image">
-                      <figcaption id="file-name">
-                      </figcaption>
-                    </figure>
-                    <input type="file" id="upload-button" accept="image/*">
-                    <label for="upload-button">
-                      Add Image
-                    </label>
-                  </div>
-                </div>
-                <label for="full-name" class="fw-bold mb-2 mt-4">Full Name</label>
-                <input type="text" placeholder="Full Name" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Position</label>
-                <input type="text" placeholder="Add a Position" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Department</label>
-                <input type="text" placeholder="Add a Department"
-                  class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Country</label>
-                <input type="text" placeholder="Add a Country" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Region</label>
-                <input type="text" placeholder="Add a Region" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Members</label>
-                <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3">
-                  <option value="Member">Member</option>
-                  <option value="saab">Saab</option>
-                  <option value="opel">Opel</option>
-                  <option value="audi">Audi</option>
-                </select>
-                <div class="d-flex align-items-center justify-content-between mt-4">
-                  <button type="button" class="btn border border-2">Close</button>
-                  <button type="button" class="btn btn-fill">Save</button>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Full Name</label>
-                <input type="text" placeholder="Full Name" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Email</label>
-                <input type="email" placeholder="Enter a Email" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Phone Number</label>
-                <input type="number" placeholder="Enter a Phone Number"
-                  class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Country</label>
-                <input type="text" placeholder="Add a Country" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <div class="d-flex align-items-center justify-content-between mt-4">
-                  <button type="button" class="btn border border-2">Close</button>
-                  <button type="button" class="btn btn-fill">Save</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="selectModal" tabindex="-1" aria-labelledby="selectModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="selectModalLabel">Select</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="dropdown select-dropdown ms-4">
-                  <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button"
-                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    By Customer
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <select name="cars" id="cars" class="d-block border border-2 rounded w-100 py-2 px-3">
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="opel">Opel</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="progressModal" tabindex="-1" aria-labelledby="progressModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="progressModalLabel">Progressbar</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100">25%</div>
-                </div>
-                <div class="progress mt-3">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="progress mt-3">
-                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="progress">
-                  <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="progress mt-3">
-                  <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="progress mt-3">
-                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%"
-                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="buttonModal" tabindex="-1" aria-labelledby="buttonModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="buttonModalLabel">Button</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <button type="button" class="btn btn-primary d-block w-100">Primary</button>
-                <button type="button" class="btn btn-secondary d-block mt-3 w-100">Secondary</button>
-                <button type="button" class="btn btn-success d-block mt-3 w-100">Success</button>
-                <button type="button" class="btn btn-danger d-block mt-3 w-100">Danger</button>
-              </div>
-              <div class="col-md-6">
-                <button type="button" class="btn btn-warning d-block w-100">Warning</button>
-                <button type="button" class="btn btn-info d-block mt-3 w-100">Info</button>
-                <button type="button" class="btn btn-light d-block mt-3 w-100">Light</button>
-                <button type="button" class="btn btn-dark d-block mt-3 w-100">Dark</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="emailModalLabel">Email Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <input type="email" class="d-block border border-2 rounded w-100 py-2 px-3" id="email">
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="d-block border border-2 rounded w-100 py-2 px-3" id="email"
-                  placeholder="Enter a Email">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="switchModal" tabindex="-1" aria-labelledby="switchModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="switchModalLabel">Switch Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-check form-switch">
-                  <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-                </div>
-                <div class="form-check form-switch">
-                  <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckChecked" checked>
-                  <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-check form-switch">
-                  <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckDisabled" disabled>
-                  <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
-                </div>
-                <div class="form-check form-switch">
-                  <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked
-                    disabled>
-                  <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox
-                    input</label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="circleModal" tabindex="-1" aria-labelledby="circleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="circleModalLabel">Switch Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="pie" data-pie='{ "percent": 70 }'>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="checkGroupModal" tabindex="-1" aria-labelledby="checkGroupModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="checkGroupModalLabel">Checkbox Group Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-check">
-                  <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckChecked" checked>
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckChecked" checked>
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-check">
-                  <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="textInputModal" tabindex="-1" aria-labelledby="textInputModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="textInputModalLabel">Text Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <input type="text" name="name" id="name" class="d-block border border-2 rounded w-100 py-2 px-3">
-            <input type="text" name="name" id="name" class="d-block border border-2 rounded w-100 py-2 px-3 mt-3"
-              placeholder="Enter a Name">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="checkInputModal" tabindex="-1" aria-labelledby="checkInputModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="checkInputModalLabel">Checkbox Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="form-check">
-              <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Default checkbox
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label" for="flexCheckChecked">
-                Checked checkbox
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="switchGroupModal" tabindex="-1" aria-labelledby="switchGroupModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="switchGroupModalLabel">Switch Group Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="form-check form-switch">
-              <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckDefault">
-              <label class="form-check-label float-none" for="flexSwitchCheckDefault">Default switch checkbox
-                input</label>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckDefault" checked>
-              <label class="form-check-label float-none" for="flexSwitchCheckDefault">Default switch checkbox
-                input</label>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckDefault">
-              <label class="form-check-label float-none" for="flexSwitchCheckDefault">Default switch checkbox
-                input</label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="numberInputModal" tabindex="-1" aria-labelledby="numberInputModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="numberInputModalLabel">Number Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <input type="number" name="number" id="number" class="d-block border border-2 rounded w-100 py-2 px-3">
-            <input type="number" name="number" id="number" class="d-block border border-2 rounded w-100 py-2 px-3 mt-3"
-              placeholder="Enter a Number">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="passwordInputModal" tabindex="-1" aria-labelledby="passwordInputModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="passwordInputModalLabel">Password Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <input type="password" name="password" id="password"
-              class="d-block border border-2 rounded w-100 py-2 px-3">
-            <input type="password" name="password" id="password"
-              class="d-block border border-2 rounded w-100 py-2 px-3 mt-3" placeholder="Enter a Password">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="textareaInputModal" tabindex="-1" aria-labelledby="textareaInputModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="textareaInputModalLabel">Textarea Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <textarea name="text" id="text" cols="30" rows="5"
-              class="d-block border border-2 rounded w-100 py-2 px-3"></textarea>
-            <textarea name="text" id="text" cols="30" rows="5"
-              class="d-block border border-2 rounded w-100 py-2 px-3 mt-3" placeholder="Enter a Comment"></textarea>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="navbarModal" tabindex="-1" aria-labelledby="navbarModalLabel" aria-hidden="true">
-      <div class="modal-dialog width-70">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="navbarModalLabel">Navbar</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                      aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                              <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                      </ul>
-                      <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-              <div class="col-12 mt-3">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-              <div class="col-12 mt-3">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                      aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="tabsModal" tabindex="-1" aria-labelledby="tabsModalLabel" aria-hidden="true">
-      <div class="modal-dialog width-70">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="tabsModalLabel">Tabs</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="nav nav-tabs bg-light ms-2 employees-nav w-fit" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link text-uppercase" id="list-tab" data-bs-toggle="tab" data-bs-target="#list"
-                      type="button" role="tab" aria-controls="list" aria-selected="true"><i
-                        class="icon icon-list-task"></i>LIST</button>
-                  </li>
-                  <li class="nav-item m-0" role="presentation">
-                    <button class="nav-link text-uppercase active" id="grid-tab" data-bs-toggle="tab"
-                      data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="false"><i
-                        class="icon icon-grid"></i>
-                      grid</button>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary"
-                      type="button" role="tab" aria-controls="summary" aria-selected="true">In-progress</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="custom-tab" data-bs-toggle="tab" data-bs-target="#custom" type="button"
-                      role="tab" aria-controls="custom" aria-selected="false">Accepted</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="draft-tab" data-bs-toggle="tab" data-bs-target="#draft" type="button"
-                      role="tab" aria-controls="draft" aria-selected="false">All</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="modal right fade" id="SettingForm" tabindex="-1"
 aria-labelledby="interviewLabel" aria-hidden="true">
 <div class="modal-dialog width-50 wsm-95">
@@ -2193,14 +1525,14 @@ aria-labelledby="interviewLabel" aria-hidden="true">
             <p>Payment Method</p>
             <div class="d-flex align-items-center">
               <p>MasterCard ending in 4078,exp: 08/2020</p>
-              <a href="#" class="text-decoration-none ms-3">Update</a>
+              <a href="./pm-billing.html" class="text-decoration-none ms-3">Update</a>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between border-bottom py-3">
             <p>Billing Period</p>
             <div class="d-flex align-items-center">
               <p>Plan billed monthly</p>
-              <a href="#" class="text-decoration-none ms-3">Update</a>
+              <a href="./pm-billing.html" class="text-decoration-none ms-3">Update</a>
             </div>
           </div>
           <h5 class="fw-600 my-3">Payment History</h5>
@@ -2296,20 +1628,21 @@ aria-labelledby="interviewLabel" aria-hidden="true">
   <!-- JavaScript
 ================================================== -->
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
-  <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/graphs.js"></script>
   <script src="./assets/js/graphs-popup.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js"></script> -->
-  <!-- <script src="./assets/js/candleschart.js"></script> -->
   <script src="./assets/js/main.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script> -->
-  <!-- <script src="./assets/js/chartjs-chart-financial.js"></script> -->
+  <script src="./assets/js/add-component.js"></script>
 
   <script>
  $('#chartMenu').removeClass('show').removeClass('d-block').removeClass('opacity-0');
+ $('.tab-click').click(function (e) {
+      e.preventDefault();
+      $(this).addClass('ouline-white');
+      $('.slider-btn > a').removeClass('active');
+      $(this).addClass('active');
+    });
 
     const overviewAmountsChart = document.getElementById('overviewAmountsChart');
 
@@ -2465,6 +1798,8 @@ aria-labelledby="interviewLabel" aria-hidden="true">
     $(".remove-component").click(function () {
       $(".contact-card-4").removeClass("card-div-4");
     });
+
+    
   </script>
 </body>
 

@@ -526,7 +526,9 @@ h6 {
 }
 
 .page-side-button {
-  button {
+  width: 70px;
+  height: 70px;
+  p {
     font-size: 9px !important;
   }
 }
@@ -722,31 +724,6 @@ h6 {
   @include grid-sm-down{
     border: none !important;
   }
-}
-.bg-info-light{
-  background-color: #9393cf69;
-}
-.orange {
-  background: #F3935D;
-}
-
-.light-green {
-  background: #7DC066;
-}
-
-.light-purple {
-  background: #9E57E5;
-}
-
-.light-blue {
-  background: #59B4D1;
-}
-
-.light-red {
-  background: #E5646C;
-}
-.grid-set {
-  grid-template-columns: 57% 43%;
 }
 .br-12 {
   border-radius: 12px;

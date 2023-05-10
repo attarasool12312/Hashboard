@@ -1021,7 +1021,8 @@
         </div>
       </div>
     </div>
-    <div class="modal right fade show d-block opacity-0" id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel" aria-hidden="true">
+    <div class="modal right fade show d-block opacity-0" id="chartMenu" tabindex="-1" aria-labelledby="chartMenuLabel"
+      aria-hidden="true">
       <div class="modal-dialog width-70 wsm-95">
         <div class="modal-content">
           <div class="modal-header">
@@ -1032,15 +1033,15 @@
             <div class="row">
               <div class="col-md-3 chart-popup">
                 <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">
-                  <li class="nav-item active" role="presentation">
+                  <!-- <li class="nav-item active" role="presentation">
                     <button class="nav-link active" id="Candlestick-tab" data-bs-toggle="tab" data-bs-target="#Candlestick" type="button"
                       role="tab" aria-controls="Candlestick" aria-selected="false">
                       <p class="text-light-gray">Columns Candlestick</p>
                     </button>
-                  </li>
+                  </li> -->
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Basic-tab" data-bs-toggle="tab" data-bs-target="#Basic" type="button"
-                      role="tab" aria-controls="Basic" aria-selected="false">
+                    <button class="nav-link active" id="Basic-tab" data-bs-toggle="tab" data-bs-target="#Basic"
+                      type="button" role="tab" aria-controls="Basic" aria-selected="false">
                       <p class="text-light-gray">Columns Basic</p>
                     </button>
                   </li>
@@ -1057,32 +1058,32 @@
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Nagetine-tab" data-bs-toggle="tab" data-bs-target="#Nagetine" type="button"
-                      role="tab" aria-controls="Nagetine" aria-selected="false">
+                    <button class="nav-link" id="Nagetine-tab" data-bs-toggle="tab" data-bs-target="#Nagetine"
+                      type="button" role="tab" aria-controls="Nagetine" aria-selected="false">
                       <p class="text-light-gray">Columns With Nagetine Values</p>
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Multiple-tab" data-bs-toggle="tab" data-bs-target="#Multiple" type="button"
-                      role="tab" aria-controls="Multiple" aria-selected="false">
+                    <button class="nav-link" id="Multiple-tab" data-bs-toggle="tab" data-bs-target="#Multiple"
+                      type="button" role="tab" aria-controls="Multiple" aria-selected="false">
                       <p class="text-light-gray">Columns Multiple</p>
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Stacked-tab" data-bs-toggle="tab" data-bs-target="#Stacked" type="button"
-                      role="tab" aria-controls="Stacked" aria-selected="false">
+                    <button class="nav-link" id="Stacked-tab" data-bs-toggle="tab" data-bs-target="#Stacked"
+                      type="button" role="tab" aria-controls="Stacked" aria-selected="false">
                       <p class="text-light-gray">Columns Stacked</p>
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Radialbar-tab" data-bs-toggle="tab" data-bs-target="#Radialbar" type="button"
-                      role="tab" aria-controls="Radialbar" aria-selected="true">
+                    <button class="nav-link" id="Radialbar-tab" data-bs-toggle="tab" data-bs-target="#Radialbar"
+                      type="button" role="tab" aria-controls="Radialbar" aria-selected="true">
                       <p class="text-light-gray">Radialbar</p>
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Scatter-tab" data-bs-toggle="tab" data-bs-target="#Scatter" type="button"
-                      role="tab" aria-controls="Scatter" aria-selected="false">
+                    <button class="nav-link" id="Scatter-tab" data-bs-toggle="tab" data-bs-target="#Scatter"
+                      type="button" role="tab" aria-controls="Scatter" aria-selected="false">
                       <p class="text-light-gray">Scatter</p>
                     </button>
                   </li>
@@ -1104,12 +1105,12 @@
                       <p class="text-light-gray">Radar</p>
                     </button>
                   </li>
-                  <li class="nav-item" role="presentation">
+                  <!-- <li class="nav-item" role="presentation">
                     <button class="nav-link" id="Map-tab" data-bs-toggle="tab" data-bs-target="#Map" type="button"
                       role="tab" aria-controls="Map" aria-selected="false">
                       <p class="text-light-gray">Heat Map</p>
                     </button>
-                  </li>
+                  </li> -->
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="Donut-tab" data-bs-toggle="tab" data-bs-target="#Donut" type="button"
                       role="tab" aria-controls="Donut" aria-selected="false">
@@ -1122,12 +1123,12 @@
                       <p class="text-light-gray">Pies</p>
                     </button>
                   </li>
-                  <li class="nav-item" role="presentation">
+                  <!-- <li class="nav-item" role="presentation">
                     <button class="nav-link" id="Perfomance-tab" data-bs-toggle="tab" data-bs-target="#Perfomance" type="button"
                       role="tab" aria-controls="Perfomance" aria-selected="false">
                       <p class="text-light-gray">Perfomance</p>
                     </button>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               <div class="col-md-9 chart-popup">
@@ -1135,13 +1136,17 @@
                   <div class="tab-pane " id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
                     <div class="row">
                       <div class="col-md-4">
-                        <div>
-                          <canvas id="Radialbar-1" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="Radialbar-1" class="w-100"
+                            style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
+                            height="422"></canvas>
                         </div>
                       </div>
                       <div class="col-md-4">
-                        <div>
-                          <canvas id="Radialbar-2" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="Radialbar-2" class="w-100"
+                            style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
+                            height="422"></canvas>
                         </div>
                       </div>
                     </div>
@@ -1149,13 +1154,17 @@
                   <div class="tab-pane " id="Scatter" role="tabpanel" aria-labelledby="Scatter-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div>
-                          <canvas id="invoiceBars" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="invoiceBars" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div>
-                          <canvas id="invoiceBars1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="invoiceBars1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
                         </div>
                       </div>
                     </div>
@@ -1163,13 +1172,17 @@
                   <div class="tab-pane " id="Line" role="tabpanel" aria-labelledby="Line-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div>
-                          <canvas id="lineChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308" height="197"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="lineChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308"
+                            height="197"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div>
-                          <canvas id="lineChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308" height="197"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="lineChart1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308"
+                            height="197"></canvas>
                         </div>
                       </div>
                     </div>
@@ -1177,164 +1190,215 @@
                   <div class="tab-pane" id="Area" role="tabpanel" aria-labelledby="Area-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <canvas id="areaChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250" width="630"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="areaChart" class="wsm-100"
+                          style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
+                          width="630"></canvas>
+                        </div>
                       </div>
                       <div class="col-md-6">
-                        <canvas id="areaChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250" width="630"></canvas>
-                      </div>
-                    </div>
-                </div>
-                <div class="tab-pane " id="Radar" role="tabpanel" aria-labelledby="Radar-tab">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="radarChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="radarChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="areaChart1" class="wsm-100"
+                          style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
+                          width="630"></canvas>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane " id="Donut" role="tabpanel" aria-labelledby="Donut-tab">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="dountMenuChart" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
+                  <div class="tab-pane " id="Radar" role="tabpanel" aria-labelledby="Radar-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="radarChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
+                            height="160"></canvas>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="dountMenuChart1" class="w-100" style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422" height="422"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="Pies" role="tabpanel" aria-labelledby="Pies-tab">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="pieChart" class="wsm-100 w-100" style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278" height="278"></canvas>
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="radarChart1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
+                            height="160"></canvas>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane" id="Basic" role="tabpanel" aria-labelledby="Basic-tab">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="barChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                  <div class="tab-pane " id="Donut" role="tabpanel" aria-labelledby="Donut-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="dountMenuChart" class="w-100"
+                            style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
+                            height="422"></canvas>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="barChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mt-4">
-                      <div>
-                        <canvas id="barChart2" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="Multiple" role="tabpanel" aria-labelledby="Multiple-tab">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div>
-                        <canvas id="doubleBarChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-8 mt-4">
-                      <div>
-                        <canvas id="doubleBarChart1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450" height="160"></canvas>
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="dountMenuChart1" class="w-100"
+                            style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
+                            height="422"></canvas>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane" id="Stacked" role="tabpanel" aria-labelledby="Stacked-tab">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div>
-                        <canvas id="stackedChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 215px; width: 631px;" width="631" height="215"></canvas>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="Nagetine" role="tabpanel" aria-labelledby="Nagetine-tab">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div>
-                        <canvas id="nagetineChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-8">
-                      <div>
-                        <canvas id="nagetineChart-1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                  <div class="tab-pane" id="Pies" role="tabpanel" aria-labelledby="Pies-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="pieChart" class="wsm-100 w-100"
+                            style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278"
+                            height="278"></canvas>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane" id="Items" role="tabpanel" aria-labelledby="Items-tab">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <div>
-                        <canvas id="itemsChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                  <div class="tab-pane" id="Basic" role="tabpanel" aria-labelledby="Basic-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="barChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div>
-                        <canvas id="itemsChart-1" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="barChart1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div>
-                        <canvas id="itemsChart-2" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div>
-                        <canvas id="itemsChart-3" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-3 mt-4">
-                      <div>
-                        <canvas id="itemsChart-4" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
-                      </div>
-                    </div>
-                    <div class="col-md-3 mt-4">
-                      <div>
-                        <canvas id="itemsChart-5" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                      <div class="col-md-6 mt-4">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="barChart2" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane" id="Mixed" role="tabpanel" aria-labelledby="Mixed-tab">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div>
-                        <canvas id="mixedChart" class="wsm-100"
+                  <div class="tab-pane" id="Multiple" role="tabpanel" aria-labelledby="Multiple-tab">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="doubleBarChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-8 mt-4">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="doubleBarChart1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="Stacked" role="tabpanel" aria-labelledby="Stacked-tab">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="stackedChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 215px; width: 631px;" width="631"
+                            height="215"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="Nagetine" role="tabpanel" aria-labelledby="Nagetine-tab">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="nagetineChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="nagetineChart-1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="Items" role="tabpanel" aria-labelledby="Items-tab">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="itemsChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="itemsChart-1" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="itemsChart-2" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="itemsChart-3" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mt-4">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="itemsChart-4" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mt-4">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="itemsChart-5" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="Mixed" role="tabpanel" aria-labelledby="Mixed-tab">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="mixedChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 260px; width: 470px;"></canvas>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane " id="Map" role="tabpanel" aria-labelledby="Map-tab">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                        <canvas id="mapChart2" class="wsm-100" style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470" height="160"></canvas>
+                        </div>
                       </div>
                     </div>
+                  </div>
+                  <div class="tab-pane " id="Map" role="tabpanel" aria-labelledby="Map-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="mapChart2" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                            height="160"></canvas>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="tab-pane active" id="Candlestick" role="tabpanel" aria-labelledby="Candlestick-tab">
-                  <div class="row">
-                    <div class="col-12">
-                      <div>
-                        <canvas id="candlestickChart" class="wsm-100" style="display: block; box-sizing: border-box; height: 140px; width: 411px;" width="369" height="125"></canvas>
+                  </div>
+                  <div class="tab-pane active" id="Candlestick" role="tabpanel" aria-labelledby="Candlestick-tab">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                          <canvas id="candlestickChart" class="wsm-100"
+                            style="display: block; box-sizing: border-box; height: 140px; width: 411px;" width="369"
+                            height="125"></canvas>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1342,11 +1406,56 @@
               </div>
             </div>
           </div>
-          </div>
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-fill px-5 py-2 text-uppercase wsm-100">Update</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase wsm-100"
               data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="chartAddModal" tabindex="-1" aria-labelledby="chartAddModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="chartAddModalLabel">Add chart new</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="role" class="fw-bold mt-3 mb-2">Chart Title</label>
+            <input type="text" name="name" id="name" placeholder="Enter a Full Name" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <label for="role" class="fw-bold mt-3 mb-2">Select Data Source</label>
+            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <option value="Manager"></option>
+              <option value="Urdu">Database</option>
+              <option value="Hindi">API</option>
+            </select>
+            <label for="role" class="fw-bold mt-3 mb-2">Select Data</label>
+            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <option value="Manager"></option>
+              <option value="Urdu">Number of Projects</option>
+              <option value="Hindi">Total Projects Cost</option>
+            </select>
+            <label for="role" class="fw-bold mt-3 mb-2">Select API</label>
+            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <option value="Manager"></option>
+              <option value="Urdu">Zendesk Sell API</option>
+              <option value="Hindi">Zoho CRM API</option>
+              <option value="Hindi">Hubspot CRM</option>
+              <option value="Hindi">Salesforce API</option>
+              <option value="Hindi">Microsoft Dynamics API</option>
+              <option value="Hindi">Excel and Google Sheets</option>
+              <option value="Hindi">Jira Cloud</option>
+              <option value="Hindi">Google Drive</option>
+              <option value="Hindi">Dropbox</option>
+              <option value="Hindi">One drive – sharepoints</option>
+              <option value="Hindi">Outlook</option>
+              <option value="Hindi">Clickup</option>
+            </select>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill text-uppercase">Add</button>
+            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
@@ -1477,14 +1586,14 @@ aria-labelledby="interviewLabel" aria-hidden="true">
             <p>Payment Method</p>
             <div class="d-flex align-items-center">
               <p>MasterCard ending in 4078,exp: 08/2020</p>
-              <a href="#" class="text-decoration-none ms-3">Update</a>
+              <a href="./pm-billing.html" class="text-decoration-none ms-3">Update</a>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between border-bottom py-3">
             <p>Billing Period</p>
             <div class="d-flex align-items-center">
               <p>Plan billed monthly</p>
-              <a href="#" class="text-decoration-none ms-3">Update</a>
+              <a href="./pm-billing.html" class="text-decoration-none ms-3">Update</a>
             </div>
           </div>
           <h5 class="fw-600 my-3">Payment History</h5>

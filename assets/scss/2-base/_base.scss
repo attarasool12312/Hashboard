@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+.container-section{
+  width: 90%;
+  margin: 0 auto;
+}
 h1,
 h2,
 h3,
@@ -433,6 +437,10 @@ h6 {
   max-width: 50% !important;
   width: 50% !important;
 }
+.w-90 {
+  max-width: 90% !important;
+  width: 90% !important;
+}
 
 .width-max-50 {
   max-width: 50% !important;
@@ -716,8 +724,18 @@ h6 {
 
 .box-hover{
   &:hover {
-    background-color: #f1f1f1 !important;
-    border: 2px solid #6542A7;
+    background-image: url($images-path + "/box-bg-hover-image.png");
+    color: #fff !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation-iteration-count: 2;
+    border-color: #6542A7 ;
+    p{
+      color: #fff !important;
+    }
+    span{
+      color: #fff !important;
+    }
   }
 }
 .border-sm-none{
@@ -733,4 +751,7 @@ h6 {
 }
 .return-bg-color {
   background-color: #70B6C1 !important;
+}
+.return-text-color {
+  color: #70B6C1 !important;
 }

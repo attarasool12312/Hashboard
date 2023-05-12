@@ -2068,6 +2068,11 @@ h6.text-sm {
   width: 35px;
 }
 
+.width-40 {
+  max-width: 40% !important;
+  width: 40% !important;
+}
+
 .width-50 {
   max-width: 50% !important;
   width: 50% !important;
@@ -2085,6 +2090,11 @@ h6.text-sm {
 .width-70 {
   max-width: 70% !important;
   width: 70% !important;
+}
+
+.width-70px {
+  width: 70px !important;
+  height: 70px !important;
 }
 
 .min-h-385 {
@@ -8795,6 +8805,7 @@ button.btn.view {
   background-repeat: no-repeat;
   background-size: 35% 100vh;
   height: 100vh;
+  background-color: #fff;
 }
 .signIn-section .signIn-box {
   height: 83vh;
@@ -8882,6 +8893,7 @@ button.btn.view {
 .product-section .product-card .body-card .form-check .form-check-input {
   width: 20px;
   height: 20px;
+  border-radius: 50%;
 }
 .product-section .product-card .body-card h5 {
   margin-top: 20px;
@@ -8892,6 +8904,17 @@ button.btn.view {
 }
 .product-section .product-card .body-card ul li {
   list-style-image: url("../images/list-style-image.png");
+}
+
+@media (min-width: 576px) {
+  .add-new-chart {
+    margin: 1.75rem !important;
+  }
+}
+@media (min-width: 576px) {
+  .chart-form {
+    margin: 1.75rem 1.75rem 1.75rem auto !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

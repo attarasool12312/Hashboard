@@ -167,8 +167,7 @@
             <div class="d-flex flex-colume-sm wsm-100">
                 <button type="button" class="btn ouline-white me-md-2"><i class="icon icon-download"></i> Download</button>
                 <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload Bulk</button>
-                <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0" data-bs-toggle="modal"
-                  data-bs-target="#chartMenu">+ New Chart</button>
+                <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#addChartButtonModal">+ New Chart</button>
             </div>
           </div>
           <div class="row">
@@ -371,12 +370,6 @@
             <div class="row">
               <div class="col-md-3 chart-popup">
                 <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">
-                  <!-- <li class="nav-item active" role="presentation">
-                    <button class="nav-link active" id="Candlestick-tab" data-bs-toggle="tab" data-bs-target="#Candlestick" type="button"
-                      role="tab" aria-controls="Candlestick" aria-selected="false">
-                      <p class="text-light-gray">Columns Candlestick</p>
-                    </button>
-                  </li> -->
                   <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="Basic-tab" data-bs-toggle="tab" data-bs-target="#Basic"
                       type="button" role="tab" aria-controls="Basic" aria-selected="false">
@@ -443,12 +436,6 @@
                       <p class="text-light-gray">Radar</p>
                     </button>
                   </li>
-                  <!-- <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Map-tab" data-bs-toggle="tab" data-bs-target="#Map" type="button"
-                      role="tab" aria-controls="Map" aria-selected="false">
-                      <p class="text-light-gray">Heat Map</p>
-                    </button>
-                  </li> -->
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="Donut-tab" data-bs-toggle="tab" data-bs-target="#Donut" type="button"
                       role="tab" aria-controls="Donut" aria-selected="false">
@@ -461,12 +448,6 @@
                       <p class="text-light-gray">Pies</p>
                     </button>
                   </li>
-                  <!-- <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Perfomance-tab" data-bs-toggle="tab" data-bs-target="#Perfomance" type="button"
-                      role="tab" aria-controls="Perfomance" aria-selected="false">
-                      <p class="text-light-gray">Perfomance</p>
-                    </button>
-                  </li> -->
                 </ul>
               </div>
               <div class="col-md-9 chart-popup">
@@ -474,14 +455,14 @@
                   <div class="tab-pane " id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
                     <div class="row">
                       <div class="col-md-4">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="Radialbar-1" class="w-100"
                             style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
                             height="422"></canvas>
                         </div>
                       </div>
                       <div class="col-md-4">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="Radialbar-2" class="w-100"
                             style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
                             height="422"></canvas>
@@ -492,14 +473,14 @@
                   <div class="tab-pane " id="Scatter" role="tabpanel" aria-labelledby="Scatter-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="invoiceBars" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="invoiceBars1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
@@ -510,14 +491,14 @@
                   <div class="tab-pane " id="Line" role="tabpanel" aria-labelledby="Line-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="lineChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308"
                             height="197"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="lineChart1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308"
                             height="197"></canvas>
@@ -528,17 +509,17 @@
                   <div class="tab-pane" id="Area" role="tabpanel" aria-labelledby="Area-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="areaChart" class="wsm-100"
-                          style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
-                          width="630"></canvas>
+                            style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
+                            width="630"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="areaChart1" class="wsm-100"
-                          style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
-                          width="630"></canvas>
+                            style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
+                            width="630"></canvas>
                         </div>
                       </div>
                     </div>
@@ -546,14 +527,14 @@
                   <div class="tab-pane " id="Radar" role="tabpanel" aria-labelledby="Radar-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="radarChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="radarChart1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
                             height="160"></canvas>
@@ -564,14 +545,14 @@
                   <div class="tab-pane " id="Donut" role="tabpanel" aria-labelledby="Donut-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="dountMenuChart" class="w-100"
                             style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
                             height="422"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="dountMenuChart1" class="w-100"
                             style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
                             height="422"></canvas>
@@ -582,7 +563,7 @@
                   <div class="tab-pane" id="Pies" role="tabpanel" aria-labelledby="Pies-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="pieChart" class="wsm-100 w-100"
                             style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278"
                             height="278"></canvas>
@@ -593,21 +574,21 @@
                   <div class="tab-pane" id="Basic" role="tabpanel" aria-labelledby="Basic-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="barChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="barChart1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6 mt-4">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="barChart2" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
@@ -618,14 +599,14 @@
                   <div class="tab-pane" id="Multiple" role="tabpanel" aria-labelledby="Multiple-tab">
                     <div class="row">
                       <div class="col-md-8">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="doubleBarChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-8 mt-4">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="doubleBarChart1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
                             height="160"></canvas>
@@ -636,7 +617,7 @@
                   <div class="tab-pane" id="Stacked" role="tabpanel" aria-labelledby="Stacked-tab">
                     <div class="row">
                       <div class="col-md-8">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="stackedChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 215px; width: 631px;" width="631"
                             height="215"></canvas>
@@ -647,14 +628,14 @@
                   <div class="tab-pane" id="Nagetine" role="tabpanel" aria-labelledby="Nagetine-tab">
                     <div class="row">
                       <div class="col-md-8">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="nagetineChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-8">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="nagetineChart-1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
@@ -665,42 +646,42 @@
                   <div class="tab-pane" id="Items" role="tabpanel" aria-labelledby="Items-tab">
                     <div class="row">
                       <div class="col-md-3">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="itemsChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-3">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="itemsChart-1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-3">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="itemsChart-2" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-3">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="itemsChart-3" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-3 mt-4">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="itemsChart-4" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-3 mt-4">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="itemsChart-5" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
@@ -711,7 +692,7 @@
                   <div class="tab-pane" id="Mixed" role="tabpanel" aria-labelledby="Mixed-tab">
                     <div class="row">
                       <div class="col-md-8">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="mixedChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 260px; width: 470px;"></canvas>
                         </div>
@@ -721,7 +702,7 @@
                   <div class="tab-pane " id="Map" role="tabpanel" aria-labelledby="Map-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="mapChart2" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
@@ -732,7 +713,7 @@
                   <div class="tab-pane active" id="Candlestick" role="tabpanel" aria-labelledby="Candlestick-tab">
                     <div class="row">
                       <div class="col-12">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="candlestickChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 140px; width: 411px;" width="369"
                             height="125"></canvas>
@@ -753,7 +734,7 @@
       </div>
     </div>
     <div class="modal fade" id="chartAddModal" tabindex="-1" aria-labelledby="chartAddModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog chart-form">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="chartAddModalLabel">Add chart new</h5>
@@ -761,7 +742,8 @@
           </div>
           <div class="modal-body">
             <label for="role" class="fw-bold mt-3 mb-2">Chart Title</label>
-            <input type="text" name="name" id="name" placeholder="Enter a Full Name" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <input type="text" name="name" id="name" placeholder="Enter a Full Name"
+              class="d-block w-100 border border-2 rounded px-4 py-2">
             <label for="role" class="fw-bold mt-3 mb-2">Select Data Source</label>
             <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
               <option value="Manager"></option>
@@ -794,6 +776,108 @@
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-fill text-uppercase">Add</button>
             <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="addChartButtonModal" tabindex="-1" aria-labelledby="addChartButtonModalLabel" aria-hidden="true">
+      <div class="modal-dialog width-40 wsm-95 add-new-chart">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addChartButtonModalLabel">Add New Chart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/vertical-bar-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">vertical Bar Chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/horizontal-bar-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">horizontal bar chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/stacked-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">stacked chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/donut-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">Donut chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/line-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">line chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/composite-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">composite chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/area-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">Area chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/journey-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">journey chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/pivot-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">pivot chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/word-cloud.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">word cloud</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/trend-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">trend chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/gauge-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">gauge chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/funnel-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">funnel chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/kpi-chart.png" alt="" class="w-100 mb-3">
+                  <h6 class="text-uppercase">kpi chart</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill text-uppercase">Save</button>
+            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>

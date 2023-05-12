@@ -189,8 +189,7 @@
                 data-bs-target="#stageModal">Project Stages</button>
               <button type="button" class="btn ouline-white btn-fill me-md-3 mt-3 mt-md-0" data-bs-toggle="modal"
                 data-bs-target="#exampleModal-1">Add Event</button>
-              <button type="button" class="btn ouline-white btn-fill me-md-3 mt-3 mt-md-0" data-bs-toggle="modal"
-                data-bs-target="#chartMenu">Add Chart</button>
+              <button type="button" class="btn ouline-white btn-fill me-md-3 mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#addChartButtonModal">Add Chart</button>
               <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0" data-bs-toggle="modal"
                 data-bs-target="#businessForm">Add new project</button>
             </div>
@@ -6532,12 +6531,6 @@
             <div class="row">
               <div class="col-md-3 chart-popup">
                 <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">
-                  <!-- <li class="nav-item active" role="presentation">
-                    <button class="nav-link active" id="Candlestick-tab" data-bs-toggle="tab" data-bs-target="#Candlestick" type="button"
-                      role="tab" aria-controls="Candlestick" aria-selected="false">
-                      <p class="text-light-gray">Columns Candlestick</p>
-                    </button>
-                  </li> -->
                   <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="Basic-tab" data-bs-toggle="tab" data-bs-target="#Basic"
                       type="button" role="tab" aria-controls="Basic" aria-selected="false">
@@ -6604,12 +6597,6 @@
                       <p class="text-light-gray">Radar</p>
                     </button>
                   </li>
-                  <!-- <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Map-tab" data-bs-toggle="tab" data-bs-target="#Map" type="button"
-                      role="tab" aria-controls="Map" aria-selected="false">
-                      <p class="text-light-gray">Heat Map</p>
-                    </button>
-                  </li> -->
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="Donut-tab" data-bs-toggle="tab" data-bs-target="#Donut" type="button"
                       role="tab" aria-controls="Donut" aria-selected="false">
@@ -6622,12 +6609,6 @@
                       <p class="text-light-gray">Pies</p>
                     </button>
                   </li>
-                  <!-- <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Perfomance-tab" data-bs-toggle="tab" data-bs-target="#Perfomance" type="button"
-                      role="tab" aria-controls="Perfomance" aria-selected="false">
-                      <p class="text-light-gray">Perfomance</p>
-                    </button>
-                  </li> -->
                 </ul>
               </div>
               <div class="col-md-9 chart-popup">
@@ -6635,14 +6616,14 @@
                   <div class="tab-pane " id="Radialbar" role="tabpanel" aria-labelledby="Radialbar-tab">
                     <div class="row">
                       <div class="col-md-4">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="Radialbar-1" class="w-100"
                             style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
                             height="422"></canvas>
                         </div>
                       </div>
                       <div class="col-md-4">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="Radialbar-2" class="w-100"
                             style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
                             height="422"></canvas>
@@ -6653,14 +6634,14 @@
                   <div class="tab-pane " id="Scatter" role="tabpanel" aria-labelledby="Scatter-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="invoiceBars" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="invoiceBars1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
@@ -6671,14 +6652,14 @@
                   <div class="tab-pane " id="Line" role="tabpanel" aria-labelledby="Line-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="lineChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308"
                             height="197"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="lineChart1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 197px; width: 308px;" width="308"
                             height="197"></canvas>
@@ -6689,17 +6670,17 @@
                   <div class="tab-pane" id="Area" role="tabpanel" aria-labelledby="Area-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="areaChart" class="wsm-100"
-                          style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
-                          width="630"></canvas>
+                            style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
+                            width="630"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="areaChart1" class="wsm-100"
-                          style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
-                          width="630"></canvas>
+                            style="display: block; box-sizing: border-box; height: 250px; width: 630px;" height="250"
+                            width="630"></canvas>
                         </div>
                       </div>
                     </div>
@@ -6707,14 +6688,14 @@
                   <div class="tab-pane " id="Radar" role="tabpanel" aria-labelledby="Radar-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="radarChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="radarChart1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
                             height="160"></canvas>
@@ -6725,14 +6706,14 @@
                   <div class="tab-pane " id="Donut" role="tabpanel" aria-labelledby="Donut-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="dountMenuChart" class="w-100"
                             style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
                             height="422"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="dountMenuChart1" class="w-100"
                             style="display: block; box-sizing: border-box; height: 422px; width: 422px;" width="422"
                             height="422"></canvas>
@@ -6743,7 +6724,7 @@
                   <div class="tab-pane" id="Pies" role="tabpanel" aria-labelledby="Pies-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="pieChart" class="wsm-100 w-100"
                             style="display: block; box-sizing: border-box; height: 278px; width: 278px;" width="278"
                             height="278"></canvas>
@@ -6754,21 +6735,21 @@
                   <div class="tab-pane" id="Basic" role="tabpanel" aria-labelledby="Basic-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="barChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="barChart1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-6 mt-4">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="barChart2" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
@@ -6779,14 +6760,14 @@
                   <div class="tab-pane" id="Multiple" role="tabpanel" aria-labelledby="Multiple-tab">
                     <div class="row">
                       <div class="col-md-8">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="doubleBarChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-8 mt-4">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="doubleBarChart1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 450px;" width="450"
                             height="160"></canvas>
@@ -6797,7 +6778,7 @@
                   <div class="tab-pane" id="Stacked" role="tabpanel" aria-labelledby="Stacked-tab">
                     <div class="row">
                       <div class="col-md-8">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="stackedChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 215px; width: 631px;" width="631"
                             height="215"></canvas>
@@ -6808,14 +6789,14 @@
                   <div class="tab-pane" id="Nagetine" role="tabpanel" aria-labelledby="Nagetine-tab">
                     <div class="row">
                       <div class="col-md-8">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="nagetineChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-8">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="nagetineChart-1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
@@ -6826,42 +6807,42 @@
                   <div class="tab-pane" id="Items" role="tabpanel" aria-labelledby="Items-tab">
                     <div class="row">
                       <div class="col-md-3">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="itemsChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-3">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="itemsChart-1" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-3">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="itemsChart-2" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-3">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="itemsChart-3" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-3 mt-4">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="itemsChart-4" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
                         </div>
                       </div>
                       <div class="col-md-3 mt-4">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="itemsChart-5" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
@@ -6872,7 +6853,7 @@
                   <div class="tab-pane" id="Mixed" role="tabpanel" aria-labelledby="Mixed-tab">
                     <div class="row">
                       <div class="col-md-8">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="mixedChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 260px; width: 470px;"></canvas>
                         </div>
@@ -6882,7 +6863,7 @@
                   <div class="tab-pane " id="Map" role="tabpanel" aria-labelledby="Map-tab">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="mapChart2" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
                             height="160"></canvas>
@@ -6893,7 +6874,7 @@
                   <div class="tab-pane active" id="Candlestick" role="tabpanel" aria-labelledby="Candlestick-tab">
                     <div class="row">
                       <div class="col-12">
-                        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                        <div class="cursor-pointer">
                           <canvas id="candlestickChart" class="wsm-100"
                             style="display: block; box-sizing: border-box; height: 140px; width: 411px;" width="369"
                             height="125"></canvas>
@@ -6909,52 +6890,6 @@
             <button type="button" class="btn btn-fill px-5 py-2 text-uppercase wsm-100">Update</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase wsm-100"
               data-bs-dismiss="modal">Cancel</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="chartAddModal" tabindex="-1" aria-labelledby="chartAddModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="chartAddModalLabel">Add chart new</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <label for="role" class="fw-bold mt-3 mb-2">Chart Title</label>
-            <input type="text" name="name" id="name" placeholder="Enter a Full Name" class="d-block w-100 border border-2 rounded px-4 py-2">
-            <label for="role" class="fw-bold mt-3 mb-2">Select Data Source</label>
-            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-              <option value="Manager"></option>
-              <option value="Urdu">Database</option>
-              <option value="Hindi">API</option>
-            </select>
-            <label for="role" class="fw-bold mt-3 mb-2">Select Data</label>
-            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-              <option value="Manager"></option>
-              <option value="Urdu">Number of Projects</option>
-              <option value="Hindi">Total Projects Cost</option>
-            </select>
-            <label for="role" class="fw-bold mt-3 mb-2">Select API</label>
-            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-              <option value="Manager"></option>
-              <option value="Urdu">Zendesk Sell API</option>
-              <option value="Hindi">Zoho CRM API</option>
-              <option value="Hindi">Hubspot CRM</option>
-              <option value="Hindi">Salesforce API</option>
-              <option value="Hindi">Microsoft Dynamics API</option>
-              <option value="Hindi">Excel and Google Sheets</option>
-              <option value="Hindi">Jira Cloud</option>
-              <option value="Hindi">Google Drive</option>
-              <option value="Hindi">Dropbox</option>
-              <option value="Hindi">One drive – sharepoints</option>
-              <option value="Hindi">Outlook</option>
-              <option value="Hindi">Clickup</option>
-            </select>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-fill text-uppercase">Add</button>
-            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
@@ -7020,819 +6955,6 @@
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-fill text-uppercase px-4">update</button>
             <button type="button" class="btn border border-2 text-uppercase px-4" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="stageModal" tabindex="-1" aria-labelledby="stageModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="stageModalLabel">Project Stages</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <label for="full-name" class="fw-bold mb-2 mt-4">Stage 1</label>
-              <input type="text" placeholder="Initiation stage stage"
-                class="d-block border border-2 rounded w-100 py-2 px-3">
-              <label for="full-name" class="fw-bold mb-2 mt-4">Stage 2</label>
-              <input type="text" placeholder="Planning stage stage"
-                class="d-block border border-2 rounded w-100 py-2 px-3">
-              <label for="full-name" class="fw-bold mb-2 mt-4">Stage 3</label>
-              <input type="text" placeholder="Delivery stage stage"
-                class="d-block border border-2 rounded w-100 py-2 px-3">
-              <label for="full-name" class="fw-bold mb-2 mt-4">Stage 4</label>
-              <input type="text" placeholder="Operation Stage stage"
-                class="d-block border border-2 rounded w-100 py-2 px-3">
-              <a href="" class="text-decoration-none mt-4 text-uppercase fw-600 d-block">+ Add more</a>
-            </form>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-primary px-5 text-uppercase">Update</button>
-            <button type="button" class="btn border border-2 text-uppercase px-4"
-              data-bs-dismiss="modal">Cancel</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="tableModal" tabindex="-1" aria-labelledby="tableLabel" aria-hidden="true">
-      <div class="modal-dialog width-70">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="tableLabel">Table</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body bg-light-gray">
-            <div class="invoice-table tablepanel">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Company</th>
-                    <th scope="col">Created Date</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row" data-label="Name">
-                      <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                        <img src="./assets/images/prof-img-1.png" alt="">
-                        <h6 class="ms-3 fw-500 text-sm">Mathilda Bell</h6>
-                      </div>
-                    </td>
-                    <td data-label="Phone">(435) 474-3348</td>
-                    <td data-label="Email">napozje@paw.com</td>
-                    <td data-label="Company">Awesome Company</td>
-                    <td data-label="Created Date">16 Mar 2022</td>
-                    <td>
-                      <div class="btn-group border-end">
-                        <button type="button" class="btn p-2 border-none ms-4" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <div class="dots d-flex align-items-center  m-0 p-0">
-                            <span class="me-1"></span>
-                            <span class="me-1 mt-0"></span>
-                            <span class="mt-0"></span>
-                          </div>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                              Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="icon icon-inbox"></i>
-                              Invitation Email</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                              Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="document-main-content cursor-pointer" onclick="location.href='./pm-project-name.html';">
-                  <div class="chart-box h-100">
-                    <div class="chart-content">
-                      <div class="chart-grap doc-profability w-100 p-0">
-                        <div class="sm-box d-flex w-100 p-3 justify-content-around align-items-center flex-colume-sm">
-                          <div class="col-12 col-md-5 d-flex align-items-center mb-3 mb-md-0">
-                            <img src="./assets/images/prof-img-1.png" alt="/">
-                            <h6 class="ms-2">Behance Presentation</h6>
-                          </div>
-                          <div class="col-12 col-md-3 d-flex align-content-between justify-content-around mb-3 mb-md-0">
-                            <div class="social-noticications pt-0">
-                              <ul class="images mx-auto">
-                                <li><img src="./assets/images/icons/social1.svg" alt=""></li>
-                                <li><img src="./assets/images/icons/social2.svg" alt=""></li>
-                                <li><img src="./assets/images/icons/social1.svg" alt=""></li>
-                                <li><img src="./assets/images/icons/social3.svg" alt=""></li>
-                                <li><img src="./assets/images/icons/social2.svg" alt=""></li>
-                              </ul>
-                            </div>
-                            <div>
-                              <h6>32/110</h6>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-4 d-flex align-iteme-center justify-content-between">
-                            <button class="btn-progress">Planning</button>
-                            <button class="btn-approved">Approved</button>
-                            <p class="text-light-gray">75,000 USD</p>
-                            <div class="btn-group">
-                              <button type="button" class="btn d-flex align-items-center border-0 ms-1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="dots d-flex m-0">
-                                  <span></span>
-                                  <span class="m-0 ms-1"></span>
-                                  <span class="m-0 ms-1"></span>
-                                </div>
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                                    Edit</a></li>
-                                <li><a class="dropdown-item">
-                                    See Project Details</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                                    Delete</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="chart-content d-flex justify-content-between flex-column">
-                  <div class="chart-content d-flex justify-content-between align-items-end">
-                    <div class="prof-table table tablepanel">
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>No</th>
-                            <th>Ref</th>
-                            <th>Leads</th>
-                            <th>Deals</th>
-                            <th>Tasks</th>
-                            <th>Rate</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="bg-light-gray">
-                            <td data-label="No">1</td>
-                            <td data-label="Ref">
-                              <div class="ref-prof justify-content-end justify-content-md-start">
-                                <div class="prof-img me-2"><img src="./assets/images/prof-img-1.png" alt=""
-                                    class="img-fluid"></div>
-                                <div class="prof-details">
-                                  <h6 class="text-sm fw-500">Mathilda Bell</h6>
-                                  <p class="text-light-gray">$8,192.000</p>
-                                </div>
-                              </div>
-                            </td>
-                            <td data-label="Leads">187</td>
-                            <td data-label="Deals">154</td>
-                            <td data-label="Tasks">28 Tasks Done</td>
-                            <td data-label="Rate">
-                              <div class="round-progress blue ms-auto ms-md-0">
-                                <span class="progress-left">
-                                  <span class="progress-bar"></span>
-                                </span>
-                                <span class="progress-right">
-                                  <span class="progress-bar"></span>
-                                </span>
-                                <div class="progress-value">90%</div>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="table">
-                  <table class="">
-                    <thead>
-                      <tr>
-                        <th scope="col">Account</th>
-                        <th scope="col">This month</th>
-                        <th scope="col">YTD</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Entertainment (600)</td>
-                        <td class="fw-600">2,500,00</td>
-                        <td class="fw-600">10,453.75</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="textModal" tabindex="-1" aria-labelledby="textModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="textModalLabel">Text</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h1>Hello Sir</h1>
-            <h2>Hello Sir</h2>
-            <h3>Hello Sir</h3>
-            <h4>Hello Sir</h4>
-            <h5>Hello Sir</h5>
-            <h6>Hello Sir</h6>
-            <p>Hello Sir</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
-      <div class="modal-dialog width-70">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="formModalLabel">Form</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="upload-file">
-                  <div class="file-upload">
-                    <figure>
-                      <img id="chosen-image">
-                      <figcaption id="file-name">
-                      </figcaption>
-                    </figure>
-                    <input type="file" id="upload-button" accept="image/*">
-                    <label for="upload-button">
-                      Add Image
-                    </label>
-                  </div>
-                </div>
-                <label for="full-name" class="fw-bold mb-2 mt-4">Full Name</label>
-                <input type="text" placeholder="Full Name" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Position</label>
-                <input type="text" placeholder="Add a Position" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Department</label>
-                <input type="text" placeholder="Add a Department"
-                  class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Country</label>
-                <input type="text" placeholder="Add a Country" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Region</label>
-                <input type="text" placeholder="Add a Region" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Members</label>
-                <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3">
-                  <option value="Member">Member</option>
-                  <option value="saab">Saab</option>
-                  <option value="opel">Opel</option>
-                  <option value="audi">Audi</option>
-                </select>
-                <div class="d-flex align-items-center justify-content-between mt-4">
-                  <button type="button" class="btn border border-2">Close</button>
-                  <button type="button" class="btn btn-fill">Save</button>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Full Name</label>
-                <input type="text" placeholder="Full Name" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Email</label>
-                <input type="email" placeholder="Enter a Email" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Phone Number</label>
-                <input type="number" placeholder="Enter a Phone Number"
-                  class="d-block border border-2 rounded w-100 py-2 px-3">
-                <label for="full-name" class="fw-bold mb-2 mt-4">Country</label>
-                <input type="text" placeholder="Add a Country" class="d-block border border-2 rounded w-100 py-2 px-3">
-                <div class="d-flex align-items-center justify-content-between mt-4">
-                  <button type="button" class="btn border border-2">Close</button>
-                  <button type="button" class="btn btn-fill">Save</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="selectModal" tabindex="-1" aria-labelledby="selectModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="selectModalLabel">Select</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="dropdown select-dropdown ms-4">
-                  <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border-0" type="button"
-                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    By Customer
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <select name="cars" id="cars" class="d-block border border-2 rounded w-100 py-2 px-3">
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="opel">Opel</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="progressModal" tabindex="-1" aria-labelledby="progressModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="progressModalLabel">Progressbar</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100">25%</div>
-                </div>
-                <div class="progress mt-3">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="progress mt-3">
-                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="progress">
-                  <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="progress mt-3">
-                  <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="progress mt-3">
-                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%"
-                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="buttonModal" tabindex="-1" aria-labelledby="buttonModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="buttonModalLabel">Button</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <button type="button" class="btn btn-primary d-block w-100">Primary</button>
-                <button type="button" class="btn btn-secondary d-block mt-3 w-100">Secondary</button>
-                <button type="button" class="btn btn-success d-block mt-3 w-100">Success</button>
-                <button type="button" class="btn btn-danger d-block mt-3 w-100">Danger</button>
-              </div>
-              <div class="col-md-6">
-                <button type="button" class="btn btn-warning d-block w-100">Warning</button>
-                <button type="button" class="btn btn-info d-block mt-3 w-100">Info</button>
-                <button type="button" class="btn btn-light d-block mt-3 w-100">Light</button>
-                <button type="button" class="btn btn-dark d-block mt-3 w-100">Dark</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="emailModalLabel">Email Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <input type="email" class="d-block border border-2 rounded w-100 py-2 px-3" id="email">
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="d-block border border-2 rounded w-100 py-2 px-3" id="email"
-                  placeholder="Enter a Email">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="switchModal" tabindex="-1" aria-labelledby="switchModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="switchModalLabel">Switch Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-check form-switch">
-                  <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-                </div>
-                <div class="form-check form-switch">
-                  <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckChecked" checked>
-                  <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-check form-switch">
-                  <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckDisabled" disabled>
-                  <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
-                </div>
-                <div class="form-check form-switch">
-                  <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked
-                    disabled>
-                  <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox
-                    input</label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="circleModal" tabindex="-1" aria-labelledby="circleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="circleModalLabel">Switch Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="pie" data-pie='{ "percent": 70 }'>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="checkGroupModal" tabindex="-1" aria-labelledby="checkGroupModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="checkGroupModalLabel">Checkbox Group Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-check">
-                  <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckChecked" checked>
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckChecked" checked>
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-check">
-                  <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="textInputModal" tabindex="-1" aria-labelledby="textInputModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="textInputModalLabel">Text Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <input type="text" name="name" id="name" class="d-block border border-2 rounded w-100 py-2 px-3">
-            <input type="text" name="name" id="name" class="d-block border border-2 rounded w-100 py-2 px-3 mt-3"
-              placeholder="Enter a Name">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="checkInputModal" tabindex="-1" aria-labelledby="checkInputModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="checkInputModalLabel">Checkbox Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="form-check">
-              <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Default checkbox
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label" for="flexCheckChecked">
-                Checked checkbox
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="switchGroupModal" tabindex="-1" aria-labelledby="switchGroupModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="switchGroupModalLabel">Switch Group Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="form-check form-switch">
-              <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckDefault">
-              <label class="form-check-label float-none" for="flexSwitchCheckDefault">Default switch checkbox
-                input</label>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckDefault" checked>
-              <label class="form-check-label float-none" for="flexSwitchCheckDefault">Default switch checkbox
-                input</label>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input d-block" type="checkbox" id="flexSwitchCheckDefault">
-              <label class="form-check-label float-none" for="flexSwitchCheckDefault">Default switch checkbox
-                input</label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="numberInputModal" tabindex="-1" aria-labelledby="numberInputModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="numberInputModalLabel">Number Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <input type="number" name="number" id="number" class="d-block border border-2 rounded w-100 py-2 px-3">
-            <input type="number" name="number" id="number" class="d-block border border-2 rounded w-100 py-2 px-3 mt-3"
-              placeholder="Enter a Number">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="passwordInputModal" tabindex="-1" aria-labelledby="passwordInputModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="passwordInputModalLabel">Password Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <input type="password" name="password" id="password"
-              class="d-block border border-2 rounded w-100 py-2 px-3">
-            <input type="password" name="password" id="password"
-              class="d-block border border-2 rounded w-100 py-2 px-3 mt-3" placeholder="Enter a Password">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="textareaInputModal" tabindex="-1" aria-labelledby="textareaInputModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="textareaInputModalLabel">Textarea Input</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <textarea name="text" id="text" cols="30" rows="5"
-              class="d-block border border-2 rounded w-100 py-2 px-3"></textarea>
-            <textarea name="text" id="text" cols="30" rows="5"
-              class="d-block border border-2 rounded w-100 py-2 px-3 mt-3" placeholder="Enter a Comment"></textarea>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="navbarModal" tabindex="-1" aria-labelledby="navbarModalLabel" aria-hidden="true">
-      <div class="modal-dialog width-70">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="navbarModalLabel">Navbar</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                      aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                              <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                      </ul>
-                      <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-              <div class="col-12 mt-3">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-              <div class="col-12 mt-3">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                      aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="tabsModal" tabindex="-1" aria-labelledby="tabsModalLabel" aria-hidden="true">
-      <div class="modal-dialog width-70">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="tabsModalLabel">Tabs</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="nav nav-tabs bg-light ms-2 employees-nav w-fit" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link text-uppercase" id="list-tab" data-bs-toggle="tab" data-bs-target="#list"
-                      type="button" role="tab" aria-controls="list" aria-selected="true"><i
-                        class="icon icon-list-task"></i>LIST</button>
-                  </li>
-                  <li class="nav-item m-0" role="presentation">
-                    <button class="nav-link text-uppercase active" id="grid-tab" data-bs-toggle="tab"
-                      data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="false"><i
-                        class="icon icon-grid"></i>
-                      grid</button>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary"
-                      type="button" role="tab" aria-controls="summary" aria-selected="true">In-progress</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="custom-tab" data-bs-toggle="tab" data-bs-target="#custom" type="button"
-                      role="tab" aria-controls="custom" aria-selected="false">Accepted</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="draft-tab" data-bs-toggle="tab" data-bs-target="#draft" type="button"
-                      role="tab" aria-controls="draft" aria-selected="false">All</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -8102,6 +7224,155 @@ aria-labelledby="interviewLabel" aria-hidden="true">
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-primary text-uppercase">Add</button>
             <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="chartAddModal" tabindex="-1" aria-labelledby="chartAddModalLabel" aria-hidden="true">
+      <div class="modal-dialog chart-form">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="chartAddModalLabel">Add chart new</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="role" class="fw-bold mt-3 mb-2">Chart Title</label>
+            <input type="text" name="name" id="name" placeholder="Enter a Full Name"
+              class="d-block w-100 border border-2 rounded px-4 py-2">
+            <label for="role" class="fw-bold mt-3 mb-2">Select Data Source</label>
+            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <option value="Manager"></option>
+              <option value="Urdu">Database</option>
+              <option value="Hindi">API</option>
+            </select>
+            <label for="role" class="fw-bold mt-3 mb-2">Select Data</label>
+            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <option value="Manager"></option>
+              <option value="Urdu">Number of Projects</option>
+              <option value="Hindi">Total Projects Cost</option>
+            </select>
+            <label for="role" class="fw-bold mt-3 mb-2">Select API</label>
+            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <option value="Manager"></option>
+              <option value="Urdu">Zendesk Sell API</option>
+              <option value="Hindi">Zoho CRM API</option>
+              <option value="Hindi">Hubspot CRM</option>
+              <option value="Hindi">Salesforce API</option>
+              <option value="Hindi">Microsoft Dynamics API</option>
+              <option value="Hindi">Excel and Google Sheets</option>
+              <option value="Hindi">Jira Cloud</option>
+              <option value="Hindi">Google Drive</option>
+              <option value="Hindi">Dropbox</option>
+              <option value="Hindi">One drive – sharepoints</option>
+              <option value="Hindi">Outlook</option>
+              <option value="Hindi">Clickup</option>
+            </select>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill text-uppercase">Add</button>
+            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="addChartButtonModal" tabindex="-1" aria-labelledby="addChartButtonModalLabel" aria-hidden="true">
+      <div class="modal-dialog width-40 wsm-95 add-new-chart">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addChartButtonModalLabel">Add New Chart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/vertical-bar-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">vertical Bar Chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/horizontal-bar-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">horizontal bar chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/stacked-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">stacked chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/donut-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">Donut chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/line-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">line chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/composite-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">composite chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/area-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">Area chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/journey-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">journey chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/pivot-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">pivot chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/word-cloud.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">word cloud</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/trend-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">trend chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/gauge-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">gauge chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/funnel-chart.png" alt="" class="width-70px mb-3">
+                  <h6 class="text-uppercase">funnel chart</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
+                  <img src="./assets/images/kpi-chart.png" alt="" class="w-100 mb-3">
+                  <h6 class="text-uppercase">kpi chart</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill text-uppercase">Save</button>
+            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>

@@ -433,6 +433,11 @@ h6 {
   width: 35px;
 }
 
+.width-40 {
+  max-width: 40% !important;
+  width: 40% !important;
+}
+
 .width-50 {
   max-width: 50% !important;
   width: 50% !important;
@@ -449,6 +454,11 @@ h6 {
 .width-70 {
   max-width: 70% !important;
   width: 70% !important;
+}
+
+.width-70px {
+width: 70px !important;
+  height: 70px !important;
 }
 
 .min-h-385 {

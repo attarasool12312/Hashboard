@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-size: 35% 100vh;
     height: 100vh;
+    background-color: #fff;
 
     .signIn-box {
         height: 83vh;
@@ -102,6 +103,7 @@
                 .form-check-input{
                     width: 20px;
                     height: 20px;
+                    border-radius: 50%;
                 }
             }
             h5{
@@ -115,5 +117,16 @@
                 }
             }
         }
+    }
+}
+@media (min-width: 576px){
+    .add-new-chart{
+        margin: 1.75rem !important;
+    }
+}
+
+@media (min-width: 576px){
+    .chart-form{
+        margin: 1.75rem 1.75rem 1.75rem auto !important;
     }
 }

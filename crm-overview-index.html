@@ -188,7 +188,8 @@
                   class="icon icon-download me-2"></i>Download</button>
               <button type="button" class="btn ouline-white btn-fill me-md-3 add-component mt-3 mt-md-0">Add
                 Component</button>
-              <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#addChartButtonModal">+ Add Chart</button>
+              <button type="button" class="btn ouline-white btn-fill mt-3 mt-md-0" data-bs-toggle="modal"
+                data-bs-target="#addChartButtonModal">+ Add Chart</button>
             </div>
           </div>
           <div class="row">
@@ -717,7 +718,7 @@
                         </div>
                       </div>
                       <div data-type="Image" class="drag-item col ps-0" data-bs-toggle="modal"
-                      data-bs-target="#imagesModal">
+                        data-bs-target="#imagesModal">
                         <div class="btn border border-2 rounded p-0 mt-3 text-light-gray w-100">
                           <i class="icon icon-image bg-cover"></i>
                           <p>Image</p>
@@ -1305,98 +1306,87 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="addChartButtonModal" tabindex="-1" aria-labelledby="addChartButtonModalLabel" aria-hidden="true">
-      <div class="modal-dialog width-40 wsm-95 add-new-chart">
+    <div class="modal fade" id="addChartButtonModal" tabindex="-1" aria-labelledby="addChartButtonModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog width-50 wsm-95 add-new-chart">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="addChartButtonModalLabel">Add New Chart</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/vertical-bar-chart.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">vertical Bar Chart</h6>
-                </div>
+            <div class="d-flex">
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/vertical-bar-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">vertical Bar Chart</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/horizontal-bar-chart.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">horizontal bar chart</h6>
-                </div>
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/horizontal-bar-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">horizontal bar chart</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/stacked-chart.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">stacked chart</h6>
-                </div>
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/stacked-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">stacked chart</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/donut-chart.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">Donut chart</h6>
-                </div>
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/donut-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">Donut chart</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/line-chart.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">line chart</h6>
-                </div>
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/line-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">line chart</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/composite-chart.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">composite chart</h6>
-                </div>
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/composite-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">composite chart</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/area-chart.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">Area chart</h6>
-                </div>
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/area-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">Area chart</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/journey-chart.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">journey chart</h6>
-                </div>
+            </div>
+            <div class="d-flex">
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/journey-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">journey chart</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/pivot-chart.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">pivot chart</h6>
-                </div>
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/pivot-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">pivot chart</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/word-cloud.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">word cloud</h6>
-                </div>
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/word-cloud.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">word cloud</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/trend-chart.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">trend chart</h6>
-                </div>
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/trend-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">trend chart</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/gauge-chart.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">gauge chart</h6>
-                </div>
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/gauge-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">gauge chart</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/funnel-chart.png" alt="" class="width-70px mb-3">
-                  <h6 class="text-uppercase">funnel chart</h6>
-                </div>
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/funnel-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">funnel chart</h6>
               </div>
-              <div class="col-md-3">
-                <div class="border border-2 rounded w-100 text-center p-3 mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#chartAddModal">
-                  <img src="./assets/images/kpi-chart.png" alt="" class="w-100 mb-3">
-                  <h6 class="text-uppercase">kpi chart</h6>
-                </div>
+              <div class="border border-2 rounded w-100 text-center p-2 mb-3 cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#chartAddModal">
+                <img src="./assets/images/kpi-chart.png" alt="" class="width-50px mb-3">
+                <h6 class="text-uppercase text-small">kpi chart</h6>
               </div>
             </div>
           </div>

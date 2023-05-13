@@ -29,17 +29,17 @@
 <body>
   <header class="bg-white">
     <div class="header-main">
-        <div class="sitepanel-toggler m-0">
-            <div class="close">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="logo">
-                <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
-            </div>
+      <div class="sitepanel-toggler m-0">
+        <div class="close">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <!-- <div class="search-form header-form d-none d-md-block">
+        <div class="logo">
+          <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+        </div>
+      </div>
+      <!-- <div class="search-form header-form d-none d-md-block">
             <form action="">
                 <div class="form-group">
                     <input class="form-control max-width" type="text" placeholder="Search in Rhombus…"
@@ -48,65 +48,72 @@
                 </div>
             </form>
         </div> -->
-        <div class="about-profile">
-            <div class="d-none d-md-flex align-items-center">
-              <select name="Role" id="Role" class="d-block border border-2 rounded px-2 py-2 me-2 text-light-gray">
-                <option value="Manager">Choose Channel</option>
-                <option value="Manager">Admin</option>
-                <option value="Urdu">Extended</option>
-                <option value="Hindi">Standard</option>
-                <option value="Punjabi">Limited</option>
-              </select>
-              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i class="icon icon-plus"></i> Add</button>
-                <!-- <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a> -->
-                <div class="dropdown select-dropdown admin-notification">
-                  <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
-                    <i class="icon icon-notification"></i>
-                  </button>
-                  <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
-                    <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
-                      <p>Notification</p>
-                      <a href="./sm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
-                    </div>
-                    <div class="p-2 border-bottom">
-                      <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                      <p class="text-light-gray mt-3">12 May, 2025</p>
-                    </div>
-                    <div class="p-2 border-bottom">
-                      <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                      <p class="text-light-gray mt-3">12 May, 2025</p>
-                    </div>
-                    <div class="p-2">
-                      <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                      <p class="text-light-gray mt-3">12 May, 2025</p>
-                    </div>
-                  </ul>
-                </div>
-            </div>
-            <div class="dropdown select-dropdown admin-profile">
-                <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  <div class="profile-img me-2 border-0">
-                    <img class="img-fluid" src="./assets/images/profile.png" alt="">
-                  </div>
-                  <div class="admin-info d-none d-md-block">
-                    <h5 class="">Katie Pena</h5>
-                    <h6 class="text-small text-light-gray">Admin</h6>
-                  </div>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <div class="profile-images text-center">
-                    <img src="./assets/images/profile-2.png" alt="">
-                  <h6 class="text-small mt-2">Allen Moreno</h6>
-                  <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
-                  </div>
-                    <li><a class="dropdown-item" href="./sm-profile-activities.html"><i class="icon icon-calender-2"></i> Actions</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
-                </ul>
+      <div class="about-profile">
+        <div class="d-none d-md-flex align-items-center">
+          <select name="Role" id="Role" class="d-block border border-2 rounded px-2 py-2 me-2 text-light-gray">
+            <option value="Manager">Choose Channel</option>
+            <option value="Manager">Admin</option>
+            <option value="Urdu">Extended</option>
+            <option value="Hindi">Standard</option>
+            <option value="Punjabi">Limited</option>
+          </select>
+          <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+              class="icon icon-plus"></i> Add</button>
+          <!-- <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a> -->
+          <div class="dropdown select-dropdown admin-notification">
+            <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
+              <i class="icon icon-notification"></i>
+            </button>
+            <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
+              <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
+                <p>Notification</p>
+                <a href="./sm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
               </div>
+              <div class="p-2 border-bottom">
+                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                <p class="text-light-gray mt-3">12 May, 2025</p>
+              </div>
+              <div class="p-2 border-bottom">
+                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                <p class="text-light-gray mt-3">12 May, 2025</p>
+              </div>
+              <div class="p-2">
+                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                <p class="text-light-gray mt-3">12 May, 2025</p>
+              </div>
+            </ul>
+          </div>
         </div>
+        <div class="dropdown select-dropdown admin-profile">
+          <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button"
+            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="profile-img me-2 border-0">
+              <img class="img-fluid" src="./assets/images/profile.png" alt="">
+            </div>
+            <div class="admin-info d-none d-md-block">
+              <h5 class="">Katie Pena</h5>
+              <h6 class="text-small text-light-gray">Admin</h6>
+            </div>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <div class="profile-images text-center">
+              <img src="./assets/images/profile-2.png" alt="">
+              <h6 class="text-small mt-2">Allen Moreno</h6>
+              <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+            </div>
+            <li><a class="dropdown-item" href="./sm-profile-activities.html"><i class="icon icon-calender-2"></i>
+                Actions</a></li>
+            <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-</header>
+  </header>
   <section class="section-panel">
     <div class="admin-wrapper">
       <aside class="aside left-sidbar">
@@ -116,15 +123,21 @@
           </li>
           <li><a href="./sm-trending.html" class="panel_link "><i class="icon icon-trending"></i>
               <span>Trending</span></a></li>
-          <li><a href="./sm-feeds.html" class="panel_link "><i class="icon icon-expenses"></i><span>Feeds</span></a></li>
+          <li><a href="./sm-feeds.html" class="panel_link "><i class="icon icon-expenses"></i><span>Feeds</span></a>
+          </li>
           <li><a href="./sm-new-post.html" class="panel_link"><i class="icon icon-bar-document"></i>
               <span>New Post</span></a></li>
-          <li><a href="./sm-collaboration.html" class="panel_link "><i class="icon icon-collaboration"></i> <span>Collaboration</span></a>
+          <li><a href="./sm-collaboration.html" class="panel_link "><i class="icon icon-collaboration"></i>
+              <span>Collaboration</span></a>
           </li>
-          <li><a href="./sm-bots.html" class="panel_link active_panel"><i class="icon icon-bots"></i><span>Bots</span></a></li>
-          <li><a href="./sm-tracker.html" class="panel_link "><i class="icon icon-reports"></i><span>Tracker</span></a></li>
-          <li><a href="./sm-link-new-account.html" class="panel_link "><i class="icon icon-link-account"></i><span>Link new account</span></a></li>
-          <li><a href="./sm-campaign-analysis.html" class="panel_link "><i class="icon icon-reports"></i> <span>Campaign analysis</span></a>
+          <li><a href="./sm-bots.html" class="panel_link active_panel"><i
+                class="icon icon-bots"></i><span>Bots</span></a></li>
+          <li><a href="./sm-tracker.html" class="panel_link "><i class="icon icon-reports"></i><span>Tracker</span></a>
+          </li>
+          <li><a href="./sm-link-new-account.html" class="panel_link "><i class="icon icon-link-account"></i><span>Link
+                new account</span></a></li>
+          <li><a href="./sm-campaign-analysis.html" class="panel_link "><i class="icon icon-reports"></i> <span>Campaign
+                analysis</span></a>
           </li>
           <li><a href="./sm-influencers.html" class="panel_link "><i class="icon icon-Influencers"></i>
               <span>Influencers</span></a></li>
@@ -144,7 +157,8 @@
                     class="icon icon-settings"></i> <span>General</span></a></li>
             </ul>
           </li>
-          <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-memory"></i><span>Financial</span></a></li>
+          <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-memory"></i><span>Financial</span></a>
+          </li>
           <div class="open-button">
             <i class="icon icon-right-arrow"></i>
           </div>
@@ -162,10 +176,12 @@
                   <div class="col-md-8">
                     <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="board-tab" data-bs-toggle="tab" data-bs-target="#board" type="button" role="tab" aria-controls="board" aria-selected="true">Bot board</button>
+                        <button class="nav-link active" id="board-tab" data-bs-toggle="tab" data-bs-target="#board"
+                          type="button" role="tab" aria-controls="board" aria-selected="true">Bot board</button>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="Setting-tab" data-bs-toggle="tab" data-bs-target="#Setting" type="button" role="tab" aria-controls="Setting" aria-selected="false">Setting</button>
+                        <button class="nav-link" id="Setting-tab" data-bs-toggle="tab" data-bs-target="#Setting"
+                          type="button" role="tab" aria-controls="Setting" aria-selected="false">Setting</button>
                       </li>
                     </ul>
                   </div>
@@ -180,18 +196,24 @@
                     <div class="upload-files">
                       <form>
                         <div class="uploadfile mt-3">
-                          <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button me-2"></i> Chatbot avatar</label></div>
+                          <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i
+                                class="icon icon-blue-added-button me-2"></i> Chatbot avatar</label></div>
                           <input id="fileupload" type="file" class="fileupload">
                         </div>
                         <label for="role" class="fw-bold mt-3 mb-2">Edit Name your chatbot</label>
-                        <input type="tel" name="phone" id="phone" placeholder="Ahmed" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <input type="tel" name="phone" id="phone" placeholder="Ahmed"
+                          class="d-block w-100 border border-2 rounded px-4 py-2">
                         <label for="role" class="fw-bold mt-3 mb-2">Edit Chatbot Description</label>
-                        <input type="tel" name="phone" id="phone" placeholder="New chatbot" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <input type="tel" name="phone" id="phone" placeholder="New chatbot"
+                          class="d-block w-100 border border-2 rounded px-4 py-2">
                         <p class="fw-600 mt-3">Welcome Message ID</p>
-                        <p class="text-light-gray mt-2">Use this Welcome Message ID to connect your chatbot to Twitter Direct Message Cards.</p>
+                        <p class="text-light-gray mt-2">Use this Welcome Message ID to connect your chatbot to Twitter
+                          Direct Message Cards.</p>
                         <div class="d-flex align-items-center flex-colume-sm mt-3">
-                          <input type="tel" name="phone" id="phone" placeholder="New chatbot" class="d-block width-70 wsm-100 border border-2 rounded px-4 py-2">
-                          <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 ms-md-3 mt-md-0">Copy ID</button>                            
+                          <input type="tel" name="phone" id="phone" placeholder="New chatbot"
+                            class="d-block width-70 wsm-100 border border-2 rounded px-4 py-2">
+                          <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 ms-md-3 mt-md-0">Copy
+                            ID</button>
                         </div>
                       </form>
                     </div>
@@ -250,8 +272,10 @@
                     </div>
                     <div class="col-md-3 mt-3 mt-md-0">
                       <div class="bg-white rounded px-3 py-4 h-100">
-                        <a class="d-block mb-2 text-fill text-decoration-none cursor-pointer preview"><i class="icon icon-eye"></i> Preview</a>
-                        <a class="d-block mb-2 text-fill text-decoration-none cursor-pointer keywords-button"><i class="icon icon-checkicon"></i> Keywords</a>
+                        <a class="d-block mb-2 text-fill text-decoration-none cursor-pointer preview"><i
+                            class="icon icon-eye"></i> Preview</a>
+                        <a class="d-block mb-2 text-fill text-decoration-none cursor-pointer keywords-button"><i
+                            class="icon icon-checkicon"></i> Keywords</a>
                       </div>
                     </div>
 
@@ -268,7 +292,9 @@
                             <div>
                               <p class="text-light-gray fw-600">Bubble</p>
                               <p class="pt-4 border px-2 pb-3">
-                                Hi there! Thanks for reaching out. Please click on one of the options below so we can better assist you. If you ever want to restart your conversation with us please type "menu".
+                                Hi there! Thanks for reaching out. Please click on one of the options below so we can
+                                better assist you. If you ever want to restart your conversation with us please type
+                                "menu".
                               </p>
                             </div>
                           </div>
@@ -281,9 +307,11 @@
                             </div>
                           </div>
                           <button type="button" class="ouline-white mt-1 btn-fill w-100 rounded-0">Help</button>
-                            <div class="search d-flex align-items-center mt-1">
-                              <input type="text" class="form-control py-2"><button class="btn ouline-white btn-fill ms-2"><i class="icon icon-send-message-white"></i></button>
-                            </div>
+                          <div class="search d-flex align-items-center mt-1">
+                            <input type="text" class="form-control py-2"><button
+                              class="btn ouline-white btn-fill ms-2"><i
+                                class="icon icon-send-message-white"></i></button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -295,22 +323,29 @@
                       </div>
                       <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="New-tab" data-bs-toggle="tab" data-bs-target="#New" type="button" role="tab" aria-controls="New" aria-selected="true">New</button>
+                          <button class="nav-link active" id="New-tab" data-bs-toggle="tab" data-bs-target="#New"
+                            type="button" role="tab" aria-controls="New" aria-selected="true">New</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="Keywords-tab" data-bs-toggle="tab" data-bs-target="#Keywords" type="button" role="tab" aria-controls="Keywords" aria-selected="false">All Keywords</button>
+                          <button class="nav-link" id="Keywords-tab" data-bs-toggle="tab" data-bs-target="#Keywords"
+                            type="button" role="tab" aria-controls="Keywords" aria-selected="false">All
+                            Keywords</button>
                         </li>
                       </ul>
                       <div class="tab-content mt-3 px-3 pb-3">
                         <div class="tab-pane active" id="New" role="tabpanel" aria-labelledby="New-tab">
                           <form>
                             <label for="role" class="fw-bold mt-3 mb-2">Keyword Name</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Complaint" class="d-block w-100 border border-2 rounded px-4 py-2">
+                            <input type="tel" name="phone" id="phone" placeholder="Complaint"
+                              class="d-block w-100 border border-2 rounded px-4 py-2">
                             <label for="role" class="fw-bold mt-3 mb-2">If user send</label>
-                            <input type="tel" name="phone" id="phone" placeholder="delay" class="d-block w-100 border border-2 rounded px-4 py-2">
+                            <input type="tel" name="phone" id="phone" placeholder="delay"
+                              class="d-block w-100 border border-2 rounded px-4 py-2">
                             <label for="role" class="fw-bold mt-3 mb-2">Bot response</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Custom message" class="d-block w-100 border border-2 rounded px-4 py-2">
-                            <textarea name="content" id="editor" class="p-4 rounded d-block w-100 border border-2 mt-3"></textarea>
+                            <input type="tel" name="phone" id="phone" placeholder="Custom message"
+                              class="d-block w-100 border border-2 rounded px-4 py-2">
+                            <textarea name="content" id="editor"
+                              class="p-4 rounded d-block w-100 border border-2 mt-3"></textarea>
                             <button type="button" class="btn ouline-white btn-fill mt-5">Save</button>
                           </form>
                         </div>
@@ -325,16 +360,18 @@
                             </select>
                             <label for="role" class="fw-bold mt-3 mb-2">If user send</label>
                             <div class="d-flex align-items-center">
-                              <input type="tel" name="phone" id="phone" placeholder="Keyword" class="d-block w-100 border border-2 rounded px-4 py-2">
+                              <input type="tel" name="phone" id="phone" placeholder="Keyword"
+                                class="d-block w-100 border border-2 rounded px-4 py-2">
                               <a href="" class="ms-2 text-decoration-none"><i class="icon icon-edit"></i></a>
                             </div>
                             <label for="role" class="fw-bold mt-3 mb-2">Bot response</label>
                             <div class="d-flex align-items-center">
-                              <input type="tel" name="phone" id="phone" placeholder="Bot response" class="d-block w-100 border border-2 rounded px-4 py-2">
+                              <input type="tel" name="phone" id="phone" placeholder="Bot response"
+                                class="d-block w-100 border border-2 rounded px-4 py-2">
                               <a href="" class="ms-2 text-decoration-none"><i class="icon icon-edit"></i></a>
                             </div>
                             <button type="button" class="btn ouline-white btn-fill mt-5">Save</button>
-                          </form>                          
+                          </form>
                         </div>
                       </div>
                     </div>
@@ -346,165 +383,176 @@
         </div>
       </main>
     </div>
-    <div class="modal right fade" id="SettingForm" tabindex="-1"
-aria-labelledby="interviewLabel" aria-hidden="true">
-<div class="modal-dialog width-50 wsm-95">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h4>Profile settings</h4>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body bg-light customer-add-form">
-      <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link text-uppercase active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="false">general</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link text-uppercase" id="security-tab" data-bs-toggle="tab" data-bs-target="#security" type="button" role="tab" aria-controls="security" aria-selected="false">security</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link text-uppercase" id="billing-tab" data-bs-toggle="tab" data-bs-target="#billing" type="button" role="tab" aria-controls="billing" aria-selected="false">billing</button>
-        </li>
-      </ul>
-      <div class="tab-content">
-        <div class="tab-pane py-4 active" id="general" role="tabpanel" aria-labelledby="general-tab">
-          <form>
-            <div class="upload-file">
-              <div class="file-upload">
-                <figure>
-                  <img id="chosen-image">
-                  <figcaption id="file-name">
-                  </figcaption>
-                </figure>
-                <input type="file" id="upload-button" accept="image/*" />
-                <label for="upload-button">
-                  Add Image
-                </label>
+    <div class="modal right fade" id="SettingForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog width-50 wsm-95">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Profile settings</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-uppercase active" id="general-tab" data-bs-toggle="tab"
+                  data-bs-target="#general" type="button" role="tab" aria-controls="general"
+                  aria-selected="false">general</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-uppercase" id="security-tab" data-bs-toggle="tab"
+                  data-bs-target="#security" type="button" role="tab" aria-controls="security"
+                  aria-selected="false">security</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-uppercase" id="billing-tab" data-bs-toggle="tab" data-bs-target="#billing"
+                  type="button" role="tab" aria-controls="billing" aria-selected="false">billing</button>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane py-4 active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                <form>
+                  <div class="upload-file">
+                    <div class="file-upload">
+                      <figure>
+                        <img id="chosen-image">
+                        <figcaption id="file-name">
+                        </figcaption>
+                      </figure>
+                      <input type="file" id="upload-button" accept="image/*" />
+                      <label for="upload-button">
+                        Add Image
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="name" class="fw-bold mt-3 mb-2">Full Name</label>
+                      <input type="text" name="name" id="name" placeholder="Enter a Full Name"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <label for="email" class="fw-bold mt-3 mb-2">Email</label>
+                      <input type="email" name="email" id="email" placeholder="Enter a Email"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <label for="language" class="fw-bold mt-3 mb-2">Language</label>
+                      <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="English">English</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Punjabi">Punjabi</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="role" class="fw-bold mt-3 mb-2">Role</label>
+                      <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="Manager">Manager</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Punjabi">Punjabi</option>
+                      </select>
+                      <label for="phone" class="fw-bold mt-3 mb-2">Phone</label>
+                      <input type="tel" name="phone" id="phone" placeholder="Enter a Phone Number"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                    </div>
+                  </div>
+                </form>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <label for="name" class="fw-bold mt-3 mb-2">Full Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter a Full Name" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <label for="email" class="fw-bold mt-3 mb-2">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter a Email" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <label for="language" class="fw-bold mt-3 mb-2">Language</label>
-                <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  <option value="English">English</option>
-                  <option value="Urdu">Urdu</option>
-                  <option value="Hindi">Hindi</option>
-                  <option value="Punjabi">Punjabi</option>
-                </select>
+              <div class="tab-pane py-4" id="security" role="tabpanel" aria-labelledby="security-tab">
+                <h5 class="fw-600 mb-3">Change Password</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="password" class="fw-bold mt-3 mb-2">Current Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="password" class="fw-bold mt-3 mb-2">New Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                </div>
+                <h5 class="fw-600 mb-3">Security Questions</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="questions" class="fw-bold mt-3 mb-2">Questions #1</label>
+                    <select name="questions" id="questions" class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <option value="questions">What is your friend's name</option>
+                      <option value="Admin">Admin</option>
+                      <option value="Admin +">Admin +</option>
+                    </select>
+                    <label for="questions" class="fw-bold mt-3 mb-2">Questions #1</label>
+                    <select name="questions" id="questions" class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <option value="questions">What is your friend's name</option>
+                      <option value="Admin">Admin</option>
+                      <option value="Admin +">Admin +</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="answer" class="fw-bold mt-3 mb-2">Answer</label>
+                    <input type="text" name="answer" id="answer" placeholder="Enter Your Answer"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                    <label for="answer" class="fw-bold mt-3 mb-2">Answer</label>
+                    <input type="text" name="answer" id="answer" placeholder="Enter Your Answer"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6">
-                <label for="role" class="fw-bold mt-3 mb-2">Role</label>
-                <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-                  <option value="Manager">Manager</option>
-                  <option value="Urdu">Urdu</option>
-                  <option value="Hindi">Hindi</option>
-                  <option value="Punjabi">Punjabi</option>
-                </select>
-                <label for="phone" class="fw-bold mt-3 mb-2">Phone</label>
-                <input type="tel" name="phone" id="phone" placeholder="Enter a Phone Number" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <div class="tab-pane py-4" id="billing" role="tabpanel" aria-labelledby="billing-tab">
+                <h5 class="fw-600 mb-3">Billing Settings</h5>
+                <div class="d-flex align-items-center justify-content-between border-bottom py-3">
+                  <p>Payment Method</p>
+                  <div class="d-flex align-items-center">
+                    <p>MasterCard ending in 4078,exp: 08/2020</p>
+                    <a href="./pm-billing.html" class="text-decoration-none ms-3">Update</a>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between border-bottom py-3">
+                  <p>Billing Period</p>
+                  <div class="d-flex align-items-center">
+                    <p>Plan billed monthly</p>
+                    <a href="./pm-billing.html" class="text-decoration-none ms-3">Update</a>
+                  </div>
+                </div>
+                <h5 class="fw-600 my-3">Payment History</h5>
+                <div class="border rounded">
+                  <div class="d-flex align-items-center justify-content-between border-bottom p-3">
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold me-3">21 Oct 2018</p>
+                      <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <p>$28.00</p>
+                      <a href="#" class="text-decoration-none ms-3">Invoice</a>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between border-bottom p-3">
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold me-3">21 Oct 2018</p>
+                      <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <p>$28.00</p>
+                      <a href="#" class="text-decoration-none ms-3">Invoice</a>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between p-3">
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold me-3">21 Oct 2018</p>
+                      <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <p>$28.00</p>
+                      <a href="#" class="text-decoration-none ms-3">Invoice</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </form>
-        </div>
-        <div class="tab-pane py-4" id="security" role="tabpanel" aria-labelledby="security-tab">
-          <h5 class="fw-600 mb-3">Change Password</h5>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="password" class="fw-bold mt-3 mb-2">Current Password</label>
-              <input type="password" name="password" id="password" placeholder="Enter Your Password" class="d-block w-100 border border-2 rounded px-4 py-2">
-            </div>
-            <div class="col-md-6">
-              <label for="password" class="fw-bold mt-3 mb-2">New Password</label>
-              <input type="password" name="password" id="password" placeholder="Enter Your Password" class="d-block w-100 border border-2 rounded px-4 py-2">
             </div>
           </div>
-          <h5 class="fw-600 mb-3">Security Questions</h5>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="questions" class="fw-bold mt-3 mb-2">Questions #1</label>
-              <select name="questions" id="questions" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="questions">What is your friend's name</option>
-                <option value="Admin">Admin</option>
-                <option value="Admin +">Admin +</option>
-              </select>
-              <label for="questions" class="fw-bold mt-3 mb-2">Questions #1</label>
-              <select name="questions" id="questions" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="questions">What is your friend's name</option>
-                <option value="Admin">Admin</option>
-                <option value="Admin +">Admin +</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <label for="answer" class="fw-bold mt-3 mb-2">Answer</label>
-              <input type="text" name="answer" id="answer" placeholder="Enter Your Answer" class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="answer" class="fw-bold mt-3 mb-2">Answer</label>
-              <input type="text" name="answer" id="answer" placeholder="Enter Your Answer" class="d-block w-100 border border-2 rounded px-4 py-2">
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane py-4" id="billing" role="tabpanel" aria-labelledby="billing-tab">
-          <h5 class="fw-600 mb-3">Billing Settings</h5>
-          <div class="d-flex align-items-center justify-content-between border-bottom py-3">
-            <p>Payment Method</p>
-            <div class="d-flex align-items-center">
-              <p>MasterCard ending in 4078,exp: 08/2020</p>
-              <a href="./pm-billing.html" class="text-decoration-none ms-3">Update</a>
-            </div>
-          </div>
-          <div class="d-flex align-items-center justify-content-between border-bottom py-3">
-            <p>Billing Period</p>
-            <div class="d-flex align-items-center">
-              <p>Plan billed monthly</p>
-              <a href="./pm-billing.html" class="text-decoration-none ms-3">Update</a>
-            </div>
-          </div>
-          <h5 class="fw-600 my-3">Payment History</h5>
-          <div class="border rounded">
-            <div class="d-flex align-items-center justify-content-between border-bottom p-3">
-              <div class="d-flex align-items-center">
-                <p class="fw-bold me-3">21 Oct 2018</p>
-                <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
-              </div>
-              <div class="d-flex align-items-center">
-                <p>$28.00</p>
-                <a href="#" class="text-decoration-none ms-3">Invoice</a>
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-between border-bottom p-3">
-              <div class="d-flex align-items-center">
-                <p class="fw-bold me-3">21 Oct 2018</p>
-                <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
-              </div>
-              <div class="d-flex align-items-center">
-                <p>$28.00</p>
-                <a href="#" class="text-decoration-none ms-3">Invoice</a>
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-between p-3">
-              <div class="d-flex align-items-center">
-                <p class="fw-bold me-3">21 Oct 2018</p>
-                <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
-              </div>
-              <div class="d-flex align-items-center">
-                <p>$28.00</p>
-                <a href="#" class="text-decoration-none ms-3">Invoice</a>
-              </div>
-            </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Update</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal-footer justify-content-between">
-      <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Update</button>
-      <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
-    </div>
-  </div>
-</div>
-</div>
     <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -545,215 +593,218 @@ aria-labelledby="interviewLabel" aria-hidden="true">
         </div>
       </div>
     </div>
-<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="messageModalLabel">Add message</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body bg-light">
-        <div class="py-4 px-5 text-center">
-          <div class="bg-white p-3 d-flex align-items-center justify-content-between rounded mb-3" data-bs-toggle="modal" data-bs-target="#ImageModal">
-            <h5>Image</h5>
-            <i class="icon icon-popup-image"></i>
+    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="messageModalLabel">Add message</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="bg-white p-3 d-flex align-items-center justify-content-between rounded mb-3 cursor-pointer" data-bs-toggle="modal" data-bs-target="#QuickModal">
-            <h5>Quick Replay</h5>
-            <i class="icon icon-quick-replay"></i>
+          <div class="modal-body bg-light">
+            <div class="py-4 px-5 text-center">
+              <div class="bg-white p-3 d-flex align-items-center justify-content-between rounded mb-3"
+                data-bs-toggle="modal" data-bs-target="#ImageModal">
+                <h5>Image</h5>
+                <i class="icon icon-popup-image"></i>
+              </div>
+              <div class="bg-white p-3 d-flex align-items-center justify-content-between rounded mb-3 cursor-pointer"
+                data-bs-toggle="modal" data-bs-target="#QuickModal">
+                <h5>Quick Replay</h5>
+                <i class="icon icon-quick-replay"></i>
+              </div>
+              <div class="bg-white p-3 d-flex align-items-center justify-content-between rounded mb-3"
+                data-bs-toggle="modal" data-bs-target="#textModal">
+                <h5>Text</h5>
+                <i class="icon icon-popup-text bg-cover"></i>
+              </div>
+            </div>
           </div>
-          <div class="bg-white p-3 d-flex align-items-center justify-content-between rounded mb-3" data-bs-toggle="modal" data-bs-target="#textModal">
-            <h5>Text</h5>
-            <i class="icon icon-popup-text bg-cover"></i>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary text-uppercase">Next</button>
+            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">cancel</button>
           </div>
         </div>
       </div>
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-primary text-uppercase">Next</button>
-        <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">cancel</button>
+    </div>
+    <div class="modal fade" id="QuickModal" tabindex="-1" aria-labelledby="QuickModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="QuickModalLabel">Add message</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="role" class="fw-bold mt-3 mb-2">Quick Replay Button </label>
+              <input type="tel" name="phone" id="phone" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="role" class="fw-bold mt-3 mb-2">Quick Replay Button </label>
+              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="Urdu"></option>
+                <option value="Manager">Twitter Account</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Punjabi">Punjabi</option>
+              </select>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary text-uppercase">Save</button>
+            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">back</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="modal fade" id="QuickModal" tabindex="-1" aria-labelledby="QuickModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="QuickModalLabel">Add message</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <label for="role" class="fw-bold mt-3 mb-2">Quick Replay Button </label>
-          <input type="tel" name="phone" id="phone" class="d-block w-100 border border-2 rounded px-4 py-2">
-          <label for="role" class="fw-bold mt-3 mb-2">Quick Replay Button </label>
-          <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-            <option value="Urdu"></option>
-            <option value="Manager">Twitter Account</option>
-            <option value="Urdu">Urdu</option>
-            <option value="Hindi">Hindi</option>
-            <option value="Punjabi">Punjabi</option>
-          </select>
-        </form>
-      </div>
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-primary text-uppercase">Save</button>
-        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">back</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="ImageModal" tabindex="-1" aria-labelledby="ImageModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="ImageModalLabel">Add message</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body upload-box bg-light">
-        <form>
-          <div class="form-group">
-            <label for="fileField" class="attachment">
-              <div class="row btn-file">
-                <div class="btn-file__preview"></div>
-                <div class="btn-file__actions p-0">
-                  <div class="btn-file__actions__item col-xs-12 text-center border-0 bg-white">
-                    <div class="btn-file__actions__item--shadow">
-                      <i class="icon icon-blue-added-button me-3"></i> Drop Image to upload 
+    <div class="modal fade" id="ImageModal" tabindex="-1" aria-labelledby="ImageModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ImageModalLabel">Add message</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body upload-box bg-light">
+            <form>
+              <div class="form-group">
+                <label for="fileField" class="attachment">
+                  <div class="row btn-file">
+                    <div class="btn-file__preview"></div>
+                    <div class="btn-file__actions p-0">
+                      <div class="btn-file__actions__item col-xs-12 text-center border-0 bg-white">
+                        <div class="btn-file__actions__item--shadow">
+                          <i class="icon icon-blue-added-button me-3"></i> Drop Image to upload
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                  <input name="file" type="file" id="fileField">
+                </label>
+              </div>
+              <div class="popup-form">
+                <div class="row">
+                  <div class="col-6">
+                    <label for="role" class="fw-bold mt-3 mb-2">Button Name</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Survey"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                  <div class="col-6">
+                    <label for="role" class="fw-bold mt-3 mb-2">URL</label>
+                    <input type="tel" name="phone" id="phone" placeholder="http;//www.google.com"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
                   </div>
                 </div>
               </div>
-              <input name="file" type="file" id="fileField">
-            </label>
+              <button type="button" class="btn ouline-white mt-3 w-100 popup-button">Add Action Button</button>
+            </form>
           </div>
-          <div class="popup-form">
-            <div class="row">
-              <div class="col-6">
-                <label for="role" class="fw-bold mt-3 mb-2">Button Name</label>
-                <input type="tel" name="phone" id="phone" placeholder="Survey" class="d-block w-100 border border-2 rounded px-4 py-2">              
-              </div>
-              <div class="col-6">
-                <label for="role" class="fw-bold mt-3 mb-2">URL</label>
-                <input type="tel" name="phone" id="phone" placeholder="http;//www.google.com" class="d-block w-100 border border-2 rounded px-4 py-2">
-              </div>
-            </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary text-uppercase">Save</button>
+            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">back</button>
           </div>
-          <button type="button" class="btn ouline-white mt-3 w-100 popup-button">Add Action Button</button>
-        </form>
-      </div>
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-primary text-uppercase">Save</button>
-        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">back</button>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="modal fade" id="textModal" tabindex="-1" aria-labelledby="textModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="textModalLabel">Add message</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body bg-light">
-        <form>
-          <label for="role" class="fw-bold mt-3 mb-2">Enter the message</label>
-          <input type="tel" name="phone" id="phone" class="d-block w-100 border border-2 rounded px-4 py-2">          
-          <div class="popup-form1">
-            <div class="row">
-              <div class="col-6">
-                <label for="role" class="fw-bold mt-3 mb-2">Button Text</label>
-                <input type="tel" name="phone" id="phone" class="d-block w-100 border border-2 rounded px-4 py-2">
-              </div>
-              <div class="col-6">
-                <label for="role" class="fw-bold mt-3 mb-2">URL</label>
-                <input type="tel" name="phone" id="phone" class="d-block w-100 border border-2 rounded px-4 py-2">
-              </div>
-            </div>
+    <div class="modal fade" id="textModal" tabindex="-1" aria-labelledby="textModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="textModalLabel">Add message</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <button type="button" class="btn ouline-white mt-3 w-100 popup-button1">Add Action Button</button>
-        </form>
-      </div>
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-primary text-uppercase">Save</button>
-        <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">back</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4>Add new User</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body bg-light customer-add-form">
-        <form>
-          <label for="Customer-name" class="d-block mb-2">User Name</label>
-          <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
-          <label for="Project-id" class="d-block my-2">Department</label>
-          <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
-            <option value="Manager">Owner</option>
-            <option value="Manager">Admin</option>
-            <option value="Urdu">Extended</option>
-            <option value="Hindi">Standard</option>
-            <option value="Punjabi">Limited</option>
-          </select>
-          <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
-          <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
-          <label for="ProjectSummary" class="d-block my-2">User Email</label>
-          <input type="text" placeholder="Enter a User Email" class="form-input w-100">
-          <label for="ProjectSummary" class="d-block my-2">User Position</label>
-          <input type="text" placeholder="Enter a User Position" class="form-input w-100">
-          <label for="ProjectSummary" class="d-block my-2">Role</label>
-          <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
-            <option value="Manager">Owner</option>
-            <option value="Manager">Admin</option>
-            <option value="Urdu">Extended</option>
-            <option value="Hindi">Standard</option>
-            <option value="Punjabi">Limited</option>
-          </select>
-        </form>
-      </div>
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
-        <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          <div class="modal-body bg-light">
+            <form>
+              <label for="role" class="fw-bold mt-3 mb-2">Enter the message</label>
+              <input type="tel" name="phone" id="phone" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <div class="popup-form1">
+                <div class="row">
+                  <div class="col-6">
+                    <label for="role" class="fw-bold mt-3 mb-2">Button Text</label>
+                    <input type="tel" name="phone" id="phone" class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                  <div class="col-6">
+                    <label for="role" class="fw-bold mt-3 mb-2">URL</label>
+                    <input type="tel" name="phone" id="phone" class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn ouline-white mt-3 w-100 popup-button1">Add Action Button</button>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary text-uppercase">Save</button>
+            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">back</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+    <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add new User</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form>
+              <label for="Customer-name" class="d-block mb-2">User Name</label>
+              <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">Department</label>
+              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
+                <option value="Manager">Owner</option>
+                <option value="Manager">Admin</option>
+                <option value="Urdu">Extended</option>
+                <option value="Hindi">Standard</option>
+                <option value="Punjabi">Limited</option>
+              </select>
+              <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+              <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Email</label>
+              <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Position</label>
+              <input type="text" placeholder="Enter a User Position" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">Role</label>
+              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
+                <option value="Manager">Owner</option>
+                <option value="Manager">Admin</option>
+                <option value="Urdu">Extended</option>
+                <option value="Hindi">Standard</option>
+                <option value="Punjabi">Limited</option>
+              </select>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- JavaScript
 ================================================== -->
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
-  <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
-    <script>
-      $(".popup-button1").click(function(){
-        $(".popup-form1").addClass("d-block")
-      });
-      $(".popup-button").click(function(){
-        $(".popup-form").addClass("d-block")
-      });
-      $(".preview").click(function(){
-        $(".preview-message").addClass("d-block")
-      });
-      $(".preview-cancel").click(function(){
-        $(".preview-message").removeClass("d-block")
-      });
-      $(".keywords-button").click(function(){
-        $(".keywords").addClass("d-block")
-      });
-      $(".keywords-cancel").click(function(){
-        $(".keywords").removeClass("d-block")
-      });
-</script>
+  <script>
+    $(".popup-button1").click(function () {
+      $(".popup-form1").addClass("d-block")
+    });
+    $(".popup-button").click(function () {
+      $(".popup-form").addClass("d-block")
+    });
+    $(".preview").click(function () {
+      $(".preview-message").addClass("d-block")
+    });
+    $(".preview-cancel").click(function () {
+      $(".preview-message").removeClass("d-block")
+    });
+    $(".keywords-button").click(function () {
+      $(".keywords").addClass("d-block")
+    });
+    $(".keywords-cancel").click(function () {
+      $(".keywords").removeClass("d-block")
+    });
+  </script>
 </body>
 
 </html>

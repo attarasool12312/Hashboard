@@ -1733,6 +1733,10 @@ h6.text-sm {
   color: #202020;
 }
 
+.left {
+  left: 5% !important;
+}
+
 .text-sky {
   color: #70B6C1;
 }
@@ -2092,9 +2096,9 @@ h6.text-sm {
   width: 70% !important;
 }
 
-.width-70px {
-  width: 70px !important;
-  height: 70px !important;
+.width-50px {
+  width: 50px !important;
+  height: 50px !important;
 }
 
 .min-h-385 {
@@ -8857,27 +8861,28 @@ button.btn.view {
   padding: 5px 10px 30px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  height: 290px;
+  height: 200px;
   position: relative;
 }
 .product-section .product-card .header-card h6 {
   font-weight: 600;
   margin-top: -10px;
   margin-left: 60px;
+  font-size: 14px !important;
 }
 .product-section .product-card .header-card .card-image {
   width: auto;
-  height: 183px;
+  height: 130px;
   position: absolute;
   bottom: -7px;
-  left: 5%;
+  left: 18%;
 }
 .product-section .product-card .body-card {
   background-color: #fff;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   padding: 0 20px 20px 20px;
-  min-height: 390px;
+  min-height: 310px;
 }
 .product-section .product-card .body-card .form-check {
   padding-top: 20px;
@@ -8888,15 +8893,16 @@ button.btn.view {
 .product-section .product-card .body-card .form-check label {
   margin-right: 30px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
 }
 .product-section .product-card .body-card .form-check .form-check-input {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
 }
 .product-section .product-card .body-card h5 {
   margin-top: 20px;
+  font-size: 14px !important;
 }
 .product-section .product-card .body-card ul {
   margin-top: 15px;
@@ -8904,6 +8910,7 @@ button.btn.view {
 }
 .product-section .product-card .body-card ul li {
   list-style-image: url("../images/list-style-image.png");
+  font-size: 12px;
 }
 
 @media (min-width: 576px) {

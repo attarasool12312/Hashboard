@@ -209,8 +209,7 @@
                   class="icon icon-download me-2"></i>Download</button>
               <button type="button" class="btn ouline-white btn-fill mt-3 wsm-100 me-md-2 mt-md-0"
                 data-bs-toggle="modal" data-bs-target="#uploadModal">Upload Bulk</button>
-              <button class="btn btn-fill wsm-100 mt-3 mt-md-0" data-bs-toggle="modal"
-                data-bs-target="#addPlanModal">Add new Plan</button>
+              <button class="btn btn-fill wsm-100 mt-3 mt-md-0" onclick="window.location.href='./pm-revenue-plan-new.html'">Add new Plan</button>
             </div>
           </div>
           <div class="row">
@@ -539,76 +538,6 @@
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Update</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="addPlanModal" tabindex="-1" aria-labelledby="addPlanModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="addPlanModalLabel">Add New Plan</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <label for="name" class="fw-bold mt-3 mb-2">Customer name</label>
-              <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="English">Please insert customer name</option>
-                <option value="Urdu">Urdu</option>
-                <option value="Hindi">Hindi</option>
-                <option value="Punjabi">Punjabi</option>
-              </select>
-              <label for="name" class="fw-bold mt-3 mb-2">Project name</label>
-              <input type="text" name="name" id="name" placeholder="Please insert Project name"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="name" class="fw-bold mt-3 mb-2">Project Value</label>
-              <input type="text" name="name" id="name" placeholder="Please insert Project ID"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="name" class="fw-bold mt-3 mb-2">Project Manager</label>
-              <input type="text" name="name" id="name" placeholder="Select Project manager"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="name" class="fw-bold mt-3 mb-2">Project Scope1</label>
-                  <input type="text" name="name" id="name" placeholder="Please set Value"
-                    class="d-block w-100 border border-2 rounded px-4 py-2">
-                </div>
-                <div class="col-md-6">
-                  <label for="name" class="fw-bold mt-3 mb-2">Scope Type</label>
-                  <input type="text" name="name" id="name" placeholder="Select Project Stage"
-                    class="d-block w-100 border border-2 rounded px-4 py-2">
-                </div>
-              </div>
-              <label for="name" class="fw-bold mt-3 mb-2">Targeted Revenue</label>
-              <input type="text" name="name" id="name" placeholder="Please select categroy"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="name" class="fw-bold mt-3 mb-2">Actual</label>
-              <input type="text" name="name" id="name" placeholder="Please select categroy"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="name" class="fw-bold mt-3 mb-2">Project Scope2</label>
-                  <input type="text" name="name" id="name" placeholder="Please set Value"
-                    class="d-block w-100 border border-2 rounded px-4 py-2">
-                </div>
-                <div class="col-md-6">
-                  <label for="name" class="fw-bold mt-3 mb-2">Scope Type</label>
-                  <input type="text" name="name" id="name" placeholder="Select Project Stage"
-                    class="d-block w-100 border border-2 rounded px-4 py-2">
-                </div>
-              </div>
-              <label for="name" class="fw-bold mt-3 mb-2">Targeted Revenue </label>
-              <input type="text" name="name" id="name" placeholder="Please select categroy"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="name" class="fw-bold mt-3 mb-2">Actual</label>
-              <input type="text" name="name" id="name" placeholder="Please select categroy"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-            </form>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-primary text-uppercase">add</button>
-            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>

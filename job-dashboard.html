@@ -171,7 +171,7 @@
             <div class="d-flex align-items-center flex-colume-sm wsm-100">
               <button type="button" class="btn ouline-white wsm-100 mt-3 mt-md-0"><i class="icon icon-plus"></i> Getting
                 Started</button>
-              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0" data-bs-toggle="modal"
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-3" data-bs-toggle="modal"
                 data-bs-target="#addChartButtonModal">+ Add Chart</button>
             </div>
           </div>
@@ -1624,140 +1624,148 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="chartAddModal" tabindex="-1" aria-labelledby="chartAddModalLabel" aria-hidden="true">
-      <div class="modal-dialog chart-form">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="chartAddModalLabel">Add chart new</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <label for="role" class="fw-bold mt-3 mb-2">Chart Title</label>
-            <input type="text" name="name" id="name" placeholder="Enter a Full Name"
-              class="d-block w-100 border border-2 rounded px-4 py-2">
-            <label for="role" class="fw-bold mt-3 mb-2">Select Data Source</label>
-            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-              <option value="Manager"></option>
-              <option value="Urdu">Database</option>
-              <option value="Hindi">API</option>
-            </select>
-            <label for="role" class="fw-bold mt-3 mb-2">Select Data</label>
-            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-              <option value="Manager"></option>
-              <option value="Urdu">Number of Projects</option>
-              <option value="Hindi">Total Projects Cost</option>
-            </select>
-            <label for="role" class="fw-bold mt-3 mb-2">Select API</label>
-            <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-              <option value="Manager"></option>
-              <option value="Urdu">Zendesk Sell API</option>
-              <option value="Hindi">Zoho CRM API</option>
-              <option value="Hindi">Hubspot CRM</option>
-              <option value="Hindi">Salesforce API</option>
-              <option value="Hindi">Microsoft Dynamics API</option>
-              <option value="Hindi">Excel and Google Sheets</option>
-              <option value="Hindi">Jira Cloud</option>
-              <option value="Hindi">Google Drive</option>
-              <option value="Hindi">Dropbox</option>
-              <option value="Hindi">One drive – sharepoints</option>
-              <option value="Hindi">Outlook</option>
-              <option value="Hindi">Clickup</option>
-            </select>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-fill text-uppercase">Add</button>
-            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="modal fade" id="addChartButtonModal" tabindex="-1" aria-labelledby="addChartButtonModalLabel"
       aria-hidden="true">
-      <div class="modal-dialog width-50 wsm-95 add-new-chart">
+      <div class="modal-dialog width-50 wsm-95">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="addChartButtonModalLabel">Add New Chart</h5>
+            <h5 class="modal-title" id="addChartButtonModalLabel">Add Chart</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            <div class="d-flex">
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/vertical-bar-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">vertical Bar Chart</h6>
+          <div class="modal-body bg-light customer-add-form">
+            <form id="regForm" class="regForm regForm-1">
+              <div class="all-button">
+                <div class="step">
+                  <p>Charts Select</p>
+                </div>
+                <div class="step">
+                  <p>Select Data</p>
+                </div>
               </div>
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/horizontal-bar-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">horizontal bar chart</h6>
+              <!-- One "tab" for each step in the form: -->
+              <div class="tab">
+                <div class="d-flex">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                    <img src="./assets/images/vertical-bar-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">vertical Bar Chart</h6>
+                  </div>
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                    <img src="./assets/images/horizontal-bar-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">horizontal bar chart</h6>
+                  </div>
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                    <img src="./assets/images/stacked-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">stacked chart</h6>
+                  </div>
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                    <img src="./assets/images/donut-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">Donut chart</h6>
+                  </div>
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                    <img src="./assets/images/line-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">line chart</h6>
+                  </div>
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                    <img src="./assets/images/composite-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">composite chart</h6>
+                  </div>
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 cursor-pointer">
+                    <img src="./assets/images/area-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">Area chart</h6>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                    <img src="./assets/images/journey-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">journey chart</h6>
+                  </div>
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                    <img src="./assets/images/pivot-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">pivot chart</h6>
+                  </div>
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                    <img src="./assets/images/word-cloud.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">word cloud</h6>
+                  </div>
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                    <img src="./assets/images/trend-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">trend chart</h6>
+                  </div>
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                    <img src="./assets/images/gauge-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">gauge chart</h6>
+                  </div>
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                    <img src="./assets/images/funnel-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">funnel chart</h6>
+                  </div>
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 cursor-pointer">
+                    <img src="./assets/images/kpi-chart.png" alt="" class="width-50px mb-3">
+                    <h6 class="text-uppercase text-small">kpi chart</h6>
+                  </div>
+                </div>
               </div>
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/stacked-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">stacked chart</h6>
+              <div class="tab">
+                <label for="name" class="fw-bold mt-3 mb-2">Chart Title</label>
+                <input type="text" name="name" id="name" placeholder="Enter a Chart Title"
+                  class="d-block w-100 border border-2 rounded px-4 py-2">
+                <label for="name" class="fw-bold mt-3 mb-2">Select Data Source</label>
+                <div class="dropdown select-dropdown">
+                  <button class="btn dropdown-toggle pe-5 w-100 bg-light-gray border border-2" type="button"
+                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Customer Name
+                  </button>
+                  <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Database</a></li>
+                    <li><a class="dropdown-item show-dropdown" href="#">API</a></li>
+                  </ul>
+                </div>
+                <label for="name" class="fw-bold mt-3 mb-2">Select Data</label>
+                <div class="select-list">
+                  <div class="title">Select Date</div>
+                  <div class="select-options">
+                    <div class="option d-flex">
+                      <input type="checkbox" class="d-block" name="vehicle" id="option1" value="" />
+                      <label for="option1">Number of Project</label>
+                    </div>
+                    <div class="option d-flex">
+                      <input type="checkbox" class="d-block" name="vehicle" id="option2" />
+                      <label for="option2">Device ID</label>
+                    </div>
+                    <div class="option d-flex">
+                      <input type="checkbox" class="d-block" name="vehicle" id="option3" />
+                      <label for="option3">Token</label>
+                    </div>
+                    <div class="option d-flex">
+                      <input type="checkbox" class="d-block" name="vehicle" id="option4" />
+                      <label for="option4">Option 1</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="api-drop-down">
+                  <label for="name" class="fw-bold mt-3 mb-2">Select Data</label>
+                  <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                    <option value="Manager"></option>
+                    <option value="Urdu">Zendesk Sell API</option>
+                    <option value="Hindi">Zoho CRM API</option>
+                    <option value="Hindi">Hubspot CRM</option>
+                    <option value="Hindi">Salesforce API</option>
+                    <option value="Hindi">Microsoft Dynamics API</option>
+                    <option value="Hindi">Excel and Google Sheets</option>
+                    <option value="Hindi">Jira Cloud</option>
+                    <option value="Hindi">Google Drive</option>
+                    <option value="Hindi">Dropbox</option>
+                    <option value="Hindi">One drive – sharepoints</option>
+                    <option value="Hindi">Outlook</option>
+                    <option value="Hindi">Clickup</option>
+                  </select>
+                </div>
               </div>
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/donut-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">Donut chart</h6>
-              </div>
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/line-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">line chart</h6>
-              </div>
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/composite-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">composite chart</h6>
-              </div>
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/area-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">Area chart</h6>
-              </div>
-            </div>
-            <div class="d-flex">
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/journey-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">journey chart</h6>
-              </div>
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/pivot-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">pivot chart</h6>
-              </div>
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/word-cloud.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">word cloud</h6>
-              </div>
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/trend-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">trend chart</h6>
-              </div>
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/gauge-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">gauge chart</h6>
-              </div>
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/funnel-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">funnel chart</h6>
-              </div>
-              <div class="border border-2 rounded w-100 text-center p-2 mb-3 cursor-pointer" data-bs-toggle="modal"
-                data-bs-target="#chartAddModal">
-                <img src="./assets/images/kpi-chart.png" alt="" class="width-50px mb-3">
-                <h6 class="text-uppercase text-small">kpi chart</h6>
-              </div>
-            </div>
+            </form>
           </div>
           <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-fill text-uppercase">Save</button>
-            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" id="prevBtn" onclick="nextPrev(-1)">Cancel</button>
+            <button type="button" class="btn btn-secondary" id="nextBtn" onclick="nextPrev(1)">Next</button>
           </div>
         </div>
       </div>
@@ -1771,6 +1779,9 @@
   <script src="./assets/js/graphs-popup.js"></script>
   <script src="./assets/js/graphs.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/popup-form.js"></script>
+
+
   <script>
     $('#chartMenu').removeClass('show').removeClass('d-block').removeClass('opacity-0');
 
@@ -2002,9 +2013,50 @@
         },
 
       });
-
-      // *************
     };
+
+    (function ($) {
+      $.fn.multiselect = function () {
+
+        var selector = this;
+        var options = $.extend({
+          onChange: function () { }
+        }, arguments[0] || {});
+
+        activate();
+
+        /////////
+
+        function activate() {
+
+          //events
+          $(selector).find('.title').on('click', function (e) {
+            $(this).parent().find('.select-options').toggle();
+          });
+
+          $(selector).find('input[type="checkbox"]').change(function (e) {
+            options.onChange.call(this);
+          });
+
+        }
+      };
+
+    }(jQuery));
+
+    $(document).ready(function () {
+      $('.select-list').multiselect({
+        onChange: updateTable
+      });
+    });
+
+    function updateTable() {
+      var checkboxValue = $(this).val();
+      var isChecked = $(this).is(':checked');
+    }
+
+    $(".show-dropdown").click(function () {
+      $(".api-drop-down").addClass("d-block");
+    });
   </script>
 </body>
 

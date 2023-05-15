@@ -96,3 +96,49 @@
     }
   }
 }
+
+
+.select-list{
+  .title {
+    display: inline-block;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #eaeaec;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    width: 100%;
+    &::after {
+      display: inline-block;
+      content: '>';
+      margin-left: 15px;
+      font-size: 11px;
+      transform: rotate(90deg) scale(1, 2);
+    }
+    &:hover {
+      background: #eaeaec;
+    }
+  }
+  .select-options {
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    z-index: 500;
+    border: 1px solid #eaeaec;
+    background: #fff;
+    width: 90%;
+    .option{
+      label {
+        display: inline-block;
+        padding: 10px 30px 10px 10px;
+      }
+      input {
+        margin: 10px 0 12px 15px;
+        width: 15px;
+        height: 15px;
+      }
+      &:hover {
+        background: #eaeaec;
+      }
+    } 
+  }
+}

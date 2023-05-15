@@ -255,6 +255,114 @@
                 <p class="text-light-gray">Net profit = total incoming – expenses</p>
               </div>
             </div>
+            <div class="col-md-6 mt-3">
+              <div class="chart">
+                <div class="chart-box h-100 d-flex justify-content-between flex-column">
+                  <div class="chart-head d-md-flex justify-content-between align-items-center">
+                    <div class="chart-title">
+                      <h3 class="fw-600">Total Project</h3>
+                    </div>
+                    <div class="btn-group">
+                      <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown"
+                        aria-expanded="true">
+                        <div class="dots">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu"
+                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(24px, 18px);"
+                        data-popper-placement="bottom-start">
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                            Edit</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                            Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="chart-grap d-flex">
+                    <div>
+                      <canvas id="totalProjectCart" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                        height="160"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3">
+              <div class="chart">
+                <div class="chart-box h-100 d-flex justify-content-between flex-column">
+                  <div class="chart-head d-md-flex justify-content-between align-items-center">
+                    <div class="chart-title">
+                      <h3 class="fw-600">Total Customer</h3>
+                    </div>
+                    <div class="btn-group">
+                      <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown"
+                        aria-expanded="true">
+                        <div class="dots">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu"
+                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(24px, 18px);"
+                        data-popper-placement="bottom-start">
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                            Edit</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                            Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="chart-grap d-flex">
+                    <div>
+                      <canvas id="totalCustomerCart" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                        height="160"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3">
+              <div class="chart">
+                <div class="chart-box h-100 d-flex justify-content-between flex-column">
+                  <div class="chart-head d-md-flex justify-content-between align-items-center">
+                    <div class="chart-title">
+                      <h3 class="fw-600">Total Amounts</h3>
+                    </div>
+                    <div class="btn-group">
+                      <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown"
+                        aria-expanded="true">
+                        <div class="dots">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu"
+                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(24px, 18px);"
+                        data-popper-placement="bottom-start">
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                            Edit</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                            Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="chart-grap d-flex">
+                    <div>
+                      <canvas id="totalAmountsCart" class="wsm-100"
+                        style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                        height="160"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -477,7 +585,153 @@
 ================================================== -->
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script>
+    const totalProjectCart = document.getElementById("totalProjectCart");
+
+    const totalProjectCart_1 = new Chart(totalProjectCart, {
+      type: "bar",
+      data: {
+        labels: ["1", "2", "3", "4", "5", "6", "7"],
+        datasets: [
+          {
+            label: "# of Votes",
+            data: [3, 13, 9, 12, 13, 8, 20],
+            borderWidth: 0,
+            backgroundColor: "#775da6",
+            barThickness: 20,
+            backgroundColor: "#775da6",
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+
+        scales: {
+          x: {
+            // display: false,
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: true,
+            },
+          },
+          y: {
+            // display: false,
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: true,
+            },
+          },
+        },
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+      },
+    });
+
+    const totalCustomerCart = document.getElementById("totalCustomerCart");
+
+    const totalCustomerCart_1 = new Chart(totalCustomerCart, {
+      type: "bar",
+      data: {
+        labels: ["1", "2", "3", "4", "5", "6", "7"],
+        datasets: [
+          {
+            label: "# of Votes",
+            data: [3, 13, 9, 12, 13, 8, 20],
+            borderWidth: 0,
+            backgroundColor: "#775da6",
+            barThickness: 20,
+            backgroundColor: "#775da6",
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+
+        scales: {
+          x: {
+            // display: false,
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: true,
+            },
+          },
+          y: {
+            // display: false,
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: true,
+            },
+          },
+        },
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+      },
+    });
+
+    const totalAmountsCart = document.getElementById("totalAmountsCart");
+
+    const totalAmountsCart_1 = new Chart(totalAmountsCart, {
+      type: "bar",
+      data: {
+        labels: ["1", "2", "3", "4", "5", "6", "7"],
+        datasets: [
+          {
+            label: "# of Votes",
+            data: [3, 13, 9, 12, 13, 8, 20],
+            borderWidth: 0,
+            backgroundColor: "#775da6",
+            barThickness: 20,
+            backgroundColor: "#775da6",
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+
+        scales: {
+          x: {
+            // display: false,
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: true,
+            },
+          },
+          y: {
+            // display: false,
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: true,
+            },
+          },
+        },
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+      },
+    });
+  </script>
 </body>
 
 </html>

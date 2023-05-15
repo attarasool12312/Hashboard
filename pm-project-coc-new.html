@@ -27,7 +27,6 @@
 </head>
 
 <body>
-
   <section class="section-panel">
     <div class="admin-wrapper">
       <aside class="aside">
@@ -77,9 +76,9 @@
                 <i class="icon icon-sales"></i> <span>Financial Performance</span>
               </a>
               <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./pm-revenue-plan.html"><i
+                <li><a class="dropdown-item panel_link " href="./pm-revenue-plan.html"><i
                       class="icon icon-sales"></i><span>Revenue Plan</span></a></li>
-                <li><a class="dropdown-item panel_link " href="./pm-project-cocs.html"><i
+                <li><a class="dropdown-item panel_link active_panel" href="./pm-project-cocs.html"><i
                       class="icon icon-sales"></i><span>COCs Overview</span></a></li>
                 <li><a class="dropdown-item panel_link " href="./pm-project-pos.html"><i
                       class="icon icon-sales"></i><span>Project POs</span></a></li>
@@ -200,177 +199,151 @@
           </div>
         </div>
         <div class="container">
-          <div class="page-main-title">
+          <div class="page-main-title align-items-md-center">
             <div class="heading">
-              <h1>Revenue Plan Detail</h1>
+              <h1>Add New COC</h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="sm-box h-100 bg-white p-3 cursor-pointer box-hover" data-bs-toggle="modal"
-                data-bs-target="#leftBoxModal">
-                <div class="sm-box-desc d-flex align-items-center mb-2">
-                  <span class=""><i class="icon icon-project-cirlce bg-cover"></i></span>
-                  <div class="ms-2">
-                    <div class="d-flex align-items-center">
-                      <h4 class="fw-bold">75%</h4>
-                      <p class="text-success text-small"><i class="icon icon-up-arrow"></i> +5.10%</p>
-                    </div>
-                    <p class="text-light-gray">Completion </p>
+          <div class="col-12">
+            <div class="chart">
+              <div class="row border-top border-bottom">
+                <div class="col-md-6 py-3">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="text-light-gray">Customer name</p>
+                    <select name="Role" id="Role"
+                      class="d-block border border-2 rounded px-2 py-2 text-light-gray w-50">
+                      <option value="Manager">Head Office</option>
+                      <option value="Manager">Admin</option>
+                      <option value="Urdu">Extended</option>
+                      <option value="Hindi">Standard</option>
+                      <option value="Punjabi">Limited</option>
+                    </select>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-0">
-              <div class="sm-box h-100 bg-white p-3 cursor-pointer box-hover" data-bs-toggle="modal"
-                data-bs-target="#centerBoxModal">
-                <div class="sm-box-desc d-flex align-items-center mb-2">
-                  <span class=""><i class="icon icon-project-cirlce-yellow bg-cover"></i></span>
-                  <div class="ms-2">
-                    <h4 class="fw-bold">$124.800</h4>
+                  <div class="d-flex align-items-center justify-content-between mt-3">
                     <p class="text-light-gray">Project Value</p>
+                    <input type="text" name="name" id="name" placeholder="Project Value"
+                      class="d-block w-50 border border-2 rounded px-2 py-2">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mt-3">
+                    <p class="text-light-gray">Issue date</p>
+                    <input type="date" name="name" id="name" placeholder="Type item name"
+                      class="d-block w-50 border border-2 rounded px-2 py-2">
+                  </div>
+                </div>
+                <div class="col-md-6 py-3 border-start border-sm-none">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="text-light-gray">Project name</p>
+                    <input type="text" name="name" id="name" placeholder="Type item name"
+                      class="d-block w-50 border border-2 rounded px-2 py-2">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mt-3">
+                    <p class="text-light-gray">Project Manager</p>
+                    <input type="text" name="name" id="name" placeholder="Project Manager"
+                      class="d-block w-50 border border-2 rounded px-2 py-2">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mt-3">
+                    <p class="text-light-gray">Payment date</p>
+                    <input type="date" name="name" id="name" placeholder="Type item name"
+                      class="d-block w-50 border border-2 rounded px-2 py-2">
+                  </div>
+                </div>
+              </div>
+              <div class="invoice-table tablepanel mt-3 invoice-table-product p-0">
+                <table class="table table-striped" id="myTable">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item Name</th>
+                      <th scope="col">Unit Price</th>
+                      <th scope="col">Currency</th>
+                      <th scope="col">Quantity</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody class="right-content interest-body" style="display: table-row-group;">
+                    <tr>
+                      <td scope="row" data-label="Item Name">
+                        <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                          <img src="./assets/images/product-2.png" alt="" class="rounded-0">
+                          <div class="ms-3">
+                            <h6 class="fw-500 text-sm">Cotton t-shirt - White/ Medium</h6>
+                            <p class="text-fill text-small">Add a note</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Unit Price">T001-W-L</td>
+                      <td data-label="Currency">45</td>
+                      <td data-label="Quantity">75</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" data-label="Item Name">
+                        <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                          <img src="./assets/images/product-4.png" alt="" class="rounded-0">
+                          <div class="ms-3">
+                            <h6 class="fw-500 text-sm">Sweetshirt Hoodie - White/ Medium</h6>
+                            <p class="text-fill text-small">Add a note</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Unit Price">T001-W-L</td>
+                      <td data-label="Currency">45</td>
+                      <td data-label="Quantity">75</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" data-label="Item Name">
+                        <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                          <img src="./assets/images/product-5.png" alt="" class="rounded-0">
+                          <div class="ms-3">
+                            <h6 class="fw-500 text-sm">Cocktail Dress - White/ Medium</h6>
+                            <p class="text-fill text-small">Add a note</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-label="Unit Price">T001-W-L</td>
+                      <td data-label="Currency">45</td>
+                      <td data-label="Quantity">75</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td data-label="Item Name"><input type="text" name="name[]" placeholder="Type item name" class="d-block w-100 border border-2 rounded px-2 py-2"></td>
+                      <td data-label="Unit Price"><input type="text" name="sku[]" placeholder="SKU" class="d-block w-100 border border-2 rounded px-2 py-2"></td>
+                      <td data-label="Currency">
+                        <select name="Role" id="Role"
+                        class="d-block border border-2 rounded px-2 py-2 text-light-gray w-100">
+                        <option value="Manager">Head Office</option>
+                        <option value="Manager">Admin</option>
+                        <option value="Urdu">Extended</option>
+                        <option value="Hindi">Standard</option>
+                        <option value="Punjabi">Limited</option>
+                      </select>
+                      </td>
+                      <td data-label="Quantity"><input type="number" name="actual[]" placeholder="20.00" class="d-block w-100 border border-2 rounded px-2 py-2"></td>
+                      <td><button class="btn fs-5 text-fill ms-md-2 mt-3 mt-md-0" onclick="addRow()">+</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="row align-items-center my-3 mx-auto border-top border-bottom">
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Transform Project
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex align-items-center justify-content-md-end upload-files">
+                    <p class="text-light-gray">Add Attachment</p>
+                    <div class="uploadfile w-fit">
+                      <div class="text w-fit m-0"><label for="fileupload" class="cursor-pointer fw-bold"><i class="icon icon-blue-added-button"></i></label></div>
+                      <input id="fileupload" type="file" class="fileupload d-none">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mt-3 mt-md-0">
-              <div class="sm-box h-100 bg-white p-3 cursor-pointer box-hover">
-                <div class="sm-box-desc d-flex align-items-center mb-2">
-                  <span class=""><i class="icon icon-project-cirlce-yellow bg-cover"></i></span>
-                  <div class="ms-2">
-                    <div class="d-flex align-items-center">
-                      <h4 class="fw-bold">63%</h4>
-                      <p class="text-success text-small"><i class="icon icon-up-arrow"></i> +5.10%</p>
-                    </div>
-                    <p class="text-light-gray text-small">Project satisfaction`</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="invoice-table tablepanel mt-3">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">Classification</th>
-                  <th scope="col">Total Actual Revenue</th>
-                  <th scope="col">Total Billed</th>
-                  <th scope="col">YTD Planned Revenue</th>
-                  <th scope="col">Margin %</th>
-                  <th scope="col">Profit margin</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody class="right-content interest-body" style="display: table-row-group;">
-                <tr>
-                  <td scope="row" data-label="Loged by">
-                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                      <img src="./assets/images/prof-img-1.png" alt="">
-                      <h6 class="ms-3 fw-500 text-sm">Project scope 1</h6>
-                    </div>
-                  </td>
-                  <td data-label="PM Name">120,000</td>
-                  <td data-label="Project Value">2.5m</td>
-                  <td data-label="Actual Revenue">800.000</td>
-                  <td data-label="Cost">800.000</td>
-                  <td data-label="Revenue Balance">800.00</td>
-                  <td class="upload-files">
-                    <div class="uploadfile">
-                      <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i
-                            class="icon icon-blue-added-button"></i></label></div>
-                      <input id="fileupload" type="file" class="fileupload d-none">
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row" data-label="Loged by">
-                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                      <img src="./assets/images/ryan-stevens.jpg" alt="">
-                      <h6 class="ms-3 fw-500 text-sm">Project scope 2</h6>
-                    </div>
-                  </td>
-                  <td data-label="PM Name">120,000</td>
-                  <td data-label="Project Value">23.3m</td>
-                  <td data-label="Actual Revenue">800.000</td>
-                  <td data-label="Cost">800.000</td>
-                  <td data-label="Revenue Balance">800.00</td>
-                  <td class="upload-files">
-                    <div class="uploadfile">
-                      <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i
-                            class="icon icon-blue-added-button"></i></label></div>
-                      <input id="fileupload" type="file" class="fileupload d-none">
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row" data-label="Loged by">
-                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                      <img src="./assets/images/loretta-myers.jpg" alt="">
-                      <h6 class="ms-3 fw-500 text-sm">Project scope 3</h6>
-                    </div>
-                  </td>
-                  <td data-label="PM Name">120,000</td>
-                  <td data-label="Project Value">200k</td>
-                  <td data-label="Actual Revenue">800.000</td>
-                  <td data-label="Cost">800.000</td>
-                  <td data-label="Revenue Balance">800.00</td>
-                  <td class="upload-files">
-                    <div class="uploadfile">
-                      <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i
-                            class="icon icon-blue-added-button"></i></label></div>
-                      <input id="fileupload" type="file" class="fileupload d-none">
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row" data-label="Loged by">
-                    <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                      <img src="./assets/images/carrie-aguilar.jpg" alt="">
-                      <h6 class="ms-3 fw-500 text-sm">Project scope 4</h6>
-                    </div>
-                  </td>
-                  <td data-label="PM Name">120,000</td>
-                  <td data-label="Project Value">200k</td>
-                  <td data-label="Actual Revenue">800.000</td>
-                  <td data-label="Cost">800.000</td>
-                  <td data-label="Revenue Balance">800.00</td>
-                  <td class="upload-files">
-                    <div class="uploadfile">
-                      <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold"><i
-                            class="icon icon-blue-added-button"></i></label></div>
-                      <input id="fileupload" type="file" class="fileupload d-none">
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row" data-label="Scope Name">
-                    <input type="text" name="name" id="name" placeholder="Item Name"
-                      class="d-block w-100 border border-2 rounded px-2 py-1">
-                  </td>
-                  <td data-label="Quantity">
-                    <input type="text" name="name" id="name" placeholder="SKL"
-                      class="d-block w-100 border border-2 rounded px-2 py-1">
-                  </td>
-                  <td data-label="Available">
-                    <input type="text" name="name" id="name" placeholder="20.0"
-                      class="d-block w-100 border border-2 rounded px-2 py-1">
-                  </td>
-                  <td data-label="Price ($)">
-                    <input type="text" name="name" id="name" placeholder="20.0"
-                      class="d-block w-100 border border-2 rounded px-2 py-1">
-                  </td>
-                  <td data-label="Discount">
-                    <input type="text" name="name" id="name" placeholder="20.0"
-                      class="d-block w-100 border border-2 rounded px-2 py-1">
-                  </td>
-                  <td data-label="Tax">
-                    <input type="text" name="name" id="name" placeholder="20.00"
-                      class="d-block w-100 border border-2 rounded px-2 py-1">
-                  </td>
-                  <td class="cursor-pointer">X</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </main>
@@ -588,12 +561,46 @@
       </div>
     </div>
   </section>
-
   <!-- JavaScript
 ================================================== -->
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src='https://cdn.ckeditor.com/ckeditor5/28.0.0/classic/ckeditor.js'></script>
   <script src="./assets/js/main.js"></script>
+
+  <script>
+      function addRow() {
+        // Get the table element
+        const table = document.getElementById("myTable");
+
+        // Create a new row
+        const newRow = table.insertRow();
+
+        // Create the cells for the row
+        const nameCell = newRow.insertCell(0);
+        const skuCell = newRow.insertCell(1);
+        const targetedCell = newRow.insertCell(2);
+        const actualCell = newRow.insertCell(3);
+        const actionCell = newRow.insertCell(4);
+
+        // Add the input fields and buttons to the cells
+        nameCell.innerHTML = '<input type="text" name="name[]" placeholder="Type item name" class="d-block w-100 border border-2 rounded px-2 py-2">';
+        skuCell.innerHTML = '<input type="text" name="sku[]" placeholder="SKU" class="d-block w-100 border border-2 rounded px-2 py-2">';
+        targetedCell.innerHTML = '<select name="Role" id="Role" class="d-block border border-2 rounded px-2 py-2 text-light-gray w-100"> <option value="Manager">Head Office</option> <option value="Manager">Admin</option> <option value="Urdu">Extended</option> <option value="Hindi">Standard</option> <option value="Punjabi">Limited</option> </select>';
+        actualCell.innerHTML = '<input type="number" name="actual[]" placeholder="20.00" class="d-block w-100 border border-2 rounded px-2 py-2">';
+        actionCell.innerHTML = '<button class="btn fs-5 text-fill ms-md-2 mt-3 mt-md-0" onclick="addRow()">+</button> <button class="btn fs-5 text-fill ms-md-2 mt-3 mt-md-0" onclick="removeRow(this)">X</button>';
+      }
+
+      function removeRow(button) {
+        // Get the table row element
+        const row = button.parentNode.parentNode;
+
+        // Remove the row from the table
+        row.parentNode.removeChild(row);
+      }
+  </script>
+
 </body>
 
 </html>

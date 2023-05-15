@@ -2388,6 +2388,10 @@ h6.text-sm {
   color: #70B6C1 !important;
 }
 
+.api-drop-down {
+  display: none;
+}
+
 /*--------------*\
     Boxes Section
 \*--------------*/
@@ -4231,6 +4235,47 @@ ul.head-btn .slider-btn .btn.ouline-white {
   font-size: 13px;
   font-weight: 500;
   color: #898989;
+}
+
+.select-list .title {
+  display: inline-block;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #eaeaec;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  width: 100%;
+}
+.select-list .title::after {
+  display: inline-block;
+  content: ">";
+  margin-left: 15px;
+  font-size: 11px;
+  transform: rotate(90deg) scale(1, 2);
+}
+.select-list .title:hover {
+  background: #eaeaec;
+}
+.select-list .select-options {
+  margin-top: 5px;
+  display: none;
+  position: absolute;
+  z-index: 500;
+  border: 1px solid #eaeaec;
+  background: #fff;
+  width: 90%;
+}
+.select-list .select-options .option label {
+  display: inline-block;
+  padding: 10px 30px 10px 10px;
+}
+.select-list .select-options .option input {
+  margin: 10px 0 12px 15px;
+  width: 15px;
+  height: 15px;
+}
+.select-list .select-options .option:hover {
+  background: #eaeaec;
 }
 
 .table {

@@ -205,7 +205,7 @@
               <h1>Project COCs</h1>
             </div>
             <div class="page-sales-btn">
-              <button class="btn btn-empty bg-white" data-bs-toggle="modal" data-bs-target="#cocModal">Add New
+              <button class="btn btn-empty bg-white" onclick="window.location.href='./pm-project-coc-new.html'">Add New
                 COC</button>
               <button type="button" class="btn ouline-white btn-fill ms-md-3" data-bs-toggle="modal"
                 data-bs-target="#businessForm">Transfer</button>
@@ -371,74 +371,49 @@
               </div>
             </div>
             <div class="col-12 mb-4">
-              <div class="bg-white rounded py-4">
-                <h6 class="ps-4 border-bottom pb-4">waiting approval (3)</h6>
-                <div class="row align-items-center py-3 border-bottom w-100 m-0">
-                  <div class="col-12 col-md-5 ps-0 ps-md-5 text-center text-md-start">
-                    <h6>Project Name</h6>
-                    <p class="text-light-gray text-small">Created by : Account Name</p>
-                  </div>
-                  <div class="col-12 col-md-2 mt-3 mt-md-0 text-center text-md-start">
-                    <button class="btn bg-danger text-white px-5">Reject</button>
-                  </div>
-                  <div class="col-12 col-md-2 mt-3 mt-md-0 text-center text-md-start">
-                    <button class="btn bg-primary text-white px-5 ms-0 ms-md-3">Accept</button>
-                  </div>
-                  <div class="col-12 col-md-2 text-center text-md-end mt-3 mt-md-0">
-                    <p class="ms-3 fw-600">12.90</p>
-                  </div>
-                  <div class="col-12 col-md-1 text-end mt-3 mt-md-0">
-                    <div class="dots d-flex justify-content-center justify-content-md-start">
-                      <span></span>
-                      <span class="m-0 ms-1"></span>
-                      <span class="m-0 ms-1"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="row align-items-center py-3 border-bottom w-100 m-0">
-                  <div class="col-12 col-md-5 ps-0 ps-md-5 text-center text-md-start">
-                    <h6>Project Name</h6>
-                    <p class="text-light-gray text-small">Created by : Account Name</p>
-                  </div>
-                  <div class="col-12 col-md-2 mt-3 mt-md-0 text-center text-md-start">
-                    <button class="btn bg-danger text-white px-5">Reject</button>
-                  </div>
-                  <div class="col-12 col-md-2 mt-3 mt-md-0 text-center text-md-start">
-                    <button class="btn bg-primary text-white px-5 ms-3">Accept</button>
-                  </div>
-                  <div class="col-12 col-md-2 text-center text-md-end mt-3 mt-md-0">
-                    <p class="ms-3 fw-600">230.00</p>
-                  </div>
-                  <div class="col-12 col-md-1 text-end mt-3 mt-md-0">
-                    <div class="dots d-flex justify-content-center justify-content-md-start">
-                      <span></span>
-                      <span class="m-0 ms-1"></span>
-                      <span class="m-0 ms-1"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="row align-items-center py-3 border-bottom w-100 m-0">
-                  <div class="col-12 col-md-5 ps-0 ps-md-5 text-center text-md-start">
-                    <h6>Project Name</h6>
-                    <p class="text-light-gray text-small">Created by : Account Name</p>
-                  </div>
-                  <div class="col-12 col-md-2 mt-3 mt-md-0 text-center text-md-start">
-                    <button class="btn bg-danger text-white px-5">Reject</button>
-                  </div>
-                  <div class="col-12 col-md-2 mt-3 mt-md-0 text-center text-md-start">
-                    <button class="btn bg-primary text-white px-5 ms-3">Accept</button>
-                  </div>
-                  <div class="col-12 col-md-2 text-center text-md-end mt-3 mt-md-0">
-                    <p class="ms-3 fw-600">989.00</p>
-                  </div>
-                  <div class="col-12 col-md-1 text-end mt-3 mt-md-0">
-                    <div class="dots d-flex justify-content-center justify-content-md-start">
-                      <span></span>
-                      <span class="m-0 ms-1"></span>
-                      <span class="m-0 ms-1"></span>
-                    </div>
-                  </div>
-                </div>
+              <div class="invoice-table mt-4 tablepanel">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Project Name</th>
+                      <th scope="col">Customer name</th>
+                      <th scope="col">States</th>
+                      <th scope="col">Project Value</th>
+                      <th scope="col">Project Manager</th>
+                      <th scope="col">Issue date</th>
+                      <th scope="col">Payment date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row" data-label="Project Name">PM Management</td>
+                      <td data-label="Customer name">Seattle, Washington</td>
+                      <td data-label="States"><span class="finalized-status">Approved</span></td>
+                      <td data-label="Project Value">566k</td>
+                      <td data-label="Project Manager">Washington</td>
+                      <td data-label="Issue date">16 Mar 2022</td>
+                      <td data-label="Payment date">16 April 2022</td>
+                    </tr>
+                    <tr>
+                      <td scope="row" data-label="Project Name">CRM Management</td>
+                      <td data-label="Customer name">Seattle, Washington</td>
+                      <td data-label="States"><span class="finalized-status">Reject</span></td>
+                      <td data-label="Project Value">566k</td>
+                      <td data-label="Project Manager">Washington</td>
+                      <td data-label="Issue date">16 Mar 2022</td>
+                      <td data-label="Payment date">16 April 2022</td>
+                    </tr>
+                    <tr>
+                      <td scope="row" data-label="Project Name">HR Management</td>
+                      <td data-label="Customer name">Seattle, Washington</td>
+                      <td data-label="States"><span class="finalized-status">Draf</span></td>
+                      <td data-label="Project Value">566k</td>
+                      <td data-label="Project Manager">Washington</td>
+                      <td data-label="Issue date">16 Mar 2022</td>
+                      <td data-label="Payment date">16 April 2022</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="col-md-6 mb-4">
@@ -560,94 +535,6 @@
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="cocModal" tabindex="-1" aria-labelledby="cocModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="cocModalLabel">Add New COC</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body upload-files">
-            <form>
-              <label for="full-name" class="fw-bold mb-2 mt-4">Customer name</label>
-              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                <option value="Member">Please insert customer name</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <label for="full-name" class="fw-bold mb-2 mt-4">Project name</label>
-              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                <option value="Member">Please insert Project name</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <label for="full-name" class="fw-bold mb-2 mt-4">Project ID</label>
-              <input type="text" placeholder="Please insert Project ID"
-                class="d-block border border-2 rounded w-100 py-2 px-3">
-              <label for="full-name" class="fw-bold mb-2 mt-4">Project Manager</label>
-              <select name="Member" id="Member" class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                <option value="Member">Select Project manager</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">Issue date</label>
-                  <input type="date" placeholder="Please select date"
-                    class="d-block border border-2 rounded w-100 py-2 px-3">
-                </div>
-                <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">Payment date</label>
-                  <input type="text" placeholder="Please select date"
-                    class="d-block border border-2 rounded w-100 py-2 px-3">
-                </div>
-              </div>
-              <label for="full-name" class="fw-bold mb-2 mt-4">Item 1</label>
-              <input type="text" placeholder="Type Item 1" class="d-block border border-2 rounded w-100 py-2 px-3">
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">Unit Price</label>
-                  <input type="text" placeholder="Unit Price" class="d-block border border-2 rounded w-100 py-2 px-3">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">Quantity</label>
-                  <input type="text" placeholder="Quantity" class="d-block border border-2 rounded w-100 py-2 px-3">
-                </div>
-                <div class="col-md-6">
-                  <label for="full-name" class="fw-bold mb-2 mt-4">Currency</label>
-                  <select name="Member" id="Member"
-                    class="d-block border border-2 rounded w-100 py-2 px-3 text-light-gray">
-                    <option value="Member">Unit Price</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-              </div>
-              <div class="upload-files">
-                <div class="uploadfile">
-                  <div class="text w-fit"><label for="fileupload" class="cursor-pointer"><i
-                        class="icon icon-blue-added-button"></i> Add Item</label></div>
-                  <input id="fileupload" type="file" class="fileupload">
-                </div>
-              </div>
-              <a href="" class="text-fill d-block text-decoration-none text-small">+ upload attachments</a>
-              <div class="form-check mt-3">
-                <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Transfer To Finance
-                </label>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-fill text-uppercase">Add</button>
-            <button type="button" class="btn btn-secondary text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>

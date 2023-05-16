@@ -2392,6 +2392,10 @@ h6.text-sm {
   display: none;
 }
 
+.hiddi-chart {
+  display: none;
+}
+
 /*--------------*\
     Boxes Section
 \*--------------*/

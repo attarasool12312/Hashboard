@@ -29,15 +29,28 @@ $(document).ready(function () {
     $('.aside').toggleClass('is-active');
   });
   $('.panel_link').click(function () {
-    $('.panel_link').removeClass("active_panel");
-    $(this).addClass("active_panel");
+    $('.panel_link').removeClass("active-button");
+    $(this).addClass("active-button");
+  });
+
+  $('.chart-button').click(function () {
+    $('.chart-button').removeClass("active-button");
+    $(this).addClass("active-button");
   });
 });
 
-$(".open-button").click(function(){
+$(".open-button").click(function () {
   $(".aside").toggleClass("open")
 });
 
+$(document).ready(function () {
+  $('.dropdown-item').click(function (e) {
+    e.preventDefault();
+    const selectedOption = $(this).text();
+    const dropdownButton = $(this).closest('.dropdown').find('.btn');
+    dropdownButton.text(selectedOption);
+  });
+});
 
 let uploadBotton = document.getElementById("upload-button");
 let chosenImage = document.getElementById("chosen-image");
@@ -62,20 +75,20 @@ uploadBotton.onchange = () => {
 jQuery(($) => {
   $('.attachment input[type="file"]')
     .on('change', (event) => {
-    let el = $(event.target).closest('.attachment').find('.btn-file');
-    
-    el
-      .find('.btn-file__actions__item')
-      .css({
-        'padding': '20px'
-      });
-    
-    el
-      .find('.btn-file__preview')
-      .css({
-        'background-image': 'url(' + window.URL.createObjectURL(event.target.files[0]) + ')'
-      });
-  });
+      let el = $(event.target).closest('.attachment').find('.btn-file');
+
+      el
+        .find('.btn-file__actions__item')
+        .css({
+          'padding': '20px'
+        });
+
+      el
+        .find('.btn-file__preview')
+        .css({
+          'background-image': 'url(' + window.URL.createObjectURL(event.target.files[0]) + ')'
+        });
+    });
 });
 
 

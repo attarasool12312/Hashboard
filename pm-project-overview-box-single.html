@@ -1654,6 +1654,44 @@
                 </div>
               </div>
             </div>
+            <div class="col-md-6 hiddi-chart mt-3">
+              <div class="chart">
+                <div class="chart-box h-100 d-flex justify-content-between flex-column">
+                  <div class="chart-head d-md-flex justify-content-between align-items-center">
+                    <div class="chart-title">
+                      <h3 class="fw-600">Random Chart</h3>
+                    </div>
+                    <div class="d-flex justify-content-between flex-column">
+                      <div class="d-flex align-items-start justify-content-md-end mt-3 mt-md-0 mb-md-0 mb-3">
+                        <div class="btn-group">
+                          <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown"
+                            aria-expanded="true">
+                            <div class="dots">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                          </button>
+                          <ul class="dropdown-menu"
+                            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(24px, 18px);"
+                            data-popper-placement="bottom-start">
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
+                                Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
+                                Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <canvas id="lineChartOver1" class="wsm-100"
+                      style="display: block; box-sizing: border-box; height: 160px; width: 470px;" width="470"
+                      height="160"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -2054,61 +2092,62 @@
               <!-- One "tab" for each step in the form: -->
               <div class="tab">
                 <div class="d-flex">
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                  <div
+                    class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer chart-button active-button">
                     <img src="./assets/images/vertical-bar-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">vertical Bar Chart</h6>
                   </div>
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer chart-button">
                     <img src="./assets/images/horizontal-bar-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">horizontal bar chart</h6>
                   </div>
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer chart-button">
                     <img src="./assets/images/stacked-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">stacked chart</h6>
                   </div>
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer chart-button">
                     <img src="./assets/images/donut-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">Donut chart</h6>
                   </div>
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer chart-button">
                     <img src="./assets/images/line-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">line chart</h6>
                   </div>
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer chart-button">
                     <img src="./assets/images/composite-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">composite chart</h6>
                   </div>
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 cursor-pointer chart-button">
                     <img src="./assets/images/area-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">Area chart</h6>
                   </div>
                 </div>
                 <div class="d-flex">
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer chart-button">
                     <img src="./assets/images/journey-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">journey chart</h6>
                   </div>
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer chart-button">
                     <img src="./assets/images/pivot-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">pivot chart</h6>
                   </div>
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer chart-button">
                     <img src="./assets/images/word-cloud.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">word cloud</h6>
                   </div>
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer chart-button">
                     <img src="./assets/images/trend-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">trend chart</h6>
                   </div>
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer chart-button">
                     <img src="./assets/images/gauge-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">gauge chart</h6>
                   </div>
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 me-2 cursor-pointer chart-button">
                     <img src="./assets/images/funnel-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">funnel chart</h6>
                   </div>
-                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 cursor-pointer">
+                  <div class="border border-2 rounded w-100 text-center p-2 mb-3 cursor-pointer chart-button">
                     <img src="./assets/images/kpi-chart.png" alt="" class="width-50px mb-3">
                     <h6 class="text-uppercase text-small">kpi chart</h6>
                   </div>
@@ -2129,9 +2168,10 @@
                     <li><a class="dropdown-item show-dropdown" href="#">API</a></li>
                   </ul>
                 </div>
-                <label for="name" class="fw-bold mt-3 mb-2">Select Data</label>
+
+                <label for="name" class="fw-bold mt-3 mb-2">Select Data Source</label>
                 <div class="select-list">
-                  <div class="title">Select Date</div>
+                  <div class="title">Select Data Source</div>
                   <div class="select-options">
                     <div class="option d-flex">
                       <input type="checkbox" class="d-block" name="vehicle" id="option1" value="" />
@@ -2174,7 +2214,7 @@
           </div>
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-primary" id="prevBtn" onclick="nextPrev(-1)">Cancel</button>
-            <button type="button" class="btn btn-secondary" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            <button type="button" class="btn btn-secondary show-chart" id="nextBtn" onclick="nextPrev(1)">Next</button>
           </div>
         </div>
       </div>
@@ -2570,6 +2610,65 @@
   <script src="./assets/js/popup-form.js"></script>
   <script>
     $('#chartMenu').removeClass('show').removeClass('d-block').removeClass('opacity-0');
+
+    $(".show-chart").click(function () {
+      $(".hiddi-chart").addClass("d-block");
+    });
+
+    const lineChartOver1 = document.getElementById("lineChartOver1");
+
+    const lineChartOver_2 = new Chart(lineChartOver1, {
+      type: "bar",
+      data: {
+        labels: [
+          "Older",
+          "Sep 18-24",
+          "This week",
+          "Oct 2-8",
+          "Oct 9-15",
+          "Future",
+        ],
+        datasets: [
+          {
+            label: "# of Votes",
+            data: [3, 13, 9, 12, 13, 8],
+            borderWidth: 0,
+            backgroundColor: "#775da6",
+            barThickness: 30,
+            backgroundColor: "#775da6",
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+
+        scales: {
+          x: {
+            // display: false,
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: true,
+            },
+          },
+          y: {
+            display: false,
+            grid: {
+              drawOnChartArea: false,
+            },
+            ticks: {
+              display: false,
+            },
+          },
+        },
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+      },
+    });
 
     (function ($) {
       $.fn.multiselect = function () {

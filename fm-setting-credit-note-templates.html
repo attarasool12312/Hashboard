@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rhombus</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="./fm-index.html" class="panel_link active_panel"><i class="icon icon-overviwe"></i>
+                <span>Dashboard</span></a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-sales-information"></i><span>Sales Page</span>
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./fm-quote-history.html"><i
+                      class="icon icon-sales-information"></i>
+                    <span>Quotations</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-sales-order.html"><i
+                      class="icon icon-sales-information"></i> <span>Sales
+                      Orders</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-invoices.html"><i
+                      class="icon icon-sales-information"></i>
+                    <span>Invoices</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-credit-note.html"><i
+                      class="icon icon-sales-information"></i>
+                    <span>Credit Note</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown-1"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-project-supplies"></i><span>Purchases</span>
+              </a>
+              <ul class="Business-Dropdown-1" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./fm-purchase-orders.html"><i
+                      class="icon icon-project-supplies"></i>
+                    <span>Purchase Orders</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-bills.html"><i
+                      class="icon icon-project-supplies"></i> <span>Bills</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-debit-note.html"><i
+                      class="icon icon-project-supplies"></i>
+                    <span>Debit</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Sales-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-expeness"></i><span>Payrolls</span>
+              </a>
+              <ul class="Sales-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./fm-employees.html"><i class="icon icon-expeness"></i>
+                    <span>Employees</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-payrolls.html"><i class="icon icon-expeness"></i>
+                    <span>Payrolls</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Transactions-Dropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-expenses"></i><span>Customers & vendors</span>
+              </a>
+              <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./fm-customers-project.html"><i
+                      class="icon icon-expenses"></i>
+                    <span>Customers & projects</span></a></li>
+                <li><a class="dropdown-item panel_link" href="./fm-vendors.html"><i class="icon icon-expenses"></i>
+                    <span>Vendors</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Setting-Dropdown-1"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-project-supplies"></i><span>Products & Services</span>
+              </a>
+              <ul class="Setting-Dropdown-1" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./fm-products-services.html"><i
+                      class="icon icon-project-supplies"></i>
+                    <span>Products & Services</span></a></li>
+              </ul>
+            </li>
+            <li><a href="./fm-transferred-projects.html" class="panel_link"><i
+                  class="icon icon-transferred-projects"></i>
+                <span>Transferred Document</span></a></li>
+            <li><a href="./fm-report.html" class="panel_link"><i class="icon icon-reports"></i>
+                <span>Reports</span></a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Setting-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-settings"></i> <span>Setting</span>
+              </a>
+              <ul class="Setting-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i
+                      class="icon icon-settings"></i> <span>Account</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./fm-setting-general.html"><i
+                      class="icon icon-settings"></i> <span>General</span></a></li>
+
+              </ul>
+            </li>
+            <li><a href="./new-index.html" class="panel_link "><span>New Dashboard</span></a></li>
+            <div class="open-button">
+              <i class="icon icon-right-arrow"></i>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white justify-content-between">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div>
+          <div class="about-profile">
+            <div class="d-none d-md-flex align-items-center">
+              <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+                  class="icon icon-plus"></i> Add</button>
+              <a href=""><i class="icon icon-question"></i></a>
+              <div class="dropdown select-dropdown admin-notification">
+                <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
+                  <i class="icon icon-notification"></i>
+                </button>
+                <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
+                  <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
+                    <p>Notification</p>
+                    <a href="./fm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
+                  </div>
+                  <div class="p-2 border-bottom">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                  <div class="p-2 border-bottom">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                  <div class="p-2">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button"
+                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                  <h6 class="text-small mt-2">Allen Moreno</h6>
+                  <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                <li><a class="dropdown-item mt-3" href="./fm-edit-profile.html"><i class="icon icon-user-profile"></i>
+                    My Profile</a></li>
+                <li><a class="dropdown-item" href="./fm-profile-activities.html"><i class="icon icon-calender-2"></i>
+                    Actions</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="page-main-title">
+            <div class="heading">
+              <h6 class="fw-600">Almonhana</h6>
+              <p>Saudi Arabia</p>
+            </div>
+            <div class="heading text-end">
+              <h1>CREDIT NOTE</h1>
+              <h6 class="fw-bold"># CN-17</h6>
+
+              <p class="fw-bold mt-4">Credits Remaining</p>
+              <h5 class="fw-bold">SAR562.75</h5>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-8">
+              <p>Bill To</p>
+              <p class="fw-bold">Rob & Joe Traders</p>
+              <p>
+                Derah Dist., P.O.Box: 2922
+                <br>
+                Riyadh
+                <br>
+                94588 Riyadh
+                <br>
+                Saudi Arabia
+              </p>
+              <p class="mt-4">Subject :</p>
+              <p>Description</p>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <p>Credit Date :</p>
+                <p>09 May 2023</p>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <p>Ref# :</p>
+                <p>SO-17</p>
+              </div>
+            </div>
+            <div class="col-12 mt-4">
+              <table class="table">
+                <thead>
+                  <tr class="bg-dark">
+                    <th scope="col" class="text-white">#</th>
+                    <th scope="col" class="text-white">Item & Description</th>
+                    <th scope="col" class="text-white">Qty</th>
+                    <th scope="col" class="text-white">Rate</th>
+                    <th scope="col" class="text-white">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                      <div>
+                        <h6 class="fw-600 text-small">Brochure Design</h6>
+                        <p class="fw-600 text-small text-light-gray">Brochure Design Single Sided Color</p>
+                      </div>
+                    </td>
+                    <td>
+                      <h6 class="fw-600 text-small">1.00</h6>
+                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                    </td>
+                    <td>300.00</td>
+                    <td>300.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>
+                      <div>
+                        <h6 class="fw-600 text-small">Web Design Packages(Template) - Basic</h6>
+                        <p class="fw-600 text-small text-light-gray">Custom Themes for your business. Inclusive of 10 
+                          hours of marketing and annual training</p>
+                      </div>
+                    </td>
+                    <td>
+                      <h6 class="fw-600 text-small">1.00</h6>
+                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                    </td>
+                    <td>300.00</td>
+                    <td>300.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>
+                      <div>
+                        <h6 class="fw-600 text-small">Print Ad - Basic - Color</h6>
+                        <p class="fw-600 text-small text-light-gray">Print Ad 1/8 size Color</p>
+                      </div>
+                    </td>
+                    <td>
+                      <h6 class="fw-600 text-small">1.00</h6>
+                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                    </td>
+                    <td>300.00</td>
+                    <td>300.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-6 ms-auto mt-4">
+              <div class="row">
+                <div class="col-6 text-end">
+                  <p>Sub Total</p>
+                </div>
+                <div class="col-6 text-end">
+                  <p>630.00</p>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-6 text-end">
+                  <p>Sample Tax1 (4.70%)</p>
+                </div>
+                <div class="col-6 text-end">
+                  <p>11.75</p>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-6 text-end">
+                  <p>Sample Tax2 (7.00%)</p>
+                </div>
+                <div class="col-6 text-end">
+                  <p>21.00</p>
+                </div>
+              </div>
+              <div class="row mt-2 p-2">
+                <div class="col-6 text-end">
+                  <p class="fw-600">Total</p>
+                </div>
+                <div class="col-6 text-end">
+                  <p class="fw-600">SAR662.75</p>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-6 text-end">
+                  <p>Credits Used</p>
+                </div>
+                <div class="col-6 text-end">
+                  <p class="text-danger">(-) 100.00</p>
+                </div>
+              </div>
+              <div class="row mt-2 bg-light p-2">
+                <div class="col-6 text-end">
+                  <p class="fw-600">Credits Remaining</p>
+                </div>
+                <div class="col-6 text-end">
+                  <p class="fw-600">SAR562.75</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-4">
+              <h5>Tax Summary (SAR)</h5>
+              <table class="table mt-3">
+                <thead>
+                  <tr class="bg-dark">
+                    <th scope="col" class="text-white">Tax Details</th>
+                    <th scope="col" class="text-white">Taxable Amount (SAR)</th>
+                    <th scope="col" class="text-white">Tax Amount (SAR)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Sample Tax1 (4.70%)</td>
+                    <td>300.00</td>
+                    <td>21.00</td>
+                  </tr>
+                  <tr>
+                    <td>Sample Tax2 (7.00%)</td>
+                    <td>250.00</td>
+                    <td>11.75</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Total</td>
+                    <td>SAR550.00</td>
+                    <td>SAR32.75</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="12 mt-4">
+              <p class="fw-600">Notes</p>
+              <p class="text-light-gray">Looking forward for your business.</p>
+              <p class="fw-600 mt-3">Terms & Conditions</p>
+              <p class="text-light-gray">Your company's Terms and Conditions will be displayed here. You can add it in the Estimate Preferences page under Settings.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal right fade" id="userForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Add new User</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <form>
+              <label for="Customer-name" class="d-block mb-2">User Name</label>
+              <input type="text" placeholder="Please Insert User Name" class="form-input w-100">
+              <label for="Project-id" class="d-block my-2">Department</label>
+              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
+                <option value="Manager">Owner</option>
+                <option value="Manager">Admin</option>
+                <option value="Urdu">Extended</option>
+                <option value="Hindi">Standard</option>
+                <option value="Punjabi">Limited</option>
+              </select>
+              <label for="ProjectSummary" class="d-block my-2">User Phone Number</label>
+              <input type="text" placeholder="Enter a User Phone Number" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Email</label>
+              <input type="text" placeholder="Enter a User Email" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">User Position</label>
+              <input type="text" placeholder="Enter a User Position" class="form-input w-100">
+              <label for="ProjectSummary" class="d-block my-2">Role</label>
+              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
+                <option value="Manager">Owner</option>
+                <option value="Manager">Admin</option>
+                <option value="Urdu">Extended</option>
+                <option value="Hindi">Standard</option>
+                <option value="Punjabi">Limited</option>
+              </select>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary px-5 py-2 text-uppercase">Add</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal right fade" id="SettingForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
+      <div class="modal-dialog width-50 wsm-95">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Profile settings</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light customer-add-form">
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-uppercase active" id="general-tab" data-bs-toggle="tab"
+                  data-bs-target="#general" type="button" role="tab" aria-controls="general"
+                  aria-selected="false">general</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-uppercase" id="security-tab" data-bs-toggle="tab"
+                  data-bs-target="#security" type="button" role="tab" aria-controls="security"
+                  aria-selected="false">security</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-uppercase" id="billing-tab" data-bs-toggle="tab" data-bs-target="#billing"
+                  type="button" role="tab" aria-controls="billing" aria-selected="false">billing</button>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane py-4 active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                <form>
+                  <div class="upload-file">
+                    <div class="file-upload">
+                      <figure>
+                        <img id="chosen-image">
+                        <figcaption id="file-name">
+                        </figcaption>
+                      </figure>
+                      <input type="file" id="upload-button" accept="image/*" />
+                      <label for="upload-button">
+                        Add Image
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="name" class="fw-bold mt-3 mb-2">Full Name</label>
+                      <input type="text" name="name" id="name" placeholder="Enter a Full Name"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <label for="email" class="fw-bold mt-3 mb-2">Email</label>
+                      <input type="email" name="email" id="email" placeholder="Enter a Email"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <label for="language" class="fw-bold mt-3 mb-2">Language</label>
+                      <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="English">English</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Punjabi">Punjabi</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="role" class="fw-bold mt-3 mb-2">Role</label>
+                      <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <option value="Manager">Manager</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Punjabi">Punjabi</option>
+                      </select>
+                      <label for="phone" class="fw-bold mt-3 mb-2">Phone</label>
+                      <input type="tel" name="phone" id="phone" placeholder="Enter a Phone Number"
+                        class="d-block w-100 border border-2 rounded px-4 py-2">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane py-4" id="security" role="tabpanel" aria-labelledby="security-tab">
+                <h5 class="fw-600 mb-3">Change Password</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="password" class="fw-bold mt-3 mb-2">Current Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="password" class="fw-bold mt-3 mb-2">New Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                </div>
+                <h5 class="fw-600 mb-3">Security Questions</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="questions" class="fw-bold mt-3 mb-2">Questions #1</label>
+                    <select name="questions" id="questions" class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <option value="questions">What is your friend's name</option>
+                      <option value="Admin">Admin</option>
+                      <option value="Admin +">Admin +</option>
+                    </select>
+                    <label for="questions" class="fw-bold mt-3 mb-2">Questions #1</label>
+                    <select name="questions" id="questions" class="d-block w-100 border border-2 rounded px-4 py-2">
+                      <option value="questions">What is your friend's name</option>
+                      <option value="Admin">Admin</option>
+                      <option value="Admin +">Admin +</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="answer" class="fw-bold mt-3 mb-2">Answer</label>
+                    <input type="text" name="answer" id="answer" placeholder="Enter Your Answer"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                    <label for="answer" class="fw-bold mt-3 mb-2">Answer</label>
+                    <input type="text" name="answer" id="answer" placeholder="Enter Your Answer"
+                      class="d-block w-100 border border-2 rounded px-4 py-2">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane py-4" id="billing" role="tabpanel" aria-labelledby="billing-tab">
+                <h5 class="fw-600 mb-3">Billing Settings</h5>
+                <div class="d-flex align-items-center justify-content-between border-bottom py-3">
+                  <p>Payment Method</p>
+                  <div class="d-flex align-items-center">
+                    <p>MasterCard ending in 4078,exp: 08/2020</p>
+                    <a href="./pm-billing.html" class="text-decoration-none ms-3">Update</a>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between border-bottom py-3">
+                  <p>Billing Period</p>
+                  <div class="d-flex align-items-center">
+                    <p>Plan billed monthly</p>
+                    <a href="./pm-billing.html" class="text-decoration-none ms-3">Update</a>
+                  </div>
+                </div>
+                <h5 class="fw-600 my-3">Payment History</h5>
+                <div class="border rounded">
+                  <div class="d-flex align-items-center justify-content-between border-bottom p-3">
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold me-3">21 Oct 2018</p>
+                      <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <p>$28.00</p>
+                      <a href="#" class="text-decoration-none ms-3">Invoice</a>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between border-bottom p-3">
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold me-3">21 Oct 2018</p>
+                      <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <p>$28.00</p>
+                      <a href="#" class="text-decoration-none ms-3">Invoice</a>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between p-3">
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold me-3">21 Oct 2018</p>
+                      <p>IOTask Pro (9/21/2018 to 10/21/2019)</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <p>$28.00</p>
+                      <a href="#" class="text-decoration-none ms-3">Invoice</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Update</button>
+            <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+
+  </script>
+
+</body>
+
+</html>

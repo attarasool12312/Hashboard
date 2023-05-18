@@ -314,6 +314,22 @@
                       data-bs-target="#Language" type="button" role="tab" aria-controls="Language"
                       aria-selected="true">Language setting</button>
                   </li>
+                  <h6 class="fw-600">Templates</h6>
+                  <li class="nav-item m-0" role="presentation">
+                    <button class="nav-link text-uppercase" id="Quotes-tab" data-bs-toggle="tab"
+                      data-bs-target="#Quotes" type="button" role="tab" aria-controls="Quotes"
+                      aria-selected="true">Quotes</button>
+                  </li>
+                  <li class="nav-item m-0" role="presentation">
+                    <button class="nav-link text-uppercase" id="Invoices-tab" data-bs-toggle="tab"
+                      data-bs-target="#Invoices" type="button" role="tab" aria-controls="Invoices"
+                      aria-selected="true">Invoices</button>
+                  </li>
+                  <li class="nav-item m-0" role="presentation">
+                    <button class="nav-link text-uppercase" id="CreditNote-tab" data-bs-toggle="tab"
+                      data-bs-target="#CreditNote" type="button" role="tab" aria-controls="CreditNote"
+                      aria-selected="true">Credit Notes</button>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -2195,6 +2211,546 @@
                       </tr>
                     </tbody>
                   </table>
+                </div>
+                <div class="tab-pane" id="Quotes" role="tabpanel" aria-labelledby="Quotes-tab">
+                  <div class="page-main-title">
+                    <div class="heading">
+                      <h2>Quote Templates</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="chart cursor-pointer" onclick="window.location.href='./fm-setting-quote-templates.html'">
+                        <div class="chart-box">
+                          <div class="row">
+                            <div class="col-6">
+                              <img src="./assets/images/amazon.jpg" class="rounded-circle width-50px" alt="">
+                              <h6 class="fw-600 mt-2">Zylkar Inc</h6>
+                              <p class="text-light-gray">
+                                4141 Hassan Drive
+                                <br>
+                                Pakistan
+                                <br>
+                                Ca USA Shall
+                                <br>
+                                12345
+                              </p>
+                            </div>
+                            <div class="col-6">
+                              <div class="text-end">
+                                <h2 class="fw-600">Quote</h2>
+                                <p class="text-light-gray">Quote EST-17</p>
+                              </div>
+                            </div>
+                            <div class="col-6 mt-4">
+                              <p class="text-light-gray">Bill To</p>
+                              <p class="fw-600 text-small">
+                                Rob & Joe Traders
+                                <br>
+                                Derah Dist., P.O.Box: 2922
+                                <br>
+                                Riyadh
+                                <br>
+                                94588 Riyadh
+                                <br>
+                                Saudi Arabia
+                              </p>
+                            </div>
+                            <div class="col-6 mt-4">
+                              <div class="d-flex align-items-center justify-content-between mb-2">
+                                <p class="text-light-gray text-small">Quote Date :</p>
+                                <p class="text-light-gray text-small">09 May 2023</p>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-between mb-2">
+                                <p class="text-light-gray text-small">Expiry Date :</p>
+                                <p class="text-light-gray text-small">09 May 2023</p>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-between mb-2">
+                                <p class="text-light-gray text-small">Reference# :</p>
+                                <p class="text-light-gray text-small">SO-17</p>
+                              </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                              <table class="table">
+                                <thead>
+                                  <tr class="bg-dark">
+                                    <th scope="col" class="text-white">#</th>
+                                    <th scope="col" class="text-white">Item & Description</th>
+                                    <th scope="col" class="text-white">Qty</th>
+                                    <th scope="col" class="text-white">Rate</th>
+                                    <th scope="col" class="text-white">Discount</th>
+                                    <th scope="col" class="text-white">Amount</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                      <div>
+                                        <h6 class="fw-600 text-small">Brochure Design</h6>
+                                        <p class="fw-600 text-small text-light-gray">Brochure Design Single Sided Color</p>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <h6 class="fw-600 text-small">1.00</h6>
+                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                    </td>
+                                    <td>300.00</td>
+                                    <td>0.00</td>
+                                    <td>300.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                      <div>
+                                        <h6 class="fw-600 text-small">Web Design Packages(Template) - Basic</h6>
+                                        <p class="fw-600 text-small text-light-gray">Custom Themes for your business. Inclusive of 10 
+                                          hours of marketing and annual training</p>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <h6 class="fw-600 text-small">1.00</h6>
+                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                    </td>
+                                    <td>300.00</td>
+                                    <td>0.00</td>
+                                    <td>300.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>
+                                      <div>
+                                        <h6 class="fw-600 text-small">Print Ad - Basic - Color</h6>
+                                        <p class="fw-600 text-small text-light-gray">Print Ad 1/8 size Color</p>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <h6 class="fw-600 text-small">1.00</h6>
+                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                    </td>
+                                    <td>300.00</td>
+                                    <td>0.00</td>
+                                    <td>300.00</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="col-8 ms-auto mt-4">
+                              <div class="row">
+                                <div class="col-6 text-end">
+                                  <p class="text-small">Sub Total</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="text-small">630.00</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2">
+                                <div class="col-6 text-end">
+                                  <p class="text-small">Sample Tax1 (4.70%)</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="text-small">11.75</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2">
+                                <div class="col-6 text-end">
+                                  <p class="text-small">Sample Tax2 (7.00%)</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="text-small">21.00</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2 bg-light p-2">
+                                <div class="col-6 text-end">
+                                  <p class="text-small fw-600">Total</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="text-small fw-600">SAR662.75</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="12 mt-4">
+                              <p class="fw-600">Notes</p>
+                              <p class="text-light-gray">Looking forward for your business.</p>
+                              <p class="fw-600 mt-3">Terms & Conditions</p>
+                              <p class="text-light-gray">Your company's Terms and Conditions will be displayed here. You can add it in the Estimate Preferences page under Settings.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 ps-0">
+                      <div class="border-dots w-100 h-100 rounded d-flex align-items-center p-3">
+                        <div>
+                          <h5>New Template</h5>
+                          <p class="text-light-gray mt-2">Click to add a template from our gallery.
+                            You can customer the template title, columns, and headers in line item table.                          
+                          </p>
+                          <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3">+ New</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="Invoices" role="tabpanel" aria-labelledby="Invoices-tab">
+                  <div class="page-main-title">
+                    <div class="heading">
+                      <h2>Invoices Templates</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="chart cursor-pointer" onclick="window.location.href='./fm-setting-invoices-templates.html'">
+                        <div class="chart-box">
+                          <div class="row">
+                            <div class="col-6">
+                              <img src="./assets/images/amazon.jpg" class="rounded-circle width-50px" alt="">
+                              <h6 class="fw-600 mt-2">Zylkar Inc</h6>
+                              <p class="text-light-gray">
+                                4141 Hassan Drive
+                                <br>
+                                Pakistan
+                                <br>
+                                Ca USA Shall
+                                <br>
+                                12345
+                              </p>
+                            </div>
+                            <div class="col-6">
+                              <div class="text-end">
+                                <h2 class="fw-600">Quote</h2>
+                                <p class="text-light-gray">Quote EST-17</p>
+                              </div>
+                            </div>
+                            <div class="col-6 mt-4">
+                              <p class="text-light-gray">Bill To</p>
+                              <p class="fw-600 text-small">
+                                Rob & Joe Traders
+                                <br>
+                                Derah Dist., P.O.Box: 2922
+                                <br>
+                                Riyadh
+                                <br>
+                                94588 Riyadh
+                                <br>
+                                Saudi Arabia
+                              </p>
+                            </div>
+                            <div class="col-6 mt-4">
+                              <div class="d-flex align-items-center justify-content-between mb-2">
+                                <p class="text-light-gray text-small">Quote Date :</p>
+                                <p class="text-light-gray text-small">09 May 2023</p>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-between mb-2">
+                                <p class="text-light-gray text-small">Expiry Date :</p>
+                                <p class="text-light-gray text-small">09 May 2023</p>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-between mb-2">
+                                <p class="text-light-gray text-small">Reference# :</p>
+                                <p class="text-light-gray text-small">SO-17</p>
+                              </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                              <table class="table">
+                                <thead>
+                                  <tr class="bg-dark">
+                                    <th scope="col" class="text-white">#</th>
+                                    <th scope="col" class="text-white">Item & Description</th>
+                                    <th scope="col" class="text-white">Qty</th>
+                                    <th scope="col" class="text-white">Rate</th>
+                                    <th scope="col" class="text-white">Discount</th>
+                                    <th scope="col" class="text-white">Amount</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                      <div>
+                                        <h6 class="fw-600 text-small">Brochure Design</h6>
+                                        <p class="fw-600 text-small text-light-gray">Brochure Design Single Sided Color</p>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <h6 class="fw-600 text-small">1.00</h6>
+                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                    </td>
+                                    <td>300.00</td>
+                                    <td>0.00</td>
+                                    <td>300.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                      <div>
+                                        <h6 class="fw-600 text-small">Web Design Packages(Template) - Basic</h6>
+                                        <p class="fw-600 text-small text-light-gray">Custom Themes for your business. Inclusive of 10 
+                                          hours of marketing and annual training</p>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <h6 class="fw-600 text-small">1.00</h6>
+                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                    </td>
+                                    <td>300.00</td>
+                                    <td>0.00</td>
+                                    <td>300.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>
+                                      <div>
+                                        <h6 class="fw-600 text-small">Print Ad - Basic - Color</h6>
+                                        <p class="fw-600 text-small text-light-gray">Print Ad 1/8 size Color</p>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <h6 class="fw-600 text-small">1.00</h6>
+                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                    </td>
+                                    <td>300.00</td>
+                                    <td>0.00</td>
+                                    <td>300.00</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="col-8 ms-auto mt-4">
+                              <div class="row">
+                                <div class="col-6 text-end">
+                                  <p class="text-small">Sub Total</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="text-small">630.00</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2">
+                                <div class="col-6 text-end">
+                                  <p class="text-small">Sample Tax1 (4.70%)</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="text-small">11.75</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2">
+                                <div class="col-6 text-end">
+                                  <p class="text-small">Sample Tax2 (7.00%)</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="text-small">21.00</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2 bg-light p-2">
+                                <div class="col-6 text-end">
+                                  <p class="text-small fw-600">Total</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="text-small fw-600">SAR662.75</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="12 mt-4">
+                              <p class="fw-600">Notes</p>
+                              <p class="text-light-gray">Looking forward for your business.</p>
+                              <p class="fw-600 mt-3">Terms & Conditions</p>
+                              <p class="text-light-gray">Your company's Terms and Conditions will be displayed here. You can add it in the Estimate Preferences page under Settings.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 ps-0">
+                      <div class="border-dots w-100 h-100 rounded d-flex align-items-center p-3">
+                        <div>
+                          <h5>New Template</h5>
+                          <p class="text-light-gray mt-2">Click to add a template from our gallery.
+                            You can customer the template title, columns, and headers in line item table.                          
+                          </p>
+                          <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3">+ New</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="CreditNote" role="tabpanel" aria-labelledby="CreditNote-tab">
+                  <div class="page-main-title">
+                    <div class="heading">
+                      <h2>Credit Note Templates</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="chart cursor-pointer" onclick="window.location.href='./fm-setting-credit-note-templates.html'">
+                        <div class="chart-box">
+                          <div class="row">
+                            <div class="col-6">
+                              <img src="./assets/images/amazon.jpg" class="rounded-circle width-50px" alt="">
+                              <h6 class="fw-600 mt-2">Zylkar Inc</h6>
+                              <p class="text-light-gray">
+                                4141 Hassan Drive
+                                <br>
+                                Pakistan
+                                <br>
+                                Ca USA Shall
+                                <br>
+                                12345
+                              </p>
+                            </div>
+                            <div class="col-6">
+                              <div class="text-end">
+                                <h2 class="fw-600">Quote</h2>
+                                <p class="text-light-gray">Quote EST-17</p>
+                              </div>
+                            </div>
+                            <div class="col-6 mt-4">
+                              <p class="text-light-gray">Bill To</p>
+                              <p class="fw-600 text-small">
+                                Rob & Joe Traders
+                                <br>
+                                Derah Dist., P.O.Box: 2922
+                                <br>
+                                Riyadh
+                                <br>
+                                94588 Riyadh
+                                <br>
+                                Saudi Arabia
+                              </p>
+                            </div>
+                            <div class="col-6 mt-4">
+                              <div class="d-flex align-items-center justify-content-between mb-2">
+                                <p class="text-light-gray text-small">Quote Date :</p>
+                                <p class="text-light-gray text-small">09 May 2023</p>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-between mb-2">
+                                <p class="text-light-gray text-small">Expiry Date :</p>
+                                <p class="text-light-gray text-small">09 May 2023</p>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-between mb-2">
+                                <p class="text-light-gray text-small">Reference# :</p>
+                                <p class="text-light-gray text-small">SO-17</p>
+                              </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                              <table class="table">
+                                <thead>
+                                  <tr class="bg-dark">
+                                    <th scope="col" class="text-white">#</th>
+                                    <th scope="col" class="text-white">Item & Description</th>
+                                    <th scope="col" class="text-white">Qty</th>
+                                    <th scope="col" class="text-white">Rate</th>
+                                    <th scope="col" class="text-white">Discount</th>
+                                    <th scope="col" class="text-white">Amount</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                      <div>
+                                        <h6 class="fw-600 text-small">Brochure Design</h6>
+                                        <p class="fw-600 text-small text-light-gray">Brochure Design Single Sided Color</p>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <h6 class="fw-600 text-small">1.00</h6>
+                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                    </td>
+                                    <td>300.00</td>
+                                    <td>0.00</td>
+                                    <td>300.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                      <div>
+                                        <h6 class="fw-600 text-small">Web Design Packages(Template) - Basic</h6>
+                                        <p class="fw-600 text-small text-light-gray">Custom Themes for your business. Inclusive of 10 
+                                          hours of marketing and annual training</p>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <h6 class="fw-600 text-small">1.00</h6>
+                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                    </td>
+                                    <td>300.00</td>
+                                    <td>0.00</td>
+                                    <td>300.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>
+                                      <div>
+                                        <h6 class="fw-600 text-small">Print Ad - Basic - Color</h6>
+                                        <p class="fw-600 text-small text-light-gray">Print Ad 1/8 size Color</p>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <h6 class="fw-600 text-small">1.00</h6>
+                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                    </td>
+                                    <td>300.00</td>
+                                    <td>0.00</td>
+                                    <td>300.00</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="col-8 ms-auto mt-4">
+                              <div class="row">
+                                <div class="col-6 text-end">
+                                  <p class="text-small">Sub Total</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="text-small">630.00</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2">
+                                <div class="col-6 text-end">
+                                  <p class="text-small">Sample Tax1 (4.70%)</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="text-small">11.75</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2">
+                                <div class="col-6 text-end">
+                                  <p class="text-small">Sample Tax2 (7.00%)</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="text-small">21.00</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2 bg-light p-2">
+                                <div class="col-6 text-end">
+                                  <p class="text-small fw-600">Total</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="text-small fw-600">SAR662.75</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="12 mt-4">
+                              <p class="fw-600">Notes</p>
+                              <p class="text-light-gray">Looking forward for your business.</p>
+                              <p class="fw-600 mt-3">Terms & Conditions</p>
+                              <p class="text-light-gray">Your company's Terms and Conditions will be displayed here. You can add it in the Estimate Preferences page under Settings.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 ps-0">
+                      <div class="border-dots w-100 h-100 rounded d-flex align-items-center p-3">
+                        <div>
+                          <h5>New Template</h5>
+                          <p class="text-light-gray mt-2">Click to add a template from our gallery.
+                            You can customer the template title, columns, and headers in line item table.                          
+                          </p>
+                          <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3">+ New</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

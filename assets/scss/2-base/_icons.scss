@@ -233,6 +233,8 @@ $icons: (
   "envelope-table" "svg" 15px 15px,
   "eidt-table" "svg" 15px 15px,
   "plus-items" "svg" 47px 47px,
+  "green-check" "svg" 15px 15px,
+  "recacle" "svg" 22px 22px,
   );
   
 @each $name, $fileType, $width, $height in $icons {

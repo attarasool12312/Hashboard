@@ -1650,6 +1650,20 @@ i[class*=h-icon-] {
   height: 47px;
 }
 
+.icon-green-check {
+  display: inline-block;
+  background-image: url("../images/icons/green-check.svg");
+  width: 15px;
+  height: 15px;
+}
+
+.icon-recacle {
+  display: inline-block;
+  background-image: url("../images/icons/recacle.svg");
+  width: 22px;
+  height: 22px;
+}
+
 /*--------------*\
     Base
 \*--------------*/
@@ -2398,6 +2412,10 @@ h6.text-sm {
 
 .active-button {
   border: 2px solid #775da6 !important;
+}
+
+.border-dots {
+  border: 2px dotted #D0D3DA;
 }
 
 /*--------------*\
@@ -3708,6 +3726,9 @@ ul.head-btn .slider-btn .btn.ouline-white {
 .employees-nav1 {
   border-radius: 8px;
   padding: 5px;
+}
+.employees-nav1 li button {
+  border-radius: 8px !important;
 }
 .employees-nav1 li button.active {
   border: none !important;
@@ -8858,19 +8879,42 @@ button.btn.view {
 }
 
 .signIn-section {
-  background-image: url("../images/signIn-bg-image.png");
-  background-repeat: no-repeat;
-  background-size: 35% 100vh;
   height: 100vh;
-  background-color: #fff;
 }
-.signIn-section .signIn-box {
-  height: 83vh;
+.signIn-section .main .signIn-box {
+  height: 100vh;
   width: 100%;
+}
+.signIn-section .main .signIn-box .form-left {
+  background-color: #7D56B8;
+  padding: 20px;
+}
+.signIn-section .main .signIn-box .form-left .welcome-image {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 100px;
+  flex-flow: column;
+}
+.signIn-section .main .signIn-box .form-left .welcome-image img {
+  margin-top: 30px;
+  width: 465px;
+  height: 410px;
+}
+.signIn-section .main .signIn-box .form-right {
+  padding: 20px;
+}
+.signIn-section .main .signIn-box .form-right a {
+  text-align: end;
+  display: block;
+}
+.signIn-section .main .signIn-box .form-right .form-content {
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
 }
 
 .product-section .payment-card {
@@ -8975,6 +9019,67 @@ button.btn.view {
   .chart-form {
     margin: 1.75rem 1.75rem 1.75rem auto !important;
   }
+}
+.dashboard-view .nav-tabs {
+  border: 0;
+  margin-top: 20px;
+}
+.dashboard-view .nav-tabs .nav-item {
+  background-color: #fff;
+  width: 19%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-view .nav-tabs .nav-item .nav-link {
+  width: 100%;
+  height: 100%;
+}
+.dashboard-view .nav-tabs .nav-item .nav-link.active {
+  background-color: #775DA6 !important;
+  color: #fff !important;
+  border: 0 !important;
+}
+.dashboard-view .nav-tabs .nav-item .nav-link h5 {
+  margin-top: 15px;
+}
+.dashboard-view .nav-tabs li + li {
+  margin-left: 10px;
+}
+
+.dashboard-post .chart {
+  padding: 15px;
+  height: auto;
+}
+.dashboard-post .chart .negative-button {
+  width: fit-content;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px !important;
+  margin-left: auto;
+  background-color: #F9837C;
+  color: #fff;
+}
+.dashboard-post .chart .positive-button {
+  width: fit-content;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px !important;
+  margin-left: auto;
+  background-color: #70B6C1;
+  color: #fff;
+}
+.dashboard-post .chart .profile-side img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.dashboard-post .chart .card-icon {
+  margin-top: 15px;
+}
+.dashboard-post .chart .card-icon p {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,17 +1,43 @@
 .signIn-section {
-    background-image: url($images-path + "/signIn-bg-image.png");
-    background-repeat: no-repeat;
-    background-size: 35% 100vh;
     height: 100vh;
-    background-color: #fff;
 
-    .signIn-box {
-        height: 83vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 100px;
+    .main {
+        .signIn-box {
+            height: 100vh;
+            width: 100%;
+
+            .form-left {
+                background-color: #7D56B8;
+                padding: 20px;
+                .welcome-image{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-flow: column;
+                    img{
+                        margin-top: 30px;
+                        width: 465px;
+                        height: 410px;
+                    }
+                }
+            }
+            .form-right{
+                padding: 20px;
+                a{
+                    text-align: end;
+                    display: block;
+                }
+                .form-content{
+                    height: 100%;
+                    width: 60%;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    flex-flow: column;
+                }
+            }
+        }
     }
 }
 
@@ -51,7 +77,8 @@
             }
         }
     }
-    .col-md-6{
+
+    .col-md-6 {
         height: 100%;
     }
 
@@ -96,25 +123,30 @@
                 display: flex;
                 align-items: center;
                 justify-content: end;
-                label{
+
+                label {
                     margin-right: 30px;
                     font-weight: 500;
                     font-size: 12px;
                 }
-                .form-check-input{
+
+                .form-check-input {
                     width: 15px;
                     height: 15px;
                     border-radius: 50%;
                 }
             }
-            h5{
+
+            h5 {
                 margin-top: 20px;
                 font-size: 14px !important;
             }
-            ul{
+
+            ul {
                 margin-top: 15px;
                 padding-left: 22px;
-                li{
+
+                li {
                     list-style-image: url($images-path + "/list-style-image.png");
                     font-size: 12px;
                 }
@@ -122,14 +154,15 @@
         }
     }
 }
-@media (min-width: 576px){
-    .add-new-chart{
+
+@media (min-width: 576px) {
+    .add-new-chart {
         margin: 1.75rem !important;
     }
 }
 
-@media (min-width: 576px){
-    .chart-form{
+@media (min-width: 576px) {
+    .chart-form {
         margin: 1.75rem 1.75rem 1.75rem auto !important;
     }
 }

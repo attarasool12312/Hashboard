@@ -20,7 +20,6 @@
   <!-- css -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
   <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
   <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
   <link href="./assets/css/main.css" rel="stylesheet" />
@@ -29,58 +28,61 @@
 
 <body>
   <section class="section-panel signIn-section">
-    <header>
-      <div class="header-main align-items-center border-0">
-        <div class="sitepanel-toggler m-0">
-          <div class="logo">
-            <a class="navbar-brand" href="#"><img src="./assets/images/logo-white.png" alt=""></a>
-          </div>
-        </div>
-        <a href="" class="text-decoration-none text-dark">Already have an account? <span class="text-fill fw-bold">Sign
-            In</span></a>
-      </div>
-    </header>
     <main class="main">
-      <div class="container">
-        <div class="signIn-box">
-          <div class="col-4">
-            <h5 class="fw-bold mb-4">Sign up</h5>
-            <input type="email" name="email" id="email" placeholder="Email Address"
-              class="d-block w-100 border border-2 rounded px-4 py-2 mb-3">
-            <div class="row">
-              <div class="col-md-6">
-                <input type="text" name="text" id="text" placeholder="First name"
-                  class="d-block w-100 border border-2 rounded px-4 py-2 mb-3">
-              </div>
-              <div class="col-md-6">
-                <input type="text" name="text" id="text" placeholder="Last name"
-                  class="d-block w-100 border border-2 rounded px-4 py-2 mb-3">
-              </div>
+      <div class="container-fluid">
+        <div class="row signIn-box">
+          <div class="col-5 form-left">
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo-white.png" alt=""></a>
             </div>
-            <input type="text" placeholder="Password" id="password-field"
-              class="d-block w-100 border border-2 rounded px-4 py-2">
-            <div class="progress mt-2" style="height: 5px;">
-              <div class="progress-bar return-bg-color" role="progressbar" style="width: 25%;" aria-valuenow="25"
-                aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="welcome-image">
+              <h1 class="text-center text-white ">Welcome back!</h1>
+              <img src="./assets/images/Login.png" alt="">
             </div>
-            <div class="d-flex align-items-center justify-content-between">
-              <p class="text-light-gray">Your password is great. Nice work!</p>
-              <p class="return-text-color">Strong</p>
-            </div>
-            <button class="btn btn-fill w-100 mt-4">Sign Up</button>
-            <div class="ps-5 mt-3">
-              <span class="check-tasks">
-                <div class="checkbox relative">
-                  <label class="absolute">
-                    <input type="checkbox" data-ng-model="example.check">
-                    <span class="box"></span>
-                  </label>
+          </div>
+          <div class="col-7 form-right">
+            <a href="./sign-up.html" class="text-decoration-none text-dark">Don’t have an account? <span
+                class="text-fill fw-bold">Sign
+                Up</span></a>
+            <div class="form-content">
+              <h5 class="fw-bold mb-4">Sign up</h5>
+              <input type="email" name="email" id="email" placeholder="Email Address"
+                class="d-block w-100 border border-2 rounded px-4 py-2 mb-3">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" name="text" id="text" placeholder="First name"
+                    class="d-block w-100 border border-2 rounded px-4 py-2 mb-3">
                 </div>
-              </span>
-              <p class="text-light-gray">By clicking Create account, I agree that I have read and accepted the Terms of
-                Use and Privacy Policy.</p>
+                <div class="col-md-6">
+                  <input type="text" name="text" id="text" placeholder="Last name"
+                    class="d-block w-100 border border-2 rounded px-4 py-2 mb-3">
+                </div>
+              </div>
+              <input type="text" placeholder="Password" id="password-field"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+              <div class="progress mt-2" style="height: 5px;">
+                <div class="progress-bar return-bg-color" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="text-light-gray">Your password is great. Nice work!</p>
+                <p class="return-text-color">Strong</p>
+              </div>
+              <button class="btn btn-fill w-100 mt-4">Sign Up</button>
+              <div class="ps-5 mt-3">
+                <span class="check-tasks">
+                  <div class="checkbox relative">
+                    <label class="absolute">
+                      <input type="checkbox" data-ng-model="example.check">
+                      <span class="box"></span>
+                    </label>
+                  </div>
+                </span>
+                <p class="text-light-gray">By clicking Create account, I agree that I have read and accepted the Terms
+                  of
+                  Use and Privacy Policy.</p>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -89,7 +91,6 @@
 
   <!-- JavaScript
 ================================================== -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -104,19 +105,6 @@
       if (passwordField.value.length === 0) {
         passwordField.type = 'text';
       }
-    });
-
-
-    const phoneInputField = document.querySelector("#phone");
-    const phoneInput = window.intlTelInput(phoneInputField, {
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
-
-    const phoneInputField1 = document.querySelector("#phone-1");
-    const phoneInput1 = window.intlTelInput(phoneInputField1, {
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
     });
   </script>
 </body>

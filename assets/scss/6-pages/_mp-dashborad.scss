@@ -1,0 +1,68 @@
+.dashboard-view{
+    .nav-tabs{
+        border: 0;
+        margin-top: 20px;
+        .nav-item{
+            background-color: #fff;
+            width: 19%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .nav-link{
+                width: 100%;
+                height: 100%;
+                &.active{
+                    background-color: #775DA6 !important;
+                    color: #fff !important;
+                    border: 0 !important;
+                }
+                h5{
+                    margin-top: 15px;
+                }
+            }
+        }
+        li{
+            & + li{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.dashboard-post{
+    .chart{
+        padding: 15px;
+        height: auto;
+        .negative-button{
+            width: fit-content;
+            font-size: 12px;
+            padding: 5px 10px;
+            border-radius: 20px !important;
+            margin-left: auto;
+            background-color: #F9837C;
+            color: #fff;
+        }
+        .positive-button{
+            width: fit-content;
+            font-size: 12px;
+            padding: 5px 10px;
+            border-radius: 20px !important;
+            margin-left: auto;
+            background-color: #70B6C1;
+            color: #fff;
+        }
+        .profile-side{
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+        .card-icon{
+            margin-top: 15px;
+            p{
+                cursor: pointer;
+            }
+        }
+    }
+}

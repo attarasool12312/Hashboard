@@ -483,6 +483,9 @@ h6 {
   }
 }
 
+.w-200 {
+  width: 200px !important;
+}
 .wsm-100 {
   @include grid-sm-down {
     width: 100% !important;
@@ -791,4 +794,16 @@ h6 {
 }
 .border-dots{
   border: 2px dotted #D0D3DA;
+}
+.fs-9{
+  font-size: 9px;
+}
+.text-light-green{
+  color: #50BD91;
+}
+.text-bg-gray{
+  background-color: #E5E5E5;
+}
+.text-bg-light-green{
+  background-color: #B3FCB1;
 }

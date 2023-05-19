@@ -82,6 +82,9 @@
                 <li><a class="dropdown-item panel_link" href="./fm-debit-note.html"><i
                       class="icon icon-project-supplies"></i>
                     <span>Debit</span></a></li>
+                    <li><a class="dropdown-item panel_link" href="./fm-expenses.html"><i
+                      class="icon icon-project-supplies"></i>
+                    <span>Expenses</span></a></li>
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
@@ -335,8 +338,8 @@
                       </tr>
                     </thead>
                     <tbody class="right-content interest-body" style="display: table-row-group;">
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Invoice no." class="ps-5 cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -347,13 +350,13 @@
                           </span>
                           <h6 class="fw-500 text-sm">#000001</h6>
                         </td>
-                        <td data-label="Customer name">Vinta</td>
-                        <td data-label="Status"><span class="finalized-status">Draft</span></td>
-                        <td data-label="Issue Date">12 Dec 2021</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Value">Petty Cash</td>
-                        <td data-label="Amount">$200.00</td>
-                        <td data-label="Due Date">12 Dec 2021</td>
+                        <td data-label="Customer name" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">Vinta</td>
+                        <td data-label="Status" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer"><span class="finalized-status">Draft</span></td>
+                        <td data-label="Issue Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
+                        <td data-label="VAT %" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">15%</td>
+                        <td data-label="VAT Value" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">Petty Cash</td>
+                        <td data-label="Amount" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">$200.00</td>
+                        <td data-label="Due Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
                         <td data-label="Actions">
                           <div class="row p-0">
                             <div class="col-3 p-0 mb-2">
@@ -372,7 +375,7 @@
                                   class="icon icon-clone-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
-                              <a href="" class="border border-2 rounded p-1"><i
+                              <a href="" class="border border-2 rounded p-1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#sendInvoiceModal"><i
                                   class="icon icon-envelope-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
@@ -388,8 +391,8 @@
                           </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Invoice no." class="ps-5 cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -400,13 +403,13 @@
                           </span>
                           <h6 class="fw-500 text-sm">#000002</h6>
                         </td>
-                        <td data-label="Customer name">Awesome brand</td>
-                        <td data-label="Status"><span class="finalized-status">Approved</span></td>
-                        <td data-label="Issue Date">12 Dec 2021</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Value">Petty Cash</td>
-                        <td data-label="Amount">$1.200.00</td>
-                        <td data-label="Due Date">12 Dec 2021</td>
+                        <td data-label="Customer name" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">Awesome brand</td>
+                        <td data-label="Status" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer"><span class="finalized-status">Approved</span></td>
+                        <td data-label="Issue Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
+                        <td data-label="VAT %" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">15%</td>
+                        <td data-label="VAT Value" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">Petty Cash</td>
+                        <td data-label="Amount" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">$1.200.00</td>
+                        <td data-label="Due Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
                         <td data-label="Actions">
                           <div class="row p-0">
                             <div class="col-3 p-0 mb-2">
@@ -425,7 +428,7 @@
                                   class="icon icon-clone-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
-                              <a href="" class="border border-2 rounded p-1"><i
+                              <a href="" class="border border-2 rounded p-1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#sendInvoiceModal"><i
                                   class="icon icon-envelope-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
@@ -441,8 +444,8 @@
                           </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Invoice no." class="ps-5 cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -453,13 +456,13 @@
                           </span>
                           <h6 class="fw-500 text-sm">#000003</h6>
                         </td>
-                        <td data-label="Customer name">Vinta</td>
-                        <td data-label="Status"><span class="finalized-status">Draft</span></td>
-                        <td data-label="Issue Date">12 Dec 2021</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Value">Bank Account </td>
-                        <td data-label="Amount">$400.00</td>
-                        <td data-label="Due Date">12 Dec 2021</td>
+                        <td data-label="Customer name" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">Vinta</td>
+                        <td data-label="Status" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer"><span class="finalized-status">Draft</span></td>
+                        <td data-label="Issue Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
+                        <td data-label="VAT %" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">15%</td>
+                        <td data-label="VAT Value" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">Bank Account </td>
+                        <td data-label="Amount" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">$400.00</td>
+                        <td data-label="Due Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
                         <td data-label="Actions">
                           <div class="row p-0">
                             <div class="col-3 p-0 mb-2">
@@ -478,7 +481,7 @@
                                   class="icon icon-clone-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
-                              <a href="" class="border border-2 rounded p-1"><i
+                              <a href="" class="border border-2 rounded p-1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#sendInvoiceModal"><i
                                   class="icon icon-envelope-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
@@ -494,8 +497,8 @@
                           </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Invoice no." class="ps-5 cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -506,13 +509,13 @@
                           </span>
                           <h6 class="fw-500 text-sm">#000004</h6>
                         </td>
-                        <td data-label="Customer name">SuperStar</td>
-                        <td data-label="Status"><span class="finalized-status">Draft</span></td>
-                        <td data-label="Issue Date">12 Dec 2021</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Value">Bank Account </td>
-                        <td data-label="Amount">$50.00</td>
-                        <td data-label="Due Date">12 Dec 2021</td>
+                        <td data-label="Customer name" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">SuperStar</td>
+                        <td data-label="Status" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer"><span class="finalized-status">Draft</span></td>
+                        <td data-label="Issue Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
+                        <td data-label="VAT %" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">15%</td>
+                        <td data-label="VAT Value" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">Bank Account </td>
+                        <td data-label="Amount" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">$50.00</td>
+                        <td data-label="Due Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
                         <td data-label="Actions">
                           <div class="row p-0">
                             <div class="col-3 p-0 mb-2">
@@ -531,7 +534,7 @@
                                   class="icon icon-clone-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
-                              <a href="" class="border border-2 rounded p-1"><i
+                              <a href="" class="border border-2 rounded p-1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#sendInvoiceModal"><i
                                   class="icon icon-envelope-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
@@ -547,8 +550,8 @@
                           </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Invoice no." class="ps-5 cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -559,13 +562,13 @@
                           </span>
                           <h6 class="fw-500 text-sm">#000005</h6>
                         </td>
-                        <td data-label="Customer name">SuperStar</td>
-                        <td data-label="Status"><span class="finalized-status">Paid</span></td>
-                        <td data-label="Issue Date">12 Dec 2021</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Value">Bank Account </td>
-                        <td data-label="Amount">$17.00</td>
-                        <td data-label="Due Date">12 Dec 2021</td>
+                        <td data-label="Customer name" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">SuperStar</td>
+                        <td data-label="Status" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer"><span class="finalized-status">Paid</span></td>
+                        <td data-label="Issue Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
+                        <td data-label="VAT %" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">15%</td>
+                        <td data-label="VAT Value" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">Bank Account </td>
+                        <td data-label="Amount" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">$17.00</td>
+                        <td data-label="Due Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
                         <td data-label="Actions">
                           <div class="row p-0">
                             <div class="col-3 p-0 mb-2">
@@ -584,7 +587,7 @@
                                   class="icon icon-clone-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
-                              <a href="" class="border border-2 rounded p-1"><i
+                              <a href="" class="border border-2 rounded p-1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#sendInvoiceModal"><i
                                   class="icon icon-envelope-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
@@ -600,8 +603,8 @@
                           </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Invoice no." class="ps-5 cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -612,13 +615,13 @@
                           </span>
                           <h6 class="fw-500 text-sm">#000006</h6>
                         </td>
-                        <td data-label="Customer name">Awesome brand</td>
-                        <td data-label="Status"><span class="finalized-status">Paid</span></td>
-                        <td data-label="Issue Date">12 Dec 2021</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Value">Bank Account </td>
-                        <td data-label="Amount">$24.00</td>
-                        <td data-label="Due Date">12 Dec 2021</td>
+                        <td data-label="Customer name" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">Awesome brand</td>
+                        <td data-label="Status" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer"><span class="finalized-status">Paid</span></td>
+                        <td data-label="Issue Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
+                        <td data-label="VAT %" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">15%</td>
+                        <td data-label="VAT Value" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">Bank Account </td>
+                        <td data-label="Amount" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">$24.00</td>
+                        <td data-label="Due Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
                         <td data-label="Actions">
                           <div class="row p-0">
                             <div class="col-3 p-0 mb-2">
@@ -637,7 +640,7 @@
                                   class="icon icon-clone-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
-                              <a href="" class="border border-2 rounded p-1"><i
+                              <a href="" class="border border-2 rounded p-1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#sendInvoiceModal"><i
                                   class="icon icon-envelope-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
@@ -653,8 +656,8 @@
                           </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
-                        <td scope="row" data-label="Invoice no." class="ps-5">
+                      <tr>
+                        <td scope="row" data-label="Invoice no." class="ps-5 cursor-pointer" onclick="window.location.href='./fm-debit-note-detail.html'">
                           <span class="check-tasks">
                             <div class="checkbox relative">
                               <label class="absolute">
@@ -665,13 +668,13 @@
                           </span>
                           <h6 class="fw-500 text-sm">#000007</h6>
                         </td>
-                        <td data-label="Customer name">Maskobis</td>
-                        <td data-label="Status"><span class="finalized-status">Paid</span></td>
-                        <td data-label="Issue Date">12 Dec 2021</td>
-                        <td data-label="VAT %">15%</td>
-                        <td data-label="VAT Value">Bank Account </td>
-                        <td data-label="Amount">$224.00</td>
-                        <td data-label="Due Date">12 Dec 2021</td>
+                        <td data-label="Customer name" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">Maskobis</td>
+                        <td data-label="Status" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer"><span class="finalized-status">Paid</span></td>
+                        <td data-label="Issue Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
+                        <td data-label="VAT %" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">15%</td>
+                        <td data-label="VAT Value" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">Bank Account </td>
+                        <td data-label="Amount" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">$224.00</td>
+                        <td data-label="Due Date" onclick="window.location.href='./fm-debit-note-detail.html'" class="cursor-pointer">12 Dec 2021</td>
                         <td data-label="Actions">
                           <div class="row p-0">
                             <div class="col-3 p-0 mb-2">
@@ -690,7 +693,7 @@
                                   class="icon icon-clone-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
-                              <a href="" class="border border-2 rounded p-1"><i
+                              <a href="" class="border border-2 rounded p-1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#sendInvoiceModal"><i
                                   class="icon icon-envelope-table m-0"></i></a>
                             </div>
                             <div class="col-3 p-0 mt-1">
@@ -941,6 +944,34 @@
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Update</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="sendInvoiceModal" tabindex="-1" aria-labelledby="sendInvoiceModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sendInvoiceModalLabel">Send Invoice</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="name" class="fw-bold mt-3 mb-2">Select Channel</label>
+              <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="English">WhatsApp</option>
+                <option value="Urdu">Urdu</option>
+              </select>
+              <textarea name="description" id="description" cols="30" rows="3" class="d-block w-100 border border-2 rounded px-4 py-2 mt-3" spellcheck="false">Dear [customer name] Please find your invoice INV-000100.</textarea>
+              <div class="d-flex mt-3">
+                <p class="fw-600">Download invoice as PDF:</p>
+                <a href="" class="text-decoration-none text-fill d-block ms-4"><i class="icon icon-download"></i> Download</a>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill text-uppercase">Send it</button>
+            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>

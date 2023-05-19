@@ -235,6 +235,10 @@ $icons: (
   "plus-items" "svg" 47px 47px,
   "green-check" "svg" 15px 15px,
   "recacle" "svg" 22px 22px,
+  "star-4" "svg" 20px 20px,
+  "mp-calendar" "svg" 18px 20px,
+  "whatsapp-icon" "svg" 30px 30px,
+  "google-map-icon" "svg" 38px 55px,
   );
   
 @each $name, $fileType, $width, $height in $icons {

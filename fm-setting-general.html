@@ -25,6 +25,11 @@
   <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
   <link href="./assets/css/main.css" rel="stylesheet" />
   <link href="./assets/css/responsive.css" rel="stylesheet" />
+<style>
+    .quotes-table .table>:not(caption)>*>* {
+    padding: 2px;
+}
+</style>
 </head>
 
 <body>
@@ -79,6 +84,9 @@
                 <li><a class="dropdown-item panel_link" href="./fm-debit-note.html"><i
                       class="icon icon-project-supplies"></i>
                     <span>Debit</span></a></li>
+                    <li><a class="dropdown-item panel_link" href="./fm-expenses.html"><i
+                      class="icon icon-project-supplies"></i>
+                    <span>Expenses</span></a></li>
               </ul>
             </li>
             <li class="nav-item panel-dropdown">
@@ -249,9 +257,14 @@
                       aria-selected="true">Payroll setting</button>
                   </li>
                   <li class="nav-item m-0" role="presentation">
-                    <button class="nav-link text-uppercase" id="Expenses-tab" data-bs-toggle="tab"
-                      data-bs-target="#Expenses" type="button" role="tab" aria-controls="Expenses"
-                      aria-selected="true">Expenses Accounts</button>
+                    <button class="nav-link text-uppercase" id="Accounts-tab" data-bs-toggle="tab"
+                      data-bs-target="#Accounts" type="button" role="tab" aria-controls="Accounts"
+                      aria-selected="true">Accounts</button>
+                  </li>
+                  <li class="nav-item m-0" role="presentation">
+                    <button class="nav-link text-uppercase" id="taxRates-tab" data-bs-toggle="tab"
+                      data-bs-target="#taxRates" type="button" role="tab" aria-controls="taxRates"
+                      aria-selected="true">Tax Rates</button>
                   </li>
                   <li class="nav-item m-0" role="presentation">
                     <button class="nav-link text-uppercase" id="Invoice-tab" data-bs-toggle="tab"
@@ -294,6 +307,7 @@
                       data-bs-target="#Initiated-tab" type="button" role="tab" aria-controls="Initiated-tab"
                       aria-selected="true">Payment Initiated</button>
                   </li>
+                                    <h6 class="fw-600">General</h6>
                   <li class="nav-item m-0" role="presentation">
                     <button class="nav-link text-uppercase" id="Permission-tab" data-bs-toggle="tab"
                       data-bs-target="#Permission" type="button" role="tab" aria-controls="Permission"
@@ -2212,21 +2226,21 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="tab-pane" id="Quotes" role="tabpanel" aria-labelledby="Quotes-tab">
+                <div class="tab-pane quotes-table" id="Quotes" role="tabpanel" aria-labelledby="Quotes-tab">
                   <div class="page-main-title">
                     <div class="heading">
                       <h2>Quote Templates</h2>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                       <div class="chart cursor-pointer" onclick="window.location.href='./fm-setting-quote-templates.html'">
                         <div class="chart-box">
                           <div class="row">
                             <div class="col-6">
-                              <img src="./assets/images/amazon.jpg" class="rounded-circle width-50px" alt="">
-                              <h6 class="fw-600 mt-2">Zylkar Inc</h6>
-                              <p class="text-light-gray">
+                              <img src="./assets/images/amazon.jpg" class="rounded-circle w-25" alt="">
+                              <h6 class="fw-600 mt-2 fs-9">Zylkar Inc</h6>
+                              <p class="text-light-gray fs-9">
                                 4141 Hassan Drive
                                 <br>
                                 Pakistan
@@ -2238,13 +2252,13 @@
                             </div>
                             <div class="col-6">
                               <div class="text-end">
-                                <h2 class="fw-600">Quote</h2>
-                                <p class="text-light-gray">Quote EST-17</p>
+                                <h5 class="fw-600">Quote</h5>
+                                <p class="text-light-gray fs-9">Quote EST-17</p>
                               </div>
                             </div>
-                            <div class="col-6 mt-4">
-                              <p class="text-light-gray">Bill To</p>
-                              <p class="fw-600 text-small">
+                            <div class="col-6 mt-2">
+                              <p class="text-light-gray fs-9">Bill To</p>
+                              <p class="fw-600 fs-9">
                                 Rob & Joe Traders
                                 <br>
                                 Derah Dist., P.O.Box: 2922
@@ -2256,130 +2270,130 @@
                                 Saudi Arabia
                               </p>
                             </div>
-                            <div class="col-6 mt-4">
+                            <div class="col-6 mt-2">
                               <div class="d-flex align-items-center justify-content-between mb-2">
-                                <p class="text-light-gray text-small">Quote Date :</p>
-                                <p class="text-light-gray text-small">09 May 2023</p>
+                                <p class="text-light-gray fs-9">Quote Date :</p>
+                                <p class="text-light-gray fs-9">09 May 2023</p>
                               </div>
                               <div class="d-flex align-items-center justify-content-between mb-2">
-                                <p class="text-light-gray text-small">Expiry Date :</p>
-                                <p class="text-light-gray text-small">09 May 2023</p>
+                                <p class="text-light-gray fs-9">Expiry Date :</p>
+                                <p class="text-light-gray fs-9">09 May 2023</p>
                               </div>
                               <div class="d-flex align-items-center justify-content-between mb-2">
-                                <p class="text-light-gray text-small">Reference# :</p>
-                                <p class="text-light-gray text-small">SO-17</p>
+                                <p class="text-light-gray fs-9">Reference# :</p>
+                                <p class="text-light-gray fs-9">SO-17</p>
                               </div>
                             </div>
-                            <div class="col-12 mt-4">
+                            <div class="col-12 mt-2">
                               <table class="table">
                                 <thead>
                                   <tr class="bg-dark">
-                                    <th scope="col" class="text-white">#</th>
-                                    <th scope="col" class="text-white">Item & Description</th>
-                                    <th scope="col" class="text-white">Qty</th>
-                                    <th scope="col" class="text-white">Rate</th>
-                                    <th scope="col" class="text-white">Discount</th>
-                                    <th scope="col" class="text-white">Amount</th>
+                                    <th scope="col" class="text-white fs-9">#</th>
+                                    <th scope="col" class="text-white fs-9">Item & Description</th>
+                                    <th scope="col" class="text-white fs-9">Qty</th>
+                                    <th scope="col" class="text-white fs-9">Rate</th>
+                                    <th scope="col" class="text-white fs-9">Discount</th>
+                                    <th scope="col" class="text-white fs-9">Amount</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <th scope="row">1</th>
+                                    <th scope="row" class="fs-9">1</th>
                                     <td>
                                       <div>
-                                        <h6 class="fw-600 text-small">Brochure Design</h6>
-                                        <p class="fw-600 text-small text-light-gray">Brochure Design Single Sided Color</p>
+                                        <h6 class="fw-600 fs-9">Brochure Design</h6>
+                                        <p class="fw-600 text-light-gray fs-9">Brochure Design Single Sided Color</p>
                                       </div>
                                     </td>
                                     <td>
-                                      <h6 class="fw-600 text-small">1.00</h6>
-                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                      <h6 class="fw-600 fs-9">1.00</h6>
+                                      <p class="fw-600 text-light-gray fs-9">Nos</p>
                                     </td>
-                                    <td>300.00</td>
-                                    <td>0.00</td>
-                                    <td>300.00</td>
+                                    <td class="fs-9">300.00</td>
+                                    <td class="fs-9">0.00</td>
+                                    <td class="fs-9">300.00</td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">2</th>
+                                    <th scope="row" class="fs-9">2</th>
                                     <td>
                                       <div>
-                                        <h6 class="fw-600 text-small">Web Design Packages(Template) - Basic</h6>
-                                        <p class="fw-600 text-small text-light-gray">Custom Themes for your business. Inclusive of 10 
+                                        <h6 class="fw-600 fs-9">Web Design Packages(Template) - Basic</h6>
+                                        <p class="fw-600 text-light-gray fs-9">Custom Themes for your business. Inclusive of 10 
                                           hours of marketing and annual training</p>
                                       </div>
                                     </td>
                                     <td>
-                                      <h6 class="fw-600 text-small">1.00</h6>
-                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                      <h6 class="fw-600 fs-9">1.00</h6>
+                                      <p class="fw-600 text-light-gray fs-9">Nos</p>
                                     </td>
-                                    <td>300.00</td>
-                                    <td>0.00</td>
-                                    <td>300.00</td>
+                                    <td class="fs-9">300.00</td>
+                                    <td class="fs-9">0.00</td>
+                                    <td class="fs-9">300.00</td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">3</th>
+                                    <th scope="row" class="fs-9">3</th>
                                     <td>
                                       <div>
-                                        <h6 class="fw-600 text-small">Print Ad - Basic - Color</h6>
-                                        <p class="fw-600 text-small text-light-gray">Print Ad 1/8 size Color</p>
+                                        <h6 class="fw-600 fs-9">Print Ad - Basic - Color</h6>
+                                        <p class="fw-600 text-light-gray fs-9">Print Ad 1/8 size Color</p>
                                       </div>
                                     </td>
                                     <td>
-                                      <h6 class="fw-600 text-small">1.00</h6>
-                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                      <h6 class="fw-600 fs-9">1.00</h6>
+                                      <p class="fw-600 text-light-gray fs-9">Nos</p>
                                     </td>
-                                    <td>300.00</td>
-                                    <td>0.00</td>
-                                    <td>300.00</td>
+                                    <td class="fs-9">300.00</td>
+                                    <td class="fs-9">0.00</td>
+                                    <td class="fs-9">300.00</td>
                                   </tr>
                                 </tbody>
                               </table>
                             </div>
-                            <div class="col-8 ms-auto mt-4">
+                            <div class="col-8 ms-auto mt-2">
                               <div class="row">
                                 <div class="col-6 text-end">
-                                  <p class="text-small">Sub Total</p>
+                                  <p class="fs-9">Sub Total</p>
                                 </div>
                                 <div class="col-6 text-end">
-                                  <p class="text-small">630.00</p>
-                                </div>
-                              </div>
-                              <div class="row mt-2">
-                                <div class="col-6 text-end">
-                                  <p class="text-small">Sample Tax1 (4.70%)</p>
-                                </div>
-                                <div class="col-6 text-end">
-                                  <p class="text-small">11.75</p>
+                                  <p class="fs-9">630.00</p>
                                 </div>
                               </div>
                               <div class="row mt-2">
                                 <div class="col-6 text-end">
-                                  <p class="text-small">Sample Tax2 (7.00%)</p>
+                                  <p class="fs-9">Sample Tax1 (4.70%)</p>
                                 </div>
                                 <div class="col-6 text-end">
-                                  <p class="text-small">21.00</p>
+                                  <p class="fs-9">11.75</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2">
+                                <div class="col-6 text-end">
+                                  <p class="fs-9">Sample Tax2 (7.00%)</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="fs-9">21.00</p>
                                 </div>
                               </div>
                               <div class="row mt-2 bg-light p-2">
                                 <div class="col-6 text-end">
-                                  <p class="text-small fw-600">Total</p>
+                                  <p class="fs-9 fw-600">Total</p>
                                 </div>
                                 <div class="col-6 text-end">
-                                  <p class="text-small fw-600">SAR662.75</p>
+                                  <p class="fs-9 fw-600">SAR662.75</p>
                                 </div>
                               </div>
                             </div>
-                            <div class="12 mt-4">
-                              <p class="fw-600">Notes</p>
-                              <p class="text-light-gray">Looking forward for your business.</p>
-                              <p class="fw-600 mt-3">Terms & Conditions</p>
-                              <p class="text-light-gray">Your company's Terms and Conditions will be displayed here. You can add it in the Estimate Preferences page under Settings.</p>
+                            <div class="12 mt-2">
+                              <p class="fw-600 fs-9">Notes</p>
+                              <p class="text-light-gray fs-9">Looking forward for your business.</p>
+                              <p class="fw-600 mt-3 fs-9">Terms & Conditions</p>
+                              <p class="text-light-gray fs-9">Your company's Terms and Conditions will be displayed here. You can add it in the Estimate Preferences page under Settings.</p>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4 ps-0">
+                    <div class="col-md-6 ps-0">
                       <div class="border-dots w-100 h-100 rounded d-flex align-items-center p-3">
                         <div>
                           <h5>New Template</h5>
@@ -2392,21 +2406,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="Invoices" role="tabpanel" aria-labelledby="Invoices-tab">
+                <div class="tab-pane quotes-table" id="Invoices" role="tabpanel" aria-labelledby="Invoices-tab">
                   <div class="page-main-title">
                     <div class="heading">
                       <h2>Invoices Templates</h2>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                       <div class="chart cursor-pointer" onclick="window.location.href='./fm-setting-invoices-templates.html'">
                         <div class="chart-box">
                           <div class="row">
                             <div class="col-6">
-                              <img src="./assets/images/amazon.jpg" class="rounded-circle width-50px" alt="">
-                              <h6 class="fw-600 mt-2">Zylkar Inc</h6>
-                              <p class="text-light-gray">
+                              <img src="./assets/images/amazon.jpg" class="rounded-circle w-25" alt="">
+                              <h6 class="fw-600 mt-2 fs-9">Zylkar Inc</h6>
+                              <p class="text-light-gray fs-9">
                                 4141 Hassan Drive
                                 <br>
                                 Pakistan
@@ -2418,13 +2432,13 @@
                             </div>
                             <div class="col-6">
                               <div class="text-end">
-                                <h2 class="fw-600">Quote</h2>
-                                <p class="text-light-gray">Quote EST-17</p>
+                                <h5 class="fw-600">Quote</h5>
+                                <p class="text-light-gray fs-9">Quote EST-17</p>
                               </div>
                             </div>
-                            <div class="col-6 mt-4">
-                              <p class="text-light-gray">Bill To</p>
-                              <p class="fw-600 text-small">
+                            <div class="col-6 mt-2">
+                              <p class="text-light-gray fs-9">Bill To</p>
+                              <p class="fw-600 fs-9">
                                 Rob & Joe Traders
                                 <br>
                                 Derah Dist., P.O.Box: 2922
@@ -2436,130 +2450,130 @@
                                 Saudi Arabia
                               </p>
                             </div>
-                            <div class="col-6 mt-4">
+                            <div class="col-6 mt-2">
                               <div class="d-flex align-items-center justify-content-between mb-2">
-                                <p class="text-light-gray text-small">Quote Date :</p>
-                                <p class="text-light-gray text-small">09 May 2023</p>
+                                <p class="text-light-gray fs-9">Quote Date :</p>
+                                <p class="text-light-gray fs-9">09 May 2023</p>
                               </div>
                               <div class="d-flex align-items-center justify-content-between mb-2">
-                                <p class="text-light-gray text-small">Expiry Date :</p>
-                                <p class="text-light-gray text-small">09 May 2023</p>
+                                <p class="text-light-gray fs-9">Expiry Date :</p>
+                                <p class="text-light-gray fs-9">09 May 2023</p>
                               </div>
                               <div class="d-flex align-items-center justify-content-between mb-2">
-                                <p class="text-light-gray text-small">Reference# :</p>
-                                <p class="text-light-gray text-small">SO-17</p>
+                                <p class="text-light-gray fs-9">Reference# :</p>
+                                <p class="text-light-gray fs-9">SO-17</p>
                               </div>
                             </div>
-                            <div class="col-12 mt-4">
+                            <div class="col-12 mt-2">
                               <table class="table">
                                 <thead>
                                   <tr class="bg-dark">
-                                    <th scope="col" class="text-white">#</th>
-                                    <th scope="col" class="text-white">Item & Description</th>
-                                    <th scope="col" class="text-white">Qty</th>
-                                    <th scope="col" class="text-white">Rate</th>
-                                    <th scope="col" class="text-white">Discount</th>
-                                    <th scope="col" class="text-white">Amount</th>
+                                    <th scope="col" class="text-white fs-9">#</th>
+                                    <th scope="col" class="text-white fs-9">Item & Description</th>
+                                    <th scope="col" class="text-white fs-9">Qty</th>
+                                    <th scope="col" class="text-white fs-9">Rate</th>
+                                    <th scope="col" class="text-white fs-9">Discount</th>
+                                    <th scope="col" class="text-white fs-9">Amount</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <th scope="row">1</th>
+                                    <th scope="row" class="fs-9">1</th>
                                     <td>
                                       <div>
-                                        <h6 class="fw-600 text-small">Brochure Design</h6>
-                                        <p class="fw-600 text-small text-light-gray">Brochure Design Single Sided Color</p>
+                                        <h6 class="fw-600 fs-9">Brochure Design</h6>
+                                        <p class="fw-600 text-light-gray fs-9">Brochure Design Single Sided Color</p>
                                       </div>
                                     </td>
                                     <td>
-                                      <h6 class="fw-600 text-small">1.00</h6>
-                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                      <h6 class="fw-600 fs-9">1.00</h6>
+                                      <p class="fw-600 text-light-gray fs-9">Nos</p>
                                     </td>
-                                    <td>300.00</td>
-                                    <td>0.00</td>
-                                    <td>300.00</td>
+                                    <td class="fs-9">300.00</td>
+                                    <td class="fs-9">0.00</td>
+                                    <td class="fs-9">300.00</td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">2</th>
+                                    <th scope="row" class="fs-9">2</th>
                                     <td>
                                       <div>
-                                        <h6 class="fw-600 text-small">Web Design Packages(Template) - Basic</h6>
-                                        <p class="fw-600 text-small text-light-gray">Custom Themes for your business. Inclusive of 10 
+                                        <h6 class="fw-600 fs-9">Web Design Packages(Template) - Basic</h6>
+                                        <p class="fw-600 text-light-gray fs-9">Custom Themes for your business. Inclusive of 10 
                                           hours of marketing and annual training</p>
                                       </div>
                                     </td>
                                     <td>
-                                      <h6 class="fw-600 text-small">1.00</h6>
-                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                      <h6 class="fw-600 fs-9">1.00</h6>
+                                      <p class="fw-600 text-light-gray fs-9">Nos</p>
                                     </td>
-                                    <td>300.00</td>
-                                    <td>0.00</td>
-                                    <td>300.00</td>
+                                    <td class="fs-9">300.00</td>
+                                    <td class="fs-9">0.00</td>
+                                    <td class="fs-9">300.00</td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">3</th>
+                                    <th scope="row" class="fs-9">3</th>
                                     <td>
                                       <div>
-                                        <h6 class="fw-600 text-small">Print Ad - Basic - Color</h6>
-                                        <p class="fw-600 text-small text-light-gray">Print Ad 1/8 size Color</p>
+                                        <h6 class="fw-600 fs-9">Print Ad - Basic - Color</h6>
+                                        <p class="fw-600 text-light-gray fs-9">Print Ad 1/8 size Color</p>
                                       </div>
                                     </td>
                                     <td>
-                                      <h6 class="fw-600 text-small">1.00</h6>
-                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                      <h6 class="fw-600 fs-9">1.00</h6>
+                                      <p class="fw-600 text-light-gray fs-9">Nos</p>
                                     </td>
-                                    <td>300.00</td>
-                                    <td>0.00</td>
-                                    <td>300.00</td>
+                                    <td class="fs-9">300.00</td>
+                                    <td class="fs-9">0.00</td>
+                                    <td class="fs-9">300.00</td>
                                   </tr>
                                 </tbody>
                               </table>
                             </div>
-                            <div class="col-8 ms-auto mt-4">
+                            <div class="col-8 ms-auto mt-2">
                               <div class="row">
                                 <div class="col-6 text-end">
-                                  <p class="text-small">Sub Total</p>
+                                  <p class="fs-9">Sub Total</p>
                                 </div>
                                 <div class="col-6 text-end">
-                                  <p class="text-small">630.00</p>
-                                </div>
-                              </div>
-                              <div class="row mt-2">
-                                <div class="col-6 text-end">
-                                  <p class="text-small">Sample Tax1 (4.70%)</p>
-                                </div>
-                                <div class="col-6 text-end">
-                                  <p class="text-small">11.75</p>
+                                  <p class="fs-9">630.00</p>
                                 </div>
                               </div>
                               <div class="row mt-2">
                                 <div class="col-6 text-end">
-                                  <p class="text-small">Sample Tax2 (7.00%)</p>
+                                  <p class="fs-9">Sample Tax1 (4.70%)</p>
                                 </div>
                                 <div class="col-6 text-end">
-                                  <p class="text-small">21.00</p>
+                                  <p class="fs-9">11.75</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2">
+                                <div class="col-6 text-end">
+                                  <p class="fs-9">Sample Tax2 (7.00%)</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="fs-9">21.00</p>
                                 </div>
                               </div>
                               <div class="row mt-2 bg-light p-2">
                                 <div class="col-6 text-end">
-                                  <p class="text-small fw-600">Total</p>
+                                  <p class="fs-9 fw-600">Total</p>
                                 </div>
                                 <div class="col-6 text-end">
-                                  <p class="text-small fw-600">SAR662.75</p>
+                                  <p class="fs-9 fw-600">SAR662.75</p>
                                 </div>
                               </div>
                             </div>
-                            <div class="12 mt-4">
-                              <p class="fw-600">Notes</p>
-                              <p class="text-light-gray">Looking forward for your business.</p>
-                              <p class="fw-600 mt-3">Terms & Conditions</p>
-                              <p class="text-light-gray">Your company's Terms and Conditions will be displayed here. You can add it in the Estimate Preferences page under Settings.</p>
+                            <div class="12 mt-2">
+                              <p class="fw-600 fs-9">Notes</p>
+                              <p class="text-light-gray fs-9">Looking forward for your business.</p>
+                              <p class="fw-600 mt-3 fs-9">Terms & Conditions</p>
+                              <p class="text-light-gray fs-9">Your company's Terms and Conditions will be displayed here. You can add it in the Estimate Preferences page under Settings.</p>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4 ps-0">
+                    <div class="col-md-6 ps-0">
                       <div class="border-dots w-100 h-100 rounded d-flex align-items-center p-3">
                         <div>
                           <h5>New Template</h5>
@@ -2572,21 +2586,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="CreditNote" role="tabpanel" aria-labelledby="CreditNote-tab">
+                <div class="tab-pane quotes-table" id="CreditNote" role="tabpanel" aria-labelledby="CreditNote-tab">
                   <div class="page-main-title">
                     <div class="heading">
                       <h2>Credit Note Templates</h2>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                       <div class="chart cursor-pointer" onclick="window.location.href='./fm-setting-credit-note-templates.html'">
                         <div class="chart-box">
                           <div class="row">
                             <div class="col-6">
-                              <img src="./assets/images/amazon.jpg" class="rounded-circle width-50px" alt="">
-                              <h6 class="fw-600 mt-2">Zylkar Inc</h6>
-                              <p class="text-light-gray">
+                              <img src="./assets/images/amazon.jpg" class="rounded-circle w-25" alt="">
+                              <h6 class="fw-600 mt-2 fs-9">Zylkar Inc</h6>
+                              <p class="text-light-gray fs-9">
                                 4141 Hassan Drive
                                 <br>
                                 Pakistan
@@ -2598,13 +2612,13 @@
                             </div>
                             <div class="col-6">
                               <div class="text-end">
-                                <h2 class="fw-600">Quote</h2>
-                                <p class="text-light-gray">Quote EST-17</p>
+                                <h5 class="fw-600">Quote</h5>
+                                <p class="text-light-gray fs-9">Quote EST-17</p>
                               </div>
                             </div>
-                            <div class="col-6 mt-4">
-                              <p class="text-light-gray">Bill To</p>
-                              <p class="fw-600 text-small">
+                            <div class="col-6 mt-2">
+                              <p class="text-light-gray fs-9">Bill To</p>
+                              <p class="fw-600 fs-9">
                                 Rob & Joe Traders
                                 <br>
                                 Derah Dist., P.O.Box: 2922
@@ -2616,130 +2630,130 @@
                                 Saudi Arabia
                               </p>
                             </div>
-                            <div class="col-6 mt-4">
+                            <div class="col-6 mt-2">
                               <div class="d-flex align-items-center justify-content-between mb-2">
-                                <p class="text-light-gray text-small">Quote Date :</p>
-                                <p class="text-light-gray text-small">09 May 2023</p>
+                                <p class="text-light-gray fs-9">Quote Date :</p>
+                                <p class="text-light-gray fs-9">09 May 2023</p>
                               </div>
                               <div class="d-flex align-items-center justify-content-between mb-2">
-                                <p class="text-light-gray text-small">Expiry Date :</p>
-                                <p class="text-light-gray text-small">09 May 2023</p>
+                                <p class="text-light-gray fs-9">Expiry Date :</p>
+                                <p class="text-light-gray fs-9">09 May 2023</p>
                               </div>
                               <div class="d-flex align-items-center justify-content-between mb-2">
-                                <p class="text-light-gray text-small">Reference# :</p>
-                                <p class="text-light-gray text-small">SO-17</p>
+                                <p class="text-light-gray fs-9">Reference# :</p>
+                                <p class="text-light-gray fs-9">SO-17</p>
                               </div>
                             </div>
-                            <div class="col-12 mt-4">
+                            <div class="col-12 mt-2">
                               <table class="table">
                                 <thead>
                                   <tr class="bg-dark">
-                                    <th scope="col" class="text-white">#</th>
-                                    <th scope="col" class="text-white">Item & Description</th>
-                                    <th scope="col" class="text-white">Qty</th>
-                                    <th scope="col" class="text-white">Rate</th>
-                                    <th scope="col" class="text-white">Discount</th>
-                                    <th scope="col" class="text-white">Amount</th>
+                                    <th scope="col" class="text-white fs-9">#</th>
+                                    <th scope="col" class="text-white fs-9">Item & Description</th>
+                                    <th scope="col" class="text-white fs-9">Qty</th>
+                                    <th scope="col" class="text-white fs-9">Rate</th>
+                                    <th scope="col" class="text-white fs-9">Discount</th>
+                                    <th scope="col" class="text-white fs-9">Amount</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <th scope="row">1</th>
+                                    <th scope="row" class="fs-9">1</th>
                                     <td>
                                       <div>
-                                        <h6 class="fw-600 text-small">Brochure Design</h6>
-                                        <p class="fw-600 text-small text-light-gray">Brochure Design Single Sided Color</p>
+                                        <h6 class="fw-600 fs-9">Brochure Design</h6>
+                                        <p class="fw-600 text-light-gray fs-9">Brochure Design Single Sided Color</p>
                                       </div>
                                     </td>
                                     <td>
-                                      <h6 class="fw-600 text-small">1.00</h6>
-                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                      <h6 class="fw-600 fs-9">1.00</h6>
+                                      <p class="fw-600 text-light-gray fs-9">Nos</p>
                                     </td>
-                                    <td>300.00</td>
-                                    <td>0.00</td>
-                                    <td>300.00</td>
+                                    <td class="fs-9">300.00</td>
+                                    <td class="fs-9">0.00</td>
+                                    <td class="fs-9">300.00</td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">2</th>
+                                    <th scope="row" class="fs-9">2</th>
                                     <td>
                                       <div>
-                                        <h6 class="fw-600 text-small">Web Design Packages(Template) - Basic</h6>
-                                        <p class="fw-600 text-small text-light-gray">Custom Themes for your business. Inclusive of 10 
+                                        <h6 class="fw-600 fs-9">Web Design Packages(Template) - Basic</h6>
+                                        <p class="fw-600 text-light-gray fs-9">Custom Themes for your business. Inclusive of 10 
                                           hours of marketing and annual training</p>
                                       </div>
                                     </td>
                                     <td>
-                                      <h6 class="fw-600 text-small">1.00</h6>
-                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                      <h6 class="fw-600 fs-9">1.00</h6>
+                                      <p class="fw-600 text-light-gray fs-9">Nos</p>
                                     </td>
-                                    <td>300.00</td>
-                                    <td>0.00</td>
-                                    <td>300.00</td>
+                                    <td class="fs-9">300.00</td>
+                                    <td class="fs-9">0.00</td>
+                                    <td class="fs-9">300.00</td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">3</th>
+                                    <th scope="row" class="fs-9">3</th>
                                     <td>
                                       <div>
-                                        <h6 class="fw-600 text-small">Print Ad - Basic - Color</h6>
-                                        <p class="fw-600 text-small text-light-gray">Print Ad 1/8 size Color</p>
+                                        <h6 class="fw-600 fs-9">Print Ad - Basic - Color</h6>
+                                        <p class="fw-600 text-light-gray fs-9">Print Ad 1/8 size Color</p>
                                       </div>
                                     </td>
                                     <td>
-                                      <h6 class="fw-600 text-small">1.00</h6>
-                                      <p class="fw-600 text-small text-light-gray">Nos</p>
+                                      <h6 class="fw-600 fs-9">1.00</h6>
+                                      <p class="fw-600 text-light-gray fs-9">Nos</p>
                                     </td>
-                                    <td>300.00</td>
-                                    <td>0.00</td>
-                                    <td>300.00</td>
+                                    <td class="fs-9">300.00</td>
+                                    <td class="fs-9">0.00</td>
+                                    <td class="fs-9">300.00</td>
                                   </tr>
                                 </tbody>
                               </table>
                             </div>
-                            <div class="col-8 ms-auto mt-4">
+                            <div class="col-8 ms-auto mt-2">
                               <div class="row">
                                 <div class="col-6 text-end">
-                                  <p class="text-small">Sub Total</p>
+                                  <p class="fs-9">Sub Total</p>
                                 </div>
                                 <div class="col-6 text-end">
-                                  <p class="text-small">630.00</p>
-                                </div>
-                              </div>
-                              <div class="row mt-2">
-                                <div class="col-6 text-end">
-                                  <p class="text-small">Sample Tax1 (4.70%)</p>
-                                </div>
-                                <div class="col-6 text-end">
-                                  <p class="text-small">11.75</p>
+                                  <p class="fs-9">630.00</p>
                                 </div>
                               </div>
                               <div class="row mt-2">
                                 <div class="col-6 text-end">
-                                  <p class="text-small">Sample Tax2 (7.00%)</p>
+                                  <p class="fs-9">Sample Tax1 (4.70%)</p>
                                 </div>
                                 <div class="col-6 text-end">
-                                  <p class="text-small">21.00</p>
+                                  <p class="fs-9">11.75</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2">
+                                <div class="col-6 text-end">
+                                  <p class="fs-9">Sample Tax2 (7.00%)</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                  <p class="fs-9">21.00</p>
                                 </div>
                               </div>
                               <div class="row mt-2 bg-light p-2">
                                 <div class="col-6 text-end">
-                                  <p class="text-small fw-600">Total</p>
+                                  <p class="fs-9 fw-600">Total</p>
                                 </div>
                                 <div class="col-6 text-end">
-                                  <p class="text-small fw-600">SAR662.75</p>
+                                  <p class="fs-9 fw-600">SAR662.75</p>
                                 </div>
                               </div>
                             </div>
-                            <div class="12 mt-4">
-                              <p class="fw-600">Notes</p>
-                              <p class="text-light-gray">Looking forward for your business.</p>
-                              <p class="fw-600 mt-3">Terms & Conditions</p>
-                              <p class="text-light-gray">Your company's Terms and Conditions will be displayed here. You can add it in the Estimate Preferences page under Settings.</p>
+                            <div class="12 mt-2">
+                              <p class="fw-600 fs-9">Notes</p>
+                              <p class="text-light-gray fs-9">Looking forward for your business.</p>
+                              <p class="fw-600 mt-3 fs-9">Terms & Conditions</p>
+                              <p class="text-light-gray fs-9">Your company's Terms and Conditions will be displayed here. You can add it in the Estimate Preferences page under Settings.</p>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4 ps-0">
+                    <div class="col-md-6 ps-0">
                       <div class="border-dots w-100 h-100 rounded d-flex align-items-center p-3">
                         <div>
                           <h5>New Template</h5>
@@ -2749,6 +2763,465 @@
                           <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3">+ New</button>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="Accounts" role="tabpanel" aria-labelledby="Accounts-tab">
+                  <div class="page-main-title">
+                    <div class="heading">
+                      <h2>Accounts</h2>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="search-form wsm-100">
+                        <form action="">
+                          <div class="form-group">
+                            <input class="form-control wsm-100 mt-3 mt-md-0" type="text" placeholder="Search order, invoice, email, company…" aria-label="Search">
+                            <i class="icon icon-search-form"></i>
+                          </div>
+                        </form>
+                      </div>
+                      <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2" data-bs-toggle="modal" data-bs-target="#addAccountModal">Add Account</button>
+                    </div>
+                  </div>
+                  <div class="invoice-table tablepanel mt-3 invoice-table-product">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            Code
+                          </th>
+                          <th scope="col">Account Name</th>
+                          <th scope="col">Type</th>
+                          <th scope="col">Enable payment</th>
+                          <th scope="col">Debit</th>
+                          <th scope="col">Credit</th>
+                          <th scope="col">Calculation</th>
+                        </tr>
+                      </thead>
+                      <tbody class="right-content interest-body" style="display: table-row-group;">
+                        <tr>
+                          <td scope="row" data-label="Code" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-001</h6>
+                          </td>
+                          <td data-label="Account Name">Petty Cash</td>
+                          <td data-label="Type"><span class="finalized-status">Assets</span></td>
+                          <td data-label="Enable payment">Yes</td>
+                          <td data-label="Debit">0.0</td>
+                          <td data-label="Credit">0.0</td>
+                          <td data-label="Calculation">
+                            <button type="button" class="btn ouline-white">new invoice</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Code" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-002</h6>
+                          </td>
+                          <td data-label="Account Name">Account receivable</td>
+                          <td data-label="Type"><span class="finalized-status">Assets</span></td>
+                          <td data-label="Enable payment">Yes</td>
+                          <td data-label="Debit">0.0</td>
+                          <td data-label="Credit">0.0</td>
+                          <td data-label="Calculation">
+                            <button type="button" class="btn ouline-white">new invoice</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Code" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-003</h6>
+                          </td>
+                          <td data-label="Account Name">Credit Card</td>
+                          <td data-label="Type"><span class="finalized-status">Liabilities</span></td>
+                          <td data-label="Enable payment">Yes</td>
+                          <td data-label="Debit">600</td>
+                          <td data-label="Credit">0.0</td>
+                          <td data-label="Calculation">
+                            <div class="d-flex">
+                              <button type="button" class="btn ouline-white me-3">new bill</button>
+                              <button type="button" class="btn ouline-white">new payroll</button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Code" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-004</h6>
+                          </td>
+                          <td data-label="Account Name">Bank Loan</td>
+                          <td data-label="Type"><span class="finalized-status">Liabilities</span></td>
+                          <td data-label="Enable payment">Yes</td>
+                          <td data-label="Debit">600</td>
+                          <td data-label="Credit">0.0</td>
+                          <td data-label="Calculation">
+                              <button type="button" class="btn ouline-white me-3">new Bill</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Code" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-005</h6>
+                          </td>
+                          <td data-label="Account Name">Cost Of Goods</td>
+                          <td data-label="Type"><span class="finalized-status">Expenses</span></td>
+                          <td data-label="Enable payment">Yes</td>
+                          <td data-label="Debit">600</td>
+                          <td data-label="Credit">0.0</td>
+                          <td data-label="Calculation">
+                              <button type="button" class="btn ouline-white me-3">new Quota</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Code" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-006</h6>
+                          </td>
+                          <td data-label="Account Name">General Expenses</td>
+                          <td data-label="Type"><span class="finalized-status">Expenses</span></td>
+                          <td data-label="Enable payment">Yes</td>
+                          <td data-label="Debit">600</td>
+                          <td data-label="Credit">0.0</td>
+                          <td data-label="Calculation">
+                              <button type="button" class="btn ouline-white me-3">Submit invoice</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Code" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-007</h6>
+                          </td>
+                          <td data-label="Account Name">Subscription</td>
+                          <td data-label="Type"><span class="finalized-status">Expenses</span></td>
+                          <td data-label="Enable payment">Yes</td>
+                          <td data-label="Debit">600</td>
+                          <td data-label="Credit">0.0</td>
+                          <td data-label="Calculation">
+                              <button type="button" class="btn ouline-white me-3">new invoice</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Code" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-008</h6>
+                          </td>
+                          <td data-label="Account Name">Sales</td>
+                          <td data-label="Type"><span class="finalized-status">Sales</span></td>
+                          <td data-label="Enable payment">Yes</td>
+                          <td data-label="Debit">600</td>
+                          <td data-label="Credit">0.0</td>
+                          <td data-label="Calculation">
+                              <button type="button" class="btn ouline-white me-3">new invoice</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Code" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-009</h6>
+                          </td>
+                          <td data-label="Account Name">Vat</td>
+                          <td data-label="Type"><span class="finalized-status">Liabilities</span></td>
+                          <td data-label="Enable payment">Yes</td>
+                          <td data-label="Debit">600</td>
+                          <td data-label="Credit">0.0</td>
+                          <td data-label="Calculation">
+                              <button type="button" class="btn ouline-white me-3">new invoice</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="invoice-pagination d-flex mt-3 justify-content-between align-items-center flex-colume-sm">
+                    <div class="d-flex align-items-center">
+                      <p class="text-sm">Showing</p>
+                      <select id="cars" class="border-1 me-3 ms-2 border-radius p-2">
+                        <option value="volvo">15</option>
+                        <option value="saab">25</option>
+                        <option value="opel">35</option>
+                        <option value="audi">50</option>
+                      </select>
+                      <span class="text-light-gray text-sm">items per page</span>
+                    </div>
+                    <div class="pagination-right d-flex align-items-center gap-4 mt-4 mt-md-0">
+                      <button class="btn pagination-btn active">1</button>
+                      <button class="btn pagination-btn">2</button>
+                      <a class="text-light-gray text-decoration-none">Next</a>
+                      <a class="text-light-gray text-decoration-none">End</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane " id="taxRates" role="tabpanel" aria-labelledby="taxRates-tab">
+                  <div class="page-main-title">
+                    <div class="heading">
+                      <h2>Tax Rates</h2>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="search-form wsm-100">
+                        <form action="">
+                          <div class="form-group">
+                            <input class="form-control wsm-100 mt-3 mt-md-0" type="text" placeholder="Search order, invoice, email, company…" aria-label="Search">
+                            <i class="icon icon-search-form"></i>
+                          </div>
+                        </form>
+                      </div>
+                      <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2" data-bs-toggle="modal" data-bs-target="#addTaxModal">Add Tax</button>
+                    </div>
+                  </div>
+                  <div class="invoice-table tablepanel mt-3 invoice-table-product">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            Tax Name
+                          </th>
+                          <th scope="col">Discreption</th>
+                          <th scope="col">Type</th>
+                          <th scope="col">Rate</th>
+                        </tr>
+                      </thead>
+                      <tbody class="right-content interest-body" style="display: table-row-group;">
+                        <tr>
+                          <td scope="row" data-label="Tax Name" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-001</h6>
+                          </td>
+                          <td data-label="Discreption">Petty Cash</td>
+                          <td data-label="Type"><span class="finalized-status">Assets</span></td>
+                          <td data-label="Rate">15%</td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Tax Name" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-002</h6>
+                          </td>
+                          <td data-label="Discreption">Account receivable</td>
+                          <td data-label="Type"><span class="finalized-status">Assets</span></td>
+                          <td data-label="Rate">10%</td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Tax Name" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-003</h6>
+                          </td>
+                          <td data-label="Discreption">Credit Card</td>
+                          <td data-label="Type"><span class="finalized-status">Liabilities</span></td>
+                          <td data-label="Rate">0%</td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Tax Name" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-004</h6>
+                          </td>
+                          <td data-label="Discreption">Bank Loan</td>
+                          <td data-label="Type"><span class="finalized-status">Liabilities</span></td>
+                          <td data-label="Rate">0%</td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Tax Name" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-005</h6>
+                          </td>
+                          <td data-label="Discreption">Cost Of Goods</td>
+                          <td data-label="Type"><span class="finalized-status">Expenses</span></td>
+                          <td data-label="Rate">0%</td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Tax Name" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-006</h6>
+                          </td>
+                          <td data-label="Discreption">General Expenses</td>
+                          <td data-label="Type"><span class="finalized-status">Expenses</span></td>
+                          <td data-label="Rate">0%</td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Tax Name" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-006</h6>
+                          </td>
+                          <td data-label="Discreption">Subscription</td>
+                          <td data-label="Type"><span class="finalized-status">Expenses</span></td>
+                          <td data-label="Rate">0%</td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Tax Name" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-007</h6>
+                          </td>
+                          <td data-label="Discreption">Sales</td>
+                          <td data-label="Type"><span class="finalized-status">Sales</span></td>
+                          <td data-label="Rate">0%</td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Tax Name" class="ps-5">
+                            <span class="check-tasks">
+                              <div class="checkbox relative">
+                                <label class="absolute">
+                                  <input type="checkbox" data-ng-model="example.check">
+                                  <span class="box"></span>
+                                </label>
+                              </div>
+                            </span>
+                            <h6 class="fw-500 text-sm">1-008</h6>
+                          </td>
+                          <td data-label="Discreption">Vat</td>
+                          <td data-label="Type"><span class="finalized-status">Liabilities</span></td>
+                          <td data-label="Rate">0%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="invoice-pagination d-flex mt-3 justify-content-between align-items-center flex-colume-sm">
+                    <div class="d-flex align-items-center">
+                      <p class="text-sm">Showing</p>
+                      <select id="cars" class="border-1 me-3 ms-2 border-radius p-2">
+                        <option value="volvo">15</option>
+                        <option value="saab">25</option>
+                        <option value="opel">35</option>
+                        <option value="audi">50</option>
+                      </select>
+                      <span class="text-light-gray text-sm">items per page</span>
+                    </div>
+                    <div class="pagination-right d-flex align-items-center gap-4 mt-4 mt-md-0">
+                      <button class="btn pagination-btn active">1</button>
+                      <button class="btn pagination-btn">2</button>
+                      <a class="text-light-gray text-decoration-none">Next</a>
+                      <a class="text-light-gray text-decoration-none">End</a>
                     </div>
                   </div>
                 </div>
@@ -3181,7 +3654,114 @@
         </div>
       </div>
     </div>
-
+<div class="modal fade" id="addAccountModal" tabindex="-1" aria-labelledby="addAccountModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addAccountModalLabel">Add Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Account name</label>
+          <input type="text" name="name" id="name" placeholder="Please insert Account name" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Account code</label>
+          <input type="text" name="name" id="name" placeholder="Please insert Account code" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Account Type</label>
+          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="English">Select Account Type</option>
+            <option value="Urdu">Assets</option>
+            <option value="Hindi">Equity</option>
+            <option value="Punjabi">Expenses</option>
+            <option value="Punjabi">Liability</option>
+            <option value="Punjabi">Revenue</option>
+          </select>
+          <label for="name" class="fw-bold mt-3 mb-2">Calculation</label>
+          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="English">Select calculation</option>
+            <option value="Urdu">amount of Drafted Quotation</option>
+            <option value="Hindi">amount of Sent quotation</option>
+            <option value="Punjabi">amount of sent quotation VAT</option>
+            <option value="Punjabi">amount of draft sales order</option>
+            <option value="Punjabi">amount of sent sales order</option>
+            <option value="Punjabi">amount of  sent sales order VAT</option>
+            <option value="Punjabi">amount of draft invoice</option>
+            <option value="Punjabi">amount of sent invoice</option>
+            <option value="Punjabi">amount of sent invoice VAT</option>
+            <option value="Punjabi">amount of draft credit note</option>
+            <option value="Punjabi">amount of sent credit note</option>
+            <option value="Punjabi">amount of sent credit note  VAT</option>
+            <option value="Punjabi">amount of draft purchase order</option>
+            <option value="Punjabi">amount of sent purchase order</option>
+            <option value="Punjabi">amount of sent purchase order VAT</option>
+            <option value="Punjabi">amount of draft bills</option>
+            <option value="Punjabi">amount of sent bills</option>
+            <option value="Punjabi">amount of sent bills VAT</option>
+            <option value="Punjabi">amount of draft expenses</option>
+            <option value="Punjabi">amount of sent expenses</option>
+            <option value="Punjabi">amount of sent expenses VAT</option>
+            <option value="Punjabi">amount of draft debit note</option>
+            <option value="Punjabi">amount of sent debit note</option>
+            <option value="Punjabi">amount of sent debit note VAT</option>
+            <option value="Punjabi">Total of payroll salaries</option>
+          </select>
+          <label for="name" class="fw-bold mt-3 mb-2">Select Type</label>
+          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="English">Credit</option>
+            <option value="Urdu">Assets</option>
+            <option value="Hindi">Equity</option>
+          </select>
+          <label for="name" class="fw-bold mt-3 mb-2">Enable in payment option</label>
+          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="English">Yes</option>
+            <option value="Urdu">No</option>
+          </select>
+        </form> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-fill text-uppercase">Add</button>
+        <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="addTaxModal" tabindex="-1" aria-labelledby="addTaxModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addTaxModalLabel">Add Tax</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="name" class="fw-bold mt-3 mb-2">Tax name</label>
+          <input type="text" name="name" id="name" placeholder="Tax Name" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Description</label>
+          <input type="text" name="name" id="name" placeholder="Tax Discerption" class="d-block w-100 border border-2 rounded px-4 py-2">
+          <label for="name" class="fw-bold mt-3 mb-2">Tax Type</label>
+          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="English">Tax Type</option>
+            <option value="Urdu">Sales</option>
+            <option value="Hindi">Purchase</option>
+            <option value="Punjabi">Reverse charge</option>
+          </select>
+          <label for="name" class="fw-bold mt-3 mb-2">Select Type</label>
+          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+            <option value="English">Credit</option>
+            <option value="Urdu">Assets</option>
+            <option value="Hindi">Equity</option>
+          </select>
+          <label for="name" class="fw-bold mt-3 mb-2">Rate</label>
+          <input type="text" name="name" id="name" placeholder="Tax Rate" class="d-block w-100 border border-2 rounded px-4 py-2">          
+        </form> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-fill text-uppercase">Add</button>
+        <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
   </section>
   <!-- JavaScript
 ================================================== -->

@@ -125,6 +125,12 @@
                     <span>Products & Services</span></a></li>
               </ul>
             </li>
+            <li><a href="./fm-account.html" class="panel_link"><i
+              class="icon icon-project-supplies"></i>
+            <span>Account</span></a></li>
+            <li><a href="./fm-manual-journal.html" class="panel_link"><i
+              class="icon icon-project-supplies"></i>
+            <span>Manual Journal</span></a></li>
             <li><a href="./fm-transferred-projects.html" class="panel_link"><i
                   class="icon icon-transferred-projects"></i>
                 <span>Transferred Document</span></a></li>
@@ -255,11 +261,6 @@
                     <button class="nav-link text-uppercase" id="Payroll-tab" data-bs-toggle="tab"
                       data-bs-target="#Payroll" type="button" role="tab" aria-controls="Payroll"
                       aria-selected="true">Payroll setting</button>
-                  </li>
-                  <li class="nav-item m-0" role="presentation">
-                    <button class="nav-link text-uppercase" id="Accounts-tab" data-bs-toggle="tab"
-                      data-bs-target="#Accounts" type="button" role="tab" aria-controls="Accounts"
-                      aria-selected="true">Accounts</button>
                   </li>
                   <li class="nav-item m-0" role="presentation">
                     <button class="nav-link text-uppercase" id="taxRates-tab" data-bs-toggle="tab"
@@ -810,568 +811,73 @@
                       New</button>
                   </div>
                   <div class="row">
-                    <div class="col-12">
-                      <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="Cycle-tab" data-bs-toggle="tab" data-bs-target="#Cycle"
-                            type="button" role="tab" aria-controls="Cycle" aria-selected="true">Approval Cycle</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="Required-tab" data-bs-toggle="tab" data-bs-target="#Required"
-                            type="button" role="tab" aria-controls="Required" aria-selected="false">Required
-                            Approval</button>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tab-content mt-3">
-                      <div class="tab-pane active" id="Cycle" role="tabpanel" aria-labelledby="Cycle-tab">
-                        <div class="invoice-table tablepanel">
-                          <table class="table table-striped">
-                            <thead>
-                              <tr>
-                                <th scope="col">Department Name</th>
-                                <th scope="col">Manager</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Total Members</th>
-                                <th scope="col">Create Date</th>
-                                <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
-                              </tr>
-                            </thead>
-                            <tbody class="right-content interest-body" style="display: table-row-group;">
-                              <tr>
-                                <td scope="row" data-label="Department Name">
-                                  <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                                    <img src="./assets/images/prof-img-1.png" alt="">
-                                    <h6 class="ms-3 fw-500 text-sm">Mathilda Bell</h6>
-                                  </div>
-                                </td>
-                                <td data-label="Manager">(435) 474-3348</td>
-                                <td data-label="Email">napozje@paw.com</td>
-                                <td data-label="Total Members">12</td>
-                                <td data-label="Created Date">16 Mar 2022</td>
-                                <td></td>
-                              </tr>
-                              <tr>
-                                <td scope="row" data-label="Department Name">
-                                  <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                                    <img src="./assets/images/ryan-stevens.jpg" alt="">
-                                    <h6 class="ms-3 fw-500 text-sm">Ryan Stevens</h6>
-                                  </div>
-                                </td>
-                                <td data-label="Manager">(804) 362-8940</td>
-                                <td data-label="Email">lefiden@podi.gov</td>
-                                <td data-label="Total Members">12</td>
-                                <td data-label="Created Date">25 May 2022</td>
-                                <td></td>
-                              </tr>
-                              <tr>
-                                <td scope="row" data-label="Department Name">
-                                  <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                                    <img src="./assets/images/loretta-myers.jpg" alt="">
-                                    <h6 class="ms-3 fw-500 text-sm">Loretta Myers</h6>
-                                  </div>
-                                </td>
-                                <td data-label="Manager">(513) 711-3369</td>
-                                <td data-label="Email">kuw@rolluzdi.gov</td>
-                                <td data-label="Total Members">12</td>
-                                <td data-label="Created Date">18 Aug 2022</td>
-                                <td></td>
-                              </tr>
-                              <tr>
-                                <td scope="row" data-label="Department Name">
-                                  <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                                    <img src="./assets/images/carrie-aguilar.jpg" alt="">
-                                    <h6 class="ms-3 fw-500 text-sm">Carrie Aguilar</h6>
-                                  </div>
-                                </td>
-                                <td data-label="Manager">(556) 616-5266</td>
-                                <td data-label="Email">enval@maf.com</td>
-                                <td data-label="Total Members">12</td>
-                                <td data-label="Created Date">12 Mar 2022</td>
-                                <td></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                      <div class="tab-pane" id="Required" role="tabpanel" aria-labelledby="Required-tab">
-                        <div class="prof-table table tablepanel">
-                          <table class="mt-3">
-                            <thead>
-                              <tr>
-                                <th>Feature</th>
-                                <th>Owner</th>
-                                <th>Admin</th>
-                                <th>Extended</th>
-                                <th>Standard</th>
-                                <th>Limited</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Add Project</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Edit Project</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Add Customer</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Edit Customer</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Add Project stages</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Edit Project Stages</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Add Project Revenue Plan</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Edit Project Revenue Plan</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Add Project COCs</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Add Project POs</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Add Project Contact</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Edit Project Contact</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Add Project Risks</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Edit Project Risks</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Add Project Issues</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Edit Project Issues</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Add Project Stakeholders</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Edit Project Stakeholders</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Add Project Documents</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                              <tr class="border-bottom">
-                                <td scope="col" data-label="Feature">Edit Project Documents</td>
-                                <td scope="col" data-label="Owner">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Admin">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Extended">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Standard">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                                <td scope="col" data-label="Limited">
-                                  <input class="form-check-input d-block w-15" type="checkbox" id="inlineCheckbox1"
-                                    value="option1">
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
+                    <div class="invoice-table tablepanel">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Department Name</th>
+                            <th scope="col">Manager</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Total Members</th>
+                            <th scope="col">Create Date</th>
+                            <th scope="col"><a href="#" class="text-decoration-none fw-600">Edit</a></th>
+                          </tr>
+                        </thead>
+                        <tbody class="right-content interest-body" style="display: table-row-group;">
+                          <tr>
+                            <td scope="row" data-label="Department Name">
+                              <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                <img src="./assets/images/prof-img-1.png" alt="">
+                                <h6 class="ms-3 fw-500 text-sm">Mathilda Bell</h6>
+                              </div>
+                            </td>
+                            <td data-label="Manager">(435) 474-3348</td>
+                            <td data-label="Email">napozje@paw.com</td>
+                            <td data-label="Total Members">12</td>
+                            <td data-label="Created Date">16 Mar 2022</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Department Name">
+                              <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                <img src="./assets/images/ryan-stevens.jpg" alt="">
+                                <h6 class="ms-3 fw-500 text-sm">Ryan Stevens</h6>
+                              </div>
+                            </td>
+                            <td data-label="Manager">(804) 362-8940</td>
+                            <td data-label="Email">lefiden@podi.gov</td>
+                            <td data-label="Total Members">12</td>
+                            <td data-label="Created Date">25 May 2022</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Department Name">
+                              <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                <img src="./assets/images/loretta-myers.jpg" alt="">
+                                <h6 class="ms-3 fw-500 text-sm">Loretta Myers</h6>
+                              </div>
+                            </td>
+                            <td data-label="Manager">(513) 711-3369</td>
+                            <td data-label="Email">kuw@rolluzdi.gov</td>
+                            <td data-label="Total Members">12</td>
+                            <td data-label="Created Date">18 Aug 2022</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Department Name">
+                              <div class="d-flex align-items-center justify-content-end justify-content-md-start">
+                                <img src="./assets/images/carrie-aguilar.jpg" alt="">
+                                <h6 class="ms-3 fw-500 text-sm">Carrie Aguilar</h6>
+                              </div>
+                            </td>
+                            <td data-label="Manager">(556) 616-5266</td>
+                            <td data-label="Email">enval@maf.com</td>
+                            <td data-label="Total Members">12</td>
+                            <td data-label="Created Date">12 Mar 2022</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -2766,261 +2272,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="Accounts" role="tabpanel" aria-labelledby="Accounts-tab">
-                  <div class="page-main-title">
-                    <div class="heading">
-                      <h2>Accounts</h2>
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <div class="search-form wsm-100">
-                        <form action="">
-                          <div class="form-group">
-                            <input class="form-control wsm-100 mt-3 mt-md-0" type="text" placeholder="Search order, invoice, email, company…" aria-label="Search">
-                            <i class="icon icon-search-form"></i>
-                          </div>
-                        </form>
-                      </div>
-                      <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2" data-bs-toggle="modal" data-bs-target="#addAccountModal">Add Account</button>
-                    </div>
-                  </div>
-                  <div class="invoice-table tablepanel mt-3 invoice-table-product">
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th scope="col" class="ps-5">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            Code
-                          </th>
-                          <th scope="col">Account Name</th>
-                          <th scope="col">Type</th>
-                          <th scope="col">Enable payment</th>
-                          <th scope="col">Debit</th>
-                          <th scope="col">Credit</th>
-                          <th scope="col">Calculation</th>
-                        </tr>
-                      </thead>
-                      <tbody class="right-content interest-body" style="display: table-row-group;">
-                        <tr>
-                          <td scope="row" data-label="Code" class="ps-5">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <h6 class="fw-500 text-sm">1-001</h6>
-                          </td>
-                          <td data-label="Account Name">Petty Cash</td>
-                          <td data-label="Type"><span class="finalized-status">Assets</span></td>
-                          <td data-label="Enable payment">Yes</td>
-                          <td data-label="Debit">0.0</td>
-                          <td data-label="Credit">0.0</td>
-                          <td data-label="Calculation">
-                            <button type="button" class="btn ouline-white">new invoice</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Code" class="ps-5">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <h6 class="fw-500 text-sm">1-002</h6>
-                          </td>
-                          <td data-label="Account Name">Account receivable</td>
-                          <td data-label="Type"><span class="finalized-status">Assets</span></td>
-                          <td data-label="Enable payment">Yes</td>
-                          <td data-label="Debit">0.0</td>
-                          <td data-label="Credit">0.0</td>
-                          <td data-label="Calculation">
-                            <button type="button" class="btn ouline-white">new invoice</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Code" class="ps-5">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <h6 class="fw-500 text-sm">1-003</h6>
-                          </td>
-                          <td data-label="Account Name">Credit Card</td>
-                          <td data-label="Type"><span class="finalized-status">Liabilities</span></td>
-                          <td data-label="Enable payment">Yes</td>
-                          <td data-label="Debit">600</td>
-                          <td data-label="Credit">0.0</td>
-                          <td data-label="Calculation">
-                            <div class="d-flex">
-                              <button type="button" class="btn ouline-white me-3">new bill</button>
-                              <button type="button" class="btn ouline-white">new payroll</button>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Code" class="ps-5">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <h6 class="fw-500 text-sm">1-004</h6>
-                          </td>
-                          <td data-label="Account Name">Bank Loan</td>
-                          <td data-label="Type"><span class="finalized-status">Liabilities</span></td>
-                          <td data-label="Enable payment">Yes</td>
-                          <td data-label="Debit">600</td>
-                          <td data-label="Credit">0.0</td>
-                          <td data-label="Calculation">
-                              <button type="button" class="btn ouline-white me-3">new Bill</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Code" class="ps-5">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <h6 class="fw-500 text-sm">1-005</h6>
-                          </td>
-                          <td data-label="Account Name">Cost Of Goods</td>
-                          <td data-label="Type"><span class="finalized-status">Expenses</span></td>
-                          <td data-label="Enable payment">Yes</td>
-                          <td data-label="Debit">600</td>
-                          <td data-label="Credit">0.0</td>
-                          <td data-label="Calculation">
-                              <button type="button" class="btn ouline-white me-3">new Quota</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Code" class="ps-5">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <h6 class="fw-500 text-sm">1-006</h6>
-                          </td>
-                          <td data-label="Account Name">General Expenses</td>
-                          <td data-label="Type"><span class="finalized-status">Expenses</span></td>
-                          <td data-label="Enable payment">Yes</td>
-                          <td data-label="Debit">600</td>
-                          <td data-label="Credit">0.0</td>
-                          <td data-label="Calculation">
-                              <button type="button" class="btn ouline-white me-3">Submit invoice</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Code" class="ps-5">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <h6 class="fw-500 text-sm">1-007</h6>
-                          </td>
-                          <td data-label="Account Name">Subscription</td>
-                          <td data-label="Type"><span class="finalized-status">Expenses</span></td>
-                          <td data-label="Enable payment">Yes</td>
-                          <td data-label="Debit">600</td>
-                          <td data-label="Credit">0.0</td>
-                          <td data-label="Calculation">
-                              <button type="button" class="btn ouline-white me-3">new invoice</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Code" class="ps-5">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <h6 class="fw-500 text-sm">1-008</h6>
-                          </td>
-                          <td data-label="Account Name">Sales</td>
-                          <td data-label="Type"><span class="finalized-status">Sales</span></td>
-                          <td data-label="Enable payment">Yes</td>
-                          <td data-label="Debit">600</td>
-                          <td data-label="Credit">0.0</td>
-                          <td data-label="Calculation">
-                              <button type="button" class="btn ouline-white me-3">new invoice</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td scope="row" data-label="Code" class="ps-5">
-                            <span class="check-tasks">
-                              <div class="checkbox relative">
-                                <label class="absolute">
-                                  <input type="checkbox" data-ng-model="example.check">
-                                  <span class="box"></span>
-                                </label>
-                              </div>
-                            </span>
-                            <h6 class="fw-500 text-sm">1-009</h6>
-                          </td>
-                          <td data-label="Account Name">Vat</td>
-                          <td data-label="Type"><span class="finalized-status">Liabilities</span></td>
-                          <td data-label="Enable payment">Yes</td>
-                          <td data-label="Debit">600</td>
-                          <td data-label="Credit">0.0</td>
-                          <td data-label="Calculation">
-                              <button type="button" class="btn ouline-white me-3">new invoice</button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="invoice-pagination d-flex mt-3 justify-content-between align-items-center flex-colume-sm">
-                    <div class="d-flex align-items-center">
-                      <p class="text-sm">Showing</p>
-                      <select id="cars" class="border-1 me-3 ms-2 border-radius p-2">
-                        <option value="volvo">15</option>
-                        <option value="saab">25</option>
-                        <option value="opel">35</option>
-                        <option value="audi">50</option>
-                      </select>
-                      <span class="text-light-gray text-sm">items per page</span>
-                    </div>
-                    <div class="pagination-right d-flex align-items-center gap-4 mt-4 mt-md-0">
-                      <button class="btn pagination-btn active">1</button>
-                      <button class="btn pagination-btn">2</button>
-                      <a class="text-light-gray text-decoration-none">Next</a>
-                      <a class="text-light-gray text-decoration-none">End</a>
-                    </div>
-                  </div>
-                </div>
                 <div class="tab-pane " id="taxRates" role="tabpanel" aria-labelledby="taxRates-tab">
                   <div class="page-main-title">
                     <div class="heading">
@@ -3480,12 +2731,35 @@
                 <option value="Hindi">Hindi</option>
                 <option value="Punjabi">Punjabi</option>
               </select>
-              <label for="role" class="fw-bold mt-3 mb-2">Team Members</label>
+              <label for="role" class="fw-bold mt-3 mb-2">Feature</label>
               <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="Manager">Select team members</option>
-                <option value="Urdu">Urdu</option>
-                <option value="Hindi">Hindi</option>
-                <option value="Punjabi">Punjabi</option>
+                <option value="Manager">Add Project</option>
+                <option value="Urdu">Edit Project</option>
+                <option value="Hindi">Add Customer</option>
+                <option value="Punjabi">Edit Customer</option>
+                <option value="Punjabi">Add Project stages</option>
+                <option value="Punjabi">Edit Project Stages</option>
+                <option value="Punjabi">Add Project Revenue Plan</option>
+                <option value="Punjabi">Edit Project Revenue Plan</option>
+                <option value="Punjabi">Add Project COCs</option>
+                <option value="Punjabi">Add Project POs</option>
+                <option value="Punjabi">Add Project Contact</option>
+                <option value="Punjabi">Edit Project Contact</option>
+                <option value="Punjabi">Add Project Risks</option>
+                <option value="Punjabi">Edit Project Risks</option>
+                <option value="Punjabi">Add Project Issues</option>
+                <option value="Punjabi">Edit Project Issues</option>
+                <option value="Punjabi">Add Project Stakeholders</option>
+                <option value="Punjabi">Edit Project Stakeholders</option>
+                <option value="Punjabi">Add Project Documents</option>
+                <option value="Punjabi">Edit Project Documents</option>
+              </select>
+              <label for="role" class="fw-bold mt-3 mb-2">Role</label>
+              <select name="Role" id="Role" class="d-block w-100 border border-2 rounded px-2 py-2">
+                <option value="Manager">Admin</option>
+                <option value="Urdu">Extended</option>
+                <option value="Hindi">Standard</option>
+                <option value="Punjabi">Limited</option>
               </select>
             </form>
           </div>
@@ -3654,77 +2928,6 @@
         </div>
       </div>
     </div>
-<div class="modal fade" id="addAccountModal" tabindex="-1" aria-labelledby="addAccountModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="addAccountModalLabel">Add Account</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <label for="name" class="fw-bold mt-3 mb-2">Account name</label>
-          <input type="text" name="name" id="name" placeholder="Please insert Account name" class="d-block w-100 border border-2 rounded px-4 py-2">
-          <label for="name" class="fw-bold mt-3 mb-2">Account code</label>
-          <input type="text" name="name" id="name" placeholder="Please insert Account code" class="d-block w-100 border border-2 rounded px-4 py-2">
-          <label for="name" class="fw-bold mt-3 mb-2">Account Type</label>
-          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
-            <option value="English">Select Account Type</option>
-            <option value="Urdu">Assets</option>
-            <option value="Hindi">Equity</option>
-            <option value="Punjabi">Expenses</option>
-            <option value="Punjabi">Liability</option>
-            <option value="Punjabi">Revenue</option>
-          </select>
-          <label for="name" class="fw-bold mt-3 mb-2">Calculation</label>
-          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
-            <option value="English">Select calculation</option>
-            <option value="Urdu">amount of Drafted Quotation</option>
-            <option value="Hindi">amount of Sent quotation</option>
-            <option value="Punjabi">amount of sent quotation VAT</option>
-            <option value="Punjabi">amount of draft sales order</option>
-            <option value="Punjabi">amount of sent sales order</option>
-            <option value="Punjabi">amount of  sent sales order VAT</option>
-            <option value="Punjabi">amount of draft invoice</option>
-            <option value="Punjabi">amount of sent invoice</option>
-            <option value="Punjabi">amount of sent invoice VAT</option>
-            <option value="Punjabi">amount of draft credit note</option>
-            <option value="Punjabi">amount of sent credit note</option>
-            <option value="Punjabi">amount of sent credit note  VAT</option>
-            <option value="Punjabi">amount of draft purchase order</option>
-            <option value="Punjabi">amount of sent purchase order</option>
-            <option value="Punjabi">amount of sent purchase order VAT</option>
-            <option value="Punjabi">amount of draft bills</option>
-            <option value="Punjabi">amount of sent bills</option>
-            <option value="Punjabi">amount of sent bills VAT</option>
-            <option value="Punjabi">amount of draft expenses</option>
-            <option value="Punjabi">amount of sent expenses</option>
-            <option value="Punjabi">amount of sent expenses VAT</option>
-            <option value="Punjabi">amount of draft debit note</option>
-            <option value="Punjabi">amount of sent debit note</option>
-            <option value="Punjabi">amount of sent debit note VAT</option>
-            <option value="Punjabi">Total of payroll salaries</option>
-          </select>
-          <label for="name" class="fw-bold mt-3 mb-2">Select Type</label>
-          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
-            <option value="English">Credit</option>
-            <option value="Urdu">Assets</option>
-            <option value="Hindi">Equity</option>
-          </select>
-          <label for="name" class="fw-bold mt-3 mb-2">Enable in payment option</label>
-          <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
-            <option value="English">Yes</option>
-            <option value="Urdu">No</option>
-          </select>
-        </form> 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-fill text-uppercase">Add</button>
-        <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">cancel</button>
-      </div>
-    </div>
-  </div>
-</div>
 <div class="modal fade" id="addTaxModal" tabindex="-1" aria-labelledby="addTaxModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">

@@ -45,12 +45,12 @@
             <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a></li>
             <li class="nav-item panel-dropdown">
-              <a class="dropdown-btn nav-link dropdown-toggle panel_link active_panel" href="#" id="Business-Dropdown"
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Business-Dropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="icon icon-sales-information"></i><span>Sales Page</span>
               </a>
               <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                <li><a class="dropdown-item panel_link active_panel" href="./fm-quote-history.html"><i
+                <li><a class="dropdown-item panel_link " href="./fm-quote-history.html"><i
                       class="icon icon-sales-information"></i>
                     <span>Quotations</span></a></li>
                 <li><a class="dropdown-item panel_link" href="./fm-sales-order.html"><i
@@ -74,7 +74,8 @@
                       class="icon icon-project-supplies"></i>
                     <span>Purchase Orders</span></a></li>
                 <li><a class="dropdown-item panel_link" href="./fm-bills.html"><i
-                      class="icon icon-project-supplies"></i> <span>Bills</span></a></li>
+                      class="icon icon-project-supplies"></i>
+                    <span>Bills</span></a></li>
                 <li><a class="dropdown-item panel_link" href="./fm-debit-note.html"><i
                       class="icon icon-project-supplies"></i>
                     <span>Debit</span></a></li>
@@ -122,7 +123,7 @@
             <li><a href="./fm-account.html" class="panel_link"><i
               class="icon icon-project-supplies"></i>
             <span>Account</span></a></li>
-            <li><a href="./fm-manual-journal.html" class="panel_link"><i
+            <li><a href="./fm-manual-journal.html" class="panel_link active_panel"><i
               class="icon icon-project-supplies"></i>
             <span>Manual Journal</span></a></li>
             <li><a href="./fm-transferred-projects.html" class="panel_link"><i
@@ -231,216 +232,208 @@
           </div>
         </div>
         <div class="container">
-          <div class="page-main-title align-items-md-center">
+          <div class="page-main-title">
             <div class="heading">
-              <h3><span class="text-light-gray">Quotation/</span> #Quo-0001</h3>
+              <h2>Manual Journal</h2>
             </div>
-            <div class="d-flex align-items-center wsm-100 flex-colume-sm">
-              <button type="button" class="btn ouline-white mt-3 wsm-100 mt-md-0 mx-md-2">Print</button>
-              <button type="button" class="btn ouline-white mt-3 wsm-100 mt-md-0 mx-md-2">Clone sales order</button>
-              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0"
-                onclick="window.location.href='./fm-quote-history-create.html'">New Sales Order</button>
+            <div class="d-flex align-items-center">
+              <div class="search-form wsm-100">
+                <form action="">
+                  <div class="form-group">
+                    <input class="form-control wsm-100 mt-3 mt-md-0" type="text" placeholder="Search order, invoice, email, company…" aria-label="Search">
+                    <i class="icon icon-search-form"></i>
+                  </div>
+                </form>
+              </div>
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-md-2" data-bs-toggle="modal" data-bs-target="#addAccountModal">Add Journal</button>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-8">
-              <div class="chart">
-                <div class="d-flex align-items-end align-items-md-center justify-content-between flex-colume-sm">
-                  <h3 class="fw-600">Rhombus Commerce <span class="finalized-status ms-1 ms-md-3">Finalized</span></h3>
-                  <div class="btn-group mt-3 mt-md-0">
-                    <button type="button" class="btn border-none outline-none" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      <div class="dots d-flex">
-                        <span></span>
-                        <span class="m-0 ms-1"></span>
-                        <span class="m-0 ms-1"></span>
+          <div class="w-100 text-end">
+            <button type="button" class="btn ouline-white mt-3 wsm-100 mt-md-0"><i class="icon icon-download me-2"></i>Download</button>
+          </div>
+          <div class="invoice-table tablepanel mt-3 invoice-table-product">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col" class="ps-5">
+                    <span class="check-tasks">
+                      <div class="checkbox relative">
+                        <label class="absolute">
+                          <input type="checkbox" data-ng-model="example.check">
+                          <span class="box"></span>
+                        </label>
                       </div>
-                    </button>
-                    <ul class="dropdown-menu" style="">
-                      <li><a class="dropdown-item" href="#"><i class="icon icon-edit"></i>
-                          Edit</a></li>
-                      <li><a class="dropdown-item" href="#"><i class="icon icon-delete"></i>
-                          Delete</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="row mt-3 border-top border-bottom">
-                  <div class="col-md-6 py-3">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <p class="text-light-gray">Bill to</p>
-                      <p>Head Office</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Ship to</p>
-                      <p>Head Office</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Project Name</p>
-                      <p>Primary Location</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Payment Terms</p>
-                      <p>Feb 8th 2021</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Stock Due</p>
-                      <p>Feb 8th 2021</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 py-3 border-start border-sm-none">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <p class="text-light-gray">Issue date</p>
-                      <p>Feb 10th 2021</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Email</p>
-                      <p>hello@designspace.io </p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Currency</p>
-                      <p>US Dollar (USD)</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3">
-                      <p class="text-light-gray">Totals are</p>
-                      <p>Tax Exclucive</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="invoice-table tablepanel mt-3 invoice-table-product p-0">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col">Item Name</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Available</th>
-                        <th scope="col">Price ($)</th>
-                        <th scope="col">Discount</th>
-                        <th scope="col">Tax</th>
-                        <th scope="col">Total ($)</th>
-                      </tr>
-                    </thead>
-                    <tbody class="right-content interest-body" style="display: table-row-group;">
-                      <tr>
-                        <td scope="row" data-label="Item Name">
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-2.png" alt="" class="rounded-0 me-1">
-                            <h6 class="fw-500 text-sm">Cotton t-shirt</h6>
-                          </div>
-                        </td>
-                        <td data-label="Quantity">2</td>
-                        <td data-label="Available">67</td>
-                        <td data-label="Price ($)">$23.00</td>
-                        <td data-label="Discount">-</td>
-                        <td data-label="Tax">0%</td>
-                        <td data-label="Total ($)">$46.00</td>
-                      </tr>
-                      <tr>
-                        <td scope="row" data-label="Item Name">
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-4.png" alt="" class="rounded-0 me-1">
-                            <h6 class="fw-500 text-sm">Sweetshirt Hoodie</h6>
-                          </div>
-                        </td>
-                        <td data-label="Quantity">1</td>
-                        <td data-label="Available">62</td>
-                        <td data-label="Price ($)">$124.00</td>
-                        <td data-label="Discount">-</td>
-                        <td data-label="Tax">0%</td>
-                        <td data-label="Total ($)">$124.00</td>
-                      </tr>
-                      <tr>
-                        <td scope="row" data-label="Item Name">
-                          <div class="d-flex align-items-center justify-content-end justify-content-md-start">
-                            <img src="./assets/images/product-5.png" alt="" class="rounded-0">
-                            <h6 class="fw-500 text-sm">Cocktail Dress</h6>
-                          </div>
-                        </td>
-                        <td data-label="Quantity">1</td>
-                        <td data-label="Available">32</td>
-                        <td data-label="Price ($)">$140.00</td>
-                        <td data-label="Discount">-</td>
-                        <td data-label="Tax">0%</td>
-                        <td data-label="Total ($)">$140.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="col-12 mt-3">
-                  <div class="d-flex align-items-center justify-content-between py-2 border-bottom">
-                    <p class="text-light-gray">Total units</p>
-                    <p>4</p>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between py-2 border-bottom">
-                    <p class="text-light-gray">Subtotal</p>
-                    <p>$310.00</p>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between py-2 border-bottom">
-                    <p class="text-light-gray">Discount</p>
-                    <p>$-10</p>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between py-2">
-                    <p class="fw-600">Subtotal</p>
-                    <p class="fw-600">$300.00</p>
-                  </div>
-                </div>
-              </div>
+                    </span>
+                    Reference
+                  </th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Account Name</th>
+                  <th scope="col">Currency</th>
+                  <th scope="col">Debit</th>
+                  <th scope="col">Credit</th>
+                  <th scope="col">Attachment</th>
+                  <th scope="col">Contact</th>
+                  <th scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody class="right-content interest-body" style="display: table-row-group;">
+                <tr>
+                  <td scope="row" data-label="Reference" class="ps-5">
+                    <span class="check-tasks">
+                      <div class="checkbox relative">
+                        <label class="absolute">
+                          <input type="checkbox" data-ng-model="example.check">
+                          <span class="box"></span>
+                        </label>
+                      </div>
+                    </span>
+                    <h6 class="fw-500 text-sm">1-001</h6>
+                  </td>
+                  <td data-label="Date">Petty Cash</td>
+                  <td data-label="Account Name"><span class="finalized-status">Assets</span></td>
+                  <td data-label="Currency">Yes</td>
+                  <td data-label="Debit">0.0</td>
+                  <td data-label="Credit">0.0</td>
+                  <td data-label="Attachment">
+                    <button type="button" class="btn ouline-white">new invoice <i class="icon icon-download"></i></button>
+                  </td>
+                  <td data-label="Contact">Account</td>
+                  <td data-label="Email">Email</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Reference" class="ps-5">
+                    <span class="check-tasks">
+                      <div class="checkbox relative">
+                        <label class="absolute">
+                          <input type="checkbox" data-ng-model="example.check">
+                          <span class="box"></span>
+                        </label>
+                      </div>
+                    </span>
+                    <h6 class="fw-500 text-sm">1-002</h6>
+                  </td>
+                  <td data-label="Date">Account receivable</td>
+                  <td data-label="Account Name"><span class="finalized-status">Assets</span></td>
+                  <td data-label="Currency">Yes</td>
+                  <td data-label="Debit">0.0</td>
+                  <td data-label="Credit">0.0</td>
+                  <td data-label="Attachment">
+                    <button type="button" class="btn ouline-white">new invoice <i class="icon icon-download"></i></button>
+                  </td>
+                  <td data-label="Contact">Account</td>
+                  <td data-label="Email">Email</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Reference" class="ps-5">
+                    <span class="check-tasks">
+                      <div class="checkbox relative">
+                        <label class="absolute">
+                          <input type="checkbox" data-ng-model="example.check">
+                          <span class="box"></span>
+                        </label>
+                      </div>
+                    </span>
+                    <h6 class="fw-500 text-sm">1-101</h6>
+                  </td>
+                  <td data-label="Date">Credit Card</td>
+                  <td data-label="Account Name"><span class="finalized-status">Liabilities</span></td>
+                  <td data-label="Currency">Yes</td>
+                  <td data-label="Debit">0.0</td>
+                  <td data-label="Credit">0.0</td>
+                  <td data-label="Attachment">
+                    <button type="button" class="btn ouline-white">new invoice <i class="icon icon-download"></i></button>
+                  </td>
+                  <td data-label="Contact">Account</td>
+                  <td data-label="Email">Email</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Reference" class="ps-5">
+                    <span class="check-tasks">
+                      <div class="checkbox relative">
+                        <label class="absolute">
+                          <input type="checkbox" data-ng-model="example.check">
+                          <span class="box"></span>
+                        </label>
+                      </div>
+                    </span>
+                    <h6 class="fw-500 text-sm">1-102</h6>
+                  </td>
+                  <td data-label="Date">Bank Loan</td>
+                  <td data-label="Account Name"><span class="finalized-status">Liabilities</span></td>
+                  <td data-label="Currency">Yes</td>
+                  <td data-label="Debit">0.0</td>
+                  <td data-label="Credit">0.0</td>
+                  <td data-label="Attachment">
+                    <button type="button" class="btn ouline-white">new invoice <i class="icon icon-download"></i></button>
+                  </td>
+                  <td data-label="Contact">Account</td>
+                  <td data-label="Email">Email</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Reference" class="ps-5">
+                    <span class="check-tasks">
+                      <div class="checkbox relative">
+                        <label class="absolute">
+                          <input type="checkbox" data-ng-model="example.check">
+                          <span class="box"></span>
+                        </label>
+                      </div>
+                    </span>
+                    <h6 class="fw-500 text-sm">1-201</h6>
+                  </td>
+                  <td data-label="Date">Cost Of Goods</td>
+                  <td data-label="Account Name"><span class="finalized-status">Expenses</span></td>
+                  <td data-label="Currency">Yes</td>
+                  <td data-label="Debit">0.0</td>
+                  <td data-label="Credit">0.0</td>
+                  <td data-label="Attachment">
+                    <button type="button" class="btn ouline-white">new invoice <i class="icon icon-download"></i></button>
+                  </td>
+                  <td data-label="Contact">Account</td>
+                  <td data-label="Email">Email</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Reference" class="ps-5">
+                    <span class="check-tasks">
+                      <div class="checkbox relative">
+                        <label class="absolute">
+                          <input type="checkbox" data-ng-model="example.check">
+                          <span class="box"></span>
+                        </label>
+                      </div>
+                    </span>
+                    <h6 class="fw-500 text-sm">1-202</h6>
+                  </td>
+                  <td data-label="Date">Sales</td>
+                  <td data-label="Account Name"><span class="finalized-status">Sales</span></td>
+                  <td data-label="Currency">Yes</td>
+                  <td data-label="Debit">0.0</td>
+                  <td data-label="Credit">0.0</td>
+                  <td data-label="Attachment">
+                    <button type="button" class="btn ouline-white">new invoice <i class="icon icon-download"></i></button>
+                  </td>
+                  <td data-label="Contact">Account</td>
+                  <td data-label="Email">Email</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="invoice-pagination d-flex mt-3 justify-content-between align-items-center flex-colume-sm">
+            <div class="d-flex align-items-center">
+              <p class="text-sm">Showing</p>
+              <select id="cars" class="border-1 me-3 ms-2 border-radius p-2">
+                <option value="volvo">15</option>
+                <option value="saab">25</option>
+                <option value="opel">35</option>
+                <option value="audi">50</option>
+              </select>
+              <span class="text-light-gray text-sm">items per page</span>
             </div>
-            <div class="col-md-4">
-              <div class="sm-box bg-white p-2 mt-3 mt-md-0">
-                <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                  <h5 class="fw-bold">Quotation #Quo-0001</h5>
-                  <select name="Role" id="Role" class="d-block border-0 px-2 py-2 me-2 text-light-gray">
-                    <option value="Manager">Finalized</option>
-                    <option value="Manager">Admin</option>
-                    <option value="Urdu">Extended</option>
-                    <option value="Hindi">Standard</option>
-                    <option value="Punjabi">Limited</option>
-                  </select>
-                </div>
-              </div>
-              <div class="sm-box bg-white p-2 mt-2">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <h6 class="fw-bold">Quotation</h6>
-                  <span class="purple-status">Invoiced</span>
-                </div>
-                <div class="d-flex justify-content-between align-items-md-center mb-2 px-1 flex-colume-sm">
-                  <p><i class="icon icon-file"></i> Quo-0001</p>
-                  <div class="dropdown select-dropdown">
-                    <button class="btn dropdown-toggle pe-4 w-100 bg-white border-0 mt-3 mt-md-0" type="button"
-                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="icon icon-check"></i> $124.00
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="bg-white rounded mt-2">
-                <div class="p-3 border-bottom d-flex align-items-center justify-content-between">
-                  <p class="fw-600">Payments</p>
-                  <p>$300.00 to pay</p>
-                </div>
-                <div class="px-3 pb-3 d-flex mt-3">
-                  <button type="button" class="btn ouline-white btn-fill w-100 mt-md-0">Mark all as accepted and create
-                    sales order</button>
-                </div>
-              </div>
-              <div class="bg-white rounded mt-2">
-                <div class="p-3 border-bottom d-flex align-items-center justify-content-between">
-                  <p class="fw-600">Attachment</p>
-                  <p>1</p>
-                </div>
-                <div class="p-3 d-flex justify-content-between align-items-center">
-                  <p class="text-light-gray">Attached file: Email</p>
-                  <p class="text-light-gray">50MB</p>
-                </div>
-                <div class="px-3 pb-3 d-flex">
-                  <button type="button" class="btn ouline-white btn-fill w-100 mt-3 mt-md-0">Mark all as paid</button>
-                </div>
-              </div>
+            <div class="pagination-right d-flex align-items-center gap-4 mt-4 mt-md-0">
+              <button class="btn pagination-btn active">1</button>
+              <button class="btn pagination-btn">2</button>
+              <a class="text-light-gray text-decoration-none">Next</a>
+              <a class="text-light-gray text-decoration-none">End</a>
             </div>
           </div>
         </div>
@@ -654,6 +647,63 @@
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-fill px-5 py-2 text-uppercase">Update</button>
             <button type="button" class="btn bg-light px-4 py-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="addAccountModal" tabindex="-1" aria-labelledby="addAccountModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addAccountModalLabel">Add Manual journal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="name" class="fw-bold mt-3 mb-2">Date</label>
+              <input type="date" name="name" id="name" placeholder="Please select date" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="name" class="fw-bold mt-3 mb-2">Reference</label>
+              <input type="text" name="name" id="name" placeholder="Please insert reference" class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="name" class="fw-bold mt-3 mb-2">Account Type</label>
+              <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="English">Select Account Type</option>
+                <option value="Urdu">Assets</option>
+                <option value="Hindi">Equity</option>
+                <option value="Punjabi">Expenses</option>
+                <option value="Punjabi">Liability</option>
+                <option value="Punjabi">Revenue</option>
+              </select>
+              <label for="name" class="fw-bold mt-3 mb-2">Currency</label>
+              <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="English">USD</option>
+                <option value="Urdu">PKR</option>
+                <option value="Hindi">INR</option>
+              </select>
+              <div class="d-flex align-items-center mt-3">
+                <i class="icon icon-plus-items"></i>
+                <p class="ms-3">Add Item</p>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <label for="name" class="fw-bold mt-3 mb-2">Contact</label>
+                  <input type="text" name="name" id="name" placeholder="Contact" class="d-block w-100 border border-2 rounded px-4 py-2">
+                </div>
+                <div class="col-6">
+                  <label for="name" class="fw-bold mt-3 mb-2">Email</label>
+                  <input type="email" name="name" id="name" placeholder="Email" class="d-block w-100 border border-2 rounded px-4 py-2">
+                </div>
+              </div>
+              <div class="uploadfile w-fit mt-3">
+                <div class="text w-fit m-0"><label for="fileupload" class="cursor-pointer"><i class="icon icon-blue-added-button me-3"></i>Upload Attachments</label></div>
+                <input id="fileupload" type="file" class="fileupload d-none">
+              </div>
+              <label for="name" class="fw-bold mt-3 mb-2">Note</label>
+              <input type="email" name="name" id="name" placeholder="Note" class="d-block w-100 border border-2 rounded px-4 py-2">
+            </form> 
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill text-uppercase">Add</button>
+            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">cancel</button>
           </div>
         </div>
       </div>

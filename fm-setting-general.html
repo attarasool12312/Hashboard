@@ -275,11 +275,6 @@
                       data-bs-target="#taxRates" type="button" role="tab" aria-controls="taxRates"
                       aria-selected="true">Tax Rates</button>
                   </li>
-                  <li class="nav-item m-0" role="presentation">
-                    <button class="nav-link text-uppercase" id="Invoice-tab" data-bs-toggle="tab"
-                      data-bs-target="#Invoice" type="button" role="tab" aria-controls="Invoice"
-                      aria-selected="true">Invoice setting</button>
-                  </li>
                   <h6 class="fw-600">Email Setting</h6>
                   <li class="nav-item" role="presentation">
                     <button class="nav-link text-uppercase" id="emailPreferences-tab" data-bs-toggle="tab"
@@ -2958,9 +2953,10 @@
           </select>
           <label for="name" class="fw-bold mt-3 mb-2">Select Type</label>
           <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
-            <option value="English">Credit</option>
-            <option value="Urdu">Assets</option>
-            <option value="Hindi">Equity</option>
+            <option value="English">Tax Type</option>
+            <option value="Urdu">Sales</option>
+            <option value="Hindi">Purchase</option>
+            <option value="Hindi">Reverse charge</option>
           </select>
           <label for="name" class="fw-bold mt-3 mb-2">Rate</label>
           <input type="text" name="name" id="name" placeholder="Tax Rate" class="d-block w-100 border border-2 rounded px-4 py-2">          

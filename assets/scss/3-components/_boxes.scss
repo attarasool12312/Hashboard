@@ -12,21 +12,25 @@
     @include grid-md-down {
         padding: 20px;
     }
-    &.business-snap-charts{
+
+    &.business-snap-charts {
         min-height: auto;
         height: auto;
         margin-bottom: 24px;
     }
-  .chart-box{
-    .chart-head{
-        position: relative;
-        .dots{
-            position: absolute;
-            right: 0;
-            top: 6px;
+
+    .chart-box {
+        .chart-head {
+            position: relative;
+
+            .dots {
+                position: absolute;
+                right: 0;
+                top: 6px;
+            }
         }
     }
-  }
+
     .chart-content {
         @include grid-md-down {
             flex-flow: column;
@@ -60,29 +64,35 @@
                     }
                 }
             }
-            &.white-box-content{
+
+            &.white-box-content {
                 min-width: 335px;
-                border:1px solid #DCDCDC;
+                border: 1px solid #DCDCDC;
                 border-radius: 8px;
                 padding: 18px;
                 padding-bottom: 0;
                 margin-right: 30px;
-                @include grid-sm-down{
+
+                @include grid-sm-down {
                     min-width: 100%;
                     margin-bottom: 30px;
                 }
-                h6{
+
+                h6 {
                     font-size: 14px;
                 }
-                .chart-desc{
+
+                .chart-desc {
                     display: flex;
                     justify-content: space-between;
                     margin-top: 16px;
-                    p{
+
+                    p {
                         color: #202020;
                     }
                 }
             }
+
             .project-balance {
                 display: flex;
                 justify-content: space-between;
@@ -96,88 +106,103 @@
                 margin-top: 50px;
             }
         }
+
         .chart-bottom {
-            margin-left: -32px; 
-            margin-right: -32px; 
-           padding: 32px;
-           padding-bottom: 0;
+            margin-left: -32px;
+            margin-right: -32px;
+            padding: 32px;
+            padding-bottom: 0;
+        }
     }
 }
-}
 
-.box-white{
+.box-white {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
     padding: 32px;
     height: 100%;
-    .box-head{
+
+    .box-head {
         display: flex;
         justify-content: space-between;
     }
-    .chart-desc{
+
+    .chart-desc {
         display: flex;
         justify-content: space-between;
         padding: 14px 0;
         border-bottom: 1px solid #DCDCDC;
-        &:last-of-type{
+
+        &:last-of-type {
             border-bottom: 1px solid transparent;
         }
     }
 }
 
 // rating
-.rating-box{
-margin-top: 32px;
-    .rating-row{
+.rating-box {
+    margin-top: 32px;
+
+    .rating-row {
         list-style: none;
         background-color: white;
         padding-left: 0;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
         border-radius: 12px;
-        li{
+
+        li {
             display: flex;
             justify-content: space-between;
-            padding:  15px 14px;
+            padding: 15px 14px;
             padding-left: 40px;
-            + li{
-                border-top: 1px solid  #DCDCDC;
+
+            +li {
+                border-top: 1px solid #DCDCDC;
             }
-            span{
-            position: relative;
-            i{
-                
-                position: absolute;
-                left: -32px;
-                transform: translateY(-50%);
-                top: 50%;
-                &.icon-outline-star,
-                &.icon-fill-star{
-                    top: 42%;
-                }
-                &.icon-down-arrow{
+
+            span {
+                position: relative;
+
+                i {
+
+                    position: absolute;
+                    left: -32px;
+                    transform: translateY(-50%);
                     top: 50%;
+
+                    &.icon-outline-star,
+                    &.icon-fill-star {
+                        top: 42%;
+                    }
+
+                    &.icon-down-arrow {
+                        top: 50%;
+                    }
                 }
-            }
             }
         }
     }
 }
+
 // expenses info
-.expenses-info{
+.expenses-info {
     display: flex;
     justify-content: space-between;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
     margin-top: 24px;
-    .expenses-box{
+
+    .expenses-box {
         padding: 24px;
         width: 50%;
-        &:first-child{
+
+        &:first-child {
             border-right: 1px solid #DCDCDC;
         }
-        h2{
+
+        h2 {
             font-weight: 700;
             margin-top: 16px;
         }
@@ -208,16 +233,71 @@ margin-top: 32px;
             margin-top: 2px;
         }
     }
-    &.is-flex{
+
+    &.is-flex {
         margin-left: 48px;
         display: flex;
-        span{
+
+        span {
             margin-top: 6px;
             display: inline-block;
-            + span{
+
+            +span {
                 margin-top: 6px;
                 margin-left: 4px;
             }
+        }
+    }
+}
+
+.profile-box {
+    background-image: url($images-path + "/profile-box-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+
+    .profile-box-image {
+        img {
+            border: 3px solid #FFFFFF;
+            border-radius: 50%;
+            position: absolute;
+            top: 55px;
+            left: 107px;
+        }
+        a{
+            i{
+                position: absolute;
+                left: 61%;
+                top: 42%;
+            }
+        }
+    }
+
+    .profile-content {
+        background: #FFFFFF;
+        padding: 60px 30px 30px;
+        border-radius: 30px;
+        margin-top: 100px;
+
+        h5 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #775DA6;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 20px;
+            color: #000000;
+        }
+
+        .rating {
+            margin: 15px 0;
         }
     }
 }

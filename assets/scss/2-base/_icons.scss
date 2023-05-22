@@ -244,6 +244,11 @@ $icons: (
   "edit-profile" "svg" 17px 17px,
   "reload" "svg" 16px 16px,
   "box-chart" "svg" 156px 45px,
+  "cake-birthday" "svg" 20px 20px,
+  "network-pin" "svg" 20px 20px,
+  "products-briefcase" "svg" 20px 20px,
+  "text-after-icon" "svg" 68px 68px,
+  "text-before-icon" "svg" 68px 68px,
   );
   
 @each $name, $fileType, $width, $height in $icons {

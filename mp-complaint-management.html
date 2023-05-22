@@ -63,9 +63,9 @@
             <li><a href="./mp-user-persona.html" class="panel_link"><i class="icon icon-calander"></i> <span>User Persona</span></a></li>
             <li><a href="./" class="panel_link"><i class="icon icon-calander"></i> <span>User Interview</span></a></li>
             <li><a href="./mp-user-flow.html" class="panel_link"><i class="icon icon-calander"></i> <span>User Flow</span></a></li>
-            <li><a href="./mp-complaint-management.html" class="panel_link"><i class="icon icon-calander"></i> <span>Complaint Management</span></a>
+            <li><a href="./mp-complaint-management.html" class="panel_link active_panel"><i class="icon icon-calander"></i> <span>Complaint Management</span></a>
             </li>
-            <li><a href="./mp-initiative-management.html" class="panel_link active_panel"><i
+            <li><a href="./mp-initiative-management.html" class="panel_link"><i
                   class="icon icon-memory"></i> <span>Initiative Management</span></a></li>
             <li><a href="./" class="panel_link"><i class="icon icon-reports"></i> <span>Report</span></a></li>
             <div class="open-button">
@@ -157,7 +157,14 @@
         <div class="container">
           <div class="page-main-title">
             <div class="heading">
-              <h1>Initiative Management</h1>
+              <h1>Complaint Management</h1>
+            </div>
+            <p class="setting-icon cursor-pointer"><i class="icon icon-settings"></i></p>
+            <div class="setting-popup">
+              <h5>Setting</h5>
+              <a href="./mp-complaint-create-template.html">Create Complaint Template</a>
+              <a data-bs-toggle="modal" data-bs-target="#complaintCategoryModal" class="cursor-pointer">Complaint
+                Categories</a>
             </div>
           </div>
           <div class="row">
@@ -169,7 +176,7 @@
                   </span>
                   <span class=""><i class="icon icon-cart-box"></i></span>
                 </div>
-                <p class="fw-600 text-light-gray">Total Initiatives</p>
+                <p class="fw-600 text-light-gray">Total Complaints</p>
                 <i class="icon icon-box-chart mt-3"></i>
               </div>
             </div>
@@ -206,7 +213,7 @@
                   </span>
                   <span class=""><i class="icon icon-right-arrow-yellow"></i></span>
                 </div>
-                <p class="fw-600 text-light-gray">Total customers</p>
+                <p class="fw-600 text-light-gray">Average Time</p>
                 <i class="icon icon-box-chart mt-3"></i>
               </div>
             </div>
@@ -229,7 +236,8 @@
             <div class="col-md-6 text-end">
               <button type="button" class="btn ouline-white"><i class="icon icon-download"></i> Download</button>
               <button type="button" class="btn ouline-white"><i class="icon icon-filter"></i> Filter</button>
-              <button type="button" class="btn ouline-white btn-fill">New Initiative</button>
+              <button type="button" class="btn ouline-white btn-fill" data-bs-toggle="modal"
+                data-bs-target="#newComplaintModal">New Complaint</button>
             </div>
             <div class="tab-content mt-3">
               <div class="tab-pane active" id="Open" role="tabpanel" aria-labelledby="Open-tab">
@@ -237,19 +245,18 @@
                   <table class="table table-striped">
                     <thead>
                       <tr>
-                        <th scope="col">Initiative Name</th>
+                        <th scope="col">Customer Name</th>
                         <th scope="col">Create date</th>
                         <th scope="col">Owner</th>
-                        <th scope="col">Initiative Type</th>
-                        <th scope="col">Members</th>
+                        <th scope="col">Assign To</th>
                         <th scope="col">Duration</th>
                         <th scope="col">Priority</th>
                         <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody class="right-content interest-body" style="display: table-row-group;">
-                      <tr class="cursor-pointer" onclick="window.location.href='./mp-initiative-management-detail.html'">
-                        <td scope="row" data-label="Initiative Name">
+                      <tr>
+                        <td scope="row" data-label="Customer Name">
                           <div class="d-flex align-items-center">
                             <img src="./assets/images/profile-2.png" alt="">
                             <h6 class="text-sm ms-2">Mathilda Bell</h6>
@@ -257,23 +264,7 @@
                         </td>
                         <td data-label="Create date">16 Mar 2022</td>
                         <td data-label="Owner">napozje@paw.com</td>
-                        <td data-label="Initiative Type">Service</td>
-                        <td data-label="Members">
-                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center mb-3 mt-2">
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Lilian Fuller">
-                              <img src="./assets/images/avatars/5.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Sophia Wilkerson">
-                              <img src="./assets/images/avatars/6.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Christina Parker">
-                              <img src="./assets/images/avatars/7.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                          </ul>
-                        </td>
+                        <td data-label="Assign To">Service</td>
                         <td data-label="Duration">12,0000</td>
                         <td data-label="Priority"><span class="finalized-status">Low</span></td>
                         <td>
@@ -300,8 +291,8 @@
                             </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./mp-initiative-management-detail.html'">
-                        <td scope="row" data-label="Initiative Name">
+                      <tr>
+                        <td scope="row" data-label="Customer Name">
                           <div class="d-flex align-items-center">
                             <img src="./assets/images/profile-3.png" alt="">
                             <h6 class="text-sm ms-2">Ryan Stevens</h6>
@@ -309,23 +300,7 @@
                         </td>
                         <td data-label="Create date">16 Mar 2022</td>
                         <td data-label="Owner">napozje@paw.com</td>
-                        <td data-label="Initiative Type">Service</td>
-                        <td data-label="Members">
-                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center mb-3 mt-2">
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Lilian Fuller">
-                              <img src="./assets/images/avatars/5.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Sophia Wilkerson">
-                              <img src="./assets/images/avatars/6.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Christina Parker">
-                              <img src="./assets/images/avatars/7.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                          </ul>
-                        </td>
+                        <td data-label="Assign To">Service</td>
                         <td data-label="Duration">12,0000</td>
                         <td data-label="Priority"><span class="finalized-status">Medium</span></td>
                         <td>
@@ -352,8 +327,8 @@
                             </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./mp-initiative-management-detail.html'">
-                        <td scope="row" data-label="Initiative Name">
+                      <tr>
+                        <td scope="row" data-label="Customer Name">
                           <div class="d-flex align-items-center">
                             <img src="./assets/images/profile-4.png" alt="">
                             <h6 class="text-sm ms-2">Loretta Myers</h6>
@@ -361,23 +336,7 @@
                         </td>
                         <td data-label="Create date">16 Mar 2022</td>
                         <td data-label="Owner">napozje@paw.com</td>
-                        <td data-label="Initiative Type">Service</td>
-                        <td data-label="Members">
-                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center mb-3 mt-2">
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Lilian Fuller">
-                              <img src="./assets/images/avatars/5.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Sophia Wilkerson">
-                              <img src="./assets/images/avatars/6.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Christina Parker">
-                              <img src="./assets/images/avatars/7.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                          </ul>
-                        </td>
+                        <td data-label="Assign To">Service</td>
                         <td data-label="Duration">12,0000</td>
                         <td data-label="Priority"><span class="finalized-status">Low</span></td>
                         <td>
@@ -404,8 +363,8 @@
                             </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./mp-initiative-management-detail.html'">
-                        <td scope="row" data-label="Initiative Name">
+                      <tr>
+                        <td scope="row" data-label="Customer Name">
                           <div class="d-flex align-items-center">
                             <img src="./assets/images/profile-5.png" alt="">
                             <h6 class="text-sm ms-2">Carrie Aguilar</h6>
@@ -413,23 +372,7 @@
                         </td>
                         <td data-label="Create date">16 Mar 2022</td>
                         <td data-label="Owner">napozje@paw.com</td>
-                        <td data-label="Initiative Type">Service</td>
-                        <td data-label="Members">
-                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center mb-3 mt-2">
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Lilian Fuller">
-                              <img src="./assets/images/avatars/5.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Sophia Wilkerson">
-                              <img src="./assets/images/avatars/6.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Christina Parker">
-                              <img src="./assets/images/avatars/7.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                          </ul>
-                        </td>
+                        <td data-label="Assign To">Service</td>
                         <td data-label="Duration">12,0000</td>
                         <td data-label="Priority"><span class="finalized-status">High</span></td>
                         <td>
@@ -456,8 +399,8 @@
                             </div>
                         </td>
                       </tr>
-                      <tr class="cursor-pointer" onclick="window.location.href='./mp-initiative-management-detail.html'">
-                        <td scope="row" data-label="Initiative Name">
+                      <tr>
+                        <td scope="row" data-label="Customer Name">
                           <div class="d-flex align-items-center">
                             <img src="./assets/images/profile-6.png" alt="">
                             <h6 class="text-sm ms-2">Loretta Myers</h6>
@@ -465,23 +408,7 @@
                         </td>
                         <td data-label="Create date">16 Mar 2022</td>
                         <td data-label="Owner">napozje@paw.com</td>
-                        <td data-label="Initiative Type">Service</td>
-                        <td data-label="Members">
-                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center mb-3 mt-2">
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Lilian Fuller">
-                              <img src="./assets/images/avatars/5.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Sophia Wilkerson">
-                              <img src="./assets/images/avatars/6.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                              class="avatar avatar-xs pull-up" title="Christina Parker">
-                              <img src="./assets/images/avatars/7.png" alt="Avatar" class="rounded-circle">
-                            </li>
-                          </ul>
-                        </td>
+                        <td data-label="Assign To">Service</td>
                         <td data-label="Duration">12,0000</td>
                         <td data-label="Priority"><span class="finalized-status">Low</span></td>
                         <td>
@@ -517,6 +444,143 @@
         </div>
       </main>
     </div>
+    <div class="modal fade" id="newComplaintModal" tabindex="-1" aria-labelledby="newComplaintModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newComplaintModalLabel">New Complaint</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="name" class="fw-bold mt-3 mb-2">Customer name</label>
+              <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="English">Please insert customer name</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Punjabi">Punjabi</option>
+              </select>
+              <label for="name" class="fw-bold mt-3 mb-2">Project Name</label>
+              <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="English">Please insert Project name</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Punjabi">Punjabi</option>
+              </select>
+              <label for="name" class="fw-bold mt-3 mb-2">Account Manager</label>
+              <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="English">Please Select Account Manager</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Punjabi">Punjabi</option>
+              </select>
+              <label for="name" class="fw-bold mt-3 mb-2">Project Manager</label>
+              <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                <option value="English">Please select Project manager</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Punjabi">Punjabi</option>
+              </select>
+              <label for="name" class="fw-bold mt-3 mb-2">Complaint Subject</label>
+              <input type="text" name="name" id="name" placeholder="Please insert complaint subject"
+                class="d-block w-100 border border-2 rounded px-4 py-2">
+              <label for="name" class="fw-bold mt-3 mb-2">Description</label>
+              <textarea name="content" id="editor" class="p-4 rounded"></textarea>
+              <div class="row">
+                <div class="col-6">
+                  <label for="name" class="fw-bold mt-3 mb-2">Category</label>
+                  <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                    <option value="English">Select complaint category</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Punjabi">Punjabi</option>
+                  </select>
+                  <label for="name" class="fw-bold mt-3 mb-2">Status</label>
+                  <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                    <option value="English">Open</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Punjabi">Punjabi</option>
+                  </select>
+                  <label for="name" class="fw-bold mt-3 mb-2">Department</label>
+                  <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                    <option value="English">Select Department</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Punjabi">Punjabi</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <label for="name" class="fw-bold mt-3 mb-2">Source</label>
+                  <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                    <option value="English">Email</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Punjabi">Punjabi</option>
+                  </select>
+                  <label for="name" class="fw-bold mt-3 mb-2">Priority</label>
+                  <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                    <option value="English">High</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Punjabi">Punjabi</option>
+                  </select>
+                  <label for="name" class="fw-bold mt-3 mb-2">Assign to</label>
+                  <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                    <option value="English">Select person</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Punjabi">Punjabi</option>
+                  </select>
+                </div>
+              </div>
+              <div class="uploadfile w-fit mt-3">
+                <div class="text w-fit m-0"><label for="fileupload" class="cursor-pointer"><i
+                      class="icon icon-plus-items me-3"></i>Add attachment</label></div>
+                <input id="fileupload" type="file" class="fileupload d-none">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill text-uppercase">Add</button>
+            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="complaintCategoryModal" tabindex="-1" aria-labelledby="complaintCategoryModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="complaintCategoryModalLabel">Complaint Category</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div id="category">
+                <label for="name" class="fw-bold mt-3 mb-2">Category 1</label>
+                <input type="text" name="name" id="name" placeholder="Insert Category Name"
+                  class="d-block w-100 border border-2 rounded px-4 py-2">
+                <label for="name" class="fw-bold mt-3 mb-2">Category 2</label>
+                <input type="text" name="name" id="name" placeholder="Insert Category Name"
+                  class="d-block w-100 border border-2 rounded px-4 py-2">
+                <label for="name" class="fw-bold mt-3 mb-2">Category 3</label>
+                <input type="text" name="name" id="name" placeholder="Insert Category Name"
+                  class="d-block w-100 border border-2 rounded px-4 py-2">
+              </div>
+              <a class="text-fill text-uppercase cursor-pointer text-decoration-none mt-3 fw-600 d-block"
+                onclick="addCategory()">+ Add More</a>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill text-uppercase">Update</button>
+            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- JavaScript
@@ -525,9 +589,23 @@
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src='https://cdn.ckeditor.com/ckeditor5/28.0.0/classic/ckeditor.js'></script>
+  <script src="./assets/js/editor.js"></script>
 
   <script>
+    $(".setting-icon").click(function () {
+      $(".setting-popup").toggleClass("setting-active")
+    });
 
+
+    var category = 3;
+
+    function addCategory() {
+      category++;
+      $('#category').append(`<label for="name" class="fw-bold mt-3 mb-2">Category ${category}</label>
+                <input type="text" name="name" id="name" placeholder="Insert Category Name"
+                  class="d-block w-100 border border-2 rounded px-4 py-2">`);
+    }
   </script>
 </body>
 

@@ -63,9 +63,9 @@
             <li><a href="./mp-user-persona.html" class="panel_link"><i class="icon icon-calander"></i> <span>User Persona</span></a></li>
             <li><a href="./" class="panel_link"><i class="icon icon-calander"></i> <span>User Interview</span></a></li>
             <li><a href="./mp-user-flow.html" class="panel_link"><i class="icon icon-calander"></i> <span>User Flow</span></a></li>
-            <li><a href="./mp-complaint-management.html" class="panel_link"><i class="icon icon-calander"></i> <span>Complaint Management</span></a>
+            <li><a href="./mp-complaint-management.html" class="panel_link active_panel"><i class="icon icon-calander"></i> <span>Complaint Management</span></a>
             </li>
-            <li><a href="./mp-initiative-management.html" class="panel_link active_panel"><i
+            <li><a href="./mp-initiative-management.html" class="panel_link"><i
                   class="icon icon-memory"></i> <span>Initiative Management</span></a></li>
             <li><a href="./" class="panel_link"><i class="icon icon-reports"></i> <span>Report</span></a></li>
             <div class="open-button">
@@ -156,87 +156,37 @@
         </div>
         <div class="container">
           <div class="page-main-title">
-            <div class="heading">
-              <h1>New Initiative</h1>
-            </div>
+            <h1>Create Template</h1>
           </div>
-          <div class="row bg-white rounded p-3">
-            <div class="col-md-6">
-              <label for="name" class="fw-bold mt-3 mb-2">Initiative name</label>
-              <input type="text" name="name" id="name" placeholder="Please insert initiative name"
-                class="d-block w-100 border border-2 rounded px-4 py-2">
-              <label for="name" class="fw-bold mt-3 mb-2">Initiative Priority</label>
-              <div class="initiative-priority">
-                <p class="initiative-button active">High</p>
-                <p class="initiative-button">Medium</p>
-                <p class="initiative-button">Low</p>
-              </div>
-              <div id="Objective">
-                <label for="name" class="fw-bold mt-3">Objective</label>
-                <input type="text" name="name" id="name" placeholder="Please insert initiative objective"
-                  class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">
-              </div>
-              <p class="fw-600 text-fill mt-3 cursor-pointer w-fit" onclick="addObjective()">+ Add
-                More</p>
-              <label for="name" class="fw-bold mt-3">Milestone 1</label>
-              <input type="text" name="name" id="name" placeholder="Please insert initiative milestone"
-                class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">
-              <div id="Indicator">
-                <label for="name" class="fw-bold mt-3">Key Performance Indicator</label>
-                <input type="text" name="name" id="name" placeholder="Please insert milestone indicator"
-                  class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">
-              </div>
-              <p class="fw-600 text-fill mt-3 cursor-pointer w-fit" onclick="addIndicator()">+ Add
-                More</p>
-              <p class="fw-600 text-fill mt-3 cursor-pointer w-fit">+ Add more milestone</p>
-              <label for="name" class="fw-bold mt-3">Invite members</label>
-              <input type="email" name="name" id="name" placeholder="john.doe@gmail.com"
-                class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">
-              <div class="d-flex align-items-center mt-3 justify-content-center">
-                <button class="btn btn-fill wsm-100 mt-3 mt-md-0">Submit</button>
-                <button class="btn border border-2 ms-3 wsm-100 mt-3 mt-md-0">Cancel</button>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <label for="name" class="fw-bold mt-3">Initiative Owner</label>
-              <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
-                <option value="English">Please select Owner</option>
-                <option value="Urdu">Urdu</option>
-                <option value="Hindi">Hindi</option>
-                <option value="Punjabi">Punjabi</option>
-              </select>
+          <h1 class="text-light-gray">Working hours Template</h1>
+          <div class="row">
+            <div class="col-md-10">
               <div class="row">
-                <div class="col-6">
-                  <label for="name" class="fw-bold mt-3">Initiative start date</label>
-                  <input type="date" name="name" id="name" placeholder="Please select date"
-                    class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">
+                <div class="col-md-6">
+                  <label for="name" class="fw-bold mt-3 mb-2">Title Name</label>
+                  <input type="text" name="name" id="name" placeholder="Working hours template"
+                    class="d-block w-100 border border-2 rounded px-4 py-2">
                 </div>
-                <div class="col-6">
-                  <label for="name" class="fw-bold mt-3">Initiative end date</label>
-                  <input type="date" name="name" id="name" placeholder="Please select date"
-                    class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">
+                <div class="col-12 mt-3">
+                  <label for="name" class="fw-bold mt-3 mb-2">Template Content</label>
+                  <div class="bg-white rounded">
+                    <textarea name="comment" id="comment" cols="30" rows="6"
+                      class="border-0 p-2 rounded w-100 text-light-gray my-3 outline-none"
+                      placeholder="Life is what happens when you're busy making other plans"
+                      spellcheck="false"></textarea>
+                    <div class="d-flex align-items-center p-3">
+                      <i class="icon icon-emoji"></i>
+                      <span class="d-flex align-items-center ms-2 text-decoration-none text-dark"><i
+                          class="icon icon-photo-video-icon me-2"></i>
+                        <h6 class="text-sm text-sm-9">Photo/video</h6>
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <label for="name" class="fw-bold mt-3 mb-2">Entitative Type</label>
-              <div class="initiative-priority">
-                <p class="initiative-button-one active">Policy</p>
-                <p class="initiative-button-one">System</p>
-                <p class="initiative-button-one">Service</p>
-                <p class="initiative-button-one">Process</p>
-                <p class="initiative-button-one">Other</p>
-              </div>
-              <label for="name" class="fw-bold mt-3">Milestone 2</label>
-              <input type="text" name="name" id="name" placeholder="Please insert initiative milestone"
-                class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">
-                <div id="Performance">
-                  <label for="name" class="fw-bold mt-3">Key Performance Indicator</label>
-                  <input type="text" name="name" id="name" placeholder="Please insert milestone indicator"
-                    class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">
-                </div>
-                <p class="fw-600 text-fill mt-3 cursor-pointer w-fit" onclick="addPerformance()">+ Add
-                  More</p>
             </div>
           </div>
+          <button type="button" class="btn ouline-white btn-fill w-fit mt-4 px-4">Update</button>
         </div>
       </main>
     </div>
@@ -250,28 +200,7 @@
   <script src="./assets/js/main.js"></script>
 
   <script>
-    $('.initiative-button').click(function () {
-      $('.initiative-button').removeClass("active");
-      $(this).addClass("active");
-    });
-    $('.initiative-button-one').click(function () {
-      $('.initiative-button-one').removeClass("active");
-      $(this).addClass("active");
-    });
 
-
-    function addObjective() {
-      $('#Objective').append(`<input type="text" name="name" id="name" placeholder="Please insert initiative objective"
-                class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">`);
-    }
-    function addIndicator() {
-      $('#Indicator').append(`<input type="text" name="name" id="name" placeholder="Please insert milestone indicator"
-                class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">`);
-    }
-    function addPerformance() {
-      $('#Performance').append(`<input type="text" name="name" id="name" placeholder="Please insert milestone indicator"
-                class="d-block w-100 border border-2 rounded px-4 py-2 mt-3">`);
-    }
   </script>
 </body>
 

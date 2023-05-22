@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rhombus</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="./mp-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
+                <span>Dashboard</span></a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-trending"></i><span>Voice of Customer</span>
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./mp-surveys.html"><i class="icon icon-trending"></i>
+                    <span>My Syrveys</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./mp-indirect-voc.html"><i
+                      class="icon icon-trending"></i> <span>Indirect VOC</span></a></li>
+              </ul>
+            </li>
+            <li><a href="./" class="panel_link"><i class="icon icon icon-friends"></i> <span>Customer Journey</span></a>
+            </li>
+            <li><a href="./mp-customer-profile.html" class="panel_link"><i class="icon icon-friends"></i>
+                <span>Customer Profile</span></a></li>
+            <li><a href="./mp-user-persona.html" class="panel_link active_panel"><i class="icon icon-calander"></i>
+                <span>User Persona</span></a></li>
+            <li><a href="./" class="panel_link"><i class="icon icon-calander"></i> <span>User Interview</span></a></li>
+            <li><a href="./mp-user-flow.html" class="panel_link"><i class="icon icon-calander"></i> <span>User
+                  Flow</span></a></li>
+            <li><a href="./mp-complaint-management.html" class="panel_link"><i class="icon icon-calander"></i>
+                <span>Complaint Management</span></a></li>
+            <li><a href="./mp-initiative-management.html" class="panel_link"><i class="icon icon-memory"></i>
+                <span>Initiative Management</span></a></li>
+            <li><a href="./" class="panel_link"><i class="icon icon-reports"></i> <span>Report</span></a></li>
+            <div class="open-button">
+              <i class="icon icon-right-arrow"></i>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white justify-content-end">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <!-- <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div> -->
+          <div class="about-profile">
+            <div class="d-none d-md-flex align-items-center">
+              <!-- <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+                  class="icon icon-plus"></i> Add</button> -->
+              <a href=""><i class="icon icon-question"></i></a>
+              <div class="dropdown select-dropdown admin-notification">
+                <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
+                  <i class="icon icon-notification"></i>
+                </button>
+                <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
+                  <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
+                    <p>Notification</p>
+                    <a href="./crm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
+                  </div>
+                  <div class="p-2 border-bottom">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                  <div class="p-2 border-bottom">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                  <div class="p-2">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button"
+                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                  <h6 class="text-small mt-2">Allen Moreno</h6>
+                  <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                <li><a class="dropdown-item mt-3" href="./crm-edit-profile.html"><i class="icon icon-user-profile"></i>
+                    My Profile</a></li>
+                <li><a class="dropdown-item" href="./crm-profile-activities.html"><i class="icon icon-calender-2"></i>
+                    Actions</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h3 class="my-3 fw-bold">Basic</h3>
+          <div class="row mt-3 border-bottom pb-4">
+            <div class="col-md-3">
+              <img src="./assets/images/basic-profile.png" alt="" class="w-100">
+            </div>
+            <div class="col-md-9">
+              <h5 class="fw-600 border-bottom border-2 mb-2 pb-3">Description</h5>
+              <textarea name="" id="" cols="30" rows="5" placeholder="(Type here)" class="w-100 border-0 p-3 rounded bg-transparent outline-none"></textarea>
+            </div>
+            <div class="col-md-3 mt-3">
+              <h5 class="fw-bold">Persona name</h5>
+              <input type="text" placeholder="(Occupation)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-3 mt-3">
+              <h5 class="fw-bold">Family status</h5>
+              <input type="text" placeholder="(Type here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-3 mt-3">
+              <h5 class="fw-bold">Education</h5>
+              <input type="text" placeholder="(Type here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-3 mt-3">
+              <h5 class="fw-bold">Income</h5>
+              <input type="text" placeholder="(Type here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-3 mt-4">
+              <div class="d-flex border-bottom pb-2">
+                <h5 class="fw-bold width-50">Age</h5>
+                <h5 class="fw-bold ms-3 width-50">Gender</h5>
+              </div>
+              <div class="d-flex">
+                <input type="text" placeholder="(Type here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0 width-50">
+                <input type="text" placeholder="(Type here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0 ms-3 width-50">
+              </div>
+            </div>
+            <div class="col-md-9 mt-4 qualities">
+              <h5 class="fw-bold">Qualities</h5>
+              <div class="row">
+                <div class="col-md-4">
+                  <ul>
+                    <li class="text-light-gray">
+                      <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                    </li>
+                    <li class="text-light-gray">
+                      <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                    </li>
+                    <li class="text-light-gray">
+                      <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul>
+                    <li class="text-light-gray">
+                      <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                    </li>
+                    <li class="text-light-gray">
+                      <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                    </li>
+                    <li class="text-light-gray">
+                      <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul>
+                    <li class="text-light-gray">
+                      <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                    </li>
+                    <li class="text-light-gray">
+                      <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                    </li>
+                    <li class="text-light-gray">
+                      <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 class="fw-bold mt-4">Personal characteristics</h1>
+          <h5 class="mt-4 fw-600">Attitudes</h5>
+          <div class="row qualities mt-3">
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-4 fw-600">Habits</h5>
+          <div class="row qualities mt-3">
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-4 fw-600">Interests</h5>
+          <div class="row qualities mt-3">
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-4 fw-600">Hobbies</h5>
+          <div class="row qualities mt-3 border-bottom pb-4">
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h1 class="mt-4 fw-bold">Digital behaviour</h1>
+          <div class="row border-bottom py-4">
+            <div class="col-md-4">
+              <h5 class="mt-4 fw-600">Interests</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-4">
+              <h5 class="mt-4 fw-600">Time Spent Online</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-4">
+              <h5 class="mt-4 fw-600">App Used</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-6 mt-4">
+              <h5 class="mt-4 fw-600">Social Media</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-6 mt-4">
+              <h5 class="mt-4 fw-600">Tech Brands Used</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+          </div>
+          <h1 class="mt-4 fw-bold">Online purchases</h1>
+          <h5 class="mt-4 fw-600">Marketing touchpoints</h5>
+          <div class="row qualities mt-3">
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row border-bottom py-4">
+            <div class="col-md-4">
+              <h5 class="mt-4 fw-600">Product research</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-4">
+              <h5 class="mt-4 fw-600">Online purchase drivers</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-4">
+              <h5 class="mt-4 fw-600">Offline influencers</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-6 mt-4">
+              <h5 class="mt-4 fw-600">Online influencers</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-6 mt-4">
+              <h5 class="mt-4 fw-600">Sources of brand discovery</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+          </div>
+          <h1 class="mt-4 fw-bold">Drivers</h1>
+          <h5 class="mt-4 fw-600">Motivations</h5>
+          <div class="row qualities mt-3">
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-4 fw-600">Pain Points</h5>
+          <div class="row qualities mt-3">
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-4 fw-600">Fears</h5>
+          <div class="row qualities mt-3">
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-4 fw-600">Goals</h5>
+          <div class="row qualities mt-3 border-bottom pb-4">
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h1 class="mt-4 fw-bold">Product</h1>
+          <div class="row mt-4">
+            <div class="col-md-6 mt-4">
+              <h5 class="mt-4 fw-600">Desired outcome</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-6 mt-4">
+              <h5 class="mt-4 fw-600">Measuring success</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+          </div>
+          <h5 class="mt-4 fw-600">Current challenges</h5>
+          <div class="row qualities mt-3">
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6 mt-4">
+              <h5 class="mt-4 fw-600">Where is s/he looking for a solution</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+            <div class="col-md-6 mt-4">
+              <h5 class="mt-4 fw-600">Questions about the solution</h5>
+              <input type="text" placeholder="(Type Here)" class="mt-2 border-0 outline-none bg-transparent py-2 px-0">
+            </div>
+          </div>
+          <h5 class="mt-4 fw-600">How the product can help him/her</h5>
+          <div class="row qualities mt-3">
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+                <li class="text-light-gray">
+                  <input type="text" placeholder="---" class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    </div>
+
+  </section>
+
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rhombus</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+  <style>
+    .vc-chrome {
+      position: absolute;
+      top: 35px;
+      right: 0;
+      z-index: 9;
+    }
+
+    .current-color {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background-color: #000;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="./mp-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
+                <span>Dashboard</span></a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-trending"></i><span>Voice of Customer</span>
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./mp-surveys.html"><i class="icon icon-trending"></i>
+                    <span>My Syrveys</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./mp-indirect-voc.html"><i
+                      class="icon icon-trending"></i> <span>Indirect VOC</span></a></li>
+              </ul>
+            </li>
+            <li><a href="./mp-customer-journey.html" class="panel_link"><i class="icon icon icon-friends"></i> <span>Customer Journey</span></a>
+            </li>
+            <li><a href="./mp-customer-profile.html" class="panel_link"><i class="icon icon-friends"></i>
+                <span>Customer Profile</span></a></li>
+            <li><a href="./mp-user-persona.html" class="panel_link active_panel"><i class="icon icon-calander"></i>
+                <span>User Persona</span></a></li>
+            <li><a href="./" class="panel_link"><i class="icon icon-calander"></i> <span>User Interview</span></a></li>
+            <li><a href="./mp-user-flow.html" class="panel_link"><i class="icon icon-calander"></i> <span>User
+                  Flow</span></a></li>
+            <li><a href="./mp-complaint-management.html" class="panel_link"><i class="icon icon-calander"></i>
+                <span>Complaint Management</span></a></li>
+            <li><a href="./mp-initiative-management.html" class="panel_link"><i class="icon icon-memory"></i>
+                <span>Initiative Management</span></a></li>
+            <li><a href="./" class="panel_link"><i class="icon icon-reports"></i> <span>Report</span></a></li>
+            <div class="open-button">
+              <i class="icon icon-right-arrow"></i>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white justify-content-end">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <!-- <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div> -->
+          <div class="about-profile">
+            <div class="d-none d-md-flex align-items-center">
+              <!-- <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+                  class="icon icon-plus"></i> Add</button> -->
+              <a href=""><i class="icon icon-question"></i></a>
+              <div class="dropdown select-dropdown admin-notification">
+                <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
+                  <i class="icon icon-notification"></i>
+                </button>
+                <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
+                  <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
+                    <p>Notification</p>
+                    <a href="./crm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
+                  </div>
+                  <div class="p-2 border-bottom">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                  <div class="p-2 border-bottom">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                  <div class="p-2">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button"
+                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                  <h6 class="text-small mt-2">Allen Moreno</h6>
+                  <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                <li><a class="dropdown-item mt-3" href="./crm-edit-profile.html"><i class="icon icon-user-profile"></i>
+                    My Profile</a></li>
+                <li><a class="dropdown-item" href="./crm-profile-activities.html"><i class="icon icon-calender-2"></i>
+                    Actions</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="page-main-title">
+            <div class="heading">
+              <h1>User Persona</h1>
+            </div>
+            <div class="d-flex align-items-center">
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0">Export</button>
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-2">Save</button>
+            </div>
+          </div>
+          <div class="w-100 d-flex align-items-center justify-content-end">
+            <a class="cursor-pointer"><i class="icon icon-settings"></i></a>
+            <button type="button" class="btn ouline-white ms-2">Full Screen</button>
+          </div>
+          <div class="bg-white rounded mt-3">
+            <div class="john-profile">
+              <div class="stages-icon">
+                <a class="cursor-pointer add-stage-icon"><i class="icon icon-add-stage"></i></a>
+                <div class="add-icon">
+                  <a class="cursor-pointer"><i class="icon icon-dashboard-icon"></i></a>
+                  <a class="cursor-pointer"><i class="icon icon-emotion-icon bg-cover"></i></a>
+                  <a class="cursor-pointer"><i class="icon icon-image-icon bg-cover"></i></a>
+                  <a class="cursor-pointer"><i class="icon icon-table-fill-icon bg-cover"></i></a>
+                  <a class="cursor-pointer pt-1 px-2"><i class="icon icon-hash-icon"></i></a>
+                  <a class="cursor-pointer"><i class="icon icon-divider-icon"></i></a>
+                </div>
+                <a class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#colorThemeModal"><i class="icon icon-settings-fill"></i></a>
+                <a class="cursor-pointer"><i class="icon icon-close-stage"></i></a>
+              </div>
+              <img src="./assets/images/john-doe.png" alt="">
+              <h1>John Doe</h1>
+              <p>"I am looking for beauty in everything”</p>
+            </div>
+            <div class="demographics-tech">
+              <div class="stages-icon">
+                <a class="cursor-pointer add-stage-icon-1"><i class="icon icon-add-stage"></i></a>
+                <div class="add-icon add-icon-1">
+                  <a class="cursor-pointer"><i class="icon icon-dashboard-icon"></i></a>
+                  <a class="cursor-pointer"><i class="icon icon-emotion-icon bg-cover"></i></a>
+                  <a class="cursor-pointer"><i class="icon icon-image-icon bg-cover"></i></a>
+                  <a class="cursor-pointer"><i class="icon icon-table-fill-icon bg-cover"></i></a>
+                  <a class="cursor-pointer pt-1 px-2"><i class="icon icon-hash-icon"></i></a>
+                  <a class="cursor-pointer"><i class="icon icon-divider-icon"></i></a>
+                </div>
+                <a class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#colorThemeModal"><i class="icon icon-settings-fill"></i></a>
+                <a class="cursor-pointer"><i class="icon icon-close-stage"></i></a>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <h6>DEMOGRAPHICS</h6>
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="text-light-gray">Gender:</p>
+                      <p class="text-light-gray">Age:</p>
+                      <p class="text-light-gray">Education:</p>
+                      <p class="text-light-gray">Job:</p>
+                    </div>
+                    <div class="col-6">
+                      <p>Female</p>
+                      <p>28</p>
+                      <p>Financier</p>
+                      <p>UI designer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h6>TECH</h6>
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="text-light-gray">Internet:</p>
+                      <p class="text-light-gray">Socials:</p>
+                      <p class="text-light-gray">Messengers:</p>
+                      <p class="text-light-gray">Online banking:</p>
+                    </div>
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-gray-star"></i>
+                      </div>
+                      <div class="rating">
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-gray-star"></i>
+                      </div>
+                      <div class="rating">
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-gray-star"></i>
+                      </div>
+                      <div class="rating">
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-yellow-star"></i>
+                        <i class="icon icon-gray-star"></i>
+                        <i class="icon icon-gray-star"></i>
+                        <i class="icon icon-gray-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="subject">
+              <div class="stages-icon">
+                <a class="cursor-pointer add-stage-icon-2"><i class="icon icon-add-stage"></i></a>
+                <div class="add-icon add-icon-2">
+                  <a class="cursor-pointer"><i class="icon icon-dashboard-icon"></i></a>
+                  <a class="cursor-pointer"><i class="icon icon-emotion-icon bg-cover"></i></a>
+                  <a class="cursor-pointer"><i class="icon icon-image-icon bg-cover"></i></a>
+                  <a class="cursor-pointer"><i class="icon icon-table-fill-icon bg-cover"></i></a>
+                  <a class="cursor-pointer pt-1 px-2"><i class="icon icon-hash-icon"></i></a>
+                  <a class="cursor-pointer"><i class="icon icon-divider-icon"></i></a>
+                </div>
+                <a class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#colorThemeModal"><i class="icon icon-settings-fill"></i></a>
+                <a class="cursor-pointer"><i class="icon icon-close-stage"></i></a>
+              </div>
+              <h6>THE SUBJECT</h6>
+              <p>I making user interface deign. I have a lot regular customers, I spend a lot of time to manage of get
+                and provide different payments.</p>
+              <div class="row subject-content">
+                <div class="col-md-6">
+                  <h6>GOALS</h6>
+                  <ul class="goals">
+                    <li>Automate the process of receiving payments.</li>
+                    <li>Make monthly payments with less of efforts and time.</li>
+                    <li>Easily combine all payment methods into one</li>
+                    <li>Make transactions anytime even if I not at working place</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h6>FRUSTRATIONS</h6>
+                  <ul class="frustrations">
+                    <li>I spending a lot of time on settlements with customers</li>
+                    <li>I always forget to make monthly payments like tax, internet, etc.</li>
+                    <li>Different customers have different payment methods</li>
+                    <li>Often I have to conduct payments in move, not at my workplace</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 text-end p-3">
+              <a class="text-decoration-none text-light-gray text-uppercase fw-600 cursor-pointer"
+                data-bs-toggle="modal" data-bs-target="#addSectionModal">+ Add Section</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    </div>
+    <div class="modal fade" id="addSectionModal" tabindex="-1" aria-labelledby="addSectionModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addSectionModalLabel">Add New Section</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light-gray">
+            <div class="py-4 px-5 text-center">
+              <div class="bg-white p-3 d-flex align-items-center justify-content-between rounded mb-3">
+                <h5>Media</h5>
+                <i class="icon icon-popup-image"></i>
+              </div>
+              <div class="bg-white p-3 d-flex align-items-center justify-content-between rounded mb-3">
+                <h5>Chart & Graph</h5>
+                <i class="icon icon-quick-replay"></i>
+              </div>
+              <div class="bg-white p-3 d-flex align-items-center justify-content-between rounded mb-3">
+                <h5>Text</h5>
+                <i class="icon icon-popup-text bg-cover"></i>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill text-uppercase">Next</button>
+            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="colorThemeModal" tabindex="-1" aria-labelledby="colorThemeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="colorThemeModalLabel">Substage Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="font-popup">
+              <div class="row">
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Font</label>
+                  <select name="language" id="language" class="d-block w-100 rounded px-4 py-2">
+                    <option value="English">Helvetica</option>
+                    <option value="Urdu">Verdana</option>
+                    <option value="Hindi">Calibri</option>
+                    <option value="Punjabi">Noto</option>
+                  </select>
+                </div>
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Font Size</label>
+                  <select name="language" id="language" class="d-block w-100 rounded px-4 py-2">
+                    <option value="English">12</option>
+                    <option value="Urdu">13</option>
+                    <option value="Hindi">14</option>
+                    <option value="Punjabi">15</option>
+                  </select>
+                </div>
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Font Color</label>
+                  <div class="d-block">
+                    <input type="color" id="colorPicker" />
+                    <div id="selectedColor"></div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Background Color</label>
+                  <div class="d-block">
+                    <input type="color" id="colorPickerBackground" />
+                    <div id="selectedColorBackground"></div>
+                  </div>
+                </div>
+              </div>
+              <h6 class="my-3">Title in this substage</h6>
+              <div class="row">
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Font</label>
+                  <select name="language" id="language" class="d-block w-100 rounded px-4 py-2">
+                    <option value="English">Helvetica</option>
+                    <option value="Urdu">Verdana</option>
+                    <option value="Hindi">Calibri</option>
+                    <option value="Punjabi">Noto</option>
+                  </select>
+                </div>
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Font Size</label>
+                  <select name="language" id="language" class="d-block w-100 rounded px-4 py-2">
+                    <option value="English">12</option>
+                    <option value="Urdu">13</option>
+                    <option value="Hindi">14</option>
+                    <option value="Punjabi">15</option>
+                  </select>
+                </div>
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Font Color</label>
+                  <div class="d-block">
+                    <input type="color" id="colorPicker" />
+                    <div id="selectedColor"></div>
+                  </div>
+                </div>
+              </div>
+              <h6 class="my-3">Link Section to another map/persona</h6>
+              <input type="text" name="" id="" placeholder="Map/persona" class="w-100 p-2 map-icon">
+              <h6 class="my-3">Stages Icons</h6>
+              <a class="cursor-pointer text-decoration-none mt-3 text-fill">+ Add Icon</a>
+              <div class="d-flex mt-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Before title
+                  </label>
+                </div>
+                <div class="form-check ms-2">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    After title
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+  <script src='https://unpkg.com/vue-color/dist/vue-color.min.js'></script>
+  <script src="./script.js"></script>
+
+  <script>
+    $(".add-stage-icon").click(function () {
+      $(".add-icon").addClass("add-icon-active")
+    });
+    $(".add-stage-icon-1").click(function () {
+      $(".add-icon-1").addClass("add-icon-active-1")
+    });
+    $(".add-stage-icon-2").click(function () {
+      $(".add-icon-2").addClass("add-icon-active-2")
+    });
+
+    const colorPicker = document.getElementById('colorPicker');
+    const selectedColor = document.getElementById('selectedColor');
+
+    colorPicker.addEventListener('input', function () {
+      const color = colorPicker.value;
+      selectedColor.style.backgroundColor = color;
+    });
+
+    const colorPickerBackground = document.getElementById('colorPickerBackground');
+    const selectedColorBackground = document.getElementById('selectedColorBackground');
+
+    colorPickerBackground.addEventListener('input', function () {
+      const color = colorPickerBackground.value;
+      selectedColorBackground.style.backgroundColor = color;
+    });
+
+  </script>
+</body>
+
+</html>

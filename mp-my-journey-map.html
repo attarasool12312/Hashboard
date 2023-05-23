@@ -58,15 +58,19 @@
             </li>
             <li><a href="./mp-customer-journey.html" class="panel_link"><i class="icon icon icon-friends"></i> <span>Customer Journey</span></a>
             </li>
-            <li><a href="./mp-customer-profile.html" class="panel_link"><i class="icon icon-friends"></i>
+            <li><a href="./mp-customer-profile.html" class="panel_link active_panel"><i class="icon icon-friends"></i>
                 <span>Customer Profile</span></a></li>
-            <li><a href="./mp-user-persona.html" class="panel_link"><i class="icon icon-calander"></i> <span>User Persona</span></a></li>
+            <li><a href="./mp-user-persona.html" class="panel_link"><i class="icon icon-calander"></i> <span>User
+                  Persona</span></a></li>
             <li><a href="./" class="panel_link"><i class="icon icon-calander"></i> <span>User Interview</span></a></li>
-            <li><a href="./mp-user-flow.html" class="panel_link"><i class="icon icon-calander"></i> <span>User Flow</span></a></li>
-            <li><a href="./mp-complaint-management.html" class="panel_link active_panel"><i class="icon icon-calander"></i> <span>Complaint Management</span></a>
+            <li><a href="./mp-user-flow.html" class="panel_link"><i class="icon icon-calander"></i> <span>User
+                  Flow</span></a></li>
+            <li><a href="./mp-complaint-management.html" class="panel_link"><i class="icon icon-calander"></i>
+                <span>Complaint Management</span></a>
             </li>
-            <li><a href="./mp-initiative-management.html" class="panel_link"><i
-                  class="icon icon-memory"></i> <span>Initiative Management</span></a></li>
+            <li><a href="./mp-initiative-management.html" class="panel_link"><i class="icon icon-memory"></i>
+                <span>Initiative Management</span></a>
+            </li>
             <li><a href="./" class="panel_link"><i class="icon icon-reports"></i> <span>Report</span></a></li>
             <div class="open-button">
               <i class="icon icon-right-arrow"></i>
@@ -156,37 +160,148 @@
         </div>
         <div class="container">
           <div class="page-main-title">
-            <h1>Create Template</h1>
+            <div class="heading">
+              <h1>New Journey</h1>
+            </div>
+            <div class="d-flex align-items-center">
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0">Export</button>
+              <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-2">Save</button>
+            </div>
           </div>
-          <h1 class="text-light-gray">Working hours Template</h1>
-          <div class="row">
-            <div class="col-md-10">
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="name" class="fw-bold mt-3 mb-2">Title Name</label>
-                  <input type="text" name="name" id="name" placeholder="Working hours template"
-                    class="d-block w-100 border border-2 rounded px-4 py-2">
-                </div>
-                <div class="col-12 mt-3">
-                  <label for="name" class="fw-bold mt-3 mb-2">Template Content</label>
-                  <div class="bg-white rounded">
-                    <textarea name="comment" id="comment" cols="30" rows="6"
-                      class="border-0 p-2 rounded w-100 text-light-gray my-3 outline-none"
-                      placeholder="Life is what happens when you're busy making other plans"
-                      spellcheck="false"></textarea>
-                    <div class="d-flex align-items-center p-3">
-                      <i class="icon icon-emoji"></i>
-                      <span class="d-flex align-items-center ms-2 text-decoration-none text-dark"><i
-                          class="icon icon-photo-video-icon me-2"></i>
-                        <h6 class="text-sm text-sm-9">Photo/video</h6>
-                      </span>
+          <div class="bg-white rounded p-3">
+            <div class="d-flex align-items-center justify-content-between pb-3">
+              <h3 class="fw-bold">My Journey</h3>
+              <button type="button" class="btn ouline-white wsm-100 mt-3 mt-md-0 ms-2">Full Screen</button>
+            </div>
+            <div class="journey-map-content">
+              <div class="left-sidebar">
+                <p>Main Stages</p>
+                <p>Sub-Stages</p>
+              </div>
+              <div class="right-sidebar">
+                <div class="stage">
+                  <div class="main-stage-input">
+                    <input type="text" name="text" id="text" placeholder="Stage Name">
+                    <div class="input-hover-icon">
+                      <i class="icon icon-add-stage"></i>
+                      <i class="icon icon-settings"></i>
+                      <i class="icon icon-close-stage"></i>
+                    </div>
+                  </div>
+                  <div class="subStage">
+                    <div class="subStage-input">
+                      <input type="text" name="text" id="text" placeholder="Sub Stage Name">
+                      <div class="input-hover-icon">
+                        <i class="icon icon-settings"></i>
+                        <i class="icon icon-close-stage"></i>
+                      </div>
+                    </div>
+                    <div class="customer-goals">
+                      <div id="customerGoals">
+                        <input type="text" name="text" id="customer-goals" placeholder="Goal 1">
+                      </div>
+                      <div class="w-100 text-center mt-2">
+                        <a class="cursor-pointer d-block" onclick="addCustomerGoals()"><i
+                            class="icon icon-add-stage"></i></a>
+                      </div>
+                    </div>
+                    <div class="pain-pints">
+                      <div id="painPints">
+                        <div class="pain-pints-input">
+                          <input type="text" name="text" id="text" placeholder="Pain Pints">
+                          <textarea name="description" id="description" cols="30" rows="1"
+                            placeholder="Description"></textarea>
+                          <div class="input-hover-icon">
+                            <i class="icon icon-add-stage"></i>
+                            <i class="icon icon-settings"></i>
+                            <i class="icon icon-close-stage"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-100 text-center mt-2">
+                        <a class="cursor-pointer d-block" onclick="addPainPints()"><i
+                            class="icon icon-add-stage"></i></a>
+                      </div>
+                    </div>
+                    <div class="touchpoint-activity">
+                      <div id="touchpointActivity">
+                        <div class="touchpoint-activity-input">
+                          <select name="language" id="language">
+                            <option value="English">Email</option>
+                            <option value="Urdu">Touchpoint</option>
+                          </select>
+                          <input type="text" placeholder="Email Invitaion">
+                          <div class="input-hover-icon">
+                            <i class="icon icon-add-stage"></i>
+                            <i class="icon icon-settings"></i>
+                            <i class="icon icon-close-stage"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-100 text-center mt-2">
+                        <a class="cursor-pointer d-block" onclick="addTouchpointActivity()"><i
+                            class="icon icon-add-stage"></i></a>
+                      </div>
+                    </div>
+                    <div class="department-channels">
+                      <div id="departmentChannels">
+                        <div class="department-channels-input">
+                          <select name="language" id="language">
+                            <option value="English">Sales</option>
+                            <option value="Urdu">Department</option>
+                          </select>
+                          <input type="text" placeholder="Account Manager">
+                          <div class="input-hover-icon">
+                            <i class="icon icon-add-stage"></i>
+                            <i class="icon icon-settings"></i>
+                            <i class="icon icon-close-stage"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-100 text-center mt-2">
+                        <a class="cursor-pointer d-block" onclick="addDepartmentChannels()"><i
+                            class="icon icon-add-stage"></i></a>
+                      </div>
+                    </div>
+                    <div class="experience">
+                      <div class="experience-checkbox">
+                        <div class="experience-great">
+                          <span>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                        </div>
+                        <div class="experience-good">
+                          <span>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                        </div>
+                        <div class="experience-poor">
+                          <span>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-ng-model="example.check">
+                                <span class="box"></span>
+                              </label>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <button type="button" class="btn ouline-white btn-fill w-fit mt-4 px-4">Update</button>
         </div>
       </main>
     </div>
@@ -198,10 +313,7 @@
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
-
-  <script>
-
-  </script>
+  <script src="./assets/js/my-journey.js"></script>
 </body>
 
 </html>

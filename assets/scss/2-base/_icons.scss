@@ -249,6 +249,15 @@ $icons: (
   "products-briefcase" "svg" 20px 20px,
   "text-after-icon" "svg" 68px 68px,
   "text-before-icon" "svg" 68px 68px,
+  "add-stage" "svg" 14px 13px,
+  "close-stage" "svg" 24px 24px,
+  "settings-fill" "svg" 24px 24px,
+  "dashboard-icon" "svg" 20px 20px,
+  "emotion-icon" "svg" 20px 20px,
+  "image-icon" "svg" 20px 20px,
+  "table-fill-icon" "svg" 20px 20px,
+  "hash-icon" "svg" 20px 20px,
+  "divider-icon" "svg" 20px 3px,
   );
   
 @each $name, $fileType, $width, $height in $icons {

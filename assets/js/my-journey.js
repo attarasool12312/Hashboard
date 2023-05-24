@@ -3,11 +3,11 @@ var customerGoals = 1;
 function addCustomerGoals() {
 
   customerGoals++;
-  $('#customerGoals').append(`<input type="text" name="text" id="customer-goals" class="mt-2" placeholder="Goal ${customerGoals}">`);
+  $('.customerGoals').append(`<input type="text" name="text" id="customer-goals" class="mt-2" placeholder="Goal ${customerGoals}">`);
 }
 
 function addPainPints() {
-  $('#painPints').append(`<div class="pain-pints-input mt-2">
+  $('.painPints').append(`<div class="pain-pints-input mt-2">
                           <input type="text" name="text" id="text" placeholder="Pain Pints">
                           <textarea name="description" id="description" cols="30" rows="1" placeholder="Description"></textarea>
                           <div class="input-hover-icon">
@@ -21,7 +21,7 @@ function addPainPints() {
 
 function addTouchpointActivity() {
 
-  $('#touchpointActivity').append(`<div class="touchpoint-activity-input mt-2">
+  $('.touchpointActivity').append(`<div class="touchpoint-activity-input mt-2">
   <select name="language" id="language">
     <option value="English">Email</option>
     <option value="Urdu">Touchpoint</option>
@@ -37,7 +37,7 @@ function addTouchpointActivity() {
 
 function addDepartmentChannels() {
 
-  $('#departmentChannels').append(`<div class="department-channels-input mt-2">
+  $('.departmentChannels').append(`<div class="department-channels-input mt-2">
   <select name="language" id="language">
     <option value="English">Sales</option>
     <option value="Urdu">Department</option>

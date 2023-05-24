@@ -47,6 +47,25 @@ $(".open-button").click(function () {
 });
 
 
+const allSkeleton = document.querySelectorAll('.skeleton');
+
+// Add the skeleton class to all elements initially
+allSkeleton.forEach(item => {
+  item.classList.add('skeleton');
+});
+
+window.addEventListener('load', function () {
+  // Remove the skeleton class after 10 seconds
+  setTimeout(function () {
+    allSkeleton.forEach(item => {
+      item.classList.remove('skeleton');
+    });
+  }, 5000); // 10 seconds (10000 milliseconds)
+});
+
+
+
+
 $(document).ready(function () {
   $('.dropdown-select').click(function (e) {
     e.preventDefault();

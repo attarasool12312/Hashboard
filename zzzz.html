@@ -2,352 +2,218 @@
 <html lang="en">
 
 <head>
-    <title>Rhombus</title>
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-
-    <link href="https://example.com/" rel="canonical" />
-    <!-- preferred URL - change for you site -->
-
-    <!--fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- css -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
-    <link href="./assets/css/main.css" rel="stylesheet" />
-    <link href="./assets/css/responsive.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+  <style>
+    .loading{
+      background-color: #c1c1c1;
+      min-height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .loading::before{
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, transparent, #d7d7d7, transparent);
+      transform: translateX(-100%);
+      animation: loading 1s infinite;
+      z-index: 1;
+    }
+    @keyframes loading{
+      100%{
+        transform: translateX(100%);
+      }
+    }
+</style>
 </head>
 
 <body>
-    <section class="section-panel">
-        <div class="admin-wrapper">
-            <aside class="aside">
-                <div class="left-top">
-                    <div class="sitepanel-toggler">
-                        <div class="close">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="logo">
-                            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <ul>
-                        <li><a href="./mp-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
-                                <span>Dashboard</span></a></li>
-                        <li class="nav-item panel-dropdown">
-                            <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="icon icon-trending"></i><span>Voice of Customer</span>
-                            </a>
-                            <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
-                                <li><a class="dropdown-item panel_link " href="./mp-surveys.html"><i
-                                            class="icon icon-trending"></i>
-                                        <span>My Syrveys</span></a></li>
-                                <li><a class="dropdown-item panel_link " href="./mp-indirect-voc.html"><i
-                                            class="icon icon-trending"></i> <span>Indirect VOC</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./" class="panel_link"><i class="icon icon icon-friends"></i> <span>Customer
-                                    Journey</span></a>
-                        </li>
-                        <li><a href="./mp-customer-profile.html" class="panel_link active_panel"><i
-                                    class="icon icon-friends"></i>
-                                <span>Customer Profile</span></a></li>
-                        <li><a href="./mp-user-persona.html" class="panel_link"><i class="icon icon-calander"></i>
-                                <span>User
-                                    Persona</span></a></li>
-                        <li><a href="./" class="panel_link"><i class="icon icon-calander"></i> <span>User
-                                    Interview</span></a></li>
-                        <li><a href="./mp-user-flow.html" class="panel_link"><i class="icon icon-calander"></i>
-                                <span>User
-                                    Flow</span></a></li>
-                        <li><a href="./mp-complaint-management.html" class="panel_link"><i
-                                    class="icon icon-calander"></i>
-                                <span>Complaint Management</span></a>
-                        </li>
-                        <li><a href="./mp-initiative-management.html" class="panel_link"><i
-                                    class="icon icon-memory"></i>
-                                <span>Initiative Management</span></a>
-                        </li>
-                        <li><a href="./" class="panel_link"><i class="icon icon-reports"></i> <span>Report</span></a>
-                        </li>
-                        <div class="open-button">
-                            <i class="icon icon-right-arrow"></i>
-                        </div>
-                    </ul>
-                </div>
-            </aside>
-            <main class="main">
-                <div class="top-nav bg-white justify-content-end">
-                    <div class="sitepanel-toggler for-mobile">
-                        <div class="close">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="logo">
-                            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <!-- <div class="search-form d-none d-md-block">
-            <form action="">
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
-                <i class="icon icon-search-form"></i>
-              </div>
-            </form>
-          </div> -->
-                    <div class="about-profile">
-                        <div class="d-none d-md-flex align-items-center">
-                            <!-- <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
-                  class="icon icon-plus"></i> Add</button> -->
-                            <a href=""><i class="icon icon-question"></i></a>
-                            <div class="dropdown select-dropdown admin-notification">
-                                <button class="btn dropdown-toggle text-dark border-0 m-0" type="button"
-                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
-                                    style="min-width: 50px !important;">
-                                    <i class="icon icon-notification"></i>
-                                </button>
-                                <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
-                                    <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
-                                        <p>Notification</p>
-                                        <a href="./crm-account-activities.html"
-                                            class="text-decoration-none text-fill fw-600">See All</a>
-                                    </div>
-                                    <div class="p-2 border-bottom">
-                                        <p class="text-light-gray"><b class="text-dark">Edit your information in a
-                                                swipe</b> Sint occaecat
-                                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                                        <p class="text-light-gray mt-3">12 May, 2025</p>
-                                    </div>
-                                    <div class="p-2 border-bottom">
-                                        <p class="text-light-gray"><b class="text-dark">Edit your information in a
-                                                swipe</b> Sint occaecat
-                                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                                        <p class="text-light-gray mt-3">12 May, 2025</p>
-                                    </div>
-                                    <div class="p-2">
-                                        <p class="text-light-gray"><b class="text-dark">Edit your information in a
-                                                swipe</b> Sint occaecat
-                                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                                        <p class="text-light-gray mt-3">12 May, 2025</p>
-                                    </div>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="dropdown select-dropdown admin-profile">
-                            <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4"
-                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="profile-img me-2">
-                                    <img class="img-fluid" src="./assets/images/profile.png" alt="">
-                                </div>
-                                <div class="admin-info d-none d-md-block">
-                                    <h5 class="">Katie Pena</h5>
-                                    <h6 class="">Admin</h6>
-                                </div>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <div class="profile-images text-center">
-                                    <img src="./assets/images/profile-2.png" alt="">
-                                    <h6 class="text-small mt-2">Allen Moreno</h6>
-                                    <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
-                                </div>
-                                <li><a class="dropdown-item mt-3" href="./crm-edit-profile.html"><i
-                                            class="icon icon-user-profile"></i>
-                                        My Profile</a></li>
-                                <li><a class="dropdown-item" href="./crm-profile-activities.html"><i
-                                            class="icon icon-calender-2"></i>
-                                        Actions</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign
-                                        Out</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="page-main-title">
-                        <div class="heading">
-                            <h1>New Journey</h1>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <button type="button" class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0">Export</button>
-                            <button type="button"
-                                class="btn ouline-white btn-fill wsm-100 mt-3 mt-md-0 ms-2">Save</button>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded p-3">
-                        <div class="d-flex align-items-center justify-content-between pb-3">
-                            <h3 class="fw-bold">My Journey</h3>
-                            <button type="button" class="btn ouline-white wsm-100 mt-3 mt-md-0 ms-2">Full
-                                Screen</button>
-                        </div>
-                        <div class="journey-map-content">
-                            <div class="left-sidebar">
-                                <p>Main Stages</p>
-                                <p>Sub-Stages</p>
-                            </div>
-                            <div class="right-sidebar">
-                                <div class="stage">
-                                    <div class="main-stage-input">
-                                        <input type="text" name="text" id="text" placeholder="Stage Name">
-                                        <div class="input-hover-icon">
-                                            <i class="icon icon-add-stage"></i>
-                                            <i class="icon icon-settings"></i>
-                                            <i class="icon icon-close-stage"></i>
-                                        </div>
-                                    </div>
-                                    <div class="subStage">
-                                        <div class="subStage-input">
-                                            <input type="text" name="text" id="text" placeholder="Sub Stage Name">
-                                            <div class="input-hover-icon">
-                                                <i class="icon icon-settings"></i>
-                                                <i class="icon icon-close-stage"></i>
-                                            </div>
-                                        </div>
-                                        <div class="customer-goals">
-                                            <div id="customerGoals">
-                                                <input type="text" name="text" id="customer-goals" placeholder="Goal 1">
-                                            </div>
-                                            <div class="w-100 text-center mt-2">
-                                                <a class="cursor-pointer d-block" onclick="addCustomerGoals()"><i
-                                                        class="icon icon-add-stage"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="pain-pints">
-                                            <div id="painPints">
-                                                <div class="pain-pints-input">
-                                                    <input type="text" name="text" id="text" placeholder="Pain Pints">
-                                                    <textarea name="description" id="description" cols="30" rows="1"
-                                                        placeholder="Description"></textarea>
-                                                    <div class="input-hover-icon">
-                                                        <i class="icon icon-add-stage"></i>
-                                                        <i class="icon icon-settings"></i>
-                                                        <i class="icon icon-close-stage"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="w-100 text-center mt-2">
-                                                <a class="cursor-pointer d-block" onclick="addPainPints()"><i
-                                                        class="icon icon-add-stage"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="touchpoint-activity">
-                                            <div id="touchpointActivity">
-                                                <div class="touchpoint-activity-input">
-                                                    <select name="language" id="language">
-                                                        <option value="English">Email</option>
-                                                        <option value="Urdu">Touchpoint</option>
-                                                    </select>
-                                                    <input type="text" placeholder="Email Invitaion">
-                                                    <div class="input-hover-icon">
-                                                        <i class="icon icon-add-stage"></i>
-                                                        <i class="icon icon-settings"></i>
-                                                        <i class="icon icon-close-stage"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="w-100 text-center mt-2">
-                                                <a class="cursor-pointer d-block" onclick="addTouchpointActivity()"><i
-                                                        class="icon icon-add-stage"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="department-channels">
-                                            <div id="departmentChannels">
-                                                <div class="department-channels-input">
-                                                    <select name="language" id="language">
-                                                        <option value="English">Sales</option>
-                                                        <option value="Urdu">Department</option>
-                                                    </select>
-                                                    <input type="text" placeholder="Account Manager">
-                                                    <div class="input-hover-icon">
-                                                        <i class="icon icon-add-stage"></i>
-                                                        <i class="icon icon-settings"></i>
-                                                        <i class="icon icon-close-stage"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="w-100 text-center mt-2">
-                                                <a class="cursor-pointer d-block" onclick="addDepartmentChannels()"><i
-                                                        class="icon icon-add-stage"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="experience">
-                                            <div class="experience-checkbox">
-                                                <div class="experience-great">
-                                                    <span>
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" data-ng-model="example.check">
-                                                                <span class="box"></span>
-                                                            </label>
-                                                        </div>
-                                                    </span>
-                                                </div>
-                                                <div class="experience-good">
-                                                    <span>
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" data-ng-model="example.check">
-                                                                <span class="box"></span>
-                                                            </label>
-                                                        </div>
-                                                    </span>
-                                                </div>
-                                                <div class="experience-poor">
-                                                    <span>
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" data-ng-model="example.check">
-                                                                <span class="box"></span>
-                                                            </label>
-                                                        </div>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="printedStageDesign"></div>
-                                <button onclick="printStageDesign()">Print Stage Design</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
+  <header class="bg-white">
+    <div class="header-main">
+      <div class="sitepanel-toggler m-0">
+        <div class="close">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </section>
+        <div class="logo">
+          <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+        </div>
+      </div>
+      <!-- <div class="search-form header-form d-none d-md-block">
+                <form action="">
+                    <div class="form-group">
+                        <input class="form-control max-width" type="text" placeholder="Search in Rhombus…"
+                            aria-label="Search">
+                        <i class="icon icon-search-form"></i>
+                    </div>
+                </form>
+            </div> -->
+      <div class="about-profile">
+        <div class="d-none d-md-flex align-items-center">
+          <select name="Role" id="Role" class="d-block border border-2 rounded px-2 py-2 me-2 text-light-gray">
+            <option value="Manager">Choose Channel</option>
+            <option value="Manager">Admin</option>
+            <option value="Urdu">Extended</option>
+            <option value="Hindi">Standard</option>
+            <option value="Punjabi">Limited</option>
+          </select>
+          <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+              class="icon icon-plus"></i> Add</button>
+          <!-- <a href="" class="me-4"><i class="icon icon-messenger-24"></i></a> -->
+          <div class="dropdown select-dropdown admin-notification">
+            <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
+              <i class="icon icon-notification"></i>
+            </button>
+            <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
+              <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
+                <p>Notification</p>
+                <a href="./sm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
+              </div>
+              <div class="p-2 border-bottom">
+                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                <p class="text-light-gray mt-3">12 May, 2025</p>
+              </div>
+              <div class="p-2 border-bottom">
+                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                <p class="text-light-gray mt-3">12 May, 2025</p>
+              </div>
+              <div class="p-2">
+                <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                <p class="text-light-gray mt-3">12 May, 2025</p>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown select-dropdown admin-profile">
+          <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button"
+            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="profile-img me-2 border-0">
+              <img class="img-fluid" src="./assets/images/profile.png" alt="">
+            </div>
+            <div class="admin-info d-none d-md-block">
+              <h5 class="">Katie Pena</h5>
+              <h6 class="text-small text-light-gray">Admin</h6>
+            </div>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <div class="profile-images text-center">
+              <img src="./assets/images/profile-2.png" alt="">
+              <h6 class="text-small mt-2">Allen Moreno</h6>
+              <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+            </div>
+            <li><a class="dropdown-item" href="./sm-profile-activities.html"><i class="icon icon-calender-2"></i>
+                Actions</a></li>
+            <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <!-- JavaScript
+  </header>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside left-sidbar">
+        <ul>
+          <li><a href="./sm-overview.html" class="panel_link"><i class="icon icon-overviwe"></i>
+              <span>Dashboard</span></a>
+          </li>
+          <li><a href="./sm-trending.html" class="panel_link "><i class="icon icon-trending"></i>
+              <span>Trending</span></a></li>
+          <li><a href="./sm-feeds.html" class="panel_link active_panel"><i
+                class="icon icon-expenses"></i><span>Feeds</span></a></li>
+          <li><a href="./sm-new-post.html" class="panel_link"><i class="icon icon-bar-document"></i>
+              <span>New Post</span></a></li>
+          <li><a href="./sm-collaboration.html" class="panel_link "><i class="icon icon-collaboration"></i>
+              <span>Collaboration</span></a>
+          </li>
+          <li><a href="./sm-bots.html" class="panel_link "><i class="icon icon-bots"></i><span>Bots</span></a></li>
+          <li><a href="./sm-tracker.html" class="panel_link "><i class="icon icon-reports"></i><span>Tracker</span></a>
+          </li>
+          <li><a href="./sm-link-new-account.html" class="panel_link "><i class="icon icon-link-account"></i><span>Link
+                new account</span></a></li>
+          <li><a href="./sm-campaign-analysis.html" class="panel_link "><i class="icon icon-reports"></i> <span>Campaign
+                analysis</span></a>
+          </li>
+          <li><a href="./sm-influencers.html" class="panel_link "><i class="icon icon-Influencers"></i>
+              <span>Influencers</span></a></li>
+          <li><a href="./sm-benchmarking.html" class="panel_link "><i class="icon icon-benchmarking"></i>
+              <span>Benchmarking</span></a></li>
+          <li><a href="./sm-create-template.html" class="panel_link "><i class="icon icon-create-template"></i>
+              <span>Create Template</span></a></li>
+          <li class="nav-item panel-dropdown">
+            <a class="dropdown-btn nav-link dropdown-toggle panel_link" href="#" id="Transactions-Dropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon icon-settings"></i> <span>Setting</span>
+            </a>
+            <ul class="transactions-dropdown" aria-labelledby="Transactions-Dropdown">
+              <li><a class="dropdown-item panel_link " href="" data-bs-toggle="modal" data-bs-target="#SettingForm"><i
+                    class="icon icon-settings"></i> <span>Account</span></a></li>
+              <li><a class="dropdown-item panel_link" href="./sm-setting-general.html"><i
+                    class="icon icon-settings"></i> <span>General</span></a></li>
+            </ul>
+          </li>
+          <li><a href="./fm-index.html" class="panel_link "><i class="icon icon-memory"></i><span>Financial</span></a>
+          </li>
+          <div class="open-button">
+            <i class="icon icon-right-arrow"></i>
+          </div>
+        </ul>
+      </aside>
+      <main class="main pt-4 pb-4">
+        <div class="container">
+          <div class="col-md-3 mb-4">
+            <div class="sm-box h-100 bg-white box-hover">
+              <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                <span>
+                  <h3 class="fw-bold loading">89%</h3>
+                </span>
+                <span class="loading"><i class="icon icon-avarage-incom"></i></span>
+              </div>
+              <p class="text-light-gray loading">Last month satisfaction</p>
+              <div class="progress-percentage mt-4 loading">
+                <div class="progress-percentage-box">
+                  <!-- example starts here -->
+                  <div class="progress">
+                    <div class="progress-bar pink" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 18%;">
+                      <span>18%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+    </div>
+  </section>
+
+
+
+  <!-- JavaScript
 ================================================== -->
-    <script src="./assets/js/jquery-3.3.1.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/my-journey.js"></script>
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <script>
+
+  </script>
 </body>
-<script>
-function printStageDesign() {
-  const stageElement = document.querySelector('.stage');
-  html2canvas(stageElement).then(function(canvas) {
-    const printedStageDesign = document.getElementById('printedStageDesign');
-    printedStageDesign.innerHTML = '';
-    printedStageDesign.appendChild(canvas);
-  });
-}
-
-
-</script>
 
 </html>

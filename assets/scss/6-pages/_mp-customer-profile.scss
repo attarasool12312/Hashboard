@@ -416,7 +416,7 @@
         border-radius: 19px;
         text-align: center;
         padding: 20px;
-        width: 15%;
+        width: 17%;
         position: relative;
 
         img {
@@ -436,22 +436,24 @@
             content: "";
             position: absolute;
             top: 47%;
-            right: -54px;
-            width: 67px;
-            height: 4px;
+            right: -30px;
+            width: 41px;
+            height: 7px;
             background-color: #A74398;
+            border-radius: 30px;
         }
 
         &::before {
             content: "";
             position: absolute;
-            top: 44%;
-            right: -66px;
-            width: 20px;
-            height: 20px;
-            border-top: 4px solid #A74398;
-            border-left: 4px solid #A74398;
+            top: 42%;
+            right: -39px;
+            width: 30px;
+            height: 30px;
+            border-top: 7px solid #A74398;
+            border-left: 7px solid #A74398;
             transform: rotate(136deg);
+            border-radius: 5px;
         }
 
         &:last-of-type {

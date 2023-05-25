@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rhombus</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://example.com/" rel="canonical" />
+  <!-- preferred URL - change for you site -->
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="section-panel">
+    <div class="admin-wrapper">
+      <aside class="aside">
+        <div class="left-top">
+          <div class="sitepanel-toggler">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="./mp-index.html" class="panel_link "><i class="icon icon-overviwe"></i>
+                <span>Dashboard</span></a></li>
+            <li class="nav-item panel-dropdown">
+              <a class="dropdown-btn nav-link dropdown-toggle panel_link " href="#" id="Business-Dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-trending"></i><span>Voice of Customer</span>
+              </a>
+              <ul class="Business-Dropdown" aria-labelledby="Transactions-Dropdown">
+                <li><a class="dropdown-item panel_link " href="./mp-surveys.html"><i class="icon icon-trending"></i>
+                    <span>My Surveys</span></a></li>
+                <li><a class="dropdown-item panel_link " href="./mp-indirect-voc.html"><i
+                      class="icon icon-trending"></i> <span>Indirect VOC</span></a></li>
+              </ul>
+            </li>
+            <li><a href="./mp-customer-journey.html" class="panel_link"><i class="icon icon icon-friends"></i> <span>Customer Journey</span></a>
+            </li>
+            <li><a href="./mp-customer-profile.html" class="panel_link"><i class="icon icon-friends"></i>
+                <span>Customer Profile</span></a></li>
+            <li><a href="./mp-user-persona.html" class="panel_link"><i class="icon icon-calander"></i> <span>User Persona</span></a></li>
+            <li><a href="./" class="panel_link"><i class="icon icon-calander"></i> <span>User Interview</span></a></li>
+            <li><a href="./mp-user-flow.html" class="panel_link active_panel"><i class="icon icon-calander"></i> <span>User
+                  Flow</span></a></li>
+            <li><a href="./mp-complaint-management.html" class="panel_link"><i class="icon icon-calander"></i>
+                <span>Complaint Management</span></a></li>
+            <li><a href="./mp-initiative-management.html" class="panel_link"><i class="icon icon-memory"></i>
+                <span>Initiative Management</span></a></li>
+            <li><a href="./" class="panel_link"><i class="icon icon-reports"></i> <span>Report</span></a></li>
+            <div class="open-button">
+              <i class="icon icon-right-arrow"></i>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="top-nav bg-white justify-content-end">
+          <div class="sitepanel-toggler for-mobile">
+            <div class="close">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="logo">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <!-- <div class="search-form d-none d-md-block">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                <i class="icon icon-search-form"></i>
+              </div>
+            </form>
+          </div> -->
+          <div class="about-profile">
+            <div class="d-none d-md-flex align-items-center">
+              <!-- <button type="button" class="btn ouline-white" data-bs-toggle="modal" data-bs-target="#userForm"><i
+                  class="icon icon-plus"></i> Add</button> -->
+              <a href=""><i class="icon icon-question"></i></a>
+              <div class="dropdown select-dropdown admin-notification">
+                <button class="btn dropdown-toggle text-dark border-0 m-0" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 50px !important;">
+                  <i class="icon icon-notification"></i>
+                </button>
+                <ul class="dropdown-menu min-w-320" aria-labelledby="dropdownMenuButton1">
+                  <div class="p-2 d-flex align-items-center justify-content-between border-bottom">
+                    <p>Notification</p>
+                    <a href="./crm-account-activities.html" class="text-decoration-none text-fill fw-600">See All</a>
+                  </div>
+                  <div class="p-2 border-bottom">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                  <div class="p-2 border-bottom">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                  <div class="p-2">
+                    <p class="text-light-gray"><b class="text-dark">Edit your information in a swipe</b> Sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p class="text-light-gray mt-3">12 May, 2025</p>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown select-dropdown admin-profile">
+              <button class="btn dropdown-toggle text-dark w-100 border-0 d-flex align-center ms-md-4" type="button"
+                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="profile-img me-2">
+                  <img class="img-fluid" src="./assets/images/profile.png" alt="">
+                </div>
+                <div class="admin-info d-none d-md-block">
+                  <h5 class="">Katie Pena</h5>
+                  <h6 class="">Admin</h6>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="profile-images text-center">
+                  <img src="./assets/images/profile-2.png" alt="">
+                  <h6 class="text-small mt-2">Allen Moreno</h6>
+                  <p class="text-small text-light-gray">allenmoreno@gmail.com</p>
+                </div>
+                <li><a class="dropdown-item mt-3" href="./crm-edit-profile.html"><i class="icon icon-user-profile"></i>
+                    My Profile</a></li>
+                <li><a class="dropdown-item" href="./crm-profile-activities.html"><i class="icon icon-calender-2"></i>
+                    Actions</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-question me-1"></i> FAQ</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-power-off me-1"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="page-main-title">
+            <div class="heading">
+              <h1>User Flow</h1>
+            </div>
+          </div>
+          <div class="Main">
+            <div class="subOne">
+              <div class="subOneKidOne">
+                <div class="oneChildTwo">
+                  <div class="mainforphoto1s" style="position: relative">
+                    <div class="firstPlus">
+                      <img
+                        id="secondPlus"
+                        src="./assets/images/greePlus.png"
+                        width="20px"
+                        height="20px"
+                        style="cursor: pointer"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="btnz">
+                  <button onclick="addAnoSection()">ADD</button>
+                </div>
+              </div>
+            </div>
+            <div class="subTwo">
+              <div class="twoChildOne">
+                <h1 class="mb-3">User Story/Journey Details</h1>
+              </div>
+              <div class="twoChildTwo">
+                <div class="twoChildTwoAnotherChild">
+                  <!-- DYNAMIC -->
+                  <div class="desMain">
+                    <div class="counting">1</div>
+                    <div class="written">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim
+                      ad minim veniam, quis nostrud exercitation. Culpa qui officia
+                      deserunt mollit anim.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="barParents">
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+          <div id="myModalONE" class="modalONE">
+            <div class="modalONE-contentONE">
+              <span class="closeONE" onclick="closeModalONE()">&times;</span>
+              <div class="firstModalImagesMain">
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m1.png"
+                    onclick="modelOneClick(event)"
+                    id="m1"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m2.png"
+                    onclick="modelOneClick(event)"
+                    id="m2"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m3.png"
+                    onclick="modelOneClick(event)"
+                    id="m3"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m4.png"
+                    onclick="modelOneClick(event)"
+                    id="m4"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m5.png"
+                    onclick="modelOneClick(event)"
+                    id="m5"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m6.png"
+                    onclick="modelOneClick(event)"
+                    id="m6"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m7.png"
+                    onclick="modelOneClick(event)"
+                    id="m7"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m8.png"
+                    onclick="modelOneClick(event)"
+                    id="m8"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m9.png"
+                    onclick="modelOneClick(event)"
+                    id="m9"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m10.png"
+                    onclick="modelOneClick(event)"
+                    id="m10"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m11.png"
+                    onclick="modelOneClick(event)"
+                    id="m11"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m12.png"
+                    onclick="modelOneClick(event)"
+                    id="m12"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m13.png"
+                    onclick="modelOneClick(event)"
+                    id="m13"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m14.png"
+                    onclick="modelOneClick(event)"
+                    id="m14"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m15.png"
+                    onclick="modelOneClick(event)"
+                    id="m15"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m16.png"
+                    onclick="modelOneClick(event)"
+                    id="m16"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m17.png"
+                    onclick="modelOneClick(event)"
+                    id="m17"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m18.png"
+                    onclick="modelOneClick(event)"
+                    id="m18"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m19.png"
+                    onclick="modelOneClick(event)"
+                    id="m19"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m20.png"
+                    onclick="modelOneClick(event)"
+                    id="m20"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m21.png"
+                    onclick="modelOneClick(event)"
+                    id="m21"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m22.png"
+                    onclick="modelOneClick(event)"
+                    id="m22"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m23.png"
+                    onclick="modelOneClick(event)"
+                    id="m23"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m24.png"
+                    onclick="modelOneClick(event)"
+                    id="m24"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m25.png"
+                    onclick="modelOneClick(event)"
+                    id="m25"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m26.png"
+                    onclick="modelOneClick(event)"
+                    id="m26"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m27.png"
+                    onclick="modelOneClick(event)"
+                    id="m27"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m28.png"
+                    onclick="modelOneClick(event)"
+                    id="m28"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m29.png"
+                    onclick="modelOneClick(event)"
+                    id="m29"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m30.png"
+                    onclick="modelOneClick(event)"
+                    id="m30"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m31.png"
+                    onclick="modelOneClick(event)"
+                    id="m31"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m32.png"
+                    onclick="modelOneClick(event)"
+                    id="m32"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m33.png"
+                    onclick="modelOneClick(event)"
+                    id="m33"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m34.png"
+                    onclick="modelOneClick(event)"
+                    id="m34"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m35.png"
+                    onclick="modelOneClick(event)"
+                    id="m35"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m36.png"
+                    onclick="modelOneClick(event)"
+                    id="m36"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m37.png"
+                    onclick="modelOneClick(event)"
+                    id="m37"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m38.png"
+                    onclick="modelOneClick(event)"
+                    id="m38"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m39.png"
+                    onclick="modelOneClick(event)"
+                    id="m39"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m40.png"
+                    onclick="modelOneClick(event)"
+                    id="m40"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m41.png"
+                    onclick="modelOneClick(event)"
+                    id="m41"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m42.png"
+                    onclick="modelOneClick(event)"
+                    id="m42"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m43.png"
+                    onclick="modelOneClick(event)"
+                    id="m43"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m44.png"
+                    onclick="modelOneClick(event)"
+                    id="m44"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m45.png"
+                    onclick="modelOneClick(event)"
+                    id="m45"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m46.png"
+                    onclick="modelOneClick(event)"
+                    id="m46"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m47.png"
+                    onclick="modelOneClick(event)"
+                    id="m47"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m48.png"
+                    onclick="modelOneClick(event)"
+                    id="m48"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m49.png"
+                    onclick="modelOneClick(event)"
+                    id="m49"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m50.png"
+                    onclick="modelOneClick(event)"
+                    id="m50"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m51.png"
+                    onclick="modelOneClick(event)"
+                    id="m51"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m52.png"
+                    onclick="modelOneClick(event)"
+                    id="m52"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m53.png"
+                    onclick="modelOneClick(event)"
+                    id="m53"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m54.png"
+                    onclick="modelOneClick(event)"
+                    id="m54"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m55.png"
+                    onclick="modelOneClick(event)"
+                    id="m55"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m56.png"
+                    onclick="modelOneClick(event)"
+                    id="m56"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m57.png"
+                    onclick="modelOneClick(event)"
+                    id="m57"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m58.png"
+                    onclick="modelOneClick(event)"
+                    id="m58"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m59.png"
+                    onclick="modelOneClick(event)"
+                    id="m59"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m60.png"
+                    onclick="modelOneClick(event)"
+                    id="m60"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m61.png"
+                    onclick="modelOneClick(event)"
+                    id="m61"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m62.png"
+                    onclick="modelOneClick(event)"
+                    id="m62"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m63.png"
+                    onclick="modelOneClick(event)"
+                    id="m63"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m64.png"
+                    onclick="modelOneClick(event)"
+                    id="m64"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m65.png"
+                    onclick="modelOneClick(event)"
+                    id="m65"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m66.png"
+                    onclick="modelOneClick(event)"
+                    id="m66"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m67.png"
+                    onclick="modelOneClick(event)"
+                    id="m67"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m68.png"
+                    onclick="modelOneClick(event)"
+                    id="m68"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m69.png"
+                    onclick="modelOneClick(event)"
+                    id="m69"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m70.png"
+                    onclick="modelOneClick(event)"
+                    id="m70"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m71.png"
+                    onclick="modelOneClick(event)"
+                    id="m71"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m72.png"
+                    onclick="modelOneClick(event)"
+                    id="m72"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m73.png"
+                    onclick="modelOneClick(event)"
+                    id="m73"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m74.png"
+                    onclick="modelOneClick(event)"
+                    id="m74"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m75.png"
+                    onclick="modelOneClick(event)"
+                    id="m75"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m76.png"
+                    onclick="modelOneClick(event)"
+                    id="m76"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m77.png"
+                    onclick="modelOneClick(event)"
+                    id="m77"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m78.png"
+                    onclick="modelOneClick(event)"
+                    id="m78"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m79.png"
+                    onclick="modelOneClick(event)"
+                    id="m79"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m80.png"
+                    onclick="modelOneClick(event)"
+                    id="m80"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalonecontantimg">
+                  <img
+                    src="./assets/images/mobile/m81.png"
+                    onclick="modelOneClick(event)"
+                    id="m81"
+                    alt="image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="myModalTWO" class="modalTWO">
+            <div class="modalTWO-contentTWO">
+              <span class="closeTWO" onclick="closeModalTWO()">&times;</span>
+              <div class="modethowImagesMain">
+                <div class="modaltwocontantimg">
+                  <img
+                    src="./assets/images/rightArrows/ra1.png"
+                    onclick="rightArrowmodelClick(event)"
+                    id="ra1"
+                    alt="image"
+                  />
+                </div>
+                <div class="modaltwocontantimg">
+                  <img
+                    src="./assets/images/rightArrows/ra2.png"
+                    onclick="rightArrowmodelClick(event)"
+                    id="ra2"
+                    alt="image"
+                  />
+                </div>
+                <div class="modaltwocontantimg">
+                  <img
+                    src="./assets/images/rightArrows/ra3.png"
+                    onclick="rightArrowmodelClick(event)"
+                    id="ra3"
+                    alt="image"
+                  />
+                </div>
+                <div class="modaltwocontantimg">
+                  <img
+                    src="./assets/images/rightArrows/ra4.png"
+                    onclick="rightArrowmodelClick(event)"
+                    id="ra4"
+                    alt="image"
+                  />
+                </div>
+                <div class="modaltwocontantimg">
+                  <img
+                    src="./assets/images/rightArrows/ra5.png"
+                    onclick="rightArrowmodelClick(event)"
+                    id="ra5"
+                    alt="image"
+                  />
+                </div>
+                <div class="modaltwocontantimg">
+                  <img
+                    src="./assets/images/rightArrows/ra9.png"
+                    onclick="rightArrowmodelClick(event)"
+                    id="ra9"
+                    alt="image"
+                  />
+                </div>
+                <div class="modaltwocontantimg">
+                  <img
+                    src="./assets/images/rightArrows/ra10.png"
+                    onclick="rightArrowmodelClick(event)"
+                    id="ra10"
+                    alt="image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="myModalTHREE" class="modalTHREE">
+            <div class="modalTHREE-contentTHREE">
+              <span class="closeTHREE" onclick="closeModalTHREE()">&times;</span>
+              <div class="modethreeImagesMain">
+                <div class="modalthreecontantimg">
+                  <img
+                    src="./assets/images/bottomArrows/ba1.png"
+                    onclick="rightArrowmodelClick(event)"
+                    id="ba1"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalthreecontantimg">
+                  <img
+                    src="./assets/images/bottomArrows/ba2.png"
+                    onclick="rightArrowmodelClick(event)"
+                    id="ba2"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalthreecontantimg">
+                  <img
+                    src="./assets/images/bottomArrows/ba3.png"
+                    onclick="rightArrowmodelClick(event)"
+                    id="ba3"
+                    alt="image"
+                  />
+                </div>
+                <div class="modalthreecontantimg">
+                  <img
+                    src="./assets/images/bottomArrows/ba4.png"
+                    onclick="rightArrowmodelClick(event)"
+                    id="ba4"
+                    alt="image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- JavaScript
+================================================== -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/mp-mobile-flow.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>

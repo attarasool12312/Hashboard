@@ -1989,7 +1989,7 @@ h6.text-sm {
 .container-md,
 .container-sm,
 .container-xl {
-  max-width: 1057px !important;
+  max-width: 100% !important;
 }
 
 .border-top-lef-right-radius-12 {
@@ -9307,6 +9307,26 @@ button.btn.view {
   align-items: center;
   justify-content: center;
 }
+.dashboard-view .nav-tabs .nav-item:nth-child(1) {
+  transform: perspective(376px) rotatey(12deg);
+}
+.dashboard-view .nav-tabs .nav-item:nth-child(2) {
+  transform: perspective(376px) rotatey(12deg);
+  height: 140px;
+  margin-top: 8px;
+}
+.dashboard-view .nav-tabs .nav-item:nth-child(3) {
+  height: 134px;
+  margin-top: 10px;
+}
+.dashboard-view .nav-tabs .nav-item:nth-child(4) {
+  transform: perspective(376px) rotatey(-7deg);
+  height: 140px;
+  margin-top: 8px;
+}
+.dashboard-view .nav-tabs .nav-item:nth-child(5) {
+  transform: perspective(376px) rotatey(-7deg);
+}
 .dashboard-view .nav-tabs .nav-item .nav-link {
   width: 100%;
   height: 100%;
@@ -9318,6 +9338,7 @@ button.btn.view {
 }
 .dashboard-view .nav-tabs .nav-item .nav-link h5 {
   margin-top: 15px;
+  font-size: 14px !important;
 }
 .dashboard-view .nav-tabs li + li {
   margin-left: 10px;
@@ -10191,7 +10212,7 @@ button.btn.view {
   border-radius: 19px;
   text-align: center;
   padding: 20px;
-  width: 15%;
+  width: 17%;
   position: relative;
 }
 .product-collection .product-collection-card img {
@@ -10208,21 +10229,23 @@ button.btn.view {
   content: "";
   position: absolute;
   top: 47%;
-  right: -54px;
-  width: 67px;
-  height: 4px;
+  right: -30px;
+  width: 41px;
+  height: 7px;
   background-color: #A74398;
+  border-radius: 30px;
 }
 .product-collection .product-collection-card::before {
   content: "";
   position: absolute;
-  top: 44%;
-  right: -66px;
-  width: 20px;
-  height: 20px;
-  border-top: 4px solid #A74398;
-  border-left: 4px solid #A74398;
+  top: 42%;
+  right: -39px;
+  width: 30px;
+  height: 30px;
+  border-top: 7px solid #A74398;
+  border-left: 7px solid #A74398;
   transform: rotate(136deg);
+  border-radius: 5px;
 }
 .product-collection .product-collection-card:last-of-type::after {
   display: none;
@@ -11831,6 +11854,260 @@ button.btn.view {
   width: 100px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+.subOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subTwo {
+  height: 45%;
+}
+
+.subOne {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.twoChildOne {
+  width: 95%;
+  margin: 0 auto;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.oneChildOne {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+  border-bottom: 2px solid #757575;
+  padding-bottom: 8px;
+}
+
+.oneChildOne h1,
+.subTwo h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.18px;
+  margin-top: 0;
+}
+
+.oneChildOne h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.18px;
+  color: #000000;
+  margin-top: 0;
+}
+
+.oneChildTwo {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 400px;
+  max-height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow-x: scroll;
+}
+
+.twoChildTwo {
+  background-color: #f9f9f9;
+  width: 100%;
+  min-height: 80%;
+  max-height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twoChildTwoAnotherChild {
+  width: 93%;
+  padding: 20px;
+  min-height: 10%;
+  max-height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.desMain {
+  display: flex;
+  justify-content: space-around;
+  width: 260px;
+  padding-top: 20px;
+}
+
+.counting {
+  width: 40px;
+  height: 40px;
+  background: #00eecf;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.written {
+  width: 206px;
+  height: 120px;
+  left: 114px;
+  top: 619px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3e3639;
+}
+
+.barParents {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.bar {
+  height: 2px;
+  background-color: #757575;
+  width: 95%;
+  margin-bottom: 50px;
+}
+
+.modalONE {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalONE-contentONE {
+  background-color: #fefefe;
+  margin: 3% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  min-height: 500px;
+  max-height: auto;
+}
+
+.closeONE {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modalTWO,
+.modalTHREE {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalTWO-contentTWO,
+.modalTHREE-contentTHREE {
+  background-color: #fefefe;
+  margin: 3% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  min-height: 500px;
+  max-height: auto;
+}
+
+.closeTWO,
+.closeTHREE {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.firstModalImagesMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.modalonecontantimg {
+  width: 84.56px;
+  height: 152.43px;
+  padding: 15px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.modalonecontantimg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.modethowImagesMain,
+.modethreeImagesMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.modethowImagesMain div,
+.modethreeImagesMain div {
+  margin: 20px;
+  padding: 20px;
+}
+
+.modethowImagesMain div img,
+.modethreeImagesMain div img {
+  cursor: pointer;
+}
+
+.oneChildTwo {
+  overflow-x: scroll;
+}
+
+.mainforphotos {
+  min-height: 100%;
+  max-height: fit-content;
+}
+
+.btnz {
+  padding: 20px;
+}
+
+.btnz button {
+  padding: 15px;
+  background-color: #50bd91;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

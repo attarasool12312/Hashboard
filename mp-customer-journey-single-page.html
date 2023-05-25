@@ -24,6 +24,8 @@
   <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
   <link href="./assets/css/main.css" rel="stylesheet" />
   <link href="./assets/css/responsive.css" rel="stylesheet" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
@@ -166,921 +168,325 @@
           </div>
           <div class="bg-white p-3 journey-map-white">
             <h1 class="border-bottom pb-3">My Journey</h1>
-            <table id="journey-map" class="journey-map">
-              <tbody>
-                <tr>
-                  <td class="stage-heading">Main Stages</td>
-                  <td colspan="2">
-                    <div class="main-stage-input">
-                      <input type="text" name="text" id="text" placeholder="Stage Name">
-                      <div class="input-hover-icon">
-                        <i class="icon icon-add-stage"></i>
-                        <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                        <i class="icon icon-close-stage"></i>
+            <div class="d-flex" x-data="{col: 4}">
+              <table id="journey-map" class="journey-map">
+                <tbody>
+                  <tr id="mainStages">
+                    <td class="stage-heading">Main Stages</td>
+                    <template x-for="i in col">
+                    <td x-data="{ colspan: 1 }" :colspan="colspan">
+                      <div class="main-stage-input">
+                        <input type="text" name="text" id="text" placeholder="Stage Name">
+                        <div class="input-hover-icon">
+                          <i class="icon icon-add-stage" @click="colspan = colspan + 1"></i>
+                          <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
+                          <i class="icon icon-close-stage"></i>
+                        </div>
                       </div>
-                    </div>
-                    <div class="sm-box">
-                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                        <span class="d-flex align-items-end">
-                          <h3 class="fw-bold">86%</h3>
-                          <p class="text-light-gray">Average satisfaction</p>
-                        </span>
-                        <span class=""><i class="icon icon-yellow-star"></i></span>
+                      <div class="sm-box">
+                        <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                          <span class="d-flex align-items-end">
+                            <h3 class="fw-bold">86%</h3>
+                            <p class="text-light-gray text-11">Average satisfaction</p>
+                          </span>
+                          <span class=""><i class="icon icon-yellow-star"></i></span>
+                        </div>
+                        <div class="w-100 text-center">
+                          <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
+                        </div>
                       </div>
-                      <div class="w-100 text-center">
-                        <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="main-stage-input">
-                      <input type="text" name="text" id="text" placeholder="Stage Name">
-                      <div class="input-hover-icon">
-                        <i class="icon icon-add-stage"></i>
-                        <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                        <i class="icon icon-close-stage"></i>
-                      </div>
-                    </div>
-                    <div class="sm-box">
-                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                        <span class="d-flex align-items-end">
-                          <h3 class="fw-bold">86%</h3>
-                          <p class="text-light-gray">Average satisfaction</p>
-                        </span>
-                        <span class=""><i class="icon icon-yellow-star"></i></span>
-                      </div>
-                      <div class="w-100 text-center">
-                        <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="main-stage-input">
-                      <input type="text" name="text" id="text" placeholder="Stage Name">
-                      <div class="input-hover-icon">
-                        <i class="icon icon-add-stage"></i>
-                        <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                        <i class="icon icon-close-stage"></i>
-                      </div>
-                    </div>
-                    <div class="sm-box">
-                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                        <span class="d-flex align-items-end">
-                          <h3 class="fw-bold">86%</h3>
-                          <p class="text-light-gray">Average satisfaction</p>
-                        </span>
-                        <span class=""><i class="icon icon-yellow-star"></i></span>
-                      </div>
-                      <div class="w-100 text-center">
-                        <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="main-stage-input">
-                      <input type="text" name="text" id="text" placeholder="Stage Name">
-                      <div class="input-hover-icon">
-                        <i class="icon icon-add-stage"></i>
-                        <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                        <i class="icon icon-close-stage"></i>
-                      </div>
-                    </div>
-                    <div class="sm-box">
-                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                        <span class="d-flex align-items-end">
-                          <h3 class="fw-bold">86%</h3>
-                          <p class="text-light-gray">Average satisfaction</p>
-                        </span>
-                        <span class=""><i class="icon icon-yellow-star"></i></span>
-                      </div>
-                      <div class="w-100 text-center">
-                        <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <a href="" class="text-decoration-none text-fill fs-6 width-100px d-block fw-600">Add Satge</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="stage-heading">Sub-Stages</td>
-                  <td>
-                    <div class="subStage-input">
-                      <input type="text" name="text" id="text" placeholder="Sub Stage Name">
-                      <div class="input-hover-icon">
-                        <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                        <i class="icon icon-close-stage"></i>
-                      </div>
-                    </div>
-                    <div class="sm-box">
-                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                        <span class="d-flex align-items-end">
-                          <h3 class="fw-bold">86%</h3>
-                          <p class="text-light-gray">Average satisfaction</p>
-                        </span>
-                        <span class=""><i class="icon icon-yellow-star"></i></span>
-                      </div>
-                      <div class="w-100 text-center">
-                        <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="subStage-input">
-                      <input type="text" name="text" id="text" placeholder="Sub Stage Name">
-                      <div class="input-hover-icon">
-                        <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                        <i class="icon icon-close-stage"></i>
-                      </div>
-                    </div>
-                    <div class="sm-box">
-                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                        <span class="d-flex align-items-end">
-                          <h3 class="fw-bold">86%</h3>
-                          <p class="text-light-gray">Average satisfaction</p>
-                        </span>
-                        <span class=""><i class="icon icon-yellow-star"></i></span>
-                      </div>
-                      <div class="w-100 text-center">
-                        <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="subStage-input">
-                      <input type="text" name="text" id="text" placeholder="Sub Stage Name">
-                      <div class="input-hover-icon">
-                        <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                        <i class="icon icon-close-stage"></i>
-                      </div>
-                    </div>
-                    <div class="sm-box">
-                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                        <span class="d-flex align-items-end">
-                          <h3 class="fw-bold">86%</h3>
-                          <p class="text-light-gray">Average satisfaction</p>
-                        </span>
-                        <span class=""><i class="icon icon-yellow-star"></i></span>
-                      </div>
-                      <div class="w-100 text-center">
-                        <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="subStage-input">
-                      <input type="text" name="text" id="text" placeholder="Sub Stage Name">
-                      <div class="input-hover-icon">
-                        <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                        <i class="icon icon-close-stage"></i>
-                      </div>
-                    </div>
-                    <div class="sm-box">
-                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                        <span class="d-flex align-items-end">
-                          <h3 class="fw-bold">86%</h3>
-                          <p class="text-light-gray">Average satisfaction</p>
-                        </span>
-                        <span class=""><i class="icon icon-yellow-star"></i></span>
-                      </div>
-                      <div class="w-100 text-center">
-                        <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="subStage-input">
-                      <input type="text" name="text" id="text" placeholder="Sub Stage Name">
-                      <div class="input-hover-icon">
-                        <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                        <i class="icon icon-close-stage"></i>
-                      </div>
-                    </div>
-                    <div class="sm-box">
-                      <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                        <span class="d-flex align-items-end">
-                          <h3 class="fw-bold">86%</h3>
-                          <p class="text-light-gray">Average satisfaction</p>
-                        </span>
-                        <span class=""><i class="icon icon-yellow-star"></i></span>
-                      </div>
-                      <div class="w-100 text-center">
-                        <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="stage-heading">Customer Goals</td>
-                  <td>
-                    <div class="customer-goals">
-                      <div class="customerGoals">
-                        <input type="text" name="text" id="customer-goals" placeholder="Goal 1">
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addCustomerGoals()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="customer-goals">
-                      <div class="customerGoals">
-                        <input type="text" name="text" id="customer-goals" placeholder="Goal 1">
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addCustomerGoals()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="customer-goals">
-                      <div class="customerGoals">
-                        <input type="text" name="text" id="customer-goals" placeholder="Goal 1">
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addCustomerGoals()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="customer-goals">
-                      <div class="customerGoals">
-                        <input type="text" name="text" id="customer-goals" placeholder="Goal 1">
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addCustomerGoals()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="customer-goals">
-                      <div class="customerGoals">
-                        <input type="text" name="text" id="customer-goals" placeholder="Goal 1">
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addCustomerGoals()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="stage-heading">Pain pints</td>
-                  <td>
-                    <div class="pain-pints">
-                      <div class="painPints">
-                        <div class="pain-pints-input">
-                          <input type="text" name="text" id="text" placeholder="Pain Pints">
-                          <textarea name="description" id="description" cols="30" rows="1"
-                            placeholder="Description"></textarea>
+                    </td>
+                    </template>
+                  </tr>
+                  <tr id="subStages">
+                    <td class="stage-heading">Sub-Stages</td>
+                    <template x-for="i in col">
+                      <td>
+                        <div class="subStage-input">
+                          <input type="text" name="text" id="text" placeholder="Sub Stage Name">
                           <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
                             <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
                             <i class="icon icon-close-stage"></i>
                           </div>
                         </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addPainPints()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="pain-pints">
-                      <div class="painPints">
-                        <div class="pain-pints-input">
-                          <input type="text" name="text" id="text" placeholder="Pain Pints">
-                          <textarea name="description" id="description" cols="30" rows="1"
-                            placeholder="Description"></textarea>
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
+                        <div class="sm-box">
+                          <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                            <span class="d-flex align-items-end">
+                              <h3 class="fw-bold">86%</h3>
+                              <p class="text-light-gray text-11">Average satisfaction</p>
+                            </span>
+                            <span class=""><i class="icon icon-yellow-star"></i></span>
+                          </div>
+                          <div class="w-100 text-center">
+                            <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
                           </div>
                         </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addPainPints()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="pain-pints">
-                      <div class="painPints">
-                        <div class="pain-pints-input">
-                          <input type="text" name="text" id="text" placeholder="Pain Pints">
-                          <textarea name="description" id="description" cols="30" rows="1"
-                            placeholder="Description"></textarea>
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
+                      </td>
+                    </template>
+                  </tr>
+                  <tr id="customerGoals">
+                    <td class="stage-heading">Customer Goals</td>
+                    <template x-for="i in col">
+                      <td>
+                        <div class="customer-goals">
+                          <div class="customerGoals">
+                            <input type="text" name="text" id="customer-goals" placeholder="Goal 1">
+                          </div>
+                          <div class="w-100 text-center mt-2">
+                            <a class="cursor-pointer d-block" onclick="addCustomerGoals()"><i
+                                class="icon icon-add-stage"></i></a>
                           </div>
                         </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addPainPints()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="pain-pints">
-                      <div class="painPints">
-                        <div class="pain-pints-input">
-                          <input type="text" name="text" id="text" placeholder="Pain Pints">
-                          <textarea name="description" id="description" cols="30" rows="1"
-                            placeholder="Description"></textarea>
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
+                      </td>
+                    </template>
+                  </tr>
+                  <tr id="painPints">
+                    <td class="stage-heading">Pain pints</td>
+                    <template x-for="i in col">
+                      <td>
+                        <div class="pain-pints">
+                          <div class="painPints">
+                            <div class="pain-pints-input">
+                              <input type="text" name="text" id="text" placeholder="Pain Pints">
+                              <textarea name="description" id="description" cols="30" rows="1"
+                                placeholder="Description"></textarea>
+                              <div class="input-hover-icon">
+                                <i class="icon icon-add-stage"></i>
+                                <i class="icon icon-settings" data-bs-toggle="modal"
+                                  data-bs-target="#colorThemeModal"></i>
+                                <i class="icon icon-close-stage"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="w-100 text-center mt-2">
+                            <a class="cursor-pointer d-block" onclick="addPainPints()"><i
+                                class="icon icon-add-stage"></i></a>
                           </div>
                         </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addPainPints()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="pain-pints">
-                      <div class="painPints">
-                        <div class="pain-pints-input">
-                          <input type="text" name="text" id="text" placeholder="Pain Pints">
-                          <textarea name="description" id="description" cols="30" rows="1"
-                            placeholder="Description"></textarea>
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
+                      </td>
+                    </template>
+                  </tr>
+                  <tr id="touchpointsActivity">
+                    <td class="stage-heading">Touchpoints Activity</td>
+                    <template x-for="i in col">
+                      <td>
+                        <div class="touchpoint-activity">
+                          <div class="touchpointActivity">
+                            <div class="touchpoint-activity-input">
+                              <select name="language" id="language">
+                                <option value="English">Email</option>
+                                <option value="Urdu">Touchpoint</option>
+                              </select>
+                              <input type="text" placeholder="Email Invitaion">
+                              <div class="input-hover-icon">
+                                <i class="icon icon-add-stage"></i>
+                                <i class="icon icon-settings" data-bs-toggle="modal"
+                                  data-bs-target="#colorThemeModal"></i>
+                                <i class="icon icon-close-stage"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="w-100 text-center mt-2">
+                            <a class="cursor-pointer d-block" onclick="addTouchpointActivity()"><i
+                                class="icon icon-add-stage"></i></a>
                           </div>
                         </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addPainPints()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="stage-heading">Touchpoints Activity</td>
-                  <td>
-                    <div class="touchpoint-activity">
-                      <div class="touchpointActivity">
-                        <div class="touchpoint-activity-input">
-                          <select name="language" id="language">
-                            <option value="English">Email</option>
-                            <option value="Urdu">Touchpoint</option>
-                          </select>
-                          <input type="text" placeholder="Email Invitaion">
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
+                      </td>
+                    </template>
+                  </tr>
+                  <tr id="departmentChannels">
+                    <td class="stage-heading">Department Channels</td>
+                    <template x-for="i in col">
+                      <td>
+                        <div class="department-channels">
+                          <div class="departmentChannels">
+                            <div class="department-channels-input">
+                              <select name="language" id="language">
+                                <option value="English">Sales</option>
+                                <option value="Urdu">Department</option>
+                              </select>
+                              <input type="text" placeholder="Account Manager">
+                              <div class="input-hover-icon">
+                                <i class="icon icon-add-stage"></i>
+                                <i class="icon icon-settings" data-bs-toggle="modal"
+                                  data-bs-target="#colorThemeModal"></i>
+                                <i class="icon icon-close-stage"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="w-100 text-center mt-2">
+                            <a class="cursor-pointer d-block" onclick="addDepartmentChannels()"><i
+                                class="icon icon-add-stage"></i></a>
                           </div>
                         </div>
+                      </td>
+                    </template>
+                  </tr>
+                  <tr id="experience">
+                    <td class="stage-heading">
+                      <div class="d-flex">
+                        <p>Experience</p>
+                        <div class="ms-2">
+                          <img src="./assets/images/emotion-greate.png" alt="">
+                          <img src="./assets/images/emotion-good.png" alt="">
+                          <img src="./assets/images/emotion-sad.png" alt="">
+                        </div>
                       </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addTouchpointActivity()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="touchpoint-activity">
-                      <div class="touchpointActivity">
-                        <div class="touchpoint-activity-input">
-                          <select name="language" id="language">
-                            <option value="English">Email</option>
-                            <option value="Urdu">Touchpoint</option>
-                          </select>
-                          <input type="text" placeholder="Email Invitaion">
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
+                    </td>
+                    <template x-for="i in col">
+                      <td>
+                        <div class="experience">
+                          <div class="experience-checkbox">
+                            <div class="experience-great">
+                              <span>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" data-ng-model="example.check">
+                                    <span class="box"></span>
+                                  </label>
+                                </div>
+                              </span>
+                            </div>
+                            <div class="experience-good">
+                              <span>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" data-ng-model="example.check">
+                                    <span class="box"></span>
+                                  </label>
+                                </div>
+                              </span>
+                            </div>
+                            <div class="experience-poor">
+                              <span>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" data-ng-model="example.check">
+                                    <span class="box"></span>
+                                  </label>
+                                </div>
+                              </span>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addTouchpointActivity()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="touchpoint-activity">
-                      <div class="touchpointActivity">
-                        <div class="touchpoint-activity-input">
-                          <select name="language" id="language">
-                            <option value="English">Email</option>
-                            <option value="Urdu">Touchpoint</option>
-                          </select>
-                          <input type="text" placeholder="Email Invitaion">
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
-                          </div>
+                      </td>
+                    </template>
+                  </tr>
+                  <tr id="processes">
+                    <td class="stage-heading">Processes</td>
+                    <template x-for="i in col">
+                      <td>
+                        <div class="text-center fs-3 text-fill cursor-pointer w-fit mx-auto">
+                          +
                         </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addTouchpointActivity()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="touchpoint-activity">
-                      <div class="touchpointActivity">
-                        <div class="touchpoint-activity-input">
-                          <select name="language" id="language">
-                            <option value="English">Email</option>
-                            <option value="Urdu">Touchpoint</option>
-                          </select>
-                          <input type="text" placeholder="Email Invitaion">
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addTouchpointActivity()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="touchpoint-activity">
-                      <div class="touchpointActivity">
-                        <div class="touchpoint-activity-input">
-                          <select name="language" id="language">
-                            <option value="English">Email</option>
-                            <option value="Urdu">Touchpoint</option>
-                          </select>
-                          <input type="text" placeholder="Email Invitaion">
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addTouchpointActivity()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="stage-heading">Department Channels</td>
-                  <td>
-                    <div class="department-channels">
-                      <div class="departmentChannels">
-                        <div class="department-channels-input">
-                          <select name="language" id="language">
-                            <option value="English">Sales</option>
-                            <option value="Urdu">Department</option>
-                          </select>
-                          <input type="text" placeholder="Account Manager">
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addDepartmentChannels()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="department-channels">
-                      <div class="departmentChannels">
-                        <div class="department-channels-input">
-                          <select name="language" id="language">
-                            <option value="English">Sales</option>
-                            <option value="Urdu">Department</option>
-                          </select>
-                          <input type="text" placeholder="Account Manager">
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addDepartmentChannels()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="department-channels">
-                      <div class="departmentChannels">
-                        <div class="department-channels-input">
-                          <select name="language" id="language">
-                            <option value="English">Sales</option>
-                            <option value="Urdu">Department</option>
-                          </select>
-                          <input type="text" placeholder="Account Manager">
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addDepartmentChannels()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="department-channels">
-                      <div class="departmentChannels">
-                        <div class="department-channels-input">
-                          <select name="language" id="language">
-                            <option value="English">Sales</option>
-                            <option value="Urdu">Department</option>
-                          </select>
-                          <input type="text" placeholder="Account Manager">
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addDepartmentChannels()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="department-channels">
-                      <div class="departmentChannels">
-                        <div class="department-channels-input">
-                          <select name="language" id="language">
-                            <option value="English">Sales</option>
-                            <option value="Urdu">Department</option>
-                          </select>
-                          <input type="text" placeholder="Account Manager">
-                          <div class="input-hover-icon">
-                            <i class="icon icon-add-stage"></i>
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-100 text-center mt-2">
-                        <a class="cursor-pointer d-block" onclick="addDepartmentChannels()"><i
-                            class="icon icon-add-stage"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="stage-heading">
-                    <div class="d-flex">
-                      <p>Experience</p>
-                      <div class="ms-2">
-                        <img src="./assets/images/emotion-greate.png" alt="">
-                        <img src="./assets/images/emotion-good.png" alt="">
-                        <img src="./assets/images/emotion-sad.png" alt="">
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="experience">
-                      <div class="experience-checkbox">
-                        <div class="experience-great">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="experience-good">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="experience-poor">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="experience">
-                      <div class="experience-checkbox">
-                        <div class="experience-great">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="experience-good">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="experience-poor">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="experience">
-                      <div class="experience-checkbox">
-                        <div class="experience-great">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="experience-good">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="experience-poor">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="experience">
-                      <div class="experience-checkbox">
-                        <div class="experience-great">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="experience-good">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="experience-poor">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="experience">
-                      <div class="experience-checkbox">
-                        <div class="experience-great">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="experience-good">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="experience-poor">
-                          <span>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" data-ng-model="example.check">
-                                <span class="box"></span>
-                              </label>
-                            </div>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="stage-heading">Processes</td>
-                  <td>
-                    <div class="processes">
-                      <div class="text-center my-3">
-                        <img src="./assets/images/interaction.png" alt="">
-                        <p>Interaction</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="text-center fs-3 text-fill cursor-pointer w-fit mx-auto">
-                      +
-                    </div>
-                  </td>
-                  <td>
-                    <div class="text-center fs-3 text-fill cursor-pointer w-fit mx-auto">
-                      +
-                    </div>
-                  </td>
-                  <td>
-                    <div class="text-center fs-3 text-fill cursor-pointer w-fit mx-auto">
-                      +
-                    </div>
-                  </td>
-                  <td>
-                    <div class="text-center fs-3 text-fill cursor-pointer w-fit mx-auto">
-                      +
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                      </td>
+                    </template>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="add-stage-button mt-5 ms-3">
+                <button type="button" class="btn fs-6 width-100px p-0" @click="col++">Add Satge</button>
+              </div>
+            </div>
           </div>
         </div>
       </main>
     </div>
     <div class="modal fade" id="colorThemeModal" tabindex="-1" aria-labelledby="colorThemeModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="colorThemeModalLabel">Substage Title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form class="font-popup">
-            <div class="row">
-              <div class="col-4">
-                <label for="name" class="fw-bold mt-3 mb-2">Font</label>
-                <select name="language" id="language" class="d-block w-100 rounded px-4 py-2">
-                  <option value="English">Helvetica</option>
-                  <option value="Urdu">Verdana</option>
-                  <option value="Hindi">Calibri</option>
-                  <option value="Punjabi">Noto</option>
-                </select>
-              </div>
-              <div class="col-4">
-                <label for="name" class="fw-bold mt-3 mb-2">Font Size</label>
-                <select name="language" id="language" class="d-block w-100 rounded px-4 py-2">
-                  <option value="English">12</option>
-                  <option value="Urdu">13</option>
-                  <option value="Hindi">14</option>
-                  <option value="Punjabi">15</option>
-                </select>
-              </div>
-              <div class="col-4">
-                <label for="name" class="fw-bold mt-3 mb-2">Font Color</label>
-                <div class="d-block">
-                  <input type="color" id="colorPicker" />
-                  <div id="selectedColor"></div>
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="colorThemeModalLabel">Substage Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="font-popup">
+              <div class="row">
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Font</label>
+                  <select name="language" id="language" class="d-block w-100 rounded px-4 py-2">
+                    <option value="English">Helvetica</option>
+                    <option value="Urdu">Verdana</option>
+                    <option value="Hindi">Calibri</option>
+                    <option value="Punjabi">Noto</option>
+                  </select>
+                </div>
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Font Size</label>
+                  <select name="language" id="language" class="d-block w-100 rounded px-4 py-2">
+                    <option value="English">12</option>
+                    <option value="Urdu">13</option>
+                    <option value="Hindi">14</option>
+                    <option value="Punjabi">15</option>
+                  </select>
+                </div>
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Font Color</label>
+                  <div class="d-block">
+                    <input type="color" id="colorPicker" />
+                    <div id="selectedColor"></div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Background Color</label>
+                  <div class="d-block">
+                    <input type="color" id="colorPickerBackground" />
+                    <div id="selectedColorBackground"></div>
+                  </div>
                 </div>
               </div>
-              <div class="col-4">
-                <label for="name" class="fw-bold mt-3 mb-2">Background Color</label>
-                <div class="d-block">
-                  <input type="color" id="colorPickerBackground" />
-                  <div id="selectedColorBackground"></div>
+              <h6 class="my-3">Title in this substage</h6>
+              <div class="row">
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Font</label>
+                  <select name="language" id="language" class="d-block w-100 rounded px-4 py-2">
+                    <option value="English">Helvetica</option>
+                    <option value="Urdu">Verdana</option>
+                    <option value="Hindi">Calibri</option>
+                    <option value="Punjabi">Noto</option>
+                  </select>
+                </div>
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Font Size</label>
+                  <select name="language" id="language" class="d-block w-100 rounded px-4 py-2">
+                    <option value="English">12</option>
+                    <option value="Urdu">13</option>
+                    <option value="Hindi">14</option>
+                    <option value="Punjabi">15</option>
+                  </select>
+                </div>
+                <div class="col-4">
+                  <label for="name" class="fw-bold mt-3 mb-2">Font Color</label>
+                  <div class="d-block">
+                    <input type="color" id="colorPicker" />
+                    <div id="selectedColor"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <h6 class="my-3">Title in this substage</h6>
-            <div class="row">
-              <div class="col-4">
-                <label for="name" class="fw-bold mt-3 mb-2">Font</label>
-                <select name="language" id="language" class="d-block w-100 rounded px-4 py-2">
-                  <option value="English">Helvetica</option>
-                  <option value="Urdu">Verdana</option>
-                  <option value="Hindi">Calibri</option>
-                  <option value="Punjabi">Noto</option>
-                </select>
-              </div>
-              <div class="col-4">
-                <label for="name" class="fw-bold mt-3 mb-2">Font Size</label>
-                <select name="language" id="language" class="d-block w-100 rounded px-4 py-2">
-                  <option value="English">12</option>
-                  <option value="Urdu">13</option>
-                  <option value="Hindi">14</option>
-                  <option value="Punjabi">15</option>
-                </select>
-              </div>
-              <div class="col-4">
-                <label for="name" class="fw-bold mt-3 mb-2">Font Color</label>
-                <div class="d-block">
-                  <input type="color" id="colorPicker" />
-                  <div id="selectedColor"></div>
+              <h6 class="my-3">Link Section to another map/persona</h6>
+              <input type="text" name="" id="" placeholder="Map/persona" class="w-100 p-2 map-icon">
+              <h6 class="my-3">Stages Icons</h6>
+              <a class="cursor-pointer text-decoration-none mt-3 text-fill">+ Add Icon</a>
+              <div class="d-flex mt-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Before title
+                  </label>
+                </div>
+                <div class="form-check ms-2">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    After title
+                  </label>
                 </div>
               </div>
-            </div>
-            <h6 class="my-3">Link Section to another map/persona</h6>
-            <input type="text" name="" id="" placeholder="Map/persona" class="w-100 p-2 map-icon">
-            <h6 class="my-3">Stages Icons</h6>
-            <a class="cursor-pointer text-decoration-none mt-3 text-fill">+ Add Icon</a>
-            <div class="d-flex mt-3">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Before title
-                </label>
-              </div>
-              <div class="form-check ms-2">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  After title
-                </label>
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </section>
 
   <!-- JavaScript
@@ -1091,22 +497,8 @@
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/my-journey.js"></script>
 
+
   <script>
-    const colorPicker = document.getElementById('colorPicker');
-    const selectedColor = document.getElementById('selectedColor');
-
-    colorPicker.addEventListener('input', function () {
-      const color = colorPicker.value;
-      selectedColor.style.backgroundColor = color;
-    });
-
-    const colorPickerBackground = document.getElementById('colorPickerBackground');
-    const selectedColorBackground = document.getElementById('selectedColorBackground');
-
-    colorPickerBackground.addEventListener('input', function () {
-      const color = colorPickerBackground.value;
-      selectedColorBackground.style.backgroundColor = color;
-    });
   </script>
 </body>
 

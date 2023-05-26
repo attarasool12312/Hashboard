@@ -599,6 +599,11 @@
             padding: 8px;
             border-top-left-radius: 8px;
             width: fit-content;
+            input{
+                &::placeholder{
+                    color: #FF86AB;                    
+                }
+            }
         }
 
         ul {
@@ -631,10 +636,11 @@
         .profile-image-text {
             display: flex;
             align-items: center;
+            width: 100%;
 
             .profile-image {
-                width: 150px;
-                height: 150px;
+                width: 150px !important;
+                height: 150px !important;
                 border-radius: 50%;
                 background-color: #fff;
                 margin-right: 15px;
@@ -643,12 +649,23 @@
             h1 {
                 color: #FF86AB;
                 font-weight: 700;
+                input{
+                    width: 70% !important;
+                    &::placeholder{
+                        color: #FF86AB;                        
+                    }
+                }
             }
 
             h6 {
                 color: #fff;
                 font-size: 15px;
-                text-transform: uppercase;
+                input{
+                    width: 70% !important;
+                    &::placeholder{
+                        text-transform: uppercase;
+                    }
+                }
             }
         }
 
@@ -681,11 +698,15 @@
     background-color: #513C71;
     padding: 30px;
     h5{
-        color: #FF86AB;
         background-color: #3D2D55;
         padding: 8px;
         border-top-left-radius: 8px;
         width: fit-content;
+        input{
+            &::placeholder{
+                color: #FF86AB;
+            }
+        }
     }
     ul{
         margin-top: 20px;

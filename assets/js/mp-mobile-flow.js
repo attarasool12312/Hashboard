@@ -9,12 +9,12 @@ var doubleBoxClass;
 var noofImgsdoubleBox = 0;
 var checkTop = "";
 var currntpusherDiv = "";
-// var toop = "";
+var count = 0;
+
 var twoChildTwoAnotherChild = document.getElementsByClassName(
   "twoChildTwoAnotherChild"
 );
 
-//MODAL START
 const modalONE = document.getElementById("myModalONE");
 const modalTWO = document.getElementById("myModalTWO");
 const modalTHREE = document.getElementById("myModalTHREE");
@@ -69,11 +69,10 @@ window.onclick = function (event) {
     closeModalONE();
   }
 };
-//MODAL END
-
 function modelOneClick(event) {
   console.log("currntpusherDiv", currntpusherDiv);
   console.log("eventzzz", event.target.parentNode.parentNode);
+  count +=1;
 
   closeModalONE();
   if (doubleBox == false) {
@@ -152,7 +151,7 @@ function modelOneClick(event) {
     console.log("twoChildTwoAnotherChild", twoChildTwoAnotherChild);
     var lop = document.createElement("div");
     lop.innerHTML = `  <div class="desMain">
-        <div class="counting">1</div>
+        <div class="counting">${count}</div>
         <div class="written">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim
           ad minim veniam, quis nostrud exercitation. Culpa qui officia
@@ -255,7 +254,7 @@ function modelOneClick(event) {
       });
       var lop = document.createElement("div");
     lop.innerHTML = `  <div class="desMain">
-        <div class="counting">1</div>
+        <div class="counting">${count}</div>
         <div class="written">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim
           ad minim veniam, quis nostrud exercitation. Culpa qui officia
@@ -263,7 +262,6 @@ function modelOneClick(event) {
         </div>
       </div>`;
     twoChildTwoAnotherChild[0].appendChild(lop);
-
       happenedDiv.appendChild(newMainDivOne);
     } else if (noofImgsdoubleBox == 1) {
       var happenedDiv =
@@ -446,7 +444,7 @@ function addAnoSection() {
   newd.className = "subOneKidOne";
   var newdsubOne = document.createElement("div");
   newdsubOne.className = "oneChildOne";
-  newdsubOne.innerHTML = `<input type="text" placeholder="Enter Something"  style="font-size: 24px; font-weight: 700; border : none;outline : none background: transparent !important;"   />`;
+  newdsubOne.innerHTML = `<input type="text" placeholder="Enter Something"  style="font-size: 24px; font-weight: 700; border : none;outline : none"   />`;
   var newdsubTwo = document.createElement("div");
   newdsubTwo.className = "oneChildTwo";
   newdsubTwo.innerHTML = ` <div class="mainforphoto${noofFloos}s" style="position: relative">

@@ -158,25 +158,39 @@
             </div>
           </div>
         </div>
-        <div class="container">
-          <ul class="nav nav-tabs border-0 wsm-100 mt-4" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="Designer-tab" data-bs-toggle="tab" data-bs-target="#Designer"
-                type="button" role="tab" aria-controls="Designer" aria-selected="false">Designer</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="Preview-tab" data-bs-toggle="tab" data-bs-target="#Preview" type="button"
-                role="tab" aria-controls="Preview" aria-selected="true">Preview</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="Logic-tab" data-bs-toggle="tab" data-bs-target="#Logic" type="button"
-                role="tab" aria-controls="Logic" aria-selected="true">Logic</button>
-            </li>
-          </ul>
-          <div class="tab-content mt-4">
-            <div class="tab-pane" id="Designer" role="tabpanel" aria-labelledby="Designer-tab">
+        <div class="container-100">
+          <div class="bg-white p-2">
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="nav nav-tabs border-0 wsm-100" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="Designer-tab" data-bs-toggle="tab" data-bs-target="#Designer"
+                      type="button" role="tab" aria-controls="Designer" aria-selected="false">Designer</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Preview-tab" data-bs-toggle="tab" data-bs-target="#Preview"
+                      type="button" role="tab" aria-controls="Preview" aria-selected="true">Preview</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Logic-tab" data-bs-toggle="tab" data-bs-target="#Logic" type="button"
+                      role="tab" aria-controls="Logic" aria-selected="true">Logic</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="shareSurvey-tab" data-bs-toggle="tab" data-bs-target="#shareSurvey"
+                      type="button" role="tab" aria-controls="shareSurvey" aria-selected="true">Share Survey</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 text-end">
+                <button type="button" class="btn ouline-white"><i class="icon icon-undo-survey-icon"></i></button>
+                <button type="button" class="btn ouline-white"><i class="icon icon-redo-survey-icon"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active" id="Designer" role="tabpanel" aria-labelledby="Designer-tab">
               <div class="row">
-                <div class="col-md-3 designer-panel">
+                <div class="col-md-2 designer-panel">
                   <div id="root">
                     <div class="row main-content page-side-button w-100 mx-auto h-100">
                       <div class="drag-container">
@@ -231,29 +245,44 @@
                               Multiple Textboxes
                             </div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-9">
-                  <div id="page" class="p-3">
-                    <div data-type="text">
-                      <div class="block-content">
-                        <div class="row">
-                          <div class="surveys-header bg-white">
-                            <div class="surveys-title">
-                              <input type="text" name="name" id="name" placeholder="Surveys Title"
-                                class="d-block w-100 border-0 rounded outline-none px-4 py-2 title">
-                              <input type="text" name="name" id="name" placeholder="Description"
-                                class="d-block w-100 border-0 rounded outline-none px-4 py-2 description">
+                          <div data-type="signature" class="drag-item">
+                            <div class="sidebar-button">
+                              Signature
                             </div>
-                            <div class="surveys-image upload-files">
-                              <div class="uploadfile">
-                                <div class="text w-fit"><label for="fileupload" class="cursor-pointer fw-bold w-fit"><i
-                                      class="icon icon-image"></i></label></div>
-                                <input id="fileupload" type="file" class="fileupload d-none">
-                              </div>
+                          </div>
+                          <div data-type="expression" class="drag-item">
+                            <div class="sidebar-button">
+                              Expression (Read-only)
+                            </div>
+                          </div>
+                          <div data-type="HTML" class="drag-item">
+                            <div class="sidebar-button">
+                              HTML
+                            </div>
+                          </div>
+                          <div data-type="singleSelectMatrix" class="drag-item">
+                            <div class="sidebar-button">
+                              Single-Select Matrix
+                            </div>
+                          </div>
+                          <div data-type="dynamicMatrix" class="drag-item">
+                            <div class="sidebar-button">
+                              Dynamic Matrix
+                            </div>
+                          </div>
+                          <div data-type="multiSelectMatrix" class="drag-item">
+                            <div class="sidebar-button">
+                              Multi-Select Matrix
+                            </div>
+                          </div>
+                          <div data-type="Ranking" class="drag-item">
+                            <div class="sidebar-button">
+                              Ranking
+                            </div>
+                          </div>
+                          <div data-type="Image" class="drag-item">
+                            <div class="sidebar-button">
+                              Image
                             </div>
                           </div>
                         </div>
@@ -261,9 +290,345 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-md-7">
+                  <div id="page" class="p-3">
+                    <div data-type="text">
+                      <div class="block-content">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="surveys-right-bar">
+                    <div class="survey-general">
+                      <p class="survey-general-button">General</p>
+                      <div class="general-content">
+                        <label for="name" class="mt-3 mb-2">Title</label>
+                        <input type="text" name="name" id="name"
+                          class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <label for="name" class="mt-3 mb-2">Description</label>
+                        <textarea name="description" id="description" cols="30" rows="4"
+                          class="d-block w-100 border border-2 rounded px-4 py-2"></textarea>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Show the Title
+                          </label>
+                        </div>
+                        <label for="name" class="mt-3 mb-2">Surver language</label>
+                        <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                          <option value="English">English</option>
+                          <option value="Urdu">Arabic</option>
+                        </select>
+                        <label for="name" class="mt-3 mb-2">Editable or read-only</label>
+                        <ul class="head-btn">
+                          <li class="p-0 slider-btn-1">
+                            <p class="btn ouline-white-1 tab-click-1 active">Editable</p>
+                            <p class="btn ouline-white-1 tab-click-1 border-none">Read-only</p>
+                          </li>
+                        </ul>
+                        <label for="name" class="mt-3 mb-2">Width mode</label>
+                        <ul class="head-btn">
+                          <li class="p-0 slider-btn-2">
+                            <p class="btn ouline-white-2 tab-click-2 active">Auto</p>
+                            <p class="btn ouline-white-2 tab-click-2 border-none">Static</p>
+                            <p class="btn ouline-white-2 tab-click-2 border-none">Responsive</p>
+                          </li>
+                        </ul>
+                        <label for="name" class="mt-3 mb-2">Width (in CSS-accepted values)</label>
+                        <input type="text" name="name" id="name"
+                          class="d-block w-100 border border-2 rounded px-4 py-2">
+                      </div>
+                    </div>
+                    <div class="survey-logo-title">
+                      <p class="survey-logo-title-button">Logo in Survey Title</p>
+                      <div class="logo-title-content">
+                        <label for="name" class="mt-3 mb-2">Logo (URL or base64-encoded string)</label>
+                        <input type="text" name="name" id="name"
+                          class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <label for="name" class="mt-3 mb-2">Logo width (in CSS-accepted values)</label>
+                        <input type="text" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2"
+                          placeholder="300px">
+                        <label for="name" class="mt-3 mb-2">Logo height (in CSS-accepted values)</label>
+                        <input type="text" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2"
+                          placeholder="200px">
+                        <label for="name" class="mt-3 mb-2">Editable or read-only</label>
+                        <ul class="head-btn">
+                          <li class="p-0 slider-btn-3">
+                            <p class="btn ouline-white-3 tab-click-1 active">None</p>
+                            <p class="btn ouline-white-3 tab-click-1 border-none">Contain</p>
+                            <p class="btn ouline-white-3 tab-click-1 border-none">Cover</p>
+                            <p class="btn ouline-white-3 tab-click-1 border-none">Fill</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="survey-navigation">
+                      <p class="survey-navigation-button">Navigation</p>
+                      <div class="navigation-content">
+                        <label for="name" class="mt-3 mb-2">Preview answers before submitting the survey</label>
+                        <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                          <option value="English">No Preview</option>
+                          <option value="Urdu">Show all Quertion</option>
+                          <option value="Urdu">Show answered questions only</option>
+                        </select>
+                        <label for="name" class="mt-3 mb-2">Preview Page Button text</label>
+                        <input type="text" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2"
+                          placeholder="Previous">
+                        <label for="name" class="mt-3 mb-2">Next Page Button text</label>
+                        <input type="text" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2"
+                          placeholder="Next">
+                        <label for="name" class="mt-3 mb-2">Complete Survey button text</label>
+                        <input type="text" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2"
+                          placeholder="Complete">
+                        <label for="name" class="mt-3 mb-2">Preview Answers button text</label>
+                        <input type="text" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2"
+                          placeholder="Preview">
+                        <label for="name" class="mt-3 mb-2">Edit Answers button text</label>
+                        <input type="text" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2"
+                          placeholder="Edit">
+                        <label for="name" class="mt-3 mb-2">Start Survey button text</label>
+                        <input type="text" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2"
+                          placeholder="Start">
+                        <label for="name" class="mt-3 mb-2">Navigation Button location</label>
+                        <ul class="head-btn">
+                          <li class="p-0 slider-btn-4">
+                            <p class="btn ouline-white-4 tab-click-1 active">Hidden</p>
+                            <p class="btn ouline-white-4 tab-click-1 border-none">Top</p>
+                            <p class="btn ouline-white-4 tab-click-1 border-none">Bottom</p>
+                            <p class="btn ouline-white-4 tab-click-1 border-none">Both</p>
+                          </li>
+                        </ul>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Show the Previous Page Button
+                          </label>
+                        </div>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            First page is a start page
+                          </label>
+                        </div>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Proceed to the next page automatically
+                          </label>
+                        </div>
+                        <label for="name" class="mt-3 mb-2">Progress bar location</label>
+                        <ul class="head-btn">
+                          <li class="p-0 slider-btn-5">
+                            <p class="btn ouline-white-5 tab-click-1 active">Hidden</p>
+                            <p class="btn ouline-white-5 tab-click-1 border-none">Top</p>
+                            <p class="btn ouline-white-5 tab-click-1 border-none">Bottom</p>
+                            <p class="btn ouline-white-5 tab-click-1 border-none">Both</p>
+                          </li>
+                        </ul>
+                        <label for="name" class="mt-3 mb-2">Progress bar type</label>
+                        <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                          <option value="English">Completed Pages</option>
+                          <option value="Urdu">Answered questions</option>
+                          <option value="Urdu">Answered required questions</option>
+                          <option value="Urdu">Valid answers</option>
+                          <option value="Urdu">Completed pages (button UI)</option>
+                        </select>
+                        <label for="name" class="mt-3 mb-2">Survey structure</label>
+                        <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                          <option value="English">Original structure</option>
+                          <option value="Urdu">All questions on a single page</option>
+                          <option value="Urdu">Each question on an individual page</option>
+                        </select>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Show TOC
+                          </label>
+                        </div>
+                        <label for="name" class="mt-3 mb-2">Toc location</label>
+                        <ul class="head-btn">
+                          <li class="p-0 slider-btn-6">
+                            <p class="btn ouline-white-6 tab-click-1 active">Left</p>
+                            <p class="btn ouline-white-6 tab-click-1 border-none">Right</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="survey-question">
+                      <p class="survey-question-button">Question</p>
+                      <div class="question-content">
+                        <label for="name" class="mt-3 mb-2">Question title location</label>
+                        <ul class="head-btn">
+                          <li class="p-0 slider-btn-7">
+                            <p class="btn ouline-white-7 tab-click-1 active">Top</p>
+                            <p class="btn ouline-white-7 tab-click-1 border-none">Bottom</p>
+                            <p class="btn ouline-white-7 tab-click-1 border-none">Left</p>
+                          </li>
+                        </ul>
+                        <label for="name" class="mt-3 mb-2">Question description location</label>
+                        <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                          <option value="English">Under the title</option>
+                          <option value="Urdu">Under the input</option>
+                        </select>
+                        <label for="name" class="mt-3 mb-2">Question numbering</label>
+                        <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                          <option value="English">Continue from the previous page</option>
+                          <option value="Urdu">Start on each page</option>
+                          <option value="Urdu">Hide question numbers</option>
+                        </select>
+                        <label for="name" class="mt-3 mb-2">Question title pattern</label>
+                        <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                          <option value="English">1. Question Title *</option>
+                          <option value="English">1. Question Title *</option>
+                          <option value="English">1. Question Title *</option>
+                        </select>
+                        <label for="name" class="mt-3 mb-2">Required symbol(s)</label>
+                        <input type="text" name="name" id="name"
+                          class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <label for="name" class="mt-3 mb-2">Start index (number or letter)</label>
+                        <input type="text" name="name" id="name"
+                          class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <label for="name" class="mt-3 mb-2">Error message location</label>
+                        <ul class="head-btn">
+                          <li class="p-0 slider-btn-8">
+                            <p class="btn ouline-white-8 tab-click-1 active">Top</p>
+                            <p class="btn ouline-white-8 tab-click-1 border-none">Bottom</p>
+                          </li>
+                        </ul>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Focus first question on a new page
+                          </label>
+                        </div>
+                        <label for="name" class="mt-3 mb-2">Element order on the page</label>
+                        <ul class="head-btn">
+                          <li class="p-0 slider-btn-9">
+                            <p class="btn ouline-white-9 tab-click-1 active">Initial</p>
+                            <p class="btn ouline-white-9 tab-click-1 border-none">Random</p>
+                          </li>
+                        </ul>
+                        <label for="name" class="mt-3 mb-2">Maximum answer length (in characters)</label>
+                        <input type="text" name="name" id="name"
+                          class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <label for="name" class="mt-3 mb-2">Maximum comment length (in characters)</label>
+                        <input type="text" name="name" id="name"
+                          class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <div class="form-check mt-3">
+                          <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Auto-expand comment area if necessary
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="survey-data">
+                      <p class="survey-data-button">Data</p>
+                      <div class="data-content">
+                        <label for="name" class="mt-3 mb-2">Clear invidible values</label>
+                        <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                          <option value="English">Never</option>
+                          <option value="Urdu">When the survey is completed</option>
+                          <option value="English">When the question becomes hidden</option>
+                          <option value="English">When the question or its panel/page becomes hidden</option>
+                        </select>
+                        <label for="name" class="mt-3 mb-2">Update text question value</label>
+                        <ul class="head-btn">
+                          <li class="p-0 slider-btn-10">
+                            <p class="btn ouline-white-10 tab-click-1 active">On blur</p>
+                            <p class="btn ouline-white-10 tab-click-1 border-none">While typing</p>
+                          </li>
+                        </ul>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Save partial survey results in progress
+                          </label>
+                        </div>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Store the Others value in a separate field
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="survey-validation">
+                      <p class="survey-validation-button">Validation</p>
+                      <div class="validation-content">
+                        <div class="form-check mt-3">
+                          <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Set focus on the first invalid answer
+                          </label>
+                        </div>
+                        <label for="name" class="mt-3 mb-2">Run validation</label>
+                        <select name="language" id="language" class="d-block w-100 border border-2 rounded px-4 py-2">
+                          <option value="English">When switching to the next page</option>
+                          <option value="Urdu">After an answer is changed</option>
+                          <option value="English">Before an answer is changed</option>
+                          <option value="English">When the survey is completed</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="survey-complete">
+                      <p class="survey-complete-button">Survey Complete</p>
+                      <div class="complete-content">
+                        <label for="name" class="mt-3 mb-2">Navigation</label>
+                        <input type="text" name="name" id="name"
+                          class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <div class="form-check mt-3">
+                          <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Show the Survey Complete page
+                          </label>
+                        </div>
+                        <label for="name" class="mt-3 mb-2">Survey Complete page markup</label>
+                        <textarea name="description" id="description" cols="30" rows="4"
+                          class="d-block w-100 border border-2 rounded px-4 py-2"><h3>Thank you for completing the survey</h3></textarea>
+                        <label for="name" class="mt-3 mb-2">Markup to show while survey model is loading</label>
+                        <textarea name="description" id="description" cols="30" rows="4"
+                          class="d-block w-100 border border-2 rounded px-4 py-2"><h3>Loading Survey...</h3></textarea>
+                        <label for="name" class="mt-3 mb-2">Markup to show if the user already filled out this
+                          survey</label>
+                        <textarea name="description" id="description" cols="30" rows="4"
+                          class="d-block w-100 border border-2 rounded px-4 py-2"><h3>Our records show that you have already completed this survey.</h3></textarea>
+                      </div>
+                    </div>
+                    <div class="survey-timer">
+                      <p class="survey-timer-button">Timer/Quiz</p>
+                      <div class="timer-content">
+                        <label for="name" class="mt-3 mb-2">Time limit to finish the survey (in seconds)</label>
+                        <input type="number" name="name" id="name"
+                          class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <label for="name" class="mt-3 mb-2">Time limit to finish one page (in seconds)</label>
+                        <input type="number" name="name" id="name"
+                          class="d-block w-100 border border-2 rounded px-4 py-2">
+                        <label for="name" class="mt-3 mb-2">Timer location</label>
+                        <ul class="head-btn">
+                          <li class="p-0 slider-btn-11">
+                            <p class="btn ouline-white-11 tab-click-1 active">Hidden</p>
+                            <p class="btn ouline-white-11 tab-click-1 border-none">Top</p>
+                            <p class="btn ouline-white-11 tab-click-1 border-none">Bottom</p>
+                          </li>
+                        </ul>
+                        <label for="name" class="mt-3 mb-2">Timer mode</label>
+                        <ul class="head-btn">
+                          <li class="p-0 slider-btn-12">
+                            <p class="btn ouline-white-12 tab-click-1 active">Both</p>
+                            <p class="btn ouline-white-12 tab-click-1 border-none">Page</p>
+                            <p class="btn ouline-white-12 tab-click-1 border-none">Survey</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="tab-pane" id="Preview" role="tabpanel" aria-labelledby="Preview-tab">
+            <div class="tab-pane " id="Preview" role="tabpanel" aria-labelledby="Preview-tab">
               <div class="row mt-4">
                 <div class="col-6 mx-auto">
                   <div class="radio-button">
@@ -428,8 +793,265 @@
                   </div>
                 </div>
               </div>
+              <div class="row mt-4">
+                <div class="col-6 mx-auto">
+                  <div class="signature">
+                    <label for="name" class="question">Question 1</label>
+                    <section class="signature-component">
+                      <canvas id="signature-pad" width="400" height="200"></canvas>
+                      <div>
+                        <button id="save" class="d-none"></button>
+                        <button id="clear"><i class="icon icon-delete"></i></button>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-6 mx-auto">
+                  <div class="expression">
+                    <label for="name" class="question">Question 1</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-6 mx-auto">
+                  <div class="single-select">
+                    <label for="name" class="question">Question 1</label>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="border-0"></th>
+                          <th scope="col" class="border-0">Column 1</th>
+                          <th scope="col" class="border-0">Column 2</th>
+                          <th scope="col" class="border-0">Column 3</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="border-0">Row 1</th>
+                          <td class="border-0">
+                            <div class="form-check">
+                              <input class="form-check-input mx-auto" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1" checked="">
+                            </div>
+                          </td>
+                          <td class="border-0">
+                            <div class="form-check">
+                              <input class="form-check-input mx-auto" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1" checked="">
+                            </div>
+                          </td>
+                          <td class="border-0">
+                            <div class="form-check">
+                              <input class="form-check-input mx-auto" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1" checked="">
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="border-0" scope="row">Row 2</th>
+                          <td class="border-0">
+                            <div class="form-check">
+                              <input class="form-check-input mx-auto" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1" checked="">
+                            </div>
+                          </td>
+                          <td class="border-0">
+                            <div class="form-check">
+                              <input class="form-check-input mx-auto" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1" checked="">
+                            </div>
+                          </td>
+                          <td class="border-0">
+                            <div class="form-check">
+                              <input class="form-check-input mx-auto" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1" checked="">
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-6 mx-auto">
+                  <div class="dynamic-matrix">
+                    <label for="name" class="question">Question 1</label>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="border-0">Column 1</th>
+                          <th scope="col" class="border-0">Column 2</th>
+                          <th scope="col" class="border-0">Column 3</th>
+                          <th scope="col" class="border-0"></th>
+                        </tr>
+                      </thead>
+                      <tbody id="addTd">
+                        <tr class="addMoreTd">
+                          <td class="border-0">
+                            <select name="Role" id="Role" class="select-dropdown">
+                              <option value="Item">Item 1</option>
+                              <option value="Item">Item 2</option>
+                              <option value="Item">Item 3</option>
+                              <option value="Item">Item 4</option>
+                            </select>
+                          </td>
+                          <td class="border-0">
+                            <select name="Role" id="Role" class="select-dropdown">
+                              <option value="Item">Item 1</option>
+                              <option value="Item">Item 2</option>
+                              <option value="Item">Item 3</option>
+                              <option value="Item">Item 4</option>
+                            </select>
+                          </td>
+                          <td class="border-0">
+                            <select name="Role" id="Role" class="select-dropdown">
+                              <option value="Item">Item 1</option>
+                              <option value="Item">Item 2</option>
+                              <option value="Item">Item 3</option>
+                              <option value="Item">Item 4</option>
+                            </select>
+                          </td>
+                          <td class="border-0">
+                            <i class="icon icon-delete width-50px bg-cover cursor-pointer"></i>
+                          </td>
+                        </tr>
+                        <tr class="addMoreTd">
+                          <td class="border-0">
+                            <select name="Role" id="Role" class="select-dropdown">
+                              <option value="Item">Item 1</option>
+                              <option value="Item">Item 2</option>
+                              <option value="Item">Item 3</option>
+                              <option value="Item">Item 4</option>
+                            </select>
+                          </td>
+                          <td class="border-0">
+                            <select name="Role" id="Role" class="select-dropdown">
+                              <option value="Item">Item 1</option>
+                              <option value="Item">Item 2</option>
+                              <option value="Item">Item 3</option>
+                              <option value="Item">Item 4</option>
+                            </select>
+                          </td>
+                          <td class="border-0">
+                            <select name="Role" id="Role" class="select-dropdown">
+                              <option value="Item">Item 1</option>
+                              <option value="Item">Item 2</option>
+                              <option value="Item">Item 3</option>
+                              <option value="Item">Item 4</option>
+                            </select>
+                          </td>
+                          <td class="border-0">
+                            <i class="icon icon-delete width-50px bg-cover cursor-pointer"></i>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a class="cursor-pointer text-decoration-none text-fill fw-600" onclick="addNewTd()">Add More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-6 mx-auto">
+                  <div class="dynamic-matrix">
+                    <label for="name" class="question">Question 1</label>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="border-0"></th>
+                          <th scope="col" class="border-0">Column 1</th>
+                          <th scope="col" class="border-0">Column 2</th>
+                          <th scope="col" class="border-0">Column 3</th>
+                        </tr>
+                      </thead>
+                      <tbody id="addTd">
+                        <tr class="addMoreTd">
+                          <th scope="row" class="border-0">Row 1</th>
+                          <td class="border-0">
+                            <select name="Role" id="Role" class="select-dropdown">
+                              <option value="Item">Item 1</option>
+                              <option value="Item">Item 2</option>
+                              <option value="Item">Item 3</option>
+                              <option value="Item">Item 4</option>
+                            </select>
+                          </td>
+                          <td class="border-0">
+                            <select name="Role" id="Role" class="select-dropdown">
+                              <option value="Item">Item 1</option>
+                              <option value="Item">Item 2</option>
+                              <option value="Item">Item 3</option>
+                              <option value="Item">Item 4</option>
+                            </select>
+                          </td>
+                          <td class="border-0">
+                            <select name="Role" id="Role" class="select-dropdown">
+                              <option value="Item">Item 1</option>
+                              <option value="Item">Item 2</option>
+                              <option value="Item">Item 3</option>
+                              <option value="Item">Item 4</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr class="addMoreTd">
+                          <th scope="row" class="border-0">Row 1</th>
+                          <td class="border-0">
+                            <select name="Role" id="Role" class="select-dropdown">
+                              <option value="Item">Item 1</option>
+                              <option value="Item">Item 2</option>
+                              <option value="Item">Item 3</option>
+                              <option value="Item">Item 4</option>
+                            </select>
+                          </td>
+                          <td class="border-0">
+                            <select name="Role" id="Role" class="select-dropdown">
+                              <option value="Item">Item 1</option>
+                              <option value="Item">Item 2</option>
+                              <option value="Item">Item 3</option>
+                              <option value="Item">Item 4</option>
+                            </select>
+                          </td>
+                          <td class="border-0">
+                            <select name="Role" id="Role" class="select-dropdown">
+                              <option value="Item">Item 1</option>
+                              <option value="Item">Item 2</option>
+                              <option value="Item">Item 3</option>
+                              <option value="Item">Item 4</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-6 mx-auto">
+                  <div class="raking">
+                    <label for="name" class="question">Question 1</label>
+                    <ul id="rank-list">
+                      <li class="rank-item" draggable="true" ondragstart="dragStart(event)">Item 1</li>
+                      <li class="rank-item" draggable="true" ondragstart="dragStart(event)">Item 2</li>
+                      <li class="rank-item" draggable="true" ondragstart="dragStart(event)">Item 3</li>
+                      <li class="rank-item" draggable="true" ondragstart="dragStart(event)">Item 4</li>
+                      <li class="rank-item" draggable="true" ondragstart="dragStart(event)">Item 5</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-6 mx-auto">
+                  <div class="image-picker">
+                    <label for="name" class="question">Question 1</label>
+                    <div class="imageContainer">
+                      <img src="./assets/images/project-1.png" alt="" class="picker-image">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="tab-pane active" id="Logic" role="tabpanel" aria-labelledby="Logic-tab">
+            <div class="tab-pane " id="Logic" role="tabpanel" aria-labelledby="Logic-tab">
               <div class="add-role">
                 <div>
                   <div id="addNewRule">
@@ -439,11 +1061,104 @@
                 </div>
               </div>
             </div>
+            <div class="tab-pane " id="shareSurvey" role="tabpanel" aria-labelledby="shareSurvey-tab">
+              <div class="bg-white p-3 rounded">
+                <h3 class="mt-4 text-center">How would you like to survey people?</h3>
+                <div class="width-50 mx-auto mt-3">
+                  <div class="d-flex align-items-center">
+                    <input type="url" name="name" id="name" class="d-block w-100 border border-2 rounded px-4 py-2">
+                    <button type="button" class="btn ouline-white btn-fill w-18 ms-3">Copy Url</button>
+                  </div>
+                  <p>Looking for the full URL? <a href="#">Click here</a> to copy</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-5">
+                  <h4 class="fw-600">Create New Share</h4>
+                  <div class="d-flex align-items-center">
+                    <p class="text-light-gray">Collect data from a wide variety of people across the globe</p>
+                    <button type="button" class="btn ouline-white border border-2 ms-2">Buy Target Audience! +</button>
+                  </div>
+                </div>
+                <div class="share-likes">
+                  <div class="share-likes-box">
+                    <img src="./assets/images/email-icon.png" alt="">
+                    <p>send email</p>
+                  </div>
+                  <div class="share-likes-box">
+                    <img src="./assets/images/link-icon.png" alt="">
+                    <p>Create a url</p>
+                  </div>
+                  <div class="share-likes-box">
+                    <img src="./assets/images/share-node-icon.png" alt="">
+                    <p>social</p>
+                  </div>
+                  <div class="share-likes-box">
+                    <img src="./assets/images/email-embed-icon.png" alt="">
+                    <p>embed</p>
+                  </div>
+                  <div class="share-likes-box">
+                    <img src="./assets/images/email-embed-icon.png" alt="">
+                    <p>email embed</p>
+                  </div>
+                  <div class="share-likes-box">
+                    <img src="./assets/images/sms-icon.png" alt="">
+                    <p>sms</p>
+                  </div>
+                  <div class="share-likes-box">
+                    <img src="./assets/images/qr-code-icon.png" alt="">
+                    <p>Qr code</p>
+                  </div>
+                  <div class="share-likes-box">
+                    <h1>SDK</h1>
+                    <p>mobile sdk</p>
+                  </div>
+                  <div class="share-likes-box">
+                    <img src="./assets/images/slack-icon.png" alt="">
+                    <p>slack</p>
+                  </div>
+                  <div class="share-likes-box">
+                    <img src="./assets/images/teams-icon.png" alt="">
+                    <p>teams</p>
+                  </div>
+                  <div class="share-likes-box">
+                    <img src="./assets/images/icons/portal-icon.svg" alt="">
+                    <p>portal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </main>
     </div>
-    </main>
+    <div class="modal fade" id="addMoreItemModal" tabindex="-1" aria-labelledby="addMoreItemModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addMoreItemModalLabel">Column</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="dropdown-surveys">
+              <select name="Role" id="Role" class="select-dropdown"></select>
+              <div class="select-item" id="selectItem"><input type="text" name="name" id="name" placeholder="Item 1"
+                  class="d-block w-100 border-0 outline-none rounded py-2"><input type="text" name="name" id="name"
+                  placeholder="Item 2" class="d-block w-100 border-0 outline-none rounded py-2"><input type="text"
+                  name="name" id="name" placeholder="Item 3"
+                  class="d-block w-100 border-0 outline-none rounded py-2"><input type="text" name="name" id="name"
+                  placeholder="Item 4" class="d-block w-100 border-0 outline-none rounded py-2"></div><a
+                class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block"
+                onclick="addSelectItem()">Add More</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn border border-2" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-fill">Apply</button>
+          </div>
+        </div>
+      </div>
     </div>
+
   </section>
 
   <!-- JavaScript
@@ -452,176 +1167,133 @@
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
   <script src="./assets/js/surveys.js"></script>
+  <script src="./assets/js/signhere.js"></script>
 
   <script>
 
-$(".button-select").click(function() {
-      $(".select-dropdown").toggleClass("active")
-    });
 
-    $(".button-action").click(function() {
-      $(".action-dropdown").toggleClass("active")
-    });
+let uploadBotton = document.getElementById("upload-button");
+let chosenImage = document.getElementById("chosen-image");
+let fileName = document.getElementById("file-name");
 
-function addNewRule() {
-  $('#addNewRule').append(`<div class="new-rule">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <h4 class="fw-600">New rule</h4>
-                        <a class="cursor-pointer delete-rule"><i class="icon icon-delete"></i></a>
-                      </div>
-                      <div class="rule-select">
-                        <h6>If</h6>
-                        <div class="select-button">
-                          <button type="button" class="button-select">Select...</button>
-                          <div class="select-dropdown">
-                            <p>No data to display</p>
-                          </div>
-                        </div>
-                        <div class="equals-button">
-                          <button>Equals</button>
-                        </div>
-                      </div>
-                      <div class="select-action">
-                        <h6>then</h6>
-                        <div class="action-button">
-                          <button type="button" class="button-action">Select action...</button>
-                          <div class="action-dropdown">
-                            <p>Complete Survey</p>
-                            <p>Set answer</p>
-                            <p>Copy answer</p>
-                            <p>Skip to question</p>
-                            <p>Run expression</p>
-                            <p>Set "Survey Complete" page markup</p>
-                          </div>
-                        </div>
-                      </div>
-                      <button type="button" class="btn done-button">Done</button>
-                    </div>`);
+uploadBotton.onchange = () => {
+  let reader = new FileReader();
+  reader.readAsDataURL(uploadBotton.files[0]);
+  reader.onload = () => {
+    chosenImage.setAttribute("src", reader.result);
+
+
+
+  }
+  fileName.textContent = uploadBotton.files[0].name;
 }
 
-$(document).on('click', '.delete-rule', function () {
-  $(this).parents('.new-rule').remove();
-});
+    var draggedItem = null;
 
-
-$('.picker-image').click(function () {
-      $('.picker-image').removeClass("picker-active");
-      $(this).addClass("picker-active");
-    });
-
-
-    function openImagePicker() {
-      const inputElement = document.getElementById('imagePicker');
-      inputElement.click();
+    function dragStart(event) {
+      draggedItem = event.target;
+      event.dataTransfer.effectAllowed = 'move';
+      event.dataTransfer.setData('text/plain', draggedItem.innerHTML);
     }
 
-    document.getElementById('imagePicker').addEventListener('change', handleImageSelection);
+    function dragOver(event) {
+      event.preventDefault();
+      event.dataTransfer.dropEffect = 'move';
+    }
 
-    function handleImageSelection(event) {
-      const files = event.target.files;
-
-      for (let i = 0; i < files.length; i++) {
-        const file = files[i];
-        if (file) {
-          const reader = new FileReader();
-
-          reader.onload = function (e) {
-            const imageContainer = document.getElementById('imageContainer');
-
-            const selectedImage = new Image();
-            selectedImage.src = e.target.result;
-            selectedImage.classList.add('selected-image');
-
-            imageContainer.appendChild(selectedImage);
-          };
-
-          reader.readAsDataURL(file);
-        }
+    function drop(event) {
+      event.preventDefault();
+      if (draggedItem !== event.target) {
+        draggedItem.innerHTML = event.target.innerHTML;
+        event.target.innerHTML = event.dataTransfer.getData('text/plain');
       }
     }
 
+    var rankList = document.getElementById('rank-list');
+    rankList.addEventListener('dragover', dragOver);
+    rankList.addEventListener('drop', drop);
 
+    function addRaking() {
 
-
-    document.getElementById('fileField').addEventListener('change', handleFileUpload);
-
-    function handleFileUpload(event) {
-      const file = event.target.files[0];
-      const fileReader = new FileReader();
-
-      fileReader.onload = function (e) {
-        const previewElement = document.querySelector('.btn-file__preview');
-        const imageElement = document.createElement('img');
-        imageElement.src = e.target.result;
-        imageElement.classList.add('uploaded-image');
-        previewElement.innerHTML = '';
-        previewElement.appendChild(imageElement);
-        // Remove the btn-file__actions div
-        const actionsElement = document.querySelector('.btn-file__actions');
-        actionsElement.parentNode.removeChild(actionsElement);
-      };
-
-      fileReader.readAsDataURL(file);
+      $('#rank-list').append(`<li class="rank-item" draggable="true" ondragstart="dragStart(event)">
+                        <input type="text" name="name" id="name"
+                          class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question">
+                      </li>`);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-    $('.tab-click').click(function (e) {
-      e.preventDefault();
-      $(this).addClass('ouline-white');
-      $('.slider-btn > a').removeClass('active');
-      $(this).addClass('active');
+    $(document).on('click', '.icon-delete', function () {
+      $(this).parents('.addMoreTd').remove();
+      claimants--;
     });
 
+    function addNewTd() {
 
-    var radio = 4;
-
-    function addRadio() {
-
-      radio++;
-      $('#radio').append(`<div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"><label class="form-check-label" for="flexRadioDefault2"><input type="text" name="name" id="name" placeholder="Item ${radio}" class="d-block w-100 border-0 outline-none"></label></div>`);
+      $('#addTd').append(`<tr class="addMoreTd">
+                    <td class="border-0">
+                      <select name="Role" id="Role" class="select-dropdown">
+                        <option value="Item">Item 1</option>
+                        <option value="Item">Item 2</option>
+                        <option value="Item">Item 3</option>
+                        <option value="Item">Item 4</option>
+                      </select>
+                    </td>
+                    <td class="border-0">
+                      <select name="Role" id="Role" class="select-dropdown">
+                        <option value="Item">Item 1</option>
+                        <option value="Item">Item 2</option>
+                        <option value="Item">Item 3</option>
+                        <option value="Item">Item 4</option>
+                      </select>
+                    </td>
+                    <td class="border-0">
+                      <select name="Role" id="Role" class="select-dropdown">
+                        <option value="Item">Item 1</option>
+                        <option value="Item">Item 2</option>
+                        <option value="Item">Item 3</option>
+                        <option value="Item">Item 4</option>
+                      </select>
+                    </td>
+                    <td class="border-0">
+                      <i class="icon icon-delete width-50px bg-cover cursor-pointer"></i>
+                    </td>
+                  </tr>`);
     }
 
-    var rating = 5;
-
-    function addRating() {
-
-      rating++;
-      $('#rating').append(`<p><input type="text" name="name" id="name" placeholder="${rating}" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p>`);
-    }
-
-    var checkbox = 3;
-
-    function addCheckbox() {
-
-      checkbox++;
-      $('#checkbox').append(`<div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault"><input type="text" name="name" id="name" placeholder="Item ${checkbox}" class="d-block w-100 border-0 outline-none rounded py-2"></label></div>`);
-    }
-
-    var selectItem = 4;
-
-    function addSelectItem() {
-
-      selectItem++;
-      $('#selectItem').append(`<input type="text" name="name" id="name" placeholder="Item ${selectItem}" class="d-block w-100 border-0 outline-none rounded py-2">`);
-    }
 
 
-    $('.rating-text').click(function () {
-      $('.rating-text').removeClass("rating-active");
-      $(this).addClass("rating-active");
-    });
+
+
+    function openImagePicker() {
+            const inputElement = document.getElementById('imagePicker');
+            inputElement.click();
+        }
+
+        document.getElementById('imagePicker').addEventListener('change', handleImageSelection);
+
+        function handleImageSelection(event) {
+            const files = event.target.files;
+
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                if (file) {
+                    const reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        const imageContainer = document.getElementById('imageContainer');
+
+                        const selectedImage = new Image();
+                        selectedImage.src = e.target.result;
+                        selectedImage.classList.add('selected-image');
+
+                        imageContainer.appendChild(selectedImage);
+                    };
+
+                    reader.readAsDataURL(file);
+                }
+            }
+        }
   </script>
 </body>
 

@@ -425,34 +425,59 @@ window.addEventListener("DOMContentLoaded", (event) => {
         const type = item.dataset.type;
         switch (type) {
           case "radioButtonGroup":
-            item.innerHTML = `<div class="row mt-3"><div class="col-8 mx-auto"><div class="radio-button"><label for="name" class="question"><input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><div id="radio"><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked><label class="form-check-label" for="flexRadioDefault1"><input type="text" name="name" id="name" placeholder="Item 1" class="d-block w-100 border-0 outline-none"></label></div><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"><label class="form-check-label" for="flexRadioDefault2"><input type="text" name="name" id="name" placeholder="Item 2" class="d-block w-100 border-0 outline-none"></label></div><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"><label class="form-check-label" for="flexRadioDefault1"><input type="text" name="name" id="name" placeholder="Item 3" class="d-block w-100 border-0 outline-none"></label></div><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"><label class="form-check-label" for="flexRadioDefault2"><input type="text" name="name" id="name" placeholder="Item 4" class="d-block w-100 border-0 outline-none"></label></div></div><a class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block" onclick="addRadio()">Add More</a></div></div></div>`;
+            item.innerHTML = `<div class="row mt-3"><div class="col-12 mx-auto"><div class="radio-button"><label for="name" class="question"><input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><div id="radio"><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked><label class="form-check-label" for="flexRadioDefault1"><input type="text" name="name" id="name" placeholder="Item 1" class="d-block w-100 border-0 outline-none"></label></div><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"><label class="form-check-label" for="flexRadioDefault2"><input type="text" name="name" id="name" placeholder="Item 2" class="d-block w-100 border-0 outline-none"></label></div><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"><label class="form-check-label" for="flexRadioDefault1"><input type="text" name="name" id="name" placeholder="Item 3" class="d-block w-100 border-0 outline-none"></label></div><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"><label class="form-check-label" for="flexRadioDefault2"><input type="text" name="name" id="name" placeholder="Item 4" class="d-block w-100 border-0 outline-none"></label></div></div><a class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block" onclick="addRadio()">Add More</a>                  <div class="d-flex align-items-center">
+<div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>`;
             break;
           case "ratingScale":
-            item.innerHTML = '<div class="row mt-4"><div class="col-8 mx-auto"><div class="rating-scale"><label for="name" class="question"><input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><div class="rating" id="rating"><p><input type="text" name="name" id="name" placeholder="1" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p><p><input type="text" name="name" id="name" placeholder="2" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p><p><input type="text" name="name" id="name" placeholder="3" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p><p><input type="text" name="name" id="name" placeholder="4" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p><p><input type="text" name="name" id="name" placeholder="5" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p></div><a class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block" onclick="addRating()">Add More</a></div></div></div>';
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="rating-scale"><label for="name" class="question"><input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><div class="rating" id="rating"><p><input type="text" name="name" id="name" placeholder="1" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p><p><input type="text" name="name" id="name" placeholder="2" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p><p><input type="text" name="name" id="name" placeholder="3" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p><p><input type="text" name="name" id="name" placeholder="4" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p><p><input type="text" name="name" id="name" placeholder="5" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p></div><a class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block" onclick="addRating()">Add More</a><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
             break;
           case "checkboxes":
-            item.innerHTML = '<div class="row mt-4"><div class="col-8 mx-auto"><div class="checkboxes"><label for="name" class="question"><input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><div id="checkbox"><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked><label class="form-check-label" for="flexCheckDefault"><input type="text" name="name" id="name" placeholder="Item 1" class="d-block w-100 border-0 outline-none rounded py-2"></label></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"><label class="form-check-label" for="flexCheckChecked"><input type="text" name="name" id="name" placeholder="Item 2" class="d-block w-100 border-0 outline-none rounded py-2"></label></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault"><input type="text" name="name" id="name" placeholder="Item 3" class="d-block w-100 border-0 outline-none rounded py-2"></label></div></div><a class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block" onclick="addCheckbox()">Add More</a></div></div></div>';
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="checkboxes"><label for="name" class="question"><input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><div id="checkbox"><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked><label class="form-check-label" for="flexCheckDefault"><input type="text" name="name" id="name" placeholder="Item 1" class="d-block w-100 border-0 outline-none rounded py-2"></label></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"><label class="form-check-label" for="flexCheckChecked"><input type="text" name="name" id="name" placeholder="Item 2" class="d-block w-100 border-0 outline-none rounded py-2"></label></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault"><input type="text" name="name" id="name" placeholder="Item 3" class="d-block w-100 border-0 outline-none rounded py-2"></label></div></div><a class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block" onclick="addCheckbox()">Add More</a><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
             break;
           case "dropdown":
-            item.innerHTML = '<div class="row mt-4"><div class="col-8 mx-auto"><div class="dropdown-surveys"><label for="name" class="question"><input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><select name="Role" id="Role" class="select-dropdown"></select><div class="select-item" id="selectItem"><input type="text" name="name" id="name" placeholder="Item 1" class="d-block w-100 border-0 outline-none rounded py-2"><input type="text" name="name" id="name" placeholder="Item 2" class="d-block w-100 border-0 outline-none rounded py-2"><input type="text" name="name" id="name" placeholder="Item 3" class="d-block w-100 border-0 outline-none rounded py-2"><input type="text" name="name" id="name" placeholder="Item 4" class="d-block w-100 border-0 outline-none rounded py-2"></div><a class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block" onclick="addSelectItem()">Add More</a></div></div></div>';
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="dropdown-surveys"><label for="name" class="question"><input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><select name="Role" id="Role" class="select-dropdown"></select><div class="select-item" id="selectItem"><input type="text" name="name" id="name" placeholder="Item 1" class="d-block w-100 border-0 outline-none rounded py-2"><input type="text" name="name" id="name" placeholder="Item 2" class="d-block w-100 border-0 outline-none rounded py-2"><input type="text" name="name" id="name" placeholder="Item 3" class="d-block w-100 border-0 outline-none rounded py-2"><input type="text" name="name" id="name" placeholder="Item 4" class="d-block w-100 border-0 outline-none rounded py-2"></div><a class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block" onclick="addSelectItem()">Add More</a><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
             break;
           case "boolean":
-            item.innerHTML = '<div class="row mt-4"><div class="col-8 mx-auto"><div class="boolean"><label for="name" class="question"><input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><ul class="head-btn"><li class="p-0 slider-btn d-flex"><a href="#" type="button" class="btn ouline-white tab-click"><input type="text" name="name" id="name" placeholder="Yes" class="d-block w-50px border-0 outline-none rounded py-1"></a><a href="#" type="button" class="btn ouline-white tab-click border-none"><input type="text" name="name" id="name" placeholder="No" class="d-block w-50px border-0 outline-none rounded py-1"></a></li></ul></div></div></div>';
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="boolean"><label for="name" class="question"><input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><ul class="head-btn"><li class="p-0 slider-btn d-flex"><a href="#" type="button" class="btn ouline-white tab-click"><input type="text" name="name" id="name" placeholder="Yes" class="d-block w-50px border-0 outline-none rounded py-1"></a><a href="#" type="button" class="btn ouline-white tab-click border-none"><input type="text" name="name" id="name" placeholder="No" class="d-block w-50px border-0 outline-none rounded py-1"></a></li></ul><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
             break;
           case "singleLineInput":
-            item.innerHTML = '<div class="row mt-4"><div class="col-8 mx-auto"><div class="single-line-input"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2 line-input"></div></div></div>';
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="single-line-input"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2 line-input"><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
             break;
           case "longText":
-            item.innerHTML = '<div class="row mt-4"><div class="col-8 mx-auto"><div class="long-text"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><textarea name="message" id="message" cols="20" rows="5" class="d-block w-100 border-0 outline-none rounded py-2 long-textarea"></textarea></div></div></div>';
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="long-text"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><textarea name="message" id="message" cols="20" rows="5" class="d-block w-100 border-0 outline-none rounded py-2 long-textarea"></textarea><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
             break;
           case "multipleTextboxes":
-            item.innerHTML = '<div class="row mt-4"><div class="col-8 mx-auto"><div class="single-line-input"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2 line-input"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2 line-input"></div></div></div>';
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="single-line-input"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2 line-input"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2 line-input"><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
             break;
           case "fileUpload":
-            item.innerHTML = '<div class="row mt-4"><div class="col-8 mx-auto"><div class="upload-file"><label for="name" class="question m-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><div class="upload-box"><div class="form-group"><label for="fileField" class="attachment"><div class="row btn-file"><div class="btn-file__preview"></div><div class="btn-file__actions"><div class="btn-file__actions__item col-xs-12 text-center"><div class="btn-file__actions__item--shadow"><img src="image.png" alt="Drop a File here or click the a box to load the file" class="upload-image"></div></div></div></div><input name="file" type="file" id="fileField"></label></div></div></div></div></div>';
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="upload-file"><label for="name" class="question m-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><div class="upload-box"><div class="form-group"><label for="fileField" class="attachment"><div class="row btn-file"><div class="btn-file__preview"></div><div class="btn-file__actions"><div class="btn-file__actions__item col-xs-12 text-center"><div class="btn-file__actions__item--shadow"><img src="image.png" alt="Drop a File here or click the a box to load the file" class="upload-image"></div></div></div></div><input name="file" type="file" id="fileField"></label></div></div><div class="d-flex align-items-center mt-3"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
             break;
           case "imagePicker":
-            item.innerHTML = '<div class="row mt-4"><div class="col-8 mx-auto"><div class="image-picker"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><div id="imageContainer"></div><input type="file" id="imagePicker" style="display: none;" multiple><button onclick="openImagePicker()">Add Image</button></div></div></div>';
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="image-picker"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><div id="imageContainer"></div><input type="file" id="imagePicker" style="display: none;" multiple><button onclick="openImagePicker()">Add Image</button><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
+            break;
+          case "signature":
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="signature"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><section class="signature-component"><canvas id="signature-pad" width="400" height="200"></canvas><div><button id="save" class="d-none"></button><button id="clear"><i class="icon icon-delete"></i></button></div></section><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
+            break;
+          case "expression":
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="expression"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
+            break;
+          case "HTML":
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="expression"><textarea name="html" id="html" cols="30" rows="10" class="border border-2 w-100 p-3 rounded" placeholder="HTML content will be here."></textarea><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
+            break;
+          case "singleSelectMatrix":
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="single-select"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><table class="table"><thead><tr><th scope="col" class="border-0"></th><th scope="col" class="border-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Column 1"></th><th scope="col" class="border-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Column 2"></th><th scope="col" class="border-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Column 3"></th></tr></thead><tbody><tr><th scope="row" class="border-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Row 1"></th><td class="border-0"><div class="form-check"><input class="form-check-input mx-auto" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked=""></div></td><td class="border-0"><div class="form-check"><input class="form-check-input mx-auto" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked=""></div></td><td class="border-0"><div class="form-check"><input class="form-check-input mx-auto" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked=""></div></td></tr><tr><th class="border-0" scope="row"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Row 2"></th><td class="border-0"><div class="form-check"><input class="form-check-input mx-auto" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked=""></div></td><td class="border-0"><div class="form-check"><input class="form-check-input mx-auto" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked=""></div></td><td class="border-0"><div class="form-check"><input class="form-check-input mx-auto" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked=""></div></td></tr></tbody></table><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
+            break;
+          case "dynamicMatrix":
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="dynamic-matrix"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><table class="table"><thead><tr><th scope="col" class="border-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Column 1"></th><th scope="col" class="border-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Column 2"></th><th scope="col" class="border-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Column 3"></th></tr></thead><tbody id="addTd"><tr class="addMoreTd"><td class="border-0"><select name="Role" id="Role" class="select-dropdown"></select><div class="hover-icon" data-bs-toggle="modal" data-bs-target="#addMoreItemModal"><i class="icon icon-edit"></i></div></td><td class="border-0"><select name="Role" id="Role" class="select-dropdown"></select><div class="hover-icon" data-bs-toggle="modal" data-bs-target="#addMoreItemModal"><i class="icon icon-edit"></i></div></td><td class="border-0"><select name="Role" id="Role" class="select-dropdown"></select><div class="hover-icon" data-bs-toggle="modal" data-bs-target="#addMoreItemModal"><i class="icon icon-edit"></i></div></td></tr><tr class="addMoreTd"><td class="border-0"><select name="Role" id="Role" class="select-dropdown"></select><div class="hover-icon" data-bs-toggle="modal" data-bs-target="#addMoreItemModal"><i class="icon icon-edit"></i></div></td><td class="border-0"><select name="Role" id="Role" class="select-dropdown"></select><div class="hover-icon" data-bs-toggle="modal" data-bs-target="#addMoreItemModal"><i class="icon icon-edit"></i></div></td><td class="border-0"><select name="Role" id="Role" class="select-dropdown"></select><div class="hover-icon" data-bs-toggle="modal" data-bs-target="#addMoreItemModal"><i class="icon icon-edit"></i></div></td></tr></tbody></table><a class="cursor-pointer text-decoration-none text-fill fw-600">Add More</a><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
+            break;
+          case "multiSelectMatrix":
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="dynamic-matrix"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><table class="table"><thead><tr><th scope="row" class="border-0"></th><th scope="col" class="border-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Column 1"></th><th scope="col" class="border-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Column 2"></th><th scope="col" class="border-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Column 3"></th></tr></thead><tbody id="addTd"><tr class="addMoreTd"><th scope="col" class="border-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Row 1"></th><td class="border-0"><select name="Role" id="Role" class="select-dropdown"></select><div class="hover-icon" data-bs-toggle="modal" data-bs-target="#addMoreItemModal"><i class="icon icon-edit"></i></div></td><td class="border-0"><select name="Role" id="Role" class="select-dropdown"></select><div class="hover-icon" data-bs-toggle="modal" data-bs-target="#addMoreItemModal"><i class="icon icon-edit"></i></div></td><td class="border-0"><select name="Role" id="Role" class="select-dropdown"></select><div class="hover-icon" data-bs-toggle="modal" data-bs-target="#addMoreItemModal"><i class="icon icon-edit"></i></div></td></tr><tr class="addMoreTd"><th scope="col" class="border-0"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Row 1"></th><td class="border-0"><select name="Role" id="Role" class="select-dropdown"></select><div class="hover-icon" data-bs-toggle="modal" data-bs-target="#addMoreItemModal"><i class="icon icon-edit"></i></div></td><td class="border-0"><select name="Role" id="Role" class="select-dropdown"></select><div class="hover-icon" data-bs-toggle="modal" data-bs-target="#addMoreItemModal"><i class="icon icon-edit"></i></div></td><td class="border-0"><select name="Role" id="Role" class="select-dropdown"></select><div class="hover-icon" data-bs-toggle="modal" data-bs-target="#addMoreItemModal"><i class="icon icon-edit"></i></div></td></tr></tbody></table><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
+            break;
+          case "Image":
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="image"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><div class="upload-file"><div class="file-upload"><figure><img id="chosen-image"><figcaption id="file-name"></figcaption></figure><input type="file" id="upload-button" accept="image/*"><label for="upload-button"><img src="./assets/images/greePlus.png" alt=""></label></div></div></div></div></div>';
+            break;
+          case "Ranking":
+            item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="raking"><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><ul id="rank-list"><li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li><li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li><li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li><li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li><li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li></ul><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
             break;
           default:
             break;
@@ -461,3 +486,216 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   })();
 });
+
+
+$('.tab-click-1').click(function () {
+  $('.tab-click-1').removeClass("active");
+  $(this).addClass("active");
+});
+
+$('.tab-click-2').click(function () {
+  $('.tab-click-2').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-3').click(function () {
+  $('.tab-click-3').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-4').click(function () {
+  $('.tab-click-4').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-5').click(function () {
+  $('.tab-click-5').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-6').click(function () {
+  $('.tab-click-6').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-7').click(function () {
+  $('.tab-click-7').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-8').click(function () {
+  $('.tab-click-8').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-9').click(function () {
+  $('.tab-click-9').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-10').click(function () {
+  $('.tab-click-10').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-11').click(function () {
+  $('.tab-click-11').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-12').click(function () {
+  $('.tab-click-12').removeClass("active");
+  $(this).addClass("active");
+});
+
+
+
+$(".survey-general-button").click(function () {
+  $(".general-content").toggleClass("d-block")
+});
+$(".survey-logo-title-button").click(function () {
+  $(".logo-title-content").toggleClass("d-block")
+});
+$(".survey-navigation-button").click(function () {
+  $(".navigation-content").toggleClass("d-block")
+});
+$(".survey-question-button").click(function () {
+  $(".question-content").toggleClass("d-block")
+});
+$(".survey-data-button").click(function () {
+  $(".data-content").toggleClass("d-block")
+});
+$(".survey-validation-button").click(function () {
+  $(".validation-content").toggleClass("d-block")
+});
+$(".survey-complete-button").click(function () {
+  $(".complete-content").toggleClass("d-block")
+});
+$(".survey-timer-button").click(function () {
+  $(".timer-content").toggleClass("d-block")
+});
+
+
+
+$(".button-select").click(function () {
+  $(".select-dropdown").toggleClass("active")
+});
+
+$(".button-action").click(function () {
+  $(".action-dropdown").toggleClass("active")
+});
+
+function addNewRule() {
+  $('#addNewRule').append(`<div class="new-rule">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h4 class="fw-600">New rule</h4>
+                    <a class="cursor-pointer delete-rule"><i class="icon icon-delete"></i></a>
+                  </div>
+                  <div class="rule-select">
+                    <h6>If</h6>
+                    <div class="select-button">
+                      <button type="button" class="button-select">Select...</button>
+                      <div class="select-dropdown">
+                        <p>No data to display</p>
+                      </div>
+                    </div>
+                    <div class="equals-button">
+                      <button>Equals</button>
+                    </div>
+                  </div>
+                  <div class="select-action">
+                    <h6>then</h6>
+                    <div class="action-button">
+                      <button type="button" class="button-action">Select action...</button>
+                      <div class="action-dropdown">
+                        <p>Complete Survey</p>
+                        <p>Set answer</p>
+                        <p>Copy answer</p>
+                        <p>Skip to question</p>
+                        <p>Run expression</p>
+                        <p>Set "Survey Complete" page markup</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="btn done-button">Done</button>
+                </div>`);
+}
+
+$(document).on('click', '.delete-rule', function () {
+  $(this).parents('.new-rule').remove();
+});
+
+
+$('.picker-image').click(function () {
+  $('.picker-image').removeClass("picker-active");
+  $(this).addClass("picker-active");
+});
+
+
+
+
+document.getElementById('fileField').addEventListener('change', handleFileUpload);
+
+function handleFileUpload(event) {
+  const file = event.target.files[0];
+  const fileReader = new FileReader();
+
+  fileReader.onload = function (e) {
+    const previewElement = document.querySelector('.btn-file__preview');
+    const imageElement = document.createElement('img');
+    imageElement.src = e.target.result;
+    imageElement.classList.add('uploaded-image');
+    previewElement.innerHTML = '';
+    previewElement.appendChild(imageElement);
+    // Remove the btn-file__actions div
+    const actionsElement = document.querySelector('.btn-file__actions');
+    actionsElement.parentNode.removeChild(actionsElement);
+  };
+
+  fileReader.readAsDataURL(file);
+}
+
+
+
+
+
+
+
+
+
+$('.tab-click').click(function (e) {
+  e.preventDefault();
+  $(this).addClass('ouline-white');
+  $('.slider-btn > a').removeClass('active');
+  $(this).addClass('active');
+});
+
+
+var radio = 4;
+
+function addRadio() {
+
+  radio++;
+  $('#radio').append(`<div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"><label class="form-check-label" for="flexRadioDefault2"><input type="text" name="name" id="name" placeholder="Item ${radio}" class="d-block w-100 border-0 outline-none"></label></div>`);
+}
+
+var rating = 5;
+
+function addRating() {
+
+  rating++;
+  $('#rating').append(`<p><input type="text" name="name" id="name" placeholder="${rating}" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p>`);
+}
+
+var checkbox = 3;
+
+function addCheckbox() {
+
+  checkbox++;
+  $('#checkbox').append(`<div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault"><input type="text" name="name" id="name" placeholder="Item ${checkbox}" class="d-block w-100 border-0 outline-none rounded py-2"></label></div>`);
+}
+
+var selectItem = 4;
+
+function addSelectItem() {
+
+  selectItem++;
+  $('#selectItem').append(`<input type="text" name="name" id="name" placeholder="Item ${selectItem}" class="d-block w-100 border-0 outline-none rounded py-2">`);
+}
+
+
+$('.rating-text').click(function () {
+  $('.rating-text').removeClass("rating-active");
+  $(this).addClass("rating-active");
+});
+

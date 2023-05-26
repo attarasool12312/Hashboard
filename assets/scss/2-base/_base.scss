@@ -140,12 +140,31 @@ h6 {
   min-height: auto !important;
 }
 
-.container-xl {
-  max-width: 1164px !important;
+.input-white{
+  &::placeholder{
+    color: #fff;
+  }
 }
 
-.container-xxl {
-  max-width: 1200px !important;
+.input-dark{
+  &::placeholder{
+    color: #000;
+  }
+}
+
+.input-light-gray{
+  &::placeholder{
+    color: #898989;
+  }
+}
+
+.container-xl {
+  max-width: 1270px !important;
+}
+
+.container-100 {
+  max-width: 100% !important;
+  padding: 0 15px;
 }
 
 .mb-32 {
@@ -173,7 +192,7 @@ h6 {
 .container-md,
 .container-sm,
 .container-xl {
-  max-width: 100% !important;
+  max-width: 1057px !important;
 }
 
 .border-top-lef-right-radius-12 {
@@ -365,6 +384,10 @@ h6 {
 .rounded-start-2 {
   border-bottom-left-radius: 30px !important;
   border-top-left-radius: 30px !important;
+}
+
+.bg-light-blue{
+  background-color: #F5F6FC;
 }
 
 .ms-30 {

@@ -53,6 +53,17 @@
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
 
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
+
     .question {
         font-weight: 600;
         margin-bottom: 15px;
@@ -89,6 +100,17 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
+
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
 
     .question {
         font-weight: 600;
@@ -137,6 +159,17 @@
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
 
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
+
     .question {
         font-weight: 600;
         margin-bottom: 15px;
@@ -176,6 +209,17 @@
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
 
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
+
     .question {
         font-weight: 600;
         margin-bottom: 15px;
@@ -209,6 +253,17 @@
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
 
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
+
     .question {
         font-weight: 600;
         margin-bottom: 15px;
@@ -241,6 +296,17 @@
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
 
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
+
     .question {
         font-weight: 600;
         margin-bottom: 15px;
@@ -264,6 +330,17 @@
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
 
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
+
     .question {
         font-weight: 600;
         margin-bottom: 15px;
@@ -282,10 +359,20 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
-    // height: 350px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
 
     .question {
         font-weight: 600;
@@ -317,6 +404,17 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
+
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
 
     .question {
         font-weight: 600;
@@ -361,6 +459,17 @@
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
 
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
+
     .question {
         font-weight: 600;
         margin-bottom: 15px;
@@ -402,6 +511,17 @@
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
 
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
+
     .question {
         font-weight: 600;
         margin-bottom: 15px;
@@ -414,6 +534,17 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
+
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
 
     .question {
         font-weight: 600;
@@ -453,6 +584,17 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
+
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
 
     .question {
         font-weight: 600;
@@ -518,6 +660,17 @@
     align-items: center;
     justify-content: center;
     padding: 30px;
+
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
 
     .btn {
         font-size: 20px;
@@ -678,7 +831,7 @@
 
     .survey-general {
         p {
-            font-size: 20px;
+            font-size: 16px;
             padding: 10px 20px;
             border-bottom: 1px solid #909090;
             cursor: pointer;
@@ -711,7 +864,7 @@
                         border: 0;
                         border-radius: 0 !important;
                         width: 50%;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: 600;
 
                         &.active {
@@ -733,7 +886,7 @@
                         border: 0;
                         border-radius: 0 !important;
                         width: 30%;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: 600;
 
                         &.active {
@@ -751,7 +904,7 @@
 
     .survey-logo-title {
         p {
-            font-size: 20px;
+            font-size: 16px;
             padding: 10px 20px;
             border-bottom: 1px solid #909090;
             cursor: pointer;
@@ -780,7 +933,7 @@
                         border: 0;
                         border-radius: 0 !important;
                         width: 25%;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: 600;
                         padding: 7px;
 
@@ -799,7 +952,7 @@
 
     .survey-navigation {
         p {
-            font-size: 20px;
+            font-size: 16px;
             padding: 10px 20px;
             border-bottom: 1px solid #909090;
             cursor: pointer;
@@ -832,7 +985,7 @@
                         border: 0;
                         border-radius: 0 !important;
                         width: 25%;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: 600;
                         padding: 7px;
 
@@ -855,7 +1008,7 @@
                         border: 0;
                         border-radius: 0 !important;
                         width: 25%;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: 600;
                         padding: 7px;
 
@@ -878,7 +1031,7 @@
                         border: 0;
                         border-radius: 0 !important;
                         width: 50%;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: 600;
 
                         &.active {
@@ -896,7 +1049,7 @@
 
     .survey-question {
         p {
-            font-size: 20px;
+            font-size: 16px;
             padding: 10px 20px;
             border-bottom: 1px solid #909090;
             cursor: pointer;
@@ -929,7 +1082,7 @@
                         border: 0;
                         border-radius: 0 !important;
                         width: 30%;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: 600;
                         padding: 7px;
                         text-align: center;
@@ -953,7 +1106,7 @@
                         border: 0;
                         border-radius: 0 !important;
                         width: 50%;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: 600;
                         padding: 7px;
 
@@ -976,7 +1129,7 @@
                         border: 0;
                         border-radius: 0 !important;
                         width: 50%;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: 600;
 
                         &.active {
@@ -994,7 +1147,7 @@
 
     .survey-data {
         p {
-            font-size: 20px;
+            font-size: 16px;
             padding: 10px 20px;
             border-bottom: 1px solid #909090;
             cursor: pointer;
@@ -1027,7 +1180,7 @@
                         border: 0;
                         border-radius: 0 !important;
                         width: 50%;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: 600;
                         padding: 7px;
                         text-align: center;
@@ -1047,7 +1200,7 @@
 
     .survey-validation {
         p {
-            font-size: 20px;
+            font-size: 16px;
             padding: 10px 20px;
             border-bottom: 1px solid #909090;
             cursor: pointer;
@@ -1071,7 +1224,7 @@
 
     .survey-complete {
         p {
-            font-size: 20px;
+            font-size: 16px;
             padding: 10px 20px;
             border-bottom: 1px solid #909090;
             cursor: pointer;
@@ -1091,7 +1244,7 @@
 
     .survey-timer {
         p {
-            font-size: 20px;
+            font-size: 16px;
             padding: 10px 20px;
             border-bottom: 1px solid #909090;
             cursor: pointer;
@@ -1120,7 +1273,7 @@
                         border: 0;
                         border-radius: 0 !important;
                         width: 50%;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: 600;
                         padding: 7px;
                         text-align: center;
@@ -1144,7 +1297,7 @@
                         border: 0;
                         border-radius: 0 !important;
                         width: 50%;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: 600;
                         padding: 7px;
                         text-align: center;
@@ -1199,6 +1352,17 @@
     flex-flow: column;
     justify-content: space-between;
 
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
+
     .question {
         font-weight: 600;
         margin-bottom: 15px;
@@ -1225,6 +1389,17 @@
     justify-content: space-between;
     height: 500px;
 
+    &:hover {
+        .icon-drag-drop-icon {
+            display: block !important;
+        }
+    }
+
+    .icon-drag-drop-icon {
+        display: none !important;
+        cursor: move;
+    }
+
     .question {
         font-weight: 600;
         margin-bottom: 15px;
@@ -1234,6 +1409,7 @@
     .upload-file {
         height: 100%;
         width: 100%;
+
         figure {
             img {
                 width: 300px !important;
@@ -1241,8 +1417,9 @@
             }
         }
     }
-    .file-upload{
-        label{
+
+    .file-upload {
+        label {
             position: static;
             margin-left: 20px;
         }

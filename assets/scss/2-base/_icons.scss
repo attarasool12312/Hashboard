@@ -260,6 +260,9 @@ $icons: (
   "divider-icon" "svg" 20px 20px,
   "undo-survey-icon" "svg" 20px 20px,
   "redo-survey-icon" "svg" 20px 20px,
+  "photo-library" "svg" 24px 24px,
+  "escalation" "svg" 24px 24px,
+  "drag-drop-icon" "svg" 24px 24px,
   );
   
 @each $name, $fileType, $width, $height in $icons {

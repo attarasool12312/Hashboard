@@ -158,6 +158,12 @@ h6 {
   }
 }
 
+.input-fill{
+  &::placeholder{
+    color: #775DA6;
+  }
+}
+
 .container-xl {
   max-width: 1270px !important;
 }

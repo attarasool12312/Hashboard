@@ -25,12 +25,12 @@
   <link href="./assets/css/main.css" rel="stylesheet" />
   <link href="./assets/css/responsive.css" rel="stylesheet" />
   <style>
-          .rank-item {
-            padding: 10px;
-            margin-bottom: 5px;
-            background-color: #f0f0f0;
-            cursor: move;
-        }
+    .rank-item {
+      padding: 10px;
+      margin-bottom: 5px;
+      background-color: #f0f0f0;
+      cursor: move;
+    }
   </style>
 </head>
 
@@ -167,14 +167,56 @@
           </div>
         </div>
         <div class="container">
-          <h2>Ranking Items</h2>
-          <ul id="rank-list">
-              <li class="rank-item" draggable="true" ondragstart="dragStart(event)">Item 1</li>
-              <li class="rank-item" draggable="true" ondragstart="dragStart(event)">Item 2</li>
-              <li class="rank-item" draggable="true" ondragstart="dragStart(event)">Item 3</li>
-              <li class="rank-item" draggable="true" ondragstart="dragStart(event)">Item 4</li>
-              <li class="rank-item" draggable="true" ondragstart="dragStart(event)">Item 5</li>
-          </ul>
+          <div class="row mt-3">
+            <div class="col-12 mx-auto">
+              <input type="text" name="name" id="name" placeholder="Page 1" class="d-block w-100 border-0 outline-none bg-transparent fs-4 fw-600 rounded py-2"></label>
+              <input type="text" name="name" id="name" placeholder="Description" class="d-block w-100 border-0 outline-none bg-transparent rounded mb-3 py-2"></label>
+              <div class="radio-button">
+                <i class="icon icon-drag-drop-icon mx-auto"></i>
+                <label for="name" class="question">
+                  <input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label>
+                <div id="radio">
+                  <div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault"
+                      id="flexRadioDefault1" checked><label class="form-check-label" for="flexRadioDefault1"><input
+                        type="text" name="name" id="name" placeholder="Item 1"
+                        class="d-block w-100 border-0 outline-none"></label></div>
+                  <div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault"
+                      id="flexRadioDefault2"><label class="form-check-label" for="flexRadioDefault2"><input type="text"
+                        name="name" id="name" placeholder="Item 2" class="d-block w-100 border-0 outline-none"></label>
+                  </div>
+                  <div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault"
+                      id="flexRadioDefault1"><label class="form-check-label" for="flexRadioDefault1"><input type="text"
+                        name="name" id="name" placeholder="Item 3" class="d-block w-100 border-0 outline-none"></label>
+                  </div>
+                  <div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault"
+                      id="flexRadioDefault2"><label class="form-check-label" for="flexRadioDefault2"><input type="text"
+                        name="name" id="name" placeholder="Item 4" class="d-block w-100 border-0 outline-none"></label>
+                  </div>
+                </div><a class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block"
+                  onclick="addRadio()">Add More</a>
+                <div class="d-flex align-items-center">
+                  <div class="dropdown select-dropdown"><button
+                      class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button"
+                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown select-dropdown ms-4"><button
+                      class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button"
+                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
@@ -189,7 +231,6 @@
   <script src="./assets/js/surveys.js"></script>
 
   <script>
-
   </script>
 </body>
 

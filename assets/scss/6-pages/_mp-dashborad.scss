@@ -343,7 +343,7 @@
         }
 
         .main-stage-input {
-            width: 100%;
+            width: 240px;
             position: relative;
 
             &:hover {
@@ -353,7 +353,7 @@
             }
 
             input {
-                width: 100% !important;
+                width: 240px !important;
                 border-radius: 12px;
                 background: #775da64a;
                 padding: 10px 5px;
@@ -383,6 +383,10 @@
 
         .sm-box {
             background: #775da64a !important;
+            // display: none;
+            &.active{
+                display: block;
+            }
         }
 
         .subStage-input {
@@ -396,7 +400,7 @@
             }
 
             input {
-                width: 100% !important;
+                width: 240px !important;
                 border-radius: 12px;
                 background: #f9837c69;
                 padding: 10px 5px;
@@ -426,12 +430,14 @@
             border-bottom: 1px solid #70B6C1;
 
             input {
-                width: 100% !important;
+                width: 240px !important;
                 border-radius: 12px;
                 background: #775DA6;
                 padding: 10px 5px;
                 border: 0;
                 outline: none;
+                color: #fff;
+                margin-bottom: 15px;
 
                 &::placeholder {
                     color: #fff;
@@ -447,6 +453,7 @@
                 background-color: #FF5D5D;
                 border-radius: 5px;
                 position: relative;
+                width: 240px !important;
 
                 &:hover {
                     .input-hover-icon {
@@ -506,6 +513,7 @@
                 text-align: center;
                 padding-bottom: 5px;
                 position: relative;
+                width: 240px !important;
 
                 &:hover {
                     .input-hover-icon {
@@ -564,6 +572,7 @@
                 text-align: center;
                 padding-bottom: 5px;
                 position: relative;
+                width: 240px !important;
 
                 &:hover {
                     .input-hover-icon {

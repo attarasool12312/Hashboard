@@ -1839,6 +1839,27 @@ i[class*=h-icon-] {
   height: 20px;
 }
 
+.icon-photo-library {
+  display: inline-block;
+  background-image: url("../images/icons/photo-library.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-escalation {
+  display: inline-block;
+  background-image: url("../images/icons/escalation.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-drag-drop-icon {
+  display: inline-block;
+  background-image: url("../images/icons/drag-drop-icon.svg");
+  width: 24px;
+  height: 24px;
+}
+
 /*--------------*\
     Base
 \*--------------*/
@@ -1980,6 +2001,10 @@ h6.text-sm {
 
 .input-light-gray::placeholder {
   color: #898989;
+}
+
+.input-fill::placeholder {
+  color: #775DA6;
 }
 
 .container-xl {
@@ -9226,6 +9251,8 @@ button.btn.view {
 .product-section .payment-card {
   width: 100%;
   height: auto;
+  box-shadow: 1px 2px 10px #cdcdcd;
+  border-radius: 10px;
 }
 .product-section .payment-card .header-card {
   background-image: url("../images/header-card-bg-image.png");
@@ -9242,6 +9269,8 @@ button.btn.view {
 }
 .product-section .delivery-card {
   text-align: left;
+  box-shadow: 1px 2px 10px #cdcdcd;
+  border-radius: 10px;
 }
 .product-section .delivery-card .card-payment img {
   width: 46px;
@@ -9257,7 +9286,8 @@ button.btn.view {
 .product-section .product-card {
   width: 100%;
   height: 100%;
-  margin-bottom: 30px;
+  box-shadow: 1px 2px 10px #cdcdcd;
+  border-radius: 10px;
 }
 .product-section .product-card .header-card {
   background-image: url("../images/header-card-bg-image.png");
@@ -9607,14 +9637,14 @@ button.btn.view {
   border-radius: 50%;
 }
 .journey-map-white .journey-map .main-stage-input {
-  width: 100%;
+  width: 240px;
   position: relative;
 }
 .journey-map-white .journey-map .main-stage-input:hover .input-hover-icon {
   display: block;
 }
 .journey-map-white .journey-map .main-stage-input input {
-  width: 100% !important;
+  width: 240px !important;
   border-radius: 12px;
   background: rgba(119, 93, 166, 0.2901960784);
   padding: 10px 5px;
@@ -9640,6 +9670,9 @@ button.btn.view {
 .journey-map-white .journey-map .sm-box {
   background: rgba(119, 93, 166, 0.2901960784) !important;
 }
+.journey-map-white .journey-map .sm-box.active {
+  display: block;
+}
 .journey-map-white .journey-map .subStage-input {
   position: relative;
   padding-bottom: 10px;
@@ -9648,7 +9681,7 @@ button.btn.view {
   display: block;
 }
 .journey-map-white .journey-map .subStage-input input {
-  width: 100% !important;
+  width: 240px !important;
   border-radius: 12px;
   background: rgba(249, 131, 124, 0.4117647059);
   padding: 10px 5px;
@@ -9673,12 +9706,14 @@ button.btn.view {
   border-bottom: 1px solid #70B6C1;
 }
 .journey-map-white .journey-map .customer-goals input {
-  width: 100% !important;
+  width: 240px !important;
   border-radius: 12px;
   background: #775DA6;
   padding: 10px 5px;
   border: 0;
   outline: none;
+  color: #fff;
+  margin-bottom: 15px;
 }
 .journey-map-white .journey-map .customer-goals input::placeholder {
   color: #fff;
@@ -9691,6 +9726,7 @@ button.btn.view {
   background-color: #FF5D5D;
   border-radius: 5px;
   position: relative;
+  width: 240px !important;
 }
 .journey-map-white .journey-map .pain-pints .pain-pints-input:hover .input-hover-icon {
   display: block;
@@ -9738,6 +9774,7 @@ button.btn.view {
   text-align: center;
   padding-bottom: 5px;
   position: relative;
+  width: 240px !important;
 }
 .journey-map-white .journey-map .touchpoint-activity .touchpoint-activity-input:hover .input-hover-icon {
   display: block;
@@ -9786,6 +9823,7 @@ button.btn.view {
   text-align: center;
   padding-bottom: 5px;
   position: relative;
+  width: 240px !important;
 }
 .journey-map-white .journey-map .department-channels .department-channels-input:hover .input-hover-icon {
   display: block;
@@ -10539,6 +10577,13 @@ button.btn.view {
   padding: 20px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
+.radio-button:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.radio-button .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
+}
 .radio-button .question {
   font-weight: 600;
   margin-bottom: 15px;
@@ -10570,6 +10615,13 @@ button.btn.view {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.rating-scale:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.rating-scale .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
 }
 .rating-scale .question {
   font-weight: 600;
@@ -10612,6 +10664,13 @@ button.btn.view {
   padding: 20px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
+.checkboxes:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.checkboxes .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
+}
 .checkboxes .question {
   font-weight: 600;
   margin-bottom: 15px;
@@ -10645,6 +10704,13 @@ button.btn.view {
   padding: 20px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
+.dropdown-surveys:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.dropdown-surveys .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
+}
 .dropdown-surveys .question {
   font-weight: 600;
   margin-bottom: 15px;
@@ -10673,6 +10739,13 @@ button.btn.view {
   padding: 20px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
+.boolean:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.boolean .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
+}
 .boolean .question {
   font-weight: 600;
   margin-bottom: 15px;
@@ -10699,6 +10772,13 @@ button.btn.view {
   padding: 20px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
+.single-line-input:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.single-line-input .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
+}
 .single-line-input .question {
   font-weight: 600;
   margin-bottom: 15px;
@@ -10719,6 +10799,13 @@ button.btn.view {
   padding: 20px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
+.long-text:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.long-text .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
+}
 .long-text .question {
   font-weight: 600;
   margin-bottom: 15px;
@@ -10738,6 +10825,13 @@ button.btn.view {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+}
+.upload-file:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.upload-file .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
 }
 .upload-file .question {
   font-weight: 600;
@@ -10763,6 +10857,13 @@ button.btn.view {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.image-picker:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.image-picker .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
 }
 .image-picker .question {
   font-weight: 600;
@@ -10804,6 +10905,13 @@ button.btn.view {
   padding: 20px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
+.signature:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.signature .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
+}
 .signature .question {
   font-weight: 600;
   margin-bottom: 15px;
@@ -10839,6 +10947,13 @@ button.btn.view {
   padding: 20px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
+.expression:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.expression .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
+}
 .expression .question {
   font-weight: 600;
   margin-bottom: 15px;
@@ -10850,6 +10965,13 @@ button.btn.view {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.single-select:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.single-select .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
 }
 .single-select .question {
   font-weight: 600;
@@ -10883,6 +11005,13 @@ button.btn.view {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.dynamic-matrix:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.dynamic-matrix .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
 }
 .dynamic-matrix .question {
   font-weight: 600;
@@ -10937,6 +11066,13 @@ button.btn.view {
   align-items: center;
   justify-content: center;
   padding: 30px;
+}
+.add-role:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.add-role .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
 }
 .add-role .btn {
   font-size: 20px;
@@ -11068,7 +11204,7 @@ button.btn.view {
   background-color: #fff;
 }
 .surveys-right-bar .survey-general p {
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px 20px;
   border-bottom: 1px solid #909090;
   cursor: pointer;
@@ -11098,7 +11234,7 @@ button.btn.view {
   border: 0;
   border-radius: 0 !important;
   width: 50%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
 }
 .surveys-right-bar .survey-general .general-content .head-btn .slider-btn-1 p.active {
@@ -11116,7 +11252,7 @@ button.btn.view {
   border: 0;
   border-radius: 0 !important;
   width: 30%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
 }
 .surveys-right-bar .survey-general .general-content .head-btn .slider-btn-2 p.active {
@@ -11126,7 +11262,7 @@ button.btn.view {
   border-left: 2px solid #19b394 !important;
 }
 .surveys-right-bar .survey-logo-title p {
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px 20px;
   border-bottom: 1px solid #909090;
   cursor: pointer;
@@ -11153,7 +11289,7 @@ button.btn.view {
   border: 0;
   border-radius: 0 !important;
   width: 25%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   padding: 7px;
 }
@@ -11164,7 +11300,7 @@ button.btn.view {
   border-left: 2px solid #19b394 !important;
 }
 .surveys-right-bar .survey-navigation p {
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px 20px;
   border-bottom: 1px solid #909090;
   cursor: pointer;
@@ -11194,7 +11330,7 @@ button.btn.view {
   border: 0;
   border-radius: 0 !important;
   width: 25%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   padding: 7px;
 }
@@ -11213,7 +11349,7 @@ button.btn.view {
   border: 0;
   border-radius: 0 !important;
   width: 25%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   padding: 7px;
 }
@@ -11232,7 +11368,7 @@ button.btn.view {
   border: 0;
   border-radius: 0 !important;
   width: 50%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
 }
 .surveys-right-bar .survey-navigation .navigation-content .head-btn .slider-btn-6 p.active {
@@ -11242,7 +11378,7 @@ button.btn.view {
   border-left: 2px solid #19b394 !important;
 }
 .surveys-right-bar .survey-question p {
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px 20px;
   border-bottom: 1px solid #909090;
   cursor: pointer;
@@ -11272,7 +11408,7 @@ button.btn.view {
   border: 0;
   border-radius: 0 !important;
   width: 30%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   padding: 7px;
   text-align: center;
@@ -11292,7 +11428,7 @@ button.btn.view {
   border: 0;
   border-radius: 0 !important;
   width: 50%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   padding: 7px;
 }
@@ -11311,7 +11447,7 @@ button.btn.view {
   border: 0;
   border-radius: 0 !important;
   width: 50%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
 }
 .surveys-right-bar .survey-question .question-content .head-btn .slider-btn-9 p.active {
@@ -11321,7 +11457,7 @@ button.btn.view {
   border-left: 2px solid #19b394 !important;
 }
 .surveys-right-bar .survey-data p {
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px 20px;
   border-bottom: 1px solid #909090;
   cursor: pointer;
@@ -11351,7 +11487,7 @@ button.btn.view {
   border: 0;
   border-radius: 0 !important;
   width: 50%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   padding: 7px;
   text-align: center;
@@ -11363,7 +11499,7 @@ button.btn.view {
   border-left: 2px solid #19b394 !important;
 }
 .surveys-right-bar .survey-validation p {
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px 20px;
   border-bottom: 1px solid #909090;
   cursor: pointer;
@@ -11381,7 +11517,7 @@ button.btn.view {
   color: #909090;
 }
 .surveys-right-bar .survey-complete p {
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px 20px;
   border-bottom: 1px solid #909090;
   cursor: pointer;
@@ -11396,7 +11532,7 @@ button.btn.view {
   color: #909090 !important;
 }
 .surveys-right-bar .survey-timer p {
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px 20px;
   border-bottom: 1px solid #909090;
   cursor: pointer;
@@ -11423,7 +11559,7 @@ button.btn.view {
   border: 0;
   border-radius: 0 !important;
   width: 50%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   padding: 7px;
   text-align: center;
@@ -11443,7 +11579,7 @@ button.btn.view {
   border: 0;
   border-radius: 0 !important;
   width: 50%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   padding: 7px;
   text-align: center;
@@ -11488,6 +11624,13 @@ button.btn.view {
   flex-flow: column;
   justify-content: space-between;
 }
+.raking:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.raking .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
+}
 .raking .question {
   font-weight: 600;
   margin-bottom: 15px;
@@ -11510,6 +11653,13 @@ button.btn.view {
   flex-flow: column;
   justify-content: space-between;
   height: 500px;
+}
+.image:hover .icon-drag-drop-icon {
+  display: block !important;
+}
+.image .icon-drag-drop-icon {
+  display: none !important;
+  cursor: move;
 }
 .image .question {
   font-weight: 600;
@@ -11535,6 +11685,7 @@ button.btn.view {
 }
 .touchpoints .stages {
   position: relative;
+  width: 220px !important;
 }
 .touchpoints .stages::after {
   content: "";
@@ -11565,7 +11716,6 @@ button.btn.view {
 }
 
 .feedback {
-  border-bottom: 2px solid #775DA6;
   padding-bottom: 20px;
 }
 .feedback h3 {
@@ -11709,17 +11859,17 @@ button.btn.view {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   background-color: #fff;
   padding: 10px;
 }
 .stages-main .stages h3 {
   background-color: #775DA6;
-  width: 17%;
+  width: 160px;
   text-align: center;
-  padding: 11px 0;
+  padding: 6px 0;
   color: #fff;
   position: relative;
+  margin-left: 26px;
 }
 .stages-main .stages h3::after {
   content: "";
@@ -11852,6 +12002,7 @@ button.btn.view {
   font-size: 12px;
   background-color: #FFD964;
   padding: 10px;
+  width: 175px;
 }
 .feedback-main .feedback .yellow-boxs .yellow-box ul {
   padding-left: 20px;
@@ -11881,6 +12032,7 @@ button.btn.view {
   font-size: 12px;
   background-color: #EC4989;
   padding: 10px;
+  width: 175px;
 }
 .feedback-main .feedback .pink-boxs .pink-box ul {
   padding-left: 20px;
@@ -11925,6 +12077,7 @@ button.btn.view {
 .opportunities-main .opportunities .transparent-boxs .transparent-box {
   font-size: 12px;
   padding: 10px;
+  width: 175px;
 }
 .opportunities-main .opportunities .transparent-boxs .transparent-box ul {
   padding-left: 20px;
@@ -12152,10 +12305,12 @@ button.btn.view {
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
+  width: fit-content;
 }
 .thoughts-box .thoughts {
   background-color: #fff;
   padding: 10px;
+  width: 180px;
 }
 .thoughts-box .thoughts + .thoughts {
   margin-left: 10px;
@@ -12382,14 +12537,15 @@ button.btn.view {
   margin-top: 30px;
 }
 .chart-box1 .step-box {
-  width: 24%;
+  width: 238px !important;
   background: #DFE3EC;
   height: 300px;
+  margin-left: 20px;
 }
 .chart-box1 .step-box p {
   color: #fff;
   background-color: #775DA6;
-  width: 100%;
+  width: 238px !important;
   text-align: center;
   padding: 10px 0;
 }
@@ -12514,6 +12670,61 @@ button.btn.view {
   width: 100px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+.media-div {
+  margin-top: 20px;
+}
+.media-div p {
+  font-size: 15px;
+  color: #757575;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.media-div .media-icons {
+  flex-flow: column;
+  transition-delay: 0.5s;
+  display: none;
+}
+.media-div .media-icons.active {
+  display: flex;
+}
+.media-div .media-icons a {
+  font-size: 15px;
+  padding: 9px 0px;
+  text-decoration: none;
+  color: #757575;
+}
+.media-div .media-icons a i {
+  margin-right: 5px;
+}
+
+.action-div {
+  margin-top: 20px;
+}
+.action-div p {
+  font-size: 15px;
+  color: #757575;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.action-div .action-icons {
+  flex-flow: column;
+  transition-delay: 0.5s;
+  display: none;
+}
+.action-div .action-icons.active {
+  display: flex;
+}
+.action-div .action-icons a {
+  font-size: 15px;
+  padding: 9px 0px;
+  text-decoration: none;
+  color: #757575;
+  cursor: pointer;
+}
+.action-div .action-icons a i {
+  margin-right: 5px;
 }
 
 .subOne {

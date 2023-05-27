@@ -162,6 +162,11 @@
             <div class="heading">
               <h1>Journey</h1>
             </div>
+            <div class="d-flex">
+              <button type="button" class="btn ouline-white btn-fill me-md-3 wsm-100 mt-3 mt-md-0"
+                onclick="addSection()">Add Stage</button>
+              <button type="button" class="btn ouline-white btn-fill me-md-3 wsm-100 mt-3 mt-md-0">Save</button>
+            </div>
           </div>
           <div class="felling-chart">
             <div class="fill-dot">
@@ -177,18 +182,38 @@
               <p>Describe the next step, add feelings</p>
             </div>
           </div>
-          <div class="chart-box1">
+          <div class="chart-box1" id="chartBox">
             <div class="step-box">
-              <p>Step 1</p>
+              <p>
+                <input type="text" placeholder="Step 1"
+                class="border-0 input-white text-center outline-none bg-transparent w-100">
+              </p>
+              <textarea name="" id="" cols="30" rows="12"
+              class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
             </div>
             <div class="step-box">
-              <p>Step 2</p>
+              <p>
+                <input type="text" placeholder="Step 2"
+                class="border-0 input-white text-center outline-none bg-transparent w-100">
+              </p>
+              <textarea name="" id="" cols="30" rows="12"
+              class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
             </div>
             <div class="step-box">
-              <p>Step 3</p>
+              <p>
+                <input type="text" placeholder="Step 3"
+                class="border-0 input-white text-center outline-none bg-transparent w-100">
+              </p>
+              <textarea name="" id="" cols="30" rows="12"
+              class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
             </div>
             <div class="step-box">
-              <p>Step 4</p>
+              <p>
+                <input type="text" placeholder="Step 4"
+                class="border-0 input-white text-center outline-none bg-transparent w-100">
+              </p>
+              <textarea name="" id="" cols="30" rows="12"
+              class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
             </div>
           </div>
         </div>
@@ -204,7 +229,13 @@
   <script src="./assets/js/main.js"></script>
 
   <script>
+    var stages = 4;
 
+function addSection() {
+
+  stages++;
+  $('#chartBox').append(`<div class="step-box"><p><input type="text" placeholder="Step ${stages}" class="border-0 input-white text-center outline-none bg-transparent w-100"></p><textarea name="" id="" cols="30" rows="12" class="w-100 border-0 rounded bg-transparent outline-none"></textarea></div>`);
+}
   </script>
 </body>
 

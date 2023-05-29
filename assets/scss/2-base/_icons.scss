@@ -263,6 +263,11 @@ $icons: (
   "photo-library" "svg" 24px 24px,
   "escalation" "svg" 24px 24px,
   "drag-drop-icon" "svg" 24px 24px,
+  "twitter-product" "svg" 17px 14px,
+  "linkdin-product" "svg" 16px 16px,
+  "pause-icon" "svg" 16px 16px,
+  "play-icon" "svg" 16px 16px,
+  "copy-icon" "svg" 16px 16px,
   );
   
 @each $name, $fileType, $width, $height in $icons {

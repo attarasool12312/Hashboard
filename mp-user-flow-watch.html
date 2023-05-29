@@ -164,8 +164,11 @@
           <div class="Main">
             <div class="subOne">
               <div class="subOneKidOne">
+                <div class="btnz" style="display: none">
+                  <button onclick="breakLine()">Break</button>
+                </div>
                 <div class="oneChildTwo">
-                  <div class="mainforphoto1s" style="position: relative">
+                  <div id="mainforphotos">
                     <div class="firstPlus">
                       <img
                         id="secondPlus"
@@ -174,18 +177,16 @@
                         height="20px"
                         style="cursor: pointer"
                         alt=""
+                        onclick="openModalONE(event)"
                       />
                     </div>
                   </div>
-                </div>
-                <div class="btnz">
-                  <button onclick="addAnoSection()">ADD</button>
                 </div>
               </div>
             </div>
             <div class="subTwo">
               <div class="twoChildOne">
-                <h1 class="mb-3">User Story/Journey Details</h1>
+                <h1>User Story/Journey Details</h1>
               </div>
               <div class="twoChildTwo">
                 <div class="twoChildTwoAnotherChild">
@@ -443,34 +444,10 @@
               </div>
             </div>
           </div>
-          <div id="myModalTWO" class="modalTWO">
+         <div id="myModalTWO" class="modalTWO">
             <div class="modalTWO-contentTWO">
               <span class="closeTWO" onclick="closeModalTWO()">&times;</span>
               <div class="modethowImagesMain">
-                <div class="modaltwocontantimg">
-                  <img
-                    src="./assets/images/rightArrows/ra1.png"
-                    onclick="rightArrowmodelClick(event)"
-                    id="ra1"
-                    alt="image"
-                  />
-                </div>
-                <div class="modaltwocontantimg">
-                  <img
-                    src="./assets/images/rightArrows/ra2.png"
-                    onclick="rightArrowmodelClick(event)"
-                    id="ra2"
-                    alt="image"
-                  />
-                </div>
-                <div class="modaltwocontantimg">
-                  <img
-                    src="./assets/images/rightArrows/ra3.png"
-                    onclick="rightArrowmodelClick(event)"
-                    id="ra3"
-                    alt="image"
-                  />
-                </div>
                 <div class="modaltwocontantimg">
                   <img
                     src="./assets/images/rightArrows/ra4.png"

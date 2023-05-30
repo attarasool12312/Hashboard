@@ -99,13 +99,14 @@
   .services {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
 
     .product-card {
       background: #FFFFFF;
-      box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.05);
+      box-shadow: 24px 24px 24px 48px rgba(0, 0, 0, 0.05);
       padding: 20px;
-      width: 28%;
+      width: 31%;
       text-align: center;
       border-radius: 8px;
       margin-bottom: 30px;
@@ -141,20 +142,33 @@
           margin-top: 5px;
         }
       }
+
+      p {
+        font-size: 14px !important;
+        text-align: left;
+      }
+
+      a {
+        text-align: left;
+        display: block;
+      }
+
+      h4 {
+        text-align: left;
+      }
+
+      .delivery-card {
+        text-align: left;
+        img {
+          border-radius: 0;
+          width: 76px;
+          height: 57px;
+        }
+      }
     }
   }
 }
-
-.prices-section {
-  background-color: #fff;
-  padding: 0 10px 100px;
-
-  .delivery-card {
-    width: 40%;
-    img {
-      border-radius: 0;
-      width: 76px;
-      height: 57px;
-    }
-  }
+.contact-section{
+  background-color: #FFFFFF;
+  padding: 50px 0 100px;
 }

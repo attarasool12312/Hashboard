@@ -425,8 +425,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
         const type = item.dataset.type;
         switch (type) {
           case "radioButtonGroup":
-            item.innerHTML = `<div class="row mt-3"><div class="col-12 mx-auto"><input type="text" name="name" id="name" placeholder="Page 1" class="d-block w-100 border-0 outline-none bg-transparent fs-4 fw-600 rounded py-2"></label><input type="text" name="name" id="name" placeholder="Description" class="d-block w-100 border-0 outline-none bg-transparent rounded mb-3 py-2"></label><div class="radio-button"><i class="icon icon-drag-drop-icon mx-auto"></i><label for="name" class="question"><input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><div id="radio"><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked><label class="form-check-label" for="flexRadioDefault1"><input type="text" name="name" id="name" placeholder="Item 1" class="d-block w-100 border-0 outline-none"></label></div><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"><label class="form-check-label" for="flexRadioDefault2"><input type="text" name="name" id="name" placeholder="Item 2" class="d-block w-100 border-0 outline-none"></label></div><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"><label class="form-check-label" for="flexRadioDefault1"><input type="text" name="name" id="name" placeholder="Item 3" class="d-block w-100 border-0 outline-none"></label></div><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"><label class="form-check-label" for="flexRadioDefault2"><input type="text" name="name" id="name" placeholder="Item 4" class="d-block w-100 border-0 outline-none"></label></div></div><a class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block" onclick="addRadio()">Add More</a><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div>
-                <div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>`;
+            item.innerHTML = `<div class="row mt-3"><div class="col-12 mx-auto"><div class="d-flex align-items-center justify-content-between"><div><input type="text" name="name" id="name" placeholder="Page 1" class="d-block w-100 border-0 outline-none bg-transparent fs-4 fw-600 rounded py-2"></label><input type="text" name="name" id="name" placeholder="Description" class="d-block w-100 border-0 outline-none bg-transparent rounded mb-3 py-2"></label></div><button class="btn btn-fill wsm-100 mt-3 mt-md-0 radioButtonGroup">Show Content</button></div><div class="radio-button"><i class="icon icon-drag-drop-icon mx-auto"></i><label for="name" class="question">
+              <input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><div id="radio"><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked><label class="form-check-label" for="flexRadioDefault1"><input type="text" name="name" id="name" placeholder="Item 1" class="d-block w-100 border-0 outline-none"></label></div><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault"id="flexRadioDefault2"><label class="form-check-label" for="flexRadioDefault2"><input type="text" name="name" id="name" placeholder="Item 2" class="d-block w-100 border-0 outline-none"></label></div><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"><label class="form-check-label" for="flexRadioDefault1"><input type="text" name="name" id="name" placeholder="Item 3" class="d-block w-100 border-0 outline-none"></label></div><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"><label class="form-check-label" for="flexRadioDefault2"><input type="text" name="name" id="name" placeholder="Item 4" class="d-block w-100 border-0 outline-none"></label></div></div><a class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block" onclick="addRadio()">Add More</a><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>`;
             break;
           case "ratingScale":
             item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><input type="text" name="name" id="name" placeholder="Page 1" class="d-block w-100 border-0 outline-none bg-transparent fs-4 fw-600 rounded py-2"></label><input type="text" name="name" id="name" placeholder="Description" class="d-block w-100 border-0 outline-none bg-transparent rounded mb-3 py-2"></label><div class="rating-scale"><i class="icon icon-drag-drop-icon mx-auto"></i><label for="name" class="question"><input type="text" name="name" id="name" placeholder="Question" class="d-block w-100 border-0 outline-none rounded py-2"></label><div class="rating" id="rating"><p><input type="text" name="name" id="name" placeholder="1" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p><p><input type="text" name="name" id="name" placeholder="2" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p><p><input type="text" name="name" id="name" placeholder="3" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p><p><input type="text" name="name" id="name" placeholder="4" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p><p><input type="text" name="name" id="name" placeholder="5" class="d-block w-100 border-0 outline-none rounded py-2 text-center bg-transparent"></p></div><a class="cursor-pointer text-decoration-none text-fill fw-600 mt-3 ms-4 d-block" onclick="addRating()">Add More</a><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
@@ -537,33 +537,272 @@ $('.tab-click-12').click(function () {
   $('.tab-click-12').removeClass("active");
   $(this).addClass("active");
 });
+$('.tab-click-13').click(function () {
+  $('.tab-click-13').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-14').click(function () {
+  $('.tab-click-14').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-15').click(function () {
+  $('.tab-click-15').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-16').click(function () {
+  $('.tab-click-16').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-17').click(function () {
+  $('.tab-click-17').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-18').click(function () {
+  $('.tab-click-18').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-19').click(function () {
+  $('.tab-click-19').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-20').click(function () {
+  $('.tab-click-20').removeClass("active");
+  $(this).addClass("active");
+});
+$('.tab-click-21').click(function () {
+  $('.tab-click-21').removeClass("active");
+  $(this).addClass("active");
+});
+
+
+
 
 
 
 $(".survey-general-button").click(function () {
   $(".general-content").toggleClass("d-block")
 });
+$(".survey-general-button").click(function () {
+  $(".survey-general-button").toggleClass("active")
+});
 $(".survey-logo-title-button").click(function () {
   $(".logo-title-content").toggleClass("d-block")
+});
+$(".survey-logo-title-button").click(function () {
+  $(".survey-logo-title-button").toggleClass("active")
 });
 $(".survey-navigation-button").click(function () {
   $(".navigation-content").toggleClass("d-block")
 });
+$(".survey-navigation-button").click(function () {
+  $(".survey-navigation-button").toggleClass("active")
+});
 $(".survey-question-button").click(function () {
   $(".question-content").toggleClass("d-block")
+});
+$(".survey-question-button").click(function () {
+  $(".survey-question-button").toggleClass("active")
 });
 $(".survey-data-button").click(function () {
   $(".data-content").toggleClass("d-block")
 });
+$(".survey-data-button").click(function () {
+  $(".survey-data-button").toggleClass("active")
+});
 $(".survey-validation-button").click(function () {
   $(".validation-content").toggleClass("d-block")
+});
+$(".survey-validation-button").click(function () {
+  $(".survey-validation-button").toggleClass("active")
 });
 $(".survey-complete-button").click(function () {
   $(".complete-content").toggleClass("d-block")
 });
+$(".survey-complete-button").click(function () {
+  $(".survey-complete-button").toggleClass("active")
+});
 $(".survey-timer-button").click(function () {
   $(".timer-content").toggleClass("d-block")
 });
+$(".survey-timer-button").click(function () {
+  $(".survey-timer-button").toggleClass("active")
+});
+$(".radio-general-button").click(function () {
+  $(".radio-content").toggleClass("d-block")
+});
+$(".radio-general-button").click(function () {
+  $(".radio-general-button").toggleClass("active")
+});
+function addRadioItem() {
+  $('#choicesItem').append(`<div class="d-flex align-items-center choices-item mb-3"><input type="text" name="name" id="name" placeholder="Item" class="d-block w-100 border border-2 rounded px-4 py-2"><i class="icon icon-delete w-25 bg-cover delete-input cursor-pointer"></i></div>`);
+}
+$(document).on('click', '.delete-input', function () {
+  $(this).parents('.choices-item').remove();
+});
+$(".radio-choices-button").click(function () {
+  $(".radio-choices-content").toggleClass("d-block")
+});
+$(".radio-choices-button").click(function () {
+  $(".radio-choices-button").toggleClass("active")
+});
+$(".radio-choices-from-button").click(function () {
+  $(".radio-choices-from-content").toggleClass("d-block")
+});
+$(".radio-choices-from-button").click(function () {
+  $(".radio-choices-from-button").toggleClass("active")
+});
+$(".radio-layout-button").click(function () {
+  $(".radio-layout-content").toggleClass("d-block")
+});
+$(".radio-layout-button").click(function () {
+  $(".radio-layout-button").toggleClass("active")
+});
+$(".radio-data-button").click(function () {
+  $(".radio-data-content").toggleClass("d-block")
+});
+$(".radio-data-button").click(function () {
+  $(".radio-data-button").toggleClass("active")
+});
+function addExpression() {
+  $('#expression').append(`<div class="validation-expression mt-4 border">
+  <div class="d-flex align-items-center justify-content-between bg-white">
+    <input type="text" name="name" id="name" placeholder="Expression" class="d-block w-70 border-0 rounded px-4 py-2">
+    <i class="icon icon-delete cursor-pointer w-25 bg-cover delete-box"></i>
+  </div>
+  <div class="p-3">
+    <label for="name" class="mt-3 mb-2">"Required" error message</label>
+    <input type="text" name="name" id="name" placeholder="Expression" class="d-block w-100 border-0 rounded px-4 py-2">
+    <label for="name" class="mt-3 mb-2">"Required" error message</label>
+    <textarea name="message" id="message" cols="30" rows="3" class="d-block w-100 border border-2 rounded px-4 py-2"></textarea>
+  </div>
+</div>`);
+}
+$(document).on('click', '.delete-box', function () {
+  $(this).parents('.validation-expression').remove();
+});
+$(".radio-validation-button").click(function () {
+  $(".radio-validation-content").toggleClass("d-block")
+});
+$(".radio-validation-button").click(function () {
+  $(".radio-validation-button").toggleClass("active")
+});
+$(".rating-general-button").click(function () {
+  $(".rating-content").toggleClass("d-block")
+});
+$(".rating-general-button").click(function () {
+  $(".rating-general-button").toggleClass("active")
+});
+$(".rating-values-button").click(function () {
+  $(".rating-value-content").toggleClass("d-block")
+});
+$(".rating-values-button").click(function () {
+  $(".rating-values-button").toggleClass("active")
+});
+$(".rating-layout-button").click(function () {
+  $(".rating-layout-content").toggleClass("d-block")
+});
+$(".rating-layout-button").click(function () {
+  $(".rating-layout-button").toggleClass("active")
+});
+$(".rating-data-button").click(function () {
+  $(".rating-data-content").toggleClass("d-block")
+});
+$(".rating-data-button").click(function () {
+  $(".rating-data-button").toggleClass("active")
+});
+$(".rating-validation-button").click(function () {
+  $(".rating-validation-content").toggleClass("d-block")
+});
+$(".rating-validation-button").click(function () {
+  $(".rating-validation-button").toggleClass("active")
+});
+function addratingExpression() {
+  $('#ratingExpression').append(`<div class="validation-expression mt-4 border">
+  <div class="d-flex align-items-center justify-content-between bg-white">
+    <input type="text" name="name" id="name" placeholder="Expression" class="d-block w-70 border-0 rounded px-4 py-2">
+    <i class="icon icon-delete cursor-pointer w-25 bg-cover delete-box"></i>
+  </div>
+  <div class="p-3">
+    <label for="name" class="mt-3 mb-2">"Required" error message</label>
+    <input type="text" name="name" id="name" placeholder="Expression" class="d-block w-100 border-0 rounded px-4 py-2">
+    <label for="name" class="mt-3 mb-2">"Required" error message</label>
+    <textarea name="message" id="message" cols="30" rows="3" class="d-block w-100 border border-2 rounded px-4 py-2"></textarea>
+  </div>
+</div>`);
+}
+$(document).on('click', '.delete-box', function () {
+  $(this).parents('.validation-expression').remove();
+});
+function addcheckboxesExpression() {
+  $('#checkboxesExpression').append(`<div class="validation-expression mt-4 border">
+  <div class="d-flex align-items-center justify-content-between bg-white">
+    <input type="text" name="name" id="name" placeholder="Expression" class="d-block w-70 border-0 rounded px-4 py-2">
+    <i class="icon icon-delete cursor-pointer w-25 bg-cover delete-box"></i>
+  </div>
+  <div class="p-3">
+    <label for="name" class="mt-3 mb-2">"Required" error message</label>
+    <input type="text" name="name" id="name" placeholder="Expression" class="d-block w-100 border-0 rounded px-4 py-2">
+    <label for="name" class="mt-3 mb-2">"Required" error message</label>
+    <textarea name="message" id="message" cols="30" rows="3" class="d-block w-100 border border-2 rounded px-4 py-2"></textarea>
+  </div>
+</div>`);
+}
+$(document).on('click', '.delete-box', function () {
+  $(this).parents('.validation-expression').remove();
+});
+$(".checkboxes-general-button").click(function () {
+  $(".checkboxes-content").toggleClass("d-block")
+});
+$(".checkboxes-general-button").click(function () {
+  $(".checkboxes-general-button").toggleClass("active")
+});
+
+$(".checkboxes-choices-button").click(function () {
+  $(".checkboxes-choices-content").toggleClass("d-block")
+});
+$(".checkboxes-choices-button").click(function () {
+  $(".checkboxes-choices-button").toggleClass("active")
+});
+$(".checkboxes-choices-from-button").click(function () {
+  $(".checkboxes-choices-from-content").toggleClass("d-block")
+});
+$(".checkboxes-choices-from-button").click(function () {
+  $(".checkboxes-choices-from-button").toggleClass("active")
+});
+$(".checkboxes-layout-button").click(function () {
+  $(".checkboxes-layout-content").toggleClass("d-block")
+});
+$(".checkboxes-layout-button").click(function () {
+  $(".checkboxes-layout-button").toggleClass("active")
+});
+$(".checkboxes-data-button").click(function () {
+  $(".checkboxes-data-content").toggleClass("d-block")
+});
+$(".checkboxes-data-button").click(function () {
+  $(".checkboxes-data-button").toggleClass("active")
+});
+$(".checkboxes-validation-button").click(function () {
+  $(".checkboxes-validation-content").toggleClass("d-block")
+});
+$(".checkboxes-validation-button").click(function () {
+  $(".checkboxes-validation-button").toggleClass("active")
+});
+function addCheckboxItem() {
+  $('#checkChoicesItem').append(`<div class="d-flex align-items-center choices-item mb-3"><input type="text" name="name" id="name" placeholder="Item" class="d-block w-100 border border-2 rounded px-4 py-2"><i class="icon icon-delete w-25 bg-cover delete-input cursor-pointer"></i></div>`);
+}
+$(document).on('click', '.delete-input', function () {
+  $(this).parents('.choices-item').remove();
+});
+$('.radioButtonGroup').on('click', function () {
+  $('.general').removeClass('active');
+  $('.radio-button-group').addClass('active');
+});
+
+
+
+
+
+
 
 
 

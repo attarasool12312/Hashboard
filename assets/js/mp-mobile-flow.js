@@ -1,5 +1,8 @@
 var zeee;
 var noofMobiles = 0;
+var cross = false;
+var bzoop ;
+
 //MODAL START
 const modalONE = document.getElementById("myModalONE");
 const modalTWO = document.getElementById("myModalTWO");
@@ -17,27 +20,10 @@ window.onclick = function (event) {
 };
 
 function openModalONE(event) {
-  console.log(
-    "oop",
-    document.getElementsByClassName("modethowImagesMain")[0].div
-  );
-
-  console.log(
-    "event.target.parentNode?.children[0].id",
-    event.target.parentNode?.children[0].id
-  );
-  if (event.target.parentNode?.children[0]?.id !== "bzoop") {
-    event.target.parentNode.children[0].remove();
-  } else {
-    event.target.parentNode.children[1].remove();
-  }
-  // if(event.target.parentNode?.children[1].id !== 'bzoop'){
-  //
-  // }
-
-  // console.log("openModalONE", event.target.parentNode.remove());
-  document.getElementsByClassName("btnz")[0].style.display = "block";
+  console.log('lal g' , event.target);
   modalONE.style.display = "block";
+  bzoop = event.target.parentNode?.children;
+    
 }
 function closeModalONE() {
   modalONE.style.display = "none";
@@ -56,7 +42,7 @@ function openModalTWO(event) {
       let index = 0;
       index <
       document.getElementsByClassName("modethowImagesMain")[0].children
-        .length;
+        .length -1;
       index++
     ) {
       console.log(
@@ -123,24 +109,7 @@ secondPlus.addEventListener("click", () => {
 
 
 const breakLine = () => {
-  console.log(
-    "chk",
-    document.getElementsByClassName(
-      `mainforphotos${noofchildsofmain}child`
-    )[
-      document.getElementsByClassName(
-        `mainforphotos${noofchildsofmain}child`
-      ).length - 1
-    ].children[
-      document.getElementsByClassName(
-        `mainforphotos${noofchildsofmain}child`
-      )[
-        document.getElementsByClassName(
-          `mainforphotos${noofchildsofmain}child`
-        ).length - 1
-      ].children.length - 1
-    ].children[0].children[0]
-  );
+  closeModalTWO()
   if (noofchildsofmain % 2 == 0) {
     document.getElementsByClassName(
       `mainforphotos${noofchildsofmain}child`
@@ -204,11 +173,13 @@ const breakLine = () => {
         160 -
       60
     }px`;
+    newdiv.style.marginLeft = '50px'
   } else {
     newdiv.style.width = "auto";
   }
   noofchildsofmain += 1;
   newdiv.className = `mainforphotos${noofchildsofmain}child`;
+  newdiv.style.marginLeft = '50px'
   if (noofchildsofmain % 2 == 0) {
     newdiv.style.flexDirection = "row-reverse";
   }
@@ -216,8 +187,19 @@ const breakLine = () => {
 };
 
 const modelOneClick = (event) => {
+       if (bzoop[0]?.id !== "bzoop") {
+bzoop[0].remove();
+  } else {
+    bzoop[1].remove();
+  }
+  console.log("bzoop",bzoop);
+
+  // if(event.target){cross = true}else{cross = false}
+  // if(cross == true){
+
+  // }
  
-  console.log("zeeeeep",document.getElementsByClassName(`mainforphotos${noofchildsofmain}child`)[0].children);
+  // console.log("zeeeeep",document.getElementsByClassName(`mainforphotos${noofchildsofmain}child`)[0].children);
   closeModalONE();
   var newdiv = document.createElement("div");
   newdiv.style = "width: 160px;height : 230px ";
@@ -277,21 +259,29 @@ const modelOneClick = (event) => {
   lop.innerHTML = `  <div class="desMain">
         <div class="counting">${noofMobiles}</div>
         <div class="written">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim
-          ad minim veniam, quis nostrud exercitation. Culpa qui officia
-          deserunt mollit anim.
+          <textarea class='txtarea'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation. Culpa qui officia deserunt mollit anim.</textarea>
         </div>
-        <div><button style="width : 20px ; height: 20px;cursor : pointer; background-color:  red ; color: white; padding:  5px ; display : flex ; justify-content : center ; align-items : center ; outline : none ; border : none ; border-radius : 50%"  onClick="remove(event)"> X </button></div>
+        <div><button style="width : 20px ; height: 20px;cursor : pointer; background-color:  #775DA6 ; color: white; padding:  5px ; display : flex ; justify-content : center ; align-items : center ; outline : none ; border : none ; border-radius : 50%"  onClick="remove(event)"> X </button></div>
       </div>`;
   tool.appendChild(lop);
   if(document.getElementsByClassName(`mainforphotos${noofchildsofmain}child`)[0].children.length  == 8){
     breakLine();
   }
 };
+
+
+
+
+
+
+
 const remove = (event) =>{
   console.log('remove',event.target.parentNode.parentNode);
   event.target.parentNode.parentNode.remove()
 }
+
+
+
 
 const rightArrowmodelClick = (event) => {
   closeModalTWO();

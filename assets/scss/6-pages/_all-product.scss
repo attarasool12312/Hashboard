@@ -102,6 +102,17 @@
     gap: 30px;
     margin-top: 40px;
 
+    & + .services{
+      .product-card{
+        img{
+          width: 150px;
+          &:nth-child(2){
+            width: 185px;
+          }
+        }
+      }
+    }
+
     .product-card {
       background: #FFFFFF;
       box-shadow: 24px 24px 24px 48px rgba(0, 0, 0, 0.05);
@@ -110,6 +121,19 @@
       text-align: center;
       border-radius: 8px;
       margin-bottom: 30px;
+      height: fit-content;
+      min-height: 482px;
+
+      &:nth-child(2){
+        img{
+          width: 150px;
+        }
+      }
+      &:nth-child(3){
+        img{
+          width: 150px;
+        }
+      }
 
       .form-check {
         width: fit-content;
@@ -123,6 +147,8 @@
 
       img {
         margin-top: 20px;
+        width: 100px;
+        height: 100px;
       }
 
       h3 {
@@ -130,6 +156,7 @@
         font-size: 36px;
         line-height: 46px;
         color: #000000;
+        margin-top: 20px;
       }
 
       ul {
@@ -142,6 +169,21 @@
           margin-top: 5px;
         }
       }
+
+      p {
+        font-size: 14px !important;
+        text-align: left;
+      }
+    }
+    .product-card-1 {
+      background: #FFFFFF;
+      box-shadow: 24px 24px 24px 48px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      width: 31%;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      height: fit-content;
 
       p {
         font-size: 14px !important;
@@ -161,8 +203,8 @@
         text-align: left;
         img {
           border-radius: 0;
-          width: 76px;
-          height: 57px;
+          width: 20%;
+          height: 50px;
         }
       }
     }

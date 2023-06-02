@@ -159,10 +159,10 @@ const breakLine = () => {
     ].children.length - 1
   ].children[1].innerHTML = ` <img
   src="./assets/images/rightArrows/ra5.png"
-  style='transform : rotate(90deg)'
+  style='transform : rotate(90deg); background: rgba(217, 217, 217, 0.53); border: 1px dashed #AABED1; padding: 5px;'
         id="bzoop"
         alt="image"
-      /> <img width='24px' height='24px' onClick="openModalONE(event)" src="./assets/images/greePlus.png" alt="image">`;
+      /> <img width='24px' height='24px' onClick="openModalONE(event)" src="./assets/images/icons/plus-big-icon.svg" class="mt-3" alt="image">`;
   var newdiv = document.createElement("div");
   newdiv.style.height = "170px";
   if (noofchildsofmain % 2 !== 0) {
@@ -204,10 +204,11 @@ bzoop[0].remove();
   <div class='peela' style= "width: 160px;height : 153px; display: flex;justify-content : space-around">
  
 <div style="width: 60px;height : 153px;display : flex ; justify-content : center ; align-items : center">
-  <img width='24px' height='24px' onClick="openModalTWO(event)" src="./assets/images/greePlus.png" alt="image">
+  <img width='24px' height='24px' onClick="openModalTWO(event)" src="./assets/images/icons/plus-big-icon.svg" alt="image">
   </div>
-  <div style="width: 100px;height : 153px;display : flex ; justify-content : center">
+  <div style="width: 100px;height : 153px;display : flex ; justify-content : center; flex-flow: column">
   <img src="./assets/images/watch/${event.target.id}.png"  style="object-fit : contain ; width : 100%" alt="image">
+  <input type="text" name="name" id="name" placeholder="Web Title" class="d-block w-100 border-0 mt-2 rounded bg-transparent outline-none fw-600 text-center">
 </div> 
 </div>
 <div style="height :77px;width : 100px ; display : flex ;  justify-content : space-evenly ; align-items : center ;flex-direction : column">
@@ -217,11 +218,12 @@ bzoop[0].remove();
 
     newdiv.innerHTML = `
   <div class='peela' style= "width: 160px;height : 153px; display: flex;justify-content : space-around">
-  <div style="width: 100px;height : 153px;display : flex ; justify-content : center">
+  <div style="width: 100px;height : 153px;display : flex ; justify-content : center; flex-flow: column">
   <img src="./assets/images/watch/${event.target.id}.png"  style="object-fit : contain ; width : 100%" alt="image">
+  <input type="text" name="name" id="name" placeholder="Web Title" class="d-block w-100 border-0 mt-2 rounded bg-transparent outline-none fw-600 text-center">
 </div>
 <div style="width: 60px;height : 153px;display : flex ; justify-content : center ; align-items : center">
-  <img width='24px' height='24px' onClick="openModalTWO(event)" src="./assets/images/greePlus.png" alt="image">
+  <img width='24px' height='24px' onClick="openModalTWO(event)" src="./assets/images/icons/plus-big-icon.svg" alt="image">
   </div>
 </div>
 <div style="height :77px;width : 100px ; display : flex ;  justify-content : space-evenly ; align-items : center ;flex-direction : column">
@@ -252,7 +254,10 @@ bzoop[0].remove();
   var lop = document.createElement("div");
   lop.innerHTML =`  <div class="desMain">
         <div class="counting">${noofMobiles}</div>
+        <div>
+        <input type="text" name="name" id="name" placeholder="Web Title" class="d-block w-100 border-0 mt-2 rounded bg-transparent outline-none fw-600">
         <textarea class='txtarea'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation. Culpa qui officia deserunt mollit anim.</textarea>
+        </div>
         <div><button style="width : 20px ; height: 20px;cursor : pointer; background-color:  #775DA6 ; color: white; padding:  5px ; display : flex ; justify-content : center ; align-items : center ; outline : none ; border : none ; border-radius : 50%"  onClick="remove(event)"> X </button></div>
       </div>`;
   tool.appendChild(lop);
@@ -269,18 +274,18 @@ const rightArrowmodelClick = (event) => {
   zeee.innerHTML = "";
   if (noofchildsofmain % 2 == 0) {
     zeee.innerHTML = `<div style="display : flex ; justify-content : center ; align-items : center"><div style="height :100% ;display : flex ; justify-content : center ; align-items : flex-end">
-    <img width='24px' height='24px' onClick="openModalONE(event)" src="./assets/images/greePlus.png" alt="image"></div>
+    <img width='24px' height='24px' onClick="openModalONE(event)" src="./assets/images/icons/plus-big-icon.svg" alt="image"></div>
       </div>
-    <div style="display : flex ; justify-content : center ; align-items : center"><img style="transform: rotate(180deg);" src="./assets/images/rightArrows/${event.target.id}.png" alt=""></div>
+    <div style="display : flex ; justify-content : center ; align-items : center; background: rgba(217, 217, 217, 0.53); border: 1px dashed #AABED1; padding: 5px;"><img style="transform: rotate(180deg);" src="./assets/images/rightArrows/${event.target.id}.png" alt=""></div>
       <div>
     
          </div>`;
   } else {
     zeee.innerHTML = `<div style="display : flex ; justify-content : center ; align-items : center">
-    <div style="display : flex ; justify-content : center ; align-items : center"><img src="./assets/images/rightArrows/${event.target.id}.png" alt=""></div>
+    <div style="display : flex ; justify-content : center ; align-items : center; background: rgba(217, 217, 217, 0.53); border: 1px dashed #AABED1; padding: 5px;"><img src="./assets/images/rightArrows/${event.target.id}.png" alt=""></div>
       <div>
     <div style="height :100% ;display : flex ; justify-content : center ; align-items : flex-end">
-    <img width='24px' height='24px' onClick="openModalONE(event)" src="./assets/images/greePlus.png" alt="image"></div>
+    <img width='24px' height='24px' onClick="openModalONE(event)" src="./assets/images/icons/plus-big-icon.svg" alt="image"></div>
       </div>
          </div>`;
   }

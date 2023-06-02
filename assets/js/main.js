@@ -46,6 +46,10 @@ $(".open-button").click(function () {
   $(".aside").toggleClass("open")
 });
 
+$(".dropdown-btn").click(function () {
+  $(this).toggleClass("rotate-icon");
+  $(this).find(".icon").toggleClass("rotate-icon");
+});
 
 const allSkeleton = document.querySelectorAll('.skeleton');
 

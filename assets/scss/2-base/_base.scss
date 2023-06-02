@@ -92,7 +92,7 @@ h6 {
   color: #202020;
 }
 
-.left{
+.left {
   left: 5% !important;
 }
 
@@ -140,26 +140,26 @@ h6 {
   min-height: auto !important;
 }
 
-.input-white{
-  &::placeholder{
+.input-white {
+  &::placeholder {
     color: #fff;
   }
 }
 
-.input-dark{
-  &::placeholder{
+.input-dark {
+  &::placeholder {
     color: #000;
   }
 }
 
-.input-light-gray{
-  &::placeholder{
+.input-light-gray {
+  &::placeholder {
     color: #898989;
   }
 }
 
-.input-fill{
-  &::placeholder{
+.input-fill {
+  &::placeholder {
     color: #775DA6;
   }
 }
@@ -167,6 +167,11 @@ h6 {
 .container-xl {
   max-width: 1270px !important;
 }
+
+.container-xxl {
+  max-width: 1300px !important;
+}
+
 
 .container-100 {
   max-width: 100% !important;
@@ -392,7 +397,7 @@ h6 {
   border-top-left-radius: 30px !important;
 }
 
-.bg-light-blue{
+.bg-light-blue {
   background-color: #F5F6FC;
 }
 
@@ -459,6 +464,11 @@ h6 {
   width: 100px;
 }
 
+.wh-100 {
+  width: 100px !important;
+  height: 100px !important;
+}
+
 .width-70px {
   width: 70px;
 }
@@ -476,6 +486,7 @@ h6 {
   max-width: 50% !important;
   width: 50% !important;
 }
+
 .w-50px {
   width: 50px !important;
 }
@@ -518,6 +529,7 @@ h6 {
 .w-200 {
   width: 200px !important;
 }
+
 .wsm-100 {
   @include grid-sm-down {
     width: 100% !important;
@@ -687,6 +699,11 @@ h6 {
   box-shadow: none;
 }
 
+.overflow-x {
+  overflow-x: scroll !important;
+  overflow-y: hidden;
+}
+
 .box-shadow-none {
   box-shadow: none !important;
 }
@@ -815,43 +832,60 @@ h6 {
 .return-text-color {
   color: #70B6C1 !important;
 }
-.api-drop-down{
+
+.api-drop-down {
   display: none;
 }
-.hiddi-chart{
+
+.hiddi-chart {
   display: none;
 }
-.active-button{
+
+.active-button {
   border: 2px solid #775da6 !important;
 }
-.border-dots{
+
+.border-dots {
   border: 2px dotted #D0D3DA;
 }
-.fs-9{
+
+.fs-9 {
   font-size: 9px;
 }
-.text-light-green{
+
+.text-light-green {
   color: #50BD91;
 }
-.text-bg-gray{
+
+.text-bg-gray {
   background-color: #E5E5E5;
 }
-.text-bg-light-green{
+
+.text-bg-light-green {
   background-color: #B3FCB1;
 }
-.bg-pink{
+
+.bg-pink {
   background-color: #FF8690;
 }
-.border-pink{
+
+.border-pink {
   border-color: #FF8690;
 }
-.border-bottom-2{
+
+.border-bottom-2 {
   border-bottom: 2px solid !important;
 }
-.bg-light-white{
+
+.bg-light-white {
   background-color: #F2F2F2;
 }
-.width-76{
+
+.width-76 {
   width: 76% !important;
   max-width: 76% !important;
+}
+
+.panel-dropdown .rotate-icon:after {
+  transform: rotate(180deg);
 }

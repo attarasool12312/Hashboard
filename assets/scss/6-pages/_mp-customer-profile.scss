@@ -716,3 +716,22 @@
         }
     }
 }
+
+.profile-completion{
+    position: relative;
+    &::after{
+        content: "70%";
+        position: absolute;
+        top: 55px;
+        left: 29px;
+        width: 88px;
+        height: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F2F2F2;
+        border-radius: 50%;
+        font-size: 26px;
+        font-weight: 600;    
+    }
+}

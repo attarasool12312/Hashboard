@@ -196,6 +196,7 @@
 
 .stages-main {
     display: flex;
+    height: 100px;
 
     h4 {
         transform: rotate(270deg);
@@ -203,7 +204,7 @@
         color: #775DA6;
         font-weight: 700;
         text-transform: uppercase;
-        margin-top: 20px;
+        margin-top: 27px;
     }
 
     .stages {
@@ -264,6 +265,8 @@
     display: flex;
     align-items: center;
     margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
 
     h4 {
         transform: rotate(270deg);
@@ -274,79 +277,40 @@
         margin-top: 20px;
     }
 
-    .actions {
+    #container {
+        height: 200px;
+        width: 100%;
         position: relative;
-        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 
-        .center-line {
-            width: 950px !important;
-            height: 5px;
-            background-color: #c4bebe;
-            border-radius: 20px;
-        }
-
-        .dottes {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            width: 100%;
+    .draggable-icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #775DA6;
+        position: relative;
+        cursor: move;
+        margin-right: 10px;
+        p {
             position: absolute;
-            top: 92px;
-
-            .green-dotted {
-                width: 20px;
-                height: 20px;
-                background-color: #27A530;
-                border-radius: 50%;
-                border: 3px solid #fff;
-                position: relative;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: -54px;
-                    left: 5px;
-                    height: 50px;
-                    width: 2px;
-                    background-color: #27A530;
-                }
-
-                p {
-                    position: absolute;
-                    width: 94px;
-                    top: -120px;
-                    left: -32px;
-                    font-size: 11px;
-                }
-            }
-
-            .red-dotted {
-                width: 20px;
-                height: 20px;
-                background-color: #FA0707;
-                border-radius: 50%;
-                border: 3px solid #fff;
-                position: relative;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: -54px;
-                    left: 5px;
-                    height: 50px;
-                    width: 2px;
-                    background-color: #FA0707;
-                }
-
-                p {
-                    position: absolute;
-                    width: 94px;
-                    bottom: -120px;
-                    left: -32px;
-                    font-size: 11px;
-                }
-            }
+            top: -35px;
+            left: -30px;
+            width: 145px;
+            font-size: 10px !important;
         }
+    }
+
+    #canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -500,231 +464,41 @@
         text-transform: uppercase;
     }
 
-    .touchpoints-dotted {
+    #container {
+        height: 200px;
+        width: 100%;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 100px 0;
+    }
 
-        .dott {
-            width: 25px;
-            height: 25px;
-            background-color: #757575;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            position: relative;
+    .draggable-icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #666666;
+        position: relative;
+        cursor: move;
+        margin-right: 10px;
 
-            p {
-                width: 200px;
-                font-size: 14px;
-            }
-
-            &:nth-child(1) {
-                margin-top: 200px;
-
-                p {
-                    position: absolute;
-                    top: -211px;
-                    left: 13px;
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 24px;
-                    left: 9px;
-                    width: 2px;
-                    height: 200px;
-                    background-color: #757575;
-                }
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: -41px;
-                    left: -8px;
-                    width: 176px;
-                    height: 5px;
-                    border-top: 5px dashed #757575;
-                    transform: rotate(-35deg);
-                    z-index: -1;
-                }
-            }
-
-            &:nth-child(2) {
-                p {
-                    position: absolute;
-                    bottom: -110px;
-                    left: 13px;
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 24px;
-                    left: 9px;
-                    width: 2px;
-                    height: 100px;
-                    background-color: #757575;
-                }
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 30px;
-                    left: 4px;
-                    width: 156px;
-                    height: 5px;
-                    border-top: 5px dashed #757575;
-                    transform: rotate(20deg);
-                    z-index: -1;
-                }
-            }
-
-            &:nth-child(3) {
-                margin-top: 100px;
-
-                p {
-                    position: absolute;
-                    top: -160px;
-                    left: 13px;
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 24px;
-                    left: 9px;
-                    width: 2px;
-                    height: 150px;
-                    background-color: #757575;
-                }
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: -28px;
-                    left: 4px;
-                    width: 156px;
-                    height: 5px;
-                    border-top: 5px dashed #757575;
-                    transform: rotate(-28deg);
-                    z-index: -1;
-                }
-            }
-
-            &:nth-child(4) {
-                margin-top: -50px;
-
-                p {
-                    position: absolute;
-                    bottom: -135px;
-                    left: 13px;
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 24px;
-                    left: 9px;
-                    width: 2px;
-                    height: 125px;
-                    background-color: #757575;
-                }
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 17px;
-                    left: 4px;
-                    width: 156px;
-                    height: 5px;
-                    border-top: 5px dashed #757575;
-                    transform: rotate(11deg);
-                    z-index: -1;
-                }
-            }
-
-            &:nth-child(5) {
-                p {
-                    position: absolute;
-                    top: -110px;
-                    left: 13px;
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 24px;
-                    left: 9px;
-                    width: 2px;
-                    height: 100px;
-                    background-color: #757575;
-                }
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: -17px;
-                    left: 4px;
-                    width: 156px;
-                    height: 5px;
-                    border-top: 5px dashed #757575;
-                    transform: rotate(-19deg);
-                    z-index: -1;
-                }
-            }
-
-            &:nth-child(6) {
-                margin-top: -100px;
-
-                p {
-                    position: absolute;
-                    bottom: -160px;
-                    left: 13px;
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 24px;
-                    left: 9px;
-                    width: 2px;
-                    height: 150px;
-                    background-color: #757575;
-                }
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 30px;
-                    left: 4px;
-                    width: 156px;
-                    height: 5px;
-                    border-top: 5px dashed #757575;
-                    transform: rotate(19deg);
-                    z-index: -1;
-                }
-            }
-
-            &:nth-child(7) {
-                p {
-                    position: absolute;
-                    top: -110px;
-                    left: 13px;
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 24px;
-                    left: 9px;
-                    width: 2px;
-                    height: 100px;
-                    background-color: #757575;
-                }
-            }
+        p {
+            position: absolute;
+            top: -35px;
+            left: -30px;
+            width: 145px;
+            font-size: 10px !important;
         }
+    }
+
+    #canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -733,7 +507,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-    width: fit-content;
+    width: 100%;
 
     .thoughts {
         background-color: #fff;
@@ -746,6 +520,7 @@
 
         ul {
             padding-left: 20px;
+            width: 160px;
 
             li {
                 list-style: none;
@@ -857,153 +632,65 @@
     height: 400px;
     position: relative;
 
-    .fill-dot {
-        width: 30px;
-        height: 30px;
-        background-color: #775DA6;
+    #container {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .draggable-icon {
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
-        position: absolute;
+        background-color: #775DA6;
+        position: relative;
+        cursor: move;
+        margin-right: 10px;
 
         p {
-            font-size: 10px;
-            width: 200px;
+            position: absolute;
+            top: -20px;
+            left: -30px;
+            width: 120px;
+            font-size: 10px !important;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -53px;
+            left: -5px;
+            background-image: url($images-path + "/emotion-greate.png");
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-size: 100% 100%;
         }
 
         &:nth-child(1) {
-            top: 65%;
-            left: 8%;
-
             &::after {
-                content: "";
-                position: absolute;
-                top: -62px;
-                left: -5px;
                 background-image: url($images-path + "/emotion-good.png");
-                background-size: cover;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-            }
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: 26px;
-                left: -87px;
-                width: 350px;
-                height: 3px;
-                background-color: #775DA6;
-                transform: rotate(11deg);
-            }
-
-            p {
-                position: absolute;
-                top: -67%;
-                left: -40px;
             }
         }
 
         &:nth-child(2) {
-            top: 76%;
-            left: 31%;
-
             &::after {
-                content: "";
-                position: absolute;
-                bottom: -62px;
-                left: -5px;
                 background-image: url($images-path + "/emotion-sad.png");
-                background-size: cover;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-            }
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: -57px;
-                left: -7px;
-                width: 327px;
-                height: 3px;
-                background-color: #775DA6;
-                transform: rotate(-28deg);
-            }
-
-            p {
-                position: absolute;
-                bottom: -67%;
-                left: -40px;
             }
         }
+    }
 
-        &:nth-child(3) {
-            top: 40%;
-            left: 58%;
-
-            &::after {
-                content: "";
-                position: absolute;
-                top: -62px;
-                left: -5px;
-                background-image: url($images-path + "/emotion-greate.png");
-                background-size: cover;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-            }
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: -28px;
-                left: 12px;
-                width: 280px;
-                height: 3px;
-                background-color: #775DA6;
-                transform: rotate(-17deg);
-            }
-
-            p {
-                position: absolute;
-                bottom: -67%;
-                left: -40px;
-            }
-        }
-
-        &:nth-child(4) {
-            top: 19%;
-            right: 12%;
-
-            &::after {
-                content: "";
-                position: absolute;
-                top: -62px;
-                left: -5px;
-                background-image: url($images-path + "/emotion-greate.png");
-                background-size: cover;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-            }
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: -21px;
-                left: 12px;
-                width: 150px;
-                height: 3px;
-                background-color: #775DA6;
-                transform: rotate(-26deg);
-            }
-
-            p {
-                position: absolute;
-                bottom: -67%;
-                left: -40px;
-            }
-        }
+    #canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -1016,7 +703,10 @@
         width: 238px !important;
         background: #DFE3EC;
         height: 300px;
-        margin-left: 20px;
+
+        &+.step-box {
+            margin-left: 20px;
+        }
 
         p {
             color: #fff;
@@ -1039,10 +729,11 @@
         p {
             font-size: 17px;
             font-weight: 600;
-            width: 32%;
+            min-width: 330px;
             background-color: #fff;
             padding: 7px 15px;
             border-radius: 10px;
+            margin-right: 15px;
         }
     }
 
@@ -1067,10 +758,10 @@
                 content: "";
                 position: absolute;
                 top: 39px;
-                right: -105px;
+                right: -78px;
                 background-image: url($images-path + "/longline-arrow.png");
-                height: 5px;
-                width: 100px;
+                height: 4px;
+                width: 74px;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }
@@ -1083,10 +774,10 @@
                 content: "";
                 position: absolute;
                 top: 10px;
-                right: -105px;
+                right: -79px;
                 background-image: url($images-path + "/view-to-buy.png");
                 height: 28px;
-                width: 100px;
+                width: 74px;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }
@@ -1095,10 +786,10 @@
                 content: "";
                 position: absolute;
                 top: 44px;
-                right: -105px;
+                right: -79px;
                 background-image: url($images-path + "/view-to-continue.png");
                 height: 28px;
-                width: 100px;
+                width: 74px;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }
@@ -1111,10 +802,10 @@
                 content: "";
                 position: absolute;
                 top: 73px;
-                right: -105px;
+                right: -79px;
                 background-image: url($images-path + "/continue-adress.png");
                 height: 28px;
-                width: 100px;
+                width: 74px;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }
@@ -1123,10 +814,10 @@
                 content: "";
                 position: absolute;
                 top: 40px;
-                right: -105px;
+                right: -79px;
                 background-image: url($images-path + "/view-to-continue.png");
                 height: 28px;
-                width: 100px;
+                width: 74px;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }
@@ -1139,10 +830,10 @@
                 content: "";
                 position: absolute;
                 top: 39px;
-                right: -105px;
+                right: -76px;
                 background-image: url($images-path + "/longline-arrow.png");
-                height: 5px;
-                width: 100px;
+                height: 4px;
+                width: 70px;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }
@@ -1157,10 +848,38 @@
                         content: "";
                         position: absolute;
                         top: 18px;
-                        left: -105px;
+                        left: -76px;
                         background-image: url($images-path + "/longline-arrow.png");
                         height: 5px;
-                        width: 100px;
+                        width: 70px;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                &:nth-child(1) {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 33px;
+                        left: -76px;
+                        background-image: url($images-path + "/view-to-buy.png");
+                        height: 34px;
+                        width: 70px;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                &:nth-child(3) {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: -26px;
+                        left: -76px;
+                        background-image: url($images-path + "/view-to-continue.png");
+                        height: 34px;
+                        width: 70px;
                         background-size: 100% 100%;
                         background-repeat: no-repeat;
                     }
@@ -1201,6 +920,7 @@
         }
     }
 }
+
 .action-div {
     margin-top: 20px;
 

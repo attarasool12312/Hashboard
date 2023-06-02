@@ -163,43 +163,45 @@
               <h1>Journey</h1>
             </div>
             <div class="d-flex">
-              <button type="button" class="btn ouline-white btn-fill me-md-3 wsm-100 mt-3 mt-md-0">Add Stage</button>
+              <button type="button" class="btn outline-white btn-fill me-md-3 wsm-100 mt-3 mt-md-0" onclick="addStage()">Add Stage</button>
               <button type="button" class="btn ouline-white btn-fill me-md-3 wsm-100 mt-3 mt-md-0">Save</button>
             </div>
           </div>
-          <div class="chart-stages">
-            <div class="header-stage">
-              <p>Stagec 1</p>
-              <p>Stagec 2</p>
-              <p>Stagec 3</p>
+          <div class="overflow-x">
+            <div class="chart-stages">
+              <div class="header-stage" id="headerStage">
+                <p><input type="text" placeholder="Stagec 1" class="border-0 input-dark outline-none bg-transparent w-100"></p>
+                <p><input type="text" placeholder="Stagec 2" class="border-0 input-dark outline-none bg-transparent w-100"></p>
+                <p><input type="text" placeholder="Stagec 3" class="border-0 input-dark outline-none bg-transparent w-100"></p>
+              </div>
+              <div class="stages-delivery-chart">
+                <div class="open-stage">
+                  <p><input type="text" placeholder="Open" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                </div>
+                <div class="review-stage">
+                  <p><input type="text" placeholder="Review" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                </div>
+                <div class="continue-stage">
+                  <p><input type="text" placeholder="Buy" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                  <p><input type="text" placeholder="Continue" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                </div>
+                <div class="adress-stage">
+                  <p><input type="text" placeholder="Adress" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                </div>
+                <div class="delivery-stage">
+                  <p><input type="text" placeholder="Delivery" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                </div>
+                <div class="patment-stage">
+                  <p><input type="text" placeholder="Cash" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                  <p><input type="text" placeholder="Credit" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                  <p><input type="text" placeholder="PayPal" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                </div>
+              </div>
             </div>
-            <div class="stages-delivery-chart">
-              <div class="open-stage">
-                <p>Open</p>
+            <div class="chart">
+              <div>
+                <canvas id="indexLineOne" class="w-100"></canvas>
               </div>
-              <div class="review-stage">
-                <p>Review</p>
-              </div>
-              <div class="continue-stage">
-                <p>Buy</p>
-                <p>Continue</p>
-              </div>
-              <div class="adress-stage">
-                <p>Adress</p>
-              </div>
-              <div class="delivery-stage">
-                <p>Delivery</p>
-              </div>
-              <div class="patment-stage">
-                <p>Cash</p>
-                <p>Credit</p>
-                <p>PayPal</p>
-              </div>
-            </div>
-          </div>
-          <div class="chart">
-            <div>
-              <canvas id="indexLineOne" class="w-100"></canvas>
             </div>
           </div>
         </div>
@@ -215,61 +217,86 @@
   <script src="./assets/js/main.js"></script>
 
   <script>
-    const pointImage = new Image();
-    pointImage.src = './assets/images/happy.png';
+    var stages = 3;
 
-    const pointImage1 = new Image();
-    pointImage1.src = './assets/images/excited.png';
+function addStage() {
 
-    const pointImage2 = new Image();
-    pointImage2.src = './assets/images/emotion.png';
+  stages++;
+  $('#headerStage').append(`<p><input type="text" placeholder="Stagec ${stages}" class="border-0 input-dark outline-none bg-transparent w-100"></p>`);
+}
 
-    const indexOne = document.getElementById("indexLineOne");
 
-    const bar16 = new Chart(indexOne, {
-      type: "line",
-      data: {
-        labels: ["19 Sep", "26 Sep", "3 Oct", "10 Oct", "17 Oct"],
-        datasets: [
-          {
-            label: ["Top Products"],
-            data: [50, 100, 80, 105, 85],
-            borderColor: "#775da6",
-            backgroundColor: "rgb(239, 236, 244)",
-            fill: true,
-          },
-        ],
+
+
+const pointImage = new Image();
+pointImage.src = './assets/images/happy.png';
+
+const pointImage1 = new Image();
+pointImage1.src = './assets/images/excited.png';
+
+const pointImage2 = new Image();
+pointImage2.src = './assets/images/emotion.png';
+
+const indexOne = document.getElementById("indexLineOne");
+const chartData = {
+  labels: ["19 Sep", "26 Sep", "3 Oct", "10 Oct", "17 Oct"],
+  datasets: [
+    {
+      label: "Top Products",
+      data: [50, 100, 80, 105, 85],
+      borderColor: "#775da6",
+      backgroundColor: "rgb(239, 236, 244)",
+      fill: true,
+    },
+  ],
+};
+
+const chartOptions = {
+  responsive: true,
+  elements: {
+    point: {
+      pointStyle: ['circle', pointImage, pointImage1, pointImage2, 'circle'],
+    },
+  },
+  scales: {
+    x: {
+      beginAtZero: true,
+      grid: {
+        drawOnChartArea: false,
       },
-      options: {
-        responsive: true,
-        elements: {
-          point: {
-            pointStyle: ['circle', pointImage, pointImage1, pointImage2, 'circle']
-          },
-        },
-        scales: {
-          x: {
-            // display: false,
-            beginAtZero: true,
-            grid: {
-              drawOnChartArea: false,
-            },
-            ticks: {
-              display: true,
-            },
-          },
-          y: {
-            display: false,
-            beginAtZero: true,
-          },
-        },
-        plugins: {
-          legend: {
-            display: false,
-          },
-        },
+      ticks: {
+        display: true,
       },
-    });
+    },
+    y: {
+      display: false,
+      beginAtZero: true,
+    },
+  },
+  plugins: {
+    legend: {
+      display: false,
+    },
+  },
+};
+
+const bar16 = new Chart(indexOne, {
+  type: "line",
+  data: chartData,
+  options: chartOptions,
+});
+
+function addStage() {
+  const newLabel = prompt("Enter the label for the new stage:");
+  const newData = parseInt(prompt("Enter the data for the new stage:"));
+
+  if (newLabel && newData) {
+    bar16.data.labels.push(newLabel);
+    bar16.data.datasets[0].data.push(newData);
+    bar16.update();
+  }
+}
+
   </script>
 </body>
 

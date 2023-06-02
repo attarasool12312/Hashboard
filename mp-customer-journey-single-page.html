@@ -25,11 +25,74 @@
   <link href="./assets/css/main.css" rel="stylesheet" />
   <link href="./assets/css/responsive.css" rel="stylesheet" />
 
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.data('stages', () => ({
+        columns: [1, 1, 1, 1, 1],
+
+        addColumn() {
+          this.columns.unshift(1)
+        },
+        removeColumn(i) {
+          this.columns.splice(i, 1);
+        },
+        addSectionRow(type){
+          let countColumns = this.columns.length;
+          let tds = '';
+          console.log(countColumns);
+          switch(type){
+            case 'goal':
+            tds += '<td class="stage-heading">Customer Goals</td>';  
+            for(let i = 1; i<= countColumns;i++){
+                tds += '<template x-for="(i, ind) in columns"><template x-for="j in columns[ind]"><td><div x-data="{ goals: [""] }"><div class="customer-goals"><template x-for="(goal, index) in goals" :key="index"><div class="customerGoals"><input type="text" x-model="goal" :placeholder=""Goal " + (index + 1)"></div></template><div class="w-100 text-center mt-2"><a class="cursor-pointer d-block" @click="goals.push("")"><i class="icon icon-add-stage"></i></a></div></div></div></td></template></template>';
+              }
+              case 'pain':
+            tds += '<td class="stage-heading">Pain pints</td>';
+            for(let i = 1; i<= countColumns;i++){
+                tds += '<template x-for="(i, ind) in columns"><template x-for="j in columns[ind]"><td><div x-data="{ painPints: [{ text: "", description: "" }] }"><div class="pain-pints"><template x-for="(painPint, index) in painPints" :key="index"><div class="painPints mb-3"><div class="pain-pints-input"><input type="text" x-model="painPint.text" :placeholder=""Pain Pint " + (index + 1)"><textarea x-model="painPint.description" :placeholder=""Description " + (index + 1)"></textarea><div class="input-hover-icon"><i class="icon icon-add-stage"></i><i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i><i class="icon icon-close-stage" @click="painPints.splice(index, 1)"></i></div></div></div></template><div class="w-100 text-center mt-2"><a class="cursor-pointer d-block" @click="painPints.push({ text: "", description: "" })"><i class="icon icon-add-stage"></i></a></div></div></div></td></template></template>';
+              }
+              case 'touchpoints':
+            tds += '<td class="stage-heading">Touchpoints Activity</td>';
+            for(let i = 1; i<= countColumns;i++){
+                tds += '<template x-for="(i, ind) in columns"><template x-for="j in columns[ind]"><td><div x-data="{ touchpointActivities: [{ language: "Email", invitation: "" }] }"><div class="touchpoint-activity"><template x-for="(activity, index) in touchpointActivities" :key="index"><div class="touchpointActivity mb-3"><div class="touchpoint-activity-input"><select name="language" id="language" x-model="activity.language"><option value="Email">Email</option><option value="Touchpoint">Touchpoint</option></select><input type="text" x-model="activity.invitation" :placeholder=""Email Invitation " + (index + 1)"><div class="input-hover-icon"><i class="icon icon-add-stage"></i><i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i><i class="icon icon-close-stage" @click="touchpointActivities.splice(index, 1)"></i></div></div></div></template><div class="w-100 text-center mt-2"><a class="cursor-pointer d-block" @click="touchpointActivities.push({ language: "Email", invitation: "" })"><i class="icon icon-add-stage"></i></a></div></div></div></td></template></template>';
+              }
+              case 'department':
+            tds += '<td class="stage-heading">Department Channels</td>';
+            for(let i = 1; i<= countColumns;i++){
+                tds += '<template x-for="(i, ind) in columns"><template x-for="j in columns[ind]"><td><div x-data="{ departmentChannels: [{ language: "", accountManager: "" }] }"><div class="department-channels"><template x-for="(channel, index) in departmentChannels" :key="index"><div class="departmentChannels mb-3"><div class="department-channels-input"><select name="language" id="language" x-model="channel.language"><option value="English">Sales</option><option value="Urdu">Department</option></select><input type="text" x-model="channel.accountManager" placeholder="Account Manager"><div class="input-hover-icon"><i class="icon icon-add-stage"></i><i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i><i class="icon icon-close-stage" @click="departmentChannels.splice(index, 1)"></i></div></div></div></template><div class="w-100 text-center mt-2"><a class="cursor-pointer d-block" @click="departmentChannels.push({ language: "", accountManager: "" })"><i class="icon icon-add-stage"></i></a></div></div></div></td></template></template>';
+              }
+              case 'experience':
+            tds += '<td class="stage-heading"><div class="d-flex"><p>Experience</p><div class="ms-2 d-flex flex-column"><img src="./assets/images/emotion-greate.png" alt=""><img src="./assets/images/emotion-good.png" alt=""><img src="./assets/images/emotion-sad.png" alt=""></div></div></td>';
+            for(let i = 1; i<= countColumns;i++){
+                tds += '<template x-for="(i, ind) in columns"><template x-for="j in columns[ind]"><td><div class="experience"><div class="experience-checkbox"><div class="experience-great"><span><div class="checkbox"><label><input type="checkbox" data-ng-model="example.check"><span class="box"></span></label></div></span></div><div class="experience-good"><span><div class="checkbox"><label><input type="checkbox" data-ng-model="example.check"><span class="box"></span></label></div></span></div><div class="experience-poor"><span><div class="checkbox"><label><input type="checkbox" data-ng-model="example.check"><span class="box"></span></label></div></span></div></div></div></td></template></template>';
+              }
+              case 'processes':
+            tds += '<td class="stage-heading">Processes</td>';
+            for(let i = 1; i<= countColumns;i++){
+                tds += '<template x-for="(i, ind) in columns"><template x-for="j in columns[ind]"><td class="py-4"><div class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto" data-bs-toggle="modal" data-bs-target="#processesModal">+</div><div id="imageContainer" class="text-center"></div></td></template></template>';
+              }
+              case 'mediaImage':
+            tds += '<td class="stage-heading">Media Image</td>';
+            for(let i = 1; i<= countColumns;i++){
+                tds += '<template x-for="(i, ind) in columns"><template x-for="j in columns[ind]"><td><div class="table-media"><div class="upload-file"><div class="file-upload"><figure class="figure" x-data="{ chosenImage: "", fileName: "" }" @click="handleFigureClick"><img :src="chosenImage" id="chosen-image"><i class="icon icon-image-icon-add-stages bg-cover mr-3" x-show="!chosenImage"></i><figcaption id="file-name" x-text="fileName"></figcaption></figure><input type="file" id="upload-button" accept="image/*" @change="handleFileUpload"></div></div></div></td></template></template>';
+              }
+              case 'mediaVideo':
+            tds += '<td class="stage-heading">Media Video</td>';
+            for(let i = 1; i<= countColumns;i++){
+                tds += '<template x-for="(i, ind) in columns"><template x-for="j in columns[ind]"><td><div class="table-media"><div class="video-media" x-data="{ videoLink: "", videoId: "" }" x-init="setVideoId"><input type="url" x-model="videoLink" placeholder="Add a Link"><div x-show="videoId"><iframe :src="`https://www.youtube.com/embed/${videoId}`" frameborder="0" allowfullscreen></iframe></div></div></div></td></template></template>';
+              }
+          }
+          $('#journey-map').append(`<tr>${tds}</tr>`)
+        }
+      }))
+    })
+  </script>
+
 </head>
 
 <body>
-  <section class="section-panel">
+  <section class="section-panel" x-data="stages">
     <div class="admin-wrapper">
       <aside class="aside">
         <div class="left-top">
@@ -168,22 +231,22 @@
           </div>
           <div class="bg-white p-3 journey-map-white">
             <h3 class="border-bottom pb-3">My Journey</h3>
-            <div class="d-flex" x-data="{col: 4}">
+            <div class="d-flex" >
               <table id="journey-map" class="journey-map">
                 <tbody>
                   <tr id="mainStages">
                     <td class="stage-heading">Main Stages</td>
-                    <template x-for="i in col">
-                      <td x-data="{ colspan: 1, showBox: false }" :colspan="colspan">
+                    <template x-for="(i,ind) in columns">
+                      <td x-data="{ colspan: 1, showBox: false }" :colspan="columns[ind]">
                         <div class="main-stage-input">
-                          <input type="text" name="text" id="text" placeholder="Stage Name" @click="showBox = true">
+                          <input type="text" name="text" :id="'text-' + ind" placeholder="Stage Name" @click="showBox = true">
                           <div class="input-hover-icon">
-                            <i class="icon icon-add-stage" @click="colspan = colspan + 1"></i>
+                            <i class="icon icon-add-stage" @click="columns[ind]++"></i>
                             <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
+                            <i @click="removeColumn(ind)" class="icon icon-close-stage"></i>
                           </div>
                         </div>
-                        <div class="sm-box" x-show="showBox">
+                        <div class="sm-box" x-show="showBox" @click.away="showBox = false">
                           <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
                             <span class="d-flex align-items-end">
                               <h3 class="fw-bold">86%</h3>
@@ -197,131 +260,164 @@
                         </div>
                       </td>
                     </template>
-                    
                   </tr>
                   <tr id="subStages">
                     <td class="stage-heading">Sub-Stages</td>
-                    <template x-for="i in col">
-                      <td x-data="{ showSmBox: false }">
-                        <div class="subStage-input">
-                          <input type="text" name="text" id="text" placeholder="Sub Stage Name" x-on:click="showSmBox = true">
-                          <div class="input-hover-icon">
-                            <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                            <i class="icon icon-close-stage"></i>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[columns.length-1-ind]">
+                        <td x-data="{ showSmBox: false }">
+                          <div class="subStage-input">
+                            <input type="text" name="text" id="text" :value="i + '-' + ind" placeholder="Sub Stage Name"
+                              x-on:click="showSmBox = !showSmBox">
+                            <div class="input-hover-icon">
+                              <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
+                              <i class="icon icon-close-stage" @click="columns[columns.length-1-ind]--"></i>
+                            </div>
                           </div>
-                        </div>
-                        <div class="sm-box" x-show="showSmBox">
-                          <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
-                            <span class="d-flex align-items-end">
-                              <h3 class="fw-bold">86%</h3>
-                              <p class="text-light-gray text-11">Average satisfaction</p>
-                            </span>
-                            <span class=""><i class="icon icon-yellow-star"></i></span>
+                          <div class="sm-box" x-show="showSmBox" @click.away="showSmBox = false">
+                            <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
+                              <span class="d-flex align-items-end">
+                                <h3 class="fw-bold">86%</h3>
+                                <p class="text-light-gray text-11">Average satisfaction</p>
+                              </span>
+                              <span class=""><i class="icon icon-yellow-star"></i></span>
+                            </div>
+                            <div class="w-100 text-center">
+                              <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
+                            </div>
                           </div>
-                          <div class="w-100 text-center">
-                            <i class="icon icon-sm-box-icon mt-3 bg-cover"></i>
-                          </div>
-                        </div>
-                      </td>
+                        </td>
+                      </template>                      
                     </template>
-                    
                   </tr>
                   <tr id="customerGoals">
                     <td class="stage-heading">Customer Goals</td>
-                    <template x-for="i in col">
-                      <td>
-                        <div class="customer-goals">
-                          <div class="customerGoals">
-                            <input type="text" name="text" id="customer-goals" placeholder="Goal 1">
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td>
+                          <div x-data="{ goals: [''] }">
+                            <div class="customer-goals">
+                              <template x-for="(goal, index) in goals" :key="index">
+                                <div class="customerGoals">
+                                  <input type="text" x-model="goal" :placeholder="'Goal ' + (index + 1)">
+                                </div>
+                              </template>
+                              <div class="w-100 text-center mt-2">
+                                <a class="cursor-pointer d-block" @click="goals.push('')"><i
+                                    class="icon icon-add-stage"></i></a>
+                              </div>
+                            </div>
                           </div>
-                          <div class="w-100 text-center mt-2">
-                            <a class="cursor-pointer d-block" onclick="addCustomerGoals()"><i
-                                class="icon icon-add-stage"></i></a>
-                          </div>
-                        </div>
-                      </td>
+                        </td>
+                      </template>
                     </template>
                   </tr>
                   <tr id="painPints">
                     <td class="stage-heading">Pain pints</td>
-                    <template x-for="i in col">
-                      <td>
-                        <div class="pain-pints">
-                          <div class="painPints">
-                            <div class="pain-pints-input">
-                              <input type="text" name="text" id="text" placeholder="Pain Pints">
-                              <textarea name="description" id="description" cols="30" rows="1"
-                                placeholder="Description"></textarea>
-                              <div class="input-hover-icon">
-                                <i class="icon icon-add-stage"></i>
-                                <i class="icon icon-settings" data-bs-toggle="modal"
-                                  data-bs-target="#colorThemeModal"></i>
-                                <i class="icon icon-close-stage"></i>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td>
+                          <div x-data="{ painPints: [{ text: '', description: '' }] }">
+                            <div class="pain-pints">
+                              <template x-for="(painPint, index) in painPints" :key="index">
+                                <div class="painPints mb-3">
+                                  <div class="pain-pints-input">
+                                    <input type="text" x-model="painPint.text"
+                                      :placeholder="'Pain Pint ' + (index + 1)">
+                                    <textarea x-model="painPint.description"
+                                      :placeholder="'Description ' + (index + 1)"></textarea>
+                                    <div class="input-hover-icon">
+                                      <i class="icon icon-add-stage"></i>
+                                      <i class="icon icon-settings" data-bs-toggle="modal"
+                                        data-bs-target="#colorThemeModal"></i>
+                                      <i class="icon icon-close-stage" @click="painPints.splice(index, 1)"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </template>
+                              <div class="w-100 text-center mt-2">
+                                <a class="cursor-pointer d-block"
+                                  @click="painPints.push({ text: '', description: '' })"><i
+                                    class="icon icon-add-stage"></i></a>
                               </div>
                             </div>
                           </div>
-                          <div class="w-100 text-center mt-2">
-                            <a class="cursor-pointer d-block" onclick="addPainPints()"><i
-                                class="icon icon-add-stage"></i></a>
-                          </div>
-                        </div>
-                      </td>
+                        </td>
+                      </template>
                     </template>
                   </tr>
                   <tr id="touchpointsActivity">
                     <td class="stage-heading">Touchpoints Activity</td>
-                    <template x-for="i in col">
-                      <td>
-                        <div class="touchpoint-activity">
-                          <div class="touchpointActivity">
-                            <div class="touchpoint-activity-input">
-                              <select name="language" id="language">
-                                <option value="English">Email</option>
-                                <option value="Urdu">Touchpoint</option>
-                              </select>
-                              <input type="text" placeholder="Email Invitaion">
-                              <div class="input-hover-icon">
-                                <i class="icon icon-add-stage"></i>
-                                <i class="icon icon-settings" data-bs-toggle="modal"
-                                  data-bs-target="#colorThemeModal"></i>
-                                <i class="icon icon-close-stage"></i>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td>
+                          <div x-data="{ touchpointActivities: [{ language: 'Email', invitation: '' }] }">
+                            <div class="touchpoint-activity">
+                              <template x-for="(activity, index) in touchpointActivities" :key="index">
+                                <div class="touchpointActivity mb-3">
+                                  <div class="touchpoint-activity-input">
+                                    <select name="language" id="language" x-model="activity.language">
+                                      <option value="Email">Email</option>
+                                      <option value="Touchpoint">Touchpoint</option>
+                                    </select>
+                                    <input type="text" x-model="activity.invitation"
+                                      :placeholder="'Email Invitation ' + (index + 1)">
+                                    <div class="input-hover-icon">
+                                      <i class="icon icon-add-stage"></i>
+                                      <i class="icon icon-settings" data-bs-toggle="modal"
+                                        data-bs-target="#colorThemeModal"></i>
+                                      <i class="icon icon-close-stage"
+                                        @click="touchpointActivities.splice(index, 1)"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </template>
+                              <div class="w-100 text-center mt-2">
+                                <a class="cursor-pointer d-block"
+                                  @click="touchpointActivities.push({ language: 'Email', invitation: '' })"><i
+                                    class="icon icon-add-stage"></i></a>
                               </div>
                             </div>
                           </div>
-                          <div class="w-100 text-center mt-2">
-                            <a class="cursor-pointer d-block" onclick="addTouchpointActivity()"><i
-                                class="icon icon-add-stage"></i></a>
-                          </div>
-                        </div>
-                      </td>
+
+                        </td>
+                      </template>
                     </template>
                   </tr>
                   <tr id="departmentChannels">
                     <td class="stage-heading">Department Channels</td>
-                    <template x-for="i in col">
-                      <td>
-                        <div class="department-channels">
-                          <div class="departmentChannels">
-                            <div class="department-channels-input">
-                              <select name="language" id="language">
-                                <option value="English">Sales</option>
-                                <option value="Urdu">Department</option>
-                              </select>
-                              <input type="text" placeholder="Account Manager">
-                              <div class="input-hover-icon">
-                                <i class="icon icon-add-stage"></i>
-                                <i class="icon icon-settings" data-bs-toggle="modal"
-                                  data-bs-target="#colorThemeModal"></i>
-                                <i class="icon icon-close-stage"></i>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td>
+                          <div x-data="{ departmentChannels: [{ language: '', accountManager: '' }] }">
+                            <div class="department-channels">
+                              <template x-for="(channel, index) in departmentChannels" :key="index">
+                                <div class="departmentChannels mb-3">
+                                  <div class="department-channels-input">
+                                    <select name="language" id="language" x-model="channel.language">
+                                      <option value="English">Sales</option>
+                                      <option value="Urdu">Department</option>
+                                    </select>
+                                    <input type="text" x-model="channel.accountManager" placeholder="Account Manager">
+                                    <div class="input-hover-icon">
+                                      <i class="icon icon-add-stage"></i>
+                                      <i class="icon icon-settings" data-bs-toggle="modal"
+                                        data-bs-target="#colorThemeModal"></i>
+                                      <i class="icon icon-close-stage" @click="departmentChannels.splice(index, 1)"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </template>
+                              <div class="w-100 text-center mt-2">
+                                <a class="cursor-pointer d-block"
+                                  @click="departmentChannels.push({ language: '', accountManager: '' })"><i
+                                    class="icon icon-add-stage"></i></a>
                               </div>
                             </div>
                           </div>
-                          <div class="w-100 text-center mt-2">
-                            <a class="cursor-pointer d-block" onclick="addDepartmentChannels()"><i
-                                class="icon icon-add-stage"></i></a>
-                          </div>
-                        </div>
-                      </td>
+
+                        </td>
+                      </template>
                     </template>
                   </tr>
                   <tr id="experience">
@@ -335,60 +431,110 @@
                         </div>
                       </div>
                     </td>
-                    <template x-for="i in col">
-                      <td>
-                        <div class="experience">
-                          <div class="experience-checkbox">
-                            <div class="experience-great">
-                              <span>
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" data-ng-model="example.check">
-                                    <span class="box"></span>
-                                  </label>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="experience-good">
-                              <span>
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" data-ng-model="example.check">
-                                    <span class="box"></span>
-                                  </label>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="experience-poor">
-                              <span>
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" data-ng-model="example.check">
-                                    <span class="box"></span>
-                                  </label>
-                                </div>
-                              </span>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td>
+                          <div class="experience">
+                            <div class="experience-checkbox">
+                              <div class="experience-great">
+                                <span>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" data-ng-model="example.check">
+                                      <span class="box"></span>
+                                    </label>
+                                  </div>
+                                </span>
+                              </div>
+                              <div class="experience-good">
+                                <span>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" data-ng-model="example.check">
+                                      <span class="box"></span>
+                                    </label>
+                                  </div>
+                                </span>
+                              </div>
+                              <div class="experience-poor">
+                                <span>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" data-ng-model="example.check">
+                                      <span class="box"></span>
+                                    </label>
+                                  </div>
+                                </span>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </td>
+                        </td>
+                      </template>
                     </template>
                   </tr>
                   <tr id="processes">
                     <td class="stage-heading">Processes</td>
-                    <template x-for="i in col">
-                      <td>
-                        <div class="text-center fs-3 text-fill cursor-pointer w-fit mx-auto">
-                          +
-                        </div>
-                      </td>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td class="py-4">
+                          <div class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto"
+                            data-bs-toggle="modal" data-bs-target="#processesModal">
+                            +
+                          </div>
+                          <div id="imageContainer" class="text-center"></div>
+                        </td>
+                      </template>
+                    </template>
+                  </tr>
+                  <tr id="mediaImage">
+                    <td class="stage-heading">Media Image</td>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td>
+                          <div class="table-media">
+                            <div class="upload-file">
+                              <div class="file-upload">
+                                <figure class="figure" x-data="{ chosenImage: '', fileName: '' }"
+                                  @click="handleFigureClick">
+                                  <img :src="chosenImage" id="chosen-image">
+                                  <i class="icon icon-image-icon-add-stages bg-cover mr-3" x-show="!chosenImage"></i>
+                                  <figcaption id="file-name" x-text="fileName"></figcaption>
+                                </figure>
+                                <input type="file" id="upload-button" accept="image/*" @change="handleFileUpload">
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </template>
+                    </template>
+                  </tr>
+                  <tr id="mediaVideo">
+                    <td class="stage-heading">Media Video</td>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td>
+                          <div class="table-media">
+                            <div class="video-media" x-data="{ videoLink: '', videoId: '' }" x-init="setVideoId">
+                              <input type="url" x-model="videoLink" placeholder="Add a Link">
+                              <div x-show="videoId">
+                                <iframe :src="`https://www.youtube.com/embed/${videoId}`" frameborder="0"
+                                  allowfullscreen></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </template>
                     </template>
                   </tr>
                 </tbody>
               </table>
               <div class="add-stage-button mt-5 ms-3">
-                <button type="button" class="btn fs-6 width-100px p-0" @click="col++">Add Satge</button>
+                <button type="button" class="btn fs-6 width-100px p-0" @click="addColumn">Add Satge</button>
               </div>
+            </div>
+            <div class="add-stage-button mt-5 ms-3">
+              <button type="button" class="btn fs-6 width-100px p-0" data-bs-toggle="modal"
+                data-bs-target="#addSectionModal">Add Section</button>
             </div>
           </div>
         </div>
@@ -489,6 +635,276 @@
         </div>
       </div>
     </div>
+    <div class="modal fade" id="addSectionModal" tabindex="-1" aria-labelledby="addSectionModalLabel" aria-modal="true"
+      role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addSectionModalLabel">Add New Section</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light">
+            <div class="py-4 px-5 text-center">
+              <div class="bg-white p-3 d-flex align-items-center justify-content-between rounded mb-3 cursor-pointer"
+                data-bs-toggle="modal" data-bs-target="#MediaPopupModal">
+                <h5>Media</h5>
+                <i class="icon icon-popup-image"></i>
+              </div>
+              <div class="bg-white p-3 d-flex align-items-center justify-content-between rounded mb-3 cursor-pointer"
+                data-bs-toggle="modal" data-bs-target="#chartPopupModal">
+                <h5>Chart & Graph</h5>
+                <i class="icon icon-chart-graph"></i>
+              </div>
+              <div class="bg-white p-3 d-flex align-items-center justify-content-between rounded mb-3 cursor-pointer"
+                data-bs-toggle="modal" data-bs-target="#textPopupModal">
+                <h5>Text</h5>
+                <i class="icon icon-popup-text bg-cover"></i>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-primary text-uppercase">Next</button>
+            <button type="button" class="btn text-uppercase border border-2" data-bs-dismiss="modal">cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="textPopupModal" tabindex="-1" aria-labelledby="textPopupModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="textPopupModalLabel">Text</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body journey-map-white">
+            <div class="journey-map">
+              <div class="customer-goals cursor-pointer" @click="addSectionRow('goal')">
+                <h5 class="mb-2">Customer Goals</h5>
+                <div class="customerGoals">
+                  <input type="text" name="text" id="customer-goals" placeholder="Goal 1">
+                </div>
+              </div>
+              <div class="pain-pints cursor-pointer" @click="addSectionRow('pain')">
+                <div class="painPints">
+                  <h5 class="mb-2">Pain Pints</h5>
+                  <div class="pain-pints-input">
+                    <input type="text" name="text" id="text" placeholder="Pain Pints">
+                    <textarea name="description" id="description" cols="30" rows="1"
+                      placeholder="Description"></textarea>
+                    <div class="input-hover-icon">
+                      <i class="icon icon-add-stage"></i>
+                      <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
+                      <i class="icon icon-close-stage"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="touchpoint-activity cursor-pointer" @click="addSectionRow('touchpoints')">
+                <h5 class="mb-2">Touchpoints Activity</h5>
+                <div class="touchpointActivity">
+                  <div class="touchpoint-activity-input">
+                    <select name="language" id="language">
+                      <option value="English">Email</option>
+                      <option value="Urdu">Touchpoint</option>
+                    </select>
+                    <input type="text" placeholder="Email Invitaion">
+                    <div class="input-hover-icon">
+                      <i class="icon icon-add-stage"></i>
+                      <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
+                      <i class="icon icon-close-stage"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="department-channels cursor-pointer" @click="addSectionRow('department')">
+                <h5 class="mb-2">Department Channels</h5>
+                <div class="departmentChannels">
+                  <div class="department-channels-input">
+                    <select name="language" id="language">
+                      <option value="English">Sales</option>
+                      <option value="Urdu">Department</option>
+                    </select>
+                    <input type="text" placeholder="Account Manager">
+                    <div class="input-hover-icon">
+                      <i class="icon icon-add-stage"></i>
+                      <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
+                      <i class="icon icon-close-stage"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-100 h-100 cursor-pointer" @click="addSectionRow('processes')">
+                <h5 class="mb-2">Processes</h5>
+                <div class="text-center fs-3 text-fill w-fit mx-auto">
+                  +
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="MediaPopupModal" tabindex="-1" aria-labelledby="MediaPopupModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="MediaPopupModalLabel">Media</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body journey-map-white">
+            <div class="journey-map">
+              <div class="table-media cursor-pointer" @click="addSectionRow('mediaImage')">
+                <div class="upload-file">
+                  <div class="file-upload">
+                    <figure class="figure" x-data="{ chosenImage: '', fileName: '' }" @click="handleFigureClick">
+                      <img :src="chosenImage" id="chosen-image">
+                      <i class="icon icon-image-icon-add-stages bg-cover mr-3" x-show="!chosenImage"></i>
+                      <figcaption id="file-name" x-text="fileName"></figcaption>
+                    </figure>
+                    <input type="file" id="upload-button" accept="image/*" @change="handleFileUpload">
+                  </div>
+                </div>
+              </div>
+              <div class="table-media cursor-pointer" @click="addSectionRow('mediaVideo')">
+                <div class="upload-file">
+                  <div class="file-upload">
+                    <figure class="figure" x-data="{ chosenImage: '', fileName: '' }" @click="handleFigureClick">
+                      <img :src="chosenImage" id="chosen-image">
+                      <i class="icon icon-video-icon-add-stages bg-cover mr-3" x-show="!chosenImage"></i>
+                      <figcaption id="file-name" x-text="fileName"></figcaption>
+                    </figure>
+                    <input type="file" id="upload-button" accept="image/*" @change="handleFileUpload">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="chartPopupModal" tabindex="-1" aria-labelledby="chartPopupModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="chartPopupModalLabel">Media</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body journey-map-white">
+            <div class="journey-map">
+              <div class="experience cursor-pointer" @click="addSectionRow('experience')">
+                <h5 class="mb-2">Experience</h5>
+                <div class="experience-checkbox">
+                  <div class="experience-great">
+                    <span>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" data-ng-model="example.check">
+                          <span class="box"></span>
+                        </label>
+                      </div>
+                    </span>
+                  </div>
+                  <div class="experience-good">
+                    <span>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" data-ng-model="example.check">
+                          <span class="box"></span>
+                        </label>
+                      </div>
+                    </span>
+                  </div>
+                  <div class="experience-poor">
+                    <span>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" data-ng-model="example.check">
+                          <span class="box"></span>
+                        </label>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="processesModal" tabindex="-1" aria-labelledby="processesModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="processesModalLabel">Configure Process</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex align-items-center cursor-pointer">
+              <svg data-v-38367b91="" version="1.1" viewBox="0 0 101 73.3"
+                class="svg-icon svg-fill process-menu__icon linear" style="width: 200px;">
+                <path fill="#99A4B0" stroke="none" pid="0"
+                  d="M100.1 35l-9.5-9.6c-1-1-2.6-1-3.5 0-1 1-1 2.6 0 3.6l4.8 4.9H3.4C2 33.9.7 35 .7 36.5c0 1.4 1.2 2.6 2.7 2.6h89.1l-5.1 5.2c-1 1-1 2.6 0 3.6.5.5 1.1.8 1.8.8.6 0 1.3-.2 1.8-.7l9.1-9.3c.5-.5.7-1.1.7-1.8s-.3-1.4-.7-1.9z"
+                  _fill="#99a4b0"></path>
+              </svg>
+              <div class="ms-3">
+                <h6 class="fw-600">Linear</h6>
+                <p class="text-light-gray">Linear processes imply there's a set of required steps, one by one, customer
+                  should take. They can't
+                  go from A to C without B.</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center mt-3 cursor-pointer">
+              <svg data-v-38367b91="" version="1.1" viewBox="0 0 101 73.3"
+                class="svg-icon svg-fill process-menu__icon non-linear" style="width: 200px;">
+                <path fill="#99A4B0" stroke="none" pid="0"
+                  d="M98.2 43.8c-1.7 0-3 1.3-3 3v7.8l-27.3-45c-.6-.9-1.6-1.4-2.6-1.4s-2 .5-2.5 1.4L34.9 55.1 5.8 9.6c-.9-1.4-2.7-1.8-4.1-.9s-1.8 2.7-.9 4.1l31.6 49.5c.6.9 1.5 1.4 2.6 1.4 1 0 2-.5 2.5-1.4L65.3 17 91 59.1h-7.5c-1.7 0-3 1.3-3 3s1.3 3 3 3h14.7c1.6 0 3-1.4 3-3V46.8c0-1.7-1.3-3-3-3z"
+                  _fill="#99a4b0"></path>
+              </svg>
+              <div class="ms-3">
+                <h6 class="fw-600">Non-linear time-based</h6>
+                <p class="text-light-gray">Non-linear processes give customers some freedom in going from A to C - the
+                  start/end points are known, but the sequence of actions can differ.</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center mt-3 cursor-pointer">
+              <svg data-v-38367b91="" version="1.1" viewBox="0 0 101 73.3"
+                class="svg-icon svg-fill process-menu__icon ongoing" style="width: 200px;">
+                <path fill="#99A4B0" stroke="none" pid="0"
+                  d="M51.2 0c-9.4 0-18 3.6-24.5 9.4l-12.4 1.5c-1.6.2-2.8 1.7-2.6 3.4.2 1.6 1.7 2.8 3.3 2.6l5.8-.7c-4 5.8-6.3 12.9-6.3 20.5 0 20.2 16.4 36.6 36.6 36.6s36.6-16.4 36.6-36.6C87.9 16.4 71.4 0 51.2 0zm0 67.3c-16.9 0-30.6-13.7-30.6-30.6 0-6.2 1.9-12 5-16.8l.7 5.4c.2 1.5 1.5 2.6 3 2.6h.4c1.6-.2 2.8-1.7 2.6-3.3L31 13.9C36.3 8.9 43.4 6 51.2 6c16.9 0 30.6 13.7 30.6 30.6.1 16.9-13.7 30.7-30.6 30.7z"
+                  _fill="#99a4b0"></path>
+              </svg>
+              <div class="ms-3">
+                <h6 class="fw-600">Ongoing, non-linear</h6>
+                <p class="text-light-gray">Ongoing, non-linear (or “cyclic”) processes are repeating from time to time
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center mt-3 cursor-pointer">
+              <svg data-v-38367b91="" version="1.1" viewBox="0 0 101 73.3"
+                class="svg-icon svg-fill process-menu__icon bidirectional" style="width: 200px;">
+                <path fill="#99A4B0" stroke="none" pid="0"
+                  d="M100 35l-9.5-9.6c-1-1-2.6-1-3.5 0-1 1-1 2.6 0 3.6l4.8 4.9H9.6l4.8-4.9c1-1 1-2.6 0-3.6-.9-1-2.5-1-3.5 0L1.4 35c-.4.5-.7 1.2-.7 1.9 0 .8.2 1.3.7 1.8l9.1 9.3c.5.5 1.2.7 1.8.7.7 0 1.3-.3 1.8-.8 1-1 1-2.6 0-3.6L9 39.1h83.4l-5.1 5.2c-1 1-1 2.6 0 3.6.5.5 1.1.8 1.8.8.6 0 1.3-.2 1.8-.7l9.1-9.3c.5-.5.7-1.1.7-1.8s-.3-1.4-.7-1.9z"
+                  _fill="#99a4b0"></path>
+              </svg>
+              <div class="ms-3">
+                <h6 class="fw-600">Bi-directional</h6>
+                <p class="text-light-gray">Linear processes, where one tasks leads to another one and customer can go
+                  back to the previous step.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-primary">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- JavaScript
@@ -501,11 +917,47 @@
 
 
   <script>
-    // $(document).ready(function() {
-    //   $("#text").on("click", function() {
-    //     $(".sm-box").addClass("d-block");
-    //   });
-    // });
+    document.addEventListener('DOMContentLoaded', () => {
+      let uploadButton = document.getElementById("upload-button");
+      let chosenImage = document.getElementById("chosen-image");
+
+      uploadButton.onchange = () => {
+        let reader = new FileReader();
+        reader.readAsDataURL(uploadButton.files[0]);
+        reader.onload = () => {
+          chosenImage.setAttribute("src", reader.result);
+          chosenImage.style.zIndex = "1"; // Set the z-index value for the image element
+        }
+      };
+
+      let handleFigureClick = () => {
+        uploadButton.click();
+      };
+
+      let figureElement = document.querySelector(".figure");
+      figureElement.addEventListener("click", handleFigureClick);
+    });
+
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.getElementById('processesModal');
+      const imageContainer = document.getElementById('imageContainer');
+      const processesDiv = document.querySelector('.processes');
+
+      function addImageToContainer(event) {
+        const svgIcon = event.target.outerHTML;
+        imageContainer.innerHTML = svgIcon;
+        modal.classList.remove('show');
+        processesDiv.remove();
+      }
+
+      const svgImages = document.querySelectorAll('.svg-icon');
+      svgImages.forEach(svg => {
+        svg.addEventListener('click', addImageToContainer);
+      });
+    });
   </script>
 </body>
 

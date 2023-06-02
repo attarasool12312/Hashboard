@@ -168,52 +168,75 @@
               <button type="button" class="btn ouline-white btn-fill me-md-3 wsm-100 mt-3 mt-md-0">Save</button>
             </div>
           </div>
-          <div class="felling-chart">
-            <div class="fill-dot">
-              <p>Describe the situation</p>
+          <div class="overflow-x">
+            <div class="felling-chart">
+              <div id="container">
+                <div class="draggable-icon" id="icon1">
+                  <p>
+                    <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
+                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+                  </p>
+                </div>
+                <div class="draggable-icon" id="icon2">
+                  <p>
+                    <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
+                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+                  </p>
+                </div>
+                <div class="draggable-icon" id="icon3">
+                  <p>
+                    <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
+                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+                  </p>
+                </div>
+                <div class="draggable-icon" id="icon4">
+                  <p>
+                    <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
+                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+                  </p>
+                </div>
+                <div class="draggable-icon" id="icon5">
+                  <p>
+                    <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
+                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+                  </p>
+                </div>
+                <canvas id="canvas"></canvas>
+              </div>
             </div>
-            <div class="fill-dot">
-              <p>Describe the next step, add feelings</p>
-            </div>
-            <div class="fill-dot">
-              <p>Describe the next step, add feelings</p>
-            </div>
-            <div class="fill-dot">
-              <p>Describe the next step, add feelings</p>
-            </div>
-          </div>
-          <div class="chart-box1" id="chartBox">
-            <div class="step-box">
-              <p>
-                <input type="text" placeholder="Step 1"
-                class="border-0 input-white text-center outline-none bg-transparent w-100">
-              </p>
-              <textarea name="" id="" cols="30" rows="12"
-              class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-            </div>
-            <div class="step-box">
-              <p>
-                <input type="text" placeholder="Step 2"
-                class="border-0 input-white text-center outline-none bg-transparent w-100">
-              </p>
-              <textarea name="" id="" cols="30" rows="12"
-              class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-            </div>
-            <div class="step-box">
-              <p>
-                <input type="text" placeholder="Step 3"
-                class="border-0 input-white text-center outline-none bg-transparent w-100">
-              </p>
-              <textarea name="" id="" cols="30" rows="12"
-              class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-            </div>
-            <div class="step-box">
-              <p>
-                <input type="text" placeholder="Step 4"
-                class="border-0 input-white text-center outline-none bg-transparent w-100">
-              </p>
-              <textarea name="" id="" cols="30" rows="12"
-              class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+            <div class="chart-box1" id="chartBox">
+              <div class="step-box">
+                <p>
+                  <input type="text" placeholder="Step 1"
+                  class="border-0 input-white text-center outline-none bg-transparent w-100">
+                </p>
+                <textarea name="" id="" cols="30" rows="12"
+                class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+              </div>
+              <div class="step-box">
+                <p>
+                  <input type="text" placeholder="Step 2"
+                  class="border-0 input-white text-center outline-none bg-transparent w-100">
+                </p>
+                <textarea name="" id="" cols="30" rows="12"
+                class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+              </div>
+              <div class="step-box">
+                <p>
+                  <input type="text" placeholder="Step 3"
+                  class="border-0 input-white text-center outline-none bg-transparent w-100">
+                </p>
+                <textarea name="" id="" cols="30" rows="12"
+                class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+              </div>
+              <div class="step-box">
+                <p>
+                  <input type="text" placeholder="Step 4"
+                  class="border-0 input-white text-center outline-none bg-transparent w-100">
+                </p>
+                <textarea name="" id="" cols="30" rows="12"
+                class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+              </div>
             </div>
           </div>
         </div>
@@ -224,18 +247,83 @@
   <!-- JavaScript
 ================================================== -->
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
 
   <script>
     var stages = 4;
+    var stages1 = 5;
 
 function addSection() {
 
   stages++;
+  stages1++;
   $('#chartBox').append(`<div class="step-box"><p><input type="text" placeholder="Step ${stages}" class="border-0 input-white text-center outline-none bg-transparent w-100"></p><textarea name="" id="" cols="30" rows="12" class="w-100 border-0 rounded bg-transparent outline-none"></textarea></div>`);
+  $('#container').append(`<div class="draggable-icon" id="icon${stages1}"><p><textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation" class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div>`);
 }
+
+
+
+$(document).ready(function () {
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+      var icons = $(".draggable-icon");
+
+      // Initialize line position and draw it
+      updateLinePosition();
+      drawLine();
+
+      // Update line position and redraw on drag event
+      icons.draggable({
+        axis: "y", // Restrict movement to vertical axis
+        drag: function (event, ui) {
+          ui.position.left = ui.originalPosition.left; // Maintain the original left position
+          updateLinePosition();
+          drawLine();
+        }
+      });
+
+      // Update line position and redraw on window resize
+      $(window).resize(function () {
+        updateLinePosition();
+        drawLine();
+      });
+
+      function updateLinePosition() {
+        var positions = [];
+
+        // Get the center positions of all icons
+        icons.each(function (index, element) {
+          var rect = element.getBoundingClientRect();
+          var x = rect.left + rect.width / 2;
+          var y = rect.top + rect.height / 2;
+          positions.push({ x: x, y: y });
+        });
+
+        // Update canvas size to match container size
+        canvas.width = $("#container").width();
+        canvas.height = $("#container").height();
+
+        // Update line position
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.setLineDash([4, 2]);
+        ctx.moveTo(positions[0].x, positions[0].y); // Start the line from the first icon
+
+        for (var i = 1; i < positions.length; i++) {
+          ctx.lineTo(positions[i].x, positions[i].y);
+        }
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+      }
+
+      function drawLine() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        updateLinePosition();
+      }
+    });
   </script>
 </body>
 

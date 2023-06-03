@@ -24,6 +24,9 @@
   <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
   <link href="./assets/css/main.css" rel="stylesheet" />
   <link href="./assets/css/responsive.css" rel="stylesheet" />
+  <script
+    src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -42,29 +45,28 @@
             </div>
           </div>
           <ul>
-            <li><a href="./admin-dashboard.html" class="panel_link"><i class="icon icon-overviwe"></i>
+            <li><a href="./admin-dashboard.html" class="panel_link "><i class="icon icon-overviwe"></i>
                 <span>Dashboard</span></a>
             </li>
             <li class="nav-item panel-dropdown position-relative">
-              <a href="./admin-finace.html" class="mb-auto panel_link active_panel"><i
-                  class="icon icon-bar-companies"></i>
+              <a href="./admin-finace.html" class="mb-auto panel_link"><i class="icon icon-bar-companies"></i>
                 <span>Finance</span></a>
               <div>
                 <a class="dropdown-btn nav-link dropdown-toggle position-absolute" href="" id="Setting-Dropdown"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false" style="top: 11px; right: 0;">
                 </a>
                 <ul class="Setting-Dropdown m-0" aria-labelledby="Setting-Dropdown">
-                  <li><a class="dropdown-item panel_link active_panel"
-                      href="./admin-finace-payment.html"><span>Payments</span></a></li>
+                  <li><a class="dropdown-item panel_link" href="./admin-finace-payment.html"><span>Payments</span></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li><a href="./admin-promotion-code.html" class="panel_link"><i class="icon icon-overviwe"></i>
                 <span>Promotion Code</span></a></li>
-            <li><a href="./admin-edit-page.html" class="panel_link"><i class="icon icon-overviwe"></i> <span>Edit
-                  Page</span></a></li>
-                  <li><a href="./admin-edit-page.html" class="panel_link active_panel"><i class="icon icon-overviwe"></i>
-                    <span>Edit Pricing Page</span></a></li>
+            <li><a href="./admin-edit-page.html" class="panel_link"><i class="icon icon-overviwe"></i>
+                <span>Edit Page</span></a></li>
+            <li><a href="./admin-edit-page.html" class="panel_link active_panel"><i class="icon icon-overviwe"></i>
+                <span>Edit Pricing Page</span></a></li>
             <li><a href="./admin-applications-api.html" class="panel_link"><i class="icon icon-overviwe"></i>
                 <span>Applications API</span></a></li>
             <li class="nav-item panel-dropdown">
@@ -172,220 +174,103 @@
         </div>
         <div class="container">
           <div class="page-main-title">
-            <h1>Payments</h1>
+            <h1>Edit Pricing Page</h1>
           </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="text-end">
-                <div class="dropdown select-dropdown">
-                  <button class="btn dropdown-toggle pe-5 border-0" type="button" id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Month
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">January</a></li>
-                    <li><a class="dropdown-item" href="#">February</a></li>
-                    <li><a class="dropdown-item" href="#">March</a></li>
-                    <li><a class="dropdown-item" href="#">April</a></li>
-                    <li><a class="dropdown-item" href="#">May</a></li>
-                    <li><a class="dropdown-item" href="#">June</a></li>
-                    <li><a class="dropdown-item" href="#">July</a></li>
-                    <li><a class="dropdown-item" href="#">August</a></li>
-                    <li><a class="dropdown-item" href="#">September</a></li>
-                    <li><a class="dropdown-item" href="#">October</a></li>
-                    <li><a class="dropdown-item" href="#">November</a></li>
-                    <li><a class="dropdown-item" href="#">December</a></li>
-                  </ul>
+          <ul class="nav nav-tabs bg-white rounded p-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-uppercase active" id="Monthly-tab" data-bs-toggle="tab"
+                data-bs-target="#Monthly" type="button" role="tab" aria-controls="Monthly"
+                aria-selected="true">Monthly</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-uppercase" id="Yearly-tab" data-bs-toggle="tab" data-bs-target="#Yearly"
+                type="button" role="tab" aria-controls="Yearly" aria-selected="true">Yearly</button>
+            </li>
+          </ul>
+          <div class="tab-content mt-3">
+            <div class="tab-pane active" id="Monthly" role="tabpanel" aria-labelledby="Monthly-tab">
+              <div class="bg-white p-3 rounded">
+                <div>
+                  <h2 class="fw-600">PM Management</h2>
+                  <label for="name" class="fw-bold my-2">Edit Price</label>
+                  <input type="text" name="name" id="name" placeholder="Edit Price"
+                    class="d-block w-100 border border-2 rounded px-4 py-2">
+                  <div class="w-100 text-end">
+                    <button type="button" class="btn ouline-white btn-fill mt-3 px-5">Save</button>
+                  </div>
+                  <h2 class="fw-600">CRM Management</h2>
+                  <label for="name" class="fw-bold my-2">Edit Price</label>
+                  <input type="text" name="name" id="name" placeholder="Edit Price"
+                    class="d-block w-100 border border-2 rounded px-4 py-2">
+                  <div class="w-100 text-end">
+                    <button type="button" class="btn ouline-white btn-fill mt-3 px-5">Save</button>
+                  </div>
+                  <h2 class="fw-600">Finance Management</h2>
+                  <label for="name" class="fw-bold my-2">Edit Price</label>
+                  <input type="text" name="name" id="name" placeholder="Edit Price"
+                    class="d-block w-100 border border-2 rounded px-4 py-2">
+                  <div class="w-100 text-end">
+                    <button type="button" class="btn ouline-white btn-fill mt-3 px-5">Save</button>
+                  </div>
+                  <h2 class="fw-600">SM Management</h2>
+                  <label for="name" class="fw-bold my-2">Edit Price</label>
+                  <input type="text" name="name" id="name" placeholder="Edit Price"
+                    class="d-block w-100 border border-2 rounded px-4 py-2">
+                  <div class="w-100 text-end">
+                    <button type="button" class="btn ouline-white btn-fill mt-3 px-5">Save</button>
+                  </div>
+                  <h2 class="fw-600">Customer Experience Management</h2>
+                  <label for="name" class="fw-bold my-2">Edit Price</label>
+                  <input type="text" name="name" id="name" placeholder="Edit Price"
+                    class="d-block w-100 border border-2 rounded px-4 py-2">
+                  <div class="w-100 text-end">
+                    <button type="button" class="btn ouline-white btn-fill mt-3 px-5">Save</button>
+                  </div>
                 </div>
               </div>
-              <div class="row mt-4">
-                <div class="col-12 col-md-8">
-                  <div
-                    class="edward-profile rounded d-flex justify-content-between align-items-md-center flex-colume-sm bg-white p-3 mb-3">
-                    <div class="d-flex align-items-md-center">
-                      <img src="./assets/images/profile-3.png" alt="">
-                      <div class="ms-2">
-                        <h6 class="text-sm">Edward Houston</h6>
-                        <p class="text-small">ID76106</p>
-                      </div>
-                    </div>
-                    <div class="mt-3 mt-md-0">
-                      <p class="text-small">EARNING</p>
-                      <h6 class="text-sm">$60,000.00</h6>
-                    </div>
-                    <div class="mt-3 mt-md-0">
-                      <p class="text-small">DEDUCTION</p>
-                      <h6 class="text-sm">$660.00</h6>
-                    </div>
-                    <div class="mt-3 mt-md-0">
-                      <p class="text-small">NET INCOME</p>
-                      <h6 class="text-sm">$5,340.00</h6>
-                    </div>
-                    <button class="download-btn border mt-3 mt-md-0">Download</button>
-                    <a href="#" class="mt-3 mt-md-0 text-end"><i class="icon icon-dots"></i></a>
+            </div>
+            <div class="tab-pane active" id="Yearly" role="tabpanel" aria-labelledby="Yearly-tab">
+              <div class="bg-white p-3 rounded">
+                <div>
+                  <h2 class="fw-600">PM Management</h2>
+                  <label for="name" class="fw-bold my-2">Edit Price</label>
+                  <input type="text" name="name" id="name" placeholder="Edit Price"
+                    class="d-block w-100 border border-2 rounded px-4 py-2">
+                  <div class="w-100 text-end">
+                    <button type="button" class="btn ouline-white btn-fill mt-3 px-5">Save</button>
                   </div>
-
-                  <div class="bg-white p-3 rounded">
-                    <div class="earning-table payroll-table">
-                      <table class="table payroll-table-top">
-                        <thead>
-                          <tr>
-                            <th scope="col" class="text-light-gray">EARNINGS</th>
-                            <th scope="col" class="text-light-gray">YEAR TO DATE</th>
-                            <th scope="col" class="text-light-gray">CURRENT PERIOD</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Salary</td>
-                            <td>$10,000.00</td>
-                            <td>$5,000.00</td>
-                          </tr>
-                          <tr>
-
-                            <td>Bonus</td>
-                            <td>$1000.00</td>
-                            <td>$1,000.00</td>
-                          </tr>
-
-                          <tr>
-                            <td>Total Earnings</td>
-                            <td>$11,000.00</td>
-                            <td class="text-danger">$6,000.00</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-
-
-                    <div class="deduction-table payroll-table earning-table">
-                      <table class="table payroll-table-top">
-                        <thead>
-                          <tr>
-
-                            <th scope="col">DEDUCTIONS</th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Travel Allowance</td>
-                            <td>$1,210.00</td>
-                            <td>$660.00</td>
-                          </tr>
-                          <tr>
-
-                            <td>Income Tax</td>
-                            <td>$19.75</td>
-                            <td>$0.00</td>
-                          </tr>
-
-                          <tr>
-                            <td>Total Deductions</td>
-                            <td>$1229.75</td>
-                            <td class="text-danger">$660.00</td>
-                          </tr>
-
-                          <tr class="active-tab">
-                            <td>Net Income</td>
-                            <td></td>
-                            <td>$5,340.00</td>
-                          </tr>
-
-                          <tr>
-                            <td>Taxable Income</td>
-                            <td></td>
-                            <td>$6,000.00</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <p class="text-light-gray p-3 text-small">Note that a complete list of the year-to-date total for
-                        all payroll items can be found by
-                        logging into workforce.trybe.tech
-                        Tax calculations are based on Employee Attributes: Single, 2 Children: 2 Under 18 or In
-                        Education(100%)
-                        Contributions on Income Tax are calculated based on the rates
-                        11.00% (employee) and 12.00% (employer)
-
-                      </p>
-                    </div>
+                  <h2 class="fw-600">CRM Management</h2>
+                  <label for="name" class="fw-bold my-2">Edit Price</label>
+                  <input type="text" name="name" id="name" placeholder="Edit Price"
+                    class="d-block w-100 border border-2 rounded px-4 py-2">
+                  <div class="w-100 text-end">
+                    <button type="button" class="btn ouline-white btn-fill mt-3 px-5">Save</button>
                   </div>
-
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="bg-white payroll-right rounded p-2 mt-3 mt-md-0">
-                    <div class="payslip-details pt-3 earning-table">
-                      <table class="table payroll-table-top">
-                        <thead>
-                          <tr>
-                            <th scope="col">PAYSLIP DETAILS</th>
-                            <th scope="col"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Period</td>
-                            <td>November 2020</td>
-                          </tr>
-                          <tr>
-                            <td>Issue Date</td>
-                            <td>29 November, 2020</td>
-                          </tr>
-                          <tr>
-                            <td>ID Number</td>
-                            <td>4308</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="employee-details py-3 earning-table">
-                      <table class="table payroll-table-top">
-                        <thead>
-                          <tr>
-                            <th scope="col">EMPLOYEE DETAILS</th>
-                            <th scope="col"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Full Name</td>
-                            <td>Edward Houston</td>
-                          </tr>
-                          <tr>
-                            <td>Position</td>
-                            <td>VP of Finance</td>
-                          </tr>
-                          <tr>
-                            <td>ID/Passport Number</td>
-                            <td>B2947276</td>
-                          </tr>
-                          <tr>
-                            <td>Income Tax Number</td>
-                            <td>12345678</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="company-details py-4">
-                      <h6 class="mb-2 fw-bold">COMPANY DETAILS</h6>
-                      <div class="mb-2 company-detail-title">
-                        <h6 class="fw-bold">Alphabet Company Inc.</h6>
-                      </div>
-
-                      <div class="company-desc">
-                        <p class="text-light-gray text-small fw-bold">Level 11, Menara KEN TTDI, N0, 37 <br>
-                          Jalan Burhanuddin Helmi, Taman Tun Dr Ismail <br>
-                          60000 Kuala Lumpur, Malaysia
-                        </p>
-                      </div>
-                    </div>
+                  <h2 class="fw-600">Finance Management</h2>
+                  <label for="name" class="fw-bold my-2">Edit Price</label>
+                  <input type="text" name="name" id="name" placeholder="Edit Price"
+                    class="d-block w-100 border border-2 rounded px-4 py-2">
+                  <div class="w-100 text-end">
+                    <button type="button" class="btn ouline-white btn-fill mt-3 px-5">Save</button>
+                  </div>
+                  <h2 class="fw-600">SM Management</h2>
+                  <label for="name" class="fw-bold my-2">Edit Price</label>
+                  <input type="text" name="name" id="name" placeholder="Edit Price"
+                    class="d-block w-100 border border-2 rounded px-4 py-2">
+                  <div class="w-100 text-end">
+                    <button type="button" class="btn ouline-white btn-fill mt-3 px-5">Save</button>
+                  </div>
+                  <h2 class="fw-600">Customer Experience Management</h2>
+                  <label for="name" class="fw-bold my-2">Edit Price</label>
+                  <input type="text" name="name" id="name" placeholder="Edit Price"
+                    class="d-block w-100 border border-2 rounded px-4 py-2">
+                  <div class="w-100 text-end">
+                    <button type="button" class="btn ouline-white btn-fill mt-3 px-5">Save</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </main>
     </div>
     <div class="modal right fade" id="SettingForm" tabindex="-1" aria-labelledby="interviewLabel" aria-hidden="true">
@@ -559,8 +444,6 @@
       </div>
     </div>
   </section>
-
-
   <!-- JavaScript
 ================================================== -->
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
@@ -568,9 +451,6 @@
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="./assets/owlcarousel/owl.carousel.min.js"></script> -->
   <script src="./assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./assets/js/graphs-popup.js"></script>
-  <script src="./assets/js/graphs.js"></script>
 </body>
 
 </html>

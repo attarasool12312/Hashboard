@@ -83,7 +83,14 @@
             <label class="form-check-label fs-5" for="flexCheckDefault">
               Select All Apps for 499 SAR
             </label>
-            <input class="form-check-input d-block mt-2" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input d-block mt-2" type="checkbox" value="" id="selectAll">
+          </div>
+        </div>
+        <div class="w-100 d-flex mt-3">
+          <div class="form-check form-switch pricing-button">
+            <label class="form-check-label" for="switchCheck">MONTHLY</label>
+            <input class="form-check-input d-block prices-show" type="checkbox" id="switchCheck">
+            <label class="form-check-label" for="switchCheck">YEARLY</label>
           </div>
         </div>
         <div class="services">
@@ -92,10 +99,12 @@
               <label class="form-check-label" for="flexRadioDefault1">
                 Select
               </label>
-              <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input d-block" type="checkbox" value="" id="checkbox1">
             </div>
             <img src="./assets/images/crm-tab.png" alt="">
             <h3>CRM</h3>
+            <h2 class="fw-600 prices active">$99</h2>
+            <h2 class="fw-600 prices-yearly">$499</h2>
             <ul>
               <li>Customize Stages</li>
               <li>Create Customer Profile</li>
@@ -111,10 +120,12 @@
               <label class="form-check-label" for="flexRadioDefault1">
                 Select
               </label>
-              <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input d-block" type="checkbox" value="" id="checkbox2">
             </div>
             <img src="./assets/images/project-management.png" alt="">
             <h3>Project Management</h3>
+            <h2 class="fw-600 prices active">$89</h2>
+            <h2 class="fw-600 prices-yearly">$350</h2>
             <ul>
               <li>Measure Your Project Performance</li>
               <li>Live Dashboard</li>
@@ -130,10 +141,12 @@
               <label class="form-check-label" for="flexRadioDefault1">
                 Select
               </label>
-              <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input d-block" type="checkbox" value="" id="checkbox3">
             </div>
             <img src="./assets/images/finance-image.png" alt="">
             <h3>Finance</h3>
+            <h2 class="fw-600 prices active">$90</h2>
+            <h2 class="fw-600 prices-yearly">$450</h2>
             <ul>
               <li>Create Invoices Using Templates</li>
               <li>Push invoices and any associated notes to the ZATCA portal for authentication</li>
@@ -144,17 +157,19 @@
               <li>Fully Integrated with Hashboard project management & CRM</li>
             </ul>
           </div>
-          </div>
-          <div class="services">
+        </div>
+        <div class="services">
           <div class="product-card">
             <div class="form-check">
               <label class="form-check-label" for="flexRadioDefault1">
                 Select
               </label>
-              <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input d-block" type="checkbox" value="" id="checkbox4">
             </div>
             <img src="./assets/images/social-media.png" alt="">
             <h3>Social Media</h3>
+            <h2 class="fw-600 prices active">$110</h2>
+            <h2 class="fw-600 prices-yearly">$400</h2>
             <ul>
               <li>One Time Post To All Social Media Accounts</li>
               <li>Schedule Post</li>
@@ -171,10 +186,12 @@
               <label class="form-check-label" for="flexRadioDefault1">
                 Select
               </label>
-              <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input d-block" type="checkbox" value="" id="checkbox5">
             </div>
             <img src="./assets/images/customer-experience.png" alt="">
             <h3>Customer Experience</h3>
+            <h2 class="fw-600 prices active">$100</h2>
+            <h2 class="fw-600 prices-yearly">$500</h2>
             <ul>
               <li>Can Create & Send Surveys</li>
               <li>Initiative Management</li>
@@ -242,11 +259,11 @@
                 <button type="button" class="btn ouline-white border border-2 w-100 mt-3 text-small">Credit
                   Card</button>
                 <div class="d-flex align-items-center mt-3 card-payment">
-                  <img src="./assets/images/visa.png" alt="">
-                  <img src="./assets/images/amex.png" alt="">
-                  <img src="./assets/images/mastercard.png" alt="">
-                  <img src="./assets/images/jcb.png" alt="">
-                  <img src="./assets/images/5-payment.png" alt="">
+                  <img src="./assets/images/visa.png" alt="" class="cursor-pointer">
+                  <img src="./assets/images/amex.png" alt="" class="cursor-pointer">
+                  <img src="./assets/images/mastercard.png" alt="" class="cursor-pointer">
+                  <img src="./assets/images/jcb.png" alt="" class="cursor-pointer">
+                  <img src="./assets/images/5-payment.png" alt="" class="cursor-pointer">
                 </div>
                 <div class="row">
                   <div class="col-8">
@@ -311,10 +328,15 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
   <script>
-    $(document).ready(function () {
-      $('#flexCheckDefault').on('click', function () {
-        $('.form-check-input').prop('checked', $(this).prop('checked'));
-      });
+$(document).ready(function () {
+  $('#selectAll').on('click', function () {
+    $('.form-check-input').prop('checked', $(this).prop('checked'));
+  });
+});
+
+    $(".prices-show").click(function () {
+      $(".prices").toggleClass("active");
+      $(".prices-yearly").toggleClass("active");
     });
   </script>
 

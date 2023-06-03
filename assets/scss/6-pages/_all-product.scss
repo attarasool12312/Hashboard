@@ -134,6 +134,12 @@
           width: 150px;
         }
       }
+      h2{
+        display: none;
+        &.active{
+          display: block;
+        }
+      }
 
       .form-check {
         width: fit-content;
@@ -213,4 +219,15 @@
 .contact-section{
   background-color: #FFFFFF;
   padding: 50px 0 100px;
+}
+.pricing-button{
+  margin: 0 auto;
+  label{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .form-check-input {
+    width: 60px !important;
+    height: 34px !important;
+  }
 }

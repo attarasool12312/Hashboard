@@ -3411,7 +3411,7 @@ ul.head-btn .slider-btn .btn.ouline-white {
 }
 
 .form-check.form-switch .form-check-input {
-  width: 40px !important;
+  width: 40px;
   height: 24px;
 }
 .form-check.form-switch .form-check-input.float-r {
@@ -13071,6 +13071,12 @@ button.btn.view {
 .our-services-section .services .product-card:nth-child(3) img {
   width: 150px;
 }
+.our-services-section .services .product-card h2 {
+  display: none;
+}
+.our-services-section .services .product-card h2.active {
+  display: block;
+}
 .our-services-section .services .product-card .form-check {
   width: fit-content;
   padding-right: 1.5em;
@@ -13137,6 +13143,18 @@ button.btn.view {
 .contact-section {
   background-color: #FFFFFF;
   padding: 50px 0 100px;
+}
+
+.pricing-button {
+  margin: 0 auto;
+}
+.pricing-button label {
+  font-size: 20px;
+  font-weight: 600;
+}
+.pricing-button .form-check-input {
+  width: 60px !important;
+  height: 34px !important;
 }
 
 .subOne {

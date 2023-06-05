@@ -307,6 +307,13 @@ $icons: (
   "projects-fill" "svg" 24px 24px,
   "dashboard-fill" "svg" 24px 24px,
   "application-api-fill" "svg" 24px 24px,
+  "youtube-icon" "svg" 35px 35px,
+  "tiktok" "svg" 20px 24px,
+  "forums" "svg" 39px 31px,
+  "news" "svg" 43px 29px,
+  "podcast" "svg" 32px 27px,
+  "blogs" "svg" 31px 32px,
+  "web" "svg" 23px 26px,
   );
   
 @each $name, $fileType, $width, $height in $icons {

@@ -2168,6 +2168,55 @@ i[class*=h-icon-] {
   height: 24px;
 }
 
+.icon-youtube-icon {
+  display: inline-block;
+  background-image: url("../images/icons/youtube-icon.svg");
+  width: 35px;
+  height: 35px;
+}
+
+.icon-tiktok {
+  display: inline-block;
+  background-image: url("../images/icons/tiktok.svg");
+  width: 20px;
+  height: 24px;
+}
+
+.icon-forums {
+  display: inline-block;
+  background-image: url("../images/icons/forums.svg");
+  width: 39px;
+  height: 31px;
+}
+
+.icon-news {
+  display: inline-block;
+  background-image: url("../images/icons/news.svg");
+  width: 43px;
+  height: 29px;
+}
+
+.icon-podcast {
+  display: inline-block;
+  background-image: url("../images/icons/podcast.svg");
+  width: 32px;
+  height: 27px;
+}
+
+.icon-blogs {
+  display: inline-block;
+  background-image: url("../images/icons/blogs.svg");
+  width: 31px;
+  height: 32px;
+}
+
+.icon-web {
+  display: inline-block;
+  background-image: url("../images/icons/web.svg");
+  width: 23px;
+  height: 26px;
+}
+
 /*--------------*\
     Base
 \*--------------*/
@@ -10279,6 +10328,33 @@ button.btn.view {
   text-align: center;
 }
 
+.brand-reputation-score {
+  position: relative;
+}
+.brand-reputation-score .brand-reputation {
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  z-index: 1;
+}
+.brand-reputation-score .brand-reputation p {
+  font-size: 20px;
+}
+.brand-reputation-score .brand-reputation h5 {
+  font-size: 35px !important;
+}
+.brand-reputation-score::after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  left: 8%;
+  background-color: #F2F4F6;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+
 .customer-single-profile-cover-image .cover-area {
   height: 200px;
   background-image: url("../images/customer-single-profile-cover-image.png");
@@ -12515,11 +12591,11 @@ button.btn.view {
   color: #775DA6;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-left: -28px;
+  margin-right: -42px;
 }
 .opportunities-main .opportunities {
   border: 0;
-  margin-left: -60px;
 }
 .opportunities-main .opportunities .transparent-boxs {
   display: flex;

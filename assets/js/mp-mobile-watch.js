@@ -100,6 +100,7 @@ window.onclick = function (event) {
 var secondPlus = document.getElementById("secondPlus");
 var mainforphotos = document.getElementById("mainforphotos");
 var noofchildsofmain = 1;
+
 secondPlus.addEventListener("click", () => {
   var newdiv = document.createElement("div");
   newdiv.style.height = "170px";
@@ -261,7 +262,7 @@ bzoop[0].remove();
         <div><button style="width : 20px ; height: 20px;cursor : pointer; background-color:  #775DA6 ; color: white; padding:  5px ; display : flex ; justify-content : center ; align-items : center ; outline : none ; border : none ; border-radius : 50%"  onClick="remove(event)"> X </button></div>
       </div>`;
   tool.appendChild(lop);
-  if(document.getElementsByClassName(`mainforphotos${noofchildsofmain}child`)[0].children.length  == 8){
+  if(document.getElementsByClassName(`mainforphotos${noofchildsofmain}child`)[0].children.length  == 100){
     breakLine();
   }
 };

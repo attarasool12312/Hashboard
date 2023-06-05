@@ -64,7 +64,7 @@
                 <span>Customer Profile</span></a></li>
             <li><a href="./mp-user-persona.html" class="panel_link"><i class="icon icon-calander"></i> <span>User
                   Persona</span></a></li>
-            <li><a href="./" class="panel_link"><i class="icon icon-calander"></i> <span>User Interview</span></a></li>
+                  <li><a href="./mp-brand-reputation.html" class="panel_link"><i class="icon icon-calander"></i> <span>Brand Reputation</span></a></li>
             <li><a href="./mp-user-flow.html" class="panel_link"><i class="icon icon-calander"></i> <span>User
                   Flow</span></a></li>
             <li><a href="./mp-complaint-management.html" class="panel_link"><i class="icon icon-calander"></i>
@@ -183,6 +183,7 @@
                 </ul>
               </div>
               <div class="col-md-6 text-end designer-button active">
+                <button type="button" class="btn ouline-white btn-fill" onclick="addPages()">Add Pages</button>
                 <button type="button" class="btn ouline-white"><i
                     class="icon icon-undo-survey-icon bg-cover"></i></button>
                 <button type="button" class="btn ouline-white"><i
@@ -328,12 +329,14 @@
                         <div class="form-group">
                           <label for="fileField" class="attachment">
                             <div class="row btn-file">
-                              <div class="btn-file__preview" style="width: 300px; max-height: 100px !important; overflow: hidden; background-size: cover;"></div>
+                              <div class="btn-file__preview"
+                                style="width: 300px; max-height: 100px !important; overflow: hidden; background-size: cover;">
+                              </div>
                               <div class="btn-file__actions">
                                 <div class="btn-file__actions__item col-xs-12 text-center">
                                   <div class="btn-file__actions__item--shadow">
-                                    <img src="image.png" alt="Add Image"
-                                      class="upload-image" style="width: 50px; height: 100px;">
+                                    <img src="image.png" alt="Add Image" class="upload-image"
+                                      style="width: 50px; height: 100px;">
                                   </div>
                                 </div>
                               </div>
@@ -344,6 +347,7 @@
                       </div>
                     </div>
                     <div class="block-content">
+                      <div id="addPages"></div>
 
                     </div>
                   </div>
@@ -1921,7 +1925,10 @@
 
   <script>
 
+    function addPages() {
 
+      $('#addPages').append(`<div class="mb-3"><input type="text" name="name" id="name" placeholder="Page Title" class="d-block w-100 border-0 outline-none input-dark bg-transparent fs-5 fw-600 rounded py-2"><input type="text" name="name" id="name" placeholder="Description" class="d-block w-100 border-0 outline-none input-light bg-transparent rounded py-2"></div>`);
+    }
 
 
 

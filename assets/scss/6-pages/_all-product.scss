@@ -1,11 +1,24 @@
 .top-section {
   background-color: #000000;
 
+  .navbar-light {
+    .navbar-toggler {
+      border-color: #fff !important;
+    }
+    .navbar-toggler-icon{
+      background-image: url($icons-path + "/menu-icon.svg");
+    }
+  }
+
   .navbar {
     .navbar-nav {
       margin: 0 auto;
 
       .nav-item {
+        @include grid-md-down{
+          text-align: center;
+        }
+
         .nav-link {
           color: #fff;
 
@@ -90,7 +103,7 @@
   }
 
   p {
-    font-size: 32px;
+    font-size: 25px;
     line-height: 41px;
     text-align: center;
     color: rgba(0, 0, 0, 0.81);
@@ -102,11 +115,12 @@
     gap: 30px;
     margin-top: 40px;
 
-    & + .services{
-      .product-card{
-        img{
+    &+.services {
+      .product-card {
+        img {
           width: 150px;
-          &:nth-child(2){
+
+          &:nth-child(2) {
             width: 185px;
           }
         }
@@ -123,20 +137,28 @@
       margin-bottom: 30px;
       height: fit-content;
       min-height: 482px;
+      @include grid-md-down{
+        width: 100%;
+        margin: 0;
+        height: fit-content;
+      }
 
-      &:nth-child(2){
-        img{
+      &:nth-child(2) {
+        img {
           width: 150px;
         }
       }
-      &:nth-child(3){
-        img{
+
+      &:nth-child(3) {
+        img {
           width: 150px;
         }
       }
-      h2{
+
+      h2 {
         display: none;
-        &.active{
+
+        &.active {
           display: block;
         }
       }
@@ -181,6 +203,7 @@
         text-align: left;
       }
     }
+
     .product-card-1 {
       background: #FFFFFF;
       box-shadow: 24px 24px 24px 48px rgba(0, 0, 0, 0.05);
@@ -190,6 +213,11 @@
       border-radius: 8px;
       margin-bottom: 30px;
       height: fit-content;
+      @include grid-md-down{
+        width: 100%;
+        margin: 0;
+        height: fit-content;
+      }
 
       p {
         font-size: 14px !important;
@@ -207,6 +235,7 @@
 
       .delivery-card {
         text-align: left;
+
         img {
           border-radius: 0;
           width: 20%;
@@ -216,18 +245,22 @@
     }
   }
 }
-.contact-section{
+
+.contact-section {
   background-color: #FFFFFF;
   padding: 50px 0 100px;
 }
-.pricing-button{
+
+.pricing-button {
   margin: 0 auto;
-  label{
-    font-size: 20px;
+
+  label {
+    font-size: 16px;
     font-weight: 600;
   }
+
   .form-check-input {
-    width: 60px !important;
-    height: 34px !important;
+    width: 45px !important;
+    height: 25px !important;
   }
 }

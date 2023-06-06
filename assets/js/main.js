@@ -64,7 +64,7 @@ window.addEventListener('load', function () {
     allSkeleton.forEach(item => {
       item.classList.remove('skeleton');
     });
-  }, 5000); // 10 seconds (10000 milliseconds)
+  }, 5000); // 5 seconds (10000 milliseconds)
 });
 
 

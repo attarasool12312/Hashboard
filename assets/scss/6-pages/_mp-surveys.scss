@@ -2314,7 +2314,8 @@
     }
 }
 
-.designer-button{
+.designer-button,
+.logic-button{
     display: none;
     &.active{
         display: block;

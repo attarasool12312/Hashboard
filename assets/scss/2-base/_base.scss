@@ -889,3 +889,17 @@ h6 {
 .panel-dropdown .rotate-icon:after {
   transform: rotate(180deg);
 }
+
+.vertical-bar-chart-show,
+.horizontal-bar-chart-show,
+.stacked-chart-show,
+.donut-chart-show,
+.line-chart-show,
+.area-chart-show,
+.composite-chart-show,
+.word-cloud-show{
+  display: none;
+  &.active{
+    display: block;
+  }
+}

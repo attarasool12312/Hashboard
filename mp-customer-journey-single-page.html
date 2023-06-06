@@ -500,8 +500,7 @@
                                 </div>
                               </template>
                               <div class="w-100 text-center mt-2">
-                                <a class="cursor-pointer d-block" @click="goals.push('')"><i
-                                    class="icon icon-add-stage"></i></a>
+                                <a class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto text-decoration-none" @click="goals.push('')">+</a>
                               </div>
                             </div>
                           </div>
@@ -533,9 +532,8 @@
                                 </div>
                               </template>
                               <div class="w-100 text-center mt-2">
-                                <a class="cursor-pointer d-block"
-                                  @click="painPints.push({ text: '', description: '' })"><i
-                                    class="icon icon-add-stage"></i></a>
+                                <a class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto text-decoration-none"
+                                  @click="painPints.push({ text: '', description: '' })">+</a>
                               </div>
                             </div>
                           </div>
@@ -570,9 +568,8 @@
                                 </div>
                               </template>
                               <div class="w-100 text-center mt-2">
-                                <a class="cursor-pointer d-block"
-                                  @click="touchpointActivities.push({ language: 'Email', invitation: '' })"><i
-                                    class="icon icon-add-stage"></i></a>
+                                <a class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto text-decoration-none"
+                                  @click="touchpointActivities.push({ language: 'Email', invitation: '' })">+</a>
                               </div>
                             </div>
                           </div>
@@ -606,13 +603,12 @@
                                 </div>
                               </template>
                               <div class="w-100 text-center mt-2">
-                                <a class="cursor-pointer d-block"
-                                  @click="departmentChannels.push({ language: '', accountManager: '' })"><i
-                                    class="icon icon-add-stage"></i></a>
+                                <div class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto" @click="departmentChannels.push({ language: '', accountManager: '' })">
+                                +
+                              </div>
                               </div>
                             </div>
                           </div>
-
                         </td>
                       </template>
                     </template>

@@ -1,14 +1,18 @@
 $(".Designer").click(function () {
   $(".designer-button").addClass("active");
+  $(".logic-button").removeClass("active");
 });
 $(".Preview").click(function () {
   $(".designer-button").removeClass("active");
+  $(".logic-button").removeClass("active");
 });
 $(".Logic").click(function () {
   $(".designer-button").removeClass("active");
+  $(".logic-button").addClass("active");
 });
 $(".shareSurvey").click(function () {
   $(".designer-button").removeClass("active");
+  $(".logic-button").removeClass("active");
 });
 
 
@@ -494,6 +498,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
           case "Ranking":
             item.innerHTML = '<div class="row mt-4"><div class="col-12 mx-auto"><div class="raking"><i class="icon icon-drag-drop-icon mx-auto"></i><label for="name" class="question"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label><ul id="rank-list"><li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li><li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li><li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li><li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li><li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name" id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li></ul><div class="d-flex align-items-center"><div class="dropdown select-dropdown"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div><div class="dropdown select-dropdown ms-4"><button class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></div></div></div></div></div>';
             break;
+            case "addPages":
+              item.innerHTML = '<div class="mb-3"><input type="text" name="name" id="name" placeholder="Page Title" class="d-block w-100 border-0 outline-none input-dark bg-transparent fs-5 fw-600 rounded py-2"><input type="text" name="name" id="name" placeholder="Description" class="d-block w-100 border-0 outline-none input-light bg-transparent rounded py-2"></div>';
+              break;
           default:
             break;
         }

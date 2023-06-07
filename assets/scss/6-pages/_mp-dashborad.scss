@@ -431,15 +431,15 @@
             input {
                 width: 258px !important;
                 border-radius: 12px;
-                background: #775DA6;
+                background-color: #f5f5f5;
                 padding: 10px 5px;
                 border: 0;
                 outline: none;
-                color: #fff;
+                color: #000;
                 margin-bottom: 15px;
 
                 &::placeholder {
-                    color: #fff;
+                    color: #000;
                 }
             }
         }
@@ -449,7 +449,7 @@
             border-bottom: 1px solid #70B6C1;
 
             .pain-pints-input {
-                background-color: #FF5D5D;
+                background-color: #f5f5f5;
                 border-radius: 5px;
                 position: relative;
                 width: 258px !important;
@@ -469,7 +469,7 @@
                     outline: none;
 
                     &::placeholder {
-                        color: #fff;
+                        color: #000;
                     }
                 }
 
@@ -482,7 +482,7 @@
                     outline: none;
 
                     &::placeholder {
-                        color: #fff;
+                        color: #000;
                     }
                 }
 
@@ -508,7 +508,7 @@
             border-bottom: 1px solid #70B6C1;
 
             .touchpoint-activity-input {
-                background-color: #00FFBB;
+                background-color: #f5f5f5;
                 text-align: center;
                 padding-bottom: 5px;
                 position: relative;
@@ -521,12 +521,12 @@
                 }
 
                 select {
-                    background-color: #16AC84;
+                    background-color: #f5f5f5;
                     border: none;
                     outline: none;
                     border-radius: 4px;
                     text-align: center;
-                    color: #fff;
+                    color: #000;
                     margin-bottom: 10px;
                     cursor: pointer;
                 }
@@ -567,7 +567,7 @@
             border-bottom: 1px solid #70B6C1;
 
             .department-channels-input {
-                background-color: #00D1FF;
+                background-color: #f5f5f5;
                 text-align: center;
                 padding-bottom: 5px;
                 position: relative;
@@ -580,12 +580,12 @@
                 }
 
                 select {
-                    background-color: #2FB1CD;
+                    background-color: #f5f5f5;
                     border: none;
                     outline: none;
                     border-radius: 4px;
                     text-align: center;
-                    color: #fff;
+                    color: #000;
                     margin-bottom: 10px;
                     cursor: pointer;
                 }

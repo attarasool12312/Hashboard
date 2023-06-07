@@ -401,6 +401,10 @@ h6 {
   background-color: #F5F6FC;
 }
 
+.bg-white-light{
+  background-color: #f5f5f5 !important;
+}
+
 .ms-30 {
   margin-left: 30px;
 }
@@ -517,7 +521,9 @@ h6 {
     min-height: fit-content;
   }
 }
-
+.width-257px{
+  width: 257px;
+}
 .min-h-230 {
   min-height: 230px !important;
 
@@ -538,10 +544,13 @@ h6 {
 }
 
 .wsm-95 {
-  @include grid-sm-down {
+  @include grid-md-down {
     max-width: 95% !important;
     width: 95% !important;
   }
+}
+.width-150px{
+  width: 150px;
 }
 
 .w-95 {

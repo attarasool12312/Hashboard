@@ -195,7 +195,7 @@
 }
 
 .stages-main {
-    display: flex;
+    // display: flex;
     height: 100px;
 
     h4 {
@@ -258,6 +258,7 @@
         position: relative;
         cursor: move;
         margin-right: 10px;
+        z-index: 11111111;
 
         p {
             position: absolute;
@@ -280,7 +281,7 @@
 }
 
 .feedback-main {
-    display: flex;
+    // display: flex;
     align-items: center;
 
     h4 {
@@ -302,7 +303,7 @@
                 font-size: 12px;
                 background-color: #FFD964;
                 padding: 10px;
-                width: 175px;
+                width: 257px;
 
                 ul {
                     padding-left: 20px;
@@ -338,7 +339,7 @@
                 font-size: 12px;
                 background-color: #EC4989;
                 padding: 10px;
-                width: 175px;
+                width: 257px;
 
                 ul {
                     padding-left: 20px;
@@ -369,7 +370,7 @@
 }
 
 .opportunities-main {
-    display: flex;
+    // display: flex;
     align-items: center;
 
     h4 {
@@ -391,7 +392,7 @@
             .transparent-box {
                 font-size: 12px;
                 padding: 10px;
-                width: 175px;
+                width: 257px;
 
                 ul {
                     padding-left: 20px;
@@ -445,6 +446,7 @@
         position: relative;
         cursor: move;
         margin-right: 10px;
+        z-index: 1111111;
 
         p {
             position: absolute;
@@ -613,6 +615,7 @@
         position: relative;
         cursor: move;
         margin-right: 10px;
+        z-index: 111111111;
 
         p {
             position: absolute;
@@ -693,11 +696,7 @@
         p {
             font-size: 17px;
             font-weight: 600;
-            min-width: 330px;
-            background-color: #fff;
-            padding: 7px 15px;
-            border-radius: 10px;
-            margin-right: 15px;
+            min-width: 257px;
         }
     }
 

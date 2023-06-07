@@ -2593,6 +2593,10 @@ h6.text-sm {
   background-color: #F5F6FC;
 }
 
+.bg-white-light {
+  background-color: #f5f5f5 !important;
+}
+
 .ms-30 {
   margin-left: 30px;
 }
@@ -2711,6 +2715,10 @@ h6.text-sm {
   }
 }
 
+.width-257px {
+  width: 257px;
+}
+
 .min-h-230 {
   min-height: 230px !important;
 }
@@ -2731,11 +2739,15 @@ h6.text-sm {
   }
 }
 
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 991.98px) {
   .wsm-95 {
     max-width: 95% !important;
     width: 95% !important;
   }
+}
+
+.width-150px {
+  width: 150px;
 }
 
 .w-95 {
@@ -3564,7 +3576,7 @@ ul.head-btn .slider-btn .btn.ouline-white {
   width: 200px;
   height: 28px;
   position: relative;
-  margin-top: 25px;
+  margin: 25px auto 0;
 }
 .file-upload figure {
   margin: 0;
@@ -10112,22 +10124,22 @@ button.btn.view {
 .journey-map-white .journey-map .customer-goals input {
   width: 258px !important;
   border-radius: 12px;
-  background: #775DA6;
+  background-color: #f5f5f5;
   padding: 10px 5px;
   border: 0;
   outline: none;
-  color: #fff;
+  color: #000;
   margin-bottom: 15px;
 }
 .journey-map-white .journey-map .customer-goals input::placeholder {
-  color: #fff;
+  color: #000;
 }
 .journey-map-white .journey-map .pain-pints {
   padding: 10px 0;
   border-bottom: 1px solid #70B6C1;
 }
 .journey-map-white .journey-map .pain-pints .pain-pints-input {
-  background-color: #FF5D5D;
+  background-color: #f5f5f5;
   border-radius: 5px;
   position: relative;
   width: 258px !important;
@@ -10144,7 +10156,7 @@ button.btn.view {
   outline: none;
 }
 .journey-map-white .journey-map .pain-pints .pain-pints-input input::placeholder {
-  color: #fff;
+  color: #000;
 }
 .journey-map-white .journey-map .pain-pints .pain-pints-input textarea {
   background-color: transparent;
@@ -10155,7 +10167,7 @@ button.btn.view {
   outline: none;
 }
 .journey-map-white .journey-map .pain-pints .pain-pints-input textarea::placeholder {
-  color: #fff;
+  color: #000;
 }
 .journey-map-white .journey-map .pain-pints .pain-pints-input .input-hover-icon {
   display: flex;
@@ -10174,7 +10186,7 @@ button.btn.view {
   border-bottom: 1px solid #70B6C1;
 }
 .journey-map-white .journey-map .touchpoint-activity .touchpoint-activity-input {
-  background-color: #00FFBB;
+  background-color: #f5f5f5;
   text-align: center;
   padding-bottom: 5px;
   position: relative;
@@ -10184,12 +10196,12 @@ button.btn.view {
   display: block;
 }
 .journey-map-white .journey-map .touchpoint-activity .touchpoint-activity-input select {
-  background-color: #16AC84;
+  background-color: #f5f5f5;
   border: none;
   outline: none;
   border-radius: 4px;
   text-align: center;
-  color: #fff;
+  color: #000;
   margin-bottom: 10px;
   cursor: pointer;
 }
@@ -10223,7 +10235,7 @@ button.btn.view {
   border-bottom: 1px solid #70B6C1;
 }
 .journey-map-white .journey-map .department-channels .department-channels-input {
-  background-color: #00D1FF;
+  background-color: #f5f5f5;
   text-align: center;
   padding-bottom: 5px;
   position: relative;
@@ -10233,12 +10245,12 @@ button.btn.view {
   display: block;
 }
 .journey-map-white .journey-map .department-channels .department-channels-input select {
-  background-color: #2FB1CD;
+  background-color: #f5f5f5;
   border: none;
   outline: none;
   border-radius: 4px;
   text-align: center;
-  color: #fff;
+  color: #000;
   margin-bottom: 10px;
   cursor: pointer;
 }
@@ -12424,7 +12436,6 @@ button.btn.view {
 }
 
 .stages-main {
-  display: flex;
   height: 100px;
 }
 .stages-main h4 {
@@ -12479,6 +12490,7 @@ button.btn.view {
   position: relative;
   cursor: move;
   margin-right: 10px;
+  z-index: 11111111;
 }
 .actions-main .draggable-icon p {
   position: absolute;
@@ -12498,7 +12510,6 @@ button.btn.view {
 }
 
 .feedback-main {
-  display: flex;
   align-items: center;
 }
 .feedback-main h4 {
@@ -12519,7 +12530,7 @@ button.btn.view {
   font-size: 12px;
   background-color: #FFD964;
   padding: 10px;
-  width: 175px;
+  width: 257px;
 }
 .feedback-main .feedback .yellow-boxs .yellow-box ul {
   padding-left: 20px;
@@ -12549,7 +12560,7 @@ button.btn.view {
   font-size: 12px;
   background-color: #EC4989;
   padding: 10px;
-  width: 175px;
+  width: 257px;
 }
 .feedback-main .feedback .pink-boxs .pink-box ul {
   padding-left: 20px;
@@ -12573,7 +12584,6 @@ button.btn.view {
 }
 
 .opportunities-main {
-  display: flex;
   align-items: center;
 }
 .opportunities-main h4 {
@@ -12594,7 +12604,7 @@ button.btn.view {
 .opportunities-main .opportunities .transparent-boxs .transparent-box {
   font-size: 12px;
   padding: 10px;
-  width: 175px;
+  width: 257px;
 }
 .opportunities-main .opportunities .transparent-boxs .transparent-box ul {
   padding-left: 20px;
@@ -12638,6 +12648,7 @@ button.btn.view {
   position: relative;
   cursor: move;
   margin-right: 10px;
+  z-index: 1111111;
 }
 .touchpoints-chart .draggable-icon p {
   position: absolute;
@@ -12772,6 +12783,7 @@ button.btn.view {
   position: relative;
   cursor: move;
   margin-right: 10px;
+  z-index: 111111111;
 }
 .felling-chart .draggable-icon p {
   position: absolute;
@@ -12839,11 +12851,7 @@ button.btn.view {
 .chart-stages .header-stage p {
   font-size: 17px;
   font-weight: 600;
-  min-width: 330px;
-  background-color: #fff;
-  padding: 7px 15px;
-  border-radius: 10px;
-  margin-right: 15px;
+  min-width: 257px;
 }
 .chart-stages .stages-delivery-chart {
   display: flex;

@@ -29,7 +29,7 @@
   <script>
     document.addEventListener('alpine:init', () => {
       Alpine.data('stages', () => ({
-        columns: [1, 1, 1, 1, 1, 1, 1],
+        columns: [1, 1, 1],
 
         addColumn() {
           this.columns.unshift(1)
@@ -69,34 +69,36 @@
             case 'pain':
               tds += '<td class="stage-heading">Pain Points</td>';
                 tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
-            <td>
-              <div x-data="{ painPoints: [{ text: '', description: '' }] }">
-                <div class="pain-points">
-                  <template x-for="(painPoint, index) in painPoints" :key="index">
-                    <div class="painPoints mb-3">
-                      <div class="pain-points-input">
-                        <input type="text" x-model="painPoint.text" x-bind:placeholder="'Pain Point ' + (index + 1)">
-                        <textarea x-model="painPoint.description" x-bind:placeholder="'Description ' + (index + 1)"></textarea>
-                        <div class="input-hover-icon">
-                          <i class="icon icon-add-stage"></i>
-                          <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
-                          <i class="icon icon-close-stage" x-on:click="painPoints.splice(index, 1)"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </template>
-                  <div class="w-100 text-center mt-2">
-                    <a class="cursor-pointer d-block" x-on:click="painPoints.push({ text: '', description: '' })">
-                      <i class="icon icon-add-stage"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </template>
-        </template>`;
+                <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td>
+                          <div x-data="{ painPints: [{ text: '', description: '' }] }">
+                            <div class="pain-pints">
+                              <template x-for="(painPint, index) in painPints" :key="index">
+                                <div class="painPints mb-3">
+                                  <div class="pain-pints-input">
+                                    <input type="text" x-model="painPint.text"
+                                      :placeholder="'Pain Pint ' + (index + 1)">
+                                    <textarea x-model="painPint.description"
+                                      :placeholder="'Description ' + (index + 1)"></textarea>
+                                    <div class="input-hover-icon">
+                                      <i class="icon icon-add-stage"></i>
+                                      <i class="icon icon-settings" data-bs-toggle="modal"
+                                        data-bs-target="#colorThemeModal"></i>
+                                      <i class="icon icon-close-stage" @click="painPints.splice(index, 1)"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </template>
+                              <div class="w-100 text-center mt-2">
+                                <a class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto text-decoration-none"
+                                  @click="painPints.push({ text: '', description: '' })">+</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </template>
+                    </template>`;
       break;
             case 'touchpoints':
               tds += '<td class="stage-heading">Touchpoints Activity</td>';
@@ -241,17 +243,17 @@
           <template x-for="j in columns[ind]">
             <td>
               <div class="table-media">
-                <div class="upload-file">
-                  <div class="file-upload">
-                    <figure class="figure" x-data="{ chosenImage: '', fileName: '' }" x-on:click="handleFigureClick">
-                      <img :src="chosenImage" id="chosen-image">
-                      <i class="icon icon-image-icon-add-stages bg-cover mr-3" x-show="!chosenImage"></i>
-                      <figcaption id="file-name" x-text="fileName"></figcaption>
-                    </figure>
-                    <input type="file" id="upload-button" accept="image/*" x-on:change="handleFileUpload">
-                  </div>
-                </div>
-              </div>
+                            <div class="upload-file">
+                              <div class="file-upload">
+                                <figure class="figure" x-data="{ chosenImage: '', fileName: '' }">
+                                  <img :src="chosenImage" id="chosen-image" x-show="chosenImage" style="display: block;">
+                                  <i class="icon icon-image-icon-add-stages bg-cover mr-3" x-show="!chosenImage"></i>
+                                  <figcaption id="file-name" x-text="fileName"></figcaption>
+                                </figure>
+                                <input type="file" id="upload-button" accept="image/*" @change="handleFileUpload">
+                              </div>
+                            </div>
+                          </div>
             </td>
           </template>
         </template>`;
@@ -274,6 +276,40 @@
           </template>
         </template>`;
       break;
+      case 'dragChart':
+              tds += `<td colspan="6"><div class="actions-main"><h4>ACTIONS</h4><div id="container"><div class="draggable-icon" id="icon1"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon2"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon3"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon4"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon5"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><canvas id="canvas"></canvas></div></div></td>`;
+              break;
+            case 'dragFillingChart':
+              tds += `<td colspan="6">          <div class="felling-chart mb-3">
+            <div id="container">
+              <div class="draggable-icon" id="icon1">
+                <p>
+                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
+                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+                </p>
+              </div>
+              <div class="draggable-icon" id="icon2">
+                <p>
+                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
+                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+                </p>
+              </div>
+              <div class="draggable-icon" id="icon3">
+                <p>
+                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
+                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+                </p>
+              </div>
+              <div class="draggable-icon" id="icon4">
+                <p>
+                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
+                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+                </p>
+              </div>
+              <canvas id="canvas"></canvas>
+            </div>
+          </div></td>`;
+              break;
             default:
               break;
           }
@@ -417,7 +453,7 @@
             </div>
           </div>
         </div>
-        <div class="container-100">
+        <div class="container-xl">
           <div class="page-main-title">
             <div class="heading">
               <h1>Journey Name</h1>
@@ -750,10 +786,10 @@
           <div class="modal-body journey-map-white">
             <div class="journey-map">
               <div class="table-media cursor-pointer" @click="addSectionRow('mediaImage')">
-                <div class="upload-file">
+                <div class="upload-file border mb-3">
                   <div class="file-upload">
                     <figure class="figure" x-data="{ chosenImage: '', fileName: '' }" @click="handleFigureClick">
-                      <img :src="chosenImage" id="chosen-image">
+                      <!-- <img :src="chosenImage" id="chosen-image"> -->
                       <i class="icon icon-image-icon-add-stages bg-cover mr-3" x-show="!chosenImage"></i>
                       <figcaption id="file-name" x-text="fileName"></figcaption>
                     </figure>
@@ -762,10 +798,10 @@
                 </div>
               </div>
               <div class="table-media cursor-pointer" @click="addSectionRow('mediaVideo')">
-                <div class="upload-file">
+                <div class="upload-file border">
                   <div class="file-upload">
                     <figure class="figure" x-data="{ chosenImage: '', fileName: '' }" @click="handleFigureClick">
-                      <img :src="chosenImage" id="chosen-image">
+                      <!-- <img :src="chosenImage" id="chosen-image"> -->
                       <i class="icon icon-video-icon-add-stages bg-cover mr-3" x-show="!chosenImage"></i>
                       <figcaption id="file-name" x-text="fileName"></figcaption>
                     </figure>
@@ -822,6 +858,12 @@
                     </span>
                   </div>
                 </div>
+              </div>
+              <div class="experience cursor-pointer" @click="addSectionRow('dragChart')">
+                <img src="./assets/images/dragdrop-chart.png" alt="" class="w-100 bg-cover">
+              </div>
+              <div class="experience cursor-pointer" @click="addSectionRow('dragFillingChart')">
+                <img src="./assets/images/filling-chart.png" alt="" class="w-100 bg-cover">
               </div>
             </div>
           </div>
@@ -912,6 +954,72 @@
 
 
   <script>
+$(document).ready(function () {
+  function updateLinePosition() {
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var icons = $(".draggable-icon");
+    var positions = [];
+
+    // Get the center positions of all icons
+    icons.each(function (index, element) {
+      var rect = element.getBoundingClientRect();
+      var x = rect.left + rect.width / 2;
+      var y = rect.top + rect.height / 2;
+      positions.push({ x: x, y: y });
+    });
+
+    // Update canvas size to match container size
+    canvas.width = $("#container").width();
+    canvas.height = $("#container").height();
+
+    // Update line position
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
+    ctx.setLineDash([4, 2]);
+    ctx.moveTo(positions[0].x-300, positions[0].y-243); // Start the line from the first icon
+
+    for (var i = 1; i < positions.length; i++) {
+      ctx.lineTo(positions[i].x-300, positions[i].y-242);
+    }
+    ctx.strokeStyle = "black";
+    ctx.stroke();
+  }
+
+  function drawLine() {
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    updateLinePosition();
+  }
+
+  var canvas = document.getElementById("canvas");
+  var ctx = canvas.getContext("2d");
+  var icons = $(".draggable-icon");
+
+  // Initialize line position and draw it
+  updateLinePosition();
+  drawLine();
+
+  // Update line position and redraw on drag event
+  icons.draggable({
+    axis: "y", // Restrict movement to vertical axis
+    drag: function (event, ui) {
+      ui.position.left = ui.originalPosition.left; // Maintain the original left position
+      updateLinePosition();
+      drawLine();
+    },
+  });
+
+  // Update line position and redraw on window resize
+  $(window).resize(function () {
+    updateLinePosition();
+    drawLine();
+  });
+});
+
+
+
     document.addEventListener('DOMContentLoaded', () => {
       let uploadButton = document.getElementById("upload-button");
       let chosenImage = document.getElementById("chosen-image");

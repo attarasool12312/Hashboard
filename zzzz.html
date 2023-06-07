@@ -24,14 +24,6 @@
   <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
   <link href="./assets/css/main.css" rel="stylesheet" />
   <link href="./assets/css/responsive.css" rel="stylesheet" />
-  <style>
-    .rank-item {
-      padding: 10px;
-      margin-bottom: 5px;
-      background-color: #f0f0f0;
-      cursor: move;
-    }
-  </style>
 </head>
 
 <body>
@@ -167,10 +159,51 @@
           </div>
         </div>
         <div class="container">
-
+          <div class="row mt-4 Ranking">
+            <div class="col-12 mx-auto">
+              <div class="raking"><i class="icon icon-drag-drop-icon mx-auto"></i><label for="name"
+                  class="question"><input type="text" name="name" id="name"
+                    class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label>
+                <ul id="rank-list">
+                  <li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name"
+                      id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li>
+                  <li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name"
+                      id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li>
+                  <li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name"
+                      id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li>
+                  <li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name"
+                      id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li>
+                  <li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name"
+                      id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <div class="dropdown select-dropdown"><button
+                        class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown select-dropdown ms-4"><button
+                        class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button type="button" class="btn ouline-white border-0 cancel-Ranking">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    </main>
+      </main>
     </div>
   </section>
 
@@ -183,7 +216,9 @@
   <script src="./assets/js/surveys.js"></script>
 
   <script>
-
+    $(document).on('click', '.cancel-Ranking', function () {
+      $(this).parents('.Ranking').remove();
+    });
   </script>
 </body>
 

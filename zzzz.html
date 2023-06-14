@@ -24,6 +24,9 @@
   <!-- <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" /> -->
   <link href="./assets/css/main.css" rel="stylesheet" />
   <link href="./assets/css/responsive.css" rel="stylesheet" />
+  <style>
+
+  </style>
 </head>
 
 <body>
@@ -159,49 +162,11 @@
           </div>
         </div>
         <div class="container">
-          <div class="row mt-4 Ranking">
-            <div class="col-12 mx-auto">
-              <div class="raking"><i class="icon icon-drag-drop-icon mx-auto"></i><label for="name"
-                  class="question"><input type="text" name="name" id="name"
-                    class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Question"></label>
-                <ul id="rank-list">
-                  <li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name"
-                      id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li>
-                  <li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name"
-                      id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li>
-                  <li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name"
-                      id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li>
-                  <li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name"
-                      id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li>
-                  <li class="rank-item" draggable="true" ondragstart="dragStart(event)"><input type="text" name="name"
-                      id="name" class="d-block w-100 border-0 outline-none rounded py-2" placeholder="Item"></li>
-                </ul>
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown select-dropdown"><button
-                        class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button"
-                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Journey</button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
-                    <div class="dropdown select-dropdown ms-4"><button
-                        class="btn btn-secondary dropdown-toggle pe-5 bg-transparent border-0" type="button"
-                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Stage</button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <button type="button" class="btn ouline-white border-0 cancel-Ranking">Cancel</button>
-                </div>
-              </div>
-            </div>
+          <div id="container">
+            <canvas id="canvas" width="400" height="300"></canvas>
           </div>
+
+
         </div>
       </main>
     </div>
@@ -216,9 +181,107 @@
   <script src="./assets/js/surveys.js"></script>
 
   <script>
-    $(document).on('click', '.cancel-Ranking', function () {
-      $(this).parents('.Ranking').remove();
-    });
+// Data for the line chart
+var data = [
+  { x: 0, y: 50 },
+  { x: 50, y: 100 },
+  { x: 100, y: 80 },
+  { x: 150, y: 40 },
+  { x: 200, y: 120 },
+  { x: 250, y: 90 },
+  { x: 300, y: 70 }
+];
+
+// Canvas variables
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+
+// Initialize canvas size
+canvas.width = 400;
+canvas.height = 300;
+
+// Variable to store the index of the selected data point
+var selectedDataIndex = -1;
+var yOffset = 0;
+
+// Function to draw the line chart
+function drawLineChart() {
+  // Clear the canvas
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Draw the line chart
+  ctx.beginPath();
+  ctx.moveTo(data[0].x, data[0].y);
+
+  for (var i = 1; i < data.length; i++) {
+    ctx.lineTo(data[i].x, data[i].y);
+  }
+
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = "blue";
+  ctx.stroke();
+
+  // Draw dots at the data points
+  for (var i = 0; i < data.length; i++) {
+    ctx.beginPath();
+    ctx.arc(data[i].x, data[i].y, 4, 0, 2 * Math.PI);
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.stroke();
+  }
+}
+
+// Function to handle mousemove event
+function handleMouseMove(event) {
+  var rect = canvas.getBoundingClientRect();
+  var x = event.clientX - rect.left;
+  var y = event.clientY - rect.top + yOffset;
+
+  if (selectedDataIndex !== -1) {
+    // Update the position of the selected data point
+    data[selectedDataIndex].y = y;
+    drawLineChart();
+  } else {
+    // Check if the mouse is over a data point
+    for (var i = 0; i < data.length; i++) {
+      if (Math.abs(data[i].x - x) <= 4 && Math.abs(data[i].y - y) <= 4) {
+        canvas.style.cursor = "ns-resize";
+        return;
+      }
+    }
+
+    canvas.style.cursor = "default";
+  }
+}
+
+// Function to handle mousedown event
+function handleMouseDown(event) {
+  var rect = canvas.getBoundingClientRect();
+  var x = event.clientX - rect.left;
+  var y = event.clientY - rect.top;
+
+  // Check if the mouse is over a data point
+  for (var i = 0; i < data.length; i++) {
+    if (Math.abs(data[i].x - x) <= 4 && Math.abs(data[i].y - y) <= 4) {
+      selectedDataIndex = i;
+      yOffset = data[i].y - y;
+      return;
+    }
+  }
+}
+
+// Function to handle mouseup event
+function handleMouseUp() {
+  selectedDataIndex = -1;
+}
+
+// Event listeners for mousemove, mousedown, and mouseup events
+canvas.addEventListener("mousemove", handleMouseMove);
+canvas.addEventListener("mousedown", handleMouseDown);
+canvas.addEventListener("mouseup", handleMouseUp);
+
+// Initial draw of the line chart
+drawLineChart();
   </script>
 </body>
 

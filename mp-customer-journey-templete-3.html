@@ -38,15 +38,12 @@
           this.columns.splice(i, 1);
         },
         addSectionRow(type) {
-          let countColumns = this.columns.length;
-          console.log(countColumns);
           let tds = '';
           switch (type) {
             case 'goal':
               tds += '<td class="stage-heading">Customer Goals</td>';
               tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+        <template x-for="i in columns">
             <td>
               <div x-data="{ goals: [''] }">
                 <div class="customer-goals">
@@ -63,7 +60,6 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
               break;
             case 'pain':
@@ -103,8 +99,7 @@
             case 'touchpoints':
               tds += '<td class="stage-heading">Touchpoints Activity</td>';
               tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+        <template x-for="i in columns">
             <td>
               <div x-data="{ touchpointActivities: [{ language: 'Email', invitation: '' }] }">
                 <div class="touchpoint-activity">
@@ -132,14 +127,12 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
               break;
             case 'department':
               tds += '<td class="stage-heading">Department Channels</td>';
               tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+        <template x-for="i in columns">
             <td>
               <div x-data="{ departmentChannels: [{ language: '', accountManager: '' }] }">
                 <div class="department-channels">
@@ -167,7 +160,6 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
               break;
             case 'experience':
@@ -183,8 +175,7 @@
         </div>
       </td>`;
               tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+        <template x-for="i in columns">
             <td>
               <div class="experience">
                 <div class="experience-checkbox">
@@ -221,26 +212,22 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
               break;
             case 'processes':
               tds += '<td class="stage-heading">Processes</td>';
               tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+        <template x-for="i in columns">
             <td class="py-4">
               <div class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto" data-bs-toggle="modal" data-bs-target="#processesModal">+</div>
               <div id="imageContainer" class="text-center"></div>
             </td>
-          </template>
         </template>`;
               break;
             case 'mediaImage':
               tds += '<td class="stage-heading">Media Image</td>';
               tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+        <template x-for="i in columns">
             <td>
               <div class="table-media">
                             <div class="upload-file">
@@ -255,14 +242,12 @@
                             </div>
                           </div>
             </td>
-          </template>
         </template>`;
               break;
             case 'mediaVideo':
               tds += '<td class="stage-heading">Media Video</td>';
               tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+        <template x-for="i in columns">
             <td>
               <div class="table-media">
                 <div class="video-media" x-data="{ videoLink: '', videoId: '' }" x-init="setVideoId">
@@ -273,60 +258,13 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
               break;
               case 'dragChart':
-              tds += '<td class="stage-heading">Actions</td>';
-              tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
-            <td>
-              <div class="table-media">
-                <div class="video-media" x-data="{ videoLink: '', videoId: '' }" x-init="setVideoId">
-                  <input type="url" x-model="videoLink" x-on:input="getVideoId">
-                  <div class="video-wrapper" x-show="videoId">
-                    <iframe :src="videoUrl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </template>
-        </template>`;
-              break;
-              case 'dragChart':
-              tds += `<td colspan="6"><div class="actions-main"><h4>ACTIONS</h4><div id="container"><div class="draggable-icon" id="icon1"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon2"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon3"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon4"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon5"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><canvas id="canvas"></canvas></div></div></td>`;
+              tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             case 'dragFillingChart':
-              tds += `<td colspan="6">          <div class="felling-chart mb-3">
-            <div id="container">
-              <div class="draggable-icon" id="icon1">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon2">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon3">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon4">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <canvas id="canvas"></canvas>
-            </div>
-          </div></td>`;
+              tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             default:
               break;
@@ -336,7 +274,21 @@
       }))
     })
   </script>
+  <style>
+    #container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+    }
 
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -471,147 +423,88 @@
             </div>
           </div>
         </div>
-        <div class="container-xl">
+        <div class="container-100">
           <div class="page-main-title">
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
             <button type="button" class="btn btn-fill me-md-3">Save</button>
           </div>
-          <div class="actions-main">
-            <h4>ACTIONS</h4>
-            <div id="container">
-              <div class="draggable-icon" id="icon1">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon2">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon3">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon4">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon5">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <canvas id="canvas"></canvas>
-            </div>
-          </div>
           <div class="bg-white p-3 journey-map-white">
+            <div class="chart-stages">
+              <div class="stages-delivery-chart" id="stagesDelivery">
+                <div class="delivery-width">
+                  <div class="open-stage">
+                    <p><input type="text" placeholder="Open"
+                        class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                  </div>
+                </div>
+                <div class="delivery-width">
+                  <div class="review-stage">
+                    <p><input type="text" placeholder="Review"
+                        class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                  </div>
+                </div>
+                <div class="delivery-width">
+                  <div class="continue-stage">
+                    <p><input type="text" placeholder="Buy"
+                        class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                    <p><input type="text" placeholder="Continue"
+                        class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                  </div>
+                  </div>
+                  <div class="delivery-width">
+                <div class="adress-stage">
+                  <p><input type="text" placeholder="Adress"
+                      class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                </div>
+                  </div>
+                  <div class="delivery-width">
+                <div class="delivery-stage">
+                  <p><input type="text" placeholder="Delivery"
+                      class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                </div>
+                  </div>
+                  <div class="delivery-width">
+                <div class="patment-stage">
+                  <p><input type="text" placeholder="Cash"
+                      class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                  <p><input type="text" placeholder="Credit"
+                      class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                  <p><input type="text" placeholder="PayPal"
+                      class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="touchpoints-chart template-7">
+              <h3>TOUCHPOINTS</h3>
+              <div id="container">
+                <canvas id="canvas" width="400" height="300"></canvas>
+              </div>
+            </div>
             <div class="d-flex">
               <table id="journey-map" class="journey-map-table journey-map overflow-x">
                 <tbody>
-                  <tr id="mainStages" class="stages-main">
-                    <td scope="col">
-                      <h4>Stages</h4>
-                    </td>
-                    <template x-for="(i,ind) in columns">
+                  <tr id="mainStages">
+                    <td class="stage-heading">Step</td>
+                    <template x-for="i in columns">
                       <td>
-                        <div class="stages">
-                          <h3>
-                            <input type="text" placeholder="Stage 1"
-                              class="mt-2 border-0 input-white outline-none bg-transparent text-center w-100">
-                          </h3>
+                        <div class="chart-stages p-0">
+                          <div class="header-stage m-0" id="headerStage">
+                            <p><input type="text" placeholder="Stage 1"
+                                class="border-0 rounded input-dark outline-none bg-transparent w-100"></p>
+                          </div>
                         </div>
                       </td>
-                    </template>
-                  </tr>
-                  <tr id="subStages" class="feedback-main">
-                    <td>
-                      <h4>Feedback</h4>
-                    </td>
-                    <template x-for="(i, ind) in columns">
-                      <template x-for="j in columns[ind]">
-                        <td class="feedback">
-                          <div class="yellow-boxs">
-                            <div class="yellow-box">
-                              <ul>
-                                <li>
-                                  <textarea name="" id="" cols="30" rows="4"
-                                    class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                </li>
-                                <li>
-                                  <textarea name="" id="" cols="30" rows="4"
-                                    class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pink-boxs">
-                            <div class="pink-box">
-                              <ul>
-                                <li>
-                                  <textarea name="" id="" cols="30" rows="4"
-                                    class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                </li>
-                                <li>
-                                  <textarea name="" id="" cols="30" rows="4"
-                                    class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </template>
-                    </template>
-                  </tr>
-                  <tr id="customerGoals" class="opportunities-main">
-                    <td>
-                      <h4>OPPORTUNITIES</h4>
-                    </td>
-                    <template x-for="(i, ind) in columns">
-                      <template x-for="j in columns[ind]">
-                        <td class="opportunities-td">
-                          <div class="opportunities">
-                            <div class="transparent-boxs">
-                              <div class="transparent-box">
-                                <ul>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </td>
-                      </template>
                     </template>
                   </tr>
                 </tbody>
               </table>
               <div class="add-stage-button mt-5 ms-3">
-                <button type="button" class="btn fs-6 width-100px p-0" onclick="addSection()" @click="addColumn">Add Satge</button>
+                <button type="button" class="btn fs-6 width-100px p-0" data-bs-toggle="modal"
+                  data-bs-target="#addArrowChartModal" onclick="addDataPoint()" @click="addColumn">Add
+                  Satge</button>
               </div>
             </div>
             <div class="add-stage-button mt-5 ms-3">
@@ -992,6 +885,33 @@
         </div>
       </div>
     </div>
+    <div class="modal fade" id="addArrowChartModal" tabindex="-1" aria-labelledby="addArrowChartModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addArrowChartModalLabel">Add Arrow Chart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="dropdown">
+              <button class="btn border border-2 w-100 text-start dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Select Arrow Input
+              </button>
+              <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" onclick="addArrowOne()" href="#">One Arrow</a></li>
+                <li><a class="dropdown-item" onclick="addArrowTwo()" href="#">Two Arrow</a></li>
+                <li><a class="dropdown-item" onclick="addArrowThree()" href="#">Three Arrow</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-fill text-uppercase">Save</button>
+            <button type="button" class="btn border border-2 text-uppercase" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -1005,91 +925,148 @@
 
 
   <script>
-$(document).ready(function () {
-  function updateLinePosition() {
+function addArrowOne() {
+  $('#stagesDelivery').append(`<div class="delivery-width"><div class="open-stage open-stage-1 ms-auto"><p><input type="text" placeholder="Open" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p></div></div>`);
+}
+function addArrowTwo() {
+  $('#stagesDelivery').append(`<div class="delivery-width"><div class="review-stage review-stage-1 ms-auto"><p><input type="text" placeholder="Review" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p><p><input type="text" placeholder="Review" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p></div></div>`);
+}
+function addArrowThree() {
+  $('#stagesDelivery').append(`<div class="delivery-width"><div class="patment-stage ms-auto"><p><input type="text" placeholder="Cash" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p><p><input type="text" placeholder="Credit" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p><p><input type="text" placeholder="PayPal" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p></div></div>`);
+}
+
+
+
+
+
+    // Data for the line chart
+    var data = [
+      { x: 130, y: 150 },
+      { x: 380, y: 150 },
+      { x: 640, y: 150 },
+      { x: 900, y: 150 },
+      { x: 1150, y: 150 },
+    ];
+
+    // Canvas variables
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
-    var icons = $(".draggable-icon");
-    var positions = [];
 
-    // Get the center positions of all icons
-    icons.each(function (index, element) {
-      var rect = element.getBoundingClientRect();
-      var x = rect.left + rect.width / 2;
-      var y = rect.top + rect.height / 2;
-      positions.push({ x: x, y: y });
-    });
+    // Initialize canvas size
+    canvas.width = 1300;
+    canvas.height = 300;
 
-    // Update canvas size to match container size
-    canvas.width = $("#container").width();
-    canvas.height = $("#container").height();
+    // Variable to store the index of the selected data point
+    var selectedDataIndex = -1;
+    var yOffset = 0;
 
-    // Update line position
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.setLineDash([4, 2]);
-    ctx.moveTo(positions[0].x-300, positions[0].y-245); // Start the line from the first icon
+    // Load the image
+    var dotImage = new Image();
+    dotImage.src = "./assets/images/excited.png"; // Replace with the path to your image
 
-    for (var i = 1; i < positions.length; i++) {
-      ctx.lineTo(positions[i].x-300, positions[i].y-245);
+    // Function to draw the line chart
+    function drawLineChart() {
+      // Clear the canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw the line chart
+      ctx.beginPath();
+      ctx.moveTo(data[0].x, data[0].y);
+
+      for (var i = 1; i < data.length; i++) {
+        ctx.lineTo(data[i].x, data[i].y);
+      }
+
+      ctx.lineWidth = calculateLineWidth();
+      ctx.strokeStyle = "#775da6";
+      ctx.stroke();
+
+      // Draw the image at the data points
+      for (var i = 0; i < data.length; i++) {
+        ctx.drawImage(dotImage, data[i].x - dotImage.width / 2, data[i].y - dotImage.height / 2);
+      }
     }
-    ctx.strokeStyle = "black";
-    ctx.stroke();
-  }
 
-  function drawLine() {
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    updateLinePosition();
-  }
+    // Function to handle mousemove event
+    function handleMouseMove(event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left;
+      var y = event.clientY - rect.top + yOffset;
 
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
-  var icons = $(".draggable-icon");
-
-  // Initialize line position and draw it
-  updateLinePosition();
-  drawLine();
-
-  // Update line position and redraw on drag event
-  icons.draggable({
-    axis: "y", // Restrict movement to vertical axis
-    drag: function (event, ui) {
-      ui.position.left = ui.originalPosition.left; // Maintain the original left position
-      updateLinePosition();
-      drawLine();
-    },
-  });
-
-  // Update line position and redraw on window resize
-  $(window).resize(function () {
-    updateLinePosition();
-    drawLine();
-  });
-});
-
-    document.addEventListener('DOMContentLoaded', () => {
-      let uploadButton = document.getElementById("upload-button");
-      let chosenImage = document.getElementById("chosen-image");
-
-      uploadButton.onchange = () => {
-        let reader = new FileReader();
-        reader.readAsDataURL(uploadButton.files[0]);
-        reader.onload = () => {
-          chosenImage.setAttribute("src", reader.result);
-          chosenImage.style.zIndex = "1"; // Set the z-index value for the image element
+      if (selectedDataIndex !== -1) {
+        // Update the position of the selected data point
+        data[selectedDataIndex].y = y;
+        drawLineChart();
+      } else {
+        // Check if the mouse is over a data point
+        for (var i = 0; i < data.length; i++) {
+          if (Math.abs(data[i].x - x) <= dotImage.width / 2 && Math.abs(data[i].y - y) <= dotImage.height / 2) {
+            canvas.style.cursor = "ns-resize";
+            return;
+          }
         }
-      };
 
-      let handleFigureClick = () => {
-        uploadButton.click();
-      };
+        canvas.style.cursor = "default";
+      }
+    }
 
-      let figureElement = document.querySelector(".figure");
-      figureElement.addEventListener("click", handleFigureClick);
-    });
+    // Function to handle mousedown event
+    function handleMouseDown(event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left;
+      var y = event.clientY - rect.top;
 
+      // Check if the mouse is over a data point
+      for (var i = 0; i < data.length; i++) {
+        if (Math.abs(data[i].x - x) <= dotImage.width / 2 && Math.abs(data[i].y - y) <= dotImage.height / 2) {
+          selectedDataIndex = i;
+          yOffset = data[i].y - y;
+          return;
+        }
+      }
+    }
+
+    // Function to handle mouseup event
+    function handleMouseUp() {
+      selectedDataIndex = -1;
+    }
+
+    // Event listeners for mousemove, mousedown, and mouseup events
+    canvas.addEventListener("mousemove", handleMouseMove);
+    canvas.addEventListener("mousedown", handleMouseDown);
+    canvas.addEventListener("mouseup", handleMouseUp);
+
+    // Function to calculate the line width based on data size
+    function calculateLineWidth() {
+      var dataLength = data.length;
+      var lineWidth = 2; // Set the desired line width (2px)
+
+      return lineWidth;
+    }
+
+
+    // Function to add a data point to the line chart
+    function addDataPoint() {
+      var lastDataPoint = data[data.length - 1];
+      var x = lastDataPoint.x + 257;
+      var y = 150;
+      var label = "Label " + (data.length + 1);
+      data.push({ x: x, y: y, label: label });
+
+      // Update the canvas width based on the new data point
+      canvas.width += 257;
+
+      // Update the canvas style width to match the updated canvas width
+      canvas.style.width = canvas.width + "px";
+
+      // Redraw the line chart
+      drawLineChart();
+    }
+
+    // Initial draw of the line chart
+    dotImage.onload = function () {
+      drawLineChart();
+    };
 
 
 
@@ -1110,17 +1087,6 @@ $(document).ready(function () {
         svg.addEventListener('click', addImageToContainer);
       });
     });
-
-
-    var stages = 6;
-    var stages1 = 6;
-
-    function addSection() {
-
-      stages++;
-      stages1++;
-      $('#container').append(`<div class="draggable-icon" id="icon${stages1}"><p><textarea name="" id="" cols="30" rows="1" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div>`);
-    }
   </script>
 </body>
 

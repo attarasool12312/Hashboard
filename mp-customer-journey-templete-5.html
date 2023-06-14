@@ -29,7 +29,7 @@
   <script>
     document.addEventListener('alpine:init', () => {
       Alpine.data('stages', () => ({
-        columns: [1, 1, 1, 1, 1, 1, 1, 1, 1],
+        columns: [1, 1, 1, 1],
 
         addColumn() {
           this.columns.unshift(1)
@@ -38,15 +38,12 @@
           this.columns.splice(i, 1);
         },
         addSectionRow(type) {
-          let countColumns = this.columns.length;
-          console.log(countColumns);
           let tds = '';
           switch (type) {
             case 'goal':
               tds += '<td class="stage-heading">Customer Goals</td>';
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div x-data="{ goals: [''] }">
                 <div class="customer-goals">
@@ -63,13 +60,12 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'pain':
               tds += '<td class="stage-heading">Pain Points</td>';
-                tds += `
-                <template x-for="(i, ind) in columns">
+              tds += `
+              <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[ind]">
                         <td>
                           <div x-data="{ painPints: [{ text: '', description: '' }] }">
@@ -99,12 +95,11 @@
                         </td>
                       </template>
                     </template>`;
-      break;
+              break;
             case 'touchpoints':
               tds += '<td class="stage-heading">Touchpoints Activity</td>';
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div x-data="{ touchpointActivities: [{ language: 'Email', invitation: '' }] }">
                 <div class="touchpoint-activity">
@@ -132,14 +127,12 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'department':
               tds += '<td class="stage-heading">Department Channels</td>';
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div x-data="{ departmentChannels: [{ language: '', accountManager: '' }] }">
                 <div class="department-channels">
@@ -167,9 +160,8 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'experience':
               tds += `
       <td class="stage-heading">
@@ -182,9 +174,8 @@
           </div>
         </div>
       </td>`;
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div class="experience">
                 <div class="experience-checkbox">
@@ -221,26 +212,22 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'processes':
               tds += '<td class="stage-heading">Processes</td>';
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td class="py-4">
               <div class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto" data-bs-toggle="modal" data-bs-target="#processesModal">+</div>
               <div id="imageContainer" class="text-center"></div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'mediaImage':
               tds += '<td class="stage-heading">Media Image</td>';
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div class="table-media">
                             <div class="upload-file">
@@ -255,14 +242,12 @@
                             </div>
                           </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'mediaVideo':
               tds += '<td class="stage-heading">Media Video</td>';
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div class="table-media">
                 <div class="video-media" x-data="{ videoLink: '', videoId: '' }" x-init="setVideoId">
@@ -273,42 +258,13 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
-      case 'dragChart':
-              tds += `<td colspan="6"><div class="actions-main"><h4>ACTIONS</h4><div id="container"><div class="draggable-icon" id="icon1"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon2"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon3"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon4"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon5"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><canvas id="canvas"></canvas></div></div></td>`;
+              break;
+              case 'dragChart':
+              tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             case 'dragFillingChart':
-              tds += `<td colspan="6">          <div class="felling-chart mb-3">
-            <div id="container">
-              <div class="draggable-icon" id="icon1">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon2">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon3">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon4">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <canvas id="canvas"></canvas>
-            </div>
-          </div></td>`;
+              tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             default:
               break;
@@ -318,7 +274,38 @@
       }))
     })
   </script>
+  <style>
+    #container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+    }
 
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .data-point-label-container {
+      display: inline-block;
+      position: absolute;
+    }
+
+    .data-point-label {
+      font-size: 12px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .data-point-image {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+  </style>
 </head>
 
 <body>
@@ -453,130 +440,113 @@
             </div>
           </div>
         </div>
-        <div class="container-xl">
+        <div class="container-100">
           <div class="page-main-title">
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
             <button type="button" class="btn btn-fill me-md-3">Save</button>
           </div>
-          <div class="touchpoints-chart">
-            <div id="container">
-              <div class="draggable-icon" id="icon1">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+          <div class="bg-white rounded p-3 mb-3">
+            <div class="row mt-4">
+              <div class="col-md-2">
+                <p class="btn-fill text-uppercase w-100 text-center py-2">
+                  <input type="text" placeholder="experience"
+                    class="border-0 input-white text-center outline-none bg-transparent w-100">
                 </p>
               </div>
-              <div class="draggable-icon" id="icon2">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
+              <div class="col-md-10">
+                <div>
+                  <canvas id="experienceChart" class="w-100"
+                    style="display: block; box-sizing: border-box; height: 224px; width: 629px;" width="629"
+                    height="224"></canvas>
+                </div>
               </div>
-              <div class="draggable-icon" id="icon3">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon4">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon5">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <canvas id="canvas"></canvas>
             </div>
           </div>
           <div class="bg-white p-3 journey-map-white">
+            <div class="row">
+              <div class="col-md-10 ms-auto">
+                <div class="d-flex align-items-center">
+                  <p class="btn-fill fs-5 py-2 w-50 rounded-pill text-center">
+                    <input type="text" placeholder="Awareness"
+                      class="border-0 input-white text-center outline-none bg-transparent w-100">
+                  </p>
+                  <p class="btn-fill fs-5 py-2 w-50 rounded-pill text-center ms-3">
+                    <input type="text" placeholder="Purchace"
+                      class="border-0 input-white text-center outline-none bg-transparent w-100">
+                  </p>
+                </div>
+              </div>
+            </div>
             <div class="d-flex">
               <table id="journey-map" class="journey-map-table journey-map overflow-x">
                 <tbody>
-                  <tr id="mainStages" class="stages-main">
-                    <td scope="col">
-                      <h4>Stages</h4>
-                    </td>
-                    <template x-for="(i,ind) in columns">
+                  <tr id="mainStages">
+                    <td class="stage-heading"></td>
+                    <template x-for="i in columns">
                       <td>
-                        <div class="stages">
-                          <h3>
-                            <input type="text" placeholder="Stage 1"
-                              class="mt-2 border-0 input-white outline-none bg-transparent text-center w-100">
-                          </h3>
-                        </div>
+                        <h1 class="text-fill">
+                          <input type="text" placeholder="00."
+                            class="border-0 input-fill text-center outline-none bg-transparent w-100 fw-600">
+                        </h1>
+                        <p class="text-fill">
+                          <input type="text" placeholder="Action step"
+                            class="border-0 input-fill text-center outline-none bg-transparent w-100">
+                        </p>
                       </td>
                     </template>
                   </tr>
-                  <tr id="customerGoals" class="opportunities-main">
-                    <td style="margin-left: 27px; margin-right: 24px;">
-                      <h4>THOUGHTS</h4>
+                  <tr id="subStages">
+                    <td class="stage-heading">
+                      <p class="btn-fill text-uppercase w-100 text-center py-2 width-150px">
+                        <input type="text" placeholder="Doing"
+                          class="border-0 input-white text-center outline-none bg-transparent w-100">
+                      </p>
                     </td>
                     <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[columns.length-1-ind]">
-                        <td class="opportunities-td">
-                          <div class="opportunities">
-                            <div class="transparent-boxs">
-                              <div class="transparent-box">
-                                <ul>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
+                        <td>
+                          <p class="width-257px px-3">
+                            <textarea name="" id="" cols="30" rows="3"
+                              class="w-100 border-0 rounded bg-transparent outline-none">Break down the phase into substeps here by describing the users activity</textarea>
+                          </p>
                         </td>
                       </template>
                     </template>
                   </tr>
-                  <tr id="customerGoals" class="opportunities-main">
-                    <td>
-                      <h4>OPPORTUNITIES</h4>
+                  <tr id="customerGoals">
+                    <td class="stage-heading">
+                      <p class="btn-fill text-uppercase w-100 text-center py-2 width-150px">
+                        <input type="text" placeholder="thinking & feeling"
+                          class="border-0 input-white text-center outline-none bg-transparent w-100">
+                      </p>
                     </td>
                     <template x-for="(i, ind) in columns">
-                      <template x-for="j in columns[columns.length-1-ind]">
-                        <td class="opportunities-td">
-                          <div class="opportunities">
-                            <div class="transparent-boxs">
-                              <div class="transparent-box">
-                                <ul>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
+                      <template x-for="j in columns[ind]">
+                        <td>
+                          <p class="width-257px px-3">
+                            <textarea name="" id="" cols="30" rows="3"
+                              class="w-100 border-0 rounded bg-transparent outline-none">What is the user thinking / feeling when engaging in this activity?</textarea>
+                          </p>
+                        </td>
+                      </template>
+                    </template>
+                  </tr>
+                  <tr id="painPints">
+                    <td class="stage-heading">
+                      <p class="btn-fill text-uppercase text-center py-2 width-150px">
+                        <input type="text" placeholder="opportunities"
+                          class="border-0 input-white text-center outline-none bg-transparent w-100">
+                      </p>
+                    </td>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td>
+                          <p class="width-257px px-3">
+                            <textarea name="" id="" cols="30" rows="3"
+                              class="w-100 border-0 rounded bg-transparent outline-none">This is an idea / comment card on how to solve frictions or celebrate successes</textarea>
+                          </p>
                         </td>
                       </template>
                     </template>
@@ -584,7 +554,8 @@
                 </tbody>
               </table>
               <div class="add-stage-button mt-5 ms-3">
-                <button type="button" class="btn fs-6 width-100px p-0" onclick="addSection()" @click="addColumn">Add Satge</button>
+                <button type="button" class="btn fs-6 width-100px p-0" onclick="addSection()" @click="addColumn">Add
+                  Satge</button>
               </div>
             </div>
             <div class="add-stage-button mt-5 ms-3">
@@ -978,69 +949,179 @@
 
 
   <script>
-$(document).ready(function () {
-  function updateLinePosition() {
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-    var icons = $(".draggable-icon");
-    var positions = [];
+    const img1 = new Image();
+    img1.src = './assets/images/chart-images/joyful.png';
 
-    // Get the center positions of all icons
-    icons.each(function (index, element) {
-      var rect = element.getBoundingClientRect();
-      var x = rect.left + rect.width / 2;
-      var y = rect.top + rect.height / 2;
-      positions.push({ x: x, y: y });
+    const img2 = new Image();
+    img2.src = './assets/images/chart-images/happy.png';
+
+    const img3 = new Image();
+    img3.src = './assets/images/chart-images/normal.png';
+
+    const img4 = new Image();
+    img4.src = './assets/images/chart-images/confused.png';
+
+    const img5 = new Image();
+    img5.src = './assets/images/chart-images/disappointed.png';
+
+    const img6 = new Image();
+    img6.src = './assets/images/chart-images/annoyed.png';
+
+    const dataPoints = [30, 25, 20, 15, 10, 5];
+
+    const experienceChart = document.getElementById("experienceChart");
+
+    const experienceChart_1 = new Chart(experienceChart, {
+      type: "bar",
+      data: {
+        labels: ["Joyful", "Happy", "Normal", "Confused", "Disappointed", "Annoyed"],
+        datasets: [
+          {
+            label: "# of Votes",
+            data: dataPoints,
+            backgroundColor: "#FFB1B7",
+            barThickness: 137,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        scales: {
+          x: {
+            display: false,
+          },
+          y: {
+            display: false,
+          },
+        },
+        plugins: {
+          afterDraw: function (chart) {
+            const ctx = chart.ctx;
+            const xAxis = chart.scales["x"];
+            const yAxis = chart.scales["y"];
+
+            const images = [
+              img1,
+              img2,
+              img3,
+              img4,
+              img5,
+              img6
+            ];
+
+            chart.data.datasets[0].data.forEach((value, index) => {
+              const x = xAxis.getPixelForValue(index);
+              const y = yAxis.getPixelForValue(value);
+
+              const image = images[index];
+
+              ctx.drawImage(image, x - image.width / 2, y - image.height / 2, image.width, image.height);
+            });
+          },
+        },
+      },
     });
 
-    // Update canvas size to match container size
-    canvas.width = $("#container").width();
-    canvas.height = $("#container").height();
+    function addSection() {
+      const stages = ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"];
+      const randomIndex = Math.floor(Math.random() * stages.length);
+      const randomStage = stages[randomIndex];
+      const randomDataPoint = Math.floor(Math.random() * 50) + 1;
 
-    // Update line position
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.setLineDash([4, 2]);
-    ctx.moveTo(positions[0].x-200, positions[0].y-197); // Start the line from the first icon
+      // Update labels and dataPoints arrays
+      experienceChart_1.data.labels.push(randomStage);
+      experienceChart_1.data.datasets[0].data.push(randomDataPoint);
 
-    for (var i = 1; i < positions.length; i++) {
-      ctx.lineTo(positions[i].x-200, positions[i].y-197);
+      // Update the chart
+      experienceChart_1.update();
     }
-    ctx.strokeStyle = "black";
-    ctx.stroke();
-  }
 
-  function drawLine() {
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    updateLinePosition();
-  }
 
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
-  var icons = $(".draggable-icon");
+    $(document).ready(function () {
+      function updateLinePosition() {
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var icons = $(".draggable-icon");
+        var positions = [];
 
-  // Initialize line position and draw it
-  updateLinePosition();
-  drawLine();
+        // Get the center positions of all icons
+        icons.each(function (index, element) {
+          var rect = element.getBoundingClientRect();
+          var x = rect.left + rect.width / 2;
+          var y = rect.top + rect.height / 2;
+          positions.push({ x: x, y: y });
+        });
 
-  // Update line position and redraw on drag event
-  icons.draggable({
-    axis: "y", // Restrict movement to vertical axis
-    drag: function (event, ui) {
-      ui.position.left = ui.originalPosition.left; // Maintain the original left position
+        // Update canvas size to match container size
+        canvas.width = $("#container").width();
+        canvas.height = $("#container").height();
+
+        // Update line position
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.setLineDash([4, 2]);
+        ctx.moveTo(positions[0].x - 585, positions[0].y - 245); // Start the line from the first icon
+
+        for (var i = 1; i < positions.length; i++) {
+          ctx.lineTo(positions[i].x - 585, positions[i].y - 245);
+        }
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+      }
+
+      function drawLine() {
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        updateLinePosition();
+      }
+
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+      var icons = $(".draggable-icon");
+
+      // Initialize line position and draw it
       updateLinePosition();
       drawLine();
-    },
-  });
 
-  // Update line position and redraw on window resize
-  $(window).resize(function () {
-    updateLinePosition();
-    drawLine();
-  });
-});
+      // Update line position and redraw on drag event
+      icons.draggable({
+        axis: "y", // Restrict movement to vertical axis
+        drag: function (event, ui) {
+          ui.position.left = ui.originalPosition.left; // Maintain the original left position
+          updateLinePosition();
+          drawLine();
+        },
+      });
+
+      // Update line position and redraw on window resize
+      $(window).resize(function () {
+        updateLinePosition();
+        drawLine();
+      });
+    });
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+      let uploadButton = document.getElementById("upload-button");
+      let chosenImage = document.getElementById("chosen-image");
+
+      uploadButton.onchange = () => {
+        let reader = new FileReader();
+        reader.readAsDataURL(uploadButton.files[0]);
+        reader.onload = () => {
+          chosenImage.setAttribute("src", reader.result);
+          chosenImage.style.zIndex = "1"; // Set the z-index value for the image element
+        }
+      };
+
+      let handleFigureClick = () => {
+        uploadButton.click();
+      };
+
+      let figureElement = document.querySelector(".figure");
+      figureElement.addEventListener("click", handleFigureClick);
+    });
 
 
 
@@ -1062,15 +1143,6 @@ $(document).ready(function () {
         svg.addEventListener('click', addImageToContainer);
       });
     });
-
-
-    var stages1 = 6;
-
-    function addSection() {
-
-      stages1++;
-      $('#container').append(`<div class="draggable-icon" id="icon${stages1}"><p><textarea name="" id="" cols="30" rows="1" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div>`);
-    }
   </script>
 </body>
 

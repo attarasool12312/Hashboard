@@ -29,7 +29,7 @@
   <script>
     document.addEventListener('alpine:init', () => {
       Alpine.data('stages', () => ({
-        columns: [1, 1, 1, 1, 1],
+        columns: [1, 1, 1, 1, 1, 1],
 
         addColumn() {
           this.columns.unshift(1)
@@ -38,15 +38,12 @@
           this.columns.splice(i, 1);
         },
         addSectionRow(type) {
-          let countColumns = this.columns.length;
-          console.log(countColumns);
           let tds = '';
           switch (type) {
             case 'goal':
               tds += '<td class="stage-heading">Customer Goals</td>';
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div x-data="{ goals: [''] }">
                 <div class="customer-goals">
@@ -63,13 +60,12 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'pain':
               tds += '<td class="stage-heading">Pain Points</td>';
-                tds += `
-                <template x-for="(i, ind) in columns">
+              tds += `
+              <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[ind]">
                         <td>
                           <div x-data="{ painPints: [{ text: '', description: '' }] }">
@@ -99,12 +95,11 @@
                         </td>
                       </template>
                     </template>`;
-      break;
+              break;
             case 'touchpoints':
               tds += '<td class="stage-heading">Touchpoints Activity</td>';
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div x-data="{ touchpointActivities: [{ language: 'Email', invitation: '' }] }">
                 <div class="touchpoint-activity">
@@ -132,14 +127,12 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'department':
               tds += '<td class="stage-heading">Department Channels</td>';
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div x-data="{ departmentChannels: [{ language: '', accountManager: '' }] }">
                 <div class="department-channels">
@@ -167,9 +160,8 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'experience':
               tds += `
       <td class="stage-heading">
@@ -182,9 +174,8 @@
           </div>
         </div>
       </td>`;
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div class="experience">
                 <div class="experience-checkbox">
@@ -221,26 +212,22 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'processes':
               tds += '<td class="stage-heading">Processes</td>';
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td class="py-4">
               <div class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto" data-bs-toggle="modal" data-bs-target="#processesModal">+</div>
               <div id="imageContainer" class="text-center"></div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'mediaImage':
               tds += '<td class="stage-heading">Media Image</td>';
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div class="table-media">
                             <div class="upload-file">
@@ -255,14 +242,12 @@
                             </div>
                           </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'mediaVideo':
               tds += '<td class="stage-heading">Media Video</td>';
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div class="table-media">
                 <div class="video-media" x-data="{ videoLink: '', videoId: '' }" x-init="setVideoId">
@@ -273,42 +258,13 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
-      case 'dragChart':
-              tds += `<td colspan="6"><div class="actions-main"><h4>ACTIONS</h4><div id="container"><div class="draggable-icon" id="icon1"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon2"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon3"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon4"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon5"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><canvas id="canvas"></canvas></div></div></td>`;
+              break;
+            case 'dragChart':
+              tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             case 'dragFillingChart':
-              tds += `<td colspan="6">          <div class="felling-chart mb-3">
-            <div id="container">
-              <div class="draggable-icon" id="icon1">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon2">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon3">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon4">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <canvas id="canvas"></canvas>
-            </div>
-          </div></td>`;
+              tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             default:
               break;
@@ -318,7 +274,32 @@
       }))
     })
   </script>
+  <style>
+    #container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+    }
 
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .data-point-label-container {
+      display: inline-block;
+      position: absolute;
+    }
+
+    .data-point-label {
+      font-size: 12px;
+      cursor: pointer;
+      padding: 4px;
+    }
+  </style>
 </head>
 
 <body>
@@ -453,139 +434,43 @@
             </div>
           </div>
         </div>
-        <div class="container-xl">
+        <div class="container-100">
           <div class="page-main-title">
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
             <button type="button" class="btn btn-fill me-md-3">Save</button>
           </div>
-          <div class="touchpoints-chart">
-            <h3>TOUCHPOINTS</h3>
-            <div id="container">
-              <div class="draggable-icon" id="icon1">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon2">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon3">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon4">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon5">
-                <p>
-                  <textarea name="" id="" cols="30" rows="2"
-                    placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit."
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <canvas id="canvas"></canvas>
-            </div>
-          </div>
           <div class="bg-white p-3 journey-map-white">
+            <div id="container">
+              <canvas id="canvas" width="400" height="300"></canvas>
+            </div>
             <div class="d-flex">
               <table id="journey-map" class="journey-map-table journey-map overflow-x">
                 <tbody>
-                  <tr id="mainStages" class="stages-main">
-                    <td scope="col">
-                      <h4>Stages</h4>
-                    </td>
-                    <template x-for="(i,ind) in columns">
+                  <tr id="mainStages">
+                    <td class="stage-heading">Step</td>
+                    <template x-for="i in columns">
                       <td>
-                        <div class="stages">
-                          <h3>
-                            <input type="text" placeholder="Stage 1"
-                              class="mt-2 border-0 input-white outline-none bg-transparent text-center w-100">
-                          </h3>
+                        <div class="chart-box1">
+                          <div class="step-box">
+                            <p>
+                              <input type="text" placeholder="Step 1"
+                                class="border-0 input-white text-center outline-none bg-transparent w-100">
+                            </p>
+                            <textarea name="" id="" cols="30" rows="12"
+                              class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
+                          </div>
                         </div>
                       </td>
-                    </template>
-                  </tr>
-                  <tr id="customerGoals" class="opportunities-main">
-                    <td style="margin-left: 27px; margin-right: 24px;">
-                      <h4>THOUGHTS</h4>
-                    </td>
-                    <template x-for="(i, ind) in columns">
-                      <template x-for="j in columns[columns.length-1-ind]">
-                        <td class="opportunities-td">
-                          <div class="opportunities">
-                            <div class="transparent-boxs">
-                              <div class="transparent-box">
-                                <ul>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </td>
-                      </template>
-                    </template>
-                  </tr>
-                  <tr id="customerGoals" class="opportunities-main">
-                    <td>
-                      <h4>OPPORTUNITIES</h4>
-                    </td>
-                    <template x-for="(i, ind) in columns">
-                      <template x-for="j in columns[columns.length-1-ind]">
-                        <td class="opportunities-td">
-                          <div class="opportunities">
-                            <div class="transparent-boxs">
-                              <div class="transparent-box">
-                                <ul>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                  <li>
-                                    <textarea name="" id="" cols="30" rows="4"
-                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </td>
-                      </template>
                     </template>
                   </tr>
                 </tbody>
               </table>
               <div class="add-stage-button mt-5 ms-3">
-                <button type="button" class="btn fs-6 width-100px p-0" onclick="addSection()" @click="addColumn">Add Satge</button>
+                <button type="button" class="btn fs-6 width-100px p-0" id="addDataPointButton" onclick="addSection()"
+                  @click="addColumn">Add
+                  Satge</button>
               </div>
             </div>
             <div class="add-stage-button mt-5 ms-3">
@@ -979,69 +864,258 @@
 
 
   <script>
-$(document).ready(function () {
-  function updateLinePosition() {
+
+    // Data for the line chart
+    var data = [
+      {
+        x: 170,
+        y: 150,
+        label: "Label 1",
+        img: "./assets/images/emotion-good.png",
+      },
+      {
+        x: 400,
+        y: 150,
+        label: "Label 2",
+        img: "./assets/images/emotion-good.png",
+      },
+      {
+        x: 640,
+        y: 150,
+        label: "Label 3",
+        img: "./assets/images/emotion-good.png",
+      },
+      {
+        x: 880,
+        y: 150,
+        label: "Label 4",
+        img: "./assets/images/emotion-good.png",
+      },
+      {
+        x: 1120,
+        y: 150,
+        label: "Label 5",
+        img: "./assets/images/emotion-good.png",
+      },
+      {
+        x: 1350,
+        y: 150,
+        label: "Label 6",
+        img: "./assets/images/emotion-good.png",
+      },
+    ];
+
+    // Canvas variables
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
-    var icons = $(".draggable-icon");
-    var positions = [];
 
-    // Get the center positions of all icons
-    icons.each(function (index, element) {
-      var rect = element.getBoundingClientRect();
-      var x = rect.left + rect.width / 2;
-      var y = rect.top + rect.height / 2;
-      positions.push({ x: x, y: y });
-    });
+    // Initialize canvas size
+    canvas.width = 1400;
+    canvas.height = 300;
 
-    // Update canvas size to match container size
-    canvas.width = $("#container").width();
-    canvas.height = $("#container").height();
+    // Variable to store the index of the selected data point
+    var selectedDataIndex = -1;
+    var yOffset = 0;
 
-    // Update line position
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.setLineDash([4, 2]);
-    ctx.moveTo(positions[0].x-200, positions[0].y-225); // Start the line from the first icon
+    // Function to draw the line chart
+    function drawLineChart(update) {
+      // Clear the canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    for (var i = 1; i < positions.length; i++) {
-      ctx.lineTo(positions[i].x-200, positions[i].y-225);
+      // Draw the line chart
+      ctx.beginPath();
+      ctx.moveTo(data[0].x, data[0].y);
+
+      for (var i = 1; i < data.length; i++) {
+        ctx.lineTo(data[i].x, data[i].y);
+      }
+
+      ctx.lineWidth = calculateLineWidth();
+      ctx.strokeStyle = "#775da6";
+      ctx.stroke();
+
+      // Draw dots at the data points and display labels
+      for (var i = 0; i < data.length; i++) {
+        ctx.beginPath();
+        ctx.arc(data[i].x, data[i].y, 4, 0, 2 * Math.PI);
+        ctx.fillStyle = "#775da6";
+        ctx.fill();
+        ctx.stroke();
+
+        // Display the label of the data point near the dot
+        ctx.fillStyle = "#000000";
+        ctx.font = "11px Arial";
+        var labelWidth = ctx.measureText(data[i].label).width;
+        ctx.fillText(
+          data[i].label,
+          data[i].x - labelWidth / 2,
+          data[i].y - 10
+        );
+
+        // Draw the image near the dot
+        var image = new Image();
+        image.src = data[i].img;
+        var imageWidth = 40; // Set the desired image width
+        var imageHeight = 40; // Set the desired image height
+        ctx.drawImage(
+          image,
+          data[i].x - imageWidth / 2,
+          data[i].y - 70,
+          imageWidth,
+          imageHeight
+        );
+      }
+
+      // Event listener for click events on the data point labels
+      canvas.addEventListener("dblclick", handleLabelClick);
     }
-    ctx.strokeStyle = "black";
-    ctx.stroke();
-  }
 
-  function drawLine() {
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    updateLinePosition();
-  }
+    // Function to handle click events on the data point labels
+    function handleLabelClick(event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left;
+      var y = event.clientY - rect.top;
 
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
-  var icons = $(".draggable-icon");
+      for (var i = 0; i < data.length; i++) {
+        var labelX = data[i].x - 10;
+        var labelY = data[i].y - 10;
 
-  // Initialize line position and draw it
-  updateLinePosition();
-  drawLine();
+        if (
+          x >= labelX &&
+          x <= labelX + 20 &&
+          y >= labelY &&
+          y <= labelY + 20
+        ) {
+          editLabel(i);
+          break;
+        }
+      }
+    }
 
-  // Update line position and redraw on drag event
-  icons.draggable({
-    axis: "y", // Restrict movement to vertical axis
-    drag: function (event, ui) {
-      ui.position.left = ui.originalPosition.left; // Maintain the original left position
-      updateLinePosition();
-      drawLine();
-    },
-  });
+    // Function to edit the label
+    function editLabel(index) {
+      var labelContainer = document.createElement("div");
+      labelContainer.className = "data-point-label-container";
+      var labelInput = document.createElement("input");
+      labelInput.type = "text";
+      labelInput.className = "data-point-label";
+      labelInput.value = data[index].label;
 
-  // Update line position and redraw on window resize
-  $(window).resize(function () {
-    updateLinePosition();
-    drawLine();
-  });
-});
+      // Update label on input change
+      labelInput.addEventListener("input", function () {
+        data[index].label = labelInput.value;
+        drawLineChart();
+      });
+
+      // Add the label input to the container
+      labelContainer.appendChild(labelInput);
+
+      // Append the container to the body
+      document.body.appendChild(labelContainer);
+
+      // Position the label input above the data point
+      labelContainer.style.left = data[index].x + 90 + "px";
+      labelContainer.style.top = data[index].y + 170 + "px";
+
+      // Focus the label input and select its contents
+      labelInput.focus();
+      labelInput.select();
+
+      // Remove the label container when focus is lost
+      labelInput.addEventListener("blur", function () {
+        document.body.removeChild(labelContainer);
+      });
+    }
+
+    drawLineChart("true");
+
+    // click button code to add new point
+    var addDataPointButton = document.getElementById("addDataPointButton");
+    addDataPointButton.addEventListener("click", addDataPoint);
+
+    // Function to handle mousemove event
+    function handleMouseMove(event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left;
+      var y = event.clientY - rect.top + yOffset;
+
+      if (selectedDataIndex !== -1) {
+        // Update the position of the selected data point
+        data[selectedDataIndex].y = y;
+        drawLineChart();
+      } else {
+        // Check if the mouse is over a data point
+        for (var i = 0; i < data.length; i++) {
+          if (Math.abs(data[i].x - x) <= 4 && Math.abs(data[i].y - y) <= 4) {
+            canvas.style.cursor = "ns-resize";
+            // showDataPointLabel(i, x, y);
+            return;
+          }
+        }
+
+        canvas.style.cursor = "default";
+        // hideDataPointLabel(); showDataPointLabel
+      }
+    }
+
+    // Function to handle mousedown event
+    function handleMouseDown(event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left;
+      var y = event.clientY - rect.top;
+
+      // Check if the mouse is over a data point
+      for (var i = 0; i < data.length; i++) {
+        if (Math.abs(data[i].x - x) <= 4 && Math.abs(data[i].y - y) <= 4) {
+          selectedDataIndex = i;
+          yOffset = data[i].y - y;
+          return;
+        }
+      }
+    }
+
+    // Function to handle mouseup event
+    function handleMouseUp() {
+      selectedDataIndex = -1;
+    }
+
+    // Event listeners for mousemove, mousedown, and mouseup events
+    canvas.addEventListener("mousemove", handleMouseMove);
+    canvas.addEventListener("mousedown", handleMouseDown);
+    canvas.addEventListener("mouseup", handleMouseUp);
+
+    // Function to calculate the line width based on data size
+    function calculateLineWidth() {
+      var dataLength = data.length;
+      var lineWidth = 2; // Set the desired line width (2px)
+
+      return lineWidth;
+    }
+
+    // Function to add a data point to the line chart
+    function addDataPoint() {
+      var lastDataPoint = data[data.length - 1];
+      var x = lastDataPoint.x + 257;
+      var y = 150;
+      var label = "Label " + (data.length + 1);
+      var defaultImage = "./assets/images/default-image.png"; // Set the default image path here
+      data.push({
+        x: x,
+        y: y,
+        label: label,
+        img: "./assets/images/emotion-good.png",
+      });
+
+      // Update the canvas width based on the new data point
+      canvas.width += 257;
+
+      // Update the canvas style width to match the updated canvas width
+      canvas.style.width = canvas.width + "px";
+
+      // Redraw the line chart
+      drawLineChart();
+    }
+
 
     document.addEventListener('DOMContentLoaded', () => {
       let uploadButton = document.getElementById("upload-button");
@@ -1084,17 +1158,6 @@ $(document).ready(function () {
         svg.addEventListener('click', addImageToContainer);
       });
     });
-
-
-    var stages = 6;
-    var stages1 = 6;
-
-    function addSection() {
-
-      stages++;
-      stages1++;
-      $('#container').append(`<div class="draggable-icon" id="icon${stages1}"><p><textarea name="" id="" cols="30" rows="1" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div>`);
-    }
   </script>
 </body>
 

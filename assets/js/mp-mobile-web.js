@@ -160,28 +160,46 @@ const breakLine = () => {
     ].children.length - 1
   ].children[1].innerHTML = ` <img
   src="./assets/images/rightArrows/ra5.png"
-  style='transform : rotate(90deg); background: rgba(217, 217, 217, 0.53); border: 1px dashed #AABED1; padding: 5px;'
+  style='transform : rotate(90deg); margin-top: 50px;'
         id="bzoop"
         alt="image"
-      /> <img width='24px' height='24px' onClick="openModalONE(event)" src="./assets/images/icons/plus-big-icon.svg" alt="image" class="mt-3">`;
+      /> <img width='24px' height='24px' onClick="openModalONE(event)" style="margin-top: 22px;" src="./assets/images/icons/plus-big-icon.svg" alt="image">`;
   var newdiv = document.createElement("div");
   newdiv.style.height = "170px";
   if (noofchildsofmain % 2 !== 0) {
-    newdiv.style.width = `${
+    let setCheckMarginLeft = `${document.getElementsByClassName(
+      `mainforphotos${noofchildsofmain}child`
+    )[0].style.marginLeft}`
+    if (setCheckMarginLeft) {
+      setCheckMarginLeft = parseInt(setCheckMarginLeft, 10)
+      setCheckMarginLeft = setCheckMarginLeft - 50
+    }
+    let widthSetting = `${setCheckMarginLeft +
       document.getElementsByClassName(
         `mainforphotos${noofchildsofmain}child`
       )[0].children.length *
-        230 -
+      230 -
       70
-    }px`;
-    newdiv.style.marginLeft = '50px'
+      }px`
+    console.log(widthSetting, 'test')
+    newdiv.style.width = widthSetting;
 
+
+    newdiv.style.marginLeft = '50px'
   } else {
-    newdiv.style.width = "auto";
+    let widthSet = `${parseInt(`${document.getElementsByClassName(
+    `mainforphotos${noofchildsofmain}child`
+  )[0].style.width}`, 10) - `${document.getElementsByClassName(
+    `mainforphotos${noofchildsofmain}child`
+  )[0].children.length *
+  230 -
+  70
+  }` + 50}px`
+  newdiv.style.width = 'auto';
+  newdiv.style.marginLeft = widthSet
   }
   noofchildsofmain += 1;
   newdiv.className = `mainforphotos${noofchildsofmain}child`;
-  newdiv.style.marginLeft = '50px'
 
   if (noofchildsofmain % 2 == 0) {
     newdiv.style.flexDirection = "row-reverse";
@@ -207,10 +225,12 @@ bzoop[0].remove();
 <div style="width: 70px;height : 153px;display : flex ; justify-content : center ; align-items : center">
   <img width='24px' height='24px' onClick="openModalTWO(event)" src="./assets/images/icons/plus-big-icon.svg" alt="image">
   </div>
-  <div style="width: 157px;height : 153px;display : flex ; justify-content : center; flex-flow: column">
-  <img src="./assets/images/web-dasktop/${event.target.id}.png" style="object-fit : contain ; width : 100%" alt="image">
-  <input type="text" name="name" id="name" placeholder="Web Title" class="d-block w-100 border-0 mt-2 rounded bg-transparent outline-none fw-600 text-center">
-</div> 
+    <div>
+    <div style="width: 157px;height : 153px;display : flex ; justify-content : center">
+    <img src="./assets/images/web-dasktop/${event.target.id}.png" style="object-fit : contain ; width : 100%" alt="image">
+  </div>
+    <input type="text" name="name" id="name" placeholder="Web Title" class="d-block w-100 border-0 mt-2 rounded bg-transparent outline-none fw-600 text-center">
+    </div> 
 </div>
 <div style="height :77px;width : 160px ; display : flex ;  justify-content : space-evenly ; align-items : center ;flex-direction : column">
 </div>`;
@@ -219,10 +239,12 @@ bzoop[0].remove();
 
     newdiv.innerHTML = `
   <div class='peela' style= "width: 230px;height : 153px; display: flex;justify-content : space-around">
-  <div style="width: 160px;height : 153px;display : flex ; justify-content : center; flex-flow: column">
+  <div>
+  <div style="width: 160px;height : 153px;display : flex ; justify-content : center">
   <img src="./assets/images/web-dasktop/${event.target.id}.png" style="object-fit : contain ; width : 100%" alt="image">
-  <input type="text" name="name" id="name" placeholder="Web Title" class="d-block w-100 border-0 rounded mt-2 bg-transparent outline-none fw-600 text-center">
 </div>
+  <input type="text" name="name" id="name" placeholder="Web Title" class="d-block w-100 border-0 mt-2 rounded bg-transparent outline-none fw-600 text-center">
+  </div>
 <div style="width: 70px;height : 153px;display : flex ; justify-content : center ; align-items : center">
   <img width='24px' height='24px' onClick="openModalTWO(event)" src="./assets/images/icons/plus-big-icon.svg" alt="image">
   </div>
@@ -256,13 +278,17 @@ bzoop[0].remove();
   lop.innerHTML =`  <div class="desMain">
         <div class="counting">${noofMobiles}</div>
         <div>
-        <input type="text" name="name" id="name" placeholder="Web Title" class="d-block w-100 border-0 rounded mt-2 bg-transparent outline-none fw-600">
+        <input type="text" name="name" id="name" placeholder="Web Title" class="d-block w-100 border-0 mt-2 rounded bg-transparent outline-none fw-600">
         <textarea class='txtarea'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation. Culpa qui officia deserunt mollit anim.</textarea>
         </div>
-        <div><button style="width : 20px ; height: 20px;cursor : pointer; background-color:  #775DA6 ; color: white; padding:  5px ; display : flex ; justify-content : center ; align-items : center ; outline : none ; border : none ; border-radius : 50%"  onClick="remove(event)"> X </button></div>
+        <div><button style="width : 20px ; height: 20px;cursor : pointer; background-color:  red ; color: white; padding:  5px ; display : flex ; justify-content : center ; align-items : center ; outline : none ; border : none ; border-radius : 50%"  onClick="remove(event)"> X </button></div>
       </div>`;
   tool.appendChild(lop);
-  if(document.getElementsByClassName(`mainforphotos${noofchildsofmain}child`)[0].children.length  == 8){
+  let rowWidth = parseInt(document.getElementsByClassName(`mainforphotos${noofchildsofmain}child`)[0].style.width, 10);
+let childWidth = document.getElementsByClassName(`mainforphotos${noofchildsofmain}child`)[0].children.length * 230;
+let checkWidth = rowWidth - childWidth
+console.log( checkWidth < 0 , 'testing')
+  if(document.getElementsByClassName(`mainforphotos${noofchildsofmain}child`)[0].children.length  == 8 || checkWidth < 0){
     breakLine();
   }
 };
@@ -276,15 +302,15 @@ const rightArrowmodelClick = (event) => {
   zeee.innerHTML = "";
   if (noofchildsofmain % 2 == 0) {
     zeee.innerHTML = `<div style="display : flex ; justify-content : center ; align-items : center"><div style="height :100% ;display : flex ; justify-content : center ; align-items : flex-end">
-    <img width='24px' height='24px' onClick="openModalONE(event)" src="./assets/images/icons/plus-big-icon.svg" alt="image"></div>
+    <img width='24px' height='24px' onClick="openModalONE(event)" style="margin-top: 22px;" src="./assets/images/icons/plus-big-icon.svg" alt="image"></div>
       </div>
-    <div style="display : flex ; justify-content : center ; align-items : center; background: rgba(217, 217, 217, 0.53); border: 1px dashed #AABED1; padding: 5px;"><img style="transform: rotate(180deg);" src="./assets/images/rightArrows/${event.target.id}.png" alt=""></div>
+    <div style="display : flex ; justify-content : center ; align-items : center;"><img style="transform: rotate(180deg);" src="./assets/images/rightArrows/${event.target.id}.png" alt=""></div>
       <div>
     
          </div>`;
   } else {
     zeee.innerHTML = `<div style="display : flex ; justify-content : center ; align-items : center">
-    <div style="display : flex ; justify-content : center ; align-items : center; background: rgba(217, 217, 217, 0.53); border: 1px dashed #AABED1; padding: 5px;"><img src="./assets/images/rightArrows/${event.target.id}.png" alt=""></div>
+    <div style="display : flex ; justify-content : center ; align-items : center;"><img src="./assets/images/rightArrows/${event.target.id}.png" alt=""></div>
       <div>
     <div style="height :100% ;display : flex ; justify-content : center ; align-items : flex-end">
     <img width='24px' height='24px' onClick="openModalONE(event)" src="./assets/images/icons/plus-big-icon.svg" alt="image"></div>

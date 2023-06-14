@@ -29,7 +29,7 @@
   <script>
     document.addEventListener('alpine:init', () => {
       Alpine.data('stages', () => ({
-        columns: [1, 1, 1, 1],
+        columns: [1, 1, 1, 1, 1],
 
         addColumn() {
           this.columns.unshift(1)
@@ -38,14 +38,12 @@
           this.columns.splice(i, 1);
         },
         addSectionRow(type) {
-          let countColumns = this.columns.length;
-          console.log(countColumns);
           let tds = '';
           switch (type) {
             case 'goal':
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += '<td class="stage-heading">Customer Goals</td>';
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div x-data="{ goals: [''] }">
                 <div class="customer-goals">
@@ -62,12 +60,12 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'pain':
-                tds += `
-                <template x-for="(i, ind) in columns">
+              tds += '<td class="stage-heading">Pain Points</td>';
+              tds += `
+              <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[ind]">
                         <td>
                           <div x-data="{ painPints: [{ text: '', description: '' }] }">
@@ -97,11 +95,11 @@
                         </td>
                       </template>
                     </template>`;
-      break;
+              break;
             case 'touchpoints':
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += '<td class="stage-heading">Touchpoints Activity</td>';
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div x-data="{ touchpointActivities: [{ language: 'Email', invitation: '' }] }">
                 <div class="touchpoint-activity">
@@ -129,13 +127,12 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'department':
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += '<td class="stage-heading">Department Channels</td>';
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div x-data="{ departmentChannels: [{ language: '', accountManager: '' }] }">
                 <div class="department-channels">
@@ -163,13 +160,22 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'experience':
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += `
+      <td class="stage-heading">
+        <div class="d-flex">
+          <p>Experience</p>
+          <div class="ms-2 d-flex flex-column">
+            <img src="./assets/images/emotion-greate.png" alt="">
+            <img src="./assets/images/emotion-good.png" alt="">
+            <img src="./assets/images/emotion-sad.png" alt="">
+          </div>
+        </div>
+      </td>`;
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div class="experience">
                 <div class="experience-checkbox">
@@ -206,24 +212,22 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'processes':
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += '<td class="stage-heading">Processes</td>';
+              tds += `
+        <template x-for="i in columns">
             <td class="py-4">
               <div class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto" data-bs-toggle="modal" data-bs-target="#processesModal">+</div>
               <div id="imageContainer" class="text-center"></div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'mediaImage':
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += '<td class="stage-heading">Media Image</td>';
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div class="table-media">
                             <div class="upload-file">
@@ -238,13 +242,12 @@
                             </div>
                           </div>
             </td>
-          </template>
         </template>`;
-      break;
+              break;
             case 'mediaVideo':
-                tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+              tds += '<td class="stage-heading">Media Video</td>';
+              tds += `
+        <template x-for="i in columns">
             <td>
               <div class="table-media">
                 <div class="video-media" x-data="{ videoLink: '', videoId: '' }" x-init="setVideoId">
@@ -255,42 +258,13 @@
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
-      break;
-      case 'dragChart':
-              tds += `<td colspan="6"><div class="actions-main"><h4>ACTIONS</h4><div id="container"><div class="draggable-icon" id="icon1"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon2"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon3"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon4"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon5"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><canvas id="canvas"></canvas></div></div></td>`;
+              break;
+              case 'dragChart':
+              tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             case 'dragFillingChart':
-              tds += `<td colspan="6">          <div class="felling-chart mb-3">
-            <div id="container">
-              <div class="draggable-icon" id="icon1">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon2">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon3">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon4">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <canvas id="canvas"></canvas>
-            </div>
-          </div></td>`;
+              tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             default:
               break;
@@ -300,7 +274,38 @@
       }))
     })
   </script>
+  <style>
+    #container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+    }
 
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .data-point-label-container {
+      display: inline-block;
+      position: absolute;
+    }
+
+    .data-point-label {
+      font-size: 12px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .data-point-image {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+  </style>
 </head>
 
 <body>
@@ -435,7 +440,7 @@
             </div>
           </div>
         </div>
-        <div class="container-xl">
+        <div class="container-100 overflow-x">
           <div class="page-main-title">
             <div class="heading">
               <h1>Journey Name</h1>
@@ -443,89 +448,68 @@
             <button type="button" class="btn btn-fill me-md-3">Save</button>
           </div>
           <div class="bg-white p-3 journey-map-white">
+            <div id="container">
+              <canvas id="canvas" width="400" height="300"></canvas>
+            </div>
             <div class="d-flex">
-              <table id="journey-map" class="touchpoints journey-map overflow-x">
+              <table id="journey-map" class="journey-map-table journey-map">
                 <tbody>
-                  <tr id="mainStages">
-                    <template x-for="(i,ind) in columns">
-                      <td>
-                        <div class="stages">
-                          <img src="./assets/images/stages-1.png" alt="" class="stages-images">
-                          <h5>
-                            <input type="text" name="name" id="name" placeholder="Stage 1"
-                              class="d-block border-0 input-white text-center fw-600 w-100 rounded bg-transparent">
-                          </h5>
-                          <p>
-                            <textarea name="" id="" cols="30" rows="2"
-                              class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet, contetuer adipiscing elit.</textarea>
-                          </p>
-                        </div>
-                      </td>
-                    </template>
-                  </tr>
-                  <tr id="subStages" class="feedback">
+                  <tr>
+                    <td>
+                      <h4>Header</h4>
+                    </td>
                     <template x-for="(i, ind) in columns">
-                      <template x-for="j in columns[columns.length-1-ind]">
+                      <template x-for="j in columns[ind]">
                         <td>
-                          <h3>
-                            <input type="text" name="name" id="name" placeholder="Feedback"
-                              class="d-block border-0 input-fill fw-600 w-100 rounded bg-transparent">
-                          </h3>
+                          <input type="text" placeholder="Add a Text"
+                            class="border-0 input-dark outline-none bg-transparent w-100 text-center fw-600 fs-5">
                         </td>
                       </template>
                     </template>
                   </tr>
-                  <tr id="customerGoals" class="feedback">
+                  <tr id="customerGoals" class="opportunities-main">
+                    <td>
+                      <h4 style="transform: rotate(0deg); margin: 0;">Experience</h4>
+                    </td>
                     <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[ind]">
-                        <td>
-                          <div class="content">
-                            <p>
-                              <textarea name="" id="" cols="30" rows="2"
-                                class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet, contetuer adipiscing elit.</textarea>
-                            </p>
-                            <p>
-                              <textarea name="" id="" cols="30" rows="2"
-                                class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet, contetuer adipiscing elit.</textarea>
-                            </p>
-                            <p>
-                              <textarea name="" id="" cols="30" rows="2"
-                                class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet, contetuer adipiscing elit.</textarea>
-                            </p>
+                        <td class="opportunities-td">
+                          <div class="opportunities">
+                            <div class="transparent-boxs">
+                              <div class="transparent-box">
+                                <div class="px-3">
+                                  <textarea name="" id="" cols="30" rows="3"
+                                    class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </template>
                     </template>
                   </tr>
-                  <tr id="painPints" class="feedback">
+                  <tr id="customerGoals" class="opportunities-main">
+                    <td>
+                      <h4 style="transform: rotate(0); margin: 0;">THOUGHTS</h4>
+                    </td>
                     <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[ind]">
-                        <td>
-                          <h3>
-                            <input type="text" name="name" id="name" placeholder="OPPORTUNITIES"
-                              class="d-block border-0 input-fill fw-600 w-100 rounded bg-transparent">
-                          </h3>
-                        </td>
-                      </template>
-                    </template>
-                  </tr>
-                  <tr id="touchpointsActivity" class="feedback">
-                    <template x-for="(i, ind) in columns">
-                      <template x-for="j in columns[ind]">
-                        <td>
-                          <div class="content">
-                            <p>
-                              <textarea name="" id="" cols="30" rows="2"
-                                class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet, contetuer adipiscing elit.</textarea>
-                            </p>
-                            <p>
-                              <textarea name="" id="" cols="30" rows="2"
-                                class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet, contetuer adipiscing elit.</textarea>
-                            </p>
-                            <p>
-                              <textarea name="" id="" cols="30" rows="2"
-                                class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet, contetuer adipiscing elit.</textarea>
-                            </p>
+                        <td class="opportunities-td">
+                          <div class="opportunities">
+                            <div class="transparent-boxs">
+                              <div class="transparent-box">
+                                <ul>
+                                  <li>
+                                    <textarea name="" id="" cols="30" rows="3"
+                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
+                                  </li>
+                                  <li>
+                                    <textarea name="" id="" cols="30" rows="3"
+                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </template>
@@ -534,7 +518,8 @@
                 </tbody>
               </table>
               <div class="add-stage-button mt-5 ms-3">
-                <button type="button" class="btn fs-6 width-100px p-0" @click="addColumn">Add Satge</button>
+                <button type="button" class="btn fs-6 width-100px p-0" onclick="addDataPoint()" @click="addColumn">Add
+                  Satge</button>
               </div>
             </div>
             <div class="add-stage-button mt-5 ms-3">
@@ -921,76 +906,147 @@
   <!-- JavaScript
 ================================================== -->
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/my-journey.js"></script>
 
 
   <script>
-$(document).ready(function () {
-  function updateLinePosition() {
+    // Data for the line chart
+    var data = [
+      { x: 130, y: 150 },
+      { x: 380, y: 150 },
+      { x: 640, y: 150 },
+      { x: 900, y: 150 },
+      { x: 1150, y: 150 },
+    ];
+
+    // Canvas variables
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
-    var icons = $(".draggable-icon");
-    var positions = [];
 
-    // Get the center positions of all icons
-    icons.each(function (index, element) {
-      var rect = element.getBoundingClientRect();
-      var x = rect.left + rect.width / 2;
-      var y = rect.top + rect.height / 2;
-      positions.push({ x: x, y: y });
-    });
+    // Initialize canvas size
+    canvas.width = 1300;
+    canvas.height = 300;
 
-    // Update canvas size to match container size
-    canvas.width = $("#container").width();
-    canvas.height = $("#container").height();
+    // Variable to store the index of the selected data point
+    var selectedDataIndex = -1;
+    var yOffset = 0;
 
-    // Update line position
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.setLineDash([4, 2]);
-    ctx.moveTo(positions[0].x-585, positions[0].y-245); // Start the line from the first icon
+    // Load the image
+    var dotImage = new Image();
+    dotImage.src = "./assets/images/emotion-good.png"; // Replace with the path to your image
+    dotImage.width = 40; // Set the width of the image
+    dotImage.height = 40; // Set the height of the image
 
-    for (var i = 1; i < positions.length; i++) {
-      ctx.lineTo(positions[i].x-585, positions[i].y-245);
+    // Function to draw the line chart
+    function drawLineChart() {
+      // Clear the canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw the line chart
+      ctx.beginPath();
+      ctx.moveTo(data[0].x, data[0].y);
+
+      for (var i = 1; i < data.length; i++) {
+        ctx.lineTo(data[i].x, data[i].y);
+      }
+
+      ctx.lineWidth = calculateLineWidth();
+      ctx.strokeStyle = "#FF9A62";
+      ctx.stroke();
+
+      // Draw the image at the data points
+      for (var i = 0; i < data.length; i++) {
+        ctx.drawImage(dotImage, data[i].x - dotImage.width / 2, data[i].y - dotImage.height / 2);
+      }
     }
-    ctx.strokeStyle = "black";
-    ctx.stroke();
-  }
 
-  function drawLine() {
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    updateLinePosition();
-  }
+    // Function to handle mousemove event
+    function handleMouseMove(event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left;
+      var y = event.clientY - rect.top + yOffset;
 
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
-  var icons = $(".draggable-icon");
+      if (selectedDataIndex !== -1) {
+        // Update the position of the selected data point
+        data[selectedDataIndex].y = y;
+        drawLineChart();
+      } else {
+        // Check if the mouse is over a data point
+        for (var i = 0; i < data.length; i++) {
+          if (Math.abs(data[i].x - x) <= dotImage.width / 2 && Math.abs(data[i].y - y) <= dotImage.height / 2) {
+            canvas.style.cursor = "ns-resize";
+            return;
+          }
+        }
 
-  // Initialize line position and draw it
-  updateLinePosition();
-  drawLine();
+        canvas.style.cursor = "default";
+      }
+    }
 
-  // Update line position and redraw on drag event
-  icons.draggable({
-    axis: "y", // Restrict movement to vertical axis
-    drag: function (event, ui) {
-      ui.position.left = ui.originalPosition.left; // Maintain the original left position
-      updateLinePosition();
-      drawLine();
-    },
-  });
+    // Function to handle mousedown event
+    function handleMouseDown(event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left;
+      var y = event.clientY - rect.top;
 
-  // Update line position and redraw on window resize
-  $(window).resize(function () {
-    updateLinePosition();
-    drawLine();
-  });
-});
+      // Check if the mouse is over a data point
+      for (var i = 0; i < data.length; i++) {
+        if (Math.abs(data[i].x - x) <= dotImage.width / 2 && Math.abs(data[i].y - y) <= dotImage.height / 2) {
+          selectedDataIndex = i;
+          yOffset = data[i].y - y;
+          return;
+        }
+      }
+    }
+
+    // Function to handle mouseup event
+    function handleMouseUp() {
+      selectedDataIndex = -1;
+    }
+
+    // Event listeners for mousemove, mousedown, and mouseup events
+    canvas.addEventListener("mousemove", handleMouseMove);
+    canvas.addEventListener("mousedown", handleMouseDown);
+    canvas.addEventListener("mouseup", handleMouseUp);
+
+    // Function to calculate the line width based on data size
+    function calculateLineWidth() {
+      var dataLength = data.length;
+      var lineWidth = 2; // Set the desired line width (2px)
+
+      return lineWidth;
+    }
+
+
+    // Function to add a data point to the line chart
+    function addDataPoint() {
+      var lastDataPoint = data[data.length - 1];
+      var x = lastDataPoint.x + 257;
+      var y = 150;
+      var label = "Label " + (data.length + 1);
+      data.push({ x: x, y: y, label: label });
+
+      // Update the canvas width based on the new data point
+      canvas.width += 257;
+
+      // Update the canvas style width to match the updated canvas width
+      canvas.style.width = canvas.width + "px";
+
+      // Redraw the line chart
+      drawLineChart();
+    }
+
+    // Initial draw of the line chart
+    dotImage.onload = function () {
+      drawLineChart();
+    };
+
+
+
+
 
 
 

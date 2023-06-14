@@ -665,197 +665,218 @@
         margin-top: 20px;
         width: 100%;
     }
-    .rule-select{
+
+    .rule-select {
         width: 500px;
         height: 100%;
         display: flex;
         align-items: center;
         margin-top: 20px;
-        h6{
+
+        h6 {
             font-size: 18px !important;
             font-weight: 600;
             margin-right: 10px;
         }
-        .select-button{
-            button{
+
+        .select-button {
+            button {
                 margin: 0;
                 font-size: 15px;
                 padding: 10px 30px;
                 border-radius: 50px !important;
-                background-color: var(--blue-light, rgba(67,127,217,0.1));
+                background-color: var(--blue-light, rgba(67, 127, 217, 0.1));
                 color: var(--foreground-light, #909090);
                 border: 0;
 
-                &:hover{
+                &:hover {
                     background-color: var(--blue, #437fd9);
                     color: #fff;
                 }
-                &::after{
+
+                &::after {
                     display: none;
                 }
             }
         }
-        .equals-button{
+
+        .equals-button {
             margin-left: 10px;
-            button{
+
+            button {
                 margin: 0;
                 font-size: 15px;
                 padding: 10px 30px;
                 border-radius: 50px !important;
-                background-color: var(--yellow-light, rgba(255,152,20,0.1));
+                background-color: var(--yellow-light, rgba(255, 152, 20, 0.1));
                 color: var(--foreground, #161616);
                 border: 0;
-    
-                &:hover{
+
+                &:hover {
                     background-color: var(--yellow, #ff9814);
                     color: #fff;
                 }
-                &::after{
+
+                &::after {
                     display: none;
                 }
             }
         }
     }
 
-    .rule-action{
+    .rule-action {
         width: 500px;
         height: 100%;
         display: flex;
         align-items: center;
         margin-top: 20px;
-        h6{
+
+        h6 {
             font-size: 18px !important;
             font-weight: 600;
             margin-right: 10px;
         }
-        .action-button{
-            button{
+
+        .action-button {
+            button {
                 margin: 0;
                 font-size: 15px;
                 padding: 10px 30px;
                 border-radius: 50px !important;
-                background-color: var(--red-light, rgba(229,10,62,0.1));
+                background-color: var(--red-light, rgba(229, 10, 62, 0.1));
                 color: var(--foreground-light, #909090);
                 border: 0;
 
-                &:hover{
+                &:hover {
                     background-color: var(--red, #e60a3e);
                     color: #fff;
                 }
-                &::after{
+
+                &::after {
                     display: none;
                 }
             }
         }
-        .select-question{
+
+        .select-question {
             margin-left: 15px;
             display: none;
-            &.active{
+
+            &.active {
                 display: block;
             }
-            button{
+
+            button {
                 margin: 0;
                 font-size: 15px;
                 padding: 10px 30px;
                 border-radius: 50px !important;
-                background-color: var(--blue-light, rgba(67,127,217,0.1));
+                background-color: var(--blue-light, rgba(67, 127, 217, 0.1));
                 color: var(--foreground-light, #909090);
                 border: 0;
 
-                &:hover{
+                &:hover {
                     background-color: var(--blue, #437fd9);
                     color: #fff;
                 }
-                &::after{
+
+                &::after {
                     display: none;
                 }
             }
         }
     }
 
-    .action-rule{
-        .rule-action-add{
+    .action-rule {
+        .rule-action-add {
             width: 500px;
             height: 100%;
             display: flex;
             align-items: center;
             margin-top: 20px;
-            h6{
+
+            h6 {
                 font-size: 18px !important;
                 font-weight: 600;
                 margin-right: 10px;
             }
-            .action-button-add{
-                button{
+
+            .action-button-add {
+                button {
                     margin: 0;
                     font-size: 15px;
                     padding: 10px 30px;
                     border-radius: 50px !important;
-                    background-color: var(--red-light, rgba(229,10,62,0.1));
+                    background-color: var(--red-light, rgba(229, 10, 62, 0.1));
                     color: var(--foreground-light, #909090);
                     border: 0;
-    
-                    &:hover{
+
+                    &:hover {
                         background-color: var(--red, #e60a3e);
                         color: #fff;
                     }
-                    &::after{
+
+                    &::after {
                         display: none;
                     }
                 }
             }
-            .select-question-add{
+
+            .select-question-add {
                 margin-left: 15px;
-                button{
+
+                button {
                     margin: 0;
                     font-size: 15px;
                     padding: 10px 30px;
                     border-radius: 50px !important;
-                    background-color: var(--blue-light, rgba(67,127,217,0.1));
+                    background-color: var(--blue-light, rgba(67, 127, 217, 0.1));
                     color: var(--foreground-light, #909090);
                     border: 0;
-    
-                    &:hover{
+
+                    &:hover {
                         background-color: var(--blue, #437fd9);
                         color: #fff;
                     }
-                    &::after{
+
+                    &::after {
                         display: none;
                     }
                 }
             }
         }
 
-        .addAction{
+        .addAction {
             margin: 20px 0 0 0;
             font-size: 15px;
             padding: 10px 30px;
             border-radius: 50px !important;
-            background-color: var(--red-light, rgba(229,10,62,0.1));
+            background-color: var(--red-light, rgba(229, 10, 62, 0.1));
             color: var(--foreground-light, #909090);
             border: 0;
             display: none;
-            &.active{
+
+            &.active {
                 display: block;
             }
 
-            &:hover{
+            &:hover {
                 background-color: var(--red, #e60a3e);
                 color: #fff;
             }
         }
     }
 
-    .done-button{
+    .done-button {
         margin: 30px 0 0 0;
         font-size: 15px;
         padding: 10px 30px;
         border-radius: 50px !important;
-        background-color: var(--blue-light, rgba(67,127,217,0.1));
+        background-color: var(--blue-light, rgba(67, 127, 217, 0.1));
         color: var(--foreground-light, #909090);
         border: 0;
 
-        &:hover{
+        &:hover {
             background-color: var(--blue, #437fd9);
             color: #fff;
         }
@@ -2314,10 +2335,18 @@
     }
 }
 
-.designer-button,
-.logic-button{
-    display: none;
-    &.active{
-        display: block;
+.designer-button {
+    display: none !important;
+
+    &.active {
+        display: block !important;
+    }
+}
+
+.logic-button {
+    display: none !important;
+
+    &.active {
+        display: block !important;
     }
 }

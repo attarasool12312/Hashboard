@@ -209,7 +209,8 @@
 
     td {
         margin-left: 13px !important;
-        & + td{
+
+        &+td {
             margin: 0 !important;
         }
     }
@@ -239,44 +240,6 @@
         font-weight: 700;
         text-transform: uppercase;
         margin-top: 20px;
-    }
-
-    #container {
-        height: 200px;
-        width: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .draggable-icon {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #775DA6;
-        position: relative;
-        cursor: move;
-        margin-right: 10px;
-        z-index: 11111111;
-
-        p {
-            position: absolute;
-            top: -35px;
-            left: -30px;
-            width: 145px;
-            font-size: 10px !important;
-        }
-    }
-
-    #canvas {
-        position: absolute;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        z-index: 100;
-        height: 100%;
-        width: 100%;
     }
 }
 
@@ -428,44 +391,6 @@
         font-weight: 700;
         text-transform: uppercase;
     }
-
-    #container {
-        height: 200px;
-        width: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .draggable-icon {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #666666;
-        position: relative;
-        cursor: move;
-        margin-right: 10px;
-        z-index: 1111111;
-
-        p {
-            position: absolute;
-            top: -35px;
-            left: -30px;
-            width: 145px;
-            font-size: 10px !important;
-        }
-    }
-
-    #canvas {
-        position: absolute;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        z-index: 100;
-        height: 100%;
-        width: 100%;
-    }
 }
 
 .thoughts-box {
@@ -591,76 +516,6 @@
     }
 }
 
-.felling-chart {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    height: 400px;
-    position: relative;
-
-    #container {
-        height: 100%;
-        width: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .draggable-icon {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #775DA6;
-        position: relative;
-        cursor: move;
-        margin-right: 10px;
-        z-index: 111111111;
-
-        p {
-            position: absolute;
-            top: -20px;
-            left: -30px;
-            width: 120px;
-            font-size: 10px !important;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: -53px;
-            left: -5px;
-            background-image: url($images-path + "/emotion-greate.png");
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-size: 100% 100%;
-        }
-
-        &:nth-child(1) {
-            &::after {
-                background-image: url($images-path + "/emotion-good.png");
-            }
-        }
-
-        &:nth-child(2) {
-            &::after {
-                background-image: url($images-path + "/emotion-sad.png");
-            }
-        }
-    }
-
-    #canvas {
-        position: absolute;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        z-index: 100;
-        height: 100%;
-        width: 100%;
-    }
-}
-
 .chart-box1 {
     display: flex;
     justify-content: space-between;
@@ -686,7 +541,7 @@
 }
 
 .chart-stages {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 
     .header-stage {
         display: flex;
@@ -703,7 +558,6 @@
     .stages-delivery-chart {
         display: flex;
         align-items: center;
-        justify-content: space-between;
 
         p {
             background: #fff;
@@ -714,13 +568,20 @@
             margin-top: 20px;
         }
 
+        .open-stage-1 {
+            &::after {
+                right: 109px !important;
+            }
+        }
+
         .open-stage {
             position: relative;
+            max-width: 109px;
 
             &::after {
                 content: "";
                 position: absolute;
-                top: 39px;
+                top: 19px;
                 right: -78px;
                 background-image: url($images-path + "/longline-arrow.png");
                 height: 4px;
@@ -730,13 +591,31 @@
             }
         }
 
+        .delivery-width {
+            width: 200px;
+            margin-right: 94px;
+        }
+
+        .review-stage-1 {
+            &::after {
+                top: 16px !important;
+                right: 110px !important;
+            }
+
+            &::before {
+                top: 57px !important;
+                right: 110px !important;
+            }
+        }
+
         .review-stage {
             position: relative;
+            max-width: 109px;
 
             &::after {
                 content: "";
                 position: absolute;
-                top: 10px;
+                top: -12px;
                 right: -79px;
                 background-image: url($images-path + "/view-to-buy.png");
                 height: 28px;
@@ -748,7 +627,7 @@
             &::before {
                 content: "";
                 position: absolute;
-                top: 44px;
+                top: 27px;
                 right: -79px;
                 background-image: url($images-path + "/view-to-continue.png");
                 height: 28px;
@@ -760,11 +639,12 @@
 
         .continue-stage {
             position: relative;
+            max-width: 109px;
 
             &::after {
                 content: "";
                 position: absolute;
-                top: 73px;
+                top: 55px;
                 right: -79px;
                 background-image: url($images-path + "/continue-adress.png");
                 height: 28px;
@@ -776,23 +656,32 @@
             &::before {
                 content: "";
                 position: absolute;
-                top: 40px;
+                top: 20px;
                 right: -79px;
                 background-image: url($images-path + "/view-to-continue.png");
-                height: 28px;
+                height: 20px;
                 width: 74px;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }
         }
 
+        .delivery-stage {
+            max-width: 109px;
+        }
+
+        .patment-stage {
+            max-width: 109px;
+        }
+
         .adress-stage {
             position: relative;
+            max-width: 109px;
 
             &::after {
                 content: "";
                 position: absolute;
-                top: 39px;
+                top: 20px;
                 right: -76px;
                 background-image: url($images-path + "/longline-arrow.png");
                 height: 4px;
@@ -914,5 +803,46 @@
                 margin-right: 5px;
             }
         }
+    }
+}
+
+.template-7 {
+    .draggable-icon {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -6px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-image: url($images-path + "/happy.png");
+            background-size: cover;
+        }
+    }
+}
+.template-8{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 23%;
+        left: 3%;
+        width: 37px;
+        height: 33px;
+        background-image: url($images-path + "/good-thumb.png");
+        background-size: cover;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 23%;
+        left: 3%;
+        width: 37px;
+        height: 33px;
+        background-image: url($images-path + "/bad-thumb.png");
+        background-size: cover;
     }
 }

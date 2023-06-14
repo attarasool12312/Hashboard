@@ -29,7 +29,7 @@
   <script>
     document.addEventListener('alpine:init', () => {
       Alpine.data('stages', () => ({
-        columns: [1, 1, 1, 1],
+        columns: [1, 1, 1, 1, 1, 1],
 
         addColumn() {
           this.columns.unshift(1)
@@ -38,12 +38,15 @@
           this.columns.splice(i, 1);
         },
         addSectionRow(type) {
+          let countColumns = this.columns.length;
+          console.log(countColumns);
           let tds = '';
           switch (type) {
             case 'goal':
               tds += '<td class="stage-heading">Customer Goals</td>';
               tds += `
-        <template x-for="i in columns">
+        <template x-for="(i, ind) in columns">
+          <template x-for="j in columns[ind]">
             <td>
               <div x-data="{ goals: [''] }">
                 <div class="customer-goals">
@@ -60,12 +63,13 @@
                 </div>
               </div>
             </td>
+          </template>
         </template>`;
               break;
             case 'pain':
               tds += '<td class="stage-heading">Pain Points</td>';
               tds += `
-              <template x-for="(i, ind) in columns">
+                <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[ind]">
                         <td>
                           <div x-data="{ painPints: [{ text: '', description: '' }] }">
@@ -99,7 +103,8 @@
             case 'touchpoints':
               tds += '<td class="stage-heading">Touchpoints Activity</td>';
               tds += `
-        <template x-for="i in columns">
+        <template x-for="(i, ind) in columns">
+          <template x-for="j in columns[ind]">
             <td>
               <div x-data="{ touchpointActivities: [{ language: 'Email', invitation: '' }] }">
                 <div class="touchpoint-activity">
@@ -127,12 +132,14 @@
                 </div>
               </div>
             </td>
+          </template>
         </template>`;
               break;
             case 'department':
               tds += '<td class="stage-heading">Department Channels</td>';
               tds += `
-        <template x-for="i in columns">
+        <template x-for="(i, ind) in columns">
+          <template x-for="j in columns[ind]">
             <td>
               <div x-data="{ departmentChannels: [{ language: '', accountManager: '' }] }">
                 <div class="department-channels">
@@ -160,6 +167,7 @@
                 </div>
               </div>
             </td>
+          </template>
         </template>`;
               break;
             case 'experience':
@@ -175,7 +183,8 @@
         </div>
       </td>`;
               tds += `
-        <template x-for="i in columns">
+        <template x-for="(i, ind) in columns">
+          <template x-for="j in columns[ind]">
             <td>
               <div class="experience">
                 <div class="experience-checkbox">
@@ -212,22 +221,26 @@
                 </div>
               </div>
             </td>
+          </template>
         </template>`;
               break;
             case 'processes':
               tds += '<td class="stage-heading">Processes</td>';
               tds += `
-        <template x-for="i in columns">
+        <template x-for="(i, ind) in columns">
+          <template x-for="j in columns[ind]">
             <td class="py-4">
               <div class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto" data-bs-toggle="modal" data-bs-target="#processesModal">+</div>
               <div id="imageContainer" class="text-center"></div>
             </td>
+          </template>
         </template>`;
               break;
             case 'mediaImage':
               tds += '<td class="stage-heading">Media Image</td>';
               tds += `
-        <template x-for="i in columns">
+        <template x-for="(i, ind) in columns">
+          <template x-for="j in columns[ind]">
             <td>
               <div class="table-media">
                             <div class="upload-file">
@@ -242,12 +255,14 @@
                             </div>
                           </div>
             </td>
+          </template>
         </template>`;
               break;
             case 'mediaVideo':
               tds += '<td class="stage-heading">Media Video</td>';
               tds += `
-        <template x-for="i in columns">
+        <template x-for="(i, ind) in columns">
+          <template x-for="j in columns[ind]">
             <td>
               <div class="table-media">
                 <div class="video-media" x-data="{ videoLink: '', videoId: '' }" x-init="setVideoId">
@@ -258,41 +273,14 @@
                 </div>
               </div>
             </td>
+          </template>
         </template>`;
               break;
-              case 'dragChart':
-              tds += `<td colspan="6"><div class="actions-main"><h4>ACTIONS</h4><div id="container"><div class="draggable-icon" id="icon1"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon2"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon3"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon4"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon5"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><canvas id="canvas"></canvas></div></div></td>`;
+            case 'dragChart':
+              tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             case 'dragFillingChart':
-              tds += `<td colspan="6">          <div class="felling-chart mb-3">
-            <div id="container">
-              <div class="draggable-icon" id="icon1">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon2">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon3">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon4">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <canvas id="canvas"></canvas>
-            </div>
-          </div></td>`;
+              tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             default:
               break;
@@ -302,7 +290,38 @@
       }))
     })
   </script>
+  <style>
+    #container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+    }
 
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .data-point-label-container {
+      display: inline-block;
+      position: absolute;
+    }
+
+    .data-point-label {
+      font-size: 12px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .data-point-image {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+  </style>
 </head>
 
 <body>
@@ -437,68 +456,140 @@
             </div>
           </div>
         </div>
-        <div class="container-xl">
+        <div class="container-100">
           <div class="page-main-title">
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
             <button type="button" class="btn btn-fill me-md-3">Save</button>
           </div>
-          <div class="felling-chart mb-3">
-            <div id="container">
-              <div class="draggable-icon" id="icon1">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon2">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon3">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon4">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <canvas id="canvas"></canvas>
-            </div>
-          </div>
           <div class="bg-white p-3 journey-map-white">
             <div class="d-flex">
               <table id="journey-map" class="journey-map-table journey-map overflow-x">
                 <tbody>
                   <tr id="mainStages">
-                    <td class="stage-heading">Step</td>
-                    <template x-for="i in columns">
+                    <td scope="col"></td>
+                    <template x-for="(i,ind) in columns">
                       <td>
-                        <div class="chart-box1">
-                          <div class="step-box">
-                            <p>
-                              <input type="text" placeholder="Step 1"
-                                class="border-0 input-white text-center outline-none bg-transparent w-100">
-                            </p>
-                            <textarea name="" id="" cols="30" rows="12"
-                              class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                          </div>
+                        <div>
+                          <p class="text-light-gray">
+                            <input type="text" placeholder="↪Category Card"
+                              class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                          </p>
+                          <h6 class="fw-600 mt-2">
+                            <input type="text" placeholder="Problem Awareness"
+                              class="mt-2 border-0 input-dark outline-none bg-transparent py-1 px-0">
+                          </h6>
                         </div>
                       </td>
+                    </template>
+                  </tr>
+                  <tr id="subStages">
+                    <td>
+                      <p>
+                        <input type="text" placeholder="↪Category Card"
+                          class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                      </p>
+                      <h6 class="mt-5">
+                        <input type="text" placeholder="Do"
+                          class="mt-2 border-0 input-dark outline-none bg-transparent py-1 px-0">
+                      </h6>
+                    </td>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[columns.length-1-ind]">
+                        <td>
+                          <p>
+                            <input type="text" placeholder="↪Category Card"
+                              class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                          </p>
+                          <ul class="problem-list">
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                          </ul>
+                        </td>
+                      </template>
+                    </template>
+                  </tr>
+                  <tr id="customerGoals">
+                    <td>
+                      <p>
+                        <input type="text" placeholder="↪Category Card"
+                          class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                      </p>
+                      <h6 class="mt-5">
+                        <input type="text" placeholder="Do"
+                          class="mt-2 border-0 input-dark outline-none bg-transparent py-1 px-0">
+                      </h6>
+                    </td>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[columns.length-1-ind]">
+                        <td>
+                          <p>
+                            <input type="text" placeholder="↪Category Card"
+                              class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                          </p>
+                          <ul class="problem-list">
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                          </ul>
+                        </td>
+                      </template>
+                    </template>
+                  </tr>
+                  <tr id="painPints" class="feedback">
+                    <td>
+                      <p>
+                        <input type="text" placeholder="↪Category Card"
+                          class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                      </p>
+                      <h6 class="mt-5">
+                        <input type="text" placeholder="Do"
+                          class="mt-2 border-0 input-dark outline-none bg-transparent py-1 px-0">
+                      </h6>
+                    </td>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[columns.length-1-ind]">
+                        <td>
+                          <p>
+                            <input type="text" placeholder="↪Category Card"
+                              class="mt-2 border-0 outline-none bg-transparent py-1 px-0">
+                          </p>
+                          <ul class="problem-list">
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                            <li><input type="text" placeholder="---"
+                                class="mt-2 border-0 outline-none bg-transparent py-1 px-0"></li>
+                          </ul>
+                        </td>
+                      </template>
                     </template>
                   </tr>
                 </tbody>
               </table>
               <div class="add-stage-button mt-5 ms-3">
-                <button type="button" class="btn fs-6 width-100px p-0" onclick="addSection()" @click="addColumn">Add
-                  Satge</button>
+                <button type="button" class="btn fs-6 width-100px p-0" @click="addColumn">Add Satge</button>
               </div>
             </div>
             <div class="add-stage-button mt-5 ms-3">
@@ -889,80 +980,75 @@
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/my-journey.js"></script>
 
 
   <script>
-    var stages1 = 6;
-
-    function addSection() {
-
-      stages1++;
-      $('#container').append(`<div class="draggable-icon" id="icon${stages1}"><p><textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation" class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div>`);
-    }
-
     $(document).ready(function () {
-  function updateLinePosition() {
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-    var icons = $(".draggable-icon");
-    var positions = [];
+      function updateLinePosition() {
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var icons = $(".draggable-icon");
+        var positions = [];
 
-    // Get the center positions of all icons
-    icons.each(function (index, element) {
-      var rect = element.getBoundingClientRect();
-      var x = rect.left + rect.width / 2;
-      var y = rect.top + rect.height / 2;
-      positions.push({ x: x, y: y });
-    });
+        // Get the center positions of all icons
+        icons.each(function (index, element) {
+          var rect = element.getBoundingClientRect();
+          var x = rect.left + rect.width / 2;
+          var y = rect.top + rect.height / 2;
+          positions.push({ x: x, y: y });
+        });
 
-    // Update canvas size to match container size
-    canvas.width = $("#container").width();
-    canvas.height = $("#container").height();
+        // Update canvas size to match container size
+        canvas.width = $("#container").width();
+        canvas.height = $("#container").height();
 
-    // Update line position
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.setLineDash([4, 2]);
-    ctx.moveTo(positions[0].x-230, positions[0].y-215); // Start the line from the first icon
+        // Update line position
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.setLineDash([4, 2]);
+        ctx.moveTo(positions[0].x - 300, positions[0].y - 243); // Start the line from the first icon
 
-    for (var i = 1; i < positions.length; i++) {
-      ctx.lineTo(positions[i].x-230, positions[i].y-215);
-    }
-    ctx.strokeStyle = "black";
-    ctx.stroke();
-  }
+        for (var i = 1; i < positions.length; i++) {
+          ctx.lineTo(positions[i].x - 300, positions[i].y - 242);
+        }
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+      }
 
-  function drawLine() {
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    updateLinePosition();
-  }
+      function drawLine() {
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        updateLinePosition();
+      }
 
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
-  var icons = $(".draggable-icon");
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+      var icons = $(".draggable-icon");
 
-  // Initialize line position and draw it
-  updateLinePosition();
-  drawLine();
-
-  // Update line position and redraw on drag event
-  icons.draggable({
-    axis: "y", // Restrict movement to vertical axis
-    drag: function (event, ui) {
-      ui.position.left = ui.originalPosition.left; // Maintain the original left position
+      // Initialize line position and draw it
       updateLinePosition();
       drawLine();
-    },
-  });
 
-  // Update line position and redraw on window resize
-  $(window).resize(function () {
-    updateLinePosition();
-    drawLine();
-  });
-});
+      // Update line position and redraw on drag event
+      icons.draggable({
+        axis: "y", // Restrict movement to vertical axis
+        drag: function (event, ui) {
+          ui.position.left = ui.originalPosition.left; // Maintain the original left position
+          updateLinePosition();
+          drawLine();
+        },
+      });
+
+      // Update line position and redraw on window resize
+      $(window).resize(function () {
+        updateLinePosition();
+        drawLine();
+      });
+    });
+
+
 
     document.addEventListener('DOMContentLoaded', () => {
       let uploadButton = document.getElementById("upload-button");
@@ -1005,15 +1091,6 @@
         svg.addEventListener('click', addImageToContainer);
       });
     });
-
-
-    var stages1 = 8;
-
-    function addSection() {
-
-      stages1++;
-      $('#container').append(`<div class="draggable-icon" id="icon${stages1}"><p><textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation" class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div>`);
-    }
   </script>
 </body>
 

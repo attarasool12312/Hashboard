@@ -29,7 +29,7 @@
   <script>
     document.addEventListener('alpine:init', () => {
       Alpine.data('stages', () => ({
-        columns: [1, 1, 1, 1],
+        columns: [1, 1, 1, 1, 1],
 
         addColumn() {
           this.columns.unshift(1)
@@ -260,39 +260,11 @@
             </td>
         </template>`;
               break;
-              case 'dragChart':
-              tds += `<td colspan="6"><div class="actions-main"><h4>ACTIONS</h4><div id="container"><div class="draggable-icon" id="icon1"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon2"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon3"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon4"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><div class="draggable-icon" id="icon5"><p><textarea name="" id="" cols="30" rows="2" placeholder="Lorem ipsum dolor sit amet, contetuer adipiscing elit." class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div><canvas id="canvas"></canvas></div></div></td>`;
+            case 'dragChart':
+              tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             case 'dragFillingChart':
-              tds += `<td colspan="6">          <div class="felling-chart mb-3">
-            <div id="container">
-              <div class="draggable-icon" id="icon1">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon2">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon3">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <div class="draggable-icon" id="icon4">
-                <p>
-                  <textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation"
-                    class="w-100 border-0 rounded bg-transparent outline-none"></textarea>
-                </p>
-              </div>
-              <canvas id="canvas"></canvas>
-            </div>
-          </div></td>`;
+              tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             default:
               break;
@@ -302,7 +274,38 @@
       }))
     })
   </script>
+  <style>
+    #container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+    }
 
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .data-point-label-container {
+      display: inline-block;
+      position: absolute;
+    }
+
+    .data-point-label {
+      font-size: 12px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .data-point-image {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+  </style>
 </head>
 
 <body>
@@ -437,63 +440,80 @@
             </div>
           </div>
         </div>
-        <div class="container-xl">
+        <div class="container-100 overflow-x">
           <div class="page-main-title">
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
             <button type="button" class="btn btn-fill me-md-3">Save</button>
           </div>
-          <div class="chart mb-3">
-            <div>
-              <canvas id="indexLineOne" class="w-100"></canvas>
-            </div>
-          </div>
-          <div class="chart-stages">
-            <div class="stages-delivery-chart">
-              <div class="open-stage">
-                <p><input type="text" placeholder="Open" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
-              </div>
-              <div class="review-stage">
-                <p><input type="text" placeholder="Review" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
-              </div>
-              <div class="continue-stage">
-                <p><input type="text" placeholder="Buy" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
-                <p><input type="text" placeholder="Continue" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
-              </div>
-              <div class="adress-stage">
-                <p><input type="text" placeholder="Adress" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
-              </div>
-              <div class="delivery-stage">
-                <p><input type="text" placeholder="Delivery" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
-              </div>
-              <div class="patment-stage">
-                <p><input type="text" placeholder="Cash" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
-                <p><input type="text" placeholder="Credit" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
-                <p><input type="text" placeholder="PayPal" class="border-0 input-dark outline-none bg-transparent text-center width-70px"></p>
-              </div>
-            </div>
-          </div>
           <div class="bg-white p-3 journey-map-white">
+            <div class="journey-map-chart-container" id="journey-map-chart-container">
+              <div id="container">
+                <canvas id="canvas" width="1200" height="300"></canvas>
+              </div>
+            </div>
             <div class="d-flex">
-              <table id="journey-map" class="journey-map-table journey-map overflow-x">
+              <table id="journey-map" class="journey-map-table journey-map">
                 <tbody>
-                  <tr id="mainStages">
-                    <td class="stage-heading">Step</td>
-                    <template x-for="i in columns">
-                      <td>
-                        <div class="chart-stages p-0">
-                          <div class="header-stage m-0" id="headerStage">
-                            <p><input type="text" placeholder="Stage 1" class="border-0 rounded input-dark outline-none bg-transparent w-100"></p>
+                  <tr id="customerGoals" class="opportunities-main">
+                    <td>
+                      <h4 style="margin-top: -28px;">STAGES</h4>
+                    </td>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td class="opportunities-td">
+                          <div class="opportunities">
+                            <div class="transparent-boxs">
+                              <div class="transparent-box">
+                                <div class="px-3">
+                                  <input type="text" placeholder="Learning Stage"
+                                    class="mt-2 fs-6 border-0 outline-none bg-transparent input-fill fw-600 w-100">
+                                  <textarea name="" id="" cols="30" rows="3"
+                                    class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </td>
+                        </td>
+                      </template>
+                    </template>
+                  </tr>
+                  <tr id="customerGoals" class="opportunities-main">
+                    <td>
+                      <h4>THOUGHTS</h4>
+                    </td>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td class="opportunities-td">
+                          <div class="opportunities">
+                            <div class="transparent-boxs">
+                              <div class="transparent-box">
+                                <ul>
+                                  <li>
+                                    <textarea name="" id="" cols="30" rows="4"
+                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
+                                  </li>
+                                  <li>
+                                    <textarea name="" id="" cols="30" rows="4"
+                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
+                                  </li>
+                                  <li>
+                                    <textarea name="" id="" cols="30" rows="4"
+                                      class="w-100 border-0 rounded bg-transparent outline-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iusto.</textarea>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </template>
                     </template>
                   </tr>
                 </tbody>
               </table>
               <div class="add-stage-button mt-5 ms-3">
-                <button type="button" class="btn fs-6 width-100px p-0" onclick="addStage()" @click="addColumn">Add
+                <button type="button" class="btn fs-6 width-100px p-0" onclick="addDataPoint()" @click="addColumn">Add
                   Satge</button>
               </div>
             </div>
@@ -888,207 +908,184 @@
 
 
   <script>
-$(document).ready(function () {
-  function updateLinePosition() {
+    // Data for the line chart
+    var data = [
+      { x: 130, y: 150, label: "Label 1" },
+      { x: 380, y: 150, label: "Label 2" },
+      { x: 640, y: 150, label: "Label 3" },
+      { x: 900, y: 150, label: "Label 4" },
+      { x: 1150, y: 150, label: "Label 5" },
+    ];
+
+    // Canvas variables
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
-    var icons = $(".draggable-icon");
-    var positions = [];
 
-    // Get the center positions of all icons
-    icons.each(function (index, element) {
-      var rect = element.getBoundingClientRect();
-      var x = rect.left + rect.width / 2;
-      var y = rect.top + rect.height / 2;
-      positions.push({ x: x, y: y });
-    });
+    // Variable to store the index of the selected data point
+    var selectedDataIndex = -1;
+    var yOffset = 0;
 
-    // Update canvas size to match container size
-    canvas.width = $("#container").width();
-    canvas.height = $("#container").height();
+    // Function to draw the line chart
+    function drawLineChart() {
+      // Clear the canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Update line position
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.setLineDash([4, 2]);
-    ctx.moveTo(positions[0].x-585, positions[0].y-245); // Start the line from the first icon
+      // Draw the line chart
+      ctx.beginPath();
+      ctx.moveTo(data[0].x, data[0].y);
 
-    for (var i = 1; i < positions.length; i++) {
-      ctx.lineTo(positions[i].x-585, positions[i].y-245);
-    }
-    ctx.strokeStyle = "black";
-    ctx.stroke();
-  }
+      for (var i = 1; i < data.length; i++) {
+        ctx.lineTo(data[i].x, data[i].y);
+      }
 
-  function drawLine() {
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    updateLinePosition();
-  }
+      ctx.lineWidth = calculateLineWidth();
+      ctx.strokeStyle = "#775DA6";
+      ctx.stroke();
 
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
-  var icons = $(".draggable-icon");
-
-  // Initialize line position and draw it
-  updateLinePosition();
-  drawLine();
-
-  // Update line position and redraw on drag event
-  icons.draggable({
-    axis: "y", // Restrict movement to vertical axis
-    drag: function (event, ui) {
-      ui.position.left = ui.originalPosition.left; // Maintain the original left position
-      updateLinePosition();
-      drawLine();
-    },
-  });
-
-  // Update line position and redraw on window resize
-  $(window).resize(function () {
-    updateLinePosition();
-    drawLine();
-  });
-});
-
-
-const pointImage = new Image();
-pointImage.src = './assets/images/happy.png';
-
-const pointImage1 = new Image();
-pointImage1.src = './assets/images/excited.png';
-
-const pointImage2 = new Image();
-pointImage2.src = './assets/images/emotion.png';
-
-const indexOne = document.getElementById("indexLineOne");
-const chartData = {
-  labels: ["19 Sep", "26 Sep", "3 Oct", "10 Oct", "17 Oct"],
-  datasets: [
-    {
-      label: "Top Products",
-      data: [50, 100, 80, 105, 85],
-      borderColor: "#775da6",
-      backgroundColor: "rgb(239, 236, 244)",
-      fill: true,
-    },
-  ],
-};
-
-const chartOptions = {
-  responsive: true,
-  elements: {
-    point: {
-      pointStyle: ['circle', pointImage, pointImage1, pointImage2, 'circle'],
-    },
-  },
-  scales: {
-    x: {
-      beginAtZero: true,
-      grid: {
-        drawOnChartArea: false,
-      },
-      ticks: {
-        display: true,
-      },
-    },
-    y: {
-      display: false,
-      beginAtZero: true,
-    },
-  },
-  plugins: {
-    legend: {
-      display: false,
-    },
-  },
-};
-
-const bar16 = new Chart(indexOne, {
-  type: "line",
-  data: chartData,
-  options: chartOptions,
-});
-
-function addStage() {
-  const newLabel = prompt("Enter the label for the new stage:");
-  const newData = parseInt(prompt("Enter the data for the new stage:"));
-
-  if (newLabel && newData) {
-    bar16.data.labels.push(newLabel);
-    bar16.data.datasets[0].data.push(newData);
-    bar16.update();
-  }
-}
-
-
-    var stages1 = 6;
-
-    function addSection() {
-
-      stages1++;
-      $('#container').append(`<div class="draggable-icon" id="icon${stages1}"><p><textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation" class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div>`);
-    }
-
-    $(document).ready(function () {
-      var canvas = document.getElementById("canvas");
-      var ctx = canvas.getContext("2d");
-      var icons = $(".draggable-icon");
-
-      // Initialize line position and draw it
-      updateLinePosition();
-      drawLine();
-
-      // Update line position and redraw on drag event
-      icons.draggable({
-        axis: "y", // Restrict movement to vertical axis
-        drag: function (event, ui) {
-          ui.position.left = ui.originalPosition.left; // Maintain the original left position
-          updateLinePosition();
-          drawLine();
-        }
-      });
-
-      // Update line position and redraw on window resize
-      $(window).resize(function () {
-        updateLinePosition();
-        drawLine();
-      });
-
-      function updateLinePosition() {
-        var positions = [];
-
-        // Get the center positions of all icons
-        icons.each(function (index, element) {
-          var rect = element.getBoundingClientRect();
-          var x = rect.left + rect.width / 2;
-          var y = rect.top + rect.height / 2;
-          positions.push({ x: x, y: y });
-        });
-
-        // Update canvas size to match container size
-        canvas.width = $("#container").width();
-        canvas.height = $("#container").height();
-
-        // Update line position
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      // Draw dots at the data points and display labels
+      for (var i = 0; i < data.length; i++) {
         ctx.beginPath();
-        ctx.setLineDash([4, 2]);
-        ctx.moveTo(positions[0].x, positions[0].y); // Start the line from the first icon
-
-        for (var i = 1; i < positions.length; i++) {
-          ctx.lineTo(positions[i].x, positions[i].y);
-        }
-        ctx.strokeStyle = "black";
+        ctx.arc(data[i].x, data[i].y, 6, 0, 2 * Math.PI);
+        ctx.fillStyle = "#775DA6";
+        ctx.fill();
         ctx.stroke();
-      }
 
-      function drawLine() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        updateLinePosition();
+        // Display the label of the data point above the dot
+        ctx.fillStyle = "#000000";
+        ctx.fillText(data[i].label, data[i].x - 10, data[i].y - 10);
       }
-    });
+    }
+
+    // Function to handle mousemove event
+    function handleMouseMove(event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left;
+      var y = event.clientY - rect.top + yOffset;
+
+      if (selectedDataIndex !== -1) {
+        // Update the position of the selected data point
+        data[selectedDataIndex].y = y;
+        drawLineChart();
+      } else {
+        // Check if the mouse is over a data point
+        for (var i = 0; i < data.length; i++) {
+          if (
+            Math.abs(data[i].x - x) <= 4 &&
+            Math.abs(data[i].y - y) <= 4
+          ) {
+            canvas.style.cursor = "ns-resize";
+            showDataPointLabel(i, x, y);
+            return;
+          }
+        }
+
+        canvas.style.cursor = "default";
+        hideDataPointLabel();
+      }
+    }
+
+    // Function to handle mousedown event
+    function handleMouseDown(event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left;
+      var y = event.clientY - rect.top;
+
+      // Check if the mouse is over a data point
+      for (var i = 0; i < data.length; i++) {
+        if (
+          Math.abs(data[i].x - x) <= 4 &&
+          Math.abs(data[i].y - y) <= 4
+        ) {
+          selectedDataIndex = i;
+          yOffset = data[i].y - y;
+          return;
+        }
+      }
+    }
+
+    // Function to handle mouseup event
+    function handleMouseUp() {
+      selectedDataIndex = -1;
+    }
+
+    // Event listeners for mousemove, mousedown, and mouseup events
+    canvas.addEventListener("mousemove", handleMouseMove);
+    canvas.addEventListener("mousedown", handleMouseDown);
+    canvas.addEventListener("mouseup", handleMouseUp);
+
+    // Function to calculate the line width based on data size
+    function calculateLineWidth() {
+      var dataLength = data.length;
+      var lineWidth = 2; // Set the desired line width (2px)
+
+      return lineWidth;
+    }
+
+    // Function to add a data point to the line chart
+    function addDataPoint() {
+      var lastDataPoint = data[data.length - 1];
+      var x = lastDataPoint.x + 257;
+      var y = 150;
+      var label = "Label " + (data.length + 1);
+      data.push({ x: x, y: y, label: label });
+
+      // Update the canvas width based on the new data point
+      canvas.width += 257;
+
+      // Update the canvas style width to match the updated canvas width
+      canvas.style.width = canvas.width + "px";
+
+      // Update the journey-map-chart-container width
+      var journeyMapChartContainer = document.getElementById("journey-map-chart-container");
+      var currentWidth = parseInt(journeyMapChartContainer.offsetWidth);
+      journeyMapChartContainer.style.width = currentWidth + 257 + "px";
+
+      // Redraw the line chart
+      drawLineChart();
+    }
+
+    // Function to show the label of the data point at the given index
+    function showDataPointLabel(index, x, y) {
+      var input = document.createElement("input");
+      input.classList.add("data-point-input");
+      input.value = data[index].label;
+      input.style.left = x - 10 + "px";
+      input.style.top = y - 10 + "px";
+      input.style.display = "block";
+      input.style.position = "absolute";
+      input.style.border = "none";
+      input.style.fontSize = "12px";
+      input.style.textAlign = "center";
+
+      input.addEventListener("input", function (event) {
+        data[index].label = event.target.value;
+        drawLineChart();
+      });
+
+      input.addEventListener("blur", function () {
+        input.parentNode.removeChild(input);
+      });
+
+      document.body.appendChild(input);
+      input.focus();
+    }
+
+    // Function to hide the data point label
+    function hideDataPointLabel() {
+      var input = document.querySelector(".data-point-input");
+      if (input) {
+        input.parentNode.removeChild(input);
+      }
+    }
+
+    // Initial draw of the line chart
+    drawLineChart();
+
+
+
+
+
+
 
     document.addEventListener('DOMContentLoaded', () => {
       let uploadButton = document.getElementById("upload-button");
@@ -1131,15 +1128,6 @@ function addStage() {
         svg.addEventListener('click', addImageToContainer);
       });
     });
-
-
-    var stages1 = 8;
-
-    function addSection() {
-
-      stages1++;
-      $('#container').append(`<div class="draggable-icon" id="icon${stages1}"><p><textarea name="" id="" cols="30" rows="1" placeholder="Describe the situation" class="w-100 border-0 rounded bg-transparent outline-none"></textarea></p></div>`);
-    }
   </script>
 </body>
 

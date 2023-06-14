@@ -3088,6 +3088,10 @@ h6.text-sm {
   display: block;
 }
 
+.modal {
+  z-index: 1111111111111111100000000 !important;
+}
+
 /*--------------*\
     Boxes Section
 \*--------------*/
@@ -4899,30 +4903,6 @@ ul.head-btn .slider-btn .btn.ouline-white {
   transform: rotate(180deg);
 }
 
-.skeleton {
-  position: relative;
-}
-.skeleton::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  background: linear-gradient(90deg, #eee, #f9f9f9, #eee);
-  background-size: 200%;
-  animation: skeleton 1s infinite reverse;
-}
-
-@keyframes skeleton {
-  0% {
-    background-position: -100% 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
-}
 .side-panel-dropdown {
   margin-bottom: 16px;
 }
@@ -5609,6 +5589,30 @@ input[type=checkbox]:checked + .box:before {
   z-index: 10000;
 }
 
+.skeleton {
+  position: relative;
+}
+.skeleton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000000 !important;
+  background: linear-gradient(90deg, #eee, #f9f9f9, #eee);
+  background-size: 200%;
+  animation: skeleton 1s infinite reverse;
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
 /*--------------*\
     story Section
 \*--------------*/
@@ -12261,13 +12265,18 @@ button.btn.view {
   margin-left: 20px;
 }
 
-.designer-button,
-.logic-button {
-  display: none;
+.designer-button {
+  display: none !important;
 }
-.designer-button.active,
+.designer-button.active {
+  display: block !important;
+}
+
+.logic-button {
+  display: none !important;
+}
 .logic-button.active {
-  display: block;
+  display: block !important;
 }
 
 .touchpoints {
@@ -12474,40 +12483,6 @@ button.btn.view {
   text-transform: uppercase;
   margin-top: 20px;
 }
-.actions-main #container {
-  height: 200px;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.actions-main .draggable-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #775DA6;
-  position: relative;
-  cursor: move;
-  margin-right: 10px;
-  z-index: 11111111;
-}
-.actions-main .draggable-icon p {
-  position: absolute;
-  top: -35px;
-  left: -30px;
-  width: 145px;
-  font-size: 10px !important;
-}
-.actions-main #canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 100;
-  height: 100%;
-  width: 100%;
-}
 
 .feedback-main {
   align-items: center;
@@ -12632,40 +12607,6 @@ button.btn.view {
   font-weight: 700;
   text-transform: uppercase;
 }
-.touchpoints-chart #container {
-  height: 200px;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.touchpoints-chart .draggable-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #666666;
-  position: relative;
-  cursor: move;
-  margin-right: 10px;
-  z-index: 1111111;
-}
-.touchpoints-chart .draggable-icon p {
-  position: absolute;
-  top: -35px;
-  left: -30px;
-  width: 145px;
-  font-size: 10px !important;
-}
-.touchpoints-chart #canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 100;
-  height: 100%;
-  width: 100%;
-}
 
 .thoughts-box {
   display: flex;
@@ -12760,65 +12701,6 @@ button.btn.view {
   color: #fff;
 }
 
-.felling-chart {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  height: 400px;
-  position: relative;
-}
-.felling-chart #container {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.felling-chart .draggable-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #775DA6;
-  position: relative;
-  cursor: move;
-  margin-right: 10px;
-  z-index: 111111111;
-}
-.felling-chart .draggable-icon p {
-  position: absolute;
-  top: -20px;
-  left: -30px;
-  width: 120px;
-  font-size: 10px !important;
-}
-.felling-chart .draggable-icon::after {
-  content: "";
-  position: absolute;
-  top: -53px;
-  left: -5px;
-  background-image: url("../images/emotion-greate.png");
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-size: 100% 100%;
-}
-.felling-chart .draggable-icon:nth-child(1)::after {
-  background-image: url("../images/emotion-good.png");
-}
-.felling-chart .draggable-icon:nth-child(2)::after {
-  background-image: url("../images/emotion-sad.png");
-}
-.felling-chart #canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 100;
-  height: 100%;
-  width: 100%;
-}
-
 .chart-box1 {
   display: flex;
   justify-content: space-between;
@@ -12841,7 +12723,7 @@ button.btn.view {
 }
 
 .chart-stages {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .chart-stages .header-stage {
   display: flex;
@@ -12856,7 +12738,6 @@ button.btn.view {
 .chart-stages .stages-delivery-chart {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .chart-stages .stages-delivery-chart p {
   background: #fff;
@@ -12866,13 +12747,17 @@ button.btn.view {
   border-left: 3px solid #775DA6;
   margin-top: 20px;
 }
+.chart-stages .stages-delivery-chart .open-stage-1::after {
+  right: 109px !important;
+}
 .chart-stages .stages-delivery-chart .open-stage {
   position: relative;
+  max-width: 109px;
 }
 .chart-stages .stages-delivery-chart .open-stage::after {
   content: "";
   position: absolute;
-  top: 39px;
+  top: 19px;
   right: -78px;
   background-image: url("../images/longline-arrow.png");
   height: 4px;
@@ -12880,13 +12765,26 @@ button.btn.view {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.chart-stages .stages-delivery-chart .delivery-width {
+  width: 200px;
+  margin-right: 94px;
+}
+.chart-stages .stages-delivery-chart .review-stage-1::after {
+  top: 16px !important;
+  right: 110px !important;
+}
+.chart-stages .stages-delivery-chart .review-stage-1::before {
+  top: 57px !important;
+  right: 110px !important;
+}
 .chart-stages .stages-delivery-chart .review-stage {
   position: relative;
+  max-width: 109px;
 }
 .chart-stages .stages-delivery-chart .review-stage::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: -12px;
   right: -79px;
   background-image: url("../images/view-to-buy.png");
   height: 28px;
@@ -12897,7 +12795,7 @@ button.btn.view {
 .chart-stages .stages-delivery-chart .review-stage::before {
   content: "";
   position: absolute;
-  top: 44px;
+  top: 27px;
   right: -79px;
   background-image: url("../images/view-to-continue.png");
   height: 28px;
@@ -12907,11 +12805,12 @@ button.btn.view {
 }
 .chart-stages .stages-delivery-chart .continue-stage {
   position: relative;
+  max-width: 109px;
 }
 .chart-stages .stages-delivery-chart .continue-stage::after {
   content: "";
   position: absolute;
-  top: 73px;
+  top: 55px;
   right: -79px;
   background-image: url("../images/continue-adress.png");
   height: 28px;
@@ -12922,21 +12821,28 @@ button.btn.view {
 .chart-stages .stages-delivery-chart .continue-stage::before {
   content: "";
   position: absolute;
-  top: 40px;
+  top: 20px;
   right: -79px;
   background-image: url("../images/view-to-continue.png");
-  height: 28px;
+  height: 20px;
   width: 74px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.chart-stages .stages-delivery-chart .delivery-stage {
+  max-width: 109px;
+}
+.chart-stages .stages-delivery-chart .patment-stage {
+  max-width: 109px;
+}
 .chart-stages .stages-delivery-chart .adress-stage {
   position: relative;
+  max-width: 109px;
 }
 .chart-stages .stages-delivery-chart .adress-stage::after {
   content: "";
   position: absolute;
-  top: 39px;
+  top: 20px;
   right: -76px;
   background-image: url("../images/longline-arrow.png");
   height: 4px;
@@ -13034,6 +12940,45 @@ button.btn.view {
 }
 .action-div .action-icons a i {
   margin-right: 5px;
+}
+
+.template-7 .draggable-icon {
+  position: relative;
+}
+.template-7 .draggable-icon::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("../images/happy.png");
+  background-size: cover;
+}
+
+.template-8 {
+  position: relative;
+}
+.template-8::after {
+  content: "";
+  position: absolute;
+  top: 23%;
+  left: 3%;
+  width: 37px;
+  height: 33px;
+  background-image: url("../images/good-thumb.png");
+  background-size: cover;
+}
+.template-8::before {
+  content: "";
+  position: absolute;
+  bottom: 23%;
+  left: 3%;
+  width: 37px;
+  height: 33px;
+  background-image: url("../images/bad-thumb.png");
+  background-size: cover;
 }
 
 .top-section {
@@ -13382,9 +13327,6 @@ button.btn.view {
 }
 
 .bar {
-  height: 2px;
-  background-color: #757575;
-  width: 95%;
   margin-bottom: 50px;
 }
 
@@ -13539,6 +13481,44 @@ button.btn.view {
 
 .txtarea::-webkit-scrollbar {
   display: none;
+}
+
+.journey-map-chart-container {
+  position: relative;
+  width: 1420px;
+}
+.journey-map-chart-container #container {
+  position: relative;
+}
+.journey-map-chart-container #container #canvas {
+  z-index: 1111111111;
+}
+.journey-map-chart-container #container::after {
+  content: "";
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #E01E5A;
+}
+.journey-map-chart-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #16AC84;
+}
+.journey-map-chart-container::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(0deg, rgba(255, 171, 43, 0.08), rgba(255, 171, 43, 0.08)), linear-gradient(0deg, rgba(255, 171, 43, 0.08), rgba(255, 171, 43, 0.08)), rgba(255, 171, 43, 0.08);
 }
 
 /*# sourceMappingURL=main.css.map */

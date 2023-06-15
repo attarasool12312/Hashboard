@@ -53,8 +53,8 @@
                     </div>
                   </template>
                   <div class="w-100 text-center mt-2">
-                    <a class="cursor-pointer d-block" x-on:click="goals.push('')">
-                      <i class="icon icon-add-stage"></i>
+                    <a class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto text-decoration-none" x-on:click="goals.push('')">
+                      +
                     </a>
                   </div>
                 </div>
@@ -1049,8 +1049,8 @@
       var input = document.createElement("input");
       input.classList.add("data-point-input");
       input.value = data[index].label;
-      input.style.left = x - 10 + "px";
-      input.style.top = y - 10 + "px";
+      input.style.left = x + 50 + "px";
+      input.style.top = y + 170 + "px";
       input.style.display = "block";
       input.style.position = "absolute";
       input.style.border = "none";

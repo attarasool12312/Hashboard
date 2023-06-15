@@ -45,8 +45,7 @@
             case 'goal':
               tds += '<td class="stage-heading">Customer Goals</td>';
               tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+        <template x-for="i in columns">
             <td>
               <div x-data="{ goals: [''] }">
                 <div class="customer-goals">
@@ -56,14 +55,13 @@
                     </div>
                   </template>
                   <div class="w-100 text-center mt-2">
-                    <a class="cursor-pointer d-block" x-on:click="goals.push('')">
-                      <i class="icon icon-add-stage"></i>
+                    <a class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto text-decoration-none" x-on:click="goals.push('')">
+                      +
                     </a>
                   </div>
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
               break;
             case 'pain':
@@ -470,14 +468,19 @@
             <div class="d-flex">
               <table id="journey-map" class="journey-map-table journey-map">
                 <tbody>
-                  <tr id="mainStages" class="stages-main">
-                    <td scope="col">
-                      <h4>Stages</h4>
+                  <tr class="feedback">
+                    <td>
+                      <h3>
+                        <input type="text" name="name" id="name" placeholder="Stages"
+                          class="d-block border-0 input-fill fw-600 w-100 rounded bg-transparent">
+                      </h3>
                     </td>
+                  </tr>
+                  <tr id="mainStages" class="stages-main">
                     <template x-for="(i,ind) in columns">
                       <td>
                         <div class="stages">
-                          <h3>
+                          <h3 x-bind:class="{ 'first-child': ind === 0, 'last-child': ind === (columns.length - 1) }">
                             <input type="text" placeholder="Stage 1"
                               class="mt-2 border-0 input-white outline-none bg-transparent text-center w-100">
                           </h3>
@@ -485,10 +488,15 @@
                       </td>
                     </template>
                   </tr>
-                  <tr id="customerGoals" class="opportunities-main">
-                    <td style="margin-left: 27px; margin-right: 24px;">
-                      <h4>THOUGHTS</h4>
+                  <tr class="feedback">
+                    <td>
+                      <h3>
+                        <input type="text" name="name" id="name" placeholder="THOUGHTS"
+                          class="d-block border-0 input-fill fw-600 w-100 rounded bg-transparent">
+                      </h3>
                     </td>
+                  </tr>
+                  <tr id="customerGoals" class="opportunities-main">
                     <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[columns.length-1-ind]">
                         <td class="opportunities-td">
@@ -516,10 +524,15 @@
                       </template>
                     </template>
                   </tr>
-                  <tr id="customerGoals" class="opportunities-main">
+                  <tr class="feedback">
                     <td>
-                      <h4>OPPORTUNITIES</h4>
+                      <h3>
+                        <input type="text" name="name" id="name" placeholder="OPPORTUNITIES"
+                          class="d-block border-0 input-fill fw-600 w-100 rounded bg-transparent">
+                      </h3>
                     </td>
+                  </tr>
+                  <tr id="customerGoals" class="opportunities-main">
                     <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[columns.length-1-ind]">
                         <td class="opportunities-td">

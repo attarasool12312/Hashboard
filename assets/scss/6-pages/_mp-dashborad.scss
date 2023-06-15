@@ -25,11 +25,13 @@
                 height: 134px;
                 margin-top: 10px;
             }
+
             &:nth-child(4) {
                 transform: perspective(376px) rotatey(-7deg);
                 height: 140px;
                 margin-top: 8px;
             }
+
             &:nth-child(5) {
                 transform: perspective(376px) rotatey(-7deg);
             }
@@ -369,7 +371,7 @@
                 display: flex;
                 align-items: center;
                 position: absolute;
-                top: 9px;
+                top: 0px;
                 right: 14px;
                 display: none;
 
@@ -382,8 +384,8 @@
 
         .sm-box {
             background: #775da64a !important;
-            // display: none;
-            &.active{
+
+            &.active {
                 display: block;
             }
         }
@@ -688,31 +690,36 @@
             }
         }
 
-        .table-media{
-            .upload-file{
+        .table-media {
+            .upload-file {
                 background-color: transparent !important;
                 box-shadow: none !important;
                 height: 168px;
-                .file-upload{
-                    figure{
+
+                .file-upload {
+                    figure {
 
                         height: 83px;
-                    }  
-                    img{
+                    }
+
+                    img {
                         width: 200px;
                         height: 83px;
                     }
-                    i{
+
+                    i {
                         position: absolute;
                         top: 54%;
                         left: 36%;
                     }
                 }
             }
-            .video-media{
+
+            .video-media {
                 height: 150px;
                 background-color: #f8f9fa;
-                input{
+
+                input {
                     border: 0;
                     background-color: transparent;
                     width: 100%;
@@ -725,22 +732,26 @@
     }
 }
 
-.brand-reputation-score{
+.brand-reputation-score {
     position: relative;
-    .brand-reputation{     
+
+    .brand-reputation {
         text-align: center;
         position: absolute;
         top: 35%;
         left: 40%;
         z-index: 1;
-        p{
+
+        p {
             font-size: 20px;
         }
-        h5{
+
+        h5 {
             font-size: 35px !important;
         }
     }
-    &::after{
+
+    &::after {
         content: "";
         position: absolute;
         top: 13%;

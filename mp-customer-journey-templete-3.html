@@ -53,8 +53,8 @@
                     </div>
                   </template>
                   <div class="w-100 text-center mt-2">
-                    <a class="cursor-pointer d-block" x-on:click="goals.push('')">
-                      <i class="icon icon-add-stage"></i>
+                    <a class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto text-decoration-none" x-on:click="goals.push('')">
+                      +
                     </a>
                   </div>
                 </div>
@@ -963,6 +963,8 @@ function addArrowThree() {
     // Load the image
     var dotImage = new Image();
     dotImage.src = "./assets/images/excited.png"; // Replace with the path to your image
+    dotImage.width = 40; // Set the width of the image
+    dotImage.height = 40; // Set the height of the image
 
     // Function to draw the line chart
     function drawLineChart() {

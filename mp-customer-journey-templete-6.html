@@ -45,8 +45,7 @@
             case 'goal':
               tds += '<td class="stage-heading">Customer Goals</td>';
               tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+        <template x-for="i in columns">
             <td>
               <div x-data="{ goals: [''] }">
                 <div class="customer-goals">
@@ -56,14 +55,13 @@
                     </div>
                   </template>
                   <div class="w-100 text-center mt-2">
-                    <a class="cursor-pointer d-block" x-on:click="goals.push('')">
-                      <i class="icon icon-add-stage"></i>
+                    <a class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto text-decoration-none" x-on:click="goals.push('')">
+                      +
                     </a>
                   </div>
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
               break;
             case 'pain':

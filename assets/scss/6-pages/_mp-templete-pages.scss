@@ -47,7 +47,6 @@
         margin-top: 25px;
         font-weight: 700;
         color: #775DA6;
-        border-bottom: 2px solid #775DA6;
         padding-bottom: 4px;
     }
 
@@ -214,14 +213,57 @@
             margin: 0 !important;
         }
     }
+    .stages-12{
+        h3{
+            width: 100% !important;
+            &::after{
+                display: none;
+            }
+            &::before{
+                display: none;
+            }
+        }
+    }
 
     .stages {
+        h3.first-child::before {
+            display: none;
+        }
+
+        h3.last-child::after {
+            display: none;
+        }
 
         h3 {
             background-color: #775DA6;
             text-align: center;
             padding: 6px 0;
             color: #fff;
+            width: 90%;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 7px;
+                right: -19px;
+                width: 37px;
+                height: 37px;
+                background-color: #775DA6;
+                transform: rotate(224deg);
+                z-index: 1;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 7px;
+                left: -19px;
+                width: 37px;
+                height: 37px;
+                background-color: #fff;
+                transform: rotate(224deg);
+            }
         }
     }
 }
@@ -823,9 +865,11 @@
         }
     }
 }
-.template-8{
+
+.template-8 {
     position: relative;
-    &::after{
+
+    &::after {
         content: "";
         position: absolute;
         top: 23%;
@@ -835,7 +879,8 @@
         background-image: url($images-path + "/good-thumb.png");
         background-size: cover;
     }
-    &::before{
+
+    &::before {
         content: "";
         position: absolute;
         bottom: 23%;
@@ -844,5 +889,21 @@
         height: 33px;
         background-image: url($images-path + "/bad-thumb.png");
         background-size: cover;
+    }
+}
+
+.action-title {
+    position: relative;
+
+    h2 {
+        transform: rotate(270deg);
+        height: fit-content;
+        color: #775DA6;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 21px !important;
+        position: absolute;
+        top: 46%;
+        left: 1%;
     }
 }

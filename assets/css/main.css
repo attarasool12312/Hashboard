@@ -10079,7 +10079,7 @@ button.btn.view {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 9px;
+  top: 0px;
   right: 14px;
   display: none;
 }
@@ -12322,7 +12322,6 @@ button.btn.view {
   margin-top: 25px;
   font-weight: 700;
   color: #775DA6;
-  border-bottom: 2px solid #775DA6;
   padding-bottom: 4px;
 }
 .feedback .content {
@@ -12461,11 +12460,49 @@ button.btn.view {
 .stages-main td + td {
   margin: 0 !important;
 }
+.stages-main .stages-12 h3 {
+  width: 100% !important;
+}
+.stages-main .stages-12 h3::after {
+  display: none;
+}
+.stages-main .stages-12 h3::before {
+  display: none;
+}
+.stages-main .stages h3.first-child::before {
+  display: none;
+}
+.stages-main .stages h3.last-child::after {
+  display: none;
+}
 .stages-main .stages h3 {
   background-color: #775DA6;
   text-align: center;
   padding: 6px 0;
   color: #fff;
+  width: 90%;
+  position: relative;
+}
+.stages-main .stages h3::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -19px;
+  width: 37px;
+  height: 37px;
+  background-color: #775DA6;
+  transform: rotate(224deg);
+  z-index: 1;
+}
+.stages-main .stages h3::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -19px;
+  width: 37px;
+  height: 37px;
+  background-color: #fff;
+  transform: rotate(224deg);
 }
 
 .actions-main {
@@ -12979,6 +13016,21 @@ button.btn.view {
   height: 33px;
   background-image: url("../images/bad-thumb.png");
   background-size: cover;
+}
+
+.action-title {
+  position: relative;
+}
+.action-title h2 {
+  transform: rotate(270deg);
+  height: fit-content;
+  color: #775DA6;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 21px !important;
+  position: absolute;
+  top: 46%;
+  left: 1%;
 }
 
 .top-section {

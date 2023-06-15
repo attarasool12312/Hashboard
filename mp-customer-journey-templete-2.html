@@ -45,8 +45,7 @@
             case 'goal':
               tds += '<td class="stage-heading">Customer Goals</td>';
               tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+        <template x-for="i in columns">
             <td>
               <div x-data="{ goals: [''] }">
                 <div class="customer-goals">
@@ -56,14 +55,13 @@
                     </div>
                   </template>
                   <div class="w-100 text-center mt-2">
-                    <a class="cursor-pointer d-block" x-on:click="goals.push('')">
-                      <i class="icon icon-add-stage"></i>
+                    <a class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto text-decoration-none" x-on:click="goals.push('')">
+                      +
                     </a>
                   </div>
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
               break;
             case 'pain':
@@ -304,22 +302,23 @@
       top: 0;
       left: 0;
     }
+
     .data-point-label-container {
-        display: inline-block;
-        position: absolute;
-      }
-      
-      .data-point-label {
-        font-size: 12px;
-        cursor: pointer;
-        padding: 4px;
-      }
-      
-      .data-point-image {
-        width: 16px;
-        height: 16px;
-        margin-right: 4px;
-      }
+      display: inline-block;
+      position: absolute;
+    }
+
+    .data-point-label {
+      font-size: 12px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .data-point-image {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
   </style>
 </head>
 
@@ -475,7 +474,7 @@
                           <input type="text" name="text" :id="'text-' + ind" placeholder="Stage Name"
                             @click="showBox = true">
                           <div class="input-hover-icon">
-                            <i class="icon icon-add-stage bg-cover" @click="columns[ind]++"></i>
+                            <a class="text-center fs-3 text-fill cursor-pointer w-fit mx-auto text-decoration-none" @click="columns[ind]++">+</a>
                             <i class="icon icon-settings" data-bs-toggle="modal" data-bs-target="#colorThemeModal"></i>
                             <i @click="removeColumn(ind)" class="icon icon-close-stage"></i>
                           </div>
@@ -484,7 +483,7 @@
                           <div class="sm-box-desc d-flex justify-content-between align-items-center mb-2">
                             <span class="d-flex align-items-end">
                               <h3 class="fw-bold">86%</h3>
-                              <p class="text-light-gray text-11">Average satisfaction</p>
+                              <p class="text-light-gray text-11">Average Satisfaction</p>
                             </span>
                             <span><i class="icon icon-yellow-star"></i></span>
                           </div>

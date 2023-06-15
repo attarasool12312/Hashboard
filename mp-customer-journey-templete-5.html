@@ -29,7 +29,7 @@
   <script>
     document.addEventListener('alpine:init', () => {
       Alpine.data('stages', () => ({
-        columns: [1, 1, 1, 1],
+        columns: [1, 1, 1, 1, 1],
 
         addColumn() {
           this.columns.unshift(1)
@@ -53,8 +53,8 @@
                     </div>
                   </template>
                   <div class="w-100 text-center mt-2">
-                    <a class="cursor-pointer d-block" x-on:click="goals.push('')">
-                      <i class="icon icon-add-stage"></i>
+                    <a class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto text-decoration-none" x-on:click="goals.push('')">
+                      +
                     </a>
                   </div>
                 </div>
@@ -506,9 +506,9 @@
                     </td>
                     <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[columns.length-1-ind]">
-                        <td>
-                          <p class="width-257px px-3">
-                            <textarea name="" id="" cols="30" rows="3"
+                        <td style="border-top: 1px solid #9B9B9B;">
+                          <p class="width-257px" style="margin: 20px 40px;">
+                            <textarea name="" id="" cols="30" rows="2"
                               class="w-100 border-0 rounded bg-transparent outline-none">Break down the phase into substeps here by describing the users activity</textarea>
                           </p>
                         </td>
@@ -524,9 +524,9 @@
                     </td>
                     <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[ind]">
-                        <td>
-                          <p class="width-257px px-3">
-                            <textarea name="" id="" cols="30" rows="3"
+                        <td style="border-top: 1px solid #9B9B9B;">
+                          <p class="width-257px" style="margin: 20px 40px;">
+                            <textarea name="" id="" cols="30" rows="2"
                               class="w-100 border-0 rounded bg-transparent outline-none">What is the user thinking / feeling when engaging in this activity?</textarea>
                           </p>
                         </td>
@@ -542,8 +542,8 @@
                     </td>
                     <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[ind]">
-                        <td>
-                          <p class="width-257px px-3">
+                        <td style="border-top: 1px solid #9B9B9B;">
+                          <p class="width-257px" style="margin: 20px 40px;">
                             <textarea name="" id="" cols="30" rows="3"
                               class="w-100 border-0 rounded bg-transparent outline-none">This is an idea / comment card on how to solve frictions or celebrate successes</textarea>
                           </p>

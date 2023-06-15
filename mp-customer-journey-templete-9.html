@@ -43,9 +43,9 @@
           let tds = '';
           switch (type) {
             case 'goal':
+              tds += '<td class="stage-heading">Customer Goals</td>';
               tds += `
-        <template x-for="(i, ind) in columns">
-          <template x-for="j in columns[ind]">
+        <template x-for="i in columns">
             <td>
               <div x-data="{ goals: [''] }">
                 <div class="customer-goals">
@@ -55,14 +55,13 @@
                     </div>
                   </template>
                   <div class="w-100 text-center mt-2">
-                    <a class="cursor-pointer d-block" x-on:click="goals.push('')">
-                      <i class="icon icon-add-stage"></i>
+                    <a class="processes text-center fs-3 text-fill cursor-pointer w-fit mx-auto text-decoration-none" x-on:click="goals.push('')">
+                      +
                     </a>
                   </div>
                 </div>
               </div>
             </td>
-          </template>
         </template>`;
               break;
             case 'pain':
@@ -449,11 +448,12 @@
             <div class="d-flex">
               <table id="journey-map" class="touchpoints journey-map overflow-x">
                 <tbody>
-                  <tr id="mainStages">
-                    <template x-for="(i,ind) in columns">
+                  <tr id="mainStages"
+                    x-data="{ images: ['./assets/images/stages-1.png', './assets/images/stages-2.png', './assets/images/stages-3.png', './assets/images/stages-4.png', './assets/images/stages-5.png', './assets/images/stages-6.png', './assets/images/stages-7.png', './assets/images/stages-8.png', './assets/images/stages-1.png', './assets/images/stages-2.png', './assets/images/stages-3.png', './assets/images/stages-4.png', './assets/images/stages-5.png', './assets/images/stages-6.png', './assets/images/stages-7.png', './assets/images/stages-8.png'] }">
+                    <template x-for="(i, ind) in columns">
                       <td>
                         <div class="stages">
-                          <img src="./assets/images/stages-1.png" alt="" class="stages-images">
+                          <img x-bind:src="images[ind]" alt="" class="stages-images">
                           <h5>
                             <input type="text" name="name" id="name" placeholder="Stage 1"
                               class="d-block border-0 input-white text-center fw-600 w-100 rounded bg-transparent">
@@ -466,22 +466,19 @@
                       </td>
                     </template>
                   </tr>
-                  <tr id="subStages" class="feedback">
-                    <template x-for="(i, ind) in columns">
-                      <template x-for="j in columns[columns.length-1-ind]">
-                        <td>
-                          <h3>
-                            <input type="text" name="name" id="name" placeholder="Feedback"
-                              class="d-block border-0 input-fill fw-600 w-100 rounded bg-transparent">
-                          </h3>
-                        </td>
-                      </template>
-                    </template>
+
+                  <tr class="feedback">
+                    <td>
+                      <h3>
+                        <input type="text" name="name" id="name" placeholder="Feedback"
+                          class="d-block border-0 input-fill fw-600 w-100 rounded bg-transparent">
+                      </h3>
+                    </td>
                   </tr>
                   <tr id="customerGoals" class="feedback">
                     <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[ind]">
-                        <td>
+                        <td style="border-top: 2px solid #775DA6;">
                           <div class="content">
                             <p>
                               <textarea name="" id="" cols="30" rows="2"
@@ -501,21 +498,17 @@
                     </template>
                   </tr>
                   <tr id="painPints" class="feedback">
-                    <template x-for="(i, ind) in columns">
-                      <template x-for="j in columns[ind]">
-                        <td>
-                          <h3>
-                            <input type="text" name="name" id="name" placeholder="OPPORTUNITIES"
-                              class="d-block border-0 input-fill fw-600 w-100 rounded bg-transparent">
-                          </h3>
-                        </td>
-                      </template>
-                    </template>
+                    <td>
+                      <h3>
+                        <input type="text" name="name" id="name" placeholder="OPPORTUNITIES"
+                          class="d-block border-0 input-fill fw-600 w-100 rounded bg-transparent">
+                      </h3>
+                    </td>
                   </tr>
                   <tr id="touchpointsActivity" class="feedback">
                     <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[ind]">
-                        <td>
+                        <td style="border-top: 2px solid #775DA6;">
                           <div class="content">
                             <p>
                               <textarea name="" id="" cols="30" rows="2"

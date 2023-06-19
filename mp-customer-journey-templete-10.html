@@ -477,15 +477,9 @@
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
-            <button type="button" class="btn btn-fill me-md-3">Save</button>
+            <button type="button" class="btn btn-fill me-md-3 mt-3 mt-md-0 wsm-100">Save</button>
           </div>
           <div class="bg-white p-3 journey-map-white">
-            <div class="action-title">
-              <h2>ACTIONS</h2>
-              <div id="container">
-                <canvas id="canvas" width="400" height="300"></canvas>
-              </div>
-            </div>
             <div class="d-flex">
               <table id="journey-map" class="journey-map-table journey-map ">
                 <tbody>
@@ -503,6 +497,16 @@
                         </div>
                       </td>
                     </template>
+                  </tr>
+                  <tr>
+                    <td colspan="6">
+                      <div class="action-title">
+                        <h2>ACTIONS</h2>
+                        <div id="container">
+                          <canvas id="canvas" width="400" height="300"></canvas>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                   <tr id="subStages" class="feedback-main">
                     <td>
@@ -974,12 +978,12 @@
   <script>
     // Data for the line chart
     var data = [
-      { x: 130, y: 150, label: "Label 1" },
-      { x: 380, y: 150, label: "Label 2" },
-      { x: 640, y: 150, label: "Label 3" },
-      { x: 900, y: 150, label: "Label 4" },
-      { x: 1150, y: 150, label: "Label 5" },
-      { x: 1400, y: 150, label: "Label 6" },
+      { x: 230, y: 150, label: "Stage 1" },
+      { x: 487, y: 150, label: "Stage 2" },
+      { x: 744, y: 150, label: "Stage 3" },
+      { x: 1001, y: 150, label: "Stage 4" },
+      { x: 1258, y: 150, label: "Stage 5" },
+      { x: 1515, y: 150, label: "Stage 6" },
     ];
 
     // Canvas variables
@@ -1008,14 +1012,16 @@
       }
 
       ctx.lineWidth = calculateLineWidth();
-      ctx.strokeStyle = "#775da6";
+      ctx.strokeStyle = "#EAEAEA";
       ctx.stroke();
 
       // Draw dots at the data points and display labels
       for (var i = 0; i < data.length; i++) {
+        var dotColor = data[i].y <= 150 ? "#27A530" : "#FA0707"; // Determine dot color based on y-coordinate
+
         ctx.beginPath();
-        ctx.arc(data[i].x, data[i].y, 4, 0, 2 * Math.PI);
-        ctx.fillStyle = "#775da6";
+        ctx.arc(data[i].x, data[i].y, 10, 0, 2 * Math.PI); // Increase dot width and height to 20px
+        ctx.fillStyle = dotColor;
         ctx.fill();
         ctx.stroke();
 
@@ -1038,7 +1044,10 @@
       } else {
         // Check if the mouse is over a data point
         for (var i = 0; i < data.length; i++) {
-          if (Math.abs(data[i].x - x) <= 4 && Math.abs(data[i].y - y) <= 4) {
+          if (
+            Math.abs(data[i].x - x) <= 4 &&
+            Math.abs(data[i].y - y) <= 4
+          ) {
             canvas.style.cursor = "ns-resize";
             showDataPointLabel(i, x, y);
             return;
@@ -1058,7 +1067,10 @@
 
       // Check if the mouse is over a data point
       for (var i = 0; i < data.length; i++) {
-        if (Math.abs(data[i].x - x) <= 4 && Math.abs(data[i].y - y) <= 4) {
+        if (
+          Math.abs(data[i].x - x) <= 4 &&
+          Math.abs(data[i].y - y) <= 4
+        ) {
           selectedDataIndex = i;
           yOffset = data[i].y - y;
           return;
@@ -1089,7 +1101,7 @@
       var lastDataPoint = data[data.length - 1];
       var x = lastDataPoint.x + 257;
       var y = 150;
-      var label = "Label " + (data.length + 1);
+      var label = "Stage " + (data.length + 1);
       data.push({ x: x, y: y, label: label });
 
       // Update the canvas width based on the new data point
@@ -1107,8 +1119,8 @@
       var input = document.createElement("input");
       input.classList.add("data-point-input");
       input.value = data[index].label;
-      input.style.left = (x + 0) + "px";
-      input.style.top = (y + 185) + "px";
+      input.style.left = x + 0 + "px";
+      input.style.top = y + 185 + "px";
       input.style.display = "block";
       input.style.position = "absolute";
       input.style.border = "none";

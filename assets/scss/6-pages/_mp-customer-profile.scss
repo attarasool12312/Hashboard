@@ -335,7 +335,13 @@
         display: flex;
         justify-content: space-between;
 
+        @include grid-md-down {
+            flex-flow: column;
+        }
+
         .profile-owner {
+            text-align: center;
+
             img {
                 width: 100px;
                 height: 100px;
@@ -346,6 +352,11 @@
 
         .profile-content {
             width: 24%;
+
+            @include grid-md-down {
+                width: 100%;
+                margin: 20px 0;
+            }
 
             p {
                 margin-top: 20px;
@@ -361,6 +372,11 @@
             display: flex;
             flex-flow: column;
             justify-content: space-between;
+
+            @include grid-md-down {
+                width: 51%;
+                margin: 0 auto;
+            }
         }
 
         .profile-priority {
@@ -369,6 +385,11 @@
             border-radius: 20px;
             text-align: center;
             padding: 15px 0;
+
+            @include grid-md-down {
+                width: 51%;
+                margin: 20px auto;
+            }
 
             p {
                 margin-top: 20px;
@@ -384,6 +405,11 @@
             display: flex;
             flex-flow: column;
             justify-content: space-between;
+
+            @include grid-md-down {
+                width: 51%;
+                margin: 0 auto;
+            }
         }
     }
 }
@@ -599,9 +625,10 @@
             padding: 8px;
             border-top-left-radius: 8px;
             width: fit-content;
-            input{
-                &::placeholder{
-                    color: #FF86AB;                    
+
+            input {
+                &::placeholder {
+                    color: #FF86AB;
                 }
             }
         }
@@ -633,6 +660,10 @@
     .hannah-profile-top-left {
         border-right: 2px dotted #FF86AB;
 
+        @include grid-md-down {
+            border: 0;
+        }
+
         .profile-image-text {
             display: flex;
             align-items: center;
@@ -649,10 +680,12 @@
             h1 {
                 color: #FF86AB;
                 font-weight: 700;
-                input{
+
+                input {
                     width: 70% !important;
-                    &::placeholder{
-                        color: #FF86AB;                        
+
+                    &::placeholder {
+                        color: #FF86AB;
                     }
                 }
             }
@@ -660,9 +693,11 @@
             h6 {
                 color: #fff;
                 font-size: 15px;
-                input{
+
+                input {
                     width: 70% !important;
-                    &::placeholder{
+
+                    &::placeholder {
                         text-transform: uppercase;
                     }
                 }
@@ -681,13 +716,18 @@
         border-bottom-right-radius: 20px;
         margin-top: -30px;
 
+        @include grid-md-down {
+            margin: 0;
+        }
+
         p {
             color: #fff;
             font-size: 18px;
         }
     }
-    .hannah-detalis{
-        p{
+
+    .hannah-detalis {
+        p {
             border-bottom: 1px dotted #FF86AB;
             padding: 8px 0;
         }
@@ -697,29 +737,34 @@
 .hannah-profile-bottom {
     background-color: #513C71;
     padding: 30px;
-    h5{
+
+    h5 {
         background-color: #3D2D55;
         padding: 8px;
         border-top-left-radius: 8px;
         width: fit-content;
-        input{
-            &::placeholder{
+
+        input {
+            &::placeholder {
                 color: #FF86AB;
             }
         }
     }
-    ul{
+
+    ul {
         margin-top: 20px;
         padding-left: 20px;
-        li{
+
+        li {
             color: #fff;
         }
     }
 }
 
-.profile-completion{
+.profile-completion {
     position: relative;
-    &::after{
+
+    &::after {
         content: "70%";
         position: absolute;
         top: 55px;
@@ -732,6 +777,6 @@
         background: #F2F2F2;
         border-radius: 50%;
         font-size: 26px;
-        font-weight: 600;    
+        font-weight: 600;
     }
 }

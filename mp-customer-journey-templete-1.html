@@ -445,12 +445,9 @@
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
-            <button type="button" class="btn btn-fill me-md-3">Save</button>
+            <button type="button" class="btn btn-fill me-md-3 wsm-100 mt-3 mt-md-0">Save</button>
           </div>
           <div class="bg-white p-3 journey-map-white">
-            <div id="container">
-              <canvas id="canvas" width="400" height="300"></canvas>
-            </div>
             <div class="d-flex">
               <table id="journey-map" class="journey-map-table journey-map">
                 <tbody>
@@ -466,6 +463,13 @@
                         </td>
                       </template>
                     </template>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+                      <div id="container">
+                        <canvas id="canvas" width="400" height="300"></canvas>
+                      </div>
+                    </td>
                   </tr>
                   <tr id="customerGoals" class="opportunities-main">
                     <td>
@@ -934,11 +938,15 @@
     var selectedDataIndex = -1;
     var yOffset = 0;
 
-    // Load the image
-    var dotImage = new Image();
-    dotImage.src = "./assets/images/emotion-good.png"; // Replace with the path to your image
-    dotImage.width = 40; // Set the width of the image
-    dotImage.height = 40; // Set the height of the image
+    // Load the images for different emotions
+    var dotImageGreat = new Image();
+    dotImageGreat.src = "./assets/images/emotion-greate.png";
+
+    var dotImageGood = new Image();
+    dotImageGood.src = "./assets/images/emotion-good.png";
+
+    var dotImageSad = new Image();
+    dotImageSad.src = "./assets/images/emotion-sad.png";
 
     // Function to draw the line chart
     function drawLineChart() {
@@ -959,7 +967,16 @@
 
       // Draw the image at the data points
       for (var i = 0; i < data.length; i++) {
-        ctx.drawImage(dotImage, data[i].x - dotImage.width / 2, data[i].y - dotImage.height / 2);
+        var image;
+        if (data[i].y <= 100) {
+          image = dotImageGreat;
+        } else if (data[i].y <= 200) {
+          image = dotImageGood;
+        } else {
+          image = dotImageSad;
+        }
+
+        ctx.drawImage(image, data[i].x - image.width / 2, data[i].y - image.height / 2, image.width, image.height);
       }
     }
 
@@ -976,7 +993,7 @@
       } else {
         // Check if the mouse is over a data point
         for (var i = 0; i < data.length; i++) {
-          if (Math.abs(data[i].x - x) <= dotImage.width / 2 && Math.abs(data[i].y - y) <= dotImage.height / 2) {
+          if (Math.abs(data[i].x - x) <= dotImageGood.width / 2 && Math.abs(data[i].y - y) <= dotImageGood.height / 2) {
             canvas.style.cursor = "ns-resize";
             return;
           }
@@ -994,7 +1011,7 @@
 
       // Check if the mouse is over a data point
       for (var i = 0; i < data.length; i++) {
-        if (Math.abs(data[i].x - x) <= dotImage.width / 2 && Math.abs(data[i].y - y) <= dotImage.height / 2) {
+        if (Math.abs(data[i].x - x) <= dotImageGood.width / 2 && Math.abs(data[i].y - y) <= dotImageGood.height / 2) {
           selectedDataIndex = i;
           yOffset = data[i].y - y;
           return;
@@ -1020,13 +1037,12 @@
       return lineWidth;
     }
 
-
     // Function to add a data point to the line chart
     function addDataPoint() {
       var lastDataPoint = data[data.length - 1];
       var x = lastDataPoint.x + 257;
       var y = 150;
-      var label = "Label " + (data.length + 1);
+      var label = "Stage " + (data.length + 1);
       data.push({ x: x, y: y, label: label });
 
       // Update the canvas width based on the new data point
@@ -1040,9 +1056,11 @@
     }
 
     // Initial draw of the line chart
-    dotImage.onload = function () {
+    dotImageGood.onload = function () {
       drawLineChart();
     };
+
+
 
 
 

@@ -3,7 +3,8 @@
 \*--------------*/
 .nav-tabs {
     border-bottom: 2px solid #DCDCDC;
-    @include grid-sm-down{
+
+    @include grid-sm-down {
         flex-flow: column;
     }
 
@@ -21,7 +22,8 @@
             font-weight: 500;
             color: #898989;
             border: 1px solid transparent;
-            @include grid-sm-down{
+
+            @include grid-sm-down {
                 width: 100%;
                 text-align: left;
             }
@@ -66,7 +68,8 @@
 
         +li {
             margin-left: 32px;
-            @include grid-sm-down{
+
+            @include grid-sm-down {
                 margin: 0;
             }
         }
@@ -156,46 +159,71 @@
 
     li {
         button {
-            &.active{
+            &.active {
                 border: none !important;
-                background-color: #fff !important;  
-            } 
+                background-color: #fff !important;
+            }
         }
     }
 }
 
-.employees-nav1{
+.employees-nav1 {
     border-radius: 8px;
     padding: 5px;
 
+    @include grid-md-down {
+        flex-flow: column !important;
+        width: 100%;
+    }
+
     li {
+        @include grid-md-down {
+            width: 100% !important;
+        }
+
+        &+li {
+            @include grid-md-down{
+                margin-top: 15px !important;
+            }
+        }
+
         button {
             border-radius: 8px !important;
-            &.active{
+
+            @include grid-md-down {
+                width: 100% !important;
+            }
+
+            &.active {
                 border: none !important;
                 color: #fff !important;
                 border-radius: 8px;
-                background-color: #775DA6 !important;  
-            } 
+                background-color: #775DA6 !important;
+            }
         }
     }
 
 }
-.about-tab{
-    .nav{
+
+.about-tab {
+    .nav {
         flex-flow: column;
-        .nav-item{
+
+        .nav-item {
             margin: 0;
         }
     }
-    .nav-tabs{
+
+    .nav-tabs {
         border-width: 0;
         margin: 15px 0;
-        li{
-            button{
+
+        li {
+            button {
                 width: 100%;
                 text-align: left;
-                &.active{
+
+                &.active {
                     border-width: 0 !important;
                     background-color: #e7f3ff !important;
                 }
@@ -204,15 +232,17 @@
     }
 }
 
-.general-tabs{
-    .nav-tabs{
+.general-tabs {
+    .nav-tabs {
         margin-top: 20px;
-        li{
-            button{
+
+        li {
+            button {
                 width: 100%;
                 text-align: left;
                 font-size: 12px;
-                &.active{
+
+                &.active {
                     background-color: #c8dde0 !important;
                     border: none !important;
                     border-radius: 8px;
@@ -220,19 +250,21 @@
                 }
             }
         }
-    }  
+    }
 }
 
-.chart-popup{
-    .nav-tabs{
-        li{
-            + li{
+.chart-popup {
+    .nav-tabs {
+        li {
+            +li {
                 margin: 0;
             }
-            button{
+
+            button {
                 width: 100%;
                 text-align: left;
-                &.active{
+
+                &.active {
                     border: 0 !important;
                     background-color: #f1f1f1 !important;
                     border-radius: 5px;

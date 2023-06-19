@@ -10,30 +10,52 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            @include grid-md-down{
+                width: 100%;
+                margin-bottom: 15px;
+                .nav-link{
+                    text-align: center;
+                }
+            }
 
             &:nth-child(1) {
                 transform: perspective(376px) rotatey(12deg);
+                @include grid-md-down{
+                    transform: perspective(0) rotatey(0);
+                }
             }
 
             &:nth-child(2) {
                 transform: perspective(376px) rotatey(12deg);
                 height: 140px;
                 margin-top: 8px;
+                @include grid-md-down{
+                    transform: perspective(0) rotatey(0);
+                }
             }
 
             &:nth-child(3) {
                 height: 134px;
                 margin-top: 10px;
+                @include grid-md-down{
+                    transform: perspective(0) rotatey(0);
+                }
             }
 
             &:nth-child(4) {
                 transform: perspective(376px) rotatey(-7deg);
                 height: 140px;
                 margin-top: 8px;
+                @include grid-md-down{
+                    transform: perspective(0) rotatey(0);
+                }
             }
 
             &:nth-child(5) {
                 transform: perspective(376px) rotatey(-7deg);
+                @include grid-md-down{
+                    transform: perspective(0) rotatey(0);
+                }
             }
 
             .nav-link {
@@ -56,6 +78,9 @@
         li {
             &+li {
                 margin-left: 10px;
+                @include grid-md-down{
+                    margin: 0;
+                }
             }
         }
     }
@@ -760,5 +785,18 @@
         width: 230px;
         height: 230px;
         border-radius: 50%;
+        @include grid-md-down{
+            width: 260px;
+            height: 260px;
+        }
+    }
+}
+.brand-reputation-mentions{
+    .col{
+        @include grid-md-down{
+            width: 100% !important;
+            flex: 1 0 100%;
+            margin-bottom: 10px;
+        }
     }
 }

@@ -439,7 +439,7 @@
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
-            <button type="button" class="btn btn-fill me-md-3">Save</button>
+            <button type="button" class="btn btn-fill me-md-3 mt-3 mt-md-0 wsm-100">Save</button>
           </div>
           <div class="bg-white p-3 journey-map-white">
             <div id="container">
@@ -468,7 +468,7 @@
                 </tbody>
               </table>
               <div class="add-stage-button mt-5 ms-3">
-                <button type="button" class="btn fs-6 width-100px p-0" id="addDataPointButton" onclick="addSection()"
+                <button type="button" class="btn fs-6 width-100px p-0" id="addDataPointButton" onclick="addDataPoint()"
                   @click="addColumn">Add
                   Satge</button>
               </div>
@@ -870,38 +870,38 @@
       {
         x: 170,
         y: 150,
-        label: "Label 1",
-        img: "./assets/images/emotion-good.png",
+        label: "Stage 1",
+        img: "./assets/images/emotion-great.png",
       },
       {
         x: 400,
         y: 150,
-        label: "Label 2",
+        label: "Stage 2",
         img: "./assets/images/emotion-good.png",
       },
       {
         x: 640,
         y: 150,
-        label: "Label 3",
+        label: "Stage 3",
         img: "./assets/images/emotion-good.png",
       },
       {
         x: 880,
         y: 150,
-        label: "Label 4",
+        label: "Stage 4",
         img: "./assets/images/emotion-good.png",
       },
       {
         x: 1120,
         y: 150,
-        label: "Label 5",
+        label: "Stage 5",
         img: "./assets/images/emotion-good.png",
       },
       {
         x: 1350,
         y: 150,
-        label: "Label 6",
-        img: "./assets/images/emotion-good.png",
+        label: "Stage 6",
+        img: "./assets/images/emotion-sad.png",
       },
     ];
 
@@ -937,7 +937,17 @@
       // Draw dots at the data points and display labels
       for (var i = 0; i < data.length; i++) {
         ctx.beginPath();
-        ctx.arc(data[i].x, data[i].y, 4, 0, 2 * Math.PI);
+        var dotWidth = 20; // Set the desired dot width
+        var dotHeight = 20; // Set the desired dot height
+        ctx.ellipse(
+          data[i].x,
+          data[i].y,
+          dotWidth / 2, // Use half of the dot width for the x-radius
+          dotHeight / 2, // Use half of the dot height for the y-radius
+          0,
+          0,
+          2 * Math.PI
+        );
         ctx.fillStyle = "#775da6";
         ctx.fill();
         ctx.stroke();
@@ -949,7 +959,7 @@
         ctx.fillText(
           data[i].label,
           data[i].x - labelWidth / 2,
-          data[i].y - 10
+          data[i].y - 20
         );
 
         // Draw the image near the dot
@@ -1029,10 +1039,6 @@
 
     drawLineChart("true");
 
-    // click button code to add new point
-    var addDataPointButton = document.getElementById("addDataPointButton");
-    addDataPointButton.addEventListener("click", addDataPoint);
-
     // Function to handle mousemove event
     function handleMouseMove(event) {
       var rect = canvas.getBoundingClientRect();
@@ -1042,6 +1048,7 @@
       if (selectedDataIndex !== -1) {
         // Update the position of the selected data point
         data[selectedDataIndex].y = y;
+        updateDataImage(selectedDataIndex, y);
         drawLineChart();
       } else {
         // Check if the mouse is over a data point
@@ -1055,6 +1062,17 @@
 
         canvas.style.cursor = "default";
         // hideDataPointLabel(); showDataPointLabel
+      }
+    }
+
+    // Function to update the image based on the y-coordinate of the data point
+    function updateDataImage(index, y) {
+      if (y <= 100) {
+        data[index].img = "./assets/images/emotion-greate.png";
+      } else if (y <= 200) {
+        data[index].img = "./assets/images/emotion-good.png";
+      } else {
+        data[index].img = "./assets/images/emotion-sad.png";
       }
     }
 
@@ -1079,32 +1097,21 @@
       selectedDataIndex = -1;
     }
 
-    // Event listeners for mousemove, mousedown, and mouseup events
+    // Event listeners for mouse events
     canvas.addEventListener("mousemove", handleMouseMove);
     canvas.addEventListener("mousedown", handleMouseDown);
     canvas.addEventListener("mouseup", handleMouseUp);
 
-    // Function to calculate the line width based on data size
-    function calculateLineWidth() {
-      var dataLength = data.length;
-      var lineWidth = 2; // Set the desired line width (2px)
-
-      return lineWidth;
-    }
-
-    // Function to add a data point to the line chart
+    // Function to add a new data point
     function addDataPoint() {
-      var lastDataPoint = data[data.length - 1];
-      var x = lastDataPoint.x + 257;
-      var y = 150;
-      var label = "Label " + (data.length + 1);
-      var defaultImage = "./assets/images/default-image.png"; // Set the default image path here
-      data.push({
-        x: x,
-        y: y,
-        label: label,
+      var newDataPoint = {
+        x: data[data.length - 1].x + 240,
+        y: 150,
+        label: "Stage " + (data.length + 1),
         img: "./assets/images/emotion-good.png",
-      });
+      };
+
+      data.push(newDataPoint);
 
       // Update the canvas width based on the new data point
       canvas.width += 257;
@@ -1112,9 +1119,20 @@
       // Update the canvas style width to match the updated canvas width
       canvas.style.width = canvas.width + "px";
 
-      // Redraw the line chart
       drawLineChart();
     }
+
+    // Function to calculate the line width based on the number of data points
+    function calculateLineWidth() {
+      var lineWidth = 2;
+
+      if (data.length > 6) {
+        lineWidth -= (data.length - 6) * 0.25;
+      }
+
+      return lineWidth;
+    }
+
 
 
     document.addEventListener('DOMContentLoaded', () => {

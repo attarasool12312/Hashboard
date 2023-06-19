@@ -3320,6 +3320,11 @@ h6.text-sm {
   top: 55px;
   left: 40%;
 }
+@media only screen and (max-width: 991.98px) {
+  .profile-box .profile-box-image img {
+    left: 35%;
+  }
+}
 .profile-box .profile-box-image a i {
   position: absolute;
   left: 61%;
@@ -4444,8 +4449,29 @@ ul.head-btn .slider-btn .btn.ouline-white {
   border-radius: 8px;
   padding: 5px;
 }
+@media only screen and (max-width: 991.98px) {
+  .employees-nav1 {
+    flex-flow: column !important;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .employees-nav1 li {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .employees-nav1 li + li {
+    margin-top: 15px !important;
+  }
+}
 .employees-nav1 li button {
   border-radius: 8px !important;
+}
+@media only screen and (max-width: 991.98px) {
+  .employees-nav1 li button {
+    width: 100% !important;
+  }
 }
 .employees-nav1 li button.active {
   border: none !important;
@@ -9789,25 +9815,59 @@ button.btn.view {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 991.98px) {
+  .dashboard-view .nav-tabs .nav-item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .dashboard-view .nav-tabs .nav-item .nav-link {
+    text-align: center;
+  }
+}
 .dashboard-view .nav-tabs .nav-item:nth-child(1) {
   transform: perspective(376px) rotatey(12deg);
+}
+@media only screen and (max-width: 991.98px) {
+  .dashboard-view .nav-tabs .nav-item:nth-child(1) {
+    transform: perspective(0) rotatey(0);
+  }
 }
 .dashboard-view .nav-tabs .nav-item:nth-child(2) {
   transform: perspective(376px) rotatey(12deg);
   height: 140px;
   margin-top: 8px;
 }
+@media only screen and (max-width: 991.98px) {
+  .dashboard-view .nav-tabs .nav-item:nth-child(2) {
+    transform: perspective(0) rotatey(0);
+  }
+}
 .dashboard-view .nav-tabs .nav-item:nth-child(3) {
   height: 134px;
   margin-top: 10px;
+}
+@media only screen and (max-width: 991.98px) {
+  .dashboard-view .nav-tabs .nav-item:nth-child(3) {
+    transform: perspective(0) rotatey(0);
+  }
 }
 .dashboard-view .nav-tabs .nav-item:nth-child(4) {
   transform: perspective(376px) rotatey(-7deg);
   height: 140px;
   margin-top: 8px;
 }
+@media only screen and (max-width: 991.98px) {
+  .dashboard-view .nav-tabs .nav-item:nth-child(4) {
+    transform: perspective(0) rotatey(0);
+  }
+}
 .dashboard-view .nav-tabs .nav-item:nth-child(5) {
   transform: perspective(376px) rotatey(-7deg);
+}
+@media only screen and (max-width: 991.98px) {
+  .dashboard-view .nav-tabs .nav-item:nth-child(5) {
+    transform: perspective(0) rotatey(0);
+  }
 }
 .dashboard-view .nav-tabs .nav-item .nav-link {
   width: 100%;
@@ -9824,6 +9884,11 @@ button.btn.view {
 }
 .dashboard-view .nav-tabs li + li {
   margin-left: 10px;
+}
+@media only screen and (max-width: 991.98px) {
+  .dashboard-view .nav-tabs li + li {
+    margin: 0;
+  }
 }
 
 .dashboard-post .chart {
@@ -10391,6 +10456,20 @@ button.btn.view {
   height: 230px;
   border-radius: 50%;
 }
+@media only screen and (max-width: 991.98px) {
+  .brand-reputation-score::after {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .brand-reputation-mentions .col {
+    width: 100% !important;
+    flex: 1 0 100%;
+    margin-bottom: 10px;
+  }
+}
 
 .customer-single-profile-cover-image .cover-area {
   height: 200px;
@@ -10687,6 +10766,14 @@ button.btn.view {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 991.98px) {
+  .member-detail .member-content {
+    flex-flow: column;
+  }
+}
+.member-detail .member-content .profile-owner {
+  text-align: center;
+}
 .member-detail .member-content .profile-owner img {
   width: 100px;
   height: 100px;
@@ -10695,6 +10782,12 @@ button.btn.view {
 }
 .member-detail .member-content .profile-content {
   width: 24%;
+}
+@media only screen and (max-width: 991.98px) {
+  .member-detail .member-content .profile-content {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
 .member-detail .member-content .profile-content p {
   margin-top: 20px;
@@ -10709,12 +10802,24 @@ button.btn.view {
   flex-flow: column;
   justify-content: space-between;
 }
+@media only screen and (max-width: 991.98px) {
+  .member-detail .member-content .profile-duration {
+    width: 51%;
+    margin: 0 auto;
+  }
+}
 .member-detail .member-content .profile-priority {
   background-color: #fff;
   width: 15%;
   border-radius: 20px;
   text-align: center;
   padding: 15px 0;
+}
+@media only screen and (max-width: 991.98px) {
+  .member-detail .member-content .profile-priority {
+    width: 51%;
+    margin: 20px auto;
+  }
 }
 .member-detail .member-content .profile-priority p {
   margin-top: 20px;
@@ -10728,6 +10833,12 @@ button.btn.view {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+}
+@media only screen and (max-width: 991.98px) {
+  .member-detail .member-content .profile-completion {
+    width: 51%;
+    margin: 0 auto;
+  }
 }
 
 .product-banner {
@@ -10935,6 +11046,11 @@ button.btn.view {
 .hannah-profile-top .hannah-profile-top-left {
   border-right: 2px dotted #FF86AB;
 }
+@media only screen and (max-width: 991.98px) {
+  .hannah-profile-top .hannah-profile-top-left {
+    border: 0;
+  }
+}
 .hannah-profile-top .hannah-profile-top-left .profile-image-text {
   display: flex;
   align-items: center;
@@ -10976,6 +11092,11 @@ button.btn.view {
   padding: 30px;
   border-bottom-right-radius: 20px;
   margin-top: -30px;
+}
+@media only screen and (max-width: 991.98px) {
+  .hannah-profile-top .hannah-profile-box {
+    margin: 0;
+  }
 }
 .hannah-profile-top .hannah-profile-box p {
   color: #fff;
@@ -13404,6 +13525,11 @@ button.btn.view {
   max-height: auto;
   overflow-y: auto;
 }
+@media only screen and (max-width: 991.98px) {
+  .modalONE-contentONE {
+    width: 95%;
+  }
+}
 
 .closeONE {
   color: #aaa;
@@ -13435,6 +13561,12 @@ button.btn.view {
   width: 23%;
   min-height: 250px;
   max-height: auto;
+}
+@media only screen and (max-width: 991.98px) {
+  .modalTWO-contentTWO,
+  .modalTHREE-contentTHREE {
+    width: 95%;
+  }
 }
 
 .closeTWO,

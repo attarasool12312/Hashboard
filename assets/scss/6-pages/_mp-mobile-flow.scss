@@ -148,6 +148,9 @@
   height: 554px;
   max-height: auto;
   overflow-y: auto;
+  @include grid-md-down{
+    width: 95%;
+  }
 }
 
 .closeONE {
@@ -180,6 +183,9 @@
   width: 23%;
   min-height: 250px;
   max-height: auto;
+  @include grid-md-down{
+    width: 95%;
+  }
 }
 
 .closeTWO,

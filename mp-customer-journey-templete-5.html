@@ -29,10 +29,10 @@
   <script>
     document.addEventListener('alpine:init', () => {
       Alpine.data('stages', () => ({
-        columns: [1, 1, 1, 1, 1],
+        columns: [1, 1, 1, 1, 1, 1],
 
         addColumn() {
-          this.columns.unshift(1)
+          this.columns.unshift(3)
         },
         removeColumn(i) {
           this.columns.splice(i, 1);
@@ -260,7 +260,7 @@
             </td>
         </template>`;
               break;
-              case 'dragChart':
+            case 'dragChart':
               tds += `<td colspan="6"><div id="container"><canvas id="canvas" width="400" height="300"></canvas></div></td>`;
               break;
             case 'dragFillingChart':
@@ -445,7 +445,7 @@
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
-            <button type="button" class="btn btn-fill me-md-3">Save</button>
+            <button type="button" class="btn btn-fill me-md-3 mt-3 mt-md-0 wsm-100">Save</button>
           </div>
           <div class="bg-white rounded p-3 mb-3">
             <div class="row mt-4">
@@ -465,47 +465,50 @@
             </div>
           </div>
           <div class="bg-white p-3 journey-map-white">
-            <div class="row">
-              <div class="col-md-10 ms-auto">
-                <div class="d-flex align-items-center">
-                  <p class="btn-fill fs-5 py-2 w-50 rounded-pill text-center">
-                    <input type="text" placeholder="Awareness"
-                      class="border-0 input-white text-center outline-none bg-transparent w-100">
-                  </p>
-                  <p class="btn-fill fs-5 py-2 w-50 rounded-pill text-center ms-3">
-                    <input type="text" placeholder="Purchace"
-                      class="border-0 input-white text-center outline-none bg-transparent w-100">
-                  </p>
-                </div>
-              </div>
-            </div>
             <div class="d-flex">
               <table id="journey-map" class="journey-map-table journey-map overflow-x">
                 <tbody>
                   <tr id="mainStages">
                     <td class="stage-heading"></td>
-                    <template x-for="i in columns">
-                      <td>
-                        <h1 class="text-fill">
-                          <input type="text" placeholder="00."
-                            class="border-0 input-fill text-center outline-none bg-transparent w-100 fw-600">
-                        </h1>
-                        <p class="text-fill">
-                          <input type="text" placeholder="Action step"
-                            class="border-0 input-fill text-center outline-none bg-transparent w-100">
-                        </p>
-                      </td>
+                    <td colspan="3">
+                      <p class="btn-fill fs-5 py-2 w-100 rounded-pill text-center ms-3">
+                        <input type="text" placeholder="Purchace"
+                          class="border-0 input-white text-center outline-none bg-transparent w-100">
+                      </p>
+                    </td>
+                    <td colspan="3">
+                      <p class="btn-fill fs-5 py-2 w-100 rounded-pill text-center ms-3">
+                        <input type="text" placeholder="Purchace"
+                          class="border-0 input-white text-center outline-none bg-transparent w-100">
+                      </p>
+                    </td>
+                  </tr>
+                  <tr id="painPints">
+                    <td class="stage-heading"></td>
+                    <template x-for="(i, ind) in columns">
+                      <template x-for="j in columns[ind]">
+                        <td>
+                          <h1 class="text-fill">
+                            <input type="text" placeholder="00."
+                              class="border-0 input-fill text-center outline-none bg-transparent w-100 fw-600">
+                          </h1>
+                          <p class="text-fill">
+                            <input type="text" placeholder="Action step"
+                              class="border-0 input-fill text-center outline-none bg-transparent w-100">
+                          </p>
+                        </td>
+                      </template>
                     </template>
                   </tr>
-                  <tr id="subStages">
+                  <tr id="painPints">
                     <td class="stage-heading">
-                      <p class="btn-fill text-uppercase w-100 text-center py-2 width-150px">
+                      <p class="btn-fill text-uppercase text-center py-2 width-150px">
                         <input type="text" placeholder="Doing"
                           class="border-0 input-white text-center outline-none bg-transparent w-100">
                       </p>
                     </td>
                     <template x-for="(i, ind) in columns">
-                      <template x-for="j in columns[columns.length-1-ind]">
+                      <template x-for="j in columns[ind]">
                         <td style="border-top: 1px solid #9B9B9B;">
                           <p class="width-257px" style="margin: 20px 40px;">
                             <textarea name="" id="" cols="30" rows="2"
@@ -528,24 +531,6 @@
                           <p class="width-257px" style="margin: 20px 40px;">
                             <textarea name="" id="" cols="30" rows="2"
                               class="w-100 border-0 rounded bg-transparent outline-none">What is the user thinking / feeling when engaging in this activity?</textarea>
-                          </p>
-                        </td>
-                      </template>
-                    </template>
-                  </tr>
-                  <tr id="painPints">
-                    <td class="stage-heading">
-                      <p class="btn-fill text-uppercase text-center py-2 width-150px">
-                        <input type="text" placeholder="opportunities"
-                          class="border-0 input-white text-center outline-none bg-transparent w-100">
-                      </p>
-                    </td>
-                    <template x-for="(i, ind) in columns">
-                      <template x-for="j in columns[ind]">
-                        <td style="border-top: 1px solid #9B9B9B;">
-                          <p class="width-257px" style="margin: 20px 40px;">
-                            <textarea name="" id="" cols="30" rows="3"
-                              class="w-100 border-0 rounded bg-transparent outline-none">This is an idea / comment card on how to solve frictions or celebrate successes</textarea>
                           </p>
                         </td>
                       </template>
@@ -1034,6 +1019,7 @@
 
       // Update the chart
       experienceChart_1.update();
+      $('#mainStages').append(`<td colspan="3"><p class="btn-fill fs-5 py-2 w-100 rounded-pill text-center ms-3"><input type="text" placeholder="Purchace" class="border-0 input-white text-center outline-none bg-transparent w-100"></p></td>`);
     }
 
 

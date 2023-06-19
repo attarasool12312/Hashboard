@@ -459,7 +459,7 @@
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
-            <button type="button" class="btn btn-fill me-md-3">Save</button>
+            <button type="button" class="btn btn-fill me-md-3 mt-3 mt-md-0 wsm-100">Save</button>
           </div>
           <div class="bg-white p-3 journey-map-white overflow-x">
             <div id="container">
@@ -960,11 +960,11 @@
   <script>
     // Data for the line chart
     var data = [
-      { x: 130, y: 150, label: "Label 1" },
-      { x: 380, y: 150, label: "Label 2" },
-      { x: 640, y: 150, label: "Label 3" },
-      { x: 900, y: 150, label: "Label 4" },
-      { x: 1150, y: 150, label: "Label 5" },
+      { x: 130, y: 150, label: "Stage 1" },
+      { x: 380, y: 150, label: "Stage 2" },
+      { x: 640, y: 150, label: "Stage 3" },
+      { x: 900, y: 150, label: "Stage 4" },
+      { x: 1150, y: 150, label: "Stage 5" },
     ];
 
     // Canvas variables
@@ -984,8 +984,8 @@
       // Clear the canvas
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Set the line style to dotted
-      ctx.setLineDash([2, 2]);
+      // Set the line style to dashed
+      ctx.setLineDash([5, 5]); // Customize the dash pattern as desired
 
       // Draw the line chart
       ctx.beginPath();
@@ -1002,7 +1002,7 @@
       // Draw dots at the data points and display labels
       for (var i = 0; i < data.length; i++) {
         ctx.beginPath();
-        ctx.arc(data[i].x, data[i].y, 6, 0, 2 * Math.PI);
+        ctx.arc(data[i].x, data[i].y, 10, 0, 2 * Math.PI); // Increase dot width and height to 20px
         ctx.fillStyle = "#775da6";
         ctx.fill();
         ctx.stroke();
@@ -1083,7 +1083,7 @@
       var lastDataPoint = data[data.length - 1];
       var x = lastDataPoint.x + 257;
       var y = 150;
-      var label = "Label " + (data.length + 1);
+      var label = "Stage " + (data.length + 1);
       data.push({ x: x, y: y, label: label });
 
       // Update the canvas width based on the new data point
@@ -1101,7 +1101,7 @@
       var input = document.createElement("input");
       input.classList.add("data-point-input");
       input.value = data[index].label;
-      input.style.left = x + 0 + "px";
+      input.style.left = x + "px";
       input.style.top = y + 185 + "px";
       input.style.display = "block";
       input.style.position = "absolute";
@@ -1132,6 +1132,9 @@
 
     // Initial draw of the line chart
     drawLineChart();
+
+
+
 
     document.addEventListener('DOMContentLoaded', () => {
       let uploadButton = document.getElementById("upload-button");

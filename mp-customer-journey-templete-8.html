@@ -459,19 +459,24 @@
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
-            <button type="button" class="btn btn-fill me-md-3">Save</button>
+            <button type="button" class="btn btn-fill me-md-3 mt-3 mt-md-0 wsm-100">Save</button>
           </div>
           <div class="bg-white p-3 journey-map-white overflow-x">
             <div class="d-flex">
               <table id="journey-map" class="journey-map-table journey-map">
                 <tbody>
-                  <tr id="customerGoals" class="opportunities-main">
+                  <tr class="feedback">
                     <td>
-                      <h4 style="margin: 0; transform: rotate(0);">STAGES</h4>
+                      <h3>
+                        <input type="text" name="name" id="name" placeholder="STAGES"
+                          class="d-block border-0 input-fill fw-600 w-100 rounded bg-transparent">
+                      </h3>
                     </td>
+                  </tr>
+                  <tr id="customerGoals" class="opportunities-main">
                     <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[ind]">
-                        <td class="opportunities-td">
+                        <td class="opportunities-td" style="border-top: 2px solid #775DA6;">
                           <div class="opportunities">
                             <div class="transparent-boxs">
                               <div class="transparent-box">
@@ -488,13 +493,18 @@
                       </template>
                     </template>
                   </tr>
-                  <tr id="customerGoals" class="opportunities-main">
+                  <tr class="feedback">
                     <td>
-                      <h4 style="margin: 0; transform: rotate(0);">ACTIONS</h4>
+                      <h3>
+                        <input type="text" name="name" id="name" placeholder="ACTIONS"
+                          class="d-block border-0 input-fill fw-600 w-100 rounded bg-transparent">
+                      </h3>
                     </td>
+                  </tr>
+                  <tr id="customerGoals" class="opportunities-main">
                     <template x-for="(i, ind) in columns">
                       <template x-for="j in columns[columns.length-1-ind]">
-                        <td class="opportunities-td">
+                        <td class="opportunities-td" style="border-top: 2px solid #775DA6;">
                           <div class="opportunities">
                             <div class="transparent-boxs">
                               <div class="transparent-box">
@@ -928,11 +938,11 @@
   <script>
     // Data for the line chart
     var data = [
-      { x: 130, y: 150, label: "Label 1" },
-      { x: 380, y: 150, label: "Label 2" },
-      { x: 640, y: 150, label: "Label 3" },
-      { x: 900, y: 150, label: "Label 4" },
-      { x: 1150, y: 150, label: "Label 5" },
+      { x: 130, y: 150, label: "Stage 1" },
+      { x: 380, y: 150, label: "Stage 2" },
+      { x: 640, y: 150, label: "Stage 3" },
+      { x: 900, y: 150, label: "Stage 4" },
+      { x: 1150, y: 150, label: "Stage 5" },
     ];
 
     // Canvas variables
@@ -1051,7 +1061,7 @@
       var lastDataPoint = data[data.length - 1];
       var x = lastDataPoint.x + 257;
       var y = 150;
-      var label = "Label " + (data.length + 1);
+      var label = "Stage " + (data.length + 1);
       data.push({ x: x, y: y, label: label });
 
       // Update the canvas width based on the new data point

@@ -445,7 +445,7 @@
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
-            <button type="button" class="btn btn-fill me-md-3">Save</button>
+            <button type="button" class="btn btn-fill me-md-3 mt-3 mt-md-0 wsm-100">Save</button>
           </div>
           <div class="bg-white p-3 journey-map-white">
             <div class="journey-map-chart-container" id="journey-map-chart-container">
@@ -910,11 +910,11 @@
   <script>
     // Data for the line chart
     var data = [
-      { x: 130, y: 150, label: "Label 1" },
-      { x: 380, y: 150, label: "Label 2" },
-      { x: 640, y: 150, label: "Label 3" },
-      { x: 900, y: 150, label: "Label 4" },
-      { x: 1150, y: 150, label: "Label 5" },
+      { x: 130, y: 150, label: "Stage 1" },
+      { x: 380, y: 150, label: "Stage 2" },
+      { x: 640, y: 150, label: "Stage 3" },
+      { x: 900, y: 150, label: "Stage 4" },
+      { x: 1150, y: 150, label: "Stage 5" },
     ];
 
     // Canvas variables
@@ -945,8 +945,19 @@
       // Draw dots at the data points and display labels
       for (var i = 0; i < data.length; i++) {
         ctx.beginPath();
-        ctx.arc(data[i].x, data[i].y, 6, 0, 2 * Math.PI);
-        ctx.fillStyle = "#775DA6";
+        ctx.arc(data[i].x, data[i].y, 10, 0, 2 * Math.PI);
+
+        // Set the dot color based on the y-coordinate range
+        if (data[i].y >= 0 && data[i].y <= 100) {
+          ctx.fillStyle = "#27A530";
+        } else if (data[i].y > 100 && data[i].y <= 200) {
+          ctx.fillStyle = "#E9CC57";
+        } else if (data[i].y > 200 && data[i].y <= 300) {
+          ctx.fillStyle = "#FA0707";
+        } else {
+          ctx.fillStyle = "#775DA6"; // Default color
+        }
+
         ctx.fill();
         ctx.stroke();
 
@@ -967,20 +978,25 @@
         data[selectedDataIndex].y = y;
         drawLineChart();
       } else {
+        var isHoveringDataPoint = false;
+
         // Check if the mouse is over a data point
         for (var i = 0; i < data.length; i++) {
           if (
-            Math.abs(data[i].x - x) <= 4 &&
-            Math.abs(data[i].y - y) <= 4
+            Math.abs(data[i].x - x) <= 10 &&
+            Math.abs(data[i].y - y) <= 10
           ) {
             canvas.style.cursor = "ns-resize";
+            isHoveringDataPoint = true;
             showDataPointLabel(i, x, y);
-            return;
+            break;
           }
         }
 
-        canvas.style.cursor = "default";
-        hideDataPointLabel();
+        if (!isHoveringDataPoint) {
+          canvas.style.cursor = "default";
+          hideDataPointLabel();
+        }
       }
     }
 
@@ -993,8 +1009,8 @@
       // Check if the mouse is over a data point
       for (var i = 0; i < data.length; i++) {
         if (
-          Math.abs(data[i].x - x) <= 4 &&
-          Math.abs(data[i].y - y) <= 4
+          Math.abs(data[i].x - x) <= 10 &&
+          Math.abs(data[i].y - y) <= 10
         ) {
           selectedDataIndex = i;
           yOffset = data[i].y - y;
@@ -1026,7 +1042,7 @@
       var lastDataPoint = data[data.length - 1];
       var x = lastDataPoint.x + 257;
       var y = 150;
-      var label = "Label " + (data.length + 1);
+      var label = "Stage " + (data.length + 1);
       data.push({ x: x, y: y, label: label });
 
       // Update the canvas width based on the new data point
@@ -1050,7 +1066,7 @@
       input.classList.add("data-point-input");
       input.value = data[index].label;
       input.style.left = x + 50 + "px";
-      input.style.top = y + 170 + "px";
+      input.style.top = y + 300 + "px";
       input.style.display = "block";
       input.style.position = "absolute";
       input.style.border = "none";
@@ -1080,6 +1096,11 @@
 
     // Initial draw of the line chart
     drawLineChart();
+
+
+
+
+
 
 
 

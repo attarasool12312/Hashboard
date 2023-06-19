@@ -460,7 +460,7 @@
             <div class="heading">
               <h1>Journey Name</h1>
             </div>
-            <button type="button" class="btn btn-fill me-md-3">Save</button>
+            <button type="button" class="btn btn-fill me-md-3 mt-3 mt-md-0 wsm-100">Save</button>
           </div>
           <div class="bg-white p-3 journey-map-white overflow-x">
             <div class="d-flex">
@@ -966,11 +966,11 @@
   <script>
     // Data for the line chart
     var data = [
-      { x: 130, y: 150, label: "Label 1" },
-      { x: 380, y: 150, label: "Label 2" },
-      { x: 640, y: 150, label: "Label 3" },
-      { x: 900, y: 150, label: "Label 4" },
-      { x: 1150, y: 150, label: "Label 5" },
+      { x: 130, y: 150, label: "Stage 1" },
+      { x: 380, y: 150, label: "Stage 2" },
+      { x: 640, y: 150, label: "Stage 3" },
+      { x: 900, y: 150, label: "Stage 4" },
+      { x: 1150, y: 150, label: "Stage 5" },
     ];
 
     // Canvas variables
@@ -1005,7 +1005,7 @@
       // Draw dots at the data points and display labels
       for (var i = 0; i < data.length; i++) {
         ctx.beginPath();
-        ctx.arc(data[i].x, data[i].y, 4, 0, 2 * Math.PI);
+        ctx.arc(data[i].x, data[i].y, 10, 0, 2 * Math.PI); // Set dot width and height to 20px
         ctx.fillStyle = "#775da6";
         ctx.fill();
         ctx.stroke();
@@ -1080,7 +1080,7 @@
       var lastDataPoint = data[data.length - 1];
       var x = lastDataPoint.x + 257;
       var y = 150;
-      var label = "Label " + (data.length + 1);
+      var label = "Stage " + (data.length + 1);
       data.push({ x: x, y: y, label: label });
 
       // Update the canvas width based on the new data point

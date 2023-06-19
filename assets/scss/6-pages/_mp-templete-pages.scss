@@ -213,13 +213,16 @@
             margin: 0 !important;
         }
     }
-    .stages-12{
-        h3{
+
+    .stages-12 {
+        h3 {
             width: 100% !important;
-            &::after{
+
+            &::after {
                 display: none;
             }
-            &::before{
+
+            &::before {
                 display: none;
             }
         }
